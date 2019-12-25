@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Python Basics: Organizing Python Code</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2020/css/main.css">
+  <link rel="stylesheet" href="/2020/css/admin.css">
+  <link rel="icon" href="/2020/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <div class="w-100 p-1 text-white bg-primary text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
+
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
+          <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Textbook</div>
+        <dropdown text="Textbook" class="nav-link temp-dropdown">
+          <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown">
+          <li><a href="https://github.com/nus-te3201-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-te3201-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/2020/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/2020/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li><a href="/2020/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/2020/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-te3201-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="https://nus-te3201-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="/2020/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/2020/admin/project-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+          <li><a href="https://github.com/nus-te3201-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
+          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
+          <li><a href="https://nus-te3201-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="/2020/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-right-grey nav-inner position-sticky slim-scroll">
+          <ul class="px-0 site-nav-list">
+            <li class="mt-2"><a href="/2020/programming/chapters/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/programs.html" class="site-nav__a">Python Programs</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/functions.html" class="site-nav__a">Functions</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/lists.html" class="site-nav__a">Lists</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/errors.html" class="site-nav__a">Error Handling</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/strings.html" class="site-nav__a">Strings</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/files.html" class="site-nav__a">Files</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/gui.html" class="site-nav__a">GUIs</a></li>
+            <li class="mt-2">
+              <hr>
+            </li>
+            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/organizing.html" class="site-nav__a current"><strong>C.</strong> Organizing Python Code</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
+            <li class="mt-2"><a href="/2020/programming/chapters/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="content-wrapper">
+        <div class="website-content" id="main">
+          <div id="toc"></div>
+          <div id="main">
+            <div>
+              <h1 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code"></a></h1>
+              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
+                <p><code>[project_root]/student.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+    print(name, <span class="hljs-string">'is a student'</span>)
+</code></pre>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p><code>[project_root]/course.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+
+student.describe(<span class="hljs-string">'Adam'</span>)
+</code></pre>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
+              </box>
+              <p><strong>You can organize files into sub-directories too.</strong></p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
+                <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span>
+    print(list(text))
+</code></pre>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p><code>[project_root]/course.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc 
+
+misc.print_as_list(<span class="hljs-string">'Adam'</span>)
+</code></pre>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
+              </box>
+              <p>When you import a module, Python will interpret and execute any code in it.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
+                <p><code>[project_root]/student.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+    print(name, <span class="hljs-string">'is a student'</span>)
+
+describe(<span class="hljs-string">'Betty'</span>)
+</code></pre>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/course.py</code>:</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+
+student.describe(<span class="hljs-string">'Adam'</span>)
+</code></pre>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Betty is a student
+Adam is a student
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
+              </box>
+              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/student.py</code>:</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+    print(name, <span class="hljs-string">'is a student'</span>)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    describe(<span class="hljs-string">'Betty'</span>)
+</code></pre>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Betty is a student
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/course.py</code>:</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+
+student.describe(<span class="hljs-string">'Adam'</span>)
+</code></pre>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Adam is a student
+</code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
+          </div>
+        </div>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#appendix-c-organizing-python-code">Appendix C: Organizing Python Code&#x200E;</a>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Wed, 25 Dec 2019 12:44:49 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/2020'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>
