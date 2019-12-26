@@ -3,67 +3,55 @@
 
 <box type="info" dismissible>
 
-Admin info relevant to the week's will appear in this tab.
+Weekly tasks will appear in this tab.
 </box>
 
 {% call show_admin_summary() %}
-1. Submit pre-lecture quiz {{ timing_badge("by week 2 Monday 2359") }}
-1. Set up the tools {{ timing_badge("before the lecture") }}
-1. Submit the pre-module survey {{ timing_badge("by Friday 2359") }}
-1. Learn about the module
+1. Learn about the module and the website
+1. Submit the pre-module survey {{ timing_badge("by Saturday 2359") }}
 1. Attend the lecture
+1. Submit weekly exercises
+1. Submit weekly project increment `Monty Level 1. Echo Once`
 {% endcall %}
 
 
-#### {{ thumb(1) }} Submit pre-lecture quiz {{ timing_badge("by week 2 Monday 2359", "secondary") }}
+### {{ thumb(1) }} Learn about the module and the website
 
-* **Read prerequisite  [{{ show_as_tab('Topics', icon_book) }}](topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
+{{ embed_topic("../../admin/te3201-admin.md#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
+{{ embed_topic("../../admin/te3201-admin.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
 
 
-#### {{ thumb(2) }} Set up the tools {{ timing_badge("before the lecture", "secondary") }}
+### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
 
-  * Follow the <span class="border pr-1 pl-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
+* Submit the pre-module survey, available on LumiNUS
+
+
+### {{ thumb(3) }} Attend the lecture
+
+* The lecture will start at 6.30pm.
+
+{{ embed_topic("../../admin/te3201-admin.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
+
+
+### {{ thumb(4) }} Submit weekly exercises
+
+* As you learn the weekly topics, submit Week 1 programming exercise on `repl.it`. See the panel below for more info. More instructions about this will be provided during the lecture.
+
+{{ embed_topic("../../admin/te3201-admin.md#exercises-info", "Admin " + icon_embedding + " Programming Exercises", "1", indent="2") }}
+{{ embed_topic("../../admin/te3201-admin.md#repl-info", "Admin " + icon_embedding + " Tools → `repl.it`", "1", indent="2") }}
+{{ embed_topic("../../admin/te3201-admin.md#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
+
+
+### {{ thumb(5) }} Submit weekly project increments
+
+{{ embed_topic("../../admin/te3201-admin.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
 
 <div class="indented-level2">
-{{ embed_topic("../../admin/programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2") }}
-{{ embed_topic("../../admin/tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2") }}
-{{ embed_topic("../../admin/tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2") }}
-{{ embed_topic("../../admin/tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2") }}
+<box type="warning">
+
+Please **finish weekly programming topics and weekly programming exercises before attempting weekly project increments** as the knowledge from those former may be needed to complete the latter.
+</box>
 </div>
 
-
-#### {{ thumb(3) }} Submit the pre-module survey {{ timing_badge("by Friday 2359", "secondary") }}
-* **Submit the pre-module survey ==(compulsory)==**<br>
-  _Pre-Module Survey_ will be available on LumiNUS **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
-
-
-#### {{ thumb(4) }} Learn about the module
-
-* Read the following admin info about the module.
-<div class="indented-level2">
-
-<panel type="danger" header="**Admin {{icon_embedding }} Module expectations and the ==star rating system==** :glyphicon-star:" minimized>
-  <include src="../../admin/moduleExpectations.md"/>
-</panel><p/>
-<panel type="danger" header="**Admin {{icon_embedding }} Using this website [essential info]** :glyphicon-star:" minimized>
-  <include src="../../admin/usingThisWebsite.md#essential"/>
-</panel><p/>
-<panel type="info" header="**Admin {{icon_embedding }} Using this website [more info]** :glyphicon-star::glyphicon-star::glyphicon-star:" minimized>
-  <include src="../../admin/usingThisWebsite.md#more"/>
-</panel><p/>
-<panel type="warning" header="**Admin {{icon_embedding }} Weekly schedule** :glyphicon-star::glyphicon-star:" minimized>
-  <include src="../../admin/weeklySchedule.md#main"/>
-</panel><p/>
-<panel type="success" header="**Admin {{icon_embedding }} Module overview** :glyphicon-star::glyphicon-star::glyphicon-star::glyphicon-star:" minimized>
-  <include src="../../admin/moduleOverview.md#main"/>
-</panel><p/>
-</div>
-
-</div>
-
-{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read.week1, is_flat=false ) }}
-
-
-#### {{ thumb(5) }} Attend the lecture
-* Attend the Week 1 lecture (Week 1 lecture is ==**compulsory**==).
-* Bring your computer to the lecture. Some lecture activities will need it.
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Monty - Overview**" var-fragment="monty.mbdf#intro" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty.mbdf#monty1" />

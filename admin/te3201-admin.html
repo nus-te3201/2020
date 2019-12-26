@@ -15,14 +15,14 @@
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../markbind/css/site-nav.css">
 
+  <link rel="stylesheet" href="../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/admin.css">
   <link rel="icon" href="/2020/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
       <div class="w-100 p-1 text-white bg-primary text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
@@ -55,7 +55,7 @@
         <div class="nav-link temp-dropdown-placeholder">Links</div>
         <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-te3201-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-te3201-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
@@ -85,39 +85,18 @@
       </navbar>
     </header>
     <div id="flex-body">
-      <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="#module-overview" class="site-nav__a">Module Overview</a></li>
-            <li class="mt-2"><a href="#using-this-module-website" class="site-nav__a">Using this module website</a></li>
-            <li class="mt-2"><a href="#instructors" class="site-nav__a">Instructors</a></li>
-            <li class="mt-2"><a href="#lectures" class="site-nav__a">Lectures</a></li>
-            <li class="mt-2"><a href="#tutorials" class="site-nav__a">Tutorials</a></li>
-            <li class="mt-2"><a href="#textbook" class="site-nav__a">Textbook</a></li>
-            <li class="mt-2"><a href="#programming-language" class="site-nav__a">Programming Language</a></li>
-            <li class="mt-2"><a href="#project" class="site-nav__a">Project</a></li>
-            <li class="mt-2"><a href="#assessment" class="site-nav__a">Assessment</a></li>
-            <li class="mt-2"><a href="#exam" class="site-nav__a">Exam</a>
-              <ul class="pl-3 site-nav-list">
-                <li class="mt-2"><a href="#final-exam-part-1-mcq" class="site-nav__a">Part 1</a></li>
-                <li class="mt-2"><a href="#final-exam-part-2-essay" class="site-nav__a">Part 2</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <div id="content-wrapper">
         <div class="website-content" id="main">
           <h1 id="te3201-software-engineering"><strong>TE3201 Software Engineering</strong><a class="fa fa-anchor" href="#te3201-software-engineering"></a></h1>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
           <h1 id="module-overview">Module overview<a class="fa fa-anchor" href="#module-overview"></a></h1>
-          <div class="indented">
+          <div class="indented" id="module-info">
             <img src="/2020/images/growingPlant.png" width="700">
             <p><em>TIC2002 Software Engineering</em> contains roughly a <strong>50-50 balance of theory and practice</strong> of SE. It covers the knowledge/skills necessary to do small software projects.</p>
           </div>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
           <h1 id="using-this-module-website">Using this module website<a class="fa fa-anchor" href="#using-this-module-website"></a></h1>
-          <div class="indented">
+          <div class="indented" id="website-info">
             <div>
               <div id="essential">
                 <p>
@@ -258,7 +237,7 @@
                     <span><span aria-hidden="true" class="fas fa-briefcase"></span></span> : evidence you can use to prove you have achieved a learning outcome<br> ⏰ : deadline<br></p>
                 </div>
                 <h3 id="searching-for-keywords">Searching for keywords<a class="fa fa-anchor" href="#searching-for-keywords"></a></h3>
-                <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-te3201-AY1920S2/forum/issues">in the forum</a>                  so that we can add the missing keyword to our search index.</p>
+                <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum">in the forum</a>                  so that we can add the missing keyword to our search index.</p>
                 <div>
                   <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files"></a></h3>
                   <ol>
@@ -292,7 +271,7 @@
                 </div>
                 <div class="col">
                   <p><strong>Damith Chatura RAJAPAKSE</strong><br> Associate Professor, NUS School of Computing<br> PhD, Software Engineering, NUS, 2002-2006<br> BSc, Computer Science &amp; Engineering, University of Moratuwa, 1996-2001<br>
-                    <span class="dimmed"><span aria-hidden="true" class="fas fa-envelope"></span></span> <code>damith</code>[at]<code>comp</code>[dot]<code>nus</code>[dot]<code>edu</code>[dot]<code>sg</code><br>
+                    <span class="dimmed"><span aria-hidden="true" class="fas fa-envelope"></span></span> <span id="prof-email"><code>damith</code>[at]<code>comp.nus.edu.sg</code></span><br>
                     <span class="dimmed"><span aria-hidden="true" class="fas fa-map-marker-alt"></span></span> COM2-02-57<br>
                     <span class="dimmed"><span aria-hidden="true" class="fas fa-phone-square"></span></span> 651 64359<br>
                     <span class="dimmed"><span aria-hidden="true" class="fas fa-home"></span></span> <a href="https://www.comp.nus.edu.sg/~damithch">https://www.comp.nus.edu.sg/~damithch</a></p>
@@ -302,12 +281,12 @@
           </div>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
           <h1 id="lectures">Lectures<a class="fa fa-anchor" href="#lectures"></a></h1>
-          <div class="indented">
+          <div class="indented" id="lectures-info">
             <p><span class="dimmed"><span aria-hidden="true" class="far fa-clock"></span></span> Tuesdays 1800-2130<br>
-              <span class="dimmed"><span aria-hidden="true" class="fas fa-map-marker-al"></span></span> E3‐06‐15<br></p>
+              <span class="dimmed"><span aria-hidden="true" class="fas fa-map-marker-alt"></span></span> Venue E3-06-15<br></p>
             <p><span aria-hidden="true" class="far fa-frown"></span> <strong>Lectures will not be webcast</strong> as the venue does not have a webcast facility. <mark>Please bring your laptop to the lecture</mark> as you will need to be using it for the
               most part of the lecture.</p>
-            <p>Rough break-down of a typical lecture:</p>
+            <p>The rough break-down of a typical lecture:</p>
             <ul>
               <li>1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics.</li>
               <li>1830-1900: Doing exercises related to previous week topics.</li>
@@ -315,9 +294,9 @@
               <li>2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.</li>
               <li>2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.</li>
             </ul>
-            <p><strong><span><span aria-hidden="true" class="far fa-images"></span></span> Lecture slides will be uploaded to IVLE after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong>              as they have been
+            <p><strong><span><span aria-hidden="true" class="far fa-images"></span></span> Lecture slides will be uploaded to LumiNUS after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong>              as they have been
               <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.</p>
-            <p>💡 If slides are not in IVLE by the expected times, please feel free to ping the lecturer.</p>
+            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.</p>
           </div>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
           <h1 id="tutorials">Tutorials<a class="fa fa-anchor" href="#tutorials"></a></h1>
@@ -338,1575 +317,220 @@
           <h1 id="programming-language">Programming Language<a class="fa fa-anchor" href="#programming-language"></a></h1>
           <p>This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.</p>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+          <h1 id="programming-exercises">Programming Exercises<a class="fa fa-anchor" href="#programming-exercises"></a></h1>
+          <span id="exercises-info">
+<p>In some weeks, there will be some programming exercises for you to submit (on <code>Repl.it</code>). You should do the exercises as you learn the topics.</p>
+<box type="warning">
+<p><strong>Learn the topic first before trying the exercises</strong>. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercises.
+</p></box></span>
           <h1 id="project">Project<a class="fa fa-anchor" href="#project"></a></h1>
-          <p>You may choose one of these two options. You can switch between the options any time.</p>
-          <ul>
-            <li><strong><strong>Option A (structured):</strong></strong>
-              <ul>
-                <li>This option is recommended for those who are new to programming.</li>
-                <li>The project is to be done individually, but you may collaborate with each other in the early stages of the project to help each other.</li>
-                <li>To be done using Python.</li>
-                <li>You are also expected to,
-                  <ul>
-                    <li>submit
-                      <tooltip content="more than 60% of exercises">most</tooltip> of the weekly programming exercises (on <a href="http://repl.it">repl.it</a>) within two weeks of the corresponding lecture <span class="dimmed">e.g., submit week 2 exercises before week 4 lecture</span></li>
-                    <li>submit weekly
-                      <trigger trigger="click" for="modal:admin-projectIncrements">project increments</trigger> within two weeks of the corresponding lecture for the first 8 weeks i.e., up to Monty 9. Monty 10 onwards are optional but you can use them as guidance for your own project.</li>
-                  </ul>
-                </li>
-                <li>Marks breakdown [40 marks]:
-                  <ul>
-                    <li><mark>Weekly exercises [5 marks]</mark></li>
-                    <li><mark>Weekly project increments [5 marks]</mark></li>
-                    <li>Midterm submission: [5 marks]</li>
-                    <li>Final submission: [25 marks]</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <box type="warning">
-            <p>When creating <a href="http://repl.it">repl.it</a> accounts, please use a username similar to your actual name so that it is easy to identify you.
-            </p>
-          </box>
-          <ul>
-            <li><strong><strong>Option B (flexible):</strong></strong>
-              <ul>
-                <li>This option is recommended for those who have some prior programming experience.</li>
-                <li>To be done in individually, or teams of 2-3 members.</li>
-                <li>The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</li>
-                <li>Marks breakdown [40 marks]:
-                  <ul>
-                    <li>Midterm submission: [10 marks]</li>
-                    <li>Final submission: [30 marks]<br><br></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><strong><strong>Option C (a mix of A and B):</strong></strong>
-              <ul>
-                <li>Similar to option A, you should submit weekly exercises and project increments.</li>
-                <li>Do the project <s>individually or</s> as a team of 2-3 members.</li>
-                <li>Programming language: Python</li>
-                <li>Marks breakdown [40 marks]:
-                  <ul>
-                    <li><mark>Weekly exercises  +  Weekly project increments [5 marks]</mark> (similar to option A)</li>
-                    <li>Midterm submission: [10 marks]</li>
-                    <li>Final submission: [25 marks]</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <modal large title="Project Increments" id="modal:admin-projectIncrements">
-            <p>Missing project increments will be filled up near to the corresponding week.</p>
-            <div>
-              <div id="intro">
-                <div class="lead">
-                  <pic add-class="float-left border mr-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
-                    <p><small><small>The <strong>Monty Python</strong> Comedy Group,<br> [<a href="https://en.wikipedia.org/wiki/Monty_Python">credit: Wikipedia</a>]</small></small>
-                    </p>
-                  </pic>
-                  <p><strong>The <em>Monty Project</em> is an educational software project designed to take you through the steps of building a small software <em>incrementally</em></strong>, while applying as many Python and SE techniques as possible along
-                    the way.
-                  </p>
-                </div>
-                <p><strong>The project aims to build a product named <em>Monty</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Monty</em> was chosen as a placeholder name, in honor of the <a href="https://en.wikipedia.org/wiki/Monty_Python">Monty Python comedy group</a> whose work inspired the name of the the Python language.</span>                  <strong>You may give it any other name and personality you wish.</strong></p>
-                <p>Here is a sample interaction with Monty:</p>
-                <pre><code class="hljs">*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-******************************************************************************************* 
-
-&gt;&gt;&gt; What can I do for you?
-
-help
-&gt;&gt;&gt; I'm glad you asked. Here it is:
-==================================================
-Monty can understand the following commands:
-
-  add DESCRIPTION 
-    Adds a task with the DESCRIPTION to the list
-    Example: add read book
-  done INDEX
-    Marks the task at INDEX as 'done'
-    Example: done 1
-  exit
-    Exits the application
-  help
-    Shows the help information
-  list
-    Lists the tasks in the list
--------------------------------------------------- 
-
-&gt;&gt;&gt; What can I do for you?
-
-add read book
-&gt;&gt;&gt; Task added to the list
-&gt;&gt;&gt; What can I do for you?
-
-add return book
-&gt;&gt;&gt; Task added to the list
-&gt;&gt;&gt; What can I do for you?
-
-done 1
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | read book                  
-  ✗    |   2   | return book                
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-</code></pre>
-              </div>
-              <div id="increments_summary">
-                <p>The project consists of the following <em>increments</em>:</p>
-                <ul>
-                  <li><strong>Levels</strong>: A series of features, meant to be added to Monty in the given order, although some can be skipped. These have been named <code>Level 1</code> to <code>Level 14</code> to indicate how the features make the product
-                    progressively &quot;level up&quot;.</li>
-                  <li><strong>Extensions:</strong>
-                    <ul>
-                      <li><big><span class="badge badge-pill badge-primary">Category A</span></big> These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.</li>
-                      <li><big><span class="badge badge-pill badge-info">Category B</span></big> These are enhancements related to task tracking.</li>
-                      <li><big><span class="badge badge-pill badge-success">Category C</span></big> These are enhancements, not specifically related to task tracking.</li>
-                      <li><big><span class="badge badge-pill badge-danger">Category D</span></big> Each of these adds the ability to track another type of entities.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <h2 id="levels">
-                <div class="text-white bg-dark p-1">Levels</div><a class="fa fa-anchor" href="#levels"></a></h2>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty1">
-                <h3 id="monty-1">Monty 1<a class="fa fa-anchor" href="#monty-1"></a></h3>
-                <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
-                <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
-&gt;&gt;&gt; What can I do for you?
-foo
-&gt;&gt;&gt; Your command is: foo
-&gt;&gt;&gt; Bye!
-</code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
-<span class="hljs-comment"># ADD MORE CODE HERE</span>
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty2">
-                <h3 id="monty-2">Monty 2<a class="fa fa-anchor" href="#monty-2"></a></h3>
-                <p>Extend <a href="/2020/programming/chapters/monty.html#monty-1">Monty 1 code</a> to work as follows:</p>
-                <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Nothing to list
-&gt;&gt;&gt; What can I do for you?
-
-foo
-&gt;&gt;&gt; OOPS! Unknown command
-&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Are you sure? y/n
-n
-&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Are you sure? y/n
-y
-&gt;&gt;&gt; Bye!
-</code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
-<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
-    <span class="hljs-comment"># ADD MORE CODE HERE</span>
-print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty3">
-                <h3 id="monty-3">Monty 3<a class="fa fa-anchor" href="#monty-3"></a></h3>
-                <p>Restructure the <a href="/2020/programming/chapters/monty.html#monty-2">Monty 2 code</a> to fit the following structure, while keeping the behavior same as Monty 2.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
-
-
-<span class="hljs-comment"># ADD MISSING METHODS</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        command = read_command()
-        execute_command(command)
-
-
-main()
-</code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
-    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)
-    response = input()
-    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
-    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
-        <span class="hljs-keyword">return</span>
-    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
-        <span class="hljs-keyword">if</span> is_exit_confirmed():
-            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
-            sys.exit()
-    <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        command = read_command()
-        execute_command(command)
-
-
-main()
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty4">
-                <h3 id="monty-4">Monty 4<a class="fa fa-anchor" href="#monty-4"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-3">Monty 3 code</a> to improve the functionality as per the sample output given below.</p>
-                <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Nothing to list
-&gt;&gt;&gt; What can I do for you?
-
-add read book
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; List of items:
-     1. read book
-&gt;&gt;&gt; What can I do for you?
-
-add return book
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; List of items:
-     1. read book
-     2. return book
-&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Are you sure? y/n
-y
-&gt;&gt;&gt; Bye!
-</code></pre>
-                <box>
-                  <p>💡 You can use the list slicing syntax to extract a portion of a string.<br></p>
-                  <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="code-block">
-                            <pre><code class="hljs python">s = <span class="hljs-string">'abcdefgh'</span>
-print(s[<span class="hljs-number">2</span>:])
-print(s[:<span class="hljs-number">5</span>])
-</code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
-                        </td>
-                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">cdefgh
-abcde
-</code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <p>The above technique can be used to extract the item description from an <code>add</code> command.
-                  </p>
-                </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
-
-items = []
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_items</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> len(items) == <span class="hljs-number">0</span>:
-        print(<span class="hljs-string">'&gt;&gt;&gt; Nothing to list'</span>)
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> enumerate(items):
-            <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item</span><span class="hljs-params">(user_input)</span>:</span>
-    <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">terminate</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-comment"># ...</span>
-
-<span class="hljs-comment"># ...</span>
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
-    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
-        <span class="hljs-keyword">return</span>
-    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
-        terminate()
-    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
-        print_items()
-    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
-        add_item(command)
-    <span class="hljs-keyword">else</span>:
-        print(<span class="hljs-string">'&gt;&gt;&gt; OOPS! Unknown command'</span>)
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        command = read_command()
-        execute_command(command)
-
-
-main()
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty5">
-                <h3 id="monty-5">Monty 5<a class="fa fa-anchor" href="#monty-5"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-4">Monty 4 code</a> in the following ways:</p>
-                <ul>
-                  <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
-                  <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
-                </ul>
-                <p>A sample output is given below.</p>
-                <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
-&gt;&gt;&gt; What can I do for you?
-
-add borrow book
-&gt;&gt;&gt; What can I do for you?
-
-add read book
-&gt;&gt;&gt; What can I do for you?
-
-add return book
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; List of items:
-     [✗] 1. borrow book
-     [✗] 2. read book
-     [✗] 3. return book
-&gt;&gt;&gt; What can I do for you?
-
-done 1
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; List of items:
-     [✓] 1. borrow book
-     [✗] 2. read book
-     [✗] 3. return book
-&gt;&gt;&gt; What can I do for you?
-
-done abc
-&gt;&gt;&gt; SORRY, I could not perform that command. Problem: abc is not a number
-&gt;&gt;&gt; What can I do for you?
-
-done 5
-&gt;&gt;&gt; SORRY, I could not perform that command. Problem: No item at index 5
-&gt;&gt;&gt; What can I do for you?
-
-done 0
-&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Index must be greater than 0
-&gt;&gt;&gt; What can I do for you?
-
-garbage
-&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Command not recognized
-&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Are you sure? y/n
-y
-&gt;&gt;&gt; Bye!
-</code></pre>
-                <box>
-                  <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">tasks = []
-tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])
-print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
-
-<span class="hljs-keyword">if</span> tasks[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]:
-    print(<span class="hljs-string">'✓'</span>)
-<span class="hljs-keyword">else</span>:
-    print(<span class="hljs-string">'✗'</span>)
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                  <p>💡 You can use exceptions to identify and handle errors in the command.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        <span class="hljs-keyword">try</span>:
-            command = read_command()
-            execute_command(command)
-        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python">
-items = []
-
-<span class="hljs-comment"># ...</span>
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_item_for_index</span><span class="hljs-params">(index_as_string)</span>:</span>
-    <span class="hljs-keyword">try</span>:
-        index = int(index_as_string.strip())
-    <span class="hljs-keyword">except</span> Exception:
-        <span class="hljs-keyword">raise</span> ValueError(index_as_string + <span class="hljs-string">' is not a number '</span>)
-
-    <span class="hljs-keyword">if</span> index &lt; <span class="hljs-number">1</span>:
-        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Index must be greater than 0 '</span>)
-
-    <span class="hljs-keyword">try</span>:
-        <span class="hljs-keyword">return</span> items[index - <span class="hljs-number">1</span>]
-    <span class="hljs-keyword">except</span> IndexError:
-        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'No item at index '</span> + index_as_string)
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_item_as_done</span><span class="hljs-params">(user_input)</span>:</span>
-    index_as_string = user_input[<span class="hljs-number">5</span>:]
-    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-literal">True</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
-    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
-        <span class="hljs-keyword">return</span>
-    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
-        terminate()
-    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
-        print_items()
-    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
-        add_item(command)
-    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'done '</span>):
-        mark_item_as_done(command)
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        <span class="hljs-keyword">try</span>:
-            command = read_command()
-            execute_command(command)
-        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
-
-
-main()
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty6">
-                <h3 id="monty-6">Monty 6<a class="fa fa-anchor" href="#monty-6"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-5">Monty 5 code</a> in the following ways:</p>
-                <ul>
-                  <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
-                  <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
-                </ul>
-                <p>A sample output is given below.</p>
-                <pre><code class="hljs">*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-******************************************************************************************* 
-
-&gt;&gt;&gt; What can I do for you?
-
-help
-&gt;&gt;&gt; I'm glad you asked. Here it is:
-==================================================
-Monty can understand the following commands:
-
-  add DESCRIPTION 
-    Adds a task to the list
-    Example: add read book
-  done INDEX
-    Marks the task at INDEX as 'done'
-    Example: done 1
-  exit
-    Exits the application
-  help_info
-    Shows the help_info information
-  list
-    Lists the tasks in the list
--------------------------------------------------- 
-
-&gt;&gt;&gt; What can I do for you?
-
-add read book
-&gt;&gt;&gt; Task added to the list
-&gt;&gt;&gt; What can I do for you?
-
-add return book
-&gt;&gt;&gt; Task added to the list
-&gt;&gt;&gt; What can I do for you?
-
-done 1
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | read book                  
-  ✗    |   2   | return book                
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-</code></pre>
-                <box>
-                  <p>💡 You can use triple quotes to define a long string such as the help text.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">help_text =<span class="hljs-string">'''
-long text
-more text
-'''</span>
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                  <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
-                </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
-    banner = <span class="hljs-string">'''
-*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-*******************************************************************************************
-'''</span>
-    print(banner.strip(), <span class="hljs-string">'\n'</span>)
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty7">
-                <h3 id="monty-7">Monty 7<a class="fa fa-anchor" href="#monty-7"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-6">Monty 6 code</a> in the following ways:</p>
-                <ul>
-                  <li>Monty <strong>saves tasks into a csv file</strong>.</li>
-                  <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
-                </ul>
-                <p>A sample output is given below. Note the following:</p>
-                <ul>
-                  <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
-                  <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
-                </ul>
-                <pre><code class="hljs">*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-******************************************************************************************* 
-
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-delete 2
-&gt;&gt;&gt; Task deleted from the list
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | return book                  
---------------------------------------------------
-</code></pre>
-                <box>
-                  <p>💡 here are some tips:</p>
-                  <ul>
-                    <li>The filename can be specified in the code. e.g.,
-                      <div class="code-block">
-                        <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
-</code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </li>
-                    <li>The format of the file is up to you. Here is an example:
-                      <pre><code class="hljs">borrow book,done
-read book,pending
-return book,pending
-</code></pre>
-                    </li>
-                    <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
-                      <div class="code-block">
-                        <pre><code class="hljs python"> items = []
- DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
- 
- 
- <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
-     print_greeting()
-     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-         <span class="hljs-keyword">try</span>:
-             command = read_command()
-             execute_command(command)
-             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
-         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
- 
- 
- main()
-</code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </li>
-                  </ul>
-                </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <p>Here is the code for loading data from the file.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
-    data_file = open(filename)
-    deliveries_reader = csv.reader(data_file)
-    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:
-            <span class="hljs-keyword">continue</span>
-        add_item_from_csv_line(row)
-    data_file.close()
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
-    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
-    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                  <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                    is a shortcut syntax. It is equivalent to the code below:</p>
-                  <pre><code class="hljs">if values[1] == 'done':
-    status = True
-else:
-    status = False
-</code></pre>
-                </panel>
-                <p></p>
-                <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
-                <ul>
-                  <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
-                    <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Bye!
-</code></pre>
-                  </li>
-                  <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
-                    <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
- 
- list
- &gt;&gt;&gt; Here is the list of tasks:
- ==================================================
- STATUS | INDEX | DESCRIPTION                
- --------------------------------------------------
-   ✓    |   1   | borrow book                
-   ✗    |   2   | read book                  
-   ✗    |   3   | return book                
- --------------------------------------------------
- &gt;&gt;&gt; What can I do for you?
- 
- pending 1
- &gt;&gt;&gt; OK, I have marked that item as pending
- &gt;&gt;&gt; What can I do for you?
- 
- list
- &gt;&gt;&gt; Here is the list of tasks:
- ==================================================
- STATUS | INDEX | DESCRIPTION                
- --------------------------------------------------
-   ✗    |   1   | borrow book                
-   ✗    |   2   | read book                  
-   ✗    |   3   | return book                
- --------------------------------------------------
- &gt;&gt;&gt; What can I do for you?
-</code></pre>
-                  </li>
-                  <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
-                    <pre><code class="hljs">add read book
-ADD read book
-Add read book
-add    read book
-    add read book
-</code></pre>
-                  </li>
-                </ul>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty8">
-                <h3 id="monty-8">Monty 8<a class="fa fa-anchor" href="#monty-8"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-7">Monty 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
-                <p>Previous behavior:</p>
-                <ul>
-                  <li><code>add buy book</code>: adds a task <code>buy book</code></li>
-                </ul>
-                <p>Proposed change - replace the above command with the following two:</p>
-                <ul>
-                  <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
-                  <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br> Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description of the
-                    deadline.</li>
-                </ul>
-                <p>A sample output is given below.</p>
-                <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-============================================================
-STATUS | INDEX | DESCRIPTION                 | DEADLINE
-------------------------------------------------------------
-  ✓    |   1   | borrow book                 | -
-  ✗    |   2   | read book                   | -
-  ✗    |   3   | return book                 | Monday
-------------------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-todo watch movie
-&gt;&gt;&gt; What can I do for you?
-
-deadline submit assignment by: end of May
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-============================================================
-STATUS | INDEX | DESCRIPTION                 | DEADLINE
-------------------------------------------------------------
-  ✓    |   1   | borrow book                 | -
-  ✗    |   2   | read book                   | -
-  ✗    |   3   | return book                 | Monday
-  ✗    |   4   | watch movie                 | -
-  ✗    |   5   | submit assignment           | end of May
-------------------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-</code></pre>
-                <box>
-                  <p>💡 here are some tips:</p>
-                  <ul>
-                    <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline
-                      items, respectively.
-                      <div class="code-block">
-                        <pre><code class="hljs python">[
- {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},
- {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},
- {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}
-]
-
-</code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </li>
-                    <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
-                      <pre><code class="hljs">T,borrow book,done
-T,read book,pending
-D,return book,pending,Monday
-</code></pre>
-                    </li>
-                  </ul>
-                </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <p>Here is the code adding a todo item:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
-<span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
-    items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})
-<span class="hljs-keyword">elif</span>  ...
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-                <p></p>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty9">
-                <h3 id="monty-9">Monty 9<a class="fa fa-anchor" href="#monty-9"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-8">Monty 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <p>Here is the code for an example <code>ToDo</code> class:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
-        self.description = description
-        self.is_done = status
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
-        self.is_done = <span class="hljs-literal">True</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
-        self.is_done = <span class="hljs-literal">False</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-string">""" Return the details of todo object as a string"""</span>
-        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
-        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-string">""" Return the details of todo object as a list,
-        suitable to be stored in a csv file.
-        """</span>
-        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                  <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
-    data_file = open(filename)
-    deliveries_reader = csv.reader(data_file)
-    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
-        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:
-            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))
-        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:
-            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))
-    data_file.close()
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span>
-    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)
-    output_writer = csv.writer(output_file)
-    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:
-        output_writer.writerow(item.as_csv())
-    output_file.close()
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-                <p></p>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty10">
-                <h3 id="monty-10">Monty 10<a class="fa fa-anchor" href="#monty-10"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-9">Monty 9 code</a> to extract the following classes:</p>
-                <ul>
-                  <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
-                  <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
-                  <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
-                </ul>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <p>Here's the main part of the code that illustrates how these objects can work together:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
-    ui = UserInterface()
-    ui.show_greeting()
-
-    <span class="hljs-comment"># create a StorageManager object</span>
-    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)
-
-    <span class="hljs-comment"># create a TaskManager object and load data</span>
-    task_manager = TaskManager(storage)
-    task_manager.load_data()
-
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        <span class="hljs-keyword">try</span>:
-            command = ui.read_command()
-            execute_command(command, task_manager, ui)
-            task_manager.save_data()
-        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))
-
-
-main()
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                  <p>Here's a partial <code>execute_command</code> function:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
-    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
-        ui.display(<span class="hljs-string">'Bye!'</span>)
-        sys.exit()
-    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:
-        message = task_manager.get_items_as_table()
-        ui.display(message)
-    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:
-        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))
-        ui.display(message)
-    ...
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-                <p></p>
-                <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
-                <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-    ============================================================
-    STATUS | INDEX | DESCRIPTION                 | DEADLINE
-    ------------------------------------------------------------
-      ✓    |   1   | borrow book                 | -
-      ✗    |   2   | read book                   | -
-      ✗    |   3   | return book                 | Monday
-    ------------------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0
-&gt;&gt;&gt; What can I do for you?
-
-done 2
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0
-&gt;&gt;&gt; What can I do for you?
-
-done 3
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1
-&gt;&gt;&gt; What can I do for you?
-
-pending 2
-&gt;&gt;&gt; OK, I have marked that item as pending
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-    ============================================================
-    STATUS | INDEX | DESCRIPTION                 | DEADLINE
-    ------------------------------------------------------------
-      ✓    |   1   | borrow book                 | -
-      ✗    |   2   | read book                   | -
-      ✓    |   3   | return book                 | Monday
-    ------------------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-</code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
-
-    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
-        self.description = description
-        self.is_done = status
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span>
-            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
-        self.is_done = <span class="hljs-literal">True</span>
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-                <p></p>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty11">
-                <h3 id="monty-11">Monty 11<a class="fa fa-anchor" href="#monty-11"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-10">Monty 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
-
-    TYPE_KEY = <span class="hljs-string">'T'</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
-        self.description = description
-        self.is_done = status
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
-        self.is_done = <span class="hljs-literal">True</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
-        self.is_done = <span class="hljs-literal">False</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__status_as_icon</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-string">'('</span> + self.__status_as_icon() + <span class="hljs-string">') '</span> + self.description
-
-    <span class="hljs-comment"># more code ...</span>
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-params">(ToDo)</span>:</span>
-
-    TYPE_KEY = <span class="hljs-string">'D'</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status, by)</span>:</span>
-        super().__init__(description, status)
-        self.by = by
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span>
-
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                  <p>Note:</p>
-                  <ul>
-                    <li>There no need for the <code>Deadline</code> class to implement methods such as <code>mark_as_done</code> because it inherits those methods from the parent class.</li>
-                    <li>Note how the <code>Deadline</code> class overrides some methods (e.g., <code>__init__</code>) but uses the parent class method inside the overridden method (e.g., <code>__init__</code> method of the <code>Deadline</code> class calls
-                      the
-                      <code>super().__init__()</code> method.</li>
-                  </ul>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty12">
-                <h3 id="monty-12">Monty 12<a class="fa fa-anchor" href="#monty-12"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-11">Monty 11 code</a> to divide the source code into multiple files (e.g., <code>todo.py</code>, <code>deadline.py</code>, etc.).</p>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty13">
-                <h3 id="monty-13">Monty 13<a class="fa fa-anchor" href="#monty-13"></a></h3>
-                <p>Add some unit tests to <a href="/2020/programming/chapters/monty.html#monty-12">Monty 12 code</a>.</p>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-              <div id="monty14">
-                <h3 id="monty-14">Monty 14<a class="fa fa-anchor" href="#monty-14"></a></h3>
-                <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty-13">Monty 13 code</a> to integrate it with the skeletal GUI given below.</p>
-                <p>Notes about the given version of the GUI:</p>
-                <ul>
-                  <li>The GUI shows the list of tasks all the time.</li>
-                  <li>It initializes with some dummy data.</li>
-                  <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
-                </ul>
-                <p>Here are some screenshots of the GUI:<br>
-                  <img src="/2020/programming/monty/images/gui-start.png"></p>
-                <p></p>
-                <img src="/2020/programming/monty/images/gui-later.png">
-                <p></p>
-                <panel type="seamless" header="Skeletal GUI code">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
-<span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
-
-<span class="hljs-keyword">import</span> sys
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span>
-        self.task_manager = task_manager
-        self.window = Tk()
-        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span>
-        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span>
-
-        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span>
-        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span>
-        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span>
-        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span>
-
-        <span class="hljs-comment"># add a text area to show the chat history</span>
-        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)
-        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)
-        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)
-        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
-        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
-        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)
-
-        <span class="hljs-comment"># add a text area to show the list of tasks</span>
-        self.list_area = Text(self.window)
-        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)
-        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)
-        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
-        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
-
-        <span class="hljs-comment"># show the welcome message and the list of tasks</span>
-        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)
-        self.update_task_list(self.task_manager.items)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span>
-        <span class="hljs-string">"""
-        status_format: indicates which color to use for the status message
-          can be 'error_format', 'success_format', or 'normal_format'
-        """</span>
-        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)
-        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
-        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)
-        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
-        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span>
-        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span>
-        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):
-            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:
-                icon = <span class="hljs-string">'✓'</span>
-                output_format = <span class="hljs-string">'done_format'</span>
-            <span class="hljs-keyword">else</span>:
-                icon = <span class="hljs-string">'✗'</span>
-                output_format = <span class="hljs-string">'pending_format'</span>
-            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span>
-        self.input_box.delete(<span class="hljs-number">0</span>, END)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span>
-        command = <span class="hljs-literal">None</span>
-        <span class="hljs-keyword">try</span>:
-            command = self.input_box.get()
-            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:
-                sys.exit()
-            output = self.task_manager.execute_command(command)
-            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)
-            self.update_task_list(self.task_manager.items)
-            self.clear_input_box()
-        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span>
-        self.window.mainloop()
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-        self.items = [
-            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],
-            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],
-            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]
-        ]
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span>
-        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:
-            <span class="hljs-keyword">return</span> self.get_help()
-        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
-            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])
-            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span>
-        <span class="hljs-keyword">else</span>:
-            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
-
-
-GUI(TaskManager()).start()
-</code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
-                </panel>
-              </div>
-              <hr style="border-top: 3px double #c5c5c5;">
-            </div>
-          </modal>
-          <h3 id="software-to-build">Software to build<a class="fa fa-anchor" href="#software-to-build"></a></h3>
-          <p>You will be building a personal assistant chat-bot software named <em>Monty</em> (<em>Monty</em> is a temporary name; you should give a different name to your own chat bot)</p>
-          <p><strong><em>Basic</em> Functionality</strong>:</p>
-          <ol>
-            <li>
-              <p>Monty interface can be text-based (i.e., no need for a graphical UI)</p>
-            </li>
-            <li>
-              <p>Monty helps with storing and retrieving at least <strong>one type of data</strong> that is useful to the user. Some examples of different types of data (you can pick one or more of them): details of contacts, todo items, appointments, deadlines,
-                reminders, technical terms to remember, etc. Here is an example interaction between a user and a Monty that deals with TODO items:</p>
-              <pre><code class="hljs">Hi, I'm Monty. How can I help you?
-
-add Return library book
-&gt;&gt;&gt; TODO added: Return library book
-
-list
-&gt;&gt;&gt; Here are the list of TODOs you have:
-1. Return library book
-2. Do TE3201 exercises
-3. Call back Jina
-
-delete 2
-&gt;&gt;&gt; TODO deleted: Do TE3201 exercises
-
-are you single?
-&gt;&gt;&gt; Sorry. I did not understand your request.
-
-help
-&gt;&gt;&gt; Here are the requests I understand.
-add {TODO description} : adds a TODO to the list
-list : lists all TODOs
-...
-
-</code></pre>
-            </li>
-            <li>
-              <p>There is <strong>no need for Monty to be able to understand natural language</strong> sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction
-                given above is just an example only. Hint: try to design a request format that is easy to remember and type.</p>
-            </li>
-            <li>
-              <p>Monty should support <strong>adding, deleting, listing, searching</strong> (by keyword) of data items.</p>
-            </li>
-            <li>
-              <p><em>Persistence</em>: The data should be <strong>stored in the hard disk</strong> so that restarting Monty should not cause a loss of data entered in a previous session.</p>
-              <ol>
-                <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
-              </ol>
-            </li>
-          </ol>
-          <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
-          <div class="table-responsive">
-            <table class="markbind-table table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Team size</th>
-                  <th>Total amount of functionality</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1-person</td>
-                  <td>3-4 units</td>
-                </tr>
-                <tr>
-                  <td>2-persons</td>
-                  <td>4-5 units</td>
-                </tr>
-                <tr>
-                  <td>3-persons</td>
-                  <td>5-6 units</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p><strong><em>Additional</em> Functionality</strong>:</p>
-          <p>Some suggestions for <em>additional functionality</em>:</p>
-          <ul>
-            <li>More attributes for data items e.g., priorities, tags, birthdays</li>
-            <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
-              <ul>
-                <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
-              </ul>
-            </li>
-            <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
-            <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
-            <li>Any other feature (get approval from prof before implementing)</li>
-          </ul>
-          <h3 id="constraints">Constraints<a class="fa fa-anchor" href="#constraints"></a></h3>
-          <ol>
-            <li>You should not use relational/SQL databases e.g., MySQL</li>
-            <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
-              <ul>
-                <li>If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
-              </ul>
-            </li>
-          </ol>
-          <h3 id="deliverables">Deliverables<a class="fa fa-anchor" href="#deliverables"></a></h3>
-          <div id="midterm-submission-info">
+          <div id="project-info">
             <ul>
-              <li><strong>Week 8</strong> (mid-term submission):
+              <li>The project is to be done <strong>individually</strong>.</li>
+              <li>The project based on a <a href="/2020/programming/chapters/monty.html">generic project called Monty</a>.</li>
+              <li>In the project, you will build a small chatbot, <strong>using Python</strong> (if you wish to use a different programming language, please ask for permission first).</li>
+              <li>The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.</li>
+              <li>Some project increments will be common to all students, while some will vary from student to student (to be announced near to the date). That means your final product will be unique in terms of total features, but some features will be common
+                to other students in the class.</li>
+              <li>Constraints:
+                <ol>
+                  <li>You should not use relational/SQL databases e.g., MySQL</li>
+                  <li>The software should work in a Windows computer that has Python 3. If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div id="final-submission-info">
+            <h3 id="week-13-final-submission">Week 13: Final Submission<a class="fa fa-anchor" href="#week-13-final-submission"></a></h3>
+            <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students,
+              the late submission penalty will be small (e.g., <code>-1</code> per day).</p>
+            <ul>
+              <li><strong>The deadline for seeking feedback on the project report draft</strong>: week 13 lecture.
                 <ul>
-                  <li>Deadline: Week 8, Tuesday 6pm</li>
-                  <li>Functionality: at least most of the basic requirements are fulfilled (you may leave out the <em>persistence</em> requirement). If you are taking option A or C, implement at least upto <a href="/2020/programming/chapters/monty.html">Monty 5</a>.
-                    <ul>
-                      <li>Submission: demo during the lecture in week 8.</li>
-                    </ul>
-                  </li>
-                  <li>Documentation:
-                    <ul>
-                      <li>Sections to include:
-                        <ul>
-                          <li>Cover page: Include product name, names of team members</li>
-                          <li>User stories: Give user stories to cover all current and planned future features</li>
-                          <li>Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.</li>
-                          <li>Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.</li>
-                          <li>Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint),
-                            or hand-sketch and photograph/scan the diagrams.</li>
-                        </ul>
-                      </li>
-                      <li>Submission: upload to IVLE as a <code>.docx</code> or <code>.pdf</code> file. File name should contain team member names. e.g., <code>John Doe, Sarah Tan, Viet Ngoc.docx</code></li>
-                    </ul>
-                  </li>
+                  <li>Preferred mode of feedback: in-person (reason: it is hard to give written feedback on diagrams)</li>
+                  <li>Such feedback will be limited to high-level comments only (reason: the report is graded).</li>
                 </ul>
               </li>
             </ul>
-            <div class="indented-level3">
-              <box type="info">
-                <p>Please try to be present for one of the two demo slots on the day to demo your project to me.</p>
+            <p><strong>Deliverables</strong>:</p>
+            <ol>
+              <li><strong>Source code</strong> of the working program: zip (not rar) the code and submit to LumiNUS<br>name: File name: <code>{YourName}.zip</code> e.g., <code>JunHao.zip</code></li>
+              <li><strong>Documentation</strong>: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br> Submission: Upload to LumiNUS. The file name should be your name e.g., <code>JunHao.docx</code></li>
+              <li><strong>Demo video</strong>:
                 <ul>
-                  <li>Timing: [6-7pm: project demos] [7-8pm: normal lecture] [8-9.30pm: project demos]</li>
-                  <li>Demo order: <em>first come, first served</em>.</li>
-                </ul>
-                <p>Normally, I would give my feedback for the midterm project document on week 9-10. If you don't intend to attend the lectures on those weeks, please bring a printout of your project document to your project demo so that I can give feedback
-                  on it the same day.
-                </p>
-              </box>
-            </div>
-          </div>
-          <div id="project-final-submission">
-            <ul>
-              <li><strong>Week 13</strong> (final submission):
-                <ul>
-                  <li>Functionality: all functionality
-                    <ul>
-                      <li>Submission:
-                        <ul>
-                          <li>Zip up all source files, upload to IVLE as a single <code>.zip</code> file (not <code>.rar</code>). File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
-                          <li>Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced
-                            later.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>Documentation:
-                    <ul>
-                      <li>Include all content included in mid-term submission. <mark>Refine as per feedback given. Update to match the final product.</mark></li>
-                      <li>Add a <strong>class diagram</strong> to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you <em>propose</em> to design your software in an OOP approach, if you were to
-                        do the project again. [
-                        <trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]</li>
-                      <li>Add an <strong>object diagram</strong> to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [
-                        <trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]</li>
-                      <li>Give a sample of <strong>test cases</strong> you would use to test the software.
-                        <ul>
-                          <li>
-                            <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [
-                            <trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]</li>
-                          <li>Unit test cases for
-                            <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output.
-                            [
-                            <trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]</li>
-                        </ul>
-                      </li>
-                      <li>Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. ⏰ Deadline: week 13 Monday midnight.</li>
-                    </ul>
-                  </li>
+                  <li>Record a demo video showcasing the features of your product.</li>
+                  <li>Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).</li>
+                  <li>Recommended length 7 minutes, max length 10 minutes).</li>
+                  <li>Audio narration is optional if the demo can be understood without the audio.</li>
+                  <li>Ensure the video is in a format that can be played by any computer.</li>
+                  <li>Submission: Name the file with your name (to match the zip and the report file) and upload to LumiNUS.</li>
                 </ul>
               </li>
-            </ul>
-            <modal large title="Class diagram example" id="modal:finalSubmission-classDiagram">
-              <p>Your actual class diagram is <mark>likely to be simpler</mark> than this example:</p>
-              <img src="/2020/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
-            <modal large title="Object diagram example" id="modal:finalSubmission-objectDiagram">
-              <img src="/2020/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" height="120"></modal>
-            <modal large id="modal:finalSubmission-systemTests">
-              <h2 id="sample-system-tests">Sample System Tests<a class="fa fa-anchor" href="#sample-system-tests"></a></h2>
-              <p><strong>Test case 1: Launch without prior data</strong></p>
-              <ul>
-                <li>Feature being tested : launch of app, without any prior data</li>
-                <li>Set up:
-                  <ol>
-                    <li>Delete all files in the <code>/data/</code> folder.</li>
-                  </ol>
-                </li>
-                <li>Steps:
-                  <ol screenshot here>
-                    <li>Run the app using the command <code>python main.py</code></li>
-                    <li>Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br></li>
-                  </ol>
-                </li>
-              </ul>
-              <p><strong>Test case 2: Add first contact</strong></p>
-              <ul screenshot here>
-                <li>Feature being tested : adding of a contact when there are no prior data</li>
-                <li>Set up:
-                  <ol>
-                    <li>Launch app without any prior data (similar to <code>Test case 1</code> above).</li>
-                  </ol>
-                </li>
-                <li>Steps:
-                  <div class="table-responsive">
-                    <table class="markbind-table table table-bordered table-striped">
-                      <thead>
-                        <tr>
-                          <th>Input</th>
-                          <th>Expected</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Enter command <code>add</code></td>
-                          <td>app shows error message and show the correct format of the <code>add</code> command</td>
-                        </tr>
-                        <tr>
-                          <td>Enter command<br> <code>add John Doe</code></td>
-                          <td>app shows list of contacts containing only one person<br></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </li>
-              </ul>
-            </modal>
-            <modal large id="modal:finalSubmission-unitTests">
-              <h2 id="sample-unit-tests">Sample Unit Tests<a class="fa fa-anchor" href="#sample-unit-tests"></a></h2>
-              <p><strong>Function being tested : <code>add_contact(current_contacts, new_contact)</code></strong></p>
-              <p>Description of the function: appends the <code>Person</code> object <code>new_contact</code> to the <code>current_contacts</code> (a list of <code>Person</code> objects) if it doesn't contain that person already.</p>
-              <div class="table-responsive">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th><code>current_contacts</code></th>
-                      <th><code>new_contact</code></th>
-                      <th>Expected <code>current_contacts</code></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><code>[]</code></td>
-                      <td><code>Person('John')</code></td>
-                      <td><code>[Person('John')]</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>[Person('John')]</code></td>
-                      <td><code>Person('John')</code></td>
-                      <td><code>[Person('John')]</code></td>
-                    </tr>
-                    <tr>
-                      <td><code>[Person('John')]</code></td>
-                      <td><code>Person('Amy')</code></td>
-                      <td><code>[Person('John'), Person('Amy')]</code></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </modal>
+            </ol>
           </div>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
-          <h1 id="assessment">Assessment<a class="fa fa-anchor" href="#assessment"></a></h1>
+          <h1 id="policies">Policies<a class="fa fa-anchor" href="#policies"></a></h1>
+          <span id="deadlines-info">
+<h3 id="deadlines">Deadlines<a class="fa fa-anchor" href="#deadlines"></a></h3>
+<ul>
+<li>Deadline for weekly tasks:
+<ul>
+<li><strong>If a specific deadline is given</strong>, adhere to that.</li>
+<li><strong>If no specific deadline is given</strong>,
+<ul>
+<li>Soft deadline: try to complete tasks allocated to a week by Tuesday 6.00pm of the following week (i.e., before the next lecture).</li>
+<li>Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.
+</li></ul></li></ul></li></ul></span>
+
+
+
+
+
+          <span id="plagiarism-info">
+<h3 id="plagiarism">Plagiarism<a class="fa fa-anchor" href="#plagiarism"></a></h3>
+<ul>
+<li>You may view/discuss others' work or get help from others. However, <span class="text-danger"> <mark>the work you submit should be your own</mark>. In case of similar submissions, marks will be divided among those submissions</span> e.g.,
+          if your submission scored 8/10 and there is another submission that is similar to your work (beyond co-incidental similarity), each submission will get 4 marks.
+          </li>
+          </ul>
+          </span>
+
+          <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+          <h1 id="tools">Tools<a class="fa fa-anchor" href="#tools"></a></h1>
           <div class="indented">
-            <ul>
-              <li>40% : Project</li>
-              <li>60% : Final Exam</li>
-            </ul>
+            <div id="repl-info">
+              <h3 id="repl-it"><code>repl.it</code><a class="fa fa-anchor" href="#repl-it"></a></h3>
+              <ul>
+                <li>We'll be using <code>Repl.it</code> for coding exercises (compulsory).</li>
+                <li>
+                  <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Create an account on <a href="https://repl.it">https://repl.it</a>.</li>
+                <li><mark>Make sure you set your display name in your <code>repl.it</code> user profile to match your real name</mark> (so that the prof can trace your <code>repl.it</code> submissions to you).</li>
+                <li>Join the <code>repl.it</code> classroom <code>tic2002-2020</code> using this link <a href="https://repl.it/classroom/invite/jcXc9CX">https://repl.it/classroom/invite/jcXc9CX</a>.</li>
+              </ul>
+            </div>
+            <div id="intellij-info">
+              <h3 id="pycharm">PyCharm<a class="fa fa-anchor" href="#pycharm"></a></h3>
+              <ul>
+                <li>
+                  <p>PyCharm is the recommended Python editor. While using PyCharm is optional, there will be no help/instructions given for other editors.</p>
+                </li>
+                <li>
+                  <p>In the initial weeks, <code>repl.it</code> online editor is good enough for writing Python code. As your project code gets bigger in later weeks, you can consider installing <a href="https://www.jetbrains.com/pycharm/download">PyCharm</a>                    on your computer. You may use the Community Edition (free) or the Professional Edition (free for students).</p>
+                </li>
+              </ul>
+            </div>
           </div>
+          <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+          <h1 id="getting-help">Getting Help<a class="fa fa-anchor" href="#getting-help"></a></h1>
+          <span id="help-info">
+<p>If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks</p>
+<ul>
+<li>you can post in the <a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum">module forum</a></li>
+<li>email prof at <span><code>damith</code>[at]<code>comp.nus.edu.sg</code></span></li>
+          <li>ask for prof's help during the following week’s tutorial hour</li>
+          </ul>
+          </span>
+          <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+          <span id="assessment-info">
+<h1 id="assessment">Assessment<a class="fa fa-anchor" href="#assessment"></a></h1>
+<ul>
+<li><strong>5%: Participation</strong> -- To get full marks, submit weekly programming exercises and weekly project increments <trigger trigger="click" for="modal:adminInfo-deadlineInfo">on time</trigger>.</li>
+<li><strong>35%: Project</strong>
+<ul>
+<li>10%: Documentation</li>
+<li>25%: Functionality, code</li></ul></li>
+<li><strong>60%: Final Exam</strong></li></ul>
+<modal large title="The Policy on Deadlines" id="modal:adminInfo-deadlineInfo">
+  <div>
+<h3 id="deadlines-2">Deadlines<a class="fa fa-anchor" href="#deadlines-2"></a></h3>
+<ul>
+<li>Deadline for weekly tasks:
+<ul>
+<li><strong>If a specific deadline is given</strong>, adhere to that.</li>
+<li><strong>If no specific deadline is given</strong>,
+<ul>
+<li>Soft deadline: try to complete tasks allocated to a week by Tuesday 6.00pm of the following week (i.e., before the next lecture).</li>
+<li>Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.</li></ul></li></ul></li></ul></div></modal></span>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
           <h1 id="exam">Exam<a class="fa fa-anchor" href="#exam"></a></h1>
-          <div class="indented">
-            <p>There is no midterm.</p>
-            <p>The final exam has two parts:</p>
-            <ul>
-              <li>Part 1: MCQ questions (1 hour, 30 marks)</li>
-              <li>Part 2: Essay questions (1 hour, 30 marks)</li>
-            </ul>
-            <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free to
-              start part 2 early if you finish Part 1 early.</p>
-            <box type="success">
-              <p>You will be given a practice exam paper to familiarize yourself with the exam format.
-              </p>
-            </box>
-            <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam-part-1-mcq"></a></h2>
-            <p><strong>Question format:</strong> Each MCQ question gives you a statement to evaluate.</p>
-            <tip-box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example statement</p>
-              <blockquote>
-                <p>Testing is a Q&amp;A activity</p>
-              </blockquote>
-            </tip-box>
-            <p>The meaning of answer options are<br>
-              <strong><code>A</code></strong>: <code>Agree</code>. If the question has multiple statements, <ins>agree with all of them</ins>.<br>
-              <strong><code>B</code></strong>: <code>Disagree</code>. If the question has multiple statements, <ins>disagree with at least one of them</ins><br>
-              <strong><code>C</code></strong>, <strong><code>D</code></strong>, <strong><code>E</code></strong>: Not used</p>
-            <p><strong>Number of questions: 50</strong></p>
-            <p><strong>You will not be allowed to clarify doubts about questions (in Part 1)</strong> by talking to invigilators. This is to be fair to all students as the the part 1 is fast-paced and each question has only two possible answers.</p>
-            <ul>
-              <li>If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.</li>
-              <li>If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.</li>
-            </ul>
-            <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.</p>
-            <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the question
-              is Java code.</p>
-            <p><strong>There is no negative marking.</strong> Therefore, you are recommended to answer all 50 questions. Even random answers are better than no answer.<br> First 25 correct answers will earn 0.2 marks each. Each correct answer from that point
-              will earn 1 mark each. If you answer all questions correctly, you get 30 marks i.e., <code>0.2x25 + 1.0x25</code>.</p>
-            <p><strong>Bring the correct type of pencils</strong> (i.e., B1) for marking the OCR form. If you use pens or the wrong type of pencil to mark the OCR form, the machine cannot read your answers.</p>
-            <p><strong>You are recommended to fill up the OCR form as you go</strong>, rather than wait to fill all answers in the OCR form at the end. However, only answers marked in the OCR form will be counted for grading.</p>
-            <p><img src="/2020/admin/images/contextTag.png"><br></p>
-            <p><strong>The paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format. However, electronic devices (including smart watches) are not allowed.</p>
-            <p>💡 <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed"> Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
-            <p>💡 <strong>Write the answer in the exam paper as well</strong> as marking it in the OCR form. <span class="dimmed"> Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
-            <p>💡 We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
-            <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam-part-2-essay"></a></h2>
-            <p>Unlike in part 1, <strong>you can ask invigilators for clarifications</strong> if you found a question to be unclear in part 2.</p>
-            <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
-          </div>
+          <p>There is no midterm.</p>
+          <p>The final exam has two parts:</p>
+          <ul>
+            <li>Part 1: MCQ questions (1 hour, 30 marks)</li>
+            <li>Part 2: Essay questions (1 hour, 30 marks)</li>
+          </ul>
+          <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free to
+            start part 2 early if you finish Part 1 early.</p>
+          <box type="success">
+            <p>You will be given a practice exam paper to familiarize yourself with the exam format.
+            </p>
+          </box>
+          <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)<a class="fa fa-anchor" href="#final-exam-part-1-mcq"></a></h2>
+          <p><strong>Question format:</strong> Each MCQ question gives you a statement to evaluate.</p>
+          <tip-box>
+            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example statement</p>
+            <blockquote>
+              <p>Testing is a Q&amp;A activity</p>
+            </blockquote>
+          </tip-box>
+          <p>The meaning of answer options are<br>
+            <strong><code>A</code></strong>: <code>Agree</code>. If the question has multiple statements, <ins>agree with all of them</ins>.<br>
+            <strong><code>B</code></strong>: <code>Disagree</code>. If the question has multiple statements, <ins>disagree with at least one of them</ins><br>
+            <strong><code>C</code></strong>, <strong><code>D</code></strong>, <strong><code>E</code></strong>: Not used</p>
+          <p><strong>Number of questions: 50</strong></p>
+          <p><strong>You will not be allowed to clarify doubts about questions (in Part 1)</strong> by talking to invigilators. This is to be fair to all students as the the part 1 is fast-paced and each question has only two possible answers.</p>
+          <ul>
+            <li>If a question is not clear, you can circle the question number and write your doubt in the exam paper, near the unclear question.</li>
+            <li>If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.</li>
+          </ul>
+          <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.</p>
+          <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the question
+            is Java code.</p>
+          <p><strong>There is no negative marking.</strong> Therefore, you are recommended to answer all 50 questions. Even random answers are better than no answer.<br> First 25 correct answers will earn 0.2 marks each. Each correct answer from that point
+            will earn 1 mark each. If you answer all questions correctly, you get 30 marks i.e., <code>0.2x25 + 1.0x25</code>.</p>
+          <p><strong>Bring the correct type of pencils</strong> (i.e., B1) for marking the OCR form. If you use pens or the wrong type of pencil to mark the OCR form, the machine cannot read your answers.</p>
+          <p><strong>You are recommended to fill up the OCR form as you go</strong>, rather than wait to fill all answers in the OCR form at the end. However, only answers marked in the OCR form will be counted for grading.</p>
+          <p><img src="/2020/admin/images/contextTag.png"><br></p>
+          <p><strong>The paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format. However, electronic devices (including smart watches) are not allowed.</p>
+          <p>💡 <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed"> Reason: Given there are 50 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
+          <p>💡 <strong>Write the answer in the exam paper as well</strong> as marking it in the OCR form. <span class="dimmed"> Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
+          <p>💡 We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
+          <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)<a class="fa fa-anchor" href="#final-exam-part-2-essay"></a></h2>
+          <p>Unlike in part 1, <strong>you can ask invigilators for clarifications</strong> if you found a question to be unclear in part 2.</p>
+          <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
         </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#te3201-software-engineering">TE3201 Software Engineering&#x200E;</a>
+            <a class="nav-link py-1" href="#module-overview">Module overview&#x200E;</a>
+            <a class="nav-link py-1" href="#using-this-module-website">Using this module website&#x200E;</a>
+            <a class="nav-link py-1" href="#instructors">Instructors&#x200E;</a>
+            <a class="nav-link py-1" href="#lectures">Lectures&#x200E;</a>
+            <a class="nav-link py-1" href="#tutorials">Tutorials&#x200E;</a>
+            <a class="nav-link py-1" href="#textbook">Textbook&#x200E;</a>
+            <a class="nav-link py-1" href="#programming-language">Programming Language&#x200E;</a>
+            <a class="nav-link py-1" href="#programming-exercises">Programming Exercises&#x200E;</a>
+            <a class="nav-link py-1" href="#project">Project&#x200E;</a>
+            <a class="nav-link py-1" href="#policies">Policies&#x200E;</a>
+            <a class="nav-link py-1" href="#tools">Tools&#x200E;</a>
+            <a class="nav-link py-1" href="#getting-help">Getting Help&#x200E;</a>
+            <a class="nav-link py-1" href="#assessment">Assessment&#x200E;</a>
+            <a class="nav-link py-1" href="#exam">Exam&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)&#x200E;</a>
+              <a class="nav-link py-1" href="#final-exam-part-2-essay">Final Exam: Part 2 (Essay)&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Wed, 25 Dec 2019 12:44:49 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 12:44:01 GMT</small></div>
     </footer>
   </div>
 </body>

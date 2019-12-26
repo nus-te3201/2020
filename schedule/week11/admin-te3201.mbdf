@@ -1,0 +1,16 @@
+{% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
+{% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
+
+{% call show_admin_summary() %}
+1. Monty: Add `Level 14. Add a GUI` or the individual feature.
+{% endcall %}
+
+
+### {{ thumb(1) }} Monty: Add `Level 14. Add a GUI` or the individual feature.
+
+* **Option 1:** Add the following project increment.
+
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 14. Add a GUI**" tag="optional" var-fragment="monty.mbdf#monty14" />
+<p/>
+
+* **Option 2: Add the allocated individual feature.** You will be given which feature to implement around week 10.
