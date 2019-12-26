@@ -54,28 +54,11 @@
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
         <dropdown text="Links" class="nav-link temp-dropdown">
-          <li><a href="https://github.com/nus-te3201-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li><a href="/2020/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
-          <li><a href="/2020/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="/2020/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/2020/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="https://github.com/nus-te3201-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-te3201-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/2020/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="/2020/admin/project-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
-          <li><a href="https://github.com/nus-te3201-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-te3201-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/2020/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -219,7 +202,7 @@ print(get_string())
                         <li>Use <code>\'</code> to print a single quote inside a string.</li>
                       </ul>
                     </panel>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_string</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-string">'Which word didn\'t he/she say? ...'</span>
@@ -319,7 +302,7 @@ print(get_multiline_string())
                         <li>Use <code>'''</code> to indicate multi-line strings.</li>
                       </ul>
                     </panel>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">'''Which word didn't he/she say?
 
@@ -351,7 +334,7 @@ print(get_multiline_string())
               </tip-box>
               <p>📎 Vist <a href="https://www.python.org/dev/peps/pep-0257/">this page</a> to learn more about docstrings</p>
               <div>
-                <panel type="seamless" header=" Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -472,7 +455,7 @@ print(shorten(<span class="hljs-string">'1234567890abcd'</span>))
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python">  <span class="hljs-keyword">if</span> len(text) &gt; <span class="hljs-number">10</span>:
     <span class="hljs-keyword">return</span> text[:<span class="hljs-number">4</span>] + <span class="hljs-string">'..'</span> <span class="hljs-comment"># ...</span>
@@ -516,7 +499,7 @@ True
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=" Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -559,7 +542,7 @@ False
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
   <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> characters:
@@ -712,7 +695,7 @@ BABY FOX
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python">  <span class="hljs-keyword">if</span> text.isupper(): 
     <span class="hljs-keyword">return</span> text.lower()
@@ -781,7 +764,7 @@ False
                     <panel type="seamless" header="%%:bulb: Tips%%">
                       <p>Convert the <code>name</code> to lower case and match with <code>dr.</code> or <code>(dr)</code> using string methods <code>startswith()</code>/<code>endswith()</code></p>
                     </panel>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python">  name = name.lower()
   <span class="hljs-keyword">return</span> name.startswith(<span class="hljs-string">'dr.'</span>) ...
@@ -867,7 +850,7 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, tail_start_word)</span>:</span>
   tail_start_position = text.find(tail_start_word)
@@ -1012,7 +995,7 @@ Dog
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-keyword">return</span> text.split(<span class="hljs-string">'|'</span>)...
 </code></pre>
@@ -1069,7 +1052,7 @@ Price===============
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=" Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -1145,7 +1128,7 @@ pins(new).......:110
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_formatted_item</span><span class="hljs-params">(name, count, width)</span>:</span>
   name = name.replace(<span class="hljs-string">'['</span>, <span class="hljs-string">'('</span>).replace(...)
@@ -1195,7 +1178,7 @@ pins(new).......:110
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 12:44:01 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
     </footer>
   </div>
 </body>

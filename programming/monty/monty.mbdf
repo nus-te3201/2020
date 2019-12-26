@@ -109,9 +109,19 @@ print('>>> Hello, my name is Monty')
 {{ hr_double }}
 <div id="monty2">
 
-### <span class="badge badge-primary">Level 2</span> <span class="text-primary">Echo Repeatedly</span>
+### <span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span>
 
 Extend [Monty 1 code]({{ baseUrl }}/programming/chapters/monty.html#monty1) to work as follows:
+* It recognizes the `list` command and responds with a fixed message.
+* It recognizes the `exit` command and exits the program if user confirms.
+* For all other inputs, it responds with a fixed error message.
+
+A sample session is given below.
+
+<box type="warning">
+
+You are highly encouraged to give the software a **different name** (i.e., not Monty), define your own **command formats** (e.g., `show` instead of `list`), and even a different **personality** (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
+</box>
 
 ```
 >>> Hello, my name is Monty
@@ -153,7 +163,7 @@ print('>>> Bye!')
 
 ### <span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span>
 
-Restructure the [Monty Level 2 code]({{ baseUrl }}/programming/chapters/monty.html#monty2) to fit the following structure, while keeping the behavior same as Monty 2.
+Restructure the [Monty Level 2 code]({{ baseUrl }}/programming/chapters/monty.html#monty2) to fit the following structure, while keeping the behavior same as before.
 
 ```python
 import sys

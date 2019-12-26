@@ -54,28 +54,11 @@
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
         <dropdown text="Links" class="nav-link temp-dropdown">
-          <li><a href="https://github.com/nus-te3201-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li><a href="/2020/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
-          <li><a href="/2020/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
-          <li><a href="/2020/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/2020/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="https://github.com/nus-te3201-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
-          <li><a href="https://nus-te3201-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="/2020/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="/2020/admin/project-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
-          <li><a href="https://github.com/nus-te3201-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
-          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
-          <li><a href="https://nus-te3201-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="/2020/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -247,7 +230,7 @@ print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="h
                     <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
 {'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
@@ -363,7 +346,7 @@ print(game1_scores)
 {'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}
 {'amy': 35, 'betty': 36, 'charlie': 5}
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> scores[player]
@@ -429,7 +412,7 @@ print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
                     <pre><code class="hljs">30
 brown is not in the game!
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">try</span>:
@@ -556,7 +539,7 @@ betty = 30
 zac = 35
 total = 75
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
   ...
@@ -622,7 +605,7 @@ False
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=" Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -654,7 +637,7 @@ print(game3_scores)
                     </p>
                     <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
   <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():
@@ -753,7 +736,7 @@ print(get_detailed_scores())
                     </p>
                     <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
@@ -794,7 +777,7 @@ Betsy Sims
                   <code>friends['john']['birthday']</code><br> → <code>{'name': 'John Doe', 'birthday': 'Jan 12'}['birthday']</code><br> → <code>'Jan 12'</code></p>
               </box>
               <div>
-                <panel type="seamless" header=" Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -831,7 +814,7 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
                     <pre><code class="hljs">5
 2
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
                       <div class="code-block">
                         <pre><code class="hljs python">
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
@@ -1119,7 +1102,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 12:44:01 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
     </footer>
   </div>
 </body>

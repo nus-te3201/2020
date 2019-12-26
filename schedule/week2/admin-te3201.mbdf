@@ -3,7 +3,7 @@
 
 {% call show_admin_summary() %}
 1. Submit weekly exercises
-1. Submit weekly project increment `Monty Level 2. Echo Repeatedly`
+1. Submit weekly project increment `Monty Level 2. Recognize Known Commands`
 {% endcall %}
 
 ### {{ thumb(0) }} Finish previous week's tasks if you haven't done so already
@@ -15,4 +15,4 @@
 
 ### {{ thumb(2) }} Submit weekly project increments
 
-<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 2. Echo Repeatedly**" var-fragment="monty.mbdf#monty2" />
+<include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 2. Recognize Known Commands**" var-fragment="monty.mbdf#monty2" />

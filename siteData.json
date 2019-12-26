@@ -1248,7 +1248,7 @@
         "the-monty-project": "\n              The Monty Project",
         "levels": "\n                Levels",
         "level-1-echo-once": "Level 1 Echo Once",
-        "level-2-echo-repeatedly": "Level 2 Echo Repeatedly",
+        "level-2-recognize-known-commands": "Level 2 Recognize Known Commands",
         "level-3-use-functions": "Level 3 Use Functions",
         "level-4-collect-tasks-in-memory": "Level 4 Collect Tasks in Memory",
         "level-5-mark-tasks-as-done": "Level 5 Mark Tasks as Done",
