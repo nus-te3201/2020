@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -413,7 +414,7 @@ print(get_head2(<span class="hljs-number">2</span>))
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -444,7 +445,7 @@ That is not an integer, try again
 Input an integer: 6
 You entered 6
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Hint%%">
+                    <panel type="seamless" header="%%:bulb: Hint%%" class="algolia-no-index">
                       <ul>
                         <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
                         <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
@@ -452,7 +453,7 @@ You entered 6
                       </ul>
                     </panel>
 
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
   <span class="hljs-keyword">try</span>:
@@ -555,7 +556,7 @@ hide_ends2 failed: Not enough items
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -690,7 +691,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                         </div>
                       </li>
                     </ul>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
   <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
@@ -712,7 +713,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                     <ul>
                       <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
                     </ul>
-                    <modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+                    <modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame" class="algolia-no-index">
 
                       <div>
                         <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
@@ -829,7 +830,7 @@ Thank you for playing the FLEXIBLE WORD GAME
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -840,9 +841,27 @@ Thank you for playing the FLEXIBLE WORD GAME
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

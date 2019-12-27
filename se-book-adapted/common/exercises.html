@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
 
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -46,13 +47,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -61,7 +62,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -170,10 +171,10 @@
           <p>Here are some exercises that combine multiple topics.</p>
           <div>
             <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Choose the correct statement about requirements." expanded>
-              <panel header="%%<md>:glyphicon-education:</md>%% Prerequisites" minimized>
-                <panel src="/2020/book/requirements/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements: Introduction%%"></panel>
-                <panel src="/2020/book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements: Non-Functional Requirements%%"></panel>
-                <panel src="/2020/book/gatheringRequirements/prototyping/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Gathering Requirements: Prototyping%%"></panel>
+              <panel header="%%<md>:glyphicon-education:</md>%% Prerequisites" minimized class="algolia-no-index">
+                <panel src="/2020/book/requirements/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements: Introduction%%" class="algolia-no-index"></panel>
+                <panel src="/2020/book/requirements/nonFunctionalRequirements/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements: Non-Functional Requirements%%" class="algolia-no-index"></panel>
+                <panel src="/2020/book/gatheringRequirements/prototyping/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Gathering Requirements: Prototyping%%" class="algolia-no-index"></panel>
               </panel>
               <p></p>
               <question>
@@ -185,7 +186,7 @@
                   <li class="radio-list-item"><label><input class="radio-list-input" name="78b6d" type="radio"> d. Prototyping can be used to discover as well as record requirements.</label></li>
                   <li class="radio-list-item"><label><input class="radio-list-input" name="78b6d" type="radio"> e. Users know how the product should be. They just don’t know how to communicate it to us.</label></li>
                 </ul>
-                <div slot="answer">
+                <div slot="answer" class="algolia-no-index">
                   <ul radio-group="6ac57" class="radio-list">
                     <li class="radio-list-item"><label><input class="radio-list-input" checked name="6ac57" type="radio"> d. Prototyping can be used to discover as well as record requirements.</label></li>
                   </ul>
@@ -201,12 +202,12 @@
           </div>
           <div>
             <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is the most useful to describe a workflow?" expanded>
-              <panel header="<md>:glyphicon-education:</md> Prerequisites" expandable minimized>
-                <panel src="/2020/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Structures: Class Diagrams"></panel>
-                <panel src="/2020/book/modeling/modelingStructures/objectDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Structures: Object Diagrams"></panel>
-                <panel src="/2020/book/modeling/modelingBehaviors/activityDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Behaviors: Activity Diagrams"></panel>
-                <panel src="/2020/book/modeling/modelingBehaviors/stateMachineDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Behaviors: State Machine Diagrams"></panel>
-                <panel src="/2020/book/modeling/modelingBehaviors/useCaseDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Behaviors: Use Case Diagrams"></panel>
+              <panel header="<md>:glyphicon-education:</md> Prerequisites" expandable minimized class="algolia-no-index">
+                <panel src="/2020/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Structures: Class Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2020/book/modeling/modelingStructures/objectDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Structures: Object Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2020/book/modeling/modelingBehaviors/activityDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Behaviors: Activity Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2020/book/modeling/modelingBehaviors/stateMachineDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Behaviors: State Machine Diagrams" class="algolia-no-index"></panel>
+                <panel src="/2020/book/modeling/modelingBehaviors/useCaseDiagrams/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md>%% Modeling: Modeling Behaviors: Use Case Diagrams" class="algolia-no-index"></panel>
               </panel>
               <p></p>
               <question>
@@ -218,7 +219,7 @@
                   <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> d. state machine diagram</label></li>
                   <li class="radio-list-item"><label><input class="radio-list-input" name="ced10" type="radio"> e. use case diagram</label></li>
                 </ul>
-                <div slot="answer">
+                <div slot="answer" class="algolia-no-index">
                   <ul radio-group="f2e41" class="radio-list">
                     <li class="radio-list-item"><label><input class="radio-list-input" checked name="f2e41" type="radio"> c. activity diagram</label></li>
                   </ul>
@@ -238,9 +239,27 @@
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

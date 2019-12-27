@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
 
 
@@ -98,7 +99,7 @@
                       of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
                     <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
                   </blockquote>
-                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
+                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm" class="algolia-no-index">
                     <table>
                       <tr>
                         <td>
@@ -231,7 +232,7 @@
                     <li>Complete</li>
                   </ul>
                   <popover id="pop:zielczynski">
-                    <div slot="content">
+                    <div slot="content" class="algolia-no-index">
                       <div>
                         <p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p>
                       </div>
@@ -339,7 +340,7 @@
                 <div>
                   <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
                   <popover id="pop:interviews-domainExpert" title placement="top">
-                    <div slot="content">
+                    <div slot="content" class="algolia-no-index">
                       <div>
                         <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
                       </div>
@@ -365,7 +366,7 @@
                   <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
                     etc.
                   </p>
-                  <panel type="seamless" class="non-printable">
+                  <panel type="seamless" class="non-printable algolia-no-index">
                     <span slot="header"><span><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span>                    extra</span>
                     </span>
                     </span>
@@ -611,7 +612,7 @@
                     <li>Urgency: how soon the feature is needed</li>
                   </ul>
                   <span class="non-printable">
-<panel minimized>
+<panel minimized class="algolia-no-index">
 <span slot="header" class="card-title"><span><span aria-hidden="true" class="fas fa-cube"></span></span> More examples <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                   </span>
                   </span>
@@ -661,7 +662,7 @@
                     details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed
                     description of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
                   <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
-                  <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:userStoriesUsage-nfr">
+                  <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:userStoriesUsage-nfr" class="algolia-no-index">
                     <div>
                       <div></div>
                       <p></p>
@@ -713,9 +714,9 @@
                           </div>
                           <div>
                             <div>
-                              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                                 <div>
-                                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                                     <question>
                                       <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                                       <ul class="task-list">
@@ -727,7 +728,7 @@
                                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                                       </ul>
-                                      <div slot="answer">
+                                      <div slot="answer" class="algolia-no-index">
                                         <p>(a)(c)(d)(f)(g)</p>
                                         <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the
                                           project is done, both of which are considered non-functional requirements.</p>
@@ -783,7 +784,7 @@
                     <tooltip content="e.g. index cards or sticky notes">physical paper</tooltip> in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not
                     <tooltip content="physically in the same location">co-located</tooltip>.</p>
                   <span class="non-printable">
-<panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples">
+<panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples" class="algolia-no-index">
   <div>
 <tabs> 
   <tab header="GitHub Project Boards">
@@ -799,13 +800,13 @@
                   <p>A video on GitHub Project Boards:</p>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
-                  <tab header="Google Sheets">
+                  <tab header="Google Sheets" class="algolia-no-index">
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
                     <p><img src="/2020/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
                     <p></p>
                     <p></p>
                   </tab>
-                  <tab header="Trello">
+                  <tab header="Trello" class="algolia-no-index">
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
                     <p><img src="/2020/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
                     <p></p>
@@ -815,7 +816,7 @@
                 </div>
                 </panel>
                 </span>
-                <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP">
+                <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP" class="algolia-no-index">
                   <p><span>
 <popover id="pop:xp" title="eXtreme Programming (XP)">eXtreme Programming (XP)</popover></span></p>
                   <div slot="content">
@@ -854,7 +855,7 @@
                       <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                       </popover>]</p>
                     <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                      <div slot="content">
+                      <div slot="content" class="algolia-no-index">
                         <div>
                           <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                         </div>
@@ -886,7 +887,7 @@
                       </ul>
                     </div>
                   </panel>
-                  <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+                  <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
                     <div class="text-monospace">
                       <ul>
                         <li>System: A Learning Management System (LMS)</li>
@@ -906,7 +907,7 @@
                 <p></p>
                 <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.
                   In the example below, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
                   <div>
                     <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                       Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
@@ -1310,7 +1311,7 @@
               <div>
                 <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
                   <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-                <modal large title="%%Textbook »%%" id="modal:supplementary-nfr">
+                <modal large title="%%Textbook »%%" id="modal:supplementary-nfr" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -1362,9 +1363,9 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                                   <question>
                                     <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                                     <ul class="task-list">
@@ -1376,7 +1377,7 @@
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                                     </ul>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <p>(a)(c)(d)(f)(g)</p>
                                       <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the
                                         project is done, both of which are considered non-functional requirements.</p>
@@ -1511,13 +1512,13 @@
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A
                     <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
                 </box>
-                <modal large title="Class diagrams" id="modal:modellingIntro-classDiagram">
+                <modal large title="Class diagrams" id="modal:modellingIntro-classDiagram" class="algolia-no-index">
                   <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                     <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
                   <img src="/2020/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
                 <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
                   <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-                <modal large title="%%Textbook <md>:glyphicon-log-in:</md>%%" id="modal:modellingIntro-abstraction">
+                <modal large title="%%Textbook <md>:glyphicon-log-in:</md>%%" id="modal:modellingIntro-abstraction" class="algolia-no-index">
                   <div>
                     <div></div>
                     <p></p>
@@ -1598,7 +1599,7 @@
                       <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> is such a model.</li>
                   </ol>
                 </box>
-                <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+                <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams" class="algolia-no-index">
                   <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                   <div>
                     <box>
@@ -1607,18 +1608,18 @@
                         <tab header="TEAMMATES">
                           <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                         </tab>
-                        <tab header="se-edu/addressbook-level3">
+                        <tab header="se-edu/addressbook-level3" class="algolia-no-index">
                           <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                         </tab>
-                        <tab header="Example 1">
+                        <tab header="Example 1" class="algolia-no-index">
                           <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                             <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                         </tab>
-                        <tab header="Example 2">
+                        <tab header="Example 2" class="algolia-no-index">
                           <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                             <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                         </tab>
-                        <tab header="Example 3">
+                        <tab header="Example 3" class="algolia-no-index">
                           <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                             <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                         </tab>
@@ -1645,7 +1646,7 @@
                 </box>
                 <box>
 
-                  <panel type="seamless">
+                  <panel type="seamless" class="algolia-no-index">
                     <span slot="header" class="card-title">Model Driven Development <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                     </span>
                     </span>
@@ -1673,7 +1674,7 @@
               <div>
                 <p>The following diagram uses the class diagram notation to show the different types of
                   <trigger trigger="click" for="modal:umlModels-uml">UML</trigger> diagrams.</p>
-                <modal large title="UML (Unified Modeling Language)" id="modal:umlModels-uml">
+                <modal large title="UML (Unified Modeling Language)" id="modal:umlModels-uml" class="algolia-no-index">
                   <div>
                     <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                       Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
@@ -1945,7 +1946,7 @@
             <div class="indented-less">
               <div>
                 <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                  i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction">
+                <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index">
                   <div>
                     <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                   </div>
@@ -2495,7 +2496,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <modal large title="**Overloading**" id="modal:overriding-overloading">
+                  <modal large title="**Overloading**" id="modal:overriding-overloading" class="algolia-no-index">
                     <div>
                       <div></div>
                       <p></p>
@@ -2913,7 +2914,7 @@
                 </blockquote>
                 <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
                 <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
-                  <div slot="content">
+                  <div slot="content" class="algolia-no-index">
                     Code being used in an actual product with actual users
                   </div>
                 </popover>
@@ -3721,7 +3722,7 @@ trim_input()
                 </box>
                 <p>Given below are two common refactorings (
                   <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-                <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
+                <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what" class="algolia-no-index">
                   <div>
                     <ul>
                       <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -4099,7 +4100,7 @@ send()
                     <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
                   </ul>
                 </box>
-                <modal title="**Enterprise Applications**" id="modal:enterprise-application">
+                <modal title="**Enterprise Applications**" id="modal:enterprise-application" class="algolia-no-index">
                   <div>
                     <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness)
                       than software meant for individual use.</p>
@@ -4457,7 +4458,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                   </ul>
                 </box>
                 <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <span slot="header" class="card-title"><span><span class="dimmed">Other details a test case can contain</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                   </span>
                   </span>
@@ -4484,7 +4485,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing
                     that failure could be an uninitialized variable.</p>
                 </box>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <span slot="header" class="card-title"><span><span class="dimmed">A deeper look at the definition of testing</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                   </span>
                   </span>
@@ -4773,7 +4774,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <box>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                 </box>
-                <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>">
+                <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>" class="algolia-no-index">
                   <div>
                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                       leader in software testing).</p>
@@ -4902,7 +4903,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests
                       repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>">
+                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe></tab>
                 </tabs>
               </div>
@@ -4924,7 +4925,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 <ol>
                   <li>
                     <p>Store the test input in the text file <code>input.txt</code>.</p>
-                    <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless">
+                    <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
                       <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -4932,7 +4933,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                   </li>
                   <li>
                     <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                    <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless">
+                    <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
                       <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -4957,7 +4958,7 @@ Invalid command format: add
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                       </li>
                     </ul>
-                    <panel header minimized>
+                    <panel header minimized class="algolia-no-index">
                       <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                       </span>
                       </span>
@@ -4989,7 +4990,7 @@ Invalid command format: add
                 <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
                 <div>
                   <popover id="pop:cli" placement="top">
-                    <div slot="content">
+                    <div slot="content" class="algolia-no-index">
                       <div>
                         <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
                       </div>
@@ -5077,16 +5078,16 @@ Invalid command format: add
                       than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
                   </li>
                 </ul>
-                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> %%Black-box and white-box testing%%">
+                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> %%Black-box and white-box testing%%" class="algolia-no-index">
                   <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                   <tabs>
                     <tab header="<md>:glyphicon-facetime-video:</md> Black-box vs White-box testing">
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md> Black-box testing example">
+                    <tab header="<md>:glyphicon-facetime-video:</md> Black-box testing example" class="algolia-no-index">
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md> White-box testing example">
+                    <tab header="<md>:glyphicon-facetime-video:</md> White-box testing example" class="algolia-no-index">
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
                   </tabs>
@@ -5152,7 +5153,7 @@ Invalid command format: add
                   </ul>
                 </box>
                 <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
-                  <div slot="content">
+                  <div slot="content" class="algolia-no-index">
                     <div>
                       <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                     </div>
@@ -5435,7 +5436,7 @@ Invalid command format: add
                     </ul>
                   </li>
                 </ul>
-                <modal large title="Pair Programming" id="modal:codeReview-pairProgramming">
+                <modal large title="Pair Programming" id="modal:codeReview-pairProgramming" class="algolia-no-index">
                   <box type="definition">
                     <div>
                       <p><strong>Pair Programming</strong>:</p>
@@ -5525,7 +5526,7 @@ Invalid command format: add
             <div class="indented-less">
               <div>
                 <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> An introduction to Formal Methods" class="non-printable">
+                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> An introduction to Formal Methods" class="non-printable algolia-no-index">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
                   <p></p>
@@ -6026,7 +6027,7 @@ Invalid command format: add
                   </ul>
                   <p>...</p>
                   <p>The daily scrum meeting is not used as a problem-solving or issue resolution meeting. <strong>Issues that are raised are taken offline and usually dealt with by the relevant subgroup immediately after the meeting.</strong></p>
-                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> Intro to Scrum in Under 10 Minutes" class="non-printable">
+                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> Intro to Scrum in Under 10 Minutes" class="non-printable algolia-no-index">
                     <p><sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </panel>
@@ -6070,11 +6071,11 @@ Invalid command format: add
                       </p>
                     </blockquote>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>">
+                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
                 </tabs>
-                <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide">
+                <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index">
                   <div>
                     <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                   </div>
@@ -6152,7 +6153,7 @@ Invalid command format: add
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Table</code> class shown in UML notation:</p>
                   <img src="/2020/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
                   <p></p>
-                  <panel type="seamless" header="The equivalent code">
+                  <panel type="seamless" header="The equivalent code" class="algolia-no-index">
                     <div class="alt-java">
                       <div class="code-block">
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
@@ -6203,7 +6204,7 @@ Invalid command format: add
                   <li><code>#</code> : protected</li>
                   <li><code>~</code> : package private</li>
                 </ul>
-                <panel type="seamless" header="How visibilities map to programming language features">
+                <panel type="seamless" header="How visibilities map to programming language features" class="algolia-no-index">
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
                       <thead>
@@ -6710,7 +6711,7 @@ Invalid command format: add
             <div class="indented-less">
               <div>
                 <p><strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-                <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
+                <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml" class="algolia-no-index">
                   <div>
                     <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                       Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
@@ -6860,7 +6861,7 @@ Invalid command format: add
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -6871,9 +6872,27 @@ Invalid command format: add
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

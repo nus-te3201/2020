@@ -7,12 +7,12 @@
 {% endcall %}
 
 
-### {{ thumb(1) }} Submit weekly exercises
+#### {{ thumb(1) }} Submit weekly exercises
 
 * As usual
 
 
-### {{ thumb(2) }} Submit weekly project increments
+#### {{ thumb(2) }} Submit weekly project increments
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 11. Use Inheritance**" var-fragment="monty.mbdf#monty11" />
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 12. Use Multiple Code Files**" var-fragment="monty.mbdf#monty12" />

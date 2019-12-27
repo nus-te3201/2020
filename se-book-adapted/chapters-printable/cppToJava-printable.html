@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
 
@@ -163,7 +164,7 @@
                     <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
                   </ul>
                   <popover id="pop:helloWorld-statement" title="Statements" placement="top">
-                    <div slot="content">
+                    <div slot="content" class="algolia-no-index">
                       <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
                       <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
                     </div>
@@ -194,7 +195,7 @@
                   <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
                     <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
                   <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
-                    <div slot="content">
+                    <div slot="content" class="algolia-no-index">
                       <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
                       <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
                     </div>
@@ -828,7 +829,7 @@ Polly likes crackers
 </code></pre>
                     <p>By convention, method names should be named in the
                       <trigger trigger="click" for="modal:javaMethods_camelCase"><em>camelCase</em></trigger> format.</p>
-                    <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase">
+                    <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase" class="algolia-no-index">
                       <div>
                         <blockquote>
                           <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1103,7 +1104,7 @@ Polly likes crackers
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent
                         <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
                       <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
-                        <div slot="content">
+                        <div slot="content" class="algolia-no-index">
                           <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units
                             to the right and <code>y</code> units up from the origin.</p>
                         </div>
@@ -1675,7 +1676,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                 <div>
                   <p>String is a built-in Java class that you
                     <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-                  <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top">
+                  <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
                     <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
                     </p>
                   </modal>
@@ -2480,7 +2481,7 @@ true
                     </ol>
                   </box>
                   <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-                  <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants">
+                  <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
                     <div>
                       <div></div>
                       <p></p>
@@ -2572,7 +2573,7 @@ true
                     <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                    <panel type="seamless" header="%%The `Cat` class%%">
+                    <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
@@ -2617,7 +2618,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                    <panel type="seamless" header="%%The `Dog` class%%">
+                    <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
@@ -2660,7 +2661,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                    <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%">
+                    <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
@@ -3619,7 +3620,7 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
 </code></pre>
                       <div class="code-block-lang"><span>java</span></div>
                     </div>
-                    <panel type="seamless" header="`Formatter` class">
+                    <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
@@ -4092,7 +4093,7 @@ Integer x = (Integer)o;
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -4103,9 +4104,27 @@ Integer x = (Integer)o;
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

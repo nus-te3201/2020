@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,62 +63,67 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week9"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week10/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item active"><a class="page-link" href="/2020/schedule/week10/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week10/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week10/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week11"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-10-mar-23-programming-topics">Week 10 <small><small><span class="dimmed">[Mar 23]</span> - Programming Topics</small></small><a class="fa fa-anchor" href="#week-10-mar-23-programming-topics"></a></h1>
-        <div>
-          <div id="week10-toc">
-            <ul>
-              <li><a href="/2020/programming/chapters/oop.html#object-oriented-programming---continued"><strong>Object-Oriented Programing - Part III</strong></a>
-                <ul>
-                  <li><a href="/2020/programming/chapters/oop.html#inheritance">Inheritance</a></li>
-                </ul>
-              </li>
-              <li><a href="/2020/programming/chapters/organizing.html#appendix-c-organizing-python-code"><strong>Organizing Python Code</strong></a></li>
-              <li><a href="/2020/programming/chapters/unittesting.html#appendix-d-unit-testing"><strong>Unit Testing</strong></a></li>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week9"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week10/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week10/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week10/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week10/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week11"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
             </ul>
-          </div>
-          <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
+          </nav>
+          <p></p>
+          <h1 id="week-10-mar-23-programming-topics">Week 10 <small><small><span class="dimmed">[Mar 23]</span> - Programming Topics</small></small><a class="fa fa-anchor" href="#week-10-mar-23-programming-topics"></a></h1>
+          <box type="info" dismissible>
+            <p>Programming topics allocated to the week will appear in this tab.
+            </p>
+          </box>
           <div>
-            <h3 id="inheritance">Inheritance<a class="fa fa-anchor" href="#inheritance"></a></h3>
-            <p><strong>You can make a class <tooltip content="define a new class based on an existing class">inherit</tooltip> from another class.</strong> If you do, it is as if the
-              <tooltip content="the new class"><em>child class</em></tooltip> already has all the attributes and methods of the
-              <tooltip content="the class that was inherited from"><em>parent class</em></tooltip>.</p>
-            <p>Syntax:</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
+            <div id="week10-toc">
+              <ul>
+                <li><a href="/2020/programming/chapters/oop.html#object-oriented-programming---continued"><strong>Object-Oriented Programing - Part III</strong></a>
+                  <ul>
+                    <li><a href="/2020/programming/chapters/oop.html#inheritance">Inheritance</a></li>
+                  </ul>
+                </li>
+                <li><a href="/2020/programming/chapters/organizing.html#appendix-c-organizing-python-code"><strong>Organizing Python Code</strong></a></li>
+                <li><a href="/2020/programming/chapters/unittesting.html#appendix-d-unit-testing"><strong>Unit Testing</strong></a></li>
+              </ul>
+            </div>
+            <h1 id="object-oriented-programming">Object-Oriented Programming<a class="fa fa-anchor" href="#object-oriented-programming"></a></h1>
+            <div>
+              <h3 id="inheritance">Inheritance<a class="fa fa-anchor" href="#inheritance"></a></h3>
+              <p><strong>You can make a class <tooltip content="define a new class based on an existing class">inherit</tooltip> from another class.</strong> If you do, it is as if the
+                <tooltip content="the new class"><em>child class</em></tooltip> already has all the attributes and methods of the
+                <tooltip content="the class that was inherited from"><em>parent class</em></tooltip>.</p>
+              <p>Syntax:</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
   <span class="hljs-comment"># statements of the class</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Person</code> class below:</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Person</code> class below:</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -127,26 +133,26 @@
 amy = Person(<span class="hljs-string">'Amy'</span>)
 amy.print_info()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">My name is Amy
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">My name is Amy
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <p>The <code>Teacher</code> class below inherits from the <code>Person</code> class given above.</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>The <code>Teacher</code> class below inherits from the <code>Person</code> class given above.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">teach</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is teaching'</span>)
@@ -156,42 +162,42 @@ dan.print_info()
 dan.teach()
 print(<span class="hljs-string">'the name is'</span>, dan.name)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">My name is Dan
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">My name is Dan
 Dan is teaching
 the name is Dan
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <p>Observe how,</p>
-              <ul>
-                <li>a <code>Teacher</code> object can use the <code>print_info()</code> method defined in the parent class.</li>
-                <li>the statement <code>dan = Teacher('Dan')</code> invokes the <code>__init__()</code> method defined in the parent class too.</li>
-                <li>the statement <code>print('the name is', dan.name)</code> is accessing the attribute <code>name</code> from a <code>Teacher</code> object although the attribute is defined in the parent class.</li>
-                <li>the method <code>teach</code> accesses the attribute <code>name</code> using <code>self.name</code> although the attribute is defined in the parent class.
-                </li>
-              </ul>
-            </box>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Observe how,</p>
+                <ul>
+                  <li>a <code>Teacher</code> object can use the <code>print_info()</code> method defined in the parent class.</li>
+                  <li>the statement <code>dan = Teacher('Dan')</code> invokes the <code>__init__()</code> method defined in the parent class too.</li>
+                  <li>the statement <code>print('the name is', dan.name)</code> is accessing the attribute <code>name</code> from a <code>Teacher</code> object although the attribute is defined in the parent class.</li>
+                  <li>the method <code>teach</code> accesses the attribute <code>name</code> using <code>self.name</code> although the attribute is defined in the parent class.
+                  </li>
+                </ul>
+              </box>
 
-            <div>
-              <panel type="danger" header=":fas-dumbbell: Exercise: Add `Fish` Class" expanded no-close>
-                <div>
-                  <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
-                  <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add `Fish` Class" expanded no-close>
                   <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+                    <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
+                    <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <table>
+                        <tr>
+                          <td valign="top">
+                            <div class="code-block">
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -207,44 +213,44 @@ guppy = Fish(<span class="hljs-string">'Guppy'</span>)
 guppy.info()
 guppy.move()
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
-                        </td>
-                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">I'm a Tuna
+                              <div class="code-block-lang"><span>python</span></div>
+                            </div>
+                          </td>
+                          <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                          <td valign="bottom">
+                            <pre><code class="hljs">I'm a Tuna
 I'm swimming
 I'm a Guppy
 I'm swimming
 </code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-            </div>
-            <p><strong>A child class can <em>override</em> a method defined in the parent class.</strong> That way, a child object can change a behavior defined in the parent class.</p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the <code>Student</code> class below overrides the <code>__init__()</code> method and the <code>print_info()</code> method of the parent class <code>Person</code>.</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
+              <p><strong>A child class can <em>override</em> a method defined in the parent class.</strong> That way, a child object can change a behavior defined in the parent class.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the <code>Student</code> class below overrides the <code>__init__()</code> method and the <code>print_info()</code> method of the parent class <code>Person</code>.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     self.name = name
     self.matric = matric
@@ -259,78 +265,78 @@ ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">
 ben.print_info()
 ben.learn()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">Ben is a student
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Ben is a student
 Ben is learning
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </box>
-            <p>When overriding methods, you can reuse the parent's definition of the same method using the <code>super().</code> prefix.</p>
-            <box>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <p>When overriding methods, you can reuse the parent's definition of the same method using the <code>super().</code> prefix.</p>
+              <box>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Given that <code>Person</code> class has the initializer method given above, the following two versions of the <code>Student</code> class are equivalent.</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <p>Override without reusing parent's method</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Given that <code>Person</code> class has the initializer method given above, the following two versions of the <code>Student</code> class are equivalent.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p>Override without reusing parent's method</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     self.name = name
     self.matric = matric
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp; = &nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <p>Override but reuse parent's method</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp; = &nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <p>Override but reuse parent's method</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     super().__init__(name) <span class="hljs-comment"># reuse parent's method</span>
     self.matric = matric
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </box>
-            <div>
-              <panel type="danger" header=":fas-dumbbell: Exercise: Add `FlightlessBird` Class" expanded no-close>
-                <div>
-                  <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
-                  <p>Do the following changes to the given code so that the code below produces the given output:</p>
-                  <ol>
-                    <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
-                    <li>add a <code>FlightlessBird</code> class that inherits from the <code>Bird</code> class, and override the <code>move()</code> method</li>
-                  </ol>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add `FlightlessBird` Class" expanded no-close>
                   <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+                    <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
+                    <p>Do the following changes to the given code so that the code below produces the given output:</p>
+                    <ol>
+                      <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
+                      <li>add a <code>FlightlessBird</code> class that inherits from the <code>Bird</code> class, and override the <code>move()</code> method</li>
+                    </ol>
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <table>
+                        <tr>
+                          <td valign="top">
+                            <div class="code-block">
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
@@ -357,48 +363,48 @@ penguin = FlightlessBird(<span class="hljs-string">'Penguin'</span>)
 penguin.info()
 penguin.move()
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
-                        </td>
-                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">I'm a Crow
+                              <div class="code-block-lang"><span>python</span></div>
+                            </div>
+                          </td>
+                          <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                          <td valign="bottom">
+                            <pre><code class="hljs">I'm a Crow
 I have feathers
 I'm flying
 I'm a Penguin
 I have feathers
 I'm waddling
 </code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-            </div>
-            <p><strong>Note that all python classes automatically inherits from the built-in class <code>object</code></strong> even if you did not specify it as the parent class. The <code>object</code> class has a <code>__str__()</code> method that you
-              can ovrride in your classes to customize how the <code>print</code> function will print an object of your class.</p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Book</code> class below overrides the <code>__str__()</code> method so that <code>Book</code> objects can be printed in a specific format.</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
+              <p><strong>Note that all python classes automatically inherits from the built-in class <code>object</code></strong> even if you did not specify it as the parent class. The <code>object</code> class has a <code>__str__()</code> method that you
+                can ovrride in your classes to customize how the <code>print</code> function will print an object of your class.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Book</code> class below overrides the <code>__str__()</code> method so that <code>Book</code> objects can be printed in a specific format.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, title)</span>:</span>
     self.title = title
     
@@ -408,31 +414,31 @@ I'm waddling
 book = Book(<span class="hljs-string">'Python for Beginners'</span>)
 print(book)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">Book title: Python for Beginners
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Book title: Python for Beginners
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </box>
-            <div>
-              <panel type="danger" header=":fas-dumbbell: Exercise: Override `__str__()` Method" expanded no-close>
-                <div>
-                  <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
-                  <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Override `__str__()` Method" expanded no-close>
                   <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                    <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
+                    <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <table>
+                        <tr>
+                          <td valign="top">
+                            <div class="code-block">
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, age)</span>:</span>
     self.name = name
@@ -443,50 +449,50 @@ print(book)
 print(Person(<span class="hljs-string">'Amy'</span>, <span class="hljs-number">25</span>))
 print(Person(<span class="hljs-string">'Ben'</span>, <span class="hljs-number">26</span>))
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
-                        </td>
-                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">Amy (25years)
+                              <div class="code-block-lang"><span>python</span></div>
+                            </div>
+                          </td>
+                          <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                          <td valign="bottom">
+                            <pre><code class="hljs">Amy (25years)
 Ben (26years)
 </code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> self.name + ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-            </div>
-            <p><strong>A class can inherit from multiple classes.</strong> If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.</p>
-            <box>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
+              <p><strong>A class can inherit from multiple classes.</strong> If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.</p>
+              <box>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
     print(<span class="hljs-string">'My name is'</span>, self.name)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">teach</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is teaching'</span>)
@@ -495,13 +501,13 @@ Ben (26years)
     print(self.name, <span class="hljs-string">'is a teacher'</span>)
     
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     super().__init__(name)
     self.matric = matric
@@ -512,64 +518,64 @@ Ben (26years)
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span>
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">grade</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is grading'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>TeachingAssistant</code> class above inherits from both <code>Student</code> class and the <code>Teacher</code> class both of which inherit from the <code>Person</code>                class. That means a <code>TeachingAssistant</code> object can use methods from classes <code>object</code>, <code>Person</code>, <code>Student</code>, <code>Teacher</code>, and <code>TeachingAssistant</code>.</p>
-              <table>
-                <tr>
-                  <td>
-                    <div class="code-block">
-                      <pre><code class="hljs python">elsie = TeachingAssistant(<span class="hljs-string">'Elsie'</span>, <span class="hljs-string">'A223344'</span>)
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>TeachingAssistant</code> class above inherits from both <code>Student</code> class and the <code>Teacher</code> class both of which inherit from the <code>Person</code>                  class. That means a <code>TeachingAssistant</code> object can use methods from classes <code>object</code>, <code>Person</code>, <code>Student</code>, <code>Teacher</code>, and <code>TeachingAssistant</code>.</p>
+                <table>
+                  <tr>
+                    <td>
+                      <div class="code-block">
+                        <pre><code class="hljs python">elsie = TeachingAssistant(<span class="hljs-string">'Elsie'</span>, <span class="hljs-string">'A223344'</span>)
 elsie.print_info()
 elsie.teach()
 elsie.learn()
 elsie.grade()
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                    <p></p>
-                  </td>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                      <p></p>
+                    </td>
 
-                  <td valign="bottom"> → <br><br></td>
+                    <td valign="bottom"> → <br><br></td>
 
-                  <td valign="bottom">
-                    <pre><code class="hljs">Elsie is a teacher
+                    <td valign="bottom">
+                      <pre><code class="hljs">Elsie is a teacher
 Elsie is teaching
 Elsie is learning
 Elsie is grading
 </code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p>As both <code>Teacher</code> and <code>Student</code> classes have the <code>print_info()</code> method, the method from the <code>Teacher</code> class will be used as it comes first in the inheritance order <code>(Teacher, Student)</code>;
-                that is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code>.</p>
-            </box>
-            <div>
-              <panel type="danger" header=":fas-dumbbell: Exercise: Add `SmartPhone` Class" expanded no-close>
-                <div>
-                  <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
-                  <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+                <p>As both <code>Teacher</code> and <code>Student</code> classes have the <code>print_info()</code> method, the method from the <code>Teacher</code> class will be used as it comes first in the inheritance order <code>(Teacher, Student)</code>;
+                  that is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code>.</p>
+              </box>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Add `SmartPhone` Class" expanded no-close>
                   <div>
-                    <div></div>
-                    <div></div>
-                    <table>
-                      <tr>
-                        <td valign="top">
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
+                    <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
+                    <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
+                    <div>
+                      <div></div>
+                      <div></div>
+                      <table>
+                        <tr>
+                          <td valign="top">
+                            <div class="code-block">
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">take_photo</span><span class="hljs-params">(self)</span>:</span>
     print(<span class="hljs-string">'taking photo'</span>)
@@ -586,23 +592,23 @@ iphone.take_photo()
 iphone.make_call()
 iphone.play_game()
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
-                        </td>
-                        <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                        <td valign="bottom">
-                          <pre><code class="hljs">My model: iPhone
+                              <div class="code-block-lang"><span>python</span></div>
+                            </div>
+                          </td>
+                          <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                          <td valign="bottom">
+                            <pre><code class="hljs">My model: iPhone
 taking photo
 making call
 playing game
 </code></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     ...
@@ -610,20 +616,20 @@ playing game
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">play_game</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-            </div>
-            <p><strong>You need to use inheritance when you create user-defined exceptions because</strong> all such exceptions need to inherit from a built-in <code>Exception</code> class.</p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, <code>EmptyCommandError</code> and <code>InvalidCommandError</code> are user-defined exceptions. The latter has overridden the constructor to take additional
-                parameters.
-              </p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
+              <p><strong>You need to use inheritance when you create user-defined exceptions because</strong> all such exceptions need to inherit from a built-in <code>Exception</code> class.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, <code>EmptyCommandError</code> and <code>InvalidCommandError</code> are user-defined exceptions. The latter has overridden the constructor to take
+                  additional parameters.
+                </p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span>
     <span class="hljs-string">"""Indicates a task has expired."""</span>
     <span class="hljs-keyword">pass</span>
 
@@ -655,157 +661,157 @@ playing game
 process(<span class="hljs-string">''</span>)
 process(<span class="hljs-string">'HA'</span>)
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-              </p>
-              <pre><code class="hljs">empty command
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
+                </p>
+                <pre><code class="hljs">empty command
 invalid command: HA -&gt; command too short
 </code></pre>
-            </box>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h1 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code"></a></h1>
-            <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
-              <p><code>[project_root]/student.py</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+              </box>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h1 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code"></a></h1>
+              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
+                <p><code>[project_root]/student.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
     print(name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <p><code>[project_root]/course.py</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p><code>[project_root]/course.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
 student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
-            </box>
-            <p><strong>You can organize files into sub-directories too.</strong></p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
-              <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
+              </box>
+              <p><strong>You can organize files into sub-directories too.</strong></p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
+                <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span>
     print(list(text))
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <p><code>[project_root]/course.py</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc 
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p><code>[project_root]/course.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc 
 
 misc.print_as_list(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
-            </box>
-            <p>When you import a module, Python will interpret and execute any code in it.</p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
-              <p><code>[project_root]/student.py</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
+              </box>
+              <p>When you import a module, Python will interpret and execute any code in it.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
+                <p><code>[project_root]/student.py</code>:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
     print(name, <span class="hljs-string">'is a student'</span>)
 
 describe(<span class="hljs-string">'Betty'</span>)
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <p><code>[project_root]/course.py</code>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/course.py</code>:</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
 student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">Betty is a student
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Betty is a student
 Adam is a student
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
-            </box>
-            <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
-            <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <p><code>[project_root]/student.py</code>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
+              </box>
+              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
+              <box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/student.py</code>:</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
     print(name, <span class="hljs-string">'is a student'</span>)
 
 <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
     describe(<span class="hljs-string">'Betty'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">Betty is a student
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Betty is a student
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
-              <div>
-                <div></div>
-                <div></div>
-                <table>
-                  <tr>
-                    <td valign="top">
-                      <p><code>[project_root]/course.py</code>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <table>
+                    <tr>
+                      <td valign="top">
+                        <p><code>[project_root]/course.py</code>:</p>
+                        <div class="code-block">
+                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
 student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
-                    </td>
-                    <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                    <td valign="bottom">
-                      <pre><code class="hljs">Adam is a student
+                          <div class="code-block-lang"><span>python</span></div>
+                        </div>
+                      </td>
+                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                      <td valign="bottom">
+                        <pre><code class="hljs">Adam is a student
 </code></pre>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </box>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h1 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing"></a></h1>
-            <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
-            <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </box>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h1 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing"></a></h1>
+              <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
+              <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span>
   <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span>
   <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]
 
@@ -820,11 +826,11 @@ student.describe(<span class="hljs-string">'Adam'</span>)
   """</span>
   <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p>This is how we can write some unit tests for the two functions.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-keyword">import</span> search, unittest
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>This is how we can write some unit tests for the two functions.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> search, unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
 
@@ -851,36 +857,36 @@ student.describe(<span class="hljs-string">'Adam'</span>)
 <span class="hljs-comment"># activate the test runner      </span>
 unittest.main()
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
-            <pre><code class="hljs">...
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
+              <pre><code class="hljs">...
 ----------------------------------------------------------------------
 Ran 2 tests in 0.019s
 
 OK
 </code></pre>
-            <p>Things to note:</p>
-            <ul>
-              <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
-              <li>Names of functions containing test code should start with <code>test</code> e.g., <code>test_is_same_person()</code></li>
-              <li>These methods (inherited from the parent class) can be used to compare actual with the expected value:
-                <ul>
-                  <li><code>assertTrue(actual)</code> : test passes if <code>actual == True</code></li>
-                  <li><code>assertFalse(actual)</code> : test passes if <code>actual == False</code></li>
-                  <li><code>assertEquals(actual, expected)</code> : test passes if <code>actual == expected</code></li>
-                  <li><code>with self.assertRaises(Exception):</code> passes if the code block it contains raises the specified exception.</li>
-                </ul>
-              </li>
-            </ul>
-            <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
-            <div class="code-block">
-              <pre><code class="hljs python">self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)
+              <p>Things to note:</p>
+              <ul>
+                <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
+                <li>Names of functions containing test code should start with <code>test</code> e.g., <code>test_is_same_person()</code></li>
+                <li>These methods (inherited from the parent class) can be used to compare actual with the expected value:
+                  <ul>
+                    <li><code>assertTrue(actual)</code> : test passes if <code>actual == True</code></li>
+                    <li><code>assertFalse(actual)</code> : test passes if <code>actual == False</code></li>
+                    <li><code>assertEquals(actual, expected)</code> : test passes if <code>actual == expected</code></li>
+                    <li><code>with self.assertRaises(Exception):</code> passes if the code block it contains raises the specified exception.</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
+              <div class="code-block">
+                <pre><code class="hljs python">self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p>the output will be something like this:</p>
-            <pre><code class="hljs">F.
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>the output will be something like this:</p>
+              <pre><code class="hljs">F.
 ======================================================================
 FAIL: test_get_first_name (__main__.TestSearch)
 ----------------------------------------------------------------------
@@ -897,13 +903,14 @@ Ran 2 tests in 0.001s
 
 FAILED (failures=1)
 </code></pre>
-            <p>📎 Resources:</p>
-            <ul>
-              <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
-              <li>Unit testing in the PyCharm IDE: <a href="https://www.youtube.com/watch?v=-VzJvNLooj4">https://www.youtube.com/watch?v=-VzJvNLooj4</a></li>
-            </ul>
+              <p>📎 Resources:</p>
+              <ul>
+                <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
+                <li>Unit testing in the PyCharm IDE: <a href="https://www.youtube.com/watch?v=-VzJvNLooj4">https://www.youtube.com/watch?v=-VzJvNLooj4</a></li>
+              </ul>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
           </div>
-          <hr style="border-top: 3px double #c5c5c5;">
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
@@ -930,7 +937,7 @@ FAILED (failures=1)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -941,9 +948,27 @@ FAILED (failures=1)
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

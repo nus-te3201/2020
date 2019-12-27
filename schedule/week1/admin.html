@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,111 +63,112 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item disabled"><a class="page-link" href="/2020/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-            <li class="page-item active"><a class="page-link" href="/2020/schedule/week1/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-1-jan-13-tasks">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-1-jan-13-tasks"></a></h1>
-        <div>
-          <box type="info" dismissible>
-            <p>Weekly tasks will appear in this tab.
-            </p>
-          </box>
-          <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
-            <ol>
-              <li>Learn about the module and the website</li>
-              <li>Submit the pre-module survey <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span>
-                </span>
-              </li>
-              <li>Attend the lecture</li>
-              <li>Submit weekly exercises</li>
-              <li>Submit weekly project increment <code>Monty Level 1. Echo Once</code></li>
-            </ol>
-          </div>
-          <h3 id="1-learn-about-the-module-and-the-website"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Learn about the module and the website<a class="fa fa-anchor" href="#1-learn-about-the-module-and-the-website"></a></h3>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#module-info" header="Admin <md>:glyphicon-log-in:</md> About the module  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="module-info"></panel>
-          </div>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item disabled"><a class="page-link" href="/2020/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week1/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
           <p></p>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#website-info" header="Admin <md>:glyphicon-log-in:</md> Using the website  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="website-info"></panel>
-          </div>
-          <p></p>
-          <h3 id="2-submit-the-pre-module-survey-by-saturday-2359"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit the pre-module survey <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span>
-            </span><a class="fa fa-anchor" href="#2-submit-the-pre-module-survey-by-saturday-2359"></a></h3>
-          <ul>
-            <li>Submit the pre-module survey, available on LumiNUS</li>
-          </ul>
-          <h3 id="3-attend-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Attend the lecture<a class="fa fa-anchor" href="#3-attend-the-lecture"></a></h3>
-          <ul>
-            <li>The lecture will start at 6.30pm.</li>
-          </ul>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#lectures-info" header="Admin <md>:glyphicon-log-in:</md> Lectures  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="lectures-info"></panel>
-          </div>
-          <p></p>
-          <h3 id="4-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#4-submit-weekly-exercises"></a></h3>
-          <ul>
-            <li>As you learn the weekly topics, submit Week 1 programming exercise on <code>repl.it</code>. See the panel below for more info. More instructions about this will be provided during the lecture.</li>
-          </ul>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#exercises-info" header="Admin <md>:glyphicon-log-in:</md> Programming Exercises  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="exercises-info"></panel>
-          </div>
-          <p></p>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#repl-info" header="Admin <md>:glyphicon-log-in:</md> Tools → `repl.it`  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="repl-info"></panel>
-          </div>
-          <p></p>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#help-info" header="Admin <md>:glyphicon-log-in:</md> Getting Help  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="help-info"></panel>
-          </div>
-          <p></p>
-          <h3 id="5-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>5</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#5-submit-weekly-project-increments"></a></h3>
-          <div class="indented-level2">
-            <panel type src="/2020/admin/te3201-admin._include_.html#project-info" header="Admin <md>:glyphicon-log-in:</md> Project  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="project-info"></panel>
-          </div>
-          <p></p>
-          <div class="indented-level2">
-            <box type="warning">
-              <p>Please <strong>finish weekly programming topics and weekly programming exercises before attempting weekly project increments</strong> as the knowledge from those former may be needed to complete the latter.
+          <h1 id="week-1-jan-13-tasks">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-1-jan-13-tasks"></a></h1>
+          <div>
+            <box type="info" dismissible>
+              <p>Weekly tasks will appear in this tab.
               </p>
             </box>
-          </div>
-          <div>
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+              <ol>
+                <li>Learn about the module and the website</li>
+                <li>Submit the pre-module survey <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span>
+                  </span>
+                </li>
+                <li>Attend the lecture</li>
+                <li>Submit weekly exercises</li>
+                <li>Submit weekly project increment <code>Monty Level 1. Echo Once</code></li>
+              </ol>
+            </div>
+            <h4 id="1-learn-about-the-module-and-the-website"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Learn about the module and the website<a class="fa fa-anchor" href="#1-learn-about-the-module-and-the-website"></a></h4>
             <div class="indented-level2">
-              <panel type="primary">
-                <div></div>
-                <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Monty - Overview</strong> <span class="badge badge-pill badge-warning"></span></span>
-                </div>
-                <div></div>
-                <div>
-                  <div class="lead">
-                    <pic add-class="float-left border mr-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
-                      <p><small><small>The <strong>Monty Python</strong> Comedy Group,<br> [<a href="https://en.wikipedia.org/wiki/Monty_Python">credit: Wikipedia</a>]</small></small>
-                      </p>
-                    </pic>
-                    <p><strong>The <em>Monty Project</em> is an educational software project designed to take you through the steps of building a small software <em>incrementally</em></strong>, while applying as many Python and SE techniques as possible
-                      along the way.</p>
+              <panel type src="/2020/admin/te3201-admin._include_.html#module-info" header="Admin <md>:glyphicon-log-in:</md> About the module  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="module-info"></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <panel type src="/2020/admin/te3201-admin._include_.html#website-info" header="Admin <md>:glyphicon-log-in:</md> Using the website  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="website-info"></panel>
+            </div>
+            <p></p>
+            <h4 id="2-submit-the-pre-module-survey-by-saturday-2359"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit the pre-module survey <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span>
+              </span><a class="fa fa-anchor" href="#2-submit-the-pre-module-survey-by-saturday-2359"></a></h4>
+            <ul>
+              <li>Submit the pre-module survey, available on LumiNUS</li>
+            </ul>
+            <h4 id="3-attend-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Attend the lecture<a class="fa fa-anchor" href="#3-attend-the-lecture"></a></h4>
+            <ul>
+              <li>The lecture will start at 6.30pm.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/2020/admin/te3201-admin._include_.html#lectures-info" header="Admin <md>:glyphicon-log-in:</md> Lectures  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="lectures-info"></panel>
+            </div>
+            <p></p>
+            <h4 id="4-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#4-submit-weekly-exercises"></a></h4>
+            <ul>
+              <li>As you learn the weekly topics, submit Week 1 programming exercise on <code>repl.it</code>. See the panel below for more info. More instructions about this will be provided during the lecture.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/2020/admin/te3201-admin._include_.html#exercises-info" header="Admin <md>:glyphicon-log-in:</md> Programming Exercises  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="exercises-info"></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <panel type src="/2020/admin/te3201-admin._include_.html#repl-info" header="Admin <md>:glyphicon-log-in:</md> Tools → `repl.it`  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="repl-info"></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <panel type src="/2020/admin/te3201-admin._include_.html#help-info" header="Admin <md>:glyphicon-log-in:</md> Getting Help  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="help-info"></panel>
+            </div>
+            <p></p>
+            <h4 id="5-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>5</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#5-submit-weekly-project-increments"></a></h4>
+            <div class="indented-level2">
+              <panel type src="/2020/admin/te3201-admin._include_.html#project-info" header="Admin <md>:glyphicon-log-in:</md> Project  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="project-info"></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <box type="warning">
+                <p>Please <strong>finish weekly programming topics and weekly programming exercises before attempting weekly project increments</strong> as the knowledge from those former may be needed to complete the latter.
+                </p>
+              </box>
+            </div>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Monty - Overview</strong> <span class="badge badge-pill badge-warning"></span></span>
                   </div>
-                  <p><strong>The project aims to build a product named <em>Monty</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Monty</em> was chosen as a placeholder name, in honor of the <a href="https://en.wikipedia.org/wiki/Monty_Python">Monty Python comedy group</a> whose work inspired the name of the the Python language.</span>                    <strong>You may give it any other name and personality you wish.</strong></p>
-                  <p>Here is a sample interaction with Monty:</p>
-                  <pre><code class="hljs">*******************************************************************************************
+                  <div></div>
+                  <div>
+                    <div class="lead">
+                      <pic add-class="float-left border mr-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" width="200">
+                        <p><small><small>The <strong>Monty Python</strong> Comedy Group,<br> [<a href="https://en.wikipedia.org/wiki/Monty_Python">credit: Wikipedia</a>]</small></small>
+                        </p>
+                      </pic>
+                      <p><strong>The <em>Monty Project</em> is an educational software project designed to take you through the steps of building a small software <em>incrementally</em></strong>, while applying as many Python and SE techniques as possible
+                        along the way.</p>
+                    </div>
+                    <p><strong>The project aims to build a product named <em>Monty</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Monty</em> was chosen as a placeholder name, in honor of the <a href="https://en.wikipedia.org/wiki/Monty_Python">Monty Python comedy group</a> whose work inspired the name of the the Python language.</span>                      <strong>You may give it any other name and personality you wish.</strong></p>
+                    <p>Here is a sample interaction with Monty:</p>
+                    <pre><code class="hljs">*******************************************************************************************
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
 *   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
@@ -222,36 +224,37 @@ STATUS | INDEX | DESCRIPTION
 --------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                </div>
-              </panel>
+                  </div>
+                </panel>
+              </div>
             </div>
-          </div>
-          <div>
-            <div class="indented-level2">
-              <panel type="primary">
-                <div></div>
-                <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 1. Echo Once</strong> <span class="badge badge-pill badge-warning"></span></span>
-                </div>
-                <div></div>
-                <div>
-                  <h3 id="level-1-echo-once"><span class="badge badge-primary">Level 1</span> <span class="text-primary">Echo Once</span><a class="fa fa-anchor" href="#level-1-echo-once"></a></h3>
-                  <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
-                  <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 1. Echo Once</strong> <span class="badge badge-pill badge-warning"></span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-1-echo-once"><span class="badge badge-primary">Level 1</span> <span class="text-primary">Echo Once</span><a class="fa fa-anchor" href="#level-1-echo-once"></a></h3>
+                    <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
+                    <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 foo
 &gt;&gt;&gt; Your command is: foo
 &gt;&gt;&gt; Bye!
 </code></pre>
-                  <panel header=":fas-battery-quarter: Partial solution" minimized>
-                    <div class="code-block">
-                      <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-comment"># ADD MORE CODE HERE</span>
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -264,7 +267,7 @@ foo
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-learn-about-the-module-and-the-website">1 Learn about the module and the website&#x200E;</a>
               <a class="nav-link py-1" href="#2-submit-the-pre-module-survey-by-saturday-2359">2 Submit the pre-module survey  by Saturday 2359
-      &#x200E;</a>
+        &#x200E;</a>
               <a class="nav-link py-1" href="#3-attend-the-lecture">3 Attend the lecture&#x200E;</a>
               <a class="nav-link py-1" href="#4-submit-weekly-exercises">4 Submit weekly exercises&#x200E;</a>
               <a class="nav-link py-1" href="#5-submit-weekly-project-increments">5 Submit weekly project increments&#x200E;</a>
@@ -276,7 +279,7 @@ foo
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -287,9 +290,27 @@ foo
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

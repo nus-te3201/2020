@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
 
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -101,10 +102,10 @@
         <p><strong>Read the following two sections</strong>, if you haven't done so already:</p>
         <div class="indented">
           <p>
-            <panel type src="/2020/admin/ip-overview._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Overview**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="main"></panel>
+            <panel type src="/2020/admin/ip-overview._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Overview**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
           </p>
           <p>
-            <panel type src="/2020/admin/ip-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Grading**  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="main"></panel>
+            <panel type src="/2020/admin/ip-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Grading**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
           </p>
         </div>
         <div>
@@ -122,7 +123,7 @@
               <li>Recommended: Installed an IDE in your computer.</li>
             </ul>
             <p>
-              <panel type src="/2020/admin/tools._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Tools**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="main"></panel>
+              <panel type src="/2020/admin/tools._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Tools**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
             </p>
           </box>
           <br>
@@ -164,7 +165,7 @@
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                   </div>
@@ -209,7 +210,7 @@ bye
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                   </div>
@@ -259,7 +260,7 @@ bye
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                   </div>
@@ -287,7 +288,7 @@ done 2
                     <div>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
                         <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Classes`**">
+                      <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -296,7 +297,7 @@ done 2
                           </div>
                           <p>While it is possible to represent a task list as a multi-dimensional array containing
                             <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                          <panel type="seamless" header="Partial solution" minimized>
+                          <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
                             <div class="code-block">
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
@@ -334,7 +335,7 @@ t.markAsDone()
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                   </div>
@@ -397,7 +398,7 @@ deadline do homework /by no idea :-p
                     <div>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
                         <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Inheritance`**">
+                      <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -406,7 +407,7 @@ deadline do homework /by no idea :-p
                           </div>
                           <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                           <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                          <panel type="seamless" header="Partial solution" minimized>
+                          <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
                             <div class="code-block">
                               <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
@@ -443,7 +444,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>A-TextUiTesting</code>: Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span>
                   </div>
@@ -464,7 +465,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                   </div>
@@ -491,7 +492,7 @@ blah
                     <div>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
                         <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Exceptions`**">
+                      <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -514,7 +515,7 @@ blah
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>Level-6</code>: Delete</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                   </div>
@@ -548,7 +549,7 @@ delete 3
                     <div>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
                         <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Collections`**">
+                      <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
                         <div>
                           <div>
                             <div></div>
@@ -567,7 +568,7 @@ delete 3
           <div>
             <div class="indented">
               <div class="indented border">
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div></div>
                   <div slot="header"><span><span class="dimmed"><strong><code>A-Enums</code>: Enums</strong></span> <span class="badge badge-pill badge-secondary">if-applicable</span></span>
                   </div>
@@ -590,7 +591,7 @@ delete 3
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -601,9 +602,27 @@ delete 3
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

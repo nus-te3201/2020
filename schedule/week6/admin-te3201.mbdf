@@ -7,11 +7,11 @@
 {% endcall %}
 
 
-### {{ thumb(1) }} Submit weekly exercises
+#### {{ thumb(1) }} Submit weekly exercises
 
 * As usual
 
 
-### {{ thumb(2) }} Submit weekly project increments
+#### {{ thumb(2) }} Submit weekly project increments
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 7. Save Tasks to Disk**" var-fragment="monty.mbdf#monty7" />

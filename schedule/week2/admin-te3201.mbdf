@@ -6,13 +6,13 @@
 1. Submit weekly project increment `Monty Level 2. Recognize Known Commands`
 {% endcall %}
 
-### {{ thumb(0) }} Finish previous week's tasks if you haven't done so already
+#### {{ thumb(0) }} Finish previous week's tasks if you haven't done so already
 
-### {{ thumb(1) }} Submit weekly exercises
+#### {{ thumb(1) }} Submit weekly exercises
 
 * As usual
 
 
-### {{ thumb(2) }} Submit weekly project increments
+#### {{ thumb(2) }} Submit weekly project increments
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 2. Recognize Known Commands**" var-fragment="monty.mbdf#monty2" />

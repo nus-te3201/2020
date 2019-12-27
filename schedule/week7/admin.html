@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,61 +63,63 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week6"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week7/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week7/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week7/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-            <li class="page-item active"><a class="page-link" href="/2020/schedule/week7/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week8"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-7-mar-2-tasks">Week 7 <small><small><span class="dimmed">[Mar 2]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-7-mar-2-tasks"></a></h1>
-        <div>
-          <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
-            <ol>
-              <li>Submit weekly exercises</li>
-              <li>Submit weekly project increment <code>Level 8. Support Deadlines</code></li>
-            </ol>
-          </div>
-          <h3 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h3>
-          <ul>
-            <li>As usual</li>
-          </ul>
-          <h3 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h3>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week6"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week7/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week7/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week7/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week7/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week8"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-7-mar-2-tasks">Week 7 <small><small><span class="dimmed">[Mar 2]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-7-mar-2-tasks"></a></h1>
           <div>
-            <div class="indented-level2">
-              <panel type="primary">
-                <div></div>
-                <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 8. Support Deadlines</strong> <span class="badge badge-pill badge-warning"></span></span>
-                </div>
-                <div></div>
-                <div>
-                  <h3 id="level-8-support-deadlines"><span class="badge badge-primary">Level 8</span> <span class="text-primary">Support Deadlines</span><a class="fa fa-anchor" href="#level-8-support-deadlines"></a></h3>
-                  <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty7">Monty Level 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
-                  <p>Previous behavior:</p>
-                  <ul>
-                    <li><code>add buy book</code>: adds a task <code>buy book</code></li>
-                  </ul>
-                  <p>Proposed change - replace the above command with the following two:</p>
-                  <ul>
-                    <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
-                    <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br> Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description of
-                      the deadline.</li>
-                  </ul>
-                  <p>A sample output is given below.</p>
-                  <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+              <ol>
+                <li>Submit weekly exercises</li>
+                <li>Submit weekly project increment <code>Level 8. Support Deadlines</code></li>
+              </ol>
+            </div>
+            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
+            <ul>
+              <li>As usual</li>
+            </ul>
+            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 8. Support Deadlines</strong> <span class="badge badge-pill badge-warning"></span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-8-support-deadlines"><span class="badge badge-primary">Level 8</span> <span class="text-primary">Support Deadlines</span><a class="fa fa-anchor" href="#level-8-support-deadlines"></a></h3>
+                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty7">Monty Level 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
+                    <p>Previous behavior:</p>
+                    <ul>
+                      <li><code>add buy book</code>: adds a task <code>buy book</code></li>
+                    </ul>
+                    <p>Proposed change - replace the above command with the following two:</p>
+                    <ul>
+                      <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
+                      <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br> Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description
+                        of the deadline.
+                      </li>
+                    </ul>
+                    <p>A sample output is given below.</p>
+                    <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
 
 list
 &gt;&gt;&gt; Here is the list of tasks:
@@ -148,45 +151,46 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
 ------------------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                  <box>
-                    <p>💡 here are some tips:</p>
-                    <ul>
-                      <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline
-                        items, respectively.
-                        <div class="code-block">
-                          <pre><code class="hljs python">[
+                    <box>
+                      <p>💡 here are some tips:</p>
+                      <ul>
+                        <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline
+                          items, respectively.
+                          <div class="code-block">
+                            <pre><code class="hljs python">[
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}
 ]
 
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
-                      </li>
-                      <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
-                        <pre><code class="hljs">T,borrow book,done
+                            <div class="code-block-lang"><span>python</span></div>
+                          </div>
+                        </li>
+                        <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
+                          <pre><code class="hljs">T,borrow book,done
 T,read book,pending
 D,return book,pending,Monday
 </code></pre>
-                      </li>
-                    </ul>
-                  </box>
-                  <panel header=":fas-battery-quarter: Partial solution" minimized>
-                    <p>Here is the code adding a todo item:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">
+                        </li>
+                      </ul>
+                    </box>
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <p>Here is the code adding a todo item:</p>
+                      <div class="code-block">
+                        <pre><code class="hljs python">
 command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
 <span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
     items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})
 <span class="hljs-keyword">elif</span>  ...
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                  <p></p>
-                </div>
-              </panel>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                    <p></p>
+                  </div>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -207,7 +211,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -218,9 +222,27 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

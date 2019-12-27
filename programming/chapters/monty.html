@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -195,7 +196,7 @@ foo
 &gt;&gt;&gt; Your command is: foo
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-comment"># ADD MORE CODE HERE</span>
@@ -239,7 +240,7 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
@@ -273,7 +274,7 @@ main()
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
@@ -368,7 +369,7 @@ abcde
                   <p>The above technique can be used to extract the item description from an <code>add</code> command.
                   </p>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
@@ -505,7 +506,7 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
                     <div class="code-block-lang"><span>python</span></div>
                   </div>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python">
 items = []
@@ -640,7 +641,7 @@ more text
                   </div>
                   <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
@@ -752,7 +753,7 @@ return book,pending
                     </li>
                   </ul>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code for loading data from the file.</p>
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
@@ -899,7 +900,7 @@ D,return book,pending,Monday
                     </li>
                   </ul>
                 </box>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code adding a todo item:</p>
                   <div class="code-block">
                     <pre><code class="hljs python">
@@ -917,7 +918,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
               <div id="monty9">
                 <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes"></a></h3>
                 <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code for an example <code>ToDo</code> class:</p>
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
@@ -979,7 +980,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
                   <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
                   <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
                 </ul>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here's the main part of the code that illustrates how these objects can work together:</p>
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
@@ -1078,7 +1079,7 @@ list
     ------------------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
@@ -1103,7 +1104,7 @@ list
               <div id="monty11">
                 <h3 id="level-11-use-inheritance"><span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Inheritance</span><a class="fa fa-anchor" href="#level-11-use-inheritance"></a></h3>
                 <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty10">Monty Level 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
-                <panel header=":fas-battery-quarter: Partial solution" minimized>
+                <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
@@ -1176,7 +1177,7 @@ list
                 <p></p>
                 <img src="/2020/programming/monty/images/gui-later.png">
                 <p></p>
-                <panel type="seamless" header="Skeletal GUI code">
+                <panel type="seamless" header="Skeletal GUI code" class="algolia-no-index">
                   <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
 <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
@@ -1658,7 +1659,7 @@ GUI(TaskManager()).start()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1669,9 +1670,27 @@ GUI(TaskManager()).start()
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

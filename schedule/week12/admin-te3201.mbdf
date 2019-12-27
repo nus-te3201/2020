@@ -7,12 +7,12 @@
 {% endcall %}
 
 
-### {{ thumb(1) }} Enhance previous week's feature
+#### {{ thumb(1) }} Enhance previous week's feature
 
 * If you chose option 1 in the previous week, you can either continue to enhance the GUI or add an individual feature this week (from the three choices from option 2).
 * If you chose option 2 in the previous week, you can either continue to enhance that individual feature or add another individual feature from the three choices given to you.
 
 
-### {{ thumb(2) }} Start preparing for the final submission
+#### {{ thumb(2) }} Start preparing for the final submission
 
 {{ embed_topic("../../admin/te3201-admin.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}

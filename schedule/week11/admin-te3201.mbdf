@@ -6,7 +6,7 @@
 {% endcall %}
 
 
-### {{ thumb(1) }} Monty: Add `Level 14. Add a GUI` or the individual feature.
+#### {{ thumb(1) }} Monty: Add `Level 14. Add a GUI` or the individual feature.
 
 * **Option 1:** Add the following project increment.
 

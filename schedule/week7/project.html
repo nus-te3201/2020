@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
 
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -122,7 +123,7 @@
               <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> The jar file should be <mark>cross-platform and should work in a computer that has Java 11</mark>.</li>
           </ul>
           <div class="indented">
-            <panel minimized>
+            <panel minimized class="algolia-no-index">
               <div slot="header" class="card-title">
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Getting more out of the iP</strong></p>
               </div>
@@ -153,7 +154,7 @@
               <li>Update the team repo by following the recommended workflow.</li>
             </ol>
             <p>
-              <panel type src="/2020/admin/appendixE-gitHub._include_.html#workflow-before-v11" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Workflow**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+              <panel type src="/2020/admin/appendixE-gitHub._include_.html#workflow-before-v11" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Workflow**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                 minimized fragment="workflow-before-v11"></panel>
             </p>
           </box>
@@ -171,7 +172,7 @@
               </ul>
             </li>
           </ul>
-          <modal large title="Admin <md>:glyphicon-log-in:</md> Choosing a profile photo" id="modal:mid-v12-photo">
+          <modal large title="Admin <md>:glyphicon-log-in:</md> Choosing a profile photo" id="modal:mid-v12-photo" class="algolia-no-index">
 
             <div>
               <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in
@@ -180,11 +181,11 @@
               <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a>                in place of the photo in module-related documents that are publicly visible.</p>
             </div>
           </modal>
-          <modal large title="Admin <md>:glyphicon-log-in:</md> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
+          <modal large title="Admin <md>:glyphicon-log-in:</md> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities" class="algolia-no-index">
 
             <div>
               <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-              <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities">
+              <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities" class="algolia-no-index">
                 <p>This is a non-exhaustive list; you may define additional roles.</p>
                 <ul>
                   <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -254,7 +255,7 @@
               <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to learn
               to deal with merge conflicts.</li>
           </ul>
-          <modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs">
+          <modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs" class="algolia-no-index">
             <div>
               <box>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> It is highly recommended that you <strong>divide documentation work (in the User Guide and the Developer Guide) among team members based on enhancements/features each person would be adding</strong>                  <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>. For features that are not planned to be implemented
@@ -283,7 +284,7 @@
               </ul>
             </li>
           </ul>
-          <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → Use Cases" id="modal:v10-usecases">
+          <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → Use Cases" id="modal:v10-usecases" class="algolia-no-index">
 
             <div>
               <div></div>
@@ -305,7 +306,7 @@
                           <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                           </popover>]</p>
                         <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                          <div slot="content">
+                          <div slot="content" class="algolia-no-index">
                             <div>
                               <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                             </div>
@@ -337,7 +338,7 @@
                           </ul>
                         </div>
                       </panel>
-                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
                         <div class="text-monospace">
                           <ul>
                             <li>System: A Learning Management System (LMS)</li>
@@ -357,7 +358,7 @@
                     <p></p>
                     <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of
                       a system. In the example below, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                    <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                    <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
                       <div>
                         <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                           Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term
@@ -374,7 +375,7 @@
               </div>
             </div>
           </modal>
-          <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-nfr">
+          <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-nfr" class="algolia-no-index">
 
             <div>
               <div></div>
@@ -428,9 +429,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
                             <question>
                               <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                               <ul class="task-list">
@@ -442,7 +443,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(a)(c)(d)(f)(g)</p>
                                 <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project
                                   is done, both of which are considered non-functional requirements.</p>
@@ -457,7 +458,7 @@
               </div>
             </div>
           </modal>
-          <modal title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-glossary">
+          <modal title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-glossary" class="algolia-no-index">
 
             <div>
               <div></div>
@@ -490,7 +491,7 @@
               </div>
             </div>
           </modal>
-          <modal title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-prodsurveys">
+          <modal title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-prodsurveys" class="algolia-no-index">
 
             <div>
               <div></div>
@@ -550,7 +551,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -561,9 +562,27 @@
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -230,7 +231,7 @@ print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="h
                     <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
 {'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
@@ -346,7 +347,7 @@ print(game1_scores)
 {'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}
 {'amy': 35, 'betty': 36, 'charlie': 5}
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> scores[player]
@@ -412,7 +413,7 @@ print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
                     <pre><code class="hljs">30
 brown is not in the game!
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">try</span>:
@@ -539,7 +540,7 @@ betty = 30
 zac = 35
 total = 75
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
   ...
@@ -605,7 +606,7 @@ False
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -637,7 +638,7 @@ print(game3_scores)
                     </p>
                     <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
   <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():
@@ -736,7 +737,7 @@ print(get_detailed_scores())
                     </p>
                     <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
@@ -777,7 +778,7 @@ Betsy Sims
                   <code>friends['john']['birthday']</code><br> → <code>{'name': 'John Doe', 'birthday': 'Jan 12'}['birthday']</code><br> → <code>'Jan 12'</code></p>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -814,7 +815,7 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
                     <pre><code class="hljs">5
 2
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%">
+                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python">
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
@@ -854,7 +855,7 @@ amy : A A+ D
 ben : B A
 charlie : F
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Python hints%%">
+                    <panel type="seamless" header="%%:bulb: Python hints%%" class="algolia-no-index">
                       <ul>
                         <li>use a dictionary of this format to store grades:
                           <div class="code-block">
@@ -986,7 +987,7 @@ total................:110
                       <li>Items should be in alphabetical order.</li>
                       <li>Width of the number column is 3. Numbers should be right-justified.</li>
                     </ul>
-                    <panel type="seamless" header="%%:bulb: (Python) Partial solution%%">
+                    <panel type="seamless" header="%%:bulb: (Python) Partial solution%%" class="algolia-no-index">
                       <p>This exercise requires string formatting methods you learned in an earlier lesson.</p>
                       <div class="code-block">
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
@@ -1102,7 +1103,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1113,9 +1114,27 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

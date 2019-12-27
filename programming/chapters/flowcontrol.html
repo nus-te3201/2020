@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -285,7 +286,7 @@ result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</spa
 </code></pre>
                 <div class="code-block-lang"><span>python</span></div>
               </div>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Booleans%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Booleans%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -329,7 +330,7 @@ Done
                   </div>
                 </div>
               </div>
-              <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
+              <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor" class="algolia-no-index">
                 <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
                 <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the
                   above Python code there to see the execution steps.</p>
@@ -400,9 +401,9 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 </code></pre>
                 <div class="code-block-lang"><span>python</span></div>
               </div>
-              <modal large title="Nested blocks" id="modal:nestedIf-pyTutor">
+              <modal large title="Nested blocks" id="modal:nestedIf-pyTutor" class="algolia-no-index">
                 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `if`%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `if`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -419,7 +420,7 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 </code></pre>
                 <div class="code-block-lang"><span>python</span></div>
               </div>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `else`%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `else`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -438,13 +439,13 @@ Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 </code></pre>
                 <div class="code-block-lang"><span>python</span></div>
               </div>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
               <p></p>
               <p>Note that in an <code>if-elif-else</code> construct no more than one block (the first one whose condition is true) will be executed.</p>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `elif`%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `elif`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -551,19 +552,19 @@ Done
                         <p>
                           <trigger trigger="click" for="modal:visualizeCodewithasimple`if`condition"><span class="dimmed">[Visualize execution]</span></trigger>
                         </p>
-                        <modal large title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition">
+                        <modal large title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition" class="algolia-no-index">
                           <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                       </div>
                     </td>
                   </tr>
                 </table>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Basic `while` loops%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Basic `while` loops%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -578,7 +579,7 @@ Done
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
                 <p>💡 When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to stop executing.</p>
-                <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Infinite loops%%">
+                <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Infinite loops%%" class="algolia-no-index">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
               </tip-box>
               <div>
@@ -733,7 +734,7 @@ Your balance: <span class="hljs-number">20</span>
 </code></pre>
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python">...
 coin_sum = <span class="hljs-number">0</span>
@@ -763,13 +764,13 @@ print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> `break` inside `while` loops%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> `break` inside `while` loops%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: Vending Machine - Allow Abort" expanded no-close>
@@ -802,7 +803,7 @@ Your balance: <span class="hljs-number">20</span>
 </code></pre>
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python">...
 is_aborting = <span class="hljs-literal">False</span>
@@ -839,13 +840,13 @@ print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> `continue` inside `while` loops%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> `continue` inside `while` loops%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -890,7 +891,7 @@ Your balance: <span class="hljs-number">0</span>
 </code></pre>
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <div class="code-block">
                         <pre><code class="hljs python">...
 <span class="hljs-keyword">if</span> coin_value != <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> ... :
@@ -945,13 +946,13 @@ Your balance: <span class="hljs-number">0</span>
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Basic `for` statements%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Basic `for` statements%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -976,7 +977,7 @@ Your balance: <span class="hljs-number">0</span>
 </code></pre>
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
                     </panel>
                   </div>
@@ -1013,7 +1014,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -1060,7 +1061,7 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -1087,13 +1088,13 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
                     </div>
                     <popover id="pop:exerciseThreeDiceThrows-dice" title placement="top">
 
-                      <div slot="content">
+                      <div slot="content" class="algolia-no-index">
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
                           <sub>source: wikipedia</sub></p>
                         <p></p>
                       </div>
                     </popover>
-                    <panel type="seamless" header=":bulb: see hint">
+                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
                       <p>Use three nested <code>for</code> loops.</p>
                     </panel>
                   </div>
@@ -1152,14 +1153,14 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
               <p>💡 It is common practice to put the <code>import</code> statements at the top of the program code.</p>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Importing modules%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Importing modules%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -1207,13 +1208,13 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 </code></pre>
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Early termination%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Early termination%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -1259,7 +1260,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1270,9 +1271,27 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

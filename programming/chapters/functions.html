@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -161,7 +162,7 @@ Nice to meet you.
                           <p>
                             <trigger trigger="click" for="modal:visualizeCallingfunctions"><span class="dimmed">[Visualize execution]</span></trigger>
                           </p>
-                          <modal large title="Calling functions" id="modal:visualizeCallingfunctions">
+                          <modal large title="Calling functions" id="modal:visualizeCallingfunctions" class="algolia-no-index">
                             <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                         </div>
                       </td>
@@ -170,7 +171,7 @@ Nice to meet you.
                 </div>
                 <p>Note how the statements inside the function are not executed unless the method is called.</p>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -221,7 +222,7 @@ say_hello()
                   </tr>
                 </table>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Defining your own functions%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Defining your own functions%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=13&end=199&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -316,14 +317,14 @@ How are you John ?
                           <p>
                             <trigger trigger="click" for="modal:visualizeCallingfunctionswitharguments"><span class="dimmed">[Visualize execution]</span></trigger>
                           </p>
-                          <modal large title="Calling functions with arguments" id="modal:visualizeCallingfunctionswitharguments">
+                          <modal large title="Calling functions with arguments" id="modal:visualizeCallingfunctionswitharguments" class="algolia-no-index">
                             <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                         </div>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%">
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -345,13 +346,13 @@ say_hello(<span class="hljs-string">'Sheldon'</span>)
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
-                <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized>
+                <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized class="algolia-no-index">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
                   <p></p>
                 </panel>
@@ -373,7 +374,7 @@ print(v1)
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Function parameters%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Function parameters%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -408,7 +409,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                     </div>
                     <p>Read the above code to understand how it works. Do you remember
                       <trigger trigger="click" for="printScoreFunction-operators">the meaning of <code>//</code> operator</trigger> used in the code above?</p>
-                    <modal large title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators">
+                    <modal large title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators" class="algolia-no-index">
 
                       <div>
                         <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
@@ -478,9 +479,9 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
                           <div class="code-block-lang"><span>python</span></div>
                         </div>
-                        <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%">
+                        <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%" class="algolia-no-index">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
-                        <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%">
+                        <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%" class="algolia-no-index">
                           <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
                           <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
                       </div>
@@ -502,7 +503,7 @@ print_score(<span class="hljs-string">'Total   :'</span>, total_score)
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
                     <p>without changing the external behavior of the program.</p>
-                    <modal large title id="modal:printScoreFunction-gradeAnalyzer">
+                    <modal large title id="modal:printScoreFunction-gradeAnalyzer" class="algolia-no-index">
 
                       <div>
                         <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
@@ -567,7 +568,7 @@ print(<span class="hljs-string">'Player2 response : '</span> + play())
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -599,14 +600,14 @@ print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">
                   <div class="code-block-lang"><span>python</span></div>
                 </div>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Returning values from functions%%">
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Returning values from functions%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
@@ -729,7 +730,7 @@ total cows after breeding: 5
                   </tr>
                 </table>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized>
+                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -788,7 +789,7 @@ main()
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
                     <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                    <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
+                    <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index">
 
                       <div>
                         <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-2"></a></h4>
@@ -872,7 +873,7 @@ main()
                     </div>
                     <p>The external behavior of the code should remain as before.</p>
                     <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
-                    <modal large title id="modal:graderRestructureMain-graderMainFunction">
+                    <modal large title id="modal:graderRestructureMain-graderMainFunction" class="algolia-no-index">
 
                       <div>
                         <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-2"></a></h4>
@@ -924,7 +925,7 @@ main()
                           <div class="code-block-lang"><span>python</span></div>
                         </div>
                         <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                        <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
+                        <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index">
 
                           <div>
                             <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-3"></a></h4>
@@ -1009,7 +1010,7 @@ Continue y/n? n
 </code></pre>
                       <div class="code-block-lang"><span>python</span></div>
                     </div>
-                    <modal large title id="modal:analyzeGradesInLoop-restructureMain">
+                    <modal large title id="modal:analyzeGradesInLoop-restructureMain" class="algolia-no-index">
 
                       <div>
                         <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function-2"></a></h4>
@@ -1036,7 +1037,7 @@ main()
                         </div>
                         <p>The external behavior of the code should remain as before.</p>
                         <p>💡 You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
-                        <modal large title id="modal:graderRestructureMain-graderMainFunction">
+                        <modal large title id="modal:graderRestructureMain-graderMainFunction" class="algolia-no-index">
 
                           <div>
                             <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-3"></a></h4>
@@ -1088,7 +1089,7 @@ main()
                               <div class="code-block-lang"><span>python</span></div>
                             </div>
                             <p>💡 You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                            <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction">
+                            <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index">
 
                               <div>
                                 <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-4"></a></h4>
@@ -1186,7 +1187,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1197,9 +1198,27 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

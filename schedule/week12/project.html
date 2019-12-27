@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
 
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,7 +63,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -102,7 +103,7 @@
           <box background-color="white" border-color="red">
             <p><strong>Remind yourself of the project grading criteria:</strong></p>
             <p>
-              <panel type="seamless" src="/2020/admin/project-grading._include_.html#main" header="%%Admin <md>:glyphicon-log-in:</md> tP → Grading%%" class="embedding" fragment="main"></panel>
+              <panel type="seamless" src="/2020/admin/project-grading._include_.html#main" header="%%Admin <md>:glyphicon-log-in:</md> tP → Grading%%" class="embedding algolia-no-index" fragment="main"></panel>
             </p>
           </box>
           <h4 id="1-tweak-the-product-as-per-peer-testing-results"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span aria-hidden="true" class="fas fa-user"></span></span> Tweak the product as per peer-testing results<a class="fa fa-anchor" href="#1-tweak-the-product-as-per-peer-testing-results"></a></h4>
@@ -111,7 +112,7 @@
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/2020/admin/project-deliverables-ped._include_.html#after-ped" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → **After the PED**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+              <panel type src="/2020/admin/project-deliverables-ped._include_.html#after-ped" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → **After the PED**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                 minimized fragment="after-ped"></panel>
             </p>
           </div>
@@ -123,7 +124,7 @@
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/2020/admin/project-scope._include_.html#testing-expectations" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Expectation on testing  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+              <panel type src="/2020/admin/project-scope._include_.html#testing-expectations" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Expectation on testing  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                 minimized fragment="testing-expectations"></panel>
             </p>
           </div>
@@ -132,7 +133,7 @@
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/2020/admin/project-grading._include_.html#projectGrading-codeQuality-criteria" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Code Quality Tips  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+              <panel type src="/2020/admin/project-grading._include_.html#projectGrading-codeQuality-criteria" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Code Quality Tips  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                 minimized fragment="projectGrading-codeQuality-criteria"></panel>
             </p>
           </div>
@@ -143,8 +144,8 @@
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/2020/admin/project-deliverables._include_.html#project-deliverables-ppp" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Project Portfolio Page  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-                fragment="project-deliverables-ppp"></panel>
+              <panel type src="/2020/admin/project-deliverables._include_.html#project-deliverables-ppp" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Project Portfolio Page  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                minimized fragment="project-deliverables-ppp"></panel>
             </p>
           </div>
           <h4 id="3-prepare-for-the-demo-rehearsal"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span aria-hidden="true" class="fas fa-users"></span></span> Prepare for the demo rehearsal<a class="fa fa-anchor" href="#3-prepare-for-the-demo-rehearsal"></a></h4>
@@ -159,7 +160,7 @@
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/2020/admin/project-deliverables._include_.html#project-deliverables-demo" header="Admin <md>:glyphicon-log-in:</md> tP → v1.4 Demo (extract)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+              <panel type src="/2020/admin/project-deliverables._include_.html#project-deliverables-demo" header="Admin <md>:glyphicon-log-in:</md> tP → v1.4 Demo (extract)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                 minimized fragment="project-deliverables-demo"></panel>
             </p>
           </div>
@@ -170,7 +171,8 @@
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/2020/admin/project-w10-mid-v13._include_.html#midV13-repoSenseCompatible" header="Admin <md>:glyphicon-log-in:</md> tP → mid-v1.3 → Making the Code RepoSense-Compatible  <md>:glyphicon-star:</md>" class="embedding" minimized fragment="midV13-repoSenseCompatible"></panel>
+              <panel type src="/2020/admin/project-w10-mid-v13._include_.html#midV13-repoSenseCompatible" header="Admin <md>:glyphicon-log-in:</md> tP → mid-v1.3 → Making the Code RepoSense-Compatible  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
+                fragment="midV13-repoSenseCompatible"></panel>
             </p>
           </div>
         </div>
@@ -178,7 +180,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -189,9 +191,27 @@
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

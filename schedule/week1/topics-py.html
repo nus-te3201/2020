@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,227 +63,233 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item disabled"><a class="page-link" href="/2020/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item active"><a class="page-link" href="/2020/schedule/week1/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-1-jan-13-programming-topics">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Programming Topics</small></small><a class="fa fa-anchor" href="#week-1-jan-13-programming-topics"></a></h1>
-        <div>
-          <div id="week1-toc">
-            <ul>
-              <li><a href="/2020/programming/chapters/expressions-types-variables.html#expressions-data-types-variables"><strong>Expressions, Data Types, Variables</strong></a>
-                <ul>
-                  <li><a href="/2020/programming/chapters/expressions-types-variables.html#computer-programs">Computer Programs</a></li>
-                  <li><a href="/2020/programming/chapters/expressions-types-variables.html#setting-up-the-programming-environment">Setting up the Programming Environment</a></li>
-                  <li><a href="/2020/programming/chapters/expressions-types-variables.html#working-with-an-interactive-shell">Working with an Interactive Shell</a></li>
-                  <li><a href="/2020/programming/chapters/expressions-types-variables.html#operators">Operators</a></li>
-                  <li><a href="/2020/programming/chapters/expressions-types-variables.html#data-types">Data Types</a></li>
-                  <li><a href="/2020/programming/chapters/expressions-types-variables.html#variables">Variables</a></li>
-                </ul>
-              </li>
-              <li><a href="/2020/programming/chapters/programs.html#python-programs"><strong>Python Programs</strong></a>
-                <ul>
-                  <li><a href="/2020/programming/chapters/programs.html#scripts-programs">Scripts (Programs)</a></li>
-                  <li><a href="/2020/programming/chapters/programs.html#comments">Comments</a></li>
-                  <li><a href="/2020/programming/chapters/programs.html#using-functions">Using Functions</a></li>
-                </ul>
-              </li>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item disabled"><a class="page-link" href="/2020/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week1/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
             </ul>
-          </div>
-          <h1 id="expressions-data-types-variables">Expressions, Data Types, Variables<a class="fa fa-anchor" href="#expressions-data-types-variables"></a></h1>
+          </nav>
+          <p></p>
+          <h1 id="week-1-jan-13-programming-topics">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Programming Topics</small></small><a class="fa fa-anchor" href="#week-1-jan-13-programming-topics"></a></h1>
+          <box type="info" dismissible>
+            <p>Programming topics allocated to the week will appear in this tab.
+            </p>
+          </box>
           <div>
-            <h3 id="computer-programs">Computer Programs<a class="fa fa-anchor" href="#computer-programs"></a></h3>
-            <p><strong>A <em>computer program</em> is a collection of instructions that a computer can follow to perform a specific task.</strong> A <em>software</em> is a collection of programs wrapped up as a product that can be used <span class="dimmed"> e.g. Microsoft Office</span>.
-              A software <em>application</em> is a software that is meant to be used by an end user, <span class="dimmed"> as opposed to software used by other software (e.g. the software that drives a hard disk)</span>. <em>Programming</em> is the task
-              of writing programs. <em>Software Engineering</em> is the task of creating software.</p>
-            <p>Points to note:</p>
-            <ul>
-              <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
-            </ul>
-            <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> What is programming (a 2-minute intro from Khan Academy):%%">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-            </panel>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="setting-up-the-programming-environment">Setting up the Programming Environment<a class="fa fa-anchor" href="#setting-up-the-programming-environment"></a></h3>
-            <p><strong>Programming requires certain specialized tools</strong> most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure them
-              yourself.</p>
-            <div class="alt-python">
-              <p>Some options for setting up the Python programming environment</p>
-              <p><strong>Option 1. use an online python programming environment</strong></p>
-              <p>In the initial stages you can use an online programming environment to practice Python.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example online Python programming tool you can use is <a href="https://repl.it/repls">repl.it</a>:</p>
-                <ol>
-                  <li>Go to <a href="https://repl.it/repls">repl.it</a> and signup for a free account</li>
-                  <li>Go to <a href="https://repl.it/languages/python3">https://repl.it/languages/python3</a> (or choose <em>Python 3</em> from the options in the web page) to enter the online Python environment</li>
-                </ol>
-              </box>
-              <p><strong>Option 2. install python on your computer</strong></p>
-              <span id="install-python">
-<p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big>
-              </font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)</p>
-              <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> How to install Python on Windows">
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div id="week1-toc">
+              <ul>
+                <li><a href="/2020/programming/chapters/expressions-types-variables.html#expressions-data-types-variables"><strong>Expressions, Data Types, Variables</strong></a>
+                  <ul>
+                    <li><a href="/2020/programming/chapters/expressions-types-variables.html#computer-programs">Computer Programs</a></li>
+                    <li><a href="/2020/programming/chapters/expressions-types-variables.html#setting-up-the-programming-environment">Setting up the Programming Environment</a></li>
+                    <li><a href="/2020/programming/chapters/expressions-types-variables.html#working-with-an-interactive-shell">Working with an Interactive Shell</a></li>
+                    <li><a href="/2020/programming/chapters/expressions-types-variables.html#operators">Operators</a></li>
+                    <li><a href="/2020/programming/chapters/expressions-types-variables.html#data-types">Data Types</a></li>
+                    <li><a href="/2020/programming/chapters/expressions-types-variables.html#variables">Variables</a></li>
+                  </ul>
+                </li>
+                <li><a href="/2020/programming/chapters/programs.html#python-programs"><strong>Python Programs</strong></a>
+                  <ul>
+                    <li><a href="/2020/programming/chapters/programs.html#scripts-programs">Scripts (Programs)</a></li>
+                    <li><a href="/2020/programming/chapters/programs.html#comments">Comments</a></li>
+                    <li><a href="/2020/programming/chapters/programs.html#using-functions">Using Functions</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <h1 id="expressions-data-types-variables">Expressions, Data Types, Variables<a class="fa fa-anchor" href="#expressions-data-types-variables"></a></h1>
+            <div>
+              <h3 id="computer-programs">Computer Programs<a class="fa fa-anchor" href="#computer-programs"></a></h3>
+              <p><strong>A <em>computer program</em> is a collection of instructions that a computer can follow to perform a specific task.</strong> A <em>software</em> is a collection of programs wrapped up as a product that can be used <span class="dimmed"> e.g. Microsoft Office</span>.
+                A software <em>application</em> is a software that is meant to be used by an end user, <span class="dimmed"> as opposed to software used by other software (e.g. the software that drives a hard disk)</span>. <em>Programming</em> is the
+                task of writing programs. <em>Software Engineering</em> is the task of creating software.</p>
+              <p>Points to note:</p>
+              <ul>
+                <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
+              </ul>
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> What is programming (a 2-minute intro from Khan Academy):%%" class="algolia-no-index">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
-              </span>
             </div>
-            <div class="alt-java">
-              <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful
-                for developing and testing programs written in the Java programming language and running on the Java platform.</p>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="setting-up-the-programming-environment">Setting up the Programming Environment<a class="fa fa-anchor" href="#setting-up-the-programming-environment"></a></h3>
+              <p><strong>Programming requires certain specialized tools</strong> most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure
+                them yourself.
+              </p>
+              <div class="alt-python">
+                <p>Some options for setting up the Python programming environment</p>
+                <p><strong>Option 1. use an online python programming environment</strong></p>
+                <p>In the initial stages you can use an online programming environment to practice Python.</p>
+                <box>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example online Python programming tool you can use is <a href="https://repl.it/repls">repl.it</a>:</p>
+                  <ol>
+                    <li>Go to <a href="https://repl.it/repls">repl.it</a> and signup for a free account</li>
+                    <li>Go to <a href="https://repl.it/languages/python3">https://repl.it/languages/python3</a> (or choose <em>Python 3</em> from the options in the web page) to enter the online Python environment</li>
+                  </ol>
+                </box>
+                <p><strong>Option 2. install python on your computer</strong></p>
+                <span id="install-python">
+<p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big>
+                </font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)</p>
+                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> How to install Python on Windows" class="algolia-no-index">
+                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                </panel>
+                </span>
+              </div>
+              <div class="alt-java">
+                <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful
+                  for developing and testing programs written in the Java programming language and running on the Java platform.</p>
+              </div>
             </div>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell<a class="fa fa-anchor" href="#working-with-an-interactive-shell"></a></h3>
-            <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can type
-              in a python <em>expression</em> and get the shell to evaluate the expression.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell<a class="fa fa-anchor" href="#working-with-an-interactive-shell"></a></h3>
+              <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can
+                type in a python <em>expression</em> and get the shell to evaluate the expression.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
 <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> * <span class="hljs-number">4</span> * <span class="hljs-number">3</span>
 <span class="hljs-number">24</span>
 &gt;&gt;&gt;
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Python interactive shell in action:%%" class="algolia-no-index">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
-            <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Python interactive shell in action:%%">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
-            <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
-            <div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th style="text-align:center">Operator</th>
-                    <th style="text-align:left">Operation</th>
-                    <th style="text-align:center">Example</th>
-                    <th style="text-align:center">Evaluates to...</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="text-align:center"><code>+</code></td>
-                    <td style="text-align:left">Addition</td>
-                    <td style="text-align:center"><code>2 + 2</code></td>
-                    <td style="text-align:center"><code>4</code></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center"><code>-</code></td>
-                    <td style="text-align:left">Subtraction</td>
-                    <td style="text-align:center"><code>5 - 2</code></td>
-                    <td style="text-align:center"><code>3</code></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center"><code>*</code></td>
-                    <td style="text-align:left">Multiplication</td>
-                    <td style="text-align:center"><code>3 * 5</code></td>
-                    <td style="text-align:center"><code>15</code></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center"><code>/</code></td>
-                    <td style="text-align:left">Division</td>
-                    <td style="text-align:center"><code>22 / 8</code></td>
-                    <td style="text-align:center"><code>2.75</code></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center"><code>**</code></td>
-                    <td style="text-align:left">Exponent</td>
-                    <td style="text-align:center"><code>2 ** 3</code></td>
-                    <td style="text-align:center"><code>8</code></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center"><code>%</code></td>
-                    <td style="text-align:left">Modulus/remainder</td>
-                    <td style="text-align:center"><code>22 % 8</code></td>
-                    <td style="text-align:center"><code>6</code></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align:center"><code>//</code></td>
-                    <td style="text-align:left">Integer division</td>
-                    <td style="text-align:center"><code>22 // 8</code></td>
-                    <td style="text-align:center"><code>2</code></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
+              <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Operator</th>
+                      <th style="text-align:left">Operation</th>
+                      <th style="text-align:center">Example</th>
+                      <th style="text-align:center">Evaluates to...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center"><code>+</code></td>
+                      <td style="text-align:left">Addition</td>
+                      <td style="text-align:center"><code>2 + 2</code></td>
+                      <td style="text-align:center"><code>4</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>-</code></td>
+                      <td style="text-align:left">Subtraction</td>
+                      <td style="text-align:center"><code>5 - 2</code></td>
+                      <td style="text-align:center"><code>3</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>*</code></td>
+                      <td style="text-align:left">Multiplication</td>
+                      <td style="text-align:center"><code>3 * 5</code></td>
+                      <td style="text-align:center"><code>15</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>/</code></td>
+                      <td style="text-align:left">Division</td>
+                      <td style="text-align:center"><code>22 / 8</code></td>
+                      <td style="text-align:center"><code>2.75</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>**</code></td>
+                      <td style="text-align:left">Exponent</td>
+                      <td style="text-align:center"><code>2 ** 3</code></td>
+                      <td style="text-align:center"><code>8</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>%</code></td>
+                      <td style="text-align:left">Modulus/remainder</td>
+                      <td style="text-align:center"><code>22 % 8</code></td>
+                      <td style="text-align:center"><code>6</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>//</code></td>
+                      <td style="text-align:left">Integer division</td>
+                      <td style="text-align:center"><code>22 // 8</code></td>
+                      <td style="text-align:center"><code>2</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
 <span class="hljs-number">22</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%" class="algolia-no-index">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+              <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%" class="algolia-no-index">
+                <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
+                <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
             </div>
-            <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
-            <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%">
-              <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
-              <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="data-types">Data Types<a class="fa fa-anchor" href="#data-types"></a></h3>
-            <p><strong>A data value has a <em>type</em>.</strong> Here is a summary of three basic data types used in Python often:</p>
-            <div class="table-responsive">
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Type name</th>
-                    <th>Description</th>
-                    <th>Examples</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>int</code></td>
-                    <td>whole numbers (integers)</td>
-                    <td><code>-23</code>, <code>-22</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>65</code>, <code>66</code></td>
-                  </tr>
-                  <tr>
-                    <td><code>float</code></td>
-                    <td>numbers with decimal points (floating point numbers)</td>
-                    <td><code>-34.576</code>, <code>436.0</code></td>
-                  </tr>
-                  <tr>
-                    <td><code>str</code></td>
-                    <td>sequence of characters (strings)</td>
-                    <td><code>adam</code> <code>What can it be?</code>, <code>x</code></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="data-types">Data Types<a class="fa fa-anchor" href="#data-types"></a></h3>
+              <p><strong>A data value has a <em>type</em>.</strong> Here is a summary of three basic data types used in Python often:</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Type name</th>
+                      <th>Description</th>
+                      <th>Examples</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>int</code></td>
+                      <td>whole numbers (integers)</td>
+                      <td><code>-23</code>, <code>-22</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>65</code>, <code>66</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>float</code></td>
+                      <td>numbers with decimal points (floating point numbers)</td>
+                      <td><code>-34.576</code>, <code>436.0</code></td>
+                    </tr>
+                    <tr>
+                      <td><code>str</code></td>
+                      <td>sequence of characters (strings)</td>
+                      <td><code>adam</code> <code>What can it be?</code>, <code>x</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
 <span class="hljs-string">"What's going on?"</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p>Some operators can be used on strings as well.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>Some operators can be used on strings as well.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
 <span class="hljs-string">'hello'</span>
 
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Hello'</span> + <span class="hljs-string">' '</span> + <span class="hljs-string">'World!'</span>
@@ -291,56 +298,56 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Bye'</span> + (<span class="hljs-string">'!'</span> * <span class="hljs-number">10</span>)
 <span class="hljs-string">'Bye!!!!!!!!!!'</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Data types%%" class="algolia-no-index">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
             </div>
-            <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Data types%%">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
-            <panel type="seamless" header="%%:fas-laptop: Try your own%%">
-              <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="variables">Variables<a class="fa fa-anchor" href="#variables"></a></h3>
-            <blockquote>
-              <p><strong>Variables are used to store information to be referenced and manipulated in a computer program.</strong> They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader
-                and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
-            </blockquote>
-            <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
-            <div class="code-block">
-              <pre><code class="hljs python">v = <span class="hljs-number">5</span>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="variables">Variables<a class="fa fa-anchor" href="#variables"></a></h3>
+              <blockquote>
+                <p><strong>Variables are used to store information to be referenced and manipulated in a computer program.</strong> They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader
+                  and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
+              </blockquote>
+              <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
+              <div class="code-block">
+                <pre><code class="hljs python">v = <span class="hljs-number">5</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <tip-box>
-              <p><strong>Statements</strong></p>
-              <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
-              </p>
-            </tip-box>
-            <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <tip-box>
+                <p><strong>Statements</strong></p>
+                <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
+                </p>
+              </tip-box>
+              <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
 <span class="hljs-number">5</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p>You can even use the variable in expressions.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>You can even use the variable in expressions.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
 <span class="hljs-number">20</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <tip-box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are some examples of variables being declared, assigned, and being used:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <tip-box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are some examples of variables being declared, assigned, and being used:</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count
 <span class="hljs-number">2</span>
 
@@ -350,20 +357,20 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>price - discount
 <span class="hljs-number">9.5</span>
 </code></pre>
+                  <div class="code-block-lang"><span>python</span></div>
+                </div>
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                  <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+              </tip-box>
+              <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
+              <div class="code-block">
+                <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
+</code></pre>
                 <div class="code-block-lang"><span>python</span></div>
               </div>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%">
-                <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
-            </tip-box>
-            <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
-            <div class="code-block">
-              <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
-</code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
+              <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">12.0</span>
@@ -374,11 +381,11 @@ Traceback (most recent call last):
    Height
 NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">5</span>
 
@@ -386,13 +393,13 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">6</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p><strong>The value of one variable can be assigned to another variable.</strong></p>
-            <tip-box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p><strong>The value of one variable can be assigned to another variable.</strong></p>
+              <tip-box>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
+                <div class="code-block">
+                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>width = height
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
@@ -404,76 +411,76 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%">
-                <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
-            </tip-box>
-            <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Variables%%">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
-              <p></p>
-            </panel>
-            <p></p>
-            <div>
-              <panel type="danger" header=":fas-dumbbell: Exercise: Circle Circumference" expanded no-close>
-                <div>
-                  <h4 id="exercise-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise-circle-circumference"></a></h4>
-                  <ol>
-                    <li>Declare a variable <code>r</code> to represent the radius of a circle, and assign it value <code>7</code>.</li>
-                    <li>Declare a variable <code>pi</code> to represent PI and assign it <code>3.14</code></li>
-                    <li>Use the above two variables to calculate and the circumference of the circle and assign it to a new variable <code>c</code>.</li>
-                    <li>Show the value of <code>c</code> (which should be <code>43.96</code>).</li>
-                  </ol>
+                  <div class="code-block-lang"><span>python</span></div>
                 </div>
+                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                  <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+              </tip-box>
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Variables%%" class="algolia-no-index">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
+                <p></p>
               </panel>
               <p></p>
-            </div>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs"></a></h1>
-          <div>
-            <h3 id="scripts-programs">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-programs"></a></h3>
-            <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><tooltip content="the tool that interprets the code and executes it">interpreter</tooltip></em>              reads the program and executes statements from top to bottom.</p>
-            <p>Let's create and run a Python program:</p>
-            <tabs>
-
-              <tab header="Using Repl.it (no need to save as a file)">
-                <p>Press the <span aria-hidden="true" class="fas fa-play"></span> button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p>
-                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Circle Circumference" expanded no-close>
+                  <div>
+                    <h4 id="exercise-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise-circle-circumference"></a></h4>
+                    <ol>
+                      <li>Declare a variable <code>r</code> to represent the radius of a circle, and assign it value <code>7</code>.</li>
+                      <li>Declare a variable <code>pi</code> to represent PI and assign it <code>3.14</code></li>
+                      <li>Use the above two variables to calculate and the circumference of the circle and assign it to a new variable <code>c</code>.</li>
+                      <li>Show the value of <code>c</code> (which should be <code>43.96</code>).</li>
+                    </ol>
+                  </div>
+                </panel>
                 <p></p>
-              </tab>
+              </div>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs"></a></h1>
+            <div>
+              <h3 id="scripts-programs">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-programs"></a></h3>
+              <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><tooltip content="the tool that interprets the code and executes it">interpreter</tooltip></em>                reads the program and executes statements from top to bottom.</p>
+              <p>Let's create and run a Python program:</p>
+              <tabs>
 
-              <tab header="Using IDLE (need to save as a `.py` file)">
-                <ol>
-                  <li>
-                    <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.</li>
-                  <li>Choose <code>File</code> → <code>New File</code></li>
-                  <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
-                    <div class="code-block">
-                      <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
+                <tab header="Using Repl.it (no need to save as a file)">
+                  <p>Press the <span aria-hidden="true" class="fas fa-play"></span> button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p>
+                  <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                  <p></p>
+                </tab>
+
+                <tab header="Using IDLE (need to save as a `.py` file)" class="algolia-no-index">
+                  <ol>
+                    <li>
+                      <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.</li>
+                    <li>Choose <code>File</code> → <code>New File</code></li>
+                    <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
+                      <div class="code-block">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
 print(<span class="hljs-string">'Bye!'</span>)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </li>
-                  <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
-                  <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
-                </ol>
-                <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Writing your first Python program%%">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
-                <p></p>
-              </tab>
-            </tabs>
-            <modal title="<md>:glyphicon-facetime-video:</md> Opening IDEL in Windows 10" id="modal:scripts-openIdle">
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </li>
+                    <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
+                    <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
+                  </ol>
+                  <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Writing your first Python program%%" class="algolia-no-index">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
+                  <p></p>
+                </tab>
+              </tabs>
+              <modal title="<md>:glyphicon-facetime-video:</md> Opening IDEL in Windows 10" id="modal:scripts-openIdle" class="algolia-no-index">
 
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></modal>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments"></a></h3>
-            <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></modal>
+            </div>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments"></a></h3>
+              <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
 
 print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
 
@@ -481,82 +488,83 @@ print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># sta
 print(<span class="hljs-string">'What is your name?'</span>)
 name = input()
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the
+                <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
             </div>
-            <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the
-              <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
-          </div>
-          <hr style="border-top: 3px double #c5c5c5;">
-          <div>
-            <h3 id="using-functions">Using Functions<a class="fa fa-anchor" href="#using-functions"></a></h3>
-            <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>,
-              <em>invoke</em>) a function takes the form <code>function_name(arguments)</code> <span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
-            <p>Python comes with many built-in functions you can use right away.</p>
-            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> To print some text, you can use the <code>print</code> function which can take one or more arguments:</p>
-            <tabs>
+            <hr style="border-top: 3px double #c5c5c5;">
+            <div>
+              <h3 id="using-functions">Using Functions<a class="fa fa-anchor" href="#using-functions"></a></h3>
+              <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>,
+                <em>invoke</em>) a function takes the form <code>function_name(arguments)</code> <span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
+              <p>Python comes with many built-in functions you can use right away.</p>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> To print some text, you can use the <code>print</code> function which can take one or more arguments:</p>
+              <tabs>
 
-              <tab header="Using the shell">
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
+                <tab header="Using the shell">
+                  <div class="code-block">
+                    <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
 Hello World
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 Bye my friend
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
-                <p></p>
-              </tab>
+                    <div class="code-block-lang"><span>python</span></div>
+                  </div>
+                  <p></p>
+                </tab>
 
-              <tab header="Running as a script">
-                <div class="code-block">
-                  <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
+                <tab header="Running as a script" class="algolia-no-index">
+                  <div class="code-block">
+                    <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
 print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
-                <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-                </p>
-                <pre><code class="hljs">Hello World
+                    <div class="code-block-lang"><span>python</span></div>
+                  </div>
+                  <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
+                  </p>
+                  <pre><code class="hljs">Hello World
 Bye my friend
 </code></pre>
+                  <p></p>
+                </tab>
+              </tabs>
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
-              </tab>
-            </tabs>
-            <panel type="seamless" header="%%:fas-laptop: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              </panel>
               <p></p>
-            </panel>
-            <p></p>
-            <p><strong>Some functions return a value.</strong></p>
-            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells you
-              the type of a value.</p>
-            <div class="code-block">
-              <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
+              <p><strong>Some functions return a value.</strong></p>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells
+                you the type of a value.</p>
+              <div class="code-block">
+                <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
 print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
 
 print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span>
 print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span>
 print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-            </p>
-            <pre><code class="hljs">My age is 25
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
+              </p>
+              <pre><code class="hljs">My age is 25
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;
 &lt;class 'float'&gt;
 </code></pre>
-            <panel type="seamless" header="%%:fas-laptop: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <p></p>
+              </panel>
               <p></p>
-            </panel>
-            <p></p>
-            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user
-              <mark>as a string</mark>. 💡 Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the
+                user
+                <mark>as a string</mark>. 💡 Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
+              <div class="code-block">
+                <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
 print(<span class="hljs-string">'What is the current price?'</span>)
 price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
 
@@ -568,28 +576,29 @@ print(<span class="hljs-string">'Current price is $'</span> + price) <span class
 discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
 print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
-            <panel type="seamless" header="%%:fas-laptop: Try your own%%">
-              <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
-            <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Explanation of a similar Python program%%">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
-            <div>
-              <panel type="danger" header=":fas-dumbbell: Exercise: Length of Names" expanded no-close>
-                <div>
-                  <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
-                  <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
-                  <pre><code class="hljs">What is your name?
+                <div class="code-block-lang"><span>python</span></div>
+              </div>
+              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Explanation of a similar Python program%%" class="algolia-no-index">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
+              <div>
+                <panel type="danger" header=":fas-dumbbell: Exercise: Length of Names" expanded no-close>
+                  <div>
+                    <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
+                    <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
+                    <pre><code class="hljs">What is your name?
 John Doe
 The length of your name is 8
 </code></pre>
-                  <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
-                </div>
-              </panel>
-              <p></p>
+                    <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+                  </div>
+                </panel>
+                <p></p>
+              </div>
             </div>
+            <hr style="border-top: 3px double #c5c5c5;">
           </div>
-          <hr style="border-top: 3px double #c5c5c5;">
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
@@ -625,7 +634,7 @@ The length of your name is 8
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -636,9 +645,27 @@ The length of your name is 8
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

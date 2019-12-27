@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,55 +63,56 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week4"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week5/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week5/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week5/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-            <li class="page-item active"><a class="page-link" href="/2020/schedule/week5/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week6"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-5-feb-10-tasks">Week 5 <small><small><span class="dimmed">[Feb 10]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-5-feb-10-tasks"></a></h1>
-        <div>
-          <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
-            <ol>
-              <li>Submit weekly exercises</li>
-              <li>Submit weekly project increment <code>Level 5. Mark Tasks as Done</code>, <code>Level 6. Give Help</code> (optional)</li>
-            </ol>
-          </div>
-          <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
-          <ul>
-            <li>As usual</li>
-          </ul>
-          <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week4"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week5/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week6"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-5-feb-10-tasks">Week 5 <small><small><span class="dimmed">[Feb 10]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-5-feb-10-tasks"></a></h1>
           <div>
-            <div class="indented-level2">
-              <panel type="primary">
-                <div></div>
-                <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 5. Mark Tasks as Done</strong> <span class="badge badge-pill badge-warning"></span></span>
-                </div>
-                <div></div>
-                <div>
-                  <h3 id="level-5-mark-tasks-as-done"><span class="badge badge-primary">Level 5</span> <span class="text-primary">Mark Tasks as Done</span><a class="fa fa-anchor" href="#level-5-mark-tasks-as-done"></a></h3>
-                  <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty4">Monty Level 4 code</a> in the following ways:</p>
-                  <ul>
-                    <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
-                    <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
-                  </ul>
-                  <p>A sample output is given below.</p>
-                  <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+              <ol>
+                <li>Submit weekly exercises</li>
+                <li>Submit weekly project increment <code>Level 5. Mark Tasks as Done</code>, <code>Level 6. Give Help</code> (optional)</li>
+              </ol>
+            </div>
+            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
+            <ul>
+              <li>As usual</li>
+            </ul>
+            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 5. Mark Tasks as Done</strong> <span class="badge badge-pill badge-warning"></span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-5-mark-tasks-as-done"><span class="badge badge-primary">Level 5</span> <span class="text-primary">Mark Tasks as Done</span><a class="fa fa-anchor" href="#level-5-mark-tasks-as-done"></a></h3>
+                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty4">Monty Level 4 code</a> in the following ways:</p>
+                    <ul>
+                      <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
+                      <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
+                    </ul>
+                    <p>A sample output is given below.</p>
+                    <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 
 add borrow book
@@ -160,10 +162,10 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-                  <box>
-                    <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">tasks = []
+                    <box>
+                      <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
+                      <div class="code-block">
+                        <pre><code class="hljs python">tasks = []
 tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])
 print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
 
@@ -172,11 +174,11 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
 <span class="hljs-keyword">else</span>:
     print(<span class="hljs-string">'✗'</span>)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                    <p>💡 You can use exceptions to identify and handle errors in the command.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                      <p>💡 You can use exceptions to identify and handle errors in the command.</p>
+                      <div class="code-block">
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         <span class="hljs-keyword">try</span>:
@@ -185,12 +187,12 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </box>
-                  <panel header=":fas-battery-quarter: Partial solution" minimized>
-                    <div class="code-block">
-                      <pre><code class="hljs python">
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </box>
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python">
 items = []
 
 <span class="hljs-comment"># ...</span>
@@ -242,29 +244,29 @@ items = []
 
 main()
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
             </div>
-          </div>
-          <div>
-            <div class="indented-level2">
-              <panel type="primary">
-                <div></div>
-                <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 6. Give Help</strong> <span class="badge badge-pill badge-warning">optional</span></span>
-                </div>
-                <div></div>
-                <div>
-                  <h3 id="level-6-give-help"><span class="badge badge-primary">Level 6</span> <span class="text-primary">Give Help</span><a class="fa fa-anchor" href="#level-6-give-help"></a></h3>
-                  <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty5">Monty Level 5 code</a> in the following ways:</p>
-                  <ul>
-                    <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
-                    <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
-                  </ul>
-                  <p>A sample output is given below.</p>
-                  <pre><code class="hljs">*******************************************************************************************
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 6. Give Help</strong> <span class="badge badge-pill badge-warning">optional</span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-6-give-help"><span class="badge badge-primary">Level 6</span> <span class="text-primary">Give Help</span><a class="fa fa-anchor" href="#level-6-give-help"></a></h3>
+                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty5">Monty Level 5 code</a> in the following ways:</p>
+                    <ul>
+                      <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
+                      <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
+                    </ul>
+                    <p>A sample output is given below.</p>
+                    <pre><code class="hljs">*******************************************************************************************
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
 *   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
@@ -320,21 +322,21 @@ STATUS | INDEX | DESCRIPTION
 --------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                  <box>
-                    <p>💡 You can use triple quotes to define a long string such as the help text.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">help_text =<span class="hljs-string">'''
+                    <box>
+                      <p>💡 You can use triple quotes to define a long string such as the help text.</p>
+                      <div class="code-block">
+                        <pre><code class="hljs python">help_text =<span class="hljs-string">'''
 long text
 more text
 '''</span>
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                    <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
-                  </box>
-                  <panel header=":fas-battery-quarter: Partial solution" minimized>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                      <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
+                    </box>
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
 *******************************************************************************************
 *  __          __  _                            _          __  __             _           *
@@ -349,11 +351,12 @@ more text
 '''</span>
     print(banner.strip(), <span class="hljs-string">'\n'</span>)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -374,7 +377,7 @@ more text
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -385,9 +388,27 @@ more text
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

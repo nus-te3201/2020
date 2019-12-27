@@ -15,25 +15,25 @@ Weekly tasks will appear in this tab.
 {% endcall %}
 
 
-### {{ thumb(1) }} Learn about the module and the website
+#### {{ thumb(1) }} Learn about the module and the website
 
 {{ embed_topic("../../admin/te3201-admin.md#module-info", "Admin " + icon_embedding + " About the module", "1", indent="2") }}
 {{ embed_topic("../../admin/te3201-admin.md#website-info", "Admin " + icon_embedding + " Using the website", "1", indent="2") }}
 
 
-### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
+#### {{ thumb(2) }} Submit the pre-module survey  {{ timing_badge("by Saturday 2359", "secondary") }}
 
 * Submit the pre-module survey, available on LumiNUS
 
 
-### {{ thumb(3) }} Attend the lecture
+#### {{ thumb(3) }} Attend the lecture
 
 * The lecture will start at 6.30pm.
 
 {{ embed_topic("../../admin/te3201-admin.md#lectures-info", "Admin " + icon_embedding + " Lectures", "1", indent="2") }}
 
 
-### {{ thumb(4) }} Submit weekly exercises
+#### {{ thumb(4) }} Submit weekly exercises
 
 * As you learn the weekly topics, submit Week 1 programming exercise on `repl.it`. See the panel below for more info. More instructions about this will be provided during the lecture.
 
@@ -42,7 +42,7 @@ Weekly tasks will appear in this tab.
 {{ embed_topic("../../admin/te3201-admin.md#help-info", "Admin " + icon_embedding + " Getting Help", "2", indent="2") }}
 
 
-### {{ thumb(5) }} Submit weekly project increments
+#### {{ thumb(5) }} Submit weekly project increments
 
 {{ embed_topic("../../admin/te3201-admin.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
 

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand">TE3201 <small>2020</small></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,13 +48,13 @@
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">Textbook</div>
-        <dropdown text="Textbook" class="nav-link temp-dropdown">
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
           <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
         </dropdown>
         <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
@@ -62,61 +63,62 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week1"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week2/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week2/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week2/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-            <li class="page-item active"><a class="page-link" href="/2020/schedule/week2/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/2020/schedule/week3"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-2-jan-20-tasks">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-2-jan-20-tasks"></a></h1>
-        <div>
-          <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
-            <ol>
-              <li>Submit weekly exercises</li>
-              <li>Submit weekly project increment <code>Monty Level 2. Recognize Known Commands</code></li>
-            </ol>
-          </div>
-          <h3 id="0-finish-previous-week-s-tasks-if-you-haven-t-done-so-already"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> Finish previous week's tasks if you haven't done so already<a class="fa fa-anchor" href="#0-finish-previous-week-s-tasks-if-you-haven-t-done-so-already"></a></h3>
-          <h3 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h3>
-          <ul>
-            <li>As usual</li>
-          </ul>
-          <h3 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h3>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week1"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week2/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week2/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week2/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week2/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week3"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-2-jan-20-tasks">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-2-jan-20-tasks"></a></h1>
           <div>
-            <div class="indented-level2">
-              <panel type="primary">
-                <div></div>
-                <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 2. Recognize Known Commands</strong> <span class="badge badge-pill badge-warning"></span></span>
-                </div>
-                <div></div>
-                <div>
-                  <h3 id="level-2-recognize-known-commands"><span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span><a class="fa fa-anchor" href="#level-2-recognize-known-commands"></a></h3>
-                  <p>Extend <a href="/2020/programming/chapters/monty.html#monty1">Monty 1 code</a> to work as follows:</p>
-                  <ul>
-                    <li>It recognizes the <code>list</code> command and responds with a fixed message.</li>
-                    <li>It recognizes the <code>exit</code> command and exits the program if user confirms.</li>
-                    <li>For all other inputs, it responds with a fixed error message.</li>
-                  </ul>
-                  <p>A sample session is given below.</p>
-                  <box type="warning">
-                    <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code>show</code> instead of <code>list</code>), and even a different <strong>personality</strong>                      (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
-                    </p>
-                  </box>
-                  <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+              <ol>
+                <li>Submit weekly exercises</li>
+                <li>Submit weekly project increment <code>Monty Level 2. Recognize Known Commands</code></li>
+              </ol>
+            </div>
+            <h4 id="0-finish-previous-week-s-tasks-if-you-haven-t-done-so-already"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> Finish previous week's tasks if you haven't done so already<a class="fa fa-anchor" href="#0-finish-previous-week-s-tasks-if-you-haven-t-done-so-already"></a></h4>
+            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
+            <ul>
+              <li>As usual</li>
+            </ul>
+            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 2. Recognize Known Commands</strong> <span class="badge badge-pill badge-warning"></span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-2-recognize-known-commands"><span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span><a class="fa fa-anchor" href="#level-2-recognize-known-commands"></a></h3>
+                    <p>Extend <a href="/2020/programming/chapters/monty.html#monty1">Monty 1 code</a> to work as follows:</p>
+                    <ul>
+                      <li>It recognizes the <code>list</code> command and responds with a fixed message.</li>
+                      <li>It recognizes the <code>exit</code> command and exits the program if user confirms.</li>
+                      <li>For all other inputs, it responds with a fixed error message.</li>
+                    </ul>
+                    <p>A sample session is given below.</p>
+                    <box type="warning">
+                      <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code>show</code> instead of <code>list</code>), and even a different <strong>personality</strong>                        (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
+                      </p>
+                    </box>
+                    <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
 &gt;&gt;&gt; What can I do for you?
 
 list
@@ -137,19 +139,20 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-                  <panel header=":fas-battery-quarter: Partial solution" minimized>
-                    <div class="code-block">
-                      <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
     print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
     <span class="hljs-comment"># ADD MORE CODE HERE</span>
 print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
+                        <div class="code-block-lang"><span>python</span></div>
+                      </div>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
             </div>
           </div>
         </div>
@@ -171,7 +174,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Thu, 26 Dec 2019 16:19:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 27 Dec 2019 11:59:27 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -182,9 +185,27 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/2020'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
