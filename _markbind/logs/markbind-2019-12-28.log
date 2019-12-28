@@ -1,0 +1,47 @@
+2019-12-28T05:17:46.230Z - info: Website generation started at 1:17:45 PM
+2019-12-28T05:17:48.670Z - info: Building assets...
+2019-12-28T05:17:50.450Z - info: Assets built
+2019-12-28T05:17:50.450Z - info: Generating pages...
+2019-12-28T05:17:50.881Z - info: Pages built
+2019-12-28T05:17:51.041Z - info: Website generation complete! Total build time: 6.038s
+2019-12-28T05:17:51.387Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2019-12-28T05:17:51.387Z - info: Press CTRL+C to stop ...
+2019-12-28T05:17:51.483Z - info: Site data built
+2019-12-28T05:20:40.727Z - info: [1:20:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\headers\header.md
+2019-12-28T05:20:40.730Z - info: [1:20:40 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\variables.md
+2019-12-28T05:20:41.729Z - info: Rebuilding affected source files
+2019-12-28T05:20:41.806Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2019-12-28T05:20:41.806Z - info: Rebuilding 1 pages
+2019-12-28T05:20:42.088Z - info: Pages rebuilt
+2019-12-28T05:20:42.099Z - info: Site data built
+2019-12-28T05:20:56.867Z - info: Website generation started at 1:20:56 PM
+2019-12-28T05:20:59.239Z - info: Building assets...
+2019-12-28T05:21:00.997Z - info: Assets built
+2019-12-28T05:21:00.997Z - info: Generating pages...
+2019-12-28T05:21:30.746Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.760Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.760Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.761Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.761Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.761Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.762Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:30.762Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T05:21:35.201Z - debug:  
+2019-12-28T05:21:35.201Z - debug:  
+2019-12-28T05:21:35.201Z - debug:  
+2019-12-28T05:21:35.201Z - debug:  
+2019-12-28T05:22:08.831Z - info: Pages built
+2019-12-28T05:22:20.234Z - info: Website generation complete! Total build time: 83.903s
+2019-12-28T05:22:20.577Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2019-12-28T05:22:20.577Z - info: Press CTRL+C to stop ...
+2019-12-28T05:22:20.680Z - info: Site data built
+2019-12-28T05:28:05.832Z - info: Website generation started at 1:28:04 PM
+2019-12-28T05:28:08.222Z - info: Building assets...

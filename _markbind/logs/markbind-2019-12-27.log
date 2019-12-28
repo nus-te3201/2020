@@ -3391,3 +3391,30 @@ Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\time
 2019-12-27T11:47:54.721Z - info: Site data built
 2019-12-27T11:59:22.420Z - info: Website generation started at 7:59:21 PM
 2019-12-27T11:59:25.194Z - info: Building assets...
+2019-12-27T11:59:27.286Z - info: Assets built
+2019-12-27T11:59:27.287Z - info: Generating pages...
+2019-12-27T12:00:00.456Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.458Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.459Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.459Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.461Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.464Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.467Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:00.488Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-27T12:00:03.196Z - debug:  
+2019-12-27T12:00:03.196Z - debug:  
+2019-12-27T12:00:03.587Z - debug:  
+2019-12-27T12:00:03.588Z - debug:  
+2019-12-27T12:00:43.370Z - info: Pages built
+2019-12-27T12:00:55.210Z - info: Website generation complete! Total build time: 94.096s
+2019-12-27T12:00:55.210Z - info: Build success!
+2019-12-27T12:00:55.213Z - info: Site data built
+2019-12-27T12:02:00.421Z - info: Deployed!
