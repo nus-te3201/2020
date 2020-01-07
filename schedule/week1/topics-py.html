@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 1 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -84,6 +84,10 @@
           </nav>
           <p></p>
           <h1 id="week-1-jan-13-programming-topics">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Programming Topics</small></small><a class="fa fa-anchor" href="#week-1-jan-13-programming-topics"></a></h1>
+          <box type="info" dismissible>
+            <p>Programming topics allocated to the week will appear in this tab.
+            </p>
+          </box>
           <div>
             <div id="week1-toc">
               <ul>
@@ -156,15 +160,12 @@
               <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell<a class="fa fa-anchor" href="#working-with-an-interactive-shell"></a></h3>
               <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can
                 type in a python <em>expression</em> and get the shell to evaluate the expression.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
 <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> * <span class="hljs-number">4</span> * <span class="hljs-number">3</span>
 <span class="hljs-number">24</span>
 &gt;&gt;&gt;
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Python interactive shell in action:%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
@@ -229,14 +230,11 @@
                 </table>
               </div>
               <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
 <span class="hljs-number">22</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%" class="algolia-no-index">
@@ -276,15 +274,11 @@
                 </table>
               </div>
               <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
+              <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
 <span class="hljs-string">"What's going on?"</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>Some operators can be used on strings as well.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
 <span class="hljs-string">'hello'</span>
 
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Hello'</span> + <span class="hljs-string">' '</span> + <span class="hljs-string">'World!'</span>
@@ -293,8 +287,6 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Bye'</span> + (<span class="hljs-string">'!'</span> * <span class="hljs-number">10</span>)
 <span class="hljs-string">'Bye!!!!!!!!!!'</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Data types%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
@@ -308,41 +300,28 @@
                   and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
               </blockquote>
               <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
-              <div class="code-block">
-                <pre><code class="hljs python">v = <span class="hljs-number">5</span>
+              <pre><code class="hljs python">v = <span class="hljs-number">5</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <tip-box>
                 <p><strong>Statements</strong></p>
                 <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
                 </p>
               </tip-box>
               <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
 <span class="hljs-number">5</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>You can even use the variable in expressions.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
 <span class="hljs-number">20</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are some examples of variables being declared, assigned, and being used:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count
 <span class="hljs-number">2</span>
 
@@ -352,20 +331,14 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>price - discount
 <span class="hljs-number">9.5</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
               <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
-              <div class="code-block">
-                <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
+              <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">12.0</span>
@@ -376,11 +349,8 @@ Traceback (most recent call last):
    Height
 NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">5</span>
 
@@ -388,13 +358,10 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">6</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><strong>The value of one variable can be assigned to another variable.</strong></p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>width = height
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
@@ -406,8 +373,6 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
@@ -451,12 +416,9 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
                       <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.</li>
                     <li>Choose <code>File</code> → <code>New File</code></li>
                     <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
-                      <div class="code-block">
-                        <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
+                      <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
 print(<span class="hljs-string">'Bye!'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </li>
                     <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
                     <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
@@ -474,8 +436,7 @@ print(<span class="hljs-string">'Bye!'</span>)
             <div>
               <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments"></a></h3>
               <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
+              <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
 
 print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
 
@@ -483,8 +444,6 @@ print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># sta
 print(<span class="hljs-string">'What is your name?'</span>)
 name = input()
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the
                 <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
             </div>
@@ -498,25 +457,19 @@ name = input()
               <tabs>
 
                 <tab header="Using the shell">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
+                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
 Hello World
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 Bye my friend
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p></p>
                 </tab>
 
                 <tab header="Running as a script" class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
+                  <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
 print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
                   <pre><code class="hljs">Hello World
@@ -533,16 +486,13 @@ Bye my friend
               <p><strong>Some functions return a value.</strong></p>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells
                 you the type of a value.</p>
-              <div class="code-block">
-                <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
+              <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
 print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
 
 print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span>
 print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span>
 print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
               </p>
               <pre><code class="hljs">My age is 25
@@ -558,8 +508,7 @@ print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-com
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the
                 user
                 <mark>as a string</mark>. 💡 Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
+              <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
 print(<span class="hljs-string">'What is the current price?'</span>)
 price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
 
@@ -571,8 +520,6 @@ print(<span class="hljs-string">'Current price is $'</span> + price) <span class
 discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
 print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Explanation of a similar Python program%%" class="algolia-no-index">
@@ -629,7 +576,7 @@ The length of your name is 8
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 6 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -150,8 +150,7 @@
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 cwd = os.getcwd() <span class="hljs-comment"># store current working dir</span>
 print(cwd) <span class="hljs-comment"># print current working dir</span>
@@ -160,8 +159,6 @@ print(os.getcwd()) <span class="hljs-comment"># print current working dir</span>
 os.chdir(cwd) <span class="hljs-comment"># change working dir back to original</span>
 print(os.getcwd())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -270,8 +267,7 @@ C:\photos\vaction
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">print(os.getcwd())
+                        <pre><code class="hljs python">print(os.getcwd())
 os.makedirs(<span class="hljs-string">'ex\\w1'</span>)
 os.chdir(<span class="hljs-string">'ex\\w1'</span>)
 print(os.getcwd())
@@ -280,8 +276,6 @@ print(os.getcwd())
 os.chdir(<span class="hljs-string">'..'</span>)
 os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -297,12 +291,9 @@ C:\repos\nus-te3201\sample-code\ex
               <p><code>os.path</code> module has many functions that can help with paths. For example, <code>os.paths.join()</code> function can be used to generate file path that matches the current operating system.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">cwd = os.getcwd()
+                <pre><code class="hljs python">cwd = os.getcwd()
 print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs-string">'w2'</span>))
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>If you run it on a Windows computer in the folder <code>C:\modules\te3201</code>, it prints <code>C:\modules\te3201\ex\w2</code>.<br> If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
               </box>
               <p>
@@ -328,8 +319,7 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
                   <div>
                     <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
                     <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
   <span class="hljs-string">"""Create a directory dir_name in the current working directory
@@ -378,8 +368,6 @@ check(<span class="hljs-string">'foo'</span>)
 check(<span class="hljs-string">'bar'</span>)
 
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> output when run in <a href="http://REPL.it">REPL.it</a></p>
                     <pre><code class="hljs">/home/runner
 /home/runner/foo
@@ -390,8 +378,7 @@ check(<span class="hljs-string">'bar'</span>)
 </code></pre>
                     <p></p>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
   <span class="hljs-string">"""Create a directory dir_name in the current working directory
@@ -408,8 +395,6 @@ check(<span class="hljs-string">'bar'</span>)
   <span class="hljs-string">"""Print current working directory"""</span>
   print(os.getcwd())
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -434,15 +419,12 @@ check(<span class="hljs-string">'bar'</span>)
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+                        <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
 f = open(file_path, <span class="hljs-string">'r'</span>) <span class="hljs-comment"># open in read mode</span>
 items = f.read()
 print(items)
 f.close()
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -461,8 +443,7 @@ third line
               <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below shows how to read file content as a list of lines.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+                <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
 f = open(file_path, <span class="hljs-string">'r'</span>)
 items = f.readlines()
 print(items) <span class="hljs-comment"># print as a list</span>
@@ -470,8 +451,6 @@ print(items) <span class="hljs-comment"># print as a list</span>
   print(i.strip()) <span class="hljs-comment"># use strip() to remove linebreak at the end of each line</span>
 f.close()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">['first line\n', 'second line\n', 'third line\n']
@@ -486,8 +465,7 @@ third line
                   <div>
                     <h4 id="exercise-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-file-stats"></a></h4>
                     <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
   The file is expected to be in the current working directory.
@@ -522,8 +500,6 @@ third line
 analyze_file(<span class="hljs-string">'file1.txt'</span>)
 analyze_file(<span class="hljs-string">'file2.txt'</span>)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><code>file1.txt</code> (2 lines, 22 letters):</p>
                     <pre><code class="hljs">aaa bbb ccc
 ddd eee fff
@@ -547,8 +523,7 @@ It has 4 lines containing 10 letters
                       </ul>
                     </panel>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
   The file is expected to be in the current working directory.
@@ -563,8 +538,6 @@ It has 4 lines containing 10 letters
   f.close()
   <span class="hljs-keyword">return</span> lines
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -577,15 +550,12 @@ It has 4 lines containing 10 letters
               <p><strong>Similar to reading from a file, writing to a file too is a three step process. One main difference is the file needs to be opened in the <em>write mode</em>.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below shows how to write to a text file.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+                <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
 f = open(file_path, <span class="hljs-string">'w'</span>)  <span class="hljs-comment"># open in write mode</span>
 f.write(<span class="hljs-string">'first line\n'</span>)
 f.write(<span class="hljs-string">'second line\n'</span>)
 f.close()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> contents of the <code>items.txt</code>:</p>
                 <pre><code class="hljs">first line
 second line
@@ -599,13 +569,10 @@ second line
               <p><strong>To preserve original content and add to it, open the file in <em>append mode</em>.</strong> That is because opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below shows how to append to a file.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
+                <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
 f.write(<span class="hljs-string">'third line\n'</span>)
 f.close()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> contents of the <code>items.txt</code>:</p>
                 <pre><code class="hljs">first line
 second line
@@ -617,8 +584,7 @@ third line
                   <div>
                     <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
                     <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
   The file is expected to be in the current working directory.
@@ -663,8 +629,6 @@ process_file(<span class="hljs-string">'file1a.txt'</span>, <span class="hljs-st
 process_file(<span class="hljs-string">'file2a.txt'</span>, <span class="hljs-string">'file2b.txt'</span>)
 
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><code>file1a.txt</code>:</p>
                     <pre><code class="hljs">first line
 
@@ -680,8 +644,7 @@ third line
 ['1. hang in there']
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
   <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
   
   Example:
@@ -694,8 +657,6 @@ third line
   f.close()
 
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -714,14 +675,11 @@ third line
                   <tr>
 
                     <td>
-                      <div class="code-block">
-                        <pre><code class="hljs">4/11/2017,Alice Bee,4
+                      <pre><code class="hljs">4/11/2017,Alice Bee,4
 5/11/2017,Chris Ding,12
 5/11/2017,Brenda Chew,13
 6/11/2017,Dan Pillai,5
 </code></pre>
-                        <div class="code-block-lang"><span>csv</span></div>
-                      </div>
                       <p></p>
                     </td>
 
@@ -747,8 +705,7 @@ third line
                 earlier. For example, Python provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below shows how to use the <code>csv</code> module to read contents of a CSV file named <code>deliveries.csv</code>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
 
 deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) <span class="hljs-comment"># open file</span>
 deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># create a Reader</span>
@@ -756,8 +713,6 @@ deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># cre
   print(row)
 deliveries_file.close() <span class="hljs-comment"># close file</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">['4/11/2017', 'Alice Bee', '4']
@@ -766,21 +721,15 @@ deliveries_file.close() <span class="hljs-comment"># close file</span>
 ['6/11/2017', 'Dan Pillai', '5']
 </code></pre>
                 <p>As you can see, <code>Reader</code> object returns content of a line as a list object with the value of each cell as an item in the list. Replacing the line,</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">...
+                <pre><code class="hljs python">...
 print(row)
 ...
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>... with the following line,</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">...
+                <pre><code class="hljs python">...
 print(<span class="hljs-string">'Date:'</span>, row[<span class="hljs-number">0</span>], <span class="hljs-string">'\tRecipient:'</span>, row[<span class="hljs-number">1</span>], <span class="hljs-string">'\tQuantity:'</span>, row[<span class="hljs-number">2</span>] )
 ...
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>... will give you the output shown below:</p>
                 <pre><code class="hljs">Date: 4/11/2017 	Recipient: Alice Bee 	Quantity: 4
 Date: 5/11/2017 	Recipient: Chris Ding 	Quantity: 12
@@ -791,8 +740,7 @@ Date: 6/11/2017 	Recipient: Dan Pillai 	Quantity: 5
               <p>Note that all values read from a CSV files come as strings. If they are meant to represent other types, you need to convert the string to the correct type first.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example the 3rd value of each row is converted to an <code>int</code> before adding them up.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) 
+                <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) 
 deliveries_reader = csv.reader(deliveries_file) 
 total = <span class="hljs-number">0</span>
 <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -802,8 +750,6 @@ total = <span class="hljs-number">0</span>
 print(<span class="hljs-string">'Total quantity delivered:'</span>, total)
 deliveries_file.close()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Total quantity delivered: 34
@@ -812,15 +758,12 @@ deliveries_file.close()
               <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Writer</code> object.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below writes two rows to the <code>pricelist.csv</code> file.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">output_file = open(<span class="hljs-string">'pricelist.csv'</span>, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-comment"># open file in write mode</span>
+                <pre><code class="hljs python">output_file = open(<span class="hljs-string">'pricelist.csv'</span>, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-comment"># open file in write mode</span>
 output_writer = csv.writer(output_file) <span class="hljs-comment"># get a Writer object</span>
 output_writer.writerow([<span class="hljs-string">'apples'</span>, <span class="hljs-string">'1'</span>, <span class="hljs-string">'1.5'</span>, <span class="hljs-string">'True'</span>]) <span class="hljs-comment"># write one row</span>
 output_writer.writerow([<span class="hljs-string">'bananas'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'2.0'</span>, <span class="hljs-string">'False'</span>]) <span class="hljs-comment"># write another row</span>
 output_file.close() <span class="hljs-comment"># close file</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>The <code>pricelist.csv</code> file will now contain:</p>
                 <pre><code class="hljs">apples,1,1.5,True
 bananas,3,2.0,False
@@ -929,8 +872,7 @@ bag,50.0,3.5
                       </table>
                     </div>
                     <panel type="seamless" header="%%:bulb: Python hints%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
+                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
   <span class="hljs-string">"""Read the data from the CSV file source_file and write 
@@ -976,8 +918,6 @@ bag,50.0,3.5
 process(<span class="hljs-string">'itemlist1.csv'</span>, <span class="hljs-string">'updated_itemlist1.csv'</span>)
 process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-string">'updated_itemlist2.csv'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -1043,8 +983,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
                         <a href="/2020/programming/ide/images/addNewFile.png" target="_self"><img src="/2020/programming/ide/images/addNewFile.png" alt class="img-fluid"></a></li>
                       <li>Type your code in the file.<br>
                         <a href="/2020/programming/ide/images/editCode.png" target="_self"><img src="/2020/programming/ide/images/editCode.png" alt class="img-fluid"></a><br> Here is an example:
-                        <div class="code-block">
-                          <pre><code class="hljs python">greeting = <span class="hljs-string">'hello'</span>
+                        <pre><code class="hljs python">greeting = <span class="hljs-string">'hello'</span>
 
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">(name)</span>:</span>
@@ -1055,8 +994,6 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
 print_greeting(<span class="hljs-string">'john'</span>)
 print_greeting(<span class="hljs-string">'jane'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </li>
                       <li>To run the code, Right-click on project name and choose <code>Run 'filename'</code>.<br>
                         <a href="/2020/programming/ide/images/runCode.png" target="_self"><img src="/2020/programming/ide/images/runCode.png" alt class="img-fluid"></a></li>
@@ -1136,7 +1073,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

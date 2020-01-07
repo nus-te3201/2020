@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Expressions, Data Types, Variables</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -161,15 +161,12 @@
               <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell<a class="fa fa-anchor" href="#working-with-an-interactive-shell"></a></h3>
               <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can
                 type in a python <em>expression</em> and get the shell to evaluate the expression.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
 <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> * <span class="hljs-number">4</span> * <span class="hljs-number">3</span>
 <span class="hljs-number">24</span>
 &gt;&gt;&gt;
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Python interactive shell in action:%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
@@ -234,14 +231,11 @@
                 </table>
               </div>
               <p>When there are multiple operators in an expression, normal operator precedence apply. You can force a different precedence using parentheses.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">4</span> * <span class="hljs-number">5</span>
 <span class="hljs-number">22</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%" class="algolia-no-index">
@@ -281,15 +275,11 @@
                 </table>
               </div>
               <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
+              <pre><code class="hljs python"><span class="hljs-string">'Hello'</span>
 <span class="hljs-string">"What's going on?"</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>Some operators can be used on strings as well.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'hello'</span>
 <span class="hljs-string">'hello'</span>
 
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Hello'</span> + <span class="hljs-string">' '</span> + <span class="hljs-string">'World!'</span>
@@ -298,8 +288,6 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Bye'</span> + (<span class="hljs-string">'!'</span> * <span class="hljs-number">10</span>)
 <span class="hljs-string">'Bye!!!!!!!!!!'</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Data types%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
@@ -313,41 +301,28 @@
                   and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
               </blockquote>
               <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
-              <div class="code-block">
-                <pre><code class="hljs python">v = <span class="hljs-number">5</span>
+              <pre><code class="hljs python">v = <span class="hljs-number">5</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <tip-box>
                 <p><strong>Statements</strong></p>
                 <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
                 </p>
               </tip-box>
               <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v
 <span class="hljs-number">5</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>You can even use the variable in expressions.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>v * <span class="hljs-number">4</span>
 <span class="hljs-number">20</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are some examples of variables being declared, assigned, and being used:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count = <span class="hljs-number">2</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>max_bag_count
 <span class="hljs-number">2</span>
 
@@ -357,20 +332,14 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>price - discount
 <span class="hljs-number">9.5</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
               <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
-              <div class="code-block">
-                <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
+              <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">12.0</span>
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">12.0</span>
@@ -381,11 +350,8 @@ Traceback (most recent call last):
    Height
 NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+              <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">5</span>
 
@@ -393,13 +359,10 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>height
 <span class="hljs-number">6</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><strong>The value of one variable can be assigned to another variable.</strong></p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
+                <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>height = <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span>width = height
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
@@ -411,8 +374,6 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                   <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
@@ -463,7 +424,7 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

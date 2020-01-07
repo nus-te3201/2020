@@ -1,11 +1,6 @@
 {% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
 {% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
 
-<box type="info" dismissible>
-
-Weekly tasks will appear in this tab.
-</box>
-
 {% call show_admin_summary() %}
 1. Learn about the module and the website
 1. Submit the pre-module survey {{ timing_badge("by Saturday 2359") }}

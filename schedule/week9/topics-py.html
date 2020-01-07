@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 9 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -103,8 +103,7 @@
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects
                   created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
   
   total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
   
@@ -113,15 +112,12 @@
     Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
     self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
                 <ul>
                   <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
                   <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
                 </ul>
-                <div class="code-block">
-                  <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
+                <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
 print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
 print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
 print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
@@ -131,8 +127,6 @@ print(<span class="hljs-string">'total students:'</span>, Student.total_students
 print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
 print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">total students: 1
@@ -146,8 +140,7 @@ Ben course count: 0
               <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong>                <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
 
   enabled = <span class="hljs-literal">True</span>
 
@@ -168,8 +161,6 @@ Ben course count: 0
     cls.enabled = <span class="hljs-literal">True</span>
     print(<span class="hljs-string">'All Printers enabled'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
                 <div>
                   <div></div>
@@ -177,8 +168,7 @@ Ben course count: 0
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">Printer.disable()
+                        <pre><code class="hljs python">Printer.disable()
 p1 = Printer(<span class="hljs-string">'blah blah'</span>)
 p2 = Printer(<span class="hljs-string">'yak yak'</span>)
 p1.print_text() <span class="hljs-comment"># will not print</span>
@@ -188,8 +178,6 @@ Printer.enable()
 p1.print_text()
 p2.print_text()
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -217,8 +205,7 @@ yak yak
                     <table>
                       <tr>
                         <td>
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
     self.name = name
@@ -239,8 +226,6 @@ print(Subject.limit_reached(<span class="hljs-number">3</span>))
 Subject.total = <span class="hljs-number">100</span>
 print(Subject.limit_reached(<span class="hljs-number">100</span>))
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
@@ -257,8 +242,7 @@ True
                       </tr>
                     </table>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution and hints%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-comment"># ADD `total` attribute here</span>
   
@@ -274,8 +258,6 @@ True
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
     ... <span class="hljs-comment"># ADD implementation</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -302,8 +284,7 @@ True
               </ul>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Account</code> class below.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
   currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
   _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
   __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
@@ -325,8 +306,6 @@ True
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
     <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                   </span> The following code works fine because the members being accessed are public.</p>
                 <div>
@@ -335,14 +314,11 @@ True
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
+                        <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
 a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
 print(<span class="hljs-string">'status:'</span>, a.status)
 print(<span class="hljs-string">'info:'</span>, a.get_info())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -362,14 +338,11 @@ info: ['OK']
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
+                        <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
 a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
 print(<span class="hljs-string">'owner:'</span>, a._owner) 
 print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -383,14 +356,11 @@ more info: ['OK', 'Adam']
                 </div>
                 <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                   </span> The following code will not work because they try to access private members.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
+                <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
 a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
 print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
 print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">AttributeError: type object 'Account' has no attribute '__max'...
@@ -408,8 +378,7 @@ AttributeError: 'Account' object has no attribute '__get_income'...
                     <table>
                       <tr>
                         <td>
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
   
   __target = <span class="hljs-number">0.99</span>
   
@@ -424,8 +393,6 @@ s = School(<span class="hljs-number">100000</span>)
 print(s.__budget)
 print(s.__max_expenditure())
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
@@ -471,7 +438,7 @@ print(s.__max_expenditure())
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

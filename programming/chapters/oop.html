@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Object-Oriented Programming</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -114,16 +114,13 @@
               <h3 id="classes">Classes<a class="fa fa-anchor" href="#classes"></a></h3>
               <p><strong>You can define your own <em>classes</em> (i.e., object types)</strong> in Python, which can then be used alongside the built-in classes such as <code>list</code>, <code>int</code>, <code>str</code>, etc.</p>
               <p>The syntax for defining a class:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>:</span>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>:</span>
   <span class="hljs-comment"># &lt;statement-1&gt;</span>
   .
   .
   .
   <span class="hljs-comment"># &lt;statement-N&gt;</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>💡 It is customary to use
                 <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
               <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
@@ -135,8 +132,7 @@
               </modal>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below defines a class named <code>Employee</code>, creates two employee objects, and prints the class/type of each object.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span>:</span>
   <span class="hljs-keyword">pass</span> <span class="hljs-comment"># an empty class</span>
 
 john = Employee() <span class="hljs-comment"># create an Employee object</span>
@@ -144,8 +140,6 @@ print(type(john)) <span class="hljs-comment"># print type of the john object</sp
 alice = Employee()
 print(type(alice))
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
                 <pre><code class="hljs">&lt;class 'Employee'&gt;
 &lt;class 'Employee'&gt;
@@ -161,8 +155,7 @@ print(type(alice))
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Pen</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Pen</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, text)</span>:</span>
     print(<span class="hljs-string">'writing:'</span>, text)
@@ -170,8 +163,6 @@ print(type(alice))
 p = Pen()
 p.write(<span class="hljs-string">'It was a dark night ...'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -205,16 +196,13 @@ p.write(<span class="hljs-string">'It was a dark night ...'</span>)
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     print(name, <span class="hljs-string">'initialized!'</span>)
     
 tom = Person(<span class="hljs-string">'Tom'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -235,12 +223,9 @@ tom = Person(<span class="hljs-string">'Tom'</span>)
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">print(x.get_age())
+                        <pre><code class="hljs python">print(x.get_age())
 print(x.birthday)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -255,8 +240,7 @@ print(x.birthday)
               <p><strong>The code within a class needs to use the <code>self.</code> to refer to its own attributes and methods.</strong> Furthermore, the best place to initialize attributes is the <code>__init__()</code> method.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the <code>__init__()</code> method of the <code>Book</code> class initializes its two attributes and calls another of its own methods i.e., <code>self.describe()</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, book_title, book_author)</span>:</span>
     self.title = book_title <span class="hljs-comment"># initialize attribute title</span>
@@ -275,8 +259,6 @@ print(<span class="hljs-string">'Title:'</span>, book1.title)
 print(<span class="hljs-string">'Author:'</span>, book1.author)
 book1.describe()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Book info: The Jungle Book /by Leo Tolstoy
@@ -290,8 +272,7 @@ Book info: The Jungle Book /by Leo Tolstoy
               <p><strong>You can get your classes to work with each other.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example we define a <code>ReadingList</code> class that can store a list of <code>Book</code> objects.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReadingList</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReadingList</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, initial_list)</span>:</span>
     self.books = initial_list
@@ -307,8 +288,6 @@ my_list = ReadingList([book1]) <span class="hljs-comment"># book1 defined in a p
 my_list.add_book(book2) <span class="hljs-comment"># book2 defined in a previous example</span>
 my_list.show_authors()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Leo Tolstoy
@@ -323,8 +302,7 @@ Sun Tzu
                     <table>
                       <tr>
                         <td>
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
+                          <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
 <span class="hljs-comment"># It should have an attribute: name</span>
 <span class="hljs-comment"># It should have a method: info() </span>
     
@@ -336,8 +314,6 @@ print(b.info())
 b.name = <span class="hljs-string">'Bananas'</span>
 print(b.info())
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
@@ -350,8 +326,7 @@ Item info: Bananas
                       </tr>
                     </table>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = ...
@@ -359,8 +334,6 @@ Item info: Bananas
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -375,8 +348,7 @@ Item info: Bananas
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects
                   created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
   
   total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
   
@@ -385,15 +357,12 @@ Item info: Bananas
     Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
     self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
                 <ul>
                   <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
                   <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
                 </ul>
-                <div class="code-block">
-                  <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
+                <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
 print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
 print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
 print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
@@ -403,8 +372,6 @@ print(<span class="hljs-string">'total students:'</span>, Student.total_students
 print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
 print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">total students: 1
@@ -418,8 +385,7 @@ Ben course count: 0
               <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong>                <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
 
   enabled = <span class="hljs-literal">True</span>
 
@@ -440,8 +406,6 @@ Ben course count: 0
     cls.enabled = <span class="hljs-literal">True</span>
     print(<span class="hljs-string">'All Printers enabled'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
                 <div>
                   <div></div>
@@ -449,8 +413,7 @@ Ben course count: 0
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">Printer.disable()
+                        <pre><code class="hljs python">Printer.disable()
 p1 = Printer(<span class="hljs-string">'blah blah'</span>)
 p2 = Printer(<span class="hljs-string">'yak yak'</span>)
 p1.print_text() <span class="hljs-comment"># will not print</span>
@@ -460,8 +423,6 @@ Printer.enable()
 p1.print_text()
 p2.print_text()
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -489,8 +450,7 @@ yak yak
                     <table>
                       <tr>
                         <td>
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
     self.name = name
@@ -511,8 +471,6 @@ print(Subject.limit_reached(<span class="hljs-number">3</span>))
 Subject.total = <span class="hljs-number">100</span>
 print(Subject.limit_reached(<span class="hljs-number">100</span>))
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
@@ -529,8 +487,7 @@ True
                       </tr>
                     </table>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution and hints%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-comment"># ADD `total` attribute here</span>
   
@@ -546,8 +503,6 @@ True
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
     ... <span class="hljs-comment"># ADD implementation</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -574,8 +529,7 @@ True
               </ul>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Account</code> class below.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
   currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
   _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
   __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
@@ -597,8 +551,6 @@ True
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
     <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                   </span> The following code works fine because the members being accessed are public.</p>
                 <div>
@@ -607,14 +559,11 @@ True
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
+                        <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
 a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
 print(<span class="hljs-string">'status:'</span>, a.status)
 print(<span class="hljs-string">'info:'</span>, a.get_info())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -634,14 +583,11 @@ info: ['OK']
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
+                        <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
 a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
 print(<span class="hljs-string">'owner:'</span>, a._owner) 
 print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -655,14 +601,11 @@ more info: ['OK', 'Adam']
                 </div>
                 <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                   </span> The following code will not work because they try to access private members.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
+                <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
 a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
 print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
 print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">AttributeError: type object 'Account' has no attribute '__max'...
@@ -680,8 +623,7 @@ AttributeError: 'Account' object has no attribute '__get_income'...
                     <table>
                       <tr>
                         <td>
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
   
   __target = <span class="hljs-number">0.99</span>
   
@@ -696,8 +638,6 @@ s = School(<span class="hljs-number">100000</span>)
 print(s.__budget)
 print(s.__max_expenditure())
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
@@ -723,12 +663,9 @@ print(s.__max_expenditure())
                 <tooltip content="the new class"><em>child class</em></tooltip> already has all the attributes and methods of the
                 <tooltip content="the class that was inherited from"><em>parent class</em></tooltip>.</p>
               <p>Syntax:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
   <span class="hljs-comment"># statements of the class</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Person</code> class below:</p>
                 <div>
@@ -737,8 +674,7 @@ print(s.__max_expenditure())
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -748,8 +684,6 @@ print(s.__max_expenditure())
 amy = Person(<span class="hljs-string">'Amy'</span>)
 amy.print_info()
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -766,8 +700,7 @@ amy.print_info()
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">teach</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is teaching'</span>)
@@ -777,8 +710,6 @@ dan.print_info()
 dan.teach()
 print(<span class="hljs-string">'the name is'</span>, dan.name)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -811,8 +742,7 @@ the name is Dan
                       <table>
                         <tr>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
@@ -828,8 +758,6 @@ guppy = Fish(<span class="hljs-string">'Guppy'</span>)
 guppy.info()
 guppy.move()
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
@@ -843,13 +771,10 @@ I'm swimming
                       </table>
                     </div>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -864,8 +789,7 @@ I'm swimming
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     self.name = name
     self.matric = matric
@@ -880,8 +804,6 @@ ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">
 ben.print_info()
 ben.learn()
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -895,13 +817,10 @@ Ben is learning
               </box>
               <p>When overriding methods, you can reuse the parent's definition of the same method using the <code>super().</code> prefix.</p>
               <box>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Given that <code>Person</code> class has the initializer method given above, the following two versions of the <code>Student</code> class are equivalent.</p>
                 <div>
                   <div></div>
@@ -910,26 +829,20 @@ Ben is learning
                     <tr>
                       <td valign="top">
                         <p>Override without reusing parent's method</p>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     self.name = name
     self.matric = matric
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp; = &nbsp;<br><br></td>
                       <td valign="bottom">
                         <p>Override but reuse parent's method</p>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     super().__init__(name) <span class="hljs-comment"># reuse parent's method</span>
     self.matric = matric
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                     </tr>
                   </table>
@@ -950,8 +863,7 @@ Ben is learning
                       <table>
                         <tr>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
@@ -978,8 +890,6 @@ penguin = FlightlessBird(<span class="hljs-string">'Penguin'</span>)
 penguin.info()
 penguin.move()
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
@@ -995,14 +905,11 @@ I'm waddling
                       </table>
                     </div>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -1018,8 +925,7 @@ I'm waddling
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, title)</span>:</span>
     self.title = title
     
@@ -1029,8 +935,6 @@ I'm waddling
 book = Book(<span class="hljs-string">'Python for Beginners'</span>)
 print(book)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -1052,8 +956,7 @@ print(book)
                       <table>
                         <tr>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, age)</span>:</span>
     self.name = name
@@ -1064,8 +967,6 @@ print(book)
 print(Person(<span class="hljs-string">'Amy'</span>, <span class="hljs-number">25</span>))
 print(Person(<span class="hljs-string">'Ben'</span>, <span class="hljs-number">26</span>))
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
@@ -1077,12 +978,9 @@ Ben (26years)
                       </table>
                     </div>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> self.name + ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -1096,18 +994,14 @@ Ben (26years)
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     self.name = name
     
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
     print(<span class="hljs-string">'My name is'</span>, self.name)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">teach</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is teaching'</span>)
@@ -1116,13 +1010,10 @@ Ben (26years)
     print(self.name, <span class="hljs-string">'is a teacher'</span>)
     
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
     super().__init__(name)
     self.matric = matric
@@ -1133,16 +1024,11 @@ Ben (26years)
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">grade</span><span class="hljs-params">(self)</span>:</span>
     print(self.name, <span class="hljs-string">'is grading'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                     </tr>
                   </table>
@@ -1151,15 +1037,12 @@ Ben (26years)
                 <table>
                   <tr>
                     <td>
-                      <div class="code-block">
-                        <pre><code class="hljs python">elsie = TeachingAssistant(<span class="hljs-string">'Elsie'</span>, <span class="hljs-string">'A223344'</span>)
+                      <pre><code class="hljs python">elsie = TeachingAssistant(<span class="hljs-string">'Elsie'</span>, <span class="hljs-string">'A223344'</span>)
 elsie.print_info()
 elsie.teach()
 elsie.learn()
 elsie.grade()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p></p>
                     </td>
 
@@ -1189,8 +1072,7 @@ Elsie is grading
                       <table>
                         <tr>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">take_photo</span><span class="hljs-params">(self)</span>:</span>
     print(<span class="hljs-string">'taking photo'</span>)
@@ -1207,8 +1089,6 @@ iphone.take_photo()
 iphone.make_call()
 iphone.play_game()
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
@@ -1222,8 +1102,7 @@ playing game
                       </table>
                     </div>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
     ...
@@ -1231,8 +1110,6 @@ playing game
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">play_game</span><span class="hljs-params">(self)</span>:</span>
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -1243,8 +1120,7 @@ playing game
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, <code>EmptyCommandError</code> and <code>InvalidCommandError</code> are user-defined exceptions. The latter has overridden the constructor to take
                   additional parameters.
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span>
     <span class="hljs-string">"""Indicates a task has expired."""</span>
     <span class="hljs-keyword">pass</span>
 
@@ -1276,8 +1152,6 @@ playing game
 process(<span class="hljs-string">''</span>)
 process(<span class="hljs-string">'HA'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">empty command
@@ -1322,7 +1196,7 @@ invalid command: HA -&gt; command too short
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

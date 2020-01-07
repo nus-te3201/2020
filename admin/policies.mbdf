@@ -8,7 +8,7 @@ When working with others, especially in a large class such as {{ module_pair }},
 
 <div id="policy-teamSize">
 
-As most of the work is graded individually, team sizes of 3, 4, or 5 is not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other.
+As most of the work is graded individually, team sizes of 4 or 6 are not expected to affect your grade. While managing larger teams is harder, larger teams have more collective know-how, which can cancel each other. We'll give some consideration when grading 3-person teams.
 
 </div>
 
@@ -16,7 +16,7 @@ As most of the work is graded individually, team sizes of 3, 4, or 5 is not expe
 
 As most of the work is graded individually, it is OK to do less or more than equal share in your project team.
 
-{{ embed_topic("project-scope.md#individualExpectations", "Admin " + icon_embedding + " tP → Scope: Expectations from each student", "3") }}
+{{ embed_topic("tp-expectations.md#individualExpectations", "Admin " + icon_embedding + " tP → Expectations: from each student", "3") }}
 
 </div>
 
@@ -107,8 +107,8 @@ Given below are how to give credit for things you reuse from elsewhere. These re
 
 
 If you **used a third party library**: 
-* Mention in the `README.adoc` (under the _Acknowledgements_ section) 
-* mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
+* iP/tP: Mention in the `README` file (under the _Acknowledgements_ section) 
+* tP: Mention in the <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented
 
 
 If you **reused code snippets found on the Internet** %%e.g. from StackOverflow answers%% or<br>
@@ -152,7 +152,7 @@ If you **reused code snippets found on the Internet** %%e.g. from StackOverflow 
 </modal>
 
 <modal large title="Admin {{ icon_embedding }} Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
-  <include src="project-deliverables.md#project-deliverables-ppp"/>
+  <include src="tp-deliverables.md#tp-deliverables-ppp"/>
 </modal>
 
 </div>

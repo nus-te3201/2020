@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Organizing Python Code</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -104,54 +104,39 @@
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
                 <p><code>[project_root]/student.py</code>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
     print(name, <span class="hljs-string">'is a student'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><code>[project_root]/course.py</code>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
 student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
               </box>
               <p><strong>You can organize files into sub-directories too.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
                 <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span>
     print(list(text))
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><code>[project_root]/course.py</code>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc 
+                <pre><code class="hljs python"><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc 
 
 misc.print_as_list(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
               </box>
               <p>When you import a module, Python will interpret and execute any code in it.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
                 <p><code>[project_root]/student.py</code>:</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
     print(name, <span class="hljs-string">'is a student'</span>)
 
 describe(<span class="hljs-string">'Betty'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <div>
                   <div></div>
                   <div></div>
@@ -159,13 +144,10 @@ describe(<span class="hljs-string">'Betty'</span>)
                     <tr>
                       <td valign="top">
                         <p><code>[project_root]/course.py</code>:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
 student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -188,15 +170,12 @@ Adam is a student
                     <tr>
                       <td valign="top">
                         <p><code>[project_root]/student.py</code>:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span>
     print(name, <span class="hljs-string">'is a student'</span>)
 
 <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
     describe(<span class="hljs-string">'Betty'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -214,13 +193,10 @@ Adam is a student
                     <tr>
                       <td valign="top">
                         <p><code>[project_root]/course.py</code>:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> student
 
 student.describe(<span class="hljs-string">'Adam'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -248,7 +224,7 @@ student.describe(<span class="hljs-string">'Adam'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

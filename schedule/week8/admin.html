@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 8 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -110,8 +110,7 @@
                     </p>
                     <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                       <p>Here is the code for an example <code>ToDo</code> class:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
         self.description = description
@@ -134,11 +133,8 @@
         """</span>
         <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
     deliveries_reader = csv.reader(data_file)
     <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -156,8 +152,6 @@
         output_writer.writerow(item.as_csv())
     output_file.close()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                     <p></p>
                   </div>
@@ -183,7 +177,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 6 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -156,11 +156,8 @@ STATUS | INDEX | DESCRIPTION
                       <p>💡 here are some tips:</p>
                       <ul>
                         <li>The filename can be specified in the code. e.g.,
-                          <div class="code-block">
-                            <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+                          <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </li>
                         <li>The format of the file is up to you. Here is an example:
                           <pre><code class="hljs">borrow book,done
@@ -169,8 +166,7 @@ return book,pending
 </code></pre>
                         </li>
                         <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
-                          <div class="code-block">
-                            <pre><code class="hljs python"> items = []
+                          <pre><code class="hljs python"> items = []
  DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
  
  
@@ -188,15 +184,12 @@ return book,pending
  
  main()
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </li>
                       </ul>
                     </box>
                     <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                       <p>Here is the code for loading data from the file.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
     deliveries_reader = csv.reader(data_file)
     <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -210,8 +203,6 @@ return book,pending
     status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
     items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                        is a shortcut syntax. It is equivalent to the code below:</p>
                       <pre><code class="hljs">if values[1] == 'done':
     status = True
@@ -291,7 +282,7 @@ add    read book
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

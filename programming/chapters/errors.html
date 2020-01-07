@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Error Handling</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -126,12 +126,9 @@
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">4</span>
+                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">4</span>
   print(<span class="hljs-string">'Greater'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="top">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -166,8 +163,7 @@ SyntaxError: invalid syntax
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide</span><span class="hljs-params">(number, divisor)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide</span><span class="hljs-params">(number, divisor)</span>:</span>
   print(<span class="hljs-string">'Starting calculation'</span>)
   result = number/divisor
   print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
@@ -176,8 +172,6 @@ SyntaxError: invalid syntax
 divide(<span class="hljs-number">50</span>, <span class="hljs-number">5</span>)
 divide(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -206,8 +200,7 @@ ZeroDivisionError: division by zero
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide2</span><span class="hljs-params">(number, divisor)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide2</span><span class="hljs-params">(number, divisor)</span>:</span>
   print(<span class="hljs-string">'Starting calculation'</span>)
   <span class="hljs-keyword">try</span>:
     result = number/divisor
@@ -219,8 +212,6 @@ ZeroDivisionError: division by zero
 divide2(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
 divide2(<span class="hljs-number">3</span>, <span class="hljs-number">1.5</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -250,11 +241,8 @@ Calculation over!........
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">divide2(<span class="hljs-number">5</span>, <span class="hljs-string">'abc'</span>)
+                        <pre><code class="hljs python">divide2(<span class="hljs-number">5</span>, <span class="hljs-string">'abc'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="top">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -279,8 +267,7 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide3</span><span class="hljs-params">(number, divisor)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide3</span><span class="hljs-params">(number, divisor)</span>:</span>
   print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)
   <span class="hljs-keyword">try</span>:
     result = float(number)/float(divisor)
@@ -294,8 +281,6 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
 divide3(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
 divide3(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -321,8 +306,7 @@ Calculation over!........
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide4</span><span class="hljs-params">(number, divisor)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide4</span><span class="hljs-params">(number, divisor)</span>:</span>
   print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)
   <span class="hljs-keyword">try</span>:
     result = float(number)/float(divisor)
@@ -334,8 +318,6 @@ Calculation over!........
 divide4(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
 divide4(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -361,8 +343,7 @@ Calculation over!........
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(items)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(items)</span>:</span>
   <span class="hljs-keyword">try</span>:
     <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]
   <span class="hljs-keyword">except</span> IndexError:
@@ -370,8 +351,6 @@ Calculation over!........
 
 print(get_head([]))
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -391,8 +370,7 @@ print(get_head([]))
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head2</span><span class="hljs-params">(items)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head2</span><span class="hljs-params">(items)</span>:</span>
   <span class="hljs-keyword">try</span>:
     <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]
   <span class="hljs-keyword">except</span> Exception:
@@ -400,8 +378,6 @@ print(get_head([]))
 
 print(get_head2(<span class="hljs-number">2</span>))
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -428,12 +404,9 @@ print(get_head2(<span class="hljs-number">2</span>))
                   <div>
                     <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
                     <p>The code below assumes the entered string will always represent an integer.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
+                    <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
 print(<span class="hljs-string">'You entered'</span>, value)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their
                       validity.</p>
                     <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
@@ -453,8 +426,7 @@ You entered 6
                     </panel>
 
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+                      <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
   <span class="hljs-keyword">try</span>:
     value = int(input(<span class="hljs-string">'Input an integer:'</span>))
     <span class="hljs-comment"># YOUR CODE HERE! print? break? continue?</span>
@@ -463,8 +435,6 @@ You entered 6
     
 print(<span class="hljs-string">'You entered'</span>, value)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -484,8 +454,7 @@ print(<span class="hljs-string">'You entered'</span>, value)
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span>
   <span class="hljs-keyword">if</span> len(items) &lt; <span class="hljs-number">3</span>:
     <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Not enough items'</span>)
 
@@ -501,8 +470,6 @@ print(<span class="hljs-string">'You entered'</span>, value)
 hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])
 hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -525,8 +492,7 @@ hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span>
   <span class="hljs-keyword">try</span>:
     body = get_body(items)
     print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
@@ -540,8 +506,6 @@ hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span
 <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
   print(<span class="hljs-string">'hide_ends2 failed:'</span>, str(e))
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -578,15 +542,11 @@ hide_ends2 failed: Not enough items
                         code into smaller functions like the ones given in this exercise.</p>
                     </tip-box>
                     <p>The function given below checks if a given input is an even integer in a given range.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
   print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p>Some example inputs and outputs are given below:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
+                    <pre><code class="hljs python">check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
 check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)
 check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])
 check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)
@@ -595,8 +555,6 @@ check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <s
 check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span>
 check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">x is an int in range y - z ? Value error: x is not an integer
@@ -615,8 +573,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                       <li>Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise.</li>
                       <li>Returns an error message if any of the inputs are incorrect.</li>
                       <li>Code:
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
   <span class="hljs-keyword">try</span>:
     <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
       <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
@@ -625,8 +582,6 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
   <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
     <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </li>
                     </ul>
                     <p>Note how the above function uses two other functions <code>is_even_int</code> and <code>is_in_range</code> given below:</p>
@@ -635,13 +590,10 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                       <li>Returns <code>True</code> if the <code>number</code> is an even integer. <code>False</code> otherwise.</li>
                       <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
                       <li>Code:
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
   confirm_is_int(number)
   <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span>
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </li>
                     </ul>
                     <p><strong><code>is_in_range(number, start, end)</code></strong>:</p>
@@ -649,14 +601,11 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                       <li>Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how Python define <em>ranges</em>). <code>False</code>                        otherwise.</li>
                       <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
                       <li>Code:
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
   confirm_is_int(number)
   confirm_range_correct(start, end)
   <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </li>
                     </ul>
                     <p>Note how the above two functions use two other functions <code>confirm_is_int</code> and <code>confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
@@ -664,12 +613,9 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                     <ul>
                       <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
                       <li>Partial code:
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
   <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </li>
                       <li>💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br> e.g., <code>type('x') is not float</code> evaluates to
                         <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br> [
@@ -680,24 +626,18 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                       <li>Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code>confirm_is_int</code> function.</li>
                       <li>Raises a <code>ValueError('end is smaller than start')</code> if <code>end</code> is smaller than <code>start</code>. You need to implement this behavior.</li>
                       <li>Partial code:
-                        <div class="code-block">
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
   confirm_is_int(start)
   confirm_is_int(end)
   <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </li>
                     </ul>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
   <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
     <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -829,7 +769,7 @@ Thank you for playing the FLEXIBLE WORD GAME
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

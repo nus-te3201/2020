@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Dictionaries</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -200,15 +200,12 @@
               </box>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of defining dictionaries.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">friends = {} <span class="hljs-comment"># empty dictionary</span>
+                <pre><code class="hljs python">friends = {} <span class="hljs-comment"># empty dictionary</span>
 grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
 numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
 is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>, <span class="hljs-string">'ravi'</span>: <span class="hljs-literal">True</span>}
 prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
               </box>
               <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., you cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
               <div>
@@ -216,29 +213,23 @@ prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.
                   <div>
                     <h4 id="exercise-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise-get-subject-info"></a></h4>
                     <p>Complete the <code>get_subject_info</code> function below to return a dictionary such that the code produces the given output.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span>
   
 print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))
 print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">True</span>))
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
 {'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
   
 print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -257,15 +248,12 @@ print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="h
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
+                        <pre><code class="hljs python">numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
 prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 print(type(numbers))
 print(numbers[<span class="hljs-number">1</span>])
 print(prices[<span class="hljs-string">'butter'</span>])
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -284,8 +272,7 @@ one
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
+                        <pre><code class="hljs python">grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
 grades[<span class="hljs-string">'CS2103'</span>] = <span class="hljs-string">'B'</span>
 print(<span class="hljs-string">'After adding:'</span>,grades)
 grades[<span class="hljs-string">'TE3201'</span>] = <span class="hljs-string">'A+'</span>
@@ -293,8 +280,6 @@ print(<span class="hljs-string">'After updating:'</span>,grades)
 <span class="hljs-keyword">del</span> grades[<span class="hljs-string">'CS2103'</span>]
 print(<span class="hljs-string">'After deleting:'</span>, grades)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -318,8 +303,7 @@ After deleting: {'TE3201': 'A+'}
                       <li><code>set_score(scores, player, new_score)</code>: sets the value of the key <code>player</code> to the <code>new_score</code></li>
                       <li><code>delete_score(scores, player)</code>: deletes the value for key <code>player</code></li>
                     </ul>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-comment"># UPDATE HERE!</span>
     
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
@@ -337,8 +321,6 @@ print(game1_scores)
 delete_score(game1_scores, <span class="hljs-string">'dan'</span>)
 print(game1_scores)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">36
@@ -347,15 +329,12 @@ print(game1_scores)
 {'amy': 35, 'betty': 36, 'charlie': 5}
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> scores[player]
     
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
   scores[player] = new_score
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -370,12 +349,9 @@ print(game1_scores)
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>}
+                        <pre><code class="hljs python">is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>}
 print(is_nice[<span class="hljs-string">'santa'</span>])
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="top">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -397,31 +373,25 @@ KeyError: 'santa'
                     <ul>
                       <li><code>get_score1(scores, player)</code>: returns the value of the key <code>player</code>. <mark>Returns an error message if the <code>player</code> is not in <code>scores</code></mark>.</li>
                     </ul>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">return</span> scores[player] <span class="hljs-comment"># UPDATE HERE!</span>
     
 game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}
 print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))
 print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">30
 brown is not in the game!
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
   <span class="hljs-keyword">try</span>:
     <span class="hljs-keyword">return</span> scores[player]
   <span class="hljs-keyword">except</span> KeyError:
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -436,13 +406,10 @@ brown is not in the game!
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> prices.keys():
   print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -460,13 +427,10 @@ banana -&gt; 0.15
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> prices.values():
   print(v)
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -488,13 +452,10 @@ banana -&gt; 0.15
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(prices.keys()):
   print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -517,8 +478,7 @@ butter -&gt; 5.0
                       <li><code>get_team_score(scores)</code>: returns the total of all scores of all players in <code>scores</code>.</li>
                       <li><code>print_scorecard(scores)</code>: prints scores of each player in the format given, in the alphabetical order of player names.</li>
                     </ul>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span>
   total = <span class="hljs-number">0</span>
   <span class="hljs-comment">#ADD YOUR CODE HERE!</span>
   <span class="hljs-keyword">return</span> total
@@ -530,8 +490,6 @@ game2_scores = {<span class="hljs-string">'zac'</span>: <span class="hljs-number
 print_scorecard(game2_scores)
 print(<span class="hljs-string">'total ='</span>, get_team_score(game2_scores))
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">aaron = 10
@@ -540,15 +498,12 @@ zac = 35
 total = 75
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
+                      <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
   ...
   
 <span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> sorted(scores.keys()):
   ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -563,13 +518,10 @@ total = 75
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 print(<span class="hljs-string">'bread'</span> <span class="hljs-keyword">in</span> prices.keys())
 print(<span class="hljs-string">'sugar'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> prices.keys())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -586,13 +538,10 @@ True
                   <table>
                     <tr>
                       <td valign="top">
-                        <div class="code-block">
-                          <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
 print(<span class="hljs-number">3.5</span> <span class="hljs-keyword">in</span> prices.values())
 print(<span class="hljs-number">6.0</span> <span class="hljs-keyword">in</span> prices.values())
 </code></pre>
-                          <div class="code-block-lang"><span>python</span></div>
-                        </div>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
@@ -621,8 +570,7 @@ False
                       <li><code>add_bonus(scores, player, bonus)</code>: adds the <code>bonus</code> to the value of the <code>player</code> if player already exists in <code>scores</code>. Otherwise, adds the <code>player</code> to <code>scores</code> with
                         the value <code>bonus</code>.</li>
                     </ul>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
   <span class="hljs-keyword">pass</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
 
 
@@ -631,22 +579,17 @@ add_bonus(game3_scores, <span class="hljs-string">'amy'</span>, <span class="hlj
 add_bonus(game3_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">10</span>)
 print(game3_scores)
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
   <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():
     ...
   <span class="hljs-keyword">else</span>:
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -659,17 +602,13 @@ print(game3_scores)
               <p><strong>Dictionaries and lists can be nested in each other to create more complicated data structures.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This dictionary keeps track of assignments of each subject. Note how the value is a <code>list</code> rather than a simple value such as an <code>int</code> or a <code>string</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">assignments = {<span class="hljs-string">'TE3201'</span>: [<span class="hljs-string">'do exercises'</span>, <span class="hljs-string">'submit project'</span>],
+                <pre><code class="hljs python">assignments = {<span class="hljs-string">'TE3201'</span>: [<span class="hljs-string">'do exercises'</span>, <span class="hljs-string">'submit project'</span>],
                <span class="hljs-string">'CS2103'</span>: [],
                <span class="hljs-string">'CS3281'</span>: [<span class="hljs-string">'do presentation'</span>]}
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p>💡 Python ignores line breaks and indentations in the middle of a dictionary/list definition <span class="dimmed">which allows you to structure the code into a more readable format (e.g., one key-value pair per line).</span></p>
                 <p>As the values in this dictionary are lists, you can do list operations on them, e.g., <code>append()</code>, <code>len()</code></p>
-                <div class="code-block">
-                  <pre><code class="hljs python">print(<span class="hljs-string">'CS3281 assignments:'</span>, assignments[<span class="hljs-string">'CS3281'</span>])
+                <pre><code class="hljs python">print(<span class="hljs-string">'CS3281 assignments:'</span>, assignments[<span class="hljs-string">'CS3281'</span>])
 
 assignments[<span class="hljs-string">'CS3281'</span>].append(<span class="hljs-string">'study for exams'</span>)
 print(assignments[<span class="hljs-string">'CS3281'</span>])
@@ -682,8 +621,6 @@ total = <span class="hljs-number">0</span>
   total = total + len(a)
 print(<span class="hljs-string">'total tasks to do:'</span>, total)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">CS3281 assignments: ['do presentation']
@@ -724,26 +661,20 @@ total tasks to do: 4
                         </tbody>
                       </table>
                     </div>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: <span class="hljs-number">20</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>} <span class="hljs-comment">#REPLACE WITH YOUR CODE! </span>
 
 print(get_detailed_scores())
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
           ...}
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -751,8 +682,7 @@ print(get_detailed_scores())
               </div>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python">friends = {<span class="hljs-string">'john'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>},
+                <pre><code class="hljs python">friends = {<span class="hljs-string">'john'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>},
            <span class="hljs-string">'sara'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Sara Parker'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jun 30'</span>},
            <span class="hljs-string">'betty'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Betsy Sims'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>}}
            
@@ -765,8 +695,6 @@ print(friends[<span class="hljs-string">'john'</span>][<span class="hljs-string"
   <span class="hljs-keyword">if</span> details[<span class="hljs-string">'birthday'</span>] == <span class="hljs-string">'Jan 12'</span>:
     print(details[<span class="hljs-string">'name'</span>])
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Jan 12
@@ -789,39 +717,30 @@ Betsy Sims
                     <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
                     <p>Assume in each inning a player gets to bat a number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
                     <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code>                      scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
+                    <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
                         {<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">5</span>, <span class="hljs-number">4</span>:<span class="hljs-number">0</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's second inning stats</span>
                         {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">0</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">1</span>}], <span class="hljs-comment"># amy's third inning stats</span>
                 <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],
                 <span class="hljs-string">'charlie'</span>: []}
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code>                      for the given <code>hit_size</code>.<br> e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s;
                       the return value should be <code>0</code>.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
   
 print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))
 print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">5
 2
 </code></pre>
                     <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs python">
+                      <pre><code class="hljs python">
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
   <span class="hljs-keyword">return</span> player_stats[...][inning<span class="hljs-number">-1</span>][...]
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -857,13 +776,10 @@ charlie : F
                     <panel type="seamless" header="%%:bulb: Python hints%%" class="algolia-no-index">
                       <ul>
                         <li>use a dictionary of this format to store grades:
-                          <div class="code-block">
-                            <pre><code class="hljs python">{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],
+                          <pre><code class="hljs python">{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],
  <span class="hljs-string">'ben'</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'A'</span>],
  <span class="hljs-string">'charlie'</span>: [<span class="hljs-string">'F'</span>]}
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </li>
                         <li>The string method <code>split()</code> can be useful to break the user entry into name and grade.<br> As you know,<code>'aaa bbb ccc'.split()</code> evaluates to a list <code>['aaa', 'bbb', 'ccc']</code></li>
                         <li>The string method <code>join()</code> can be useful when printing grades.<br> As you know, <code>' '.join(['aaa', 'bbb', 'ccc'])</code> evaluates to <code>'aaa bbb ccc'</code></li>
@@ -988,8 +904,7 @@ total................:110
                     </ul>
                     <panel type="seamless" header="%%:bulb: (Python) Partial solution%%" class="algolia-no-index">
                       <p>This exercise requires string formatting methods you learned in an earlier lesson.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
   print_header(width, title)
   <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(items.keys()):
     print_item(k, items[k], width)
@@ -1058,8 +973,6 @@ print_inventory({<span class="hljs-string">'pots'</span>:<span class="hljs-numbe
 print(<span class="hljs-string">'\n'</span>)
 print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-number">85</span>, <span class="hljs-string">'books'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'pencils'</span>: <span class="hljs-number">22</span>}, <span class="hljs-string">'Book Shop'</span>, <span class="hljs-number">25</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -1102,7 +1015,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

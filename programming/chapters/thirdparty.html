@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Installing 3rd Party Libraries</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -108,11 +108,8 @@
               <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
-                <div class="code-block">
-                  <pre><code class="hljs bash">pip install colorama
+                <pre><code class="hljs bash">pip install colorama
 </code></pre>
-                  <div class="code-block-lang"><span>bash</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
                 <pre><code class="hljs">Collecting colorama
@@ -121,8 +118,7 @@ Installing collected packages: colorama
 Successfully installed colorama-0.3.9
 </code></pre>
                 <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
 
 colorama.init()  <span class="hljs-comment"># one-time initialization</span>
 
@@ -130,8 +126,6 @@ print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span
 print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
 print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span><br></p>
                 <img src="/2020/programming/thirdparty/images/coloramaOutput.png"></tip-box>
               <tip-box>
@@ -180,7 +174,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

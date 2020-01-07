@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : Testing</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -465,8 +465,7 @@
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
             <div class="alt-java">
               <div>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
         <span class="hljs-comment">//...</span>
     }
@@ -477,10 +476,7 @@
     
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
     
     <span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
@@ -498,14 +494,11 @@
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
             </div>
             <div class="alt-python">
               <div>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
@@ -526,8 +519,6 @@
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
       <span class="hljs-comment"># another unit tests for write(string) method</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
               </div>
             </div>
           </box>
@@ -1071,11 +1062,8 @@ Invalid command format: add
             </li>
             <li>
               <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-              <div class="code-block">
-                <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+              <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
 </code></pre>
-                <div class="code-block-lang"><span>sh</span></div>
-              </div>
               <ul>
                 <li>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code>                    file, use the command<br>
@@ -1092,11 +1080,8 @@ Invalid command format: add
                 </span>
                 <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
                   For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                <div class="code-block">
-                  <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+                <pre><code class="hljs sh">java AddressBook &gt; output.txt 
 </code></pre>
-                  <div class="code-block-lang"><span>sh</span></div>
-                </div>
                 <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename)
                   makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
                 <box>
@@ -1175,7 +1160,7 @@ Invalid command format: add
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
   </footer>
   </div>
 </body>

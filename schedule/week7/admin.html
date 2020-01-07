@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 7 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -155,16 +155,13 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
                       <ul>
                         <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline
                           items, respectively.
-                          <div class="code-block">
-                            <pre><code class="hljs python">[
+                          <pre><code class="hljs python">[
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}
 ]
 
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </li>
                         <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
                           <pre><code class="hljs">T,borrow book,done
@@ -176,15 +173,12 @@ D,return book,pending,Monday
                     </box>
                     <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                       <p>Here is the code adding a todo item:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python">
+                      <pre><code class="hljs python">
 command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
 <span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
     items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})
 <span class="hljs-keyword">elif</span>  ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                     <p></p>
                   </div>
@@ -210,7 +204,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 9 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -113,8 +113,7 @@
                     </ul>
                     <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                       <p>Here's the main part of the code that illustrates how these objects can work together:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
     ui = UserInterface()
     ui.show_greeting()
@@ -137,11 +136,8 @@
 
 main()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p>Here's a partial <code>execute_command</code> function:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
     <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
         ui.display(<span class="hljs-string">'Bye!'</span>)
         sys.exit()
@@ -153,8 +149,6 @@ main()
         ui.display(message)
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                     <p></p>
                     <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
@@ -212,8 +206,7 @@ list
 </code></pre>
                     <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                       <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
 
@@ -226,8 +219,6 @@ list
             ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
         self.is_done = <span class="hljs-literal">True</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </panel>
                     <p></p>
                   </div>
@@ -253,7 +244,7 @@ list
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

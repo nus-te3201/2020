@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 11 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -112,8 +112,7 @@
                 <table>
                   <tr>
                     <td valign="top">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+                      <pre><code class="hljs python"><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
 
 <span class="hljs-comment"># create a Window</span>
 window = Tk()
@@ -124,8 +123,6 @@ window.title(<span class="hljs-string">'Hello World!'</span>)
 <span class="hljs-comment"># start the Window</span>
 window.mainloop()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </td>
                     <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                     <td valign="bottom">
@@ -151,8 +148,7 @@ window.mainloop()
               </div>
               <p></p>
               <p>Here's the full code for the above example:</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+              <pre><code class="hljs python"><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
 
 <span class="hljs-comment"># create a window</span>
 window = Tk()
@@ -183,27 +179,19 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
 <span class="hljs-comment"># start the window</span>
 window.mainloop()
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>Let's go through the code to see how it works.</p>
               <ul>
                 <li>
-                  <div class="code-block">
-                    <pre><code class="hljs python">window.geometry(<span class="hljs-string">'250x150'</span>)
+                  <pre><code class="hljs python">window.geometry(<span class="hljs-string">'250x150'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>Sets the size of the Window.</p>
                   <p></p>
                   <p></p>
                 </li>
                 <li>
-                  <div class="code-block">
-                    <pre><code class="hljs python">label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))
+                  <pre><code class="hljs python">label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))
 label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <ul>
                     <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code>0</code>. Sets the font to <code>Arial Bold</code> and font size to <code>50</code>.</li>
                     <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <tooltip content="i.e., where widgets are placed">layout</tooltip> of the GUI</a>. In this case we are using a
@@ -213,13 +201,10 @@ label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-numb
                   </ul>
                 </li>
                 <li>
-                  <div class="code-block">
-                    <pre><code class="hljs python">textbox = Entry(window, width=<span class="hljs-number">2</span>)
+                  <pre><code class="hljs python">textbox = Entry(window, width=<span class="hljs-number">2</span>)
 textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)
 textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <ul>
                     <li><strong>Creates an <a href="https://www.python-course.eu/tkinter_entry_widgets.php"><em>Entry</em> widget</a></strong> for the user to enter the increment size. Sets its width to <code>2</code> characters.</li>
                     <li>Places it at the <code>0,1</code> cell <span class="dimmed">(i.e., first column, 2nd row)</span>.</li>
@@ -229,14 +214,11 @@ textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'
                   </ul>
                 </li>
                 <li>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span>
     label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment">#1</span>
     textbox_value = int(textbox.get())  <span class="hljs-comment">#2</span>
     label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment">#3</span>
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p><strong>Creats a function to be called when the button is clicked.</strong> It will increment the value shown in the label by the amount shown in the entry widget.</p>
                   <ul>
                     <li><span class="dimmed">#1</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
@@ -247,12 +229,9 @@ textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'
                   </ul>
                 </li>
                 <li>
-                  <div class="code-block">
-                    <pre><code class="hljs python">button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)
+                  <pre><code class="hljs python">button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)
 button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <ul>
                     <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_buttons.php"><em>Button</em> widget</a></strong> for the user to click. Sets its display text to <code>Add</code>. Sets its command to the function <code>button_clicked</code>                      i.e., when the button is clicked, the specified function will be called.</li>
                     <li>Places the button in the <code>1,1</code> cell of the grid.</li>
@@ -285,7 +264,7 @@ button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

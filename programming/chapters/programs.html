@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Programs</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -127,12 +127,9 @@
                       <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.</li>
                     <li>Choose <code>File</code> → <code>New File</code></li>
                     <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
-                      <div class="code-block">
-                        <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
+                      <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
 print(<span class="hljs-string">'Bye!'</span>)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </li>
                     <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
                     <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
@@ -150,8 +147,7 @@ print(<span class="hljs-string">'Bye!'</span>)
             <div>
               <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments"></a></h3>
               <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
+              <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
 
 print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
 
@@ -159,8 +155,6 @@ print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># sta
 print(<span class="hljs-string">'What is your name?'</span>)
 name = input()
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the
                 <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
             </div>
@@ -174,25 +168,19 @@ name = input()
               <tabs>
 
                 <tab header="Using the shell">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
+                  <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
 Hello World
 
 <span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 Bye my friend
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p></p>
                 </tab>
 
                 <tab header="Running as a script" class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
+                  <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
 print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
                   <pre><code class="hljs">Hello World
@@ -209,16 +197,13 @@ Bye my friend
               <p><strong>Some functions return a value.</strong></p>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells
                 you the type of a value.</p>
-              <div class="code-block">
-                <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
+              <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
 print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
 
 print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span>
 print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span>
 print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
               </p>
               <pre><code class="hljs">My age is 25
@@ -234,8 +219,7 @@ print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-com
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the
                 user
                 <mark>as a string</mark>. 💡 Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
+              <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
 print(<span class="hljs-string">'What is the current price?'</span>)
 price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
 
@@ -247,8 +231,6 @@ print(<span class="hljs-string">'Current price is $'</span> + price) <span class
 discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
 print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Explanation of a similar Python program%%" class="algolia-no-index">
@@ -292,7 +274,7 @@ The length of your name is 8
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

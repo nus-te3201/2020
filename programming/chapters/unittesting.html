@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Unit Testing</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -102,8 +102,7 @@
               <h1 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing"></a></h1>
               <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
               <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span>
   <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span>
   <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]
 
@@ -118,11 +117,8 @@
   """</span>
   <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>This is how we can write some unit tests for the two functions.</p>
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> search, unittest
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> search, unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
 
@@ -149,8 +145,6 @@
 <span class="hljs-comment"># activate the test runner      </span>
 unittest.main()
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
               <pre><code class="hljs">...
 ----------------------------------------------------------------------
@@ -172,11 +166,8 @@ OK
                 </li>
               </ul>
               <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
-              <div class="code-block">
-                <pre><code class="hljs python">self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)
+              <pre><code class="hljs python">self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
               <p>the output will be something like this:</p>
               <pre><code class="hljs">F.
 ======================================================================
@@ -217,7 +208,7 @@ FAILED (failures=1)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

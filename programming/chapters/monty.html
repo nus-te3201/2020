@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: The Monty Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -196,12 +196,9 @@ foo
 &gt;&gt;&gt; Bye!
 </code></pre>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+                  <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-comment"># ADD MORE CODE HERE</span>
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
@@ -240,23 +237,19 @@ y
 &gt;&gt;&gt; Bye!
 </code></pre>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+                  <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
     print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
     <span class="hljs-comment"># ADD MORE CODE HERE</span>
 print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
               <div id="monty3">
                 <h3 id="level-3-use-functions"><span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span><a class="fa fa-anchor" href="#level-3-use-functions"></a></h3>
                 <p>Restructure the <a href="/2020/programming/chapters/monty.html#monty2">Monty Level 2 code</a> to fit the following structure, while keeping the behavior same as before.</p>
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+                <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 
 <span class="hljs-comment"># ADD MISSING FUNCTIONS</span>
@@ -271,11 +264,8 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 
 main()
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
     print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)
@@ -302,8 +292,6 @@ main()
 
 main()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
@@ -347,14 +335,11 @@ y
                     <table>
                       <tr>
                         <td valign="top">
-                          <div class="code-block">
-                            <pre><code class="hljs python">
+                          <pre><code class="hljs python">
 s = <span class="hljs-string">'abcdefgh'</span>
 print(s[<span class="hljs-number">2</span>:])
 print(s[:<span class="hljs-number">5</span>])
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
@@ -369,8 +354,7 @@ abcde
                   </p>
                 </box>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 items = []
 
@@ -414,8 +398,6 @@ items = []
 
 main()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
@@ -479,8 +461,7 @@ y
 </code></pre>
                 <box>
                   <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">tasks = []
+                  <pre><code class="hljs python">tasks = []
 tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])
 print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
 
@@ -489,11 +470,8 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
 <span class="hljs-keyword">else</span>:
     print(<span class="hljs-string">'✗'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>💡 You can use exceptions to identify and handle errors in the command.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     print_greeting()
     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
         <span class="hljs-keyword">try</span>:
@@ -502,12 +480,9 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </box>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python">
+                  <pre><code class="hljs python">
 items = []
 
 <span class="hljs-comment"># ...</span>
@@ -559,8 +534,6 @@ items = []
 
 main()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
@@ -630,19 +603,15 @@ STATUS | INDEX | DESCRIPTION
 </code></pre>
                 <box>
                   <p>💡 You can use triple quotes to define a long string such as the help text.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">help_text =<span class="hljs-string">'''
+                  <pre><code class="hljs python">help_text =<span class="hljs-string">'''
 long text
 more text
 '''</span>
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
                 </box>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
 *******************************************************************************************
 *  __          __  _                            _          __  __             _           *
@@ -657,8 +626,6 @@ more text
 '''</span>
     print(banner.strip(), <span class="hljs-string">'\n'</span>)
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <hr style="border-top: 3px double #c5c5c5;">
@@ -715,11 +682,8 @@ STATUS | INDEX | DESCRIPTION
                   <p>💡 here are some tips:</p>
                   <ul>
                     <li>The filename can be specified in the code. e.g.,
-                      <div class="code-block">
-                        <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+                      <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </li>
                     <li>The format of the file is up to you. Here is an example:
                       <pre><code class="hljs">borrow book,done
@@ -728,8 +692,7 @@ return book,pending
 </code></pre>
                     </li>
                     <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
-                      <div class="code-block">
-                        <pre><code class="hljs python"> items = []
+                      <pre><code class="hljs python"> items = []
  DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
  
  
@@ -747,15 +710,12 @@ return book,pending
  
  main()
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </li>
                   </ul>
                 </box>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code for loading data from the file.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
     deliveries_reader = csv.reader(data_file)
     <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -769,8 +729,6 @@ return book,pending
     status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
     items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                    is a shortcut syntax. It is equivalent to the code below:</p>
                   <pre><code class="hljs">if values[1] == 'done':
     status = True
@@ -880,16 +838,13 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
                   <ul>
                     <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline
                       items, respectively.
-                      <div class="code-block">
-                        <pre><code class="hljs python">[
+                      <pre><code class="hljs python">[
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},
  {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}
 ]
 
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </li>
                     <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
                       <pre><code class="hljs">T,borrow book,done
@@ -901,15 +856,12 @@ D,return book,pending,Monday
                 </box>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code adding a todo item:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">
+                  <pre><code class="hljs python">
 command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
 <span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
     items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})
 <span class="hljs-keyword">elif</span>  ...
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
                 <p></p>
               </div>
@@ -919,8 +871,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
                 <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here is the code for an example <code>ToDo</code> class:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
         self.description = description
@@ -943,11 +894,8 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
         """</span>
         <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
     deliveries_reader = csv.reader(data_file)
     <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -965,8 +913,6 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
         output_writer.writerow(item.as_csv())
     output_file.close()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
                 <p></p>
               </div>
@@ -981,8 +927,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
                 </ul>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>Here's the main part of the code that illustrates how these objects can work together:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
     ui = UserInterface()
     ui.show_greeting()
@@ -1005,11 +950,8 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
 
 main()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>Here's a partial <code>execute_command</code> function:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
     <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
         ui.display(<span class="hljs-string">'Bye!'</span>)
         sys.exit()
@@ -1021,8 +963,6 @@ main()
         ui.display(message)
     ...
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
                 <p></p>
                 <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
@@ -1080,8 +1020,7 @@ list
 </code></pre>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
                   <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
 
@@ -1094,8 +1033,6 @@ list
             ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
         self.is_done = <span class="hljs-literal">True</span>
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
                 <p></p>
               </div>
@@ -1104,8 +1041,7 @@ list
                 <h3 id="level-11-use-inheritance"><span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Inheritance</span><a class="fa fa-anchor" href="#level-11-use-inheritance"></a></h3>
                 <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty10">Monty Level 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
                 <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     TYPE_KEY = <span class="hljs-string">'T'</span>
 
@@ -1140,8 +1076,6 @@ list
         <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span>
 
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                   <p>Note:</p>
                   <ul>
                     <li>There no need for the <code>Deadline</code> class to implement methods such as <code>mark_as_done</code> because it inherits those methods from the parent class.</li>
@@ -1177,8 +1111,7 @@ list
                 <img src="/2020/programming/monty/images/gui-later.png">
                 <p></p>
                 <panel type="seamless" header="Skeletal GUI code" class="algolia-no-index">
-                  <div class="code-block">
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
+                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
 <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
 
 <span class="hljs-keyword">import</span> sys
@@ -1281,8 +1214,6 @@ list
 
 GUI(TaskManager()).start()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </panel>
               </div>
               <div>
@@ -1658,7 +1589,7 @@ GUI(TaskManager()).start()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
     </footer>
   </div>
 </body>

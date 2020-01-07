@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : UML</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -233,8 +233,7 @@
             <p></p>
             <panel type="seamless" header="The equivalent code" class="algolia-no-index">
               <div class="alt-java">
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
 
     Integer number;
     Chair[] chairs = <span class="hljs-keyword">null</span>;
@@ -248,12 +247,9 @@
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </div>
               <div class="alt-python">
-                <div class="code-block">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.number = <span class="hljs-number">0</span>
@@ -265,8 +261,6 @@
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span><span class="hljs-params">(self, n)</span>:</span>
     <span class="hljs-comment"># ...</span>
 </code></pre>
-                  <div class="code-block-lang"><span>python</span></div>
-                </div>
               </div>
             </panel>
           </box>
@@ -358,8 +352,7 @@
                   <question>
                     <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
                     <div class="alt-java">
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
 
     Engine engine;
     <span class="hljs-keyword">private</span> List&lt;Wheel&gt; wheels = <span class="hljs-keyword">null</span>;
@@ -374,13 +367,10 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <div class="alt-python">
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may omit <code>self</code> from method signatures in the class diagram.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
     self._engine = <span class="hljs-literal">None</span> <span class="hljs-comment"># type: Engine</span>
@@ -393,8 +383,6 @@
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
       <span class="hljs-keyword">pass</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </question>
                 </panel>
@@ -454,8 +442,7 @@
           <img src="/2020/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
           <div>
             <div class="alt-java">
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
     Minefield minefield;
 }
 
@@ -463,12 +450,9 @@
     ...
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
             </div>
             <div class="alt-python">
-              <div class="code-block">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
     self.minefield = minefield
@@ -479,8 +463,6 @@
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   <span class="hljs-comment"># ...</span>
 </code></pre>
-                <div class="code-block-lang"><span>python</span></div>
-              </div>
             </div>
           </div>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a bidirectional navigability; each class is aware of the other.</p>
@@ -540,8 +522,7 @@
           <p></p>
           <p>Note how the variable names match closely with the association roles.</p>
           <div class="alt-java">
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
     Woman wife;
 }
 
@@ -549,12 +530,9 @@
     Man husband;
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
           </div>
           <div class="alt-python">
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span>
 
@@ -562,8 +540,6 @@
    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
      self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
           </div>
         </box>
         <box>
@@ -571,22 +547,16 @@
           <img src="/2020/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
           <p></p>
           <div class="alt-java">
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
     List&lt;Student&gt; charges;
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
           </div>
           <div class="alt-python">
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.charges = [] <span class="hljs-comment"># list of Student objects</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
           </div>
         </box>
       </div>
@@ -967,8 +937,7 @@
                   <question>
                     <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
                     <div class="alt-java">
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -982,12 +951,9 @@
 
 Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <div class="alt-python">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
     self.__price = price <span class="hljs-comment"># type: float</span>
@@ -997,8 +963,6 @@ Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">
 <span class="hljs-comment"># somewhere else in the code</span>
 my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </question>
                 </panel>
@@ -1484,7 +1448,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
   </footer>
   </div>
 </body>

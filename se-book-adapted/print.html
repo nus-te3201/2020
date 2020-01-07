@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Software Engineering for Self-Directed Learners [Printable Version for TE3201]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -865,27 +865,38 @@
                 </box>
                 <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
                 <box>
-                  <panel header="<md>:fas-cube:</md> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
-                    <div class="text-monospace">
-                      <ul>
-                        <li>System:
-                          <popover effect="fade" placement="right" content="Automated Teller Machine">
-                            ATM </popover>
-                        </li>
-                        <li>Actor: Customer</li>
-                        <li>Use Case: Check account balance
-                          <ol>
-                            <li>User inserts an ATM card</li>
-                            <li>ATM prompts for PIN</li>
-                            <li>User enters PIN</li>
-                            <li>ATM prompts for withdrawal amount</li>
-                            <li>User enters the amount</li>
-                            <li>ATM ejects the ATM card and issues cash</li>
-                            <li>User collects the card and the cash.</li>
-                          </ol>
-                        </li>
-                      </ul>
-                    </div>
+                  <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
+                    <pre>
+System: Online Banking System (OBS)
+Use case: UC23 - Transfer Money
+Actor: User
+MSS:
+  1. User chooses to transfer money.
+  2. OBS requests for details of the transfer.
+  3. User enters the requested details.
+  4. OBS requests for confirmation.
+  5. User confirms.
+  6. OBS transfers the money and displays the new account balance.
+  Use case ends.
+</pre>
+                    <pre>
+Extensions:
+  3a. OBS detects an error in the entered data.
+    3a1. OBS requests for the correct data.
+    3a2. User enters new data
+    Steps 3a1-3a2 are repeated until the data entered are correct.
+    Use case resumes from step 4.
+  
+  3b. User requests to effect the transfer in a future date.
+      3b1. OBS requests for confirmation.
+      3b2. User confirms future transfer.
+      Use case ends.
+  
+  *a. At any time, User chooses to cancel the transfer.
+      *a1. OBS requests to confirm the cancellation.
+      *a2. User confirms the cancellation.
+      Use case ends.
+</pre>
                   </panel>
                   <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
                     <div class="text-monospace">
@@ -904,19 +915,19 @@
                     </div>
                   </panel>
                 </box>
-                <p></p>
-                <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.
-                  In the example below, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
-                  <div>
-                    <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
-                      Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
-                      in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
-                  </div>
-                </modal>
-                <p></p>
-                <img src="/2020/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-                <p></p>
+                <box background-color="white" border-color="white">
+                  <img class="float-right ml-5" src="/2020/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
+                  <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a
+                    system.</p>
+                  <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
+                  <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
+                    <div>
+                      <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
+                        Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
+                        in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+                    </div>
+                  </modal>
+                </box>
                 <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
               </div>
             </div>
@@ -1100,53 +1111,42 @@
                     expected by the MSS. Extensions appear below the MSS.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example adds some extensions to the use case in the previous example.</p>
-                    <div class="text-monospace">
-                      <ul>
-                        <li>System: Online Banking System (OBS)</li>
-                        <li>Use case: UC23 - Transfer Money</li>
-                        <li>Actor: User</li>
-                        <li>MSS:
-                          <ol>
-                            <li>User chooses to transfer money.</li>
-                            <li>OBS requests for details of the transfer.</li>
-                            <li>User enters the requested details.</li>
-                            <li>OBS requests for confirmation.</li>
-                            <li>OBS transfers the money and displays the new account balance.</li>
-                            <li class="custom-bullet-point">Use case ends.</li>
-                          </ol>
-                        </li><br>
-                        <li> Extensions:
-                          <ol class="custom-bullet-list">
-                            <li>3a. OBS detects an error in the entered data.
-                              <ol class="custom-bullet-list">
-                                <li>3a1. OBS requests for the correct data.</li>
-                                <li>3a2. User enters new data.</li>
-                                <li>Steps 3a1-3a2 are repeated until the data entered are correct.</li>
-                                <li>Use case resumes from step 4.</li><br></ol>
-                            </li>
-                            <li>3b. User requests to effect the transfer in a future date.
-                              <ol class="custom-bullet-list">
-                                <li>3b1. OBS requests for confirmation.</li>
-                                <li>3b2. User confirms future transfer.</li>
-                                <li>Use case ends.</li><br></ol>
-                            </li>
-                            <li>*a. At any time, User chooses to cancel the transfer.
-                              <ol class="custom-bullet-list">
-                                <li>*a1. OBS requests to confirm the cancellation.</li>
-                                <li>*a2. User confirms the cancellation.</li>
-                                <li>Use case ends.</li><br></ol>
-                            </li>
-                            <li>*b. At any time, 120 seconds lapse without any input from the User.
-                              <ol class="custom-bullet-list">
-                                <li>*b1. OBS cancels the transfer.</li>
-                                <li>*b2. OBS informs the User of the cancellation.</li>
-                                <li>Use case ends.</li>
-                              </ol>
-                            </li>
-                          </ol>
-                        </li>
-                      </ul>
-                    </div>
+                    <pre>
+System: Online Banking System (OBS)
+Use case: UC23 - Transfer Money
+Actor: User
+MSS:
+  1. User chooses to transfer money.
+  2. OBS requests for details of the transfer.
+  3. User enters the requested details.
+  4. OBS requests for confirmation.
+  5. User confirms.
+  6. OBS transfers the money and displays the new account balance.
+  Use case ends.
+</pre>
+                    <pre>
+Extensions:
+  3a. OBS detects an error in the entered data.
+    3a1. OBS requests for the correct data.
+    3a2. User enters new data
+    Steps 3a1-3a2 are repeated until the data entered are correct.
+    Use case resumes from step 4.
+  
+  3b. User requests to effect the transfer in a future date.
+      3b1. OBS requests for confirmation.
+      3b2. User confirms future transfer.
+      Use case ends.
+  
+  *a. At any time, User chooses to cancel the transfer.
+      *a1. OBS requests to confirm the cancellation.
+      *a2. User confirms the cancellation.
+      Use case ends.
+
+  *b. At any time, 120 seconds lapse without any input from the User.
+      *b1. OBS cancels the transfer.
+      *b2. OBS informs the User of the cancellation.
+      Use case ends.
+</pre>
                   </box>
                   <p>Note that the numbering style is not a universal rule but a widely used convention. Based on that convention,</p>
                   <ul>
@@ -2129,8 +2129,7 @@
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
                   <div>
                     <div class="alt-java">
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
     Minefield minefield;
 }
 
@@ -2138,12 +2137,9 @@
     ...
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <div class="alt-python">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
     self.minefield = minefield
@@ -2154,8 +2150,6 @@
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   <span class="hljs-comment"># ...</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </div>
                 </box>
@@ -2163,32 +2157,25 @@
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
                   <div class="alt-java">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
     ...
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.config_gen = ConfigGenerator()
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
                 <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Foo</code> class has a variable to hold a <code>Bar</code> object and vice versa <span class="dimmed">i.e., each object can have an association with an object of the other type</span>.</p>
                   <div class="alt-java">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
     <span class="hljs-comment">//...</span>
 }
@@ -2199,12 +2186,9 @@
 }
 
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span>
     self.bar = bar;
@@ -2216,32 +2200,24 @@
     self.foo = foo;
     
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
                 <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
                 <box>
                   <div class="alt-java">
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses an two-dimensional array to implement a 1-to-many association from the <code>Minefield</code> to <code>Cell</code>.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     Cell[][] cell;
     ...
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
               </div>
@@ -2266,8 +2242,7 @@
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
                     <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                   <div class="alt-java">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
     <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(Bar bar)</span></span>{
         <span class="hljs-keyword">return</span> bar.getValue();
@@ -2282,12 +2257,9 @@
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
     
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(self, bar)</span>:</span>
         <span class="hljs-keyword">return</span> bar.value;
@@ -2297,8 +2269,6 @@
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value)</span>:</span>
       self.value = value
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
               </div>
@@ -2327,24 +2297,18 @@
                 </p>
                 <box>
                   <div class="alt-java float-right ml-5">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
     <span class="hljs-keyword">private</span> Subject subject;
   ...
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python  float-right ml-5">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__subject = Subject()
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this code, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
                 </box>
@@ -2369,8 +2333,7 @@
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code>                    a object who is the leader of the team.</p>
                   <div class="alt-java">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
     Person leader;
     ...
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setLeader</span><span class="hljs-params">(Person p)</span> </span>{
@@ -2378,12 +2341,9 @@
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__leader = <span class="hljs-literal">None</span>
@@ -2391,8 +2351,6 @@
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_leader</span><span class="hljs-params">(self, person)</span>:</span>
     self.__leader = person
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
               </div>
@@ -2952,8 +2910,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -2971,8 +2928,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                           <td>&nbsp;&nbsp;<br><br></td>
                           <td valign="top">
@@ -2981,8 +2936,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -2996,8 +2950,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3013,8 +2965,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -3027,8 +2978,6 @@
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td>&nbsp;&nbsp;<br><br></td>
                           <td valign="top">
@@ -3037,8 +2986,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -3048,8 +2996,6 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3102,8 +3048,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -3121,8 +3066,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                           <td>&nbsp;&nbsp;<br><br></td>
                           <td valign="top">
@@ -3131,8 +3074,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -3146,8 +3088,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3163,8 +3103,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -3177,8 +3116,6 @@
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td>&nbsp;&nbsp;<br><br></td>
                           <td valign="top">
@@ -3187,8 +3124,7 @@
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -3198,8 +3134,6 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3228,18 +3162,14 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+                      <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java">
+                      <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
 <span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
@@ -3248,8 +3178,6 @@
 
 <span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                   </div>
                 </div>
@@ -3262,18 +3190,14 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+                      <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+                      <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
 
@@ -3281,8 +3205,6 @@ is_urgent = type_code == URGENT
 
 <span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </box>
                   </div>
                 </div>
@@ -3313,13 +3235,10 @@ is_urgent = type_code == URGENT
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+                            <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                           <td>&nbsp;&nbsp;<br><br></td>
                           <td valign="top">
@@ -3328,16 +3247,13 @@ is_urgent = type_code == URGENT
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                            <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3354,13 +3270,10 @@ is_urgent = type_code == URGENT
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                            <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td>&nbsp;&nbsp;<br><br></td>
                           <td valign="top">
@@ -3369,16 +3282,13 @@ is_urgent = type_code == URGENT
                                 </span>
                               </font>
                             </p>
-                            <div class="code-block">
-                              <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                            <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3392,11 +3302,8 @@ MAX_SIZE = <span class="hljs-number">10</span>
                       </span>
                     </font>
                   </p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                  <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                 </box>
                 <p>In general, try to avoid any magic literals.</p>
               </div>
@@ -3511,12 +3418,9 @@ MAX_SIZE = <span class="hljs-number">10</span>
                         </span>
                       </font>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Person student;
+                    <pre><code class="hljs java">Person student;
 ArrayList&lt;Person&gt; students;
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
                     <p>
@@ -3524,12 +3428,9 @@ ArrayList&lt;Person&gt; students;
                         </span>
                       </font>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs python">name = <span class="hljs-string">'Jim'</span>
+                    <pre><code class="hljs python">name = <span class="hljs-string">'Jim'</span>
 names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
               </div>
@@ -3590,15 +3491,12 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                       </span>
                     </font>
                   </p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+                  <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
 x++;
 
 <span class="hljs-comment">//trim the input</span>
 trimInput();
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                 </div>
                 <div class="alt-python">
                   <p>
@@ -3606,15 +3504,12 @@ trimInput();
                       </span>
                     </font>
                   </p>
-                  <div class="code-block">
-                    <pre><code class="hljs python">// increment x
+                  <pre><code class="hljs python">// increment x
 x = x + <span class="hljs-number">1</span>
 
 //trim the input
 trim_input()
 </code></pre>
-                    <div class="code-block-lang"><span>python</span></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -3636,27 +3531,21 @@ trim_input()
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                           </span>
                         </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+                      <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                      <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                   </div>
                   <div class="alt-python">
@@ -3665,25 +3554,19 @@ trim_input()
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                           </span>
                         </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+                      <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
 <span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
     ...
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </div>
                 </box>
@@ -3741,8 +3624,7 @@ trim_input()
                       <table>
                         <tr>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
     total = price * <span class="hljs-number">0.95</span>;
     send();
 } <span class="hljs-keyword">else</span> {
@@ -3750,13 +3632,10 @@ trim_input()
     send();
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                           <td valign="center">&nbsp;→&nbsp;</td>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
     total = price * <span class="hljs-number">0.95</span>;
 } <span class="hljs-keyword">else</span> {
     total = price * <span class="hljs-number">0.98</span>;
@@ -3764,8 +3643,6 @@ trim_input()
 send();
 
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3776,29 +3653,23 @@ send();
                       <table>
                         <tr>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                            <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
     send()
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     send()
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                           <td valign="center">&nbsp;→&nbsp;</td>
                           <td valign="top">
-                            <div class="code-block">
-                              <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+                            <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
     total = price * <span class="hljs-number">0.95</span>
 <span class="hljs-keyword">else</span>:
     total = price * <span class="hljs-number">0.98</span>
     
 send()
 </code></pre>
-                              <div class="code-block-lang"><span>python</span></div>
-                            </div>
                           </td>
                         </tr>
                       </table>
@@ -3812,8 +3683,7 @@ send()
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                   <div class="alt-java">
                     <div>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
     <span class="hljs-comment">//print details</span>
@@ -3821,12 +3691,9 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
     printDetails(getOutstanding());
 }
@@ -3836,26 +3703,20 @@ send()
     System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                   </div>
                   <div class="alt-python">
                     <div>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
 
     //<span class="hljs-keyword">print</span> details
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + get_outstanding())
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
     print_banner()
     print_details(get_outstanding())
 
@@ -3863,8 +3724,6 @@ send()
     print(<span class="hljs-string">"name:	"</span> + name)
     print(<span class="hljs-string">"amount	"</span> + amount)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </div>
                 </box>
@@ -4578,8 +4437,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
                   <div class="alt-java">
                     <div>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
         <span class="hljs-comment">//...</span>
     }
@@ -4590,10 +4448,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
     
     <span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
@@ -4611,14 +4466,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                   </div>
                   <div class="alt-python">
                     <div>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
+                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
@@ -4639,8 +4491,6 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
       <span class="hljs-comment"># another unit tests for write(string) method</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </div>
                 </box>
@@ -4944,11 +4794,8 @@ Invalid command format: add
                   </li>
                   <li>
                     <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+                    <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                     <ul>
                       <li>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code>                          file, use the command<br>
@@ -4964,11 +4811,8 @@ Invalid command format: add
                       </span>
                       </span>
                       <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code>                        operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                      <div class="code-block">
-                        <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+                      <pre><code class="hljs sh">java AddressBook &gt; output.txt 
 </code></pre>
-                        <div class="code-block-lang"><span>sh</span></div>
-                      </div>
                       <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other
                         filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
                       <box>
@@ -6155,8 +5999,7 @@ Invalid command format: add
                   <p></p>
                   <panel type="seamless" header="The equivalent code" class="algolia-no-index">
                     <div class="alt-java">
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
 
     Integer number;
     Chair[] chairs = <span class="hljs-keyword">null</span>;
@@ -6170,12 +6013,9 @@ Invalid command format: add
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <div class="alt-python">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.number = <span class="hljs-number">0</span>
@@ -6187,8 +6027,6 @@ Invalid command format: add
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span><span class="hljs-params">(self, n)</span>:</span>
     <span class="hljs-comment"># ...</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </panel>
                 </box>
@@ -6288,8 +6126,7 @@ Invalid command format: add
                   <img src="/2020/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
                   <div>
                     <div class="alt-java">
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
     Minefield minefield;
 }
 
@@ -6297,12 +6134,9 @@ Invalid command format: add
     ...
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <div class="alt-python">
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
     self.minefield = minefield
@@ -6313,8 +6147,6 @@ Invalid command format: add
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   <span class="hljs-comment"># ...</span>
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </div>
                   </div>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a bidirectional navigability; each class is aware of the other.</p>
@@ -6346,8 +6178,7 @@ Invalid command format: add
                   <p></p>
                   <p>Note how the variable names match closely with the association roles.</p>
                   <div class="alt-java">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
     Woman wife;
 }
 
@@ -6355,12 +6186,9 @@ Invalid command format: add
     Man husband;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span>
 
@@ -6368,8 +6196,6 @@ Invalid command format: add
    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
      self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span>
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
                 <box>
@@ -6377,22 +6203,16 @@ Invalid command format: add
                   <img src="/2020/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
                   <p></p>
                   <div class="alt-java">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
     List&lt;Student&gt; charges;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div class="alt-python">
-                    <div class="code-block">
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.charges = [] <span class="hljs-comment"># list of Student objects</span>
 </code></pre>
-                      <div class="code-block-lang"><span>python</span></div>
-                    </div>
                   </div>
                 </box>
               </div>
@@ -6861,7 +6681,7 @@ Invalid command format: add
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 05:28:10 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 08:59:22 GMT</small></div>
   </footer>
   </div>
 </body>
