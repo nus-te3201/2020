@@ -14,7 +14,7 @@
   * [Using Functions]({{ baseUrl }}/programming/chapters/programs.html#using-functions)
 </div>
 
-# Expressions, Data Types, Variables
+## **Expressions, Data Types, Variables**
 
 <include src="../programming/programs/text.md" />{{ hr_double }}
 <include src="../programming/environment/text.md" />{{ hr_double }}
@@ -23,7 +23,7 @@
 <include src="../programming/types/text.md" />{{ hr_double }}
 <include src="../programming/variables/text.md" />{{ hr_double }}
 
-# Python Programs
+## **Python Programs**
 
 <include src="../programming/scripts/text.md" />{{ hr_double }}
 <include src="../programming/comments/text.md" />{{ hr_double }}
@@ -43,7 +43,7 @@
 
 </div>
 
-# Program Flow Control
+## **Program Flow Control**
 
 <include src="../programming/booleans/text.md" />{{ hr_double }}
 <include src="../programming/if/text.md" />{{ hr_double }}
@@ -63,7 +63,7 @@
   * [Local and Global Scope]({{ baseUrl }}/programming/chapters/functions.html#local-and-global-scope)
 </div>
 
-# Functions
+## **Functions**
 
 <include src="../programming/functions-def/text.md" />{{ hr_double }}
 <include src="../programming/functions-parameters/text.md" />{{ hr_double }}
@@ -82,7 +82,7 @@
   * [List Methods]({{ baseUrl }}/programming/chapters/lists.html#list-methods)
 </div>
 
-# Lists
+## **Lists**
 
 <include src="../programming/lists-intro/text.md" />{{ hr_double }}
 <include src="../programming/objectReferences/text.md" />{{ hr_double }}
@@ -104,14 +104,14 @@
   * [String Methods]({{ baseUrl }}/programming/chapters/strings.html#string-methods)
 </div>
 
-# Error Handling
+## **Error Handling**
 
 <include src="../programming/errors-intro/text.md" />{{ hr_double }}
 <include src="../programming/errors-syntax/text.md" />{{ hr_double }}
 <include src="../programming/errors-exceptions-handling/text.md" />{{ hr_double }}
 <include src="../programming/errors-exceptions-raising/text.md" />{{ hr_double }}
 
-# Strings
+## **Strings**
 
 <include src="../programming/strings-literals/text.md" />{{ hr_double }}
 <include src="../programming/strings-workingWith/text.md" />{{ hr_double }}
@@ -129,7 +129,7 @@
 * [**Using an IDE**]({{ baseUrl }}/programming/chapters/ide.html#appendix-b-using-an-ide)
 </div>
 
-# Files
+## **Files**
 
 <include src="../programming/files-paths/text.md" />{{ hr_double }}
 <include src="../programming/files-reading/text.md" />{{ hr_double }}
@@ -148,7 +148,7 @@
   * [Nested Dictionaries]({{ baseUrl }}/programming/chapters/dictionaries.html#nested-dictionaries)
 </div>
 
-# Dictionaries
+## **Dictionaries**
 
 <include src="../programming/dictionaries-intro/text.md" />{{ hr_double }}
 <include src="../programming/dictionaries-workingWith/text.md" />{{ hr_double }}
@@ -165,7 +165,7 @@
 
 <include src="../programming/thirdparty/text.md" />{{ hr_double }}
 
-# Object-Oriented Programming
+## **Object-Oriented Programming**
 
 <include src="../programming/oop-classes/text.md" />{{ hr_double }}
 
@@ -178,7 +178,7 @@
   * [Visibility]({{ baseUrl }}/programming/chapters/oop.html#visibility)
 </div>
 
-# Object-Oriented Programming
+## **Object-Oriented Programming**
 
 <include src="../programming/oop-classLevelMembers/text.md" />{{ hr_double }}
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
@@ -192,7 +192,7 @@
 * [**Unit Testing**]({{ baseUrl }}/programming/chapters/unittesting.html#appendix-d-unit-testing)
 </div>
 
-# Object-Oriented Programming
+## **Object-Oriented Programming**
 
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
 
@@ -207,7 +207,7 @@
   * [GUI Basics]({{ baseUrl }}/programming/chapters/gui.html#gui-basics)
 </div>
 
-# GUIs
+## **GUIs**
 
 <include src="../programming/gui/text.md" />{{ hr_double }}
 
