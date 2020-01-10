@@ -160,3 +160,84 @@
 2020-01-10T08:42:38.202Z - info: Site data built
 2020-01-10T08:43:54.482Z - info: Website generation started at 4:43:53 PM
 2020-01-10T08:43:56.940Z - info: Building assets...
+2020-01-10T08:43:59.099Z - info: Assets built
+2020-01-10T08:43:59.099Z - info: Generating pages...
+2020-01-10T08:44:28.171Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.180Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.180Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.180Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.180Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.181Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.186Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:28.186Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T08:44:33.076Z - debug:  
+2020-01-10T08:44:33.076Z - debug:  
+2020-01-10T08:44:33.076Z - debug:  
+2020-01-10T08:45:00.713Z - info: Pages built
+2020-01-10T08:45:10.956Z - info: Website generation complete! Total build time: 77.722s
+2020-01-10T08:45:10.956Z - info: Build success!
+2020-01-10T08:45:10.958Z - info: Site data built
+2020-01-10T08:45:53.128Z - info: Deployed!
+2020-01-10T09:59:17.479Z - info: Website generation started at 5:59:16 PM
+2020-01-10T09:59:20.095Z - info: Building assets...
+2020-01-10T09:59:22.242Z - info: Assets built
+2020-01-10T09:59:22.242Z - info: Generating pages...
+2020-01-10T09:59:52.046Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.047Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.047Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.047Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.048Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.048Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.049Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:52.049Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-10T09:59:55.759Z - debug:  
+2020-01-10T09:59:56.887Z - debug:  
+2020-01-10T09:59:56.887Z - debug:  
+2020-01-10T10:00:26.177Z - info: Pages built
+2020-01-10T10:00:37.265Z - info: Website generation complete! Total build time: 81.104s
+2020-01-10T10:00:37.639Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-01-10T10:00:37.639Z - info: Press CTRL+C to stop ...
+2020-01-10T10:00:37.728Z - info: Site data built
+2020-01-10T10:01:35.470Z - info: [6:01:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week1\admin-te3201.mbdf
+2020-01-10T10:01:36.473Z - info: Rebuilding affected source files
+2020-01-10T10:01:36.474Z - info: Rebuilding 4 pages
+2020-01-10T10:01:38.771Z - info: Pages rebuilt
+2020-01-10T10:01:38.777Z - info: Site data built
+2020-01-10T10:02:06.019Z - info: [6:02:06 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week1\admin-te3201.mbdf
+2020-01-10T10:02:07.021Z - info: Rebuilding affected source files
+2020-01-10T10:02:07.023Z - info: Rebuilding 4 pages
+2020-01-10T10:02:09.321Z - info: Pages rebuilt
+2020-01-10T10:02:09.325Z - info: Site data built
+2020-01-10T10:02:54.660Z - info: [6:02:54 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week1\admin-te3201.mbdf
+2020-01-10T10:02:55.661Z - info: Rebuilding affected source files
+2020-01-10T10:02:55.663Z - info: Rebuilding 4 pages
+2020-01-10T10:02:57.932Z - info: Pages rebuilt
+2020-01-10T10:02:57.936Z - info: Site data built
+2020-01-10T10:03:09.763Z - info: [6:03:09 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week1\admin-te3201.mbdf
+2020-01-10T10:03:10.764Z - info: Rebuilding affected source files
+2020-01-10T10:03:10.765Z - info: Rebuilding 4 pages
+2020-01-10T10:03:12.777Z - info: Pages rebuilt
+2020-01-10T10:03:12.780Z - info: Site data built
+2020-01-10T10:03:44.472Z - info: [6:03:44 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week1\admin-te3201.mbdf
+2020-01-10T10:03:45.474Z - info: Rebuilding affected source files
+2020-01-10T10:03:45.476Z - info: Rebuilding 4 pages
+2020-01-10T10:03:48.049Z - info: Pages rebuilt
+2020-01-10T10:03:48.055Z - info: Site data built
+2020-01-10T10:05:25.747Z - info: Website generation started at 6:05:24 PM
+2020-01-10T10:05:28.224Z - info: Building assets...

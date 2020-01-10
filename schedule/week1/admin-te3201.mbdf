@@ -38,15 +38,20 @@
 
 
 #### {{ thumb(5) }} Submit weekly project increments
-
-{{ embed_topic("../../admin/te3201-admin.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
-
 <div class="indented-level2">
 <box type="warning">
 
-Please **finish weekly programming topics and weekly programming exercises before attempting weekly project increments** as the knowledge from those former may be needed to complete the latter.
+* Recommended: **Finish weekly programming topics and weekly programming exercises before attempting weekly project increments** as the knowledge from those former may be needed to complete the latter.
 </box>
 </div>
 
+* Learn about the project:
+
+{{ embed_topic("../../admin/te3201-admin.md#project-info", "Admin " + icon_embedding + " Project", "1", indent="2") }}
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Monty - Overview**" var-fragment="monty.mbdf#intro" />
+<p/>
+
+* Use the exercise `Week 1 Project Submission` on repl.it to do this week's project task given below.
+
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty.mbdf#monty1" />
+
