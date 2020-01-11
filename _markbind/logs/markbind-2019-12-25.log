@@ -1,0 +1,1402 @@
+2019-12-25T13:58:12.076Z - info: Website generation started at 21:58:01
+2019-12-25T13:58:20.497Z - info: Building assets...
+2019-12-25T13:58:25.332Z - info: Assets built
+2019-12-25T13:58:25.332Z - info: Generating pages...
+2019-12-25T13:59:39.100Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.077Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.077Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.077Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.077Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.077Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.077Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T13:59:41.145Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:00:18.218Z - debug:  
+2019-12-25T14:00:18.218Z - debug:  
+2019-12-25T14:00:18.218Z - debug:  
+2019-12-25T14:00:18.218Z - debug:  
+2019-12-25T14:00:58.035Z - info: Pages built
+2019-12-25T14:01:26.394Z - info: Website generation complete! Total build time: 205.247s
+2019-12-25T14:01:26.789Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2019-12-25T14:01:26.789Z - info: Press CTRL+C to stop ...
+2019-12-25T14:01:26.841Z - info: Site data built
+2019-12-25T14:01:30.794Z - info: [22:01:30] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:01:31.899Z - info: Rebuilding affected source files
+2019-12-25T14:01:31.899Z - info: Rebuilding 1 pages
+2019-12-25T14:01:34.438Z - info: Pages rebuilt
+2019-12-25T14:01:34.546Z - info: Site data built
+2019-12-25T14:02:15.701Z - info: [22:02:15] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:02:16.716Z - info: Rebuilding affected source files
+2019-12-25T14:02:16.720Z - info: Rebuilding 1 pages
+2019-12-25T14:02:17.924Z - info: Pages rebuilt
+2019-12-25T14:02:17.940Z - info: Site data built
+2019-12-25T14:02:27.036Z - info: [22:02:27] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:02:28.044Z - info: Rebuilding affected source files
+2019-12-25T14:02:28.052Z - info: Rebuilding 1 pages
+2019-12-25T14:02:28.992Z - info: Pages rebuilt
+2019-12-25T14:02:29.008Z - info: Site data built
+2019-12-25T14:02:42.249Z - info: [22:02:42] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:02:43.252Z - info: Rebuilding affected source files
+2019-12-25T14:02:43.260Z - info: Rebuilding 1 pages
+2019-12-25T14:02:44.404Z - info: Pages rebuilt
+2019-12-25T14:02:44.420Z - info: Site data built
+2019-12-25T14:04:17.393Z - info: [22:04:17] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:04:18.391Z - info: Rebuilding affected source files
+2019-12-25T14:04:18.403Z - info: Rebuilding 1 pages
+2019-12-25T14:04:19.621Z - info: Pages rebuilt
+2019-12-25T14:04:19.637Z - info: Site data built
+2019-12-25T14:05:44.830Z - info: [22:05:44] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:05:45.847Z - info: Rebuilding affected source files
+2019-12-25T14:05:45.847Z - info: Rebuilding 1 pages
+2019-12-25T14:05:46.970Z - info: Pages rebuilt
+2019-12-25T14:05:46.982Z - info: Site data built
+2019-12-25T14:07:28.817Z - info: [22:07:28] Reload for file deletion: C:\repos\nus-te3201\te3201-2020-website\_markbind\navigation\adminSiteNav-te3201.md
+2019-12-25T14:07:29.821Z - warn: Rebuilding all source files
+2019-12-25T14:07:33.522Z - info: Assets removed
+2019-12-25T14:07:33.522Z - info: Generating pages...
+2019-12-25T14:09:01.489Z - info: [22:09:01] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:09:01.760Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:01.980Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:01.980Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:01.980Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:02.105Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:02.105Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:02.300Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:02.304Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:09:02.564Z - info: Rebuilding affected source files
+2019-12-25T14:09:02.568Z - info: Rebuilding 1 pages
+2019-12-25T14:09:26.190Z - debug:  
+2019-12-25T14:09:26.190Z - debug:  
+2019-12-25T14:09:26.190Z - debug:  
+2019-12-25T14:09:26.190Z - debug:  
+2019-12-25T14:10:48.079Z - info: [22:10:48] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:10:48.791Z - info: [22:10:48] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:10:58.534Z - info: Pages rebuilt
+2019-12-25T14:10:58.671Z - info: Site data built
+2019-12-25T14:11:00.061Z - info: Rebuilding affected source files
+2019-12-25T14:11:00.066Z - info: Rebuilding 1 pages
+2019-12-25T14:11:01.424Z - info: Pages rebuilt
+2019-12-25T14:11:01.428Z - info: Site data built
+2019-12-25T14:11:01.458Z - info: Pages built
+2019-12-25T14:15:21.429Z - info: [22:15:21] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:15:22.435Z - info: Rebuilding affected source files
+2019-12-25T14:15:22.435Z - info: Rebuilding 1 pages
+2019-12-25T14:15:23.451Z - info: Pages rebuilt
+2019-12-25T14:15:23.459Z - info: Site data built
+2019-12-25T14:16:42.078Z - info: [22:16:42] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:16:43.089Z - info: Rebuilding affected source files
+2019-12-25T14:16:43.089Z - info: Rebuilding 1 pages
+2019-12-25T14:16:44.582Z - info: Pages rebuilt
+2019-12-25T14:16:44.594Z - info: Site data built
+2019-12-25T14:17:07.280Z - info: [22:17:07] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:17:08.308Z - info: Rebuilding affected source files
+2019-12-25T14:17:08.308Z - info: Rebuilding 1 pages
+2019-12-25T14:17:09.554Z - info: Pages rebuilt
+2019-12-25T14:17:09.566Z - info: Site data built
+2019-12-25T14:18:09.229Z - info: [22:18:09] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:18:10.233Z - info: Rebuilding affected source files
+2019-12-25T14:18:10.233Z - info: Rebuilding 1 pages
+2019-12-25T14:18:11.807Z - info: Pages rebuilt
+2019-12-25T14:18:11.819Z - info: Site data built
+2019-12-25T14:18:28.226Z - info: [22:18:28] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:18:29.229Z - info: Rebuilding affected source files
+2019-12-25T14:18:29.229Z - info: Rebuilding 1 pages
+2019-12-25T14:18:30.168Z - info: Pages rebuilt
+2019-12-25T14:18:30.172Z - info: Site data built
+2019-12-25T14:22:12.332Z - info: [22:22:12] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:22:13.336Z - info: Rebuilding affected source files
+2019-12-25T14:22:13.336Z - info: Rebuilding 1 pages
+2019-12-25T14:22:14.952Z - info: Pages rebuilt
+2019-12-25T14:22:14.968Z - info: Site data built
+2019-12-25T14:23:40.563Z - info: [22:23:40] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:23:41.569Z - info: Rebuilding affected source files
+2019-12-25T14:23:41.569Z - info: Rebuilding 1 pages
+2019-12-25T14:23:42.982Z - info: Pages rebuilt
+2019-12-25T14:23:42.990Z - info: Site data built
+2019-12-25T14:25:19.546Z - info: [22:25:19] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:25:20.549Z - info: Rebuilding affected source files
+2019-12-25T14:25:20.549Z - info: Rebuilding 1 pages
+2019-12-25T14:25:22.332Z - info: Pages rebuilt
+2019-12-25T14:25:22.344Z - info: Site data built
+2019-12-25T14:33:37.895Z - info: [22:33:37] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:33:38.908Z - info: Rebuilding affected source files
+2019-12-25T14:33:38.908Z - info: Rebuilding 1 pages
+2019-12-25T14:33:40.460Z - info: Pages rebuilt
+2019-12-25T14:33:40.472Z - info: Site data built
+2019-12-25T14:33:47.555Z - info: [22:33:47] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:33:48.569Z - info: Rebuilding affected source files
+2019-12-25T14:33:48.569Z - info: Rebuilding 1 pages
+2019-12-25T14:33:49.685Z - info: Pages rebuilt
+2019-12-25T14:33:49.693Z - info: Site data built
+2019-12-25T14:34:11.474Z - info: [22:34:11] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:34:12.485Z - info: Rebuilding affected source files
+2019-12-25T14:34:12.485Z - info: Rebuilding 1 pages
+2019-12-25T14:34:13.592Z - info: Pages rebuilt
+2019-12-25T14:34:13.608Z - info: Site data built
+2019-12-25T14:34:46.345Z - info: [22:34:46] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:34:47.366Z - info: Rebuilding affected source files
+2019-12-25T14:34:47.366Z - info: Rebuilding 1 pages
+2019-12-25T14:34:48.661Z - info: Pages rebuilt
+2019-12-25T14:34:48.681Z - info: Site data built
+2019-12-25T14:35:49.558Z - info: [22:35:49] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:35:50.572Z - info: Rebuilding affected source files
+2019-12-25T14:35:50.572Z - info: Rebuilding 1 pages
+2019-12-25T14:35:51.540Z - info: Pages rebuilt
+2019-12-25T14:35:51.548Z - info: Site data built
+2019-12-25T14:36:10.556Z - info: [22:36:10] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:36:11.567Z - info: Rebuilding affected source files
+2019-12-25T14:36:11.567Z - info: Rebuilding 1 pages
+2019-12-25T14:36:12.784Z - info: Pages rebuilt
+2019-12-25T14:36:12.792Z - info: Site data built
+2019-12-25T14:37:38.740Z - info: [22:37:38] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:37:39.742Z - info: Rebuilding affected source files
+2019-12-25T14:37:39.742Z - info: Rebuilding 1 pages
+2019-12-25T14:37:41.139Z - info: Pages rebuilt
+2019-12-25T14:37:41.155Z - info: Site data built
+2019-12-25T14:40:36.294Z - info: [22:40:36] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:40:37.312Z - info: Rebuilding affected source files
+2019-12-25T14:40:37.312Z - info: Rebuilding 1 pages
+2019-12-25T14:40:38.312Z - info: Pages rebuilt
+2019-12-25T14:40:38.320Z - info: Site data built
+2019-12-25T14:41:12.766Z - info: [22:41:12] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2019-12-25T14:41:13.781Z - info: Rebuilding affected source files
+2019-12-25T14:41:13.785Z - info: Rebuilding 1 pages
+2019-12-25T14:41:14.516Z - info: Pages rebuilt
+2019-12-25T14:41:14.524Z - info: Site data built
+2019-12-25T14:45:21.490Z - info: [22:45:21] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+2019-12-25T14:45:22.494Z - info: Rebuilding affected source files
+2019-12-25T14:45:22.494Z - info: Rebuilding 1 pages
+2019-12-25T14:45:23.196Z - info: Pages rebuilt
+2019-12-25T14:45:23.212Z - info: Site data built
+2019-12-25T14:46:26.486Z - info: [22:46:26] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\navigation\se-book-adapted-sitenav.md
+2019-12-25T14:46:27.492Z - info: Rebuilding affected source files
+2019-12-25T14:46:27.516Z - info: Rebuilding 36 pages
+2019-12-25T14:46:49.723Z - debug:  
+2019-12-25T14:47:14.201Z - info: Pages rebuilt
+2019-12-25T14:47:14.228Z - info: Site data built
+2019-12-25T14:56:22.911Z - info: [22:56:22] Reload for file add: C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+2019-12-25T14:56:23.915Z - warn: Rebuilding all source files
+2019-12-25T14:56:26.156Z - info: Assets removed
+2019-12-25T14:56:26.156Z - info: Generating pages...
+2019-12-25T14:57:37.543Z - info: [22:57:37] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T14:57:38.016Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.070Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.098Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.098Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.099Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.099Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.099Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.099Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T14:57:38.589Z - info: Rebuilding affected source files
+2019-12-25T14:57:38.590Z - info: Rebuilding 0 pages
+2019-12-25T14:57:38.856Z - info: Pages rebuilt
+2019-12-25T14:58:06.335Z - debug:  
+2019-12-25T14:58:06.335Z - debug:  
+2019-12-25T14:58:06.336Z - debug:  
+2019-12-25T14:58:06.337Z - debug:  
+2019-12-25T14:58:19.621Z - info: Site data built
+2019-12-25T14:59:13.970Z - info: Pages built
+2019-12-25T15:00:21.746Z - info: [23:00:21] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:00:22.758Z - info: Rebuilding affected source files
+2019-12-25T15:00:22.760Z - info: Rebuilding 1 pages
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.949Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.980Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.980Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.980Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.980Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:22.980Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.011Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.011Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.011Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.011Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.042Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:23.058Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\dukeExtensionTitle.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-25T15:00:24.025Z - info: Pages rebuilt
+2019-12-25T15:00:24.104Z - info: Site data built
+2019-12-25T15:01:53.811Z - info: [23:01:53] Reload for file add: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\montyExtensionTitle.md
+2019-12-25T15:01:54.820Z - warn: Rebuilding all source files
+2019-12-25T15:01:57.742Z - info: Assets removed
+2019-12-25T15:01:57.742Z - info: Generating pages...
+2019-12-25T15:03:01.958Z - info: [23:03:01] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+2019-12-25T15:03:03.161Z - info: Rebuilding affected source files
+2019-12-25T15:03:03.161Z - info: Rebuilding 0 pages
+2019-12-25T15:03:03.512Z - info: Pages rebuilt
+2019-12-25T15:03:03.531Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.531Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.533Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.533Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.533Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.534Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.534Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:03.534Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-25T15:03:04.500Z - info: Site data built
+2019-12-25T15:03:18.126Z - debug:  
+2019-12-25T15:03:18.127Z - debug:  
+2019-12-25T15:03:18.128Z - debug:  
+2019-12-25T15:03:18.129Z - debug:  
+2019-12-25T15:04:23.240Z - info: Pages built
+2019-12-25T15:16:03.712Z - info: [23:16:03] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:16:04.714Z - info: Rebuilding affected source files
+2019-12-25T15:16:04.715Z - info: Rebuilding 1 pages
+2019-12-25T15:16:06.202Z - info: Pages rebuilt
+2019-12-25T15:16:06.206Z - info: Site data built
+2019-12-25T15:17:21.566Z - info: [23:17:21] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:17:22.567Z - info: Rebuilding affected source files
+2019-12-25T15:17:22.570Z - info: Rebuilding 1 pages
+2019-12-25T15:17:23.842Z - info: Pages rebuilt
+2019-12-25T15:17:23.846Z - info: Site data built
+2019-12-25T15:19:43.906Z - info: [23:19:43] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:19:44.921Z - info: Rebuilding affected source files
+2019-12-25T15:19:44.922Z - info: Rebuilding 1 pages
+2019-12-25T15:19:46.149Z - info: Pages rebuilt
+2019-12-25T15:19:46.164Z - info: Site data built
+2019-12-25T15:23:08.317Z - info: [23:23:08] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\extensions.mbdf
+2019-12-25T15:23:08.326Z - info: [23:23:08] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:23:09.319Z - info: Rebuilding affected source files
+2019-12-25T15:23:09.321Z - info: Rebuilding 1 pages
+2019-12-25T15:23:10.404Z - info: Pages rebuilt
+2019-12-25T15:23:10.407Z - info: Site data built
+2019-12-25T15:27:14.487Z - info: [23:27:14] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:27:15.488Z - info: Rebuilding affected source files
+2019-12-25T15:27:15.489Z - info: Rebuilding 1 pages
+2019-12-25T15:27:16.910Z - info: Pages rebuilt
+2019-12-25T15:27:16.914Z - info: Site data built
+2019-12-25T15:27:56.088Z - info: [23:27:56] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:27:57.090Z - info: Rebuilding affected source files
+2019-12-25T15:27:57.092Z - info: Rebuilding 1 pages
+2019-12-25T15:27:58.228Z - info: Pages rebuilt
+2019-12-25T15:27:58.231Z - info: Site data built
+2019-12-25T15:29:34.452Z - info: [23:29:34] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:29:35.453Z - info: Rebuilding affected source files
+2019-12-25T15:29:35.461Z - info: Rebuilding 1 pages
+2019-12-25T15:29:36.370Z - info: Pages rebuilt
+2019-12-25T15:29:36.373Z - info: Site data built
+2019-12-25T15:29:49.745Z - info: [23:29:49] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:29:50.746Z - info: Rebuilding affected source files
+2019-12-25T15:29:50.748Z - info: Rebuilding 1 pages
+2019-12-25T15:29:51.551Z - info: Pages rebuilt
+2019-12-25T15:29:51.551Z - info: Site data built
+2019-12-25T15:33:08.637Z - info: [23:33:08] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:33:09.641Z - info: Rebuilding affected source files
+2019-12-25T15:33:09.641Z - info: Rebuilding 1 pages
+2019-12-25T15:33:10.765Z - info: Pages rebuilt
+2019-12-25T15:33:10.768Z - info: Site data built
+2019-12-25T15:35:25.159Z - info: [23:35:25] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:35:26.171Z - info: Rebuilding affected source files
+2019-12-25T15:35:26.172Z - info: Rebuilding 1 pages
+2019-12-25T15:35:27.042Z - info: Pages rebuilt
+2019-12-25T15:35:27.042Z - info: Site data built
+2019-12-25T15:36:54.486Z - info: [23:36:54] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:36:55.488Z - info: Rebuilding affected source files
+2019-12-25T15:36:55.490Z - info: Rebuilding 1 pages
+2019-12-25T15:36:56.420Z - info: Pages rebuilt
+2019-12-25T15:36:56.420Z - info: Site data built
+2019-12-25T15:37:13.938Z - info: [23:37:13] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:37:14.942Z - info: Rebuilding affected source files
+2019-12-25T15:37:14.946Z - info: Rebuilding 1 pages
+2019-12-25T15:37:15.935Z - info: Pages rebuilt
+2019-12-25T15:37:15.938Z - info: Site data built
+2019-12-25T15:39:47.430Z - info: [23:39:47] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2019-12-25T15:39:48.437Z - info: Rebuilding affected source files
+2019-12-25T15:39:48.437Z - info: Rebuilding 1 pages
+2019-12-25T15:39:49.404Z - info: Pages rebuilt
+2019-12-25T15:39:49.404Z - info: Site data built
