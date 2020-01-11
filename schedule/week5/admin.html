@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Week 5 - Tasks</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2020/css/main.css">
+  <link rel="stylesheet" href="/2020/css/schedule.css">
+  <link rel="icon" href="/2020/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Textbook</div>
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week4"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week5/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week6"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-5-feb-10-tasks">Week 5 <small><small><span class="dimmed">[Feb 10]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-5-feb-10-tasks"></a></h1>
+          <div>
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+              <ol>
+                <li>Submit weekly exercises</li>
+                <li>Submit weekly project increment <code>Level 5. Mark Tasks as Done</code>, <code>Level 6. Give Help</code> (optional)</li>
+              </ol>
+            </div>
+            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
+            <ul>
+              <li>As usual</li>
+            </ul>
+            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 5. Mark Tasks as Done</strong> <span class="badge badge-pill badge-warning"></span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-5-mark-tasks-as-done"><span class="badge badge-primary">Level 5</span> <span class="text-primary">Mark Tasks as Done</span><a class="fa fa-anchor" href="#level-5-mark-tasks-as-done"></a></h3>
+                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty4">Monty Level 4 code</a> in the following ways:</p>
+                    <ul>
+                      <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
+                      <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
+                    </ul>
+                    <p>A sample output is given below.</p>
+                    <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+
+add borrow book
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     [✗] 1. borrow book
+     [✗] 2. read book
+     [✗] 3. return book
+&gt;&gt;&gt; What can I do for you?
+
+done 1
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     [✓] 1. borrow book
+     [✗] 2. read book
+     [✗] 3. return book
+&gt;&gt;&gt; What can I do for you?
+
+done abc
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: abc is not a number
+&gt;&gt;&gt; What can I do for you?
+
+done 5
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: No item at index 5
+&gt;&gt;&gt; What can I do for you?
+
+done 0
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Index must be greater than 0
+&gt;&gt;&gt; What can I do for you?
+
+garbage
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Command not recognized
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+y
+&gt;&gt;&gt; Bye!
+</code></pre>
+                    <box>
+                      <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
+                      <pre><code class="hljs python">tasks = []
+tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])
+print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
+
+<span class="hljs-keyword">if</span> tasks[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]:
+    print(<span class="hljs-string">'✓'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'✗'</span>)
+</code></pre>
+                      <p>💡 You can use exceptions to identify and handle errors in the command.</p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = read_command()
+            execute_command(command)
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+</code></pre>
+                    </box>
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <pre><code class="hljs python">
+items = []
+
+<span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_item_for_index</span><span class="hljs-params">(index_as_string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        index = int(index_as_string.strip())
+    <span class="hljs-keyword">except</span> Exception:
+        <span class="hljs-keyword">raise</span> ValueError(index_as_string + <span class="hljs-string">' is not a number '</span>)
+
+    <span class="hljs-keyword">if</span> index &lt; <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Index must be greater than 0 '</span>)
+
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">return</span> items[index - <span class="hljs-number">1</span>]
+    <span class="hljs-keyword">except</span> IndexError:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'No item at index '</span> + index_as_string)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_item_as_done</span><span class="hljs-params">(user_input)</span>:</span>
+    index_as_string = user_input[<span class="hljs-number">5</span>:]
+    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-literal">True</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        terminate()
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
+        print_items()
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+        add_item(command)
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'done '</span>):
+        mark_item_as_done(command)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = read_command()
+            execute_command(command)
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+
+
+main()
+</code></pre>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 6. Give Help</strong> <span class="badge badge-pill badge-warning">optional</span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-6-give-help"><span class="badge badge-primary">Level 6</span> <span class="text-primary">Give Help</span><a class="fa fa-anchor" href="#level-6-give-help"></a></h3>
+                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty5">Monty Level 5 code</a> in the following ways:</p>
+                    <ul>
+                      <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
+                      <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
+                    </ul>
+                    <p>A sample output is given below.</p>
+                    <pre><code class="hljs">*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+&gt;&gt;&gt; What can I do for you?
+
+help
+&gt;&gt;&gt; I'm glad you asked. Here it is:
+==================================================
+Monty can understand the following commands:
+
+  add DESCRIPTION 
+    Adds a task to the list
+    Example: add read book
+  done INDEX
+    Marks the task at INDEX as 'done'
+    Example: done 1
+  exit
+    Exits the application
+  help
+    Shows the help information
+  list
+    Lists the tasks in the list
+-------------------------------------------------- 
+
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; Task added to the list
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; Task added to the list
+&gt;&gt;&gt; What can I do for you?
+
+done 1
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | read book                  
+  ✗    |   2   | return book                
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+                    <box>
+                      <p>💡 You can use triple quotes to define a long string such as the help text.</p>
+                      <pre><code class="hljs python">help_text =<span class="hljs-string">'''
+long text
+more text
+'''</span>
+</code></pre>
+                      <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
+                    </box>
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
+    banner = <span class="hljs-string">'''
+*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+*******************************************************************************************
+'''</span>
+    print(banner.strip(), <span class="hljs-string">'\n'</span>)
+</code></pre>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-5-feb-10-tasks">Week 5 [Feb 10] - Tasks&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
+              <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Sat, 11 Jan 2020 14:47:52 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/2020'
+  const enableSearch = false
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>

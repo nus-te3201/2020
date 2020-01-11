@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Week 6 - Tasks</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2020/css/main.css">
+  <link rel="stylesheet" href="/2020/css/schedule.css">
+  <link rel="icon" href="/2020/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Textbook</div>
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week5"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week6/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week6/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week6/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week6/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week7"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-6-feb-17-tasks">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-6-feb-17-tasks"></a></h1>
+          <div>
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
+              <ol>
+                <li>Submit weekly exercises</li>
+                <li>Submit weekly project increment <code>Level 7. Save Tasks to Disk</code></li>
+              </ol>
+            </div>
+            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
+            <ul>
+              <li>As usual</li>
+            </ul>
+            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" class="algolia-no-index">
+                  <div></div>
+                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 7. Save Tasks to Disk</strong> <span class="badge badge-pill badge-warning"></span></span>
+                  </div>
+                  <div></div>
+                  <div>
+                    <h3 id="level-7-save-tasks-to-disk"><span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span><a class="fa fa-anchor" href="#level-7-save-tasks-to-disk"></a></h3>
+                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty6">Monty Level 6 code</a> in the following ways:</p>
+                    <ul>
+                      <li>Monty <strong>saves tasks into a csv file</strong>.</li>
+                      <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
+                    </ul>
+                    <p>A sample output is given below. Note the following:</p>
+                    <ul>
+                      <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
+                      <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
+                    </ul>
+                    <pre><code class="hljs">*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+delete 2
+&gt;&gt;&gt; Task deleted from the list
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | return book                  
+--------------------------------------------------
+</code></pre>
+                    <box>
+                      <p>💡 here are some tips:</p>
+                      <ul>
+                        <li>The filename can be specified in the code. e.g.,
+                          <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+</code></pre>
+                        </li>
+                        <li>The format of the file is up to you. Here is an example:
+                          <pre><code class="hljs">borrow book,done
+read book,pending
+return book,pending
+</code></pre>
+                        </li>
+                        <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+                          <pre><code class="hljs python"> items = []
+ DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+ 
+ 
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
+     print_greeting()
+     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+         <span class="hljs-keyword">try</span>:
+             command = read_command()
+             execute_command(command)
+             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
+         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+ 
+ 
+ main()
+</code></pre>
+                        </li>
+                      </ul>
+                    </box>
+                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <p>Here is the code for loading data from the file.</p>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+    data_file = open(filename)
+    deliveries_reader = csv.reader(data_file)
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:
+            <span class="hljs-keyword">continue</span>
+        add_item_from_csv_line(row)
+    data_file.close()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
+    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
+    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
+</code></pre>
+                      <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                        is a shortcut syntax. It is equivalent to the code below:</p>
+                      <pre><code class="hljs">if values[1] == 'done':
+    status = True
+else:
+    status = False
+</code></pre>
+                    </panel>
+                    <p></p>
+                    <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
+                    <ul>
+                      <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+                        <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Bye!
+</code></pre>
+                      </li>
+                      <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
+                        <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
+ 
+ list
+ &gt;&gt;&gt; Here is the list of tasks:
+ ==================================================
+ STATUS | INDEX | DESCRIPTION                
+ --------------------------------------------------
+   ✓    |   1   | borrow book                
+   ✗    |   2   | read book                  
+   ✗    |   3   | return book                
+ --------------------------------------------------
+ &gt;&gt;&gt; What can I do for you?
+ 
+ pending 1
+ &gt;&gt;&gt; OK, I have marked that item as pending
+ &gt;&gt;&gt; What can I do for you?
+ 
+ list
+ &gt;&gt;&gt; Here is the list of tasks:
+ ==================================================
+ STATUS | INDEX | DESCRIPTION                
+ --------------------------------------------------
+   ✗    |   1   | borrow book                
+   ✗    |   2   | read book                  
+   ✗    |   3   | return book                
+ --------------------------------------------------
+ &gt;&gt;&gt; What can I do for you?
+</code></pre>
+                      </li>
+                      <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
+                        <pre><code class="hljs">add read book
+ADD read book
+Add read book
+add    read book
+    add read book
+</code></pre>
+                      </li>
+                    </ul>
+                  </div>
+                </panel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-6-feb-17-tasks">Week 6 [Feb 17] - Tasks&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
+              <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Sat, 11 Jan 2020 14:47:52 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/2020'
+  const enableSearch = false
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>

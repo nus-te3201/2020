@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TE3201 Website - Week 12 - Summary</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/2020/css/main.css">
+  <link rel="stylesheet" href="/2020/css/schedule.css">
+  <link rel="icon" href="/2020/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/2020/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Textbook</div>
+        <dropdown text="Textbook" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/2020/se-book-adapted/index.html" class="dropdown-item">SE Textbook</a></li>
+          <li><a href="/2020/programming/index.html" class="dropdown-item">Programming Textbook</a></li>
+        </dropdown>
+        <li><a href="/2020/admin/te3201-admin.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
+          <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week11"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item active"><a class="page-link" href="/2020/schedule/week12/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week12/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week12/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week12/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/2020/schedule/week13"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-12-apr-6-summary">Week 12 <small><small><span class="dimmed">[Apr 6]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-12-apr-6-summary"></a></h1>
+          <div></div>
+          <span id="summary">
+<div class="container">
+  <div class="row">
+  <div class="col-sm" style="border-right: 1px dotted lightgrey">
+<h4 id="programming-topics"><a href="/2020/schedule/week12/topics-py.html" class="badge badge-light"><span aria-hidden="true" class="fas fa-code"></span> Programming Topics</a><a class="fa fa-anchor" href="#programming-topics"></a></h4>
+          <div>
+            <p><span class="indented">~None~</span></p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <h4 id="se-topics"><a href="/2020/schedule/week12/topics.html" class="badge badge-light"><span><span aria-hidden="true" class="fas fa-book"></span></span> SE Topics</a><a class="fa fa-anchor" href="#se-topics"></a></h4>
+          <ul>
+            <li>
+              <p>[<a href="/2020/schedule/week12/topics.html#W12-1">W12.1</a>] <strong>Reuse: APIs, Frameworks, Libraries, Platforms</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+              </p>
+            </li>
+            <li>
+              <p>[<a href="/2020/schedule/week12/topics.html#W12-2">W12.2</a>] <strong>Cloud Computing</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                  aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </p>
+            </li>
+          </ul>
+          <p></p>
+          <ul>
+            <li>[<a href="/2020/schedule/week12/topics.html#W12-3">W12.3</a>] <strong>Revision Control</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span></span>
+            </li>
+          </ul>
+          <p></p>
+          <ul>
+            <li>[<a href="/2020/schedule/week12/topics.html#W12-4">W12.4</a>] <strong>Writing Developer Documents</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span></span>
+            </li>
+          </ul>
+          <p></p>
+          <panel type="seamless" header="%%Full ToC%%" class="algolia-no-index">
+            <div>
+              <ul>
+                <li>[<a href="/2020/schedule/week12/topics.html#W12-1">W12.1</a>] <strong>Reuse: APIs, Frameworks, Libraries, Platforms</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </span>
+                </li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+<p>   <strong>Reuse</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1a">W12.1a</a>] <span>Implementation → Reuse → Introduction →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1b">W12.1b</a>] <span>Implementation → Reuse → Introduction →
+</span></span> <span>When</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>APIs</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1c">W12.1c</a>] <span>Implementation → Reuse → APIs →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<p>   <strong>Libraries</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1d">W12.1d</a>] <span>Implementation → Reuse → Libraries →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1e">W12.1e</a>] <span>Implementation → Reuse → Libraries →
+</span></span> <span>How</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>Frameworks</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1f">W12.1f</a>] <span>Implementation → Reuse → Frameworks →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1g">W12.1g</a>] <span>Implementation → Reuse → Frameworks →
+</span></span> <span>Frameworks vs Libraries</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>Platforms</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1h">W12.1h</a>] <span>Implementation → Reuse → Platforms →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
+              <ul>
+                <li>[<a href="/2020/schedule/week12/topics.html#W12-2">W12.2</a>] <strong>Cloud Computing</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                    aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2a">W12.2a</a>] <span>Implementation → Reuse → Cloud Computing →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2b">W12.2b</a>] <span>Implementation → Reuse → Cloud Computing →
+</span></span> <span>Iaas, PaaS, and SaaS</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+              <p></p>
+              <ul>
+                <li>[<a href="/2020/schedule/week12/topics.html#W12-3">W12.3</a>] <strong>Revision Control</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+                    aria-hidden="true"></span></span>
+                </li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-3a">W12.3a</a>] <span>Project Management → Revision Control →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-3b">W12.3b</a>] <span>Project Management → Revision Control →
+</span></span> <span>Repositories</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li></ul></small></div>
+              <p></p>
+              <ul>
+                <li>[<a href="/2020/schedule/week12/topics.html#W12-4">W12.4</a>] <strong>Writing Developer Documents</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </span>
+                </li>
+              </ul>
+              <div class="indented-level2">
+                <small>
+<p>   <strong>Type of Developer Docs</strong></p>
+<ul>
+<li><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4a">W12.4a</a>] <span>Implementation → Documentation → Introduction →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<p>   <strong>Guideline: Aim for Comprehensibility</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4b">W12.4b</a>] <span>Implementation → Documentation → Guidelines → Aim for Comprehensibility →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4c">W12.4c</a>] <span>Implementation → Documentation → Guidelines → Aim for Comprehensibility →
+</span></span> <span>How</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>Guideline: Describe Top-Down</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4d">W12.4d</a>] <span>Implementation → Documentation → Guidelines → Describe Top-Down →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4e">W12.4e</a>] <span>Implementation → Documentation → Guidelines → Describe Top-Down →
+</span></span> <span>Why</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4f">W12.4f</a>] <span>Implementation → Documentation → Guidelines → Describe Top-Down →
+</span></span> <span>How</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<p>   <strong>Guideline: Minimal but Sufficient</strong></p>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4g">W12.4g</a>] <span>Implementation → Documentation → Guidelines → Minimal but Sufficient →
+</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-4h">W12.4h</a>] <span>Implementation → Documentation → Guidelines → Minimal but Sufficient →
+</span></span> <span>How</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+              <p></p>
+            </div>
+          </panel>
+        </div>
+      </div>
+      <div class="row" style="border-top: 1px dotted lightgrey">
+        <div class="col-sm">
+          <h4 id="tasks"><a href="/2020/schedule/week12/admin.html" class="badge badge-light mt-2"><span aria-hidden="true" class="fas fa-tasks"></span> Tasks</a><a class="fa fa-anchor" href="#tasks"></a></h4>
+          <div>
+            <ol>
+              <li>Enhance previous week's increment or add another individual feature</li>
+              <li>Start preparing for the final submission</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    </span>
+    <br></div>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#week-12-apr-6-summary">Week 12 [Apr 6] - Summary&#x200E;</a>
+
+      </nav>
+    </div>
+  </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Sat, 11 Jan 2020 14:47:52 GMT</small></div>
+  </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/2020'
+  const enableSearch = false
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "29bf21caddc74372e5c75f9a557715ec",
+      indexName: "te3201_2019",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10,
+        "facetFilters": [
+          ["tags:admin", "tags:programming", "tags:se-book-adapted", "tags:schedule"]
+        ]
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>
