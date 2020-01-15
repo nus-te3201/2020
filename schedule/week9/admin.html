@@ -96,24 +96,25 @@
               <li>As usual</li>
             </ul>
             <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
-            <div>
-              <div class="indented-level2">
-                <panel type="primary" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 10. Use More Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <h3 id="level-10-use-more-classes"><span class="badge badge-primary">Level 10</span> <span class="text-primary">Use More Classes</span><a class="fa fa-anchor" href="#level-10-use-more-classes"></a></h3>
-                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty9">Monty Level 9 code</a> to extract the following classes:</p>
-                    <ul>
-                      <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
-                      <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
-                      <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
-                    </ul>
-                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                      <p>Here's the main part of the code that illustrates how these objects can work together:</p>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+            <span id="week9-project">
+<div>
+<div class="indented-level2">
+<panel type="primary" no-close class="algolia-no-index">
+<div></div>
+<div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 10. Use More Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
+          </div>
+          <div></div>
+          <div>
+            <h3 id="level-10-use-more-classes"><span class="badge badge-primary">Level 10</span> <span class="text-primary">Use More Classes</span><a class="fa fa-anchor" href="#level-10-use-more-classes"></a></h3>
+            <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty9">Monty Level 9 code</a> to extract the following classes:</p>
+            <ul>
+              <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
+              <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
+              <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
+            </ul>
+            <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+              <p>Here's the main part of the code that illustrates how these objects can work together:</p>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
     ui = UserInterface()
     ui.show_greeting()
@@ -136,8 +137,8 @@
 
 main()
 </code></pre>
-                      <p>Here's a partial <code>execute_command</code> function:</p>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
+              <p>Here's a partial <code>execute_command</code> function:</p>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
     <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
         ui.display(<span class="hljs-string">'Bye!'</span>)
         sys.exit()
@@ -149,10 +150,10 @@ main()
         ui.display(message)
     ...
 </code></pre>
-                    </panel>
-                    <p></p>
-                    <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
-                    <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+            </panel>
+            <p></p>
+            <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
+            <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
 
 list
 &gt;&gt;&gt; Here is the list of tasks:
@@ -204,9 +205,9 @@ list
     ------------------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                      <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+            <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+              <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
 
@@ -219,33 +220,34 @@ list
             ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
         self.is_done = <span class="hljs-literal">True</span>
 </code></pre>
-                    </panel>
-                    <p></p>
-                  </div>
-                </panel>
-              </div>
-            </div>
+            </panel>
+            <p></p>
           </div>
+          </panel>
         </div>
       </div>
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+      </span>
+    </div>
+  </div>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-9-mar-16-tasks">Week 9 [Mar 16] - Tasks&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
-              <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
-            </nav>
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#week-9-mar-16-tasks">Week 9 [Mar 16] - Tasks&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
+          <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
+        </nav>
 
-          </nav>
-        </div>
       </nav>
     </div>
-    <footer>
-      <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 05:02:28 GMT</small></div>
-    </footer>
+  </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
+  </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>

@@ -54,7 +54,10 @@
 * Note how the project can affect participation marks:
 {{ embed_topic("../../admin/te3201-admin.md#assessment-info", "Admin " + icon_embedding + " Assessment", "1", indent="2") }}
 
+<span id="week1-project">
+
 * Use the exercise `Week 1 Project Submission` on repl.it to do this week's project task given below.
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 1. Echo Once**" var-fragment="monty.mbdf#monty1" />
+</span>
 

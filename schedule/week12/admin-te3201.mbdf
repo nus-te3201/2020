@@ -6,6 +6,7 @@
 1. Start preparing for the final submission
 {% endcall %}
 
+<span id="week12-project">
 
 #### {{ thumb(1) }} Enhance previous week's feature
 
@@ -16,3 +17,5 @@
 #### {{ thumb(2) }} Start preparing for the final submission
 
 {{ embed_topic("../../admin/te3201-admin.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
+
+</span>

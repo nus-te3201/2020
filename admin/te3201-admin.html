@@ -324,6 +324,1248 @@
               </li>
             </ul>
           </div>
+          <panel header="### Weekly Project Increments<a class='fa fa-anchor' href='#weekly-project-increments'></a>" class="algolia-no-index">
+            <h4 id="week-1"><span class="badge badge-dark">Week 1:</span><a class="fa fa-anchor" href="#week-1"></a></h4>
+            <div>
+              <ul>
+                <li>Use the exercise <code>Week 1 Project Submission</code> on <a href="http://repl.it">repl.it</a> to do this week's project task given below.</li>
+              </ul>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 1. Echo Once</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-1-echo-once"><span class="badge badge-primary">Level 1</span> <span class="text-primary">Echo Once</span><a class="fa fa-anchor" href="#level-1-echo-once"></a></h3>
+                      <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
+                      <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+foo
+&gt;&gt;&gt; Your command is: foo
+&gt;&gt;&gt; Bye!
+</code></pre>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+<span class="hljs-comment"># ADD MORE CODE HERE</span>
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-2"><span class="badge badge-dark">Week 2:</span><a class="fa fa-anchor" href="#week-2"></a></h4>
+            <div>
+              <ul>
+                <li>Add the following increment to your project.</li>
+              </ul>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 2. Recognize Known Commands</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-2-recognize-known-commands"><span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span><a class="fa fa-anchor" href="#level-2-recognize-known-commands"></a></h3>
+                      <p>Extend <a href="/2020/programming/chapters/monty.html#monty1">Monty 1 code</a> to work as follows:</p>
+                      <ul>
+                        <li>It recognizes the <code>list</code> command and responds with a fixed message.</li>
+                        <li>It recognizes the <code>exit</code> command and exits the program if user confirms.</li>
+                        <li>For all other inputs, it responds with a fixed error message.</li>
+                      </ul>
+                      <p>A sample session is given below.</p>
+                      <box type="warning">
+                        <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code>show</code> instead of <code>list</code>), and even a different <strong>personality</strong>                          (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
+                        </p>
+                      </box>
+                      <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Nothing to list
+&gt;&gt;&gt; What can I do for you?
+
+foo
+&gt;&gt;&gt; OOPS! Unknown command
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+n
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+y
+&gt;&gt;&gt; Bye!
+</code></pre>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
+<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
+    <span class="hljs-comment"># ADD MORE CODE HERE</span>
+print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-3"><span class="badge badge-dark">Week 3:</span><a class="fa fa-anchor" href="#week-3"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 3. Use Functions</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-3-use-functions"><span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span><a class="fa fa-anchor" href="#level-3-use-functions"></a></h3>
+                      <p>Restructure the <a href="/2020/programming/chapters/monty.html#monty2">Monty Level 2 code</a> to fit the following structure, while keeping the behavior same as before.</p>
+                      <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-comment"># ADD MISSING FUNCTIONS</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)
+    response = input()
+    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        <span class="hljs-keyword">if</span> is_exit_confirmed():
+            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
+            sys.exit()
+    <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-4"><span class="badge badge-dark">Week 4:</span><a class="fa fa-anchor" href="#week-4"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 4. Collect Tasks in Memory</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-4-collect-tasks-in-memory"><span class="badge badge-primary">Level 4</span> <span class="text-primary">Collect Tasks in Memory</span><a class="fa fa-anchor" href="#level-4-collect-tasks-in-memory"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty3">Monty Level 3 code</a> to improve the functionality as per the sample output given below.</p>
+                      <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Nothing to list
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     1. read book
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     1. read book
+     2. return book
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+y
+&gt;&gt;&gt; Bye!
+</code></pre>
+                      <box>
+                        <p>💡 You can use the list slicing syntax to extract a portion of a string.<br></p>
+                        <div>
+                          <div></div>
+                          <div></div>
+                          <table>
+                            <tr>
+                              <td valign="top">
+                                <pre><code class="hljs python">
+s = <span class="hljs-string">'abcdefgh'</span>
+print(s[<span class="hljs-number">2</span>:])
+print(s[:<span class="hljs-number">5</span>])
+</code></pre>
+                              </td>
+                              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                              <td valign="bottom">
+                                <pre><code class="hljs">cdefgh
+abcde
+</code></pre>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <p>The above technique can be used to extract the item description from an <code>add</code> command.
+                        </p>
+                      </box>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
+
+items = []
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_items</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> len(items) == <span class="hljs-number">0</span>:
+        print(<span class="hljs-string">'&gt;&gt;&gt; Nothing to list'</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> enumerate(items):
+            <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item</span><span class="hljs-params">(user_input)</span>:</span>
+    <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">terminate</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># ...</span>
+
+<span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        terminate()
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
+        print_items()
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+        add_item(command)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">'&gt;&gt;&gt; OOPS! Unknown command'</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        command = read_command()
+        execute_command(command)
+
+
+main()
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-5"><span class="badge badge-dark">Week 5:</span><a class="fa fa-anchor" href="#week-5"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 5. Mark Tasks as Done</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-5-mark-tasks-as-done"><span class="badge badge-primary">Level 5</span> <span class="text-primary">Mark Tasks as Done</span><a class="fa fa-anchor" href="#level-5-mark-tasks-as-done"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty4">Monty Level 4 code</a> in the following ways:</p>
+                      <ul>
+                        <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
+                        <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
+                      </ul>
+                      <p>A sample output is given below.</p>
+                      <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
+&gt;&gt;&gt; What can I do for you?
+
+add borrow book
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     [✗] 1. borrow book
+     [✗] 2. read book
+     [✗] 3. return book
+&gt;&gt;&gt; What can I do for you?
+
+done 1
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; List of items:
+     [✓] 1. borrow book
+     [✗] 2. read book
+     [✗] 3. return book
+&gt;&gt;&gt; What can I do for you?
+
+done abc
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: abc is not a number
+&gt;&gt;&gt; What can I do for you?
+
+done 5
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: No item at index 5
+&gt;&gt;&gt; What can I do for you?
+
+done 0
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Index must be greater than 0
+&gt;&gt;&gt; What can I do for you?
+
+garbage
+&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Command not recognized
+&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Are you sure? y/n
+y
+&gt;&gt;&gt; Bye!
+</code></pre>
+                      <box>
+                        <p>💡 Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
+                        <pre><code class="hljs python">tasks = []
+tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])
+print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])
+
+<span class="hljs-keyword">if</span> tasks[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]:
+    print(<span class="hljs-string">'✓'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'✗'</span>)
+</code></pre>
+                        <p>💡 You can use exceptions to identify and handle errors in the command.</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = read_command()
+            execute_command(command)
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+</code></pre>
+                      </box>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python">
+items = []
+
+<span class="hljs-comment"># ...</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_item_for_index</span><span class="hljs-params">(index_as_string)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        index = int(index_as_string.strip())
+    <span class="hljs-keyword">except</span> Exception:
+        <span class="hljs-keyword">raise</span> ValueError(index_as_string + <span class="hljs-string">' is not a number '</span>)
+
+    <span class="hljs-keyword">if</span> index &lt; <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Index must be greater than 0 '</span>)
+
+    <span class="hljs-keyword">try</span>:
+        <span class="hljs-keyword">return</span> items[index - <span class="hljs-number">1</span>]
+    <span class="hljs-keyword">except</span> IndexError:
+        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'No item at index '</span> + index_as_string)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_item_as_done</span><span class="hljs-params">(user_input)</span>:</span>
+    index_as_string = user_input[<span class="hljs-number">5</span>:]
+    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-literal">True</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
+    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
+        terminate()
+    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:
+        print_items()
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+        add_item(command)
+    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'done '</span>):
+        mark_item_as_done(command)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    print_greeting()
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = read_command()
+            execute_command(command)
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+
+
+main()
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 6. Give Help</strong> <span class="badge badge-pill badge-warning">optional</span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-6-give-help"><span class="badge badge-primary">Level 6</span> <span class="text-primary">Give Help</span><a class="fa fa-anchor" href="#level-6-give-help"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty5">Monty Level 5 code</a> in the following ways:</p>
+                      <ul>
+                        <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
+                        <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
+                      </ul>
+                      <p>A sample output is given below.</p>
+                      <pre><code class="hljs">*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+&gt;&gt;&gt; What can I do for you?
+
+help
+&gt;&gt;&gt; I'm glad you asked. Here it is:
+==================================================
+Monty can understand the following commands:
+
+  add DESCRIPTION 
+    Adds a task to the list
+    Example: add read book
+  done INDEX
+    Marks the task at INDEX as 'done'
+    Example: done 1
+  exit
+    Exits the application
+  help
+    Shows the help information
+  list
+    Lists the tasks in the list
+-------------------------------------------------- 
+
+&gt;&gt;&gt; What can I do for you?
+
+add read book
+&gt;&gt;&gt; Task added to the list
+&gt;&gt;&gt; What can I do for you?
+
+add return book
+&gt;&gt;&gt; Task added to the list
+&gt;&gt;&gt; What can I do for you?
+
+done 1
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | read book                  
+  ✗    |   2   | return book                
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+                      <box>
+                        <p>💡 You can use triple quotes to define a long string such as the help text.</p>
+                        <pre><code class="hljs python">help_text =<span class="hljs-string">'''
+long text
+more text
+'''</span>
+</code></pre>
+                        <p>💡 You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
+                      </box>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
+    banner = <span class="hljs-string">'''
+*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+*******************************************************************************************
+'''</span>
+    print(banner.strip(), <span class="hljs-string">'\n'</span>)
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-6"><span class="badge badge-dark">Week 6:</span><a class="fa fa-anchor" href="#week-6"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 7. Save Tasks to Disk</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-7-save-tasks-to-disk"><span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span><a class="fa fa-anchor" href="#level-7-save-tasks-to-disk"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty6">Monty Level 6 code</a> in the following ways:</p>
+                      <ul>
+                        <li>Monty <strong>saves tasks into a csv file</strong>.</li>
+                        <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
+                      </ul>
+                      <p>A sample output is given below. Note the following:</p>
+                      <ul>
+                        <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
+                        <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
+                      </ul>
+                      <pre><code class="hljs">*******************************************************************************************
+*  __          __  _                            _          __  __             _           *
+*  \ \        / / | |                          | |        |  \/  |           | |          *
+*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
+*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
+*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
+*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
+*                                                                                  __/ |  *
+*                                                                                 |___/   *
+******************************************************************************************* 
+
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | read book                  
+  ✗    |   3   | return book                
+--------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+delete 2
+&gt;&gt;&gt; Task deleted from the list
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+==================================================
+STATUS | INDEX | DESCRIPTION                
+--------------------------------------------------
+  ✓    |   1   | borrow book                
+  ✗    |   2   | return book                  
+--------------------------------------------------
+</code></pre>
+                      <box>
+                        <p>💡 here are some tips:</p>
+                        <ul>
+                          <li>The filename can be specified in the code. e.g.,
+                            <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+</code></pre>
+                          </li>
+                          <li>The format of the file is up to you. Here is an example:
+                            <pre><code class="hljs">borrow book,done
+read book,pending
+return book,pending
+</code></pre>
+                          </li>
+                          <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+                            <pre><code class="hljs python"> items = []
+ DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+ 
+ 
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
+     print_greeting()
+     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+         <span class="hljs-keyword">try</span>:
+             command = read_command()
+             execute_command(command)
+             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
+         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
+ 
+ 
+ main()
+</code></pre>
+                          </li>
+                        </ul>
+                      </box>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <p>Here is the code for loading data from the file.</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+    data_file = open(filename)
+    deliveries_reader = csv.reader(data_file)
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:
+            <span class="hljs-keyword">continue</span>
+        add_item_from_csv_line(row)
+    data_file.close()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
+    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
+    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
+</code></pre>
+                        <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                          is a shortcut syntax. It is equivalent to the code below:</p>
+                        <pre><code class="hljs">if values[1] == 'done':
+    status = True
+else:
+    status = False
+</code></pre>
+                      </panel>
+                      <p></p>
+                      <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
+                      <ul>
+                        <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+                          <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+exit
+&gt;&gt;&gt; Bye!
+</code></pre>
+                        </li>
+                        <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
+                          <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
+ 
+ list
+ &gt;&gt;&gt; Here is the list of tasks:
+ ==================================================
+ STATUS | INDEX | DESCRIPTION                
+ --------------------------------------------------
+   ✓    |   1   | borrow book                
+   ✗    |   2   | read book                  
+   ✗    |   3   | return book                
+ --------------------------------------------------
+ &gt;&gt;&gt; What can I do for you?
+ 
+ pending 1
+ &gt;&gt;&gt; OK, I have marked that item as pending
+ &gt;&gt;&gt; What can I do for you?
+ 
+ list
+ &gt;&gt;&gt; Here is the list of tasks:
+ ==================================================
+ STATUS | INDEX | DESCRIPTION                
+ --------------------------------------------------
+   ✗    |   1   | borrow book                
+   ✗    |   2   | read book                  
+   ✗    |   3   | return book                
+ --------------------------------------------------
+ &gt;&gt;&gt; What can I do for you?
+</code></pre>
+                        </li>
+                        <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
+                          <pre><code class="hljs">add read book
+ADD read book
+Add read book
+add    read book
+    add read book
+</code></pre>
+                        </li>
+                      </ul>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-7"><span class="badge badge-dark">Week 7:</span><a class="fa fa-anchor" href="#week-7"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 8. Support Deadlines</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-8-support-deadlines"><span class="badge badge-primary">Level 8</span> <span class="text-primary">Support Deadlines</span><a class="fa fa-anchor" href="#level-8-support-deadlines"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty7">Monty Level 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
+                      <p>Previous behavior:</p>
+                      <ul>
+                        <li><code>add buy book</code>: adds a task <code>buy book</code></li>
+                      </ul>
+                      <p>Proposed change - replace the above command with the following two:</p>
+                      <ul>
+                        <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
+                        <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br> Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description
+                          of the deadline.
+                        </li>
+                      </ul>
+                      <p>A sample output is given below.</p>
+                      <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+============================================================
+STATUS | INDEX | DESCRIPTION                 | DEADLINE
+------------------------------------------------------------
+  ✓    |   1   | borrow book                 | -
+  ✗    |   2   | read book                   | -
+  ✗    |   3   | return book                 | Monday
+------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+todo watch movie
+&gt;&gt;&gt; What can I do for you?
+
+deadline submit assignment by: end of May
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+============================================================
+STATUS | INDEX | DESCRIPTION                 | DEADLINE
+------------------------------------------------------------
+  ✓    |   1   | borrow book                 | -
+  ✗    |   2   | read book                   | -
+  ✗    |   3   | return book                 | Monday
+  ✗    |   4   | watch movie                 | -
+  ✗    |   5   | submit assignment           | end of May
+------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+                      <box>
+                        <p>💡 here are some tips:</p>
+                        <ul>
+                          <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and
+                            deadline items, respectively.
+                            <pre><code class="hljs python">[
+ {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},
+ {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},
+ {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}
+]
+
+</code></pre>
+                          </li>
+                          <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
+                            <pre><code class="hljs">T,borrow book,done
+T,read book,pending
+D,return book,pending,Monday
+</code></pre>
+                          </li>
+                        </ul>
+                      </box>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <p>Here is the code adding a todo item:</p>
+                        <pre><code class="hljs python">
+command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
+<span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:
+    items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})
+<span class="hljs-keyword">elif</span>  ...
+</code></pre>
+                      </panel>
+                      <p></p>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-8"><span class="badge badge-dark">Week 8:</span><a class="fa fa-anchor" href="#week-8"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 9. Use Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines,
+                        respectively.
+                      </p>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <p>Here is the code for an example <code>ToDo</code> class:</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
+        self.description = description
+        self.is_done = status
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">""" Return the details of todo object as a string"""</span>
+        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
+        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">""" Return the details of todo object as a list,
+        suitable to be stored in a csv file.
+        """</span>
+        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
+</code></pre>
+                        <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+    data_file = open(filename)
+    deliveries_reader = csv.reader(data_file)
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
+        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:
+            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))
+        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:
+            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))
+    data_file.close()
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span>
+    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)
+    output_writer = csv.writer(output_file)
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:
+        output_writer.writerow(item.as_csv())
+    output_file.close()
+</code></pre>
+                      </panel>
+                      <p></p>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-9"><span class="badge badge-dark">Week 9:</span><a class="fa fa-anchor" href="#week-9"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 10. Use More Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-10-use-more-classes"><span class="badge badge-primary">Level 10</span> <span class="text-primary">Use More Classes</span><a class="fa fa-anchor" href="#level-10-use-more-classes"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty9">Monty Level 9 code</a> to extract the following classes:</p>
+                      <ul>
+                        <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
+                        <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
+                        <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
+                      </ul>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <p>Here's the main part of the code that illustrates how these objects can work together:</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
+    ui = UserInterface()
+    ui.show_greeting()
+
+    <span class="hljs-comment"># create a StorageManager object</span>
+    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)
+
+    <span class="hljs-comment"># create a TaskManager object and load data</span>
+    task_manager = TaskManager(storage)
+    task_manager.load_data()
+
+    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-keyword">try</span>:
+            command = ui.read_command()
+            execute_command(command, task_manager, ui)
+            task_manager.save_data()
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))
+
+
+main()
+</code></pre>
+                        <p>Here's a partial <code>execute_command</code> function:</p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
+    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
+        ui.display(<span class="hljs-string">'Bye!'</span>)
+        sys.exit()
+    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:
+        message = task_manager.get_items_as_table()
+        ui.display(message)
+    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:
+        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))
+        ui.display(message)
+    ...
+</code></pre>
+                      </panel>
+                      <p></p>
+                      <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
+                      <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✗    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0
+&gt;&gt;&gt; What can I do for you?
+
+done 2
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0
+&gt;&gt;&gt; What can I do for you?
+
+done 3
+&gt;&gt;&gt; Congrats on completing a task! :-)
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1
+&gt;&gt;&gt; What can I do for you?
+
+pending 2
+&gt;&gt;&gt; OK, I have marked that item as pending
+&gt;&gt;&gt; What can I do for you?
+
+progress
+&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1
+&gt;&gt;&gt; What can I do for you?
+
+list
+&gt;&gt;&gt; Here is the list of tasks:
+    ============================================================
+    STATUS | INDEX | DESCRIPTION                 | DEADLINE
+    ------------------------------------------------------------
+      ✓    |   1   | borrow book                 | -
+      ✗    |   2   | read book                   | -
+      ✓    |   3   | return book                 | Monday
+    ------------------------------------------------------------
+&gt;&gt;&gt; What can I do for you?
+</code></pre>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
+        self.description = description
+        self.is_done = status
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span>
+            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
+        self.is_done = <span class="hljs-literal">True</span>
+</code></pre>
+                      </panel>
+                      <p></p>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-10"><span class="badge badge-dark">Week 10:</span><a class="fa fa-anchor" href="#week-10"></a></h4>
+            <div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 11. Use Inheritance</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-11-use-inheritance"><span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Inheritance</span><a class="fa fa-anchor" href="#level-11-use-inheritance"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty10">Monty Level 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
+                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+
+    TYPE_KEY = <span class="hljs-string">'T'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
+        self.description = description
+        self.is_done = status
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">True</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span>
+        self.is_done = <span class="hljs-literal">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__status_as_icon</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'('</span> + self.__status_as_icon() + <span class="hljs-string">') '</span> + self.description
+
+    <span class="hljs-comment"># more code ...</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-params">(ToDo)</span>:</span>
+
+    TYPE_KEY = <span class="hljs-string">'D'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status, by)</span>:</span>
+        super().__init__(description, status)
+        self.by = by
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span>
+
+</code></pre>
+                        <p>Note:</p>
+                        <ul>
+                          <li>There no need for the <code>Deadline</code> class to implement methods such as <code>mark_as_done</code> because it inherits those methods from the parent class.</li>
+                          <li>Note how the <code>Deadline</code> class overrides some methods (e.g., <code>__init__</code>) but uses the parent class method inside the overridden method (e.g., <code>__init__</code> method of the <code>Deadline</code> class
+                            calls the <code>super().__init__()</code> method.</li>
+                        </ul>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 12. Use Multiple Code Files</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-12-use-multiple-code-files"><span class="badge badge-primary">Level 12</span> <span class="text-primary">Use Multiple Code Files</span><a class="fa fa-anchor" href="#level-12-use-multiple-code-files"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty11">Monty Level 11 code</a> to divide the source code into multiple files (e.g., <code>todo.py</code>, <code>deadline.py</code>, etc.).</p>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 13. Add Unit Tests</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-13-add-unit-tests"><span class="badge badge-primary">Level 13</span> <span class="text-primary">Add Unit Tests</span><a class="fa fa-anchor" href="#level-13-add-unit-tests"></a></h3>
+                      <p>Add some unit tests to <a href="/2020/programming/chapters/monty.html#monty12">Monty Level 12 code</a>.</p>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h4 id="week-11"><span class="badge badge-dark">Week 11:</span><a class="fa fa-anchor" href="#week-11"></a></h4>
+            <div>
+              <ul>
+                <li><strong>Option 1:</strong> Add the following project increment.</li>
+              </ul>
+              <div tag="optional">
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 14. Add a GUI</strong> <span class="badge badge-pill badge-warning"></span></span>
+                    </div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-14-add-a-gui"><span class="badge badge-primary">Level 14</span> <span class="text-primary">Add a GUI</span><a class="fa fa-anchor" href="#level-14-add-a-gui"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty13">Monty Level 13 code</a> to integrate it with the skeletal GUI given below.</p>
+                      <p>Notes about the given version of the GUI:</p>
+                      <ul>
+                        <li>The GUI shows the list of tasks all the time.</li>
+                        <li>It initializes with some dummy data.</li>
+                        <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
+                      </ul>
+                      <p>Here are some screenshots of the GUI:<br>
+                        <img src="/2020/programming/monty/images/gui-start.png"></p>
+                      <p></p>
+                      <img src="/2020/programming/monty/images/gui-later.png">
+                      <p></p>
+                      <panel type="seamless" header="Skeletal GUI code" class="algolia-no-index">
+                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
+<span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
+
+<span class="hljs-keyword">import</span> sys
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span>
+        self.task_manager = task_manager
+        self.window = Tk()
+        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span>
+        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span>
+
+        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span>
+        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span>
+        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span>
+        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span>
+
+        <span class="hljs-comment"># add a text area to show the chat history</span>
+        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)
+        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)
+        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)
+        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
+        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
+        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)
+
+        <span class="hljs-comment"># add a text area to show the list of tasks</span>
+        self.list_area = Text(self.window)
+        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)
+        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)
+        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)
+        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)
+
+        <span class="hljs-comment"># show the welcome message and the list of tasks</span>
+        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)
+        self.update_task_list(self.task_manager.items)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span>
+        <span class="hljs-string">"""
+        status_format: indicates which color to use for the status message
+          can be 'error_format', 'success_format', or 'normal_format'
+        """</span>
+        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span>
+        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span>
+        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):
+            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:
+                icon = <span class="hljs-string">'✓'</span>
+                output_format = <span class="hljs-string">'done_format'</span>
+            <span class="hljs-keyword">else</span>:
+                icon = <span class="hljs-string">'✗'</span>
+                output_format = <span class="hljs-string">'pending_format'</span>
+            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span>
+        self.input_box.delete(<span class="hljs-number">0</span>, END)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span>
+        command = <span class="hljs-literal">None</span>
+        <span class="hljs-keyword">try</span>:
+            command = self.input_box.get()
+            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:
+                sys.exit()
+            output = self.task_manager.execute_command(command)
+            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)
+            self.update_task_list(self.task_manager.items)
+            self.clear_input_box()
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span>
+        self.window.mainloop()
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.items = [
+            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],
+            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],
+            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]
+        ]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span>
+        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:
+            <span class="hljs-keyword">return</span> self.get_help()
+        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):
+            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])
+            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)
+
+
+GUI(TaskManager()).start()
+</code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+              <p></p>
+              <ul>
+                <li><strong>Option 2: Add the allocated individual feature.</strong> You will be given which feature to implement around week 10.</li>
+              </ul>
+            </div>
+            <hr>
+            <h4 id="week-12"><span class="badge badge-dark">Week 12:</span><a class="fa fa-anchor" href="#week-12"></a></h4>
+            <div>
+              <h4 id="1-enhance-previous-week-s-feature"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Enhance previous week's feature<a class="fa fa-anchor" href="#1-enhance-previous-week-s-feature"></a></h4>
+              <ul>
+                <li>If you chose option 1 in the previous week, you can either continue to enhance the GUI or add an individual feature this week (from the three choices from option 2).</li>
+                <li>If you chose option 2 in the previous week, you can either continue to enhance that individual feature or add another individual feature from the three choices given to you.</li>
+              </ul>
+              <h4 id="2-start-preparing-for-the-final-submission"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Start preparing for the final submission<a class="fa fa-anchor" href="#2-start-preparing-for-the-final-submission"></a></h4>
+              <div class="indented-level2">
+                <panel type src="/2020/admin/te3201-admin._include_.html#final-submission-info" header="Admin <md>:glyphicon-log-in:</md> Project → Final Submission  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="final-submission-info"></panel>
+              </div>
+              <p></p>
+            </div>
+            <hr>
+            <h4 id="week-13"><span class="badge badge-dark">Week 13:</span><a class="fa fa-anchor" href="#week-13"></a></h4>
+            <div>
+              <h4 id="1-submit-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit the project<a class="fa fa-anchor" href="#1-submit-the-project"></a></h4>
+              <div class="indented-level2">
+                <panel type src="/2020/admin/te3201-admin._include_.html#final-submission-info" header="Admin <md>:glyphicon-log-in:</md> Project → Final Submission  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="final-submission-info"></panel>
+              </div>
+              <p></p>
+            </div>
+            <hr>
+          </panel>
+          <p></p>
           <div id="final-submission-info">
             <h3 id="week-13-final-submission">Week 13: Final Submission<a class="fa fa-anchor" href="#week-13-final-submission"></a></h3>
             <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students,
@@ -515,7 +1757,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 05:02:28 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
     </footer>
   </div>
 </body>

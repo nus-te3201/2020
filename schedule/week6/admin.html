@@ -96,26 +96,27 @@
               <li>As usual</li>
             </ul>
             <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
-            <div>
-              <div class="indented-level2">
-                <panel type="primary" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 7. Save Tasks to Disk</strong> <span class="badge badge-pill badge-warning"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <h3 id="level-7-save-tasks-to-disk"><span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span><a class="fa fa-anchor" href="#level-7-save-tasks-to-disk"></a></h3>
-                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty6">Monty Level 6 code</a> in the following ways:</p>
-                    <ul>
-                      <li>Monty <strong>saves tasks into a csv file</strong>.</li>
-                      <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
-                    </ul>
-                    <p>A sample output is given below. Note the following:</p>
-                    <ul>
-                      <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
-                      <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
-                    </ul>
-                    <pre><code class="hljs">*******************************************************************************************
+            <span id="week6-project">
+<div>
+<div class="indented-level2">
+<panel type="primary" no-close class="algolia-no-index">
+<div></div>
+<div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 7. Save Tasks to Disk</strong> <span class="badge badge-pill badge-warning"></span></span>
+          </div>
+          <div></div>
+          <div>
+            <h3 id="level-7-save-tasks-to-disk"><span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span><a class="fa fa-anchor" href="#level-7-save-tasks-to-disk"></a></h3>
+            <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty6">Monty Level 6 code</a> in the following ways:</p>
+            <ul>
+              <li>Monty <strong>saves tasks into a csv file</strong>.</li>
+              <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
+            </ul>
+            <p>A sample output is given below. Note the following:</p>
+            <ul>
+              <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
+              <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
+            </ul>
+            <pre><code class="hljs">*******************************************************************************************
 *  __          __  _                            _          __  __             _           *
 *  \ \        / / | |                          | |        |  \/  |           | |          *
 *   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
@@ -152,21 +153,21 @@ STATUS | INDEX | DESCRIPTION
   ✗    |   2   | return book                  
 --------------------------------------------------
 </code></pre>
-                    <box>
-                      <p>💡 here are some tips:</p>
-                      <ul>
-                        <li>The filename can be specified in the code. e.g.,
-                          <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
+            <box>
+              <p>💡 here are some tips:</p>
+              <ul>
+                <li>The filename can be specified in the code. e.g.,
+                  <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
 </code></pre>
-                        </li>
-                        <li>The format of the file is up to you. Here is an example:
-                          <pre><code class="hljs">borrow book,done
+                </li>
+                <li>The format of the file is up to you. Here is an example:
+                  <pre><code class="hljs">borrow book,done
 read book,pending
 return book,pending
 </code></pre>
-                        </li>
-                        <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
-                          <pre><code class="hljs python"> items = []
+                </li>
+                <li>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:
+                  <pre><code class="hljs python"> items = []
  DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
  
  
@@ -184,12 +185,12 @@ return book,pending
  
  main()
 </code></pre>
-                        </li>
-                      </ul>
-                    </box>
-                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                      <p>Here is the code for loading data from the file.</p>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+                </li>
+              </ul>
+            </box>
+            <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+              <p>Here is the code for loading data from the file.</p>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
     deliveries_reader = csv.reader(data_file)
     <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -203,25 +204,25 @@ return book,pending
     status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
     items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
 </code></pre>
-                      <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                        is a shortcut syntax. It is equivalent to the code below:</p>
-                      <pre><code class="hljs">if values[1] == 'done':
+              <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                is a shortcut syntax. It is equivalent to the code below:</p>
+              <pre><code class="hljs">if values[1] == 'done':
     status = True
 else:
     status = False
 </code></pre>
-                    </panel>
-                    <p></p>
-                    <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
-                    <ul>
-                      <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
-                        <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
+            </panel>
+            <p></p>
+            <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
+            <ul>
+              <li><strong>Remove the the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+                <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
 
 exit
 &gt;&gt;&gt; Bye!
 </code></pre>
-                      </li>
-                      <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
-                        <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
+              </li>
+              <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
+                <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
  
  list
  &gt;&gt;&gt; Here is the list of tasks:
@@ -249,41 +250,42 @@ exit
  --------------------------------------------------
  &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                      </li>
-                      <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
-                        <pre><code class="hljs">add read book
+              </li>
+              <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
+                <pre><code class="hljs">add read book
 ADD read book
 Add read book
 add    read book
     add read book
 </code></pre>
-                      </li>
-                    </ul>
-                  </div>
-                </panel>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
+          </panel>
         </div>
       </div>
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+      </span>
+    </div>
+  </div>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-6-feb-17-tasks">Week 6 [Feb 17] - Tasks&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
-              <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
-            </nav>
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#week-6-feb-17-tasks">Week 6 [Feb 17] - Tasks&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
+          <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
+        </nav>
 
-          </nav>
-        </div>
       </nav>
     </div>
-    <footer>
-      <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 05:02:28 GMT</small></div>
-    </footer>
+  </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
+  </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>

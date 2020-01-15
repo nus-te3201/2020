@@ -14,4 +14,7 @@
 
 #### {{ thumb(2) }} Submit weekly project increments
 
+<span id="week8-project">
+
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 9. Use Classes**" var-fragment="monty.mbdf#monty9" />
+</span>

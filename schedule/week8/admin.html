@@ -96,21 +96,20 @@
               <li>As usual</li>
             </ul>
             <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
-            <div>
-              <div class="indented-level2">
-                <panel type="primary" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 9. Use Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes"></a></h3>
-                    <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines,
-                      respectively.
-                    </p>
-                    <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
-                      <p>Here is the code for an example <code>ToDo</code> class:</p>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
+            <span id="week8-project">
+<div>
+<div class="indented-level2">
+<panel type="primary" no-close class="algolia-no-index">
+<div></div>
+<div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 9. Use Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
+          </div>
+          <div></div>
+          <div>
+            <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes"></a></h3>
+            <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
+            <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+              <p>Here is the code for an example <code>ToDo</code> class:</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
         self.description = description
@@ -133,8 +132,8 @@
         """</span>
         <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]
 </code></pre>
-                      <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
+              <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
     deliveries_reader = csv.reader(data_file)
     <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
@@ -152,33 +151,34 @@
         output_writer.writerow(item.as_csv())
     output_file.close()
 </code></pre>
-                    </panel>
-                    <p></p>
-                  </div>
-                </panel>
-              </div>
-            </div>
+            </panel>
+            <p></p>
           </div>
+          </panel>
         </div>
       </div>
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+      </span>
+    </div>
+  </div>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-8-mar-9-tasks">Week 8 [Mar 9] - Tasks&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
-              <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
-            </nav>
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#week-8-mar-9-tasks">Week 8 [Mar 9] - Tasks&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
+          <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
+        </nav>
 
-          </nav>
-        </div>
       </nav>
     </div>
-    <footer>
-      <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 05:02:28 GMT</small></div>
-    </footer>
+  </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
+  </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>

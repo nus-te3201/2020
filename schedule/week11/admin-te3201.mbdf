@@ -8,9 +8,12 @@
 
 #### {{ thumb(1) }} Monty: Add `Level 14. Add a GUI` or the individual feature.
 
+<span id="week11-project">
+
 * **Option 1:** Add the following project increment.
 
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 14. Add a GUI**" tag="optional" var-fragment="monty.mbdf#monty14" />
 <p/>
 
 * **Option 2: Add the allocated individual feature.** You will be given which feature to implement around week 10.
+</span>

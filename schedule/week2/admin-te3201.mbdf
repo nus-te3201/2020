@@ -15,4 +15,9 @@
 
 #### {{ thumb(2) }} Submit weekly project increments
 
+<span id="week2-project">
+
+* Add the following increment to your project.
+
 <include src="montyFragment.md" boilerplate var-displacement="../.." var-header="**Level 2. Recognize Known Commands**" var-fragment="monty.mbdf#monty2" />
+</span>

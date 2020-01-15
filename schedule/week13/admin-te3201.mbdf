@@ -5,8 +5,9 @@
 1. Submit the project
 {% endcall %}
 
+<span id="week13-project">
 
-#### {{ thumb(1) }} Submit the project
 #### {{ thumb(1) }} Submit the project
 
 {{ embed_topic("../../admin/te3201-admin.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
+</span>
