@@ -260,7 +260,7 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
               <p><strong>You can specify multiple <code>except</code> clauses</strong>, one for each type of exception expected.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles two types of exceptions: <code>ZeroDivisionError</code> and <code>ValueError</code>.</p>
-                <p>💡 The <code>ValueError</code> is raised when the string <code>abc</code> is being converted to a float using <code>float(divisor)</code>.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The <code>ValueError</code> is raised when the string <code>abc</code> is being converted to a float using <code>float(divisor)</code>.</p>
                 <div>
                   <div></div>
                   <div></div>
@@ -446,8 +446,9 @@ print(<span class="hljs-string">'You entered'</span>, value)
               <h3 id="raising-exceptions">Raising Exceptions<a class="fa fa-anchor" href="#raising-exceptions"></a></h3>
               <p><strong>You can <code>raise</code> an exception yourself to indicate an error</strong>.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code>hide_ends(items)</code>                  function. <br> 💡 Also note how an <code>except</code> clause can assign a name to the exception using <code>as temporary_name</code> (as done by <code>except ValueError as e:</code>) so that the exception object can be referenced later
-                  (as done in <code>print('Cannot hide ends', str(e))</code>)</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code>hide_ends(items)</code>                  function. <br>
+                  <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Also note how an <code>except</code> clause can assign a name to the exception using <code>as temporary_name</code> (as done
+                  by <code>except ValueError as e:</code>) so that the exception object can be referenced later (as done in <code>print('Cannot hide ends', str(e))</code>)</p>
                 <div>
                   <div></div>
                   <div></div>
@@ -617,8 +618,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
   <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
 </code></pre>
                       </li>
-                      <li>💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br> e.g., <code>type('x') is not float</code> evaluates to
-                        <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br> [
+                      <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code>                        is of type <code>type_name</code><br> e.g., <code>type('x') is not float</code> evaluates to <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br> [
                         <a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
                     </ul>
                     <p><strong><code>confirm_range_correct(start, end)</code></strong>:</p>
@@ -695,7 +695,7 @@ Banned words (in sorted order): puck team
 Thank you for playing the WORD GAME
 ========================================================
 </code></pre>
-                        <p>💡 Implementation suggestions:</p>
+                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Implementation suggestions:</p>
                         <ul>
                           <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
                           <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
@@ -769,7 +769,7 @@ Thank you for playing the FLEXIBLE WORD GAME
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 20 Jan 2020 08:48:32 GMT</small></div>
     </footer>
   </div>
 </body>

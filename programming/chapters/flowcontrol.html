@@ -311,17 +311,12 @@ Expensive
 45
 Done
 </code></pre>
-                    <p>
-                      <trigger trigger="click" for="modal:simpelIf-pyTutor"><span class="dimmed">[Click here to visualize execution]</span></trigger>
-                    </p>
+                    <div>
+                      <p><span class="dimmed">[Click <a href="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">here</a> to visualize the execution]</span></p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <modal large title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor" class="algolia-no-index">
-                <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
-                <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the
-                  above Python code there to see the execution steps.</p>
-                <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               <p>Note how the code that should execute when the condition is true is indented (usually by 4 spaces). <strong>Python uses indentation to indicate code <em>blocks</em></strong> (aka <em>clauses</em>) <span class="dimmed">i.e., a sequence of statements that belong together</span>.
                 In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation
                 level, indicating the end of the code block.</p>
@@ -335,7 +330,7 @@ print(<span class="hljs-string">'Done'</span>)               <span class="hljs-c
                 <panel type="danger" header=":fas-dumbbell: Exercise: Even Numbers" expanded no-close>
                   <div>
                     <h4 id="exercise-even-numbers">Exercise - Even Numbers<a class="fa fa-anchor" href="#exercise-even-numbers"></a></h4>
-                    <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
+                    <p>Write a program to read an integer from the keyboard and print 'Even number' only if it is an even number. Follow the example below:</p>
                     <pre><code class="hljs python">Enter an integer:
 <span class="hljs-number">4</span>
 Even number
@@ -364,8 +359,7 @@ gender = <span class="hljs-string">'F'</span>
     print(<span class="hljs-string">'Gender code is '</span> + gender) 
 print(<span class="hljs-string">'Age is '</span> + str(age))               
 </code></pre>
-              <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-                <trigger trigger="click" for="modal:nestedIf-pyTutor"><span class="dimmed">[visualize]</span></trigger>
+              <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> <span><span class="dimmed">[Click <a href="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">here</a> to visualize the execution]</span></span>
               </p>
               <pre><code class="hljs python">Teenager
 Female
@@ -373,8 +367,6 @@ Girl
 Gender code <span class="hljs-keyword">is</span> F
 Age <span class="hljs-keyword">is</span> <span class="hljs-number">13</span>
 </code></pre>
-              <modal large title="Nested blocks" id="modal:nestedIf-pyTutor" class="algolia-no-index">
-                <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Using `if`%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
@@ -506,11 +498,7 @@ Hello
 Done
 </code></pre>
                       <div>
-                        <p>
-                          <trigger trigger="click" for="modal:visualizeCodewithasimple`if`condition"><span class="dimmed">[Visualize execution]</span></trigger>
-                        </p>
-                        <modal large title="Code with a simple `if` condition" id="modal:visualizeCodewithasimple`if`condition" class="algolia-no-index">
-                          <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+                        <p><span class="dimmed">[Click <a href="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">here</a> to visualize the execution]</span></p>
                       </div>
                     </td>
                   </tr>
@@ -532,7 +520,9 @@ Done
 <span class="hljs-keyword">while</span> counter &lt; <span class="hljs-number">3</span>:
     print(<span class="hljs-string">'Hello'</span>)
 </code></pre>
-                <p>💡 When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to stop executing.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to
+                  stop executing.
+                </p>
                 <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Infinite loops%%" class="algolia-no-index">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
               </tip-box>
@@ -552,7 +542,7 @@ print(<span class="hljs-string">'You have entered:'</span>, coin_value)
 print(<span class="hljs-string">'Here is the product'</span>)
 print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
 </code></pre>
-                    <p>💡 Note how the above code uses <code>input</code> function with a string argument e.g., <code>input('Enter a coin:')</code> to show the string to the user and read the input from the user at the same time.</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how the above code uses <code>input</code> function with a string argument e.g., <code>input('Enter a coin:')</code>                      to show the string to the user and read the input from the user at the same time.</p>
                     <table>
                       <tr>
                         <td>
@@ -579,7 +569,7 @@ John
                         </td>
                       </tr>
                     </table>
-                    <p>💡 Also note how the above code uses <code>print()</code> with two arguments, one an integer and one a string. The <code>print()</code> method can take multiple arguments and the arguments can be of different types. Note that the <mark>output will have a space between each argument</mark>.</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Also note how the above code uses <code>print()</code> with two arguments, one an integer and one a string. The <code>print()</code>                      method can take multiple arguments and the arguments can be of different types. Note that the <mark>output will have a space between each argument</mark>.</p>
                     <table>
                       <tr>
                         <td>
@@ -658,14 +648,18 @@ You have entered: <span class="hljs-number">120</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">20</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
-                      <pre><code class="hljs python">...
+                    <div>
+                      <panel type="seamless" class="algolia-no-index">
+                        <div slot="header"><span><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> see hint</span>
+                        </div>
+                        <pre><code class="hljs python">...
 coin_sum = <span class="hljs-number">0</span>
 ...
   coin_sum = coin_sum + coin_value
 ...
 </code></pre>
-                    </panel>
+                      </panel>
+                    </div>
                   </div>
                 </panel>
                 <p></p>
@@ -715,8 +709,11 @@ You have entered: <span class="hljs-number">20</span>
 Enter a coin: <span class="hljs-number">0</span>
 Your balance: <span class="hljs-number">20</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
-                      <pre><code class="hljs python">...
+                    <div>
+                      <panel type="seamless" class="algolia-no-index">
+                        <div slot="header"><span><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> see hint</span>
+                        </div>
+                        <pre><code class="hljs python">...
 is_aborting = <span class="hljs-literal">False</span>
 ...
   <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
@@ -724,9 +721,10 @@ is_aborting = <span class="hljs-literal">False</span>
     <span class="hljs-keyword">break</span>
 <span class="hljs-meta">... </span>
 <span class="hljs-keyword">if</span> is_aborting:
-  print(<span class="hljs-string">'Your balance:'</span>, coin_sum)
+  print(&amp;<span class="hljs-comment">#39;Your balance:&amp;#39;, coin_sum)</span>
 </code></pre>
-                    </panel>
+                      </panel>
+                    </div>
                   </div>
                 </panel>
                 <p></p>
@@ -791,14 +789,18 @@ You have entered: <span class="hljs-number">100</span>
 Here <span class="hljs-keyword">is</span> the product
 Your balance: <span class="hljs-number">0</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
-                      <pre><code class="hljs python">...
+                    <div>
+                      <panel type="seamless" class="algolia-no-index">
+                        <div slot="header"><span><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> see hint</span>
+                        </div>
+                        <pre><code class="hljs python">...
 <span class="hljs-keyword">if</span> coin_value != <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> ... :
     ...
     <span class="hljs-keyword">continue</span>
 ...
 </code></pre>
-                    </panel>
+                      </panel>
+                    </div>
                   </div>
                 </panel>
                 <p></p>
@@ -831,7 +833,7 @@ Your balance: <span class="hljs-number">0</span>
                     </td>
                   </tr>
                 </table>
-                <p>💡 Note how the above <code>for</code> loop is equivalent to the following <code>while</code> loop but more concise.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how the above <code>for</code> loop is equivalent to the following <code>while</code> loop but more concise.</p>
                 <pre><code class="hljs python">i = <span class="hljs-number">0</span>
 <span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">3</span>:
   print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
@@ -865,9 +867,13 @@ Your balance: <span class="hljs-number">0</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">9</span> = <span class="hljs-number">63</span>
 <span class="hljs-number">7</span> x <span class="hljs-number">10</span> = <span class="hljs-number">70</span>
 </code></pre>
-                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
-                      <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
-                    </panel>
+                    <div>
+                      <panel type="seamless" class="algolia-no-index">
+                        <div slot="header"><span><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> see hint</span>
+                        </div>
+                        <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
+                      </panel>
+                    </div>
                   </div>
                 </panel>
                 <p></p>
@@ -970,9 +976,13 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
                         <p></p>
                       </div>
                     </popover>
-                    <panel type="seamless" header=":bulb: see hint" class="algolia-no-index">
-                      <p>Use three nested <code>for</code> loops.</p>
-                    </panel>
+                    <div>
+                      <panel type="seamless" class="algolia-no-index">
+                        <div slot="header"><span><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> see hint</span>
+                        </div>
+                        <p>Use three nested <code>for</code> loops.</p>
+                      </panel>
+                    </div>
                   </div>
                 </panel>
                 <p></p>
@@ -1032,7 +1042,7 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
                 </panel>
                 <p></p>
               </tip-box>
-              <p>💡 It is common practice to put the <code>import</code> statements at the top of the program code.</p>
+              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> It is common practice to put the <code>import</code> statements at the top of the program code.</p>
               <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Importing modules%%" class="algolia-no-index">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
@@ -1043,7 +1053,7 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
                   <div>
                     <h4 id="exercise-circle-area">Exercise - Circle Area<a class="fa fa-anchor" href="#exercise-circle-area"></a></h4>
                     <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
-                    <p>💡 some useful hints:</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> some useful hints:</p>
                     <ul>
                       <li>Area = PI * radius<sup>2</sup></li>
                       <li>You can use <code>math.pi</code> as the value of PI.</li>
@@ -1127,7 +1137,7 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 20 Jan 2020 08:48:32 GMT</small></div>
     </footer>
   </div>
 </body>

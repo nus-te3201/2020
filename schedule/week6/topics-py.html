@@ -170,7 +170,7 @@ C:\photos\vaction
                     </tr>
                   </table>
                 </div>
-                <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how the path <code>'C:\\temp\\python'</code> uses double slash to
                   <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
                 <modal large title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape" class="algolia-no-index">
                   <div>
@@ -437,7 +437,7 @@ third line
                     </tr>
                   </table>
                 </div>
-                <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened
                   <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
               </tip-box>
               <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
@@ -458,7 +458,7 @@ first line
 second line
 third line
 </code></pre>
-                <p>💡 Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code> method.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code>                  method.</p>
               </tip-box>
               <div>
                 <panel type="danger" header=":fas-dumbbell: Exercise: File Stats" expanded no-close>
@@ -561,9 +561,9 @@ f.close()
 second line
 </code></pre>
                 <ul>
-                  <li>💡 The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
-                  <li>💡 Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line
-                    break to appear in the file.</li>
+                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
+                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does
+                    not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line break to appear in the file.</li>
                 </ul>
               </box>
               <p><strong>To preserve original content and add to it, open the file in <em>append mode</em>.</strong> That is because opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened.</p>
@@ -691,9 +691,8 @@ third line
                   </tr>
                 </table>
               </box>
-              <p>💡 If a value itself contains a comma <span class="dimmed">e.g., <code>Foo, Emily</code></span>, it can be enclosed in double quotes <span class="dimmed">e.g., <code>&quot;Foo, Emily&quot;</code></span>, to prevent it being misinterpreted
-                as multiple values.
-              </p>
+              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If a value itself contains a comma <span class="dimmed">e.g., <code>Foo, Emily</code></span>, it can be enclosed in double quotes
+                <span class="dimmed">e.g., <code>&quot;Foo, Emily&quot;</code></span>, to prevent it being misinterpreted as multiple values.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example shows how to use double quotes to handle commas inside a value:</p>
                 <ul>
@@ -769,8 +768,9 @@ output_file.close() <span class="hljs-comment"># close file</span>
 bananas,3,2.0,False
 </code></pre>
                 <ul>
-                  <li>💡 You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., <code>output_file = open('pricelist.csv',</code><mark><code>'a',</code></mark><code>newline='')</code></li>
-                  <li>💡 The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is too complicated to explain here.
+                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., <code>output_file = open('pricelist.csv',</code><mark><code>'a',</code></mark><code>newline='')</code></li>
+                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is
+                    too complicated to explain here.
                   </li>
                 </ul>
               </box>
@@ -1075,7 +1075,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 11:41:02 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 20 Jan 2020 08:48:32 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -255,7 +255,7 @@ y
 
 <box>
 
-:bulb: You can use the list slicing syntax to extract a portion of a  string.<br>
+{{ icon_tip }} You can use the list slicing syntax to extract a portion of a  string.<br>
 
 <include src="inputOutput.md" boilerplate>
 <span id="input">
@@ -397,7 +397,7 @@ y
 
 <box>
 
-:bulb: Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:
+{{ icon_tip }} Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:
 ```python
 tasks = []
 tasks.append(['read book', False])
@@ -409,7 +409,7 @@ else:
     print('✗')
 ```
 
-:bulb: You can use exceptions to identify and handle errors in the command.
+{{ icon_tip }} You can use exceptions to identify and handle errors in the command.
 ```python
 def main():
     print_greeting()
@@ -553,7 +553,7 @@ STATUS | INDEX | DESCRIPTION
 
 <box>
 
-:bulb: You can use triple quotes to define a long string such as the help text.
+{{ icon_tip }} You can use triple quotes to define a long string such as the help text.
 ```python
 help_text ='''
 long text
@@ -561,7 +561,7 @@ more text
 '''
 ```
 
-:bulb: You can generate ASCII art using online resources such as http://patorjk.com/software/taag
+{{ icon_tip }} You can generate ASCII art using online resources such as http://patorjk.com/software/taag
 </box>
 
 
@@ -640,7 +640,7 @@ STATUS | INDEX | DESCRIPTION
 
 <box>
 
-:bulb: here are some tips:
+{{ icon_tip }} here are some tips:
 
 * The filename can be specified in the code. e.g.,
   ```python
@@ -806,7 +806,7 @@ STATUS | INDEX | DESCRIPTION                 | DEADLINE
 
 <box>
 
-:bulb: here are some tips:
+{{ icon_tip }} here are some tips:
 
 * One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, `T` and `D` is used to indicate todo items and deadline items, respectively.
   ```python
