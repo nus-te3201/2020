@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : C++ to Java</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -1610,8 +1610,10 @@ System.out.println(name1 == name2);
                     <p>If the strings differ, you can use <code>compareTo</code> to see which comes first in alphabetical order. The return value from <code>compareTo</code> is the difference between the first characters in the strings that differ. If the
                       strings are equal, their difference is zero. If the first string (the one on which the method is invoked) comes first in the alphabet, the difference is negative. Otherwise, the difference is positive.</p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>compareTo</code> returns positive 8, because the second letter of &quot;Ada&quot; comes before the second letter of &quot;Alan&quot; by 8 letters.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">int</span> diff = name1.compareTo(name2);
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>compareTo</code> returns positive 8, because the second letter of &quot;Alan&quot; comes 8 letters <em>after</em> the second letter of &quot;Ada&quot;.</p>
+                      <pre><code class="hljs java">String name1 = <span class="hljs-string">"Alan"</span>;
+String name2 = <span class="hljs-string">"Ada"</span>;
+<span class="hljs-keyword">int</span> diff = name1.compareTo(name2);
 <span class="hljs-keyword">if</span> (diff == <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"The names are the same."</span>);
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (diff &lt; <span class="hljs-number">0</span>) {
@@ -2057,7 +2059,7 @@ Printed in Subclass
                   <p>As you know, all Java objects inherit from the <code>Object</code> class. Let us look at some of the useful methods in the <code>Object</code> class that can be used by other classes.</p>
                   <h5 id="the-tostring-method">The <code>toString</code> method<a class="fa fa-anchor" href="#the-tostring-method"></a></h5>
                   <div class="indented">
-                    <p><strong>Every class inherits a <code>toString</code> method from the <code>Object</code> class that is used by Java to get a string representation of the object</strong> <span class="dimmed">e.g., for printing</span>. By default it
+                    <p><strong>Every class inherits a <code>toString</code> method from the <code>Object</code> class that is used by Java to get a string representation of the object</strong> <span class="dimmed">e.g., for printing</span>. By default, it
                       simply returns the type of the object and its address (in hexadecimal).</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you defined a class called <code>Time</code>, to represent a moment in time. If you create a <code>Time</code> object and display it with println:</p>
@@ -2353,7 +2355,7 @@ Spot: Woof
                   </box>
                   <p>A better way is to <strong>take advantage of polymorphism to write code that targets a superclass so that it works with any subclass objects.</strong></p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>PetShelter2</code> use one data structure to keep both types of animals and one loop to make them speak. The code targets the <code>Animal</code> superclass
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>PetShelter2</code> uses one data structure to keep both types of animals and one loop to make them speak. The code targets the <code>Animal</code> superclass
                       (assuming
                       <code>Cat</code> and <code>Dog</code> inherits from the <code>Animal</code> class) instead of repeating the code for each animal type.</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PetShelter2</span> </span>{
@@ -3846,7 +3848,7 @@ Integer x = (Integer)o;
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 21 Jan 2020 14:25:30 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Tue, 28 Jan 2020 09:31:26 GMT</small></div>
     </footer>
   </div>
 </body>
