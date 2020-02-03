@@ -406,7 +406,10 @@ print(<span class="hljs-string">'after foo:'</span>, original)
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <p><mark><trigger trigger="click" for="modal:foo_items-pyTutor">[Visualize]</trigger></mark><span class="dimmed">[<a target="_blank" href="https://goo.gl/2E2uvp">alt link</a>]</span><br></p>
+                        <div>
+                          <p><span class="dimmed">[Click <a href="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">here</a> to visualize the execution]</span></p>
+                        </div>
+                        <br>
                         <pre><code class="hljs">inside foo: ['Hi', 2, 3]
 after foo: ['Hi', 2, 3]
 </code></pre>
@@ -414,8 +417,6 @@ after foo: ['Hi', 2, 3]
                     </tr>
                   </table>
                 </div>
-                <modal large title="`foo(items)`" id="modal:foo_items-pyTutor" class="algolia-no-index">
-                  <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
                 <p>Contrast the above example with the one below. The <code>bar(items)</code> function assigns a new list to <code>items</code> parameter. That means <code>items</code> is no longer pointing to the list object that was passed in as the argument.
                   After the function is executed, the <code>original</code> list remains the same as before.</p>
                 <div>
@@ -435,7 +436,10 @@ print(<span class="hljs-string">'after bar:'</span>, original)
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <p><span class="dimmed"><trigger trigger="click" for="modal:bar_items-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/4KHpPR">alt link</a>]</span><br></p>
+                        <div>
+                          <p><span class="dimmed">[Click <a href="http://pythontutor.com/iframe-embed.html#code=def%20bar%28items%29%3A%0A%20%20items%20%3D%20%5B'a',%20'b',%20'c'%5D%0A%20%20print%28'inside%20bar%3A',%20items%29%0A%20%20%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Abar%28original%29%0Aprint%28'after%20bar%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">here</a> to visualize the execution]</span></p>
+                        </div>
+                        <br>
                         <pre><code class="hljs">inside bar: ['a', 'b', 'c']
 after bar: [1, 2, 3]
 </code></pre>
@@ -443,8 +447,6 @@ after bar: [1, 2, 3]
                     </tr>
                   </table>
                 </div>
-                <modal large title="`bar(items)`" id="modal:bar_items-pyTutor" class="algolia-no-index">
-                  <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20bar%28items%29%3A%0A%20%20items%20%3D%20%5B'a',%20'b',%20'c'%5D%0A%20%20print%28'inside%20bar%3A',%20items%29%0A%20%20%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Abar%28original%29%0Aprint%28'after%20bar%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               </tip-box>
               <p>If the argument passed to a function is of an immutable type, the function receives the reference to a <em>copy</em> of the argument. That means the code inside the function is unable to modify the object passed as the argument. However,
                 it can return a new object that is based on the given object copy.</p>
@@ -470,7 +472,10 @@ print(<span class="hljs-string">'new age:'</span>, new_age)
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <p><span class="dimmed"><trigger trigger="click" for="modal:increment_v-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/9uR4eR">alt link</a>]</span><br></p>
+                        <div>
+                          <p><span class="dimmed">[Click <a href="http://pythontutor.com/iframe-embed.html#code=def%20increment%28v%29%3A%0A%20%20v%20%3D%20v%20%2B%201%0A%20%20return%20v%0A%20%20%0Aage%20%3D%2025%0Anew_age%20%3D%20increment%28age%29%0Aprint%28'age%3A',%20age%29%0Aprint%28'new%20age%3A',%20new_age%29&codeDivHeight=400&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">here</a> to visualize the execution]</span></p>
+                        </div>
+                        <br>
                         <pre><code class="hljs">age: 25
 new age: 26
 </code></pre>
@@ -478,8 +483,6 @@ new age: 26
                     </tr>
                   </table>
                 </div>
-                <modal large title="`increment(v)`" id="modal:increment_v-pyTutor" class="algolia-no-index">
-                  <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20increment%28v%29%3A%0A%20%20v%20%3D%20v%20%2B%201%0A%20%20return%20v%0A%20%20%0Aage%20%3D%2025%0Anew_age%20%3D%20increment%28age%29%0Aprint%28'age%3A',%20age%29%0Aprint%28'new%20age%3A',%20new_age%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
               </tip-box>
               <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/objectReferences?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -1603,7 +1606,7 @@ Thank you for playing the WORD GAME
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Tue, 28 Jan 2020 09:31:26 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 03 Feb 2020 14:45:39 GMT</small></div>
     </footer>
   </div>
 </body>
