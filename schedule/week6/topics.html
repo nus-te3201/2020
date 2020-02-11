@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 6 - SE Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/schedule.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -84,7 +84,7 @@
           </nav>
           <p></p>
           <h1 id="week-6-feb-17-se-topics">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - SE Topics</small></small><a class="fa fa-anchor" href="#week-6-feb-17-se-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/2020/schedule/week6/topics.html#W6-1">W6.1</a>] <strong>IDEs: Basic Features</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -136,7 +136,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W6-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w6-1-ides-basic-features">
             <span slot="header" class="card-title"><div><h2 id="w6-1-ides-basic-features"><span class="dimmed">[W6.1]</span> <strong>IDEs: Basic Features</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w6-1-ides-basic-features"></a>
             </h2>
@@ -144,7 +144,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W6-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/ides/introduction/what">
+          <panel type="seamless" expanded popup-url="/2020/book/ides/introduction/what" id="implementation-ides-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="implementation-ides-what"><small><span class="font-weight-bold text-muted"><span>Implementation → IDEs →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-ides-what"></a></h4>
@@ -182,9 +182,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these are features available in IDEs?" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are features available in IDEs?</p></template>
                           <question>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
@@ -213,7 +213,7 @@
             </div>
           </panel>
           <p><span id="W6-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/ides/debugging/what">
+          <panel type="seamless" expanded popup-url="/2020/book/ides/debugging/what" id="implementation-ides-debugging-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -269,7 +269,7 @@
         </panel>
         <p></p>
         <p><span id="W6-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w6-2-project-mgt-scheduling-and-tracking">
           <span slot="header" class="card-title"><div><h2 id="w6-2-project-mgt-scheduling-and-tracking"><span class="dimmed">[W6.2]</span> <strong>Project Mgt: Scheduling and Tracking</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w6-2-project-mgt-scheduling-and-tracking"></a>
           </h2>
@@ -277,7 +277,7 @@
       </span>
       <div class="indented-level1">
         <p><span id="W6-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/milestones">
+        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/milestones" id="project-management-project-planning-milestones">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="project-management-project-planning-milestones"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Milestones</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-milestones"></a></h4>
@@ -334,7 +334,7 @@
           </div>
         </panel>
         <p><span id="W6-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/buffers">
+        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/buffers" id="project-management-project-planning-buffers">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -363,7 +363,7 @@
           </div>
         </panel>
         <p><span id="W6-2c"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/issueTrackers">
+        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/issueTrackers" id="project-management-project-planning-issue-trackers">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="project-management-project-planning-issue-trackers"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Issue Trackers</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-issue-trackers"></a></h4>
@@ -397,7 +397,7 @@
           </div>
         </panel>
         <p><span id="W6-2d"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/workBreakdownStructure">
+        <panel type="seamless" expanded popup-url="/2020/book/projectPlanning/workBreakdownStructure" id="project-management-project-planning-work-breakdown-structure">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -581,9 +581,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not a well-defined task?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not a well-defined task?</p></template>
                         <question>
                           <p>Which one these project tasks is not well-defined?</p>
                           <ul radio-group="9211e" class="radio-list">
@@ -607,7 +607,7 @@
           </div>
         </panel>
         <p><span id="W6-2e"></span></p>
-        <panel type="seamless" popup-url="/2020/book/projectPlanning/ganttCharts" class="algolia-no-index">
+        <panel type="seamless" popup-url="/2020/book/projectPlanning/ganttCharts" id="project-management-project-planning-gantt-charts" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -639,7 +639,7 @@
           </div>
         </panel>
         <p><span id="W6-2f"></span></p>
-        <panel type="seamless" popup-url="/2020/book/projectPlanning/pertCharts" class="algolia-no-index">
+        <panel type="seamless" popup-url="/2020/book/projectPlanning/pertCharts" id="project-management-project-planning-pert-charts" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2f</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -684,7 +684,7 @@
           </div>
         </panel>
         <p><span id="W6-2g"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/teamwork/teamStructures">
+        <panel type="seamless" expanded popup-url="/2020/book/teamwork/teamStructures" id="project-management-teamwork-team-structures">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -726,9 +726,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which team structure is the most suitable for a school project?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which team structure is the most suitable for a school project?</p></template>
                         <question>
                           <p>Which team structure is the most suitable for a school project?</p>
                           <ul radio-group="8ee7d" class="radio-list">
@@ -775,7 +775,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -807,6 +807,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

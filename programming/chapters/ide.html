@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Using an IDE</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -34,8 +34,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -101,7 +101,7 @@
             <div>
               <h2 id="appendix-b-using-an-ide">Appendix B: Using an IDE<a class="fa fa-anchor" href="#appendix-b-using-an-ide"></a></h2>
               <p><strong>There are several Python <trigger trigger="click" for="modal:pythonIde-IDEs">IDEs (Integrated Development Environments)</trigger></strong> that you can use to manage a Python programming project.</p>
-              <modal large title="<md>:fas-info-circle:</md> What is an IDE?" id="modal:pythonIde-IDEs" class="algolia-no-index">
+              <modal large id="modal:pythonIde-IDEs" class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> What is an IDE?</template>
                 <p><span class="dimmed">Given below is an extract from the SE Textbook (<strong><a href="/2020/se-book-adapted/chapters/ides.html">IDEs</a> → Introduction → What</strong>):</span></p>
                 <div>
                   <p><strong>Professional software engineers often write code using <em>Integrated Development Environments (IDEs)</em>. IDEs support most development-related work within the same tool</strong> (hence, the term <em>integrated</em>).</p>
@@ -126,23 +126,22 @@
               <p>If you have not done so already,
                 <trigger trigger="click" for="modal:pythonIde-installingPython">install Python in your Computer.</trigger>
               </p>
-              <modal large title="Installing Python" id="modal:pythonIde-installingPython" class="algolia-no-index">
-
+              <modal large id="modal:pythonIde-installingPython" class="algolia-no-index"><template slot="_header">Installing Python</template>
                 <div>
                   <p>
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)</p>
-                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> How to install Python on Windows" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> How to install Python on Windows</p></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </panel>
                 </div>
               </modal>
               <p>The standard Python installation comes with a basic IDE called IDLE. It can be used to write, run, and debug Python code.</p>
               <p><strong><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> is a more sophisticated IDE that is widely used.</strong> PyCharm has a free community edition. The professional edition too is free for students.</p>
-              <panel header="<md>:glyphicon-facetime-video:</md> Installing and setting up PyCharm" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Installing and setting up PyCharm</p></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/0y5XlNeFxNk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Setup a Project in PyCharm" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Setup a Project in PyCharm</p></template>
                   <div>
                     <h4 id="exercise-setup-a-project-in-pycharm">Exercise : Setup a Project in PyCharm<a class="fa fa-anchor" href="#exercise-setup-a-project-in-pycharm"></a></h4>
                     <ol>
@@ -177,18 +176,18 @@ print_greeting(<span class="hljs-string">'jane'</span>)
                 </panel>
                 <p></p>
               </div>
-              <panel header="<md>:glyphicon-facetime-video:</md> Debugging in PyCharm" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Debugging in PyCharm</p></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/xuTDnFikBhw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
               <p></p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Debug a Project in PyCharm" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Debug a Project in PyCharm</p></template>
                   <div>
                     <h4 id="exercise-debug-a-project-in-pycharm">Exercise : Debug a Project in PyCharm<a class="fa fa-anchor" href="#exercise-debug-a-project-in-pycharm"></a></h4>
                     <ol>
                       <li>Open a project in PyCharm. Go to a project file containing Python code.</li>
                       <li>To create a breakpoint at a statement, click on the
-                        <tooltip content="the area between the statement and the line number"><em>gutter</em></tooltip> next to the line. A red dot should appear to indicate that the breakpoint has been set. <span class="dimmed">You can remove the breakpoint by clicking on the red dot again.</span><br>
+                        <tooltip><template slot="_content">the area between the statement and the line number</template><em>gutter</em></tooltip> next to the line. A red dot should appear to indicate that the breakpoint has been set. <span class="dimmed">You can remove the breakpoint by clicking on the red dot again.</span><br>
                         <a href="/2020/programming/ide/images/addBreakPoint.png" target="_self"><img src="/2020/programming/ide/images/addBreakPoint.png" alt class="img-fluid"></a></li>
                       <li>To start debugging, choose <code>Debug</code> instead of <code>Run.</code><br>
                         <a href="/2020/programming/ide/images/startDebugging.png" target="_self"><img src="/2020/programming/ide/images/startDebugging.png" alt class="img-fluid"></a></li>
@@ -226,7 +225,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -258,6 +257,7 @@ print_greeting(<span class="hljs-string">'jane'</span>)
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

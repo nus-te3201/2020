@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 10 - SE Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/schedule.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -84,7 +84,7 @@
           </nav>
           <p></p>
           <h1 id="week-10-mar-23-se-topics">Week 10 <small><small><span class="dimmed">[Mar 23]</span> - SE Topics</small></small><a class="fa fa-anchor" href="#week-10-mar-23-se-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/2020/schedule/week10/topics.html#W10-1">W10.1</a>] <strong>OOP: Intermediate</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -167,7 +167,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W10-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w10-1-oop-intermediate">
             <span slot="header" class="card-title"><div><h2 id="w10-1-oop-intermediate"><span class="dimmed">[W10.1]</span> <strong>OOP: Intermediate</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w10-1-oop-intermediate"></a>
             </h2>
@@ -175,7 +175,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W10-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/inheritance/what">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/inheritance/what" id="paradigms-oop-inheritance-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="paradigms-oop-inheritance-what"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#paradigms-oop-inheritance-what"></a></h4>
@@ -234,9 +234,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statements are correct" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which statements are correct</p></template>
                           <question>
                             <p>Which of these are correct?</p>
                             <ul class="task-list">
@@ -260,7 +260,7 @@
             </div>
           </panel>
           <p><span id="W10-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/classInheritance/what">
+          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/classInheritance/what" id="tools-uml-class-diagrams-inheritance-inheritance">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="tools-uml-class-diagrams-inheritance-inheritance"><small><span class="font-weight-bold text-muted"><span>Tools → UML → Class Diagrams → Inheritance →</span></span></small> <strong><span>Inheritance</span></strong><a class="fa fa-anchor" href="#tools-uml-class-diagrams-inheritance-inheritance"></a></h4>
@@ -294,7 +294,7 @@
             </div>
           </panel>
           <p><span id="W10-1c"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/inheritance/overloading">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/inheritance/overloading" id="paradigms-oop-inheritance-overloading">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="paradigms-oop-inheritance-overloading"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>Overloading</span></strong><a class="fa fa-anchor" href="#paradigms-oop-inheritance-overloading"></a></h4>
@@ -363,7 +363,7 @@
             </div>
           </panel>
           <p><span id="W10-1d"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/inheritance/overriding">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/inheritance/overriding" id="paradigms-oop-inheritance-overriding">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="paradigms-oop-inheritance-overriding"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>Overriding</span></strong><a class="fa fa-anchor" href="#paradigms-oop-inheritance-overriding"></a></h4>
@@ -372,7 +372,7 @@
               <div class="indented">
                 <div>
                   <p>
-                    <panel src="/2020/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> OOP → Inheritance → What%%" popup-url="/2020/book/oop/inheritance/what" class="algolia-no-index"></panel>
+                    <panel src="/2020/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" popup-url="/2020/book/oop/inheritance/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → What</span></p></template></panel>
                   </p>
                 </div>
                 <p></p>
@@ -416,7 +416,7 @@
                         </tbody>
                       </table>
                     </div>
-                    <modal large title="**Overloading**" id="modal:overriding-overloading" class="algolia-no-index">
+                    <modal large id="modal:overriding-overloading" class="algolia-no-index"><template slot="_header"><strong>Overloading</strong></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -485,9 +485,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which methods override?" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which methods override?</p></template>
                           <question>
                             <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
                             <img src="/2020/book/oop/inheritance/overriding/images/overriding.png" height="220">
@@ -513,7 +513,7 @@
             </div>
           </panel>
           <p><span id="W10-1e"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/associations/composition">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/associations/composition" id="paradigms-oop-associations-composition">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -569,7 +569,7 @@
             </div>
           </panel>
           <p><span id="W10-1f"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/composition/what">
+          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/composition/what" id="tools-uml-class-diagrams-composition-composition">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -604,7 +604,7 @@
             </div>
           </panel>
           <p><span id="W10-1g"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/associations/aggregation">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/associations/aggregation" id="paradigms-oop-associations-aggregation">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -660,7 +660,7 @@
             </div>
           </panel>
           <p><span id="W10-1h"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/aggregation/what">
+          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/aggregation/what" id="tools-uml-class-diagrams-aggregation-aggregation">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -695,9 +695,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not recommended to use?" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not recommended to use?</p></template>
                           <question>
                             <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
                             <ul radio-group="29b56" class="radio-list">
@@ -717,7 +717,7 @@
             </div>
           </panel>
           <p><span id="W10-1i"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/associations/dependencies">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/associations/dependencies" id="paradigms-oop-associations-dependencies">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1i</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -745,7 +745,7 @@
                   <h5 id="implementing-dependencies">Implementing dependencies<a class="fa fa-anchor" href="#implementing-dependencies"></a></h5>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
-                      <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                      <tooltip><template slot="_content">temporary</template>transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
                     <div class="alt-java">
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
@@ -782,7 +782,7 @@
             </div>
           </panel>
           <p><span id="W10-1j"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/dependencies/what">
+          <panel type="seamless" expanded popup-url="/2020/book/uml/classDiagrams/dependencies/what" id="tools-uml-class-diagrams-dependencies-dependencies">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1j</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -818,7 +818,7 @@
         </panel>
         <p></p>
         <p><span id="W10-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w10-2-types-of-testing">
           <span slot="header" class="card-title"><div><h2 id="w10-2-types-of-testing"><span class="dimmed">[W10.2]</span> <strong>Types of Testing</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w10-2-types-of-testing"></a>
           </h2>
@@ -828,7 +828,7 @@
         <br>
         <h3 id="developer-testing"><span class="dimmed"><strong>Developer Testing</strong></span><a class="fa fa-anchor" href="#developer-testing"></a></h3>
         <p><span id="W10-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/developerTesting/what">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/developerTesting/what" id="quality-assurance-testing-developer-testing-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="quality-assurance-testing-developer-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Developer Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-developer-testing-what"></a></h4>
@@ -853,7 +853,7 @@
           </div>
         </panel>
         <p><span id="W10-2b"></span></p>
-        <panel type="seamless" popup-url="/2020/book/testing/testingTypes/developerTesting/why" class="algolia-no-index">
+        <panel type="seamless" popup-url="/2020/book/testing/testingTypes/developerTesting/why" id="quality-assurance-testing-developer-testing-why" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -890,9 +890,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> implications of developers testing their own code</p></template>
                         <question has-input="true">
                           <p>Discuss pros and cons of developers testing their own code.</p>
                           <div slot="answer" class="algolia-no-index">
@@ -915,7 +915,7 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Cost of bug fixing over time</p></template>
                         <question>
                           <p>The cost of fixing a bug goes down as we reach the product release.</p>
                           <ul radio-group="37242" class="radio-list">
@@ -929,7 +929,7 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Why early testing?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Why early testing?</p></template>
                         <question has-input="true">
                           <p>Explain why early testing by developers is important.</p>
                         </question>
@@ -944,7 +944,7 @@
         <br>
         <h3 id="unit-testing"><span class="dimmed"><strong>Unit Testing</strong></span><a class="fa fa-anchor" href="#unit-testing"></a></h3>
         <p><span id="W10-2c"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/unitTesting/what">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/unitTesting/what" id="quality-assurance-testing-unit-testing-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="quality-assurance-testing-unit-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-what"></a></h4>
@@ -1032,7 +1032,7 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <p><strong>Side readings:</strong></p>
                     <ul>
                       <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
@@ -1047,7 +1047,7 @@
         <br>
         <h3 id="integration-testing"><span class="dimmed"><strong>Integration Testing</strong></span><a class="fa fa-anchor" href="#integration-testing"></a></h3>
         <p><span id="W10-2d"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/integrationTesting/what">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/integrationTesting/what" id="quality-assurance-testing-integration-testing-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="quality-assurance-testing-integration-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-what"></a></h4>
@@ -1056,8 +1056,7 @@
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/2020/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/2020/book/testing/testingTypes/unitTesting/what"
-                    class="algolia-no-index"></panel>
+                  <panel src="/2020/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/2020/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -1084,7 +1083,7 @@
         <br>
         <h3 id="system-testing"><span class="dimmed"><strong>System Testing</strong></span><a class="fa fa-anchor" href="#system-testing"></a></h3>
         <p><span id="W10-2e"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/systemTesting/what">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/systemTesting/what" id="quality-assurance-testing-system-testing-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="quality-assurance-testing-system-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → System Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-system-testing-what"></a></h4>
@@ -1136,7 +1135,7 @@
         <br>
         <h3 id="acceptance-testing"><span class="dimmed"><strong>Acceptance Testing</strong></span><a class="fa fa-anchor" href="#acceptance-testing"></a></h3>
         <p><span id="W10-2f"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/acceptanceTesting/what">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/acceptanceTesting/what" id="quality-assurance-testing-acceptance-testing-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2f</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="quality-assurance-testing-acceptance-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-what"></a></h4>
@@ -1167,7 +1166,7 @@
           </div>
         </panel>
         <p><span id="W10-2g"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting" id="quality-assurance-testing-acceptance-testing-acceptance-vs-system-testing">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1255,9 +1254,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about system testing and acceptance testing." class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about system testing and acceptance testing.</p></template>
                         <question>
                           <p>Choose the correct statements about system testing and acceptance testing.</p>
                           <ul class="task-list">
@@ -1286,7 +1285,7 @@
         <br>
         <h3 id="alpha-beta-testing"><span class="dimmed"><strong>Alpha/Beta Testing</strong></span><a class="fa fa-anchor" href="#alpha-beta-testing"></a></h3>
         <p><span id="W10-2h"></span></p>
-        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/alphaBetaTesting/what">
+        <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/alphaBetaTesting/what" id="quality-assurance-testing-alpha-beta-testing-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1347,7 +1346,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -1379,6 +1378,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

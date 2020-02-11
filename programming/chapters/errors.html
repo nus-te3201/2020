@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Error Handling</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -34,8 +34,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -145,15 +145,15 @@ SyntaxError: invalid syntax
               </box>
               <p>Some Python editors (e.g., <a href="http://REPL.it">REPL.it</a>) flag syntax errors even before you run the code.</p>
               <tip-box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how REPL Python editor points out the syntax error using a red ❌ in the <em><tooltip content="the column on the extreme left of the editor">gutter</tooltip></em> of
-                  the editor.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how REPL Python editor points out the syntax error using a red ❌ in the <em><tooltip><template slot="_content">the column on the extreme left of the editor</template>gutter</tooltip></em>                  of the editor.</p>
                 <p><a href="/2020/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2020/programming/errors-syntax/images/syntaxErrorInRepl.png" alt class="img-fluid"></a></p>
               </tip-box>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="handling-exceptions">Handling Exceptions<a class="fa fa-anchor" href="#handling-exceptions"></a></h3>
-              <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em><tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered">throws/raises</tooltip></em>                different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
+              <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em><tooltip><template slot="_content"><em>throw</em> and <em>raise</em>                are two terms used to describe an exception being encountered</template>throws/raises</tooltip>
+                </em> different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below raises an exception when it attempts to divide a number by <code>0</code>. The type of the exception raised is <code>ZeroDivisionError</code>, as mentioned
                   in the last line of the error message.</p>
@@ -230,7 +230,8 @@ Calculation over!........
                 </div>
               </box>
               <p>When the code in a <code>try</code> clause raises an error, the program execution immediately moves to the code in the <code>except</code> clause, provided the exception that happened matches the exception the <code>except</code> clause
-                is supposed to <em><tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception.">catch</tooltip></em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
+                is supposed to <em><tooltip><template slot="_content"><em>Catch</em> is term often used to describe a clause that respondes to a specific exception.</template>catch</tooltip>
+                </em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
               <p>If the exception does not match the <code>except</code> clause, the program crashes.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below crashes because the actual exception <span class="dimmed">(caused by passing a string when an foloating point number is expected)</span> does not match the
@@ -389,7 +390,7 @@ print(get_head2(<span class="hljs-number">2</span>))
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -400,7 +401,7 @@ print(get_head2(<span class="hljs-number">2</span>))
                 <li><a href="https://www.tutorialspoint.com/python/standard_exceptions.htm">Python built-in exceptions</a></li>
               </ul>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Enter Integer" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Enter Integer</p></template>
                   <div>
                     <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer"></a></h4>
                     <p>The code below assumes the entered string will always represent an integer.</p>
@@ -417,7 +418,7 @@ That is not an integer, try again
 Input an integer: 6
 You entered 6
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Hint%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Hint</span></p></template>
                       <ul>
                         <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
                         <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
@@ -425,7 +426,7 @@ You entered 6
                       </ul>
                     </panel>
 
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
   <span class="hljs-keyword">try</span>:
     value = int(input(<span class="hljs-string">'Input an integer:'</span>))
@@ -520,7 +521,7 @@ hide_ends2 failed: Not enough items
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -535,7 +536,7 @@ hide_ends2 failed: Not enough items
               </ul>
               <p>It is also possible to define your own <em>user-defined exceptions</em> but that requires more advanced programming techniques. It will be covered elsewhere.</p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Is Even-Integer in Range" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Is Even-Integer in Range</p></template>
                   <div>
                     <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range<a class="fa fa-anchor" href="#exercise-is-even-integer-in-range"></a></h4>
                     <tip-box>
@@ -633,7 +634,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
 </code></pre>
                       </li>
                     </ul>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
   <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
     <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)
@@ -644,7 +645,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                 <p></p>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Flexible Word Game" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Flexible Word Game</p></template>
                   <div>
                     <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game<a class="fa fa-anchor" href="#exercise-flexible-word-game"></a></h4>
                     <p>Implement a word game similar to the one you implement in the
@@ -652,8 +653,7 @@ check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <s
                     <ul>
                       <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
                     </ul>
-                    <modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame" class="algolia-no-index">
-
+                    <modal large id="modal:flexibleWordGame-wordGame" class="algolia-no-index"><template slot="_header"><span class="dimmed">Programming Basics → Lists → List Methods</span></template>
                       <div>
                         <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game"></a></h4>
                         <p>Implement a word game with the following rules:</p>
@@ -769,7 +769,7 @@ Thank you for playing the FLEXIBLE WORD GAME
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -801,6 +801,7 @@ Thank you for playing the FLEXIBLE WORD GAME
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

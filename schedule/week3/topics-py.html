@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 3 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/schedule.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -148,7 +148,7 @@ Nice to meet you.
                 </div>
                 <p>Note how the statements inside the function are not executed unless the method is called.</p>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                  <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -193,13 +193,13 @@ say_hello()
                   </tr>
                 </table>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Defining your own functions%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Defining your own functions</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=13&end=199&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
               <p></p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Hip Hip Hooray!" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Hip Hip Hooray!</p></template>
                   <div>
                     <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray<a class="fa fa-anchor" href="#exercise-hip-hip-hooray"></a></h4>
                     <p>Define the missing functions in the code below so that it produces the given output:</p>
@@ -282,7 +282,7 @@ How are you John ?
                     </tr>
                   </table>
                 </div>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -301,13 +301,13 @@ repeat_hello(<span class="hljs-string">'Penny'</span>, <span class="hljs-number"
 say_hello(<span class="hljs-string">'Sheldon'</span>)
 </code></pre>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                  <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
-                <panel type="seamless" header="%%:laughing: See the human version of the above code%%" minimized class="algolia-no-index">
+                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span class="dimmed">😆 See the human version of the above code</span></p></template>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
                   <p></p>
                 </panel>
@@ -326,13 +326,13 @@ print_uniqueness(<span class="hljs-number">1</span>,<span class="hljs-number">1<
 print(v1) 
 </code></pre>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Function parameters%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Function parameters</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
               <p></p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Grader `print_score` function" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Grader <code>print_score</code> function</p></template>
                   <div>
                     <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function<a class="fa fa-anchor" href="#exercise-grader-print-score-function"></a></h4>
                     <p>The code below prints the grade based on exam and project score, somewhat similar to
@@ -358,8 +358,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 </code></pre>
                     <p>Read the above code to understand how it works. Do you remember
                       <trigger trigger="click" for="printScoreFunction-operators">the meaning of <code>//</code> operator</trigger> used in the code above?</p>
-                    <modal large title="%%Programming Basics » Expressions, Data Types, Variables »%%" id="printScoreFunction-operators" class="algolia-no-index">
-
+                    <modal large id="printScoreFunction-operators" class="algolia-no-index"><template slot="_header"><span class="dimmed">Programming Basics » Expressions, Data Types, Variables »</span></template>
                       <div>
                         <h3 id="operators">Operators<a class="fa fa-anchor" href="#operators"></a></h3>
                         <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
@@ -425,9 +424,9 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-                        <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Operators</span></p></template>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
-                        <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try some expressions using an online interactive shell</span></p></template>
                           <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
                           <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
                       </div>
@@ -443,8 +442,7 @@ print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
 print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 </code></pre>
                     <p>without changing the external behavior of the program.</p>
-                    <modal large title id="modal:printScoreFunction-gradeAnalyzer" class="algolia-no-index">
-
+                    <modal large id="modal:printScoreFunction-gradeAnalyzer" class="algolia-no-index"><template slot="_header"></template>
                       <div>
                         <h4 id="exercise-grade-analyzer">Exercise - Grade Analyzer<a class="fa fa-anchor" href="#exercise-grade-analyzer"></a></h4>
                         <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
@@ -502,7 +500,7 @@ print(<span class="hljs-string">'Player1 response : '</span> + play())
 print(<span class="hljs-string">'Player2 response : '</span> + play())
 </code></pre>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                  <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -531,20 +529,20 @@ print_all_products(<span class="hljs-number">2</span>,<span class="hljs-number">
 print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
 </code></pre>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                  <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
                   <p></p>
                 </div>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Returning values from functions%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Returning values from functions</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
               <p></p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Grader - `calculate_grade` function" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Grader - <code>calculate_grade</code> function</p></template>
                   <div>
                     <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function"></a></h4>
                     <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
@@ -649,7 +647,7 @@ total cows after breeding: 5
                   </tr>
                 </table>
                 <div>
-                  <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                  <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                     <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     <p></p>
                   </panel>
@@ -657,7 +655,7 @@ total cows after breeding: 5
                 </div>
               </tip-box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Add `main` Function" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Grader - Add <code>main</code> Function</p></template>
                   <div>
                     <h4 id="exercise-grader-add-a-main-function">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function"></a></h4>
                     <p>Take the
@@ -702,8 +700,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 main()
 </code></pre>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                    <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index">
-
+                    <modal large id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index"><template slot="_header"></template>
                       <div>
                         <h4 id="exercise-grader-calculate-grade-function-2">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-2"></a></h4>
                         <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
@@ -751,7 +748,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                 <p></p>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Restructure the `main` Function" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Grader - Restructure the <code>main</code> Function</p></template>
                   <div>
                     <h4 id="exercise-grader-restructure-the-main-function">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function"></a></h4>
                     <p>Take the
@@ -774,8 +771,7 @@ main()
 </code></pre>
                     <p>The external behavior of the code should remain as before.</p>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
-                    <modal large title id="modal:graderRestructureMain-graderMainFunction" class="algolia-no-index">
-
+                    <modal large id="modal:graderRestructureMain-graderMainFunction" class="algolia-no-index"><template slot="_header"></template>
                       <div>
                         <h4 id="exercise-grader-add-a-main-function-2">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-2"></a></h4>
                         <p>Take the
@@ -820,8 +816,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 main()
 </code></pre>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                        <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index">
-
+                        <modal large id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index"><template slot="_header"></template>
                           <div>
                             <h4 id="exercise-grader-calculate-grade-function-3">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-3"></a></h4>
                             <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
@@ -871,7 +866,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
                 <p></p>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Grader - Analyze Grades in a Loop" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Grader - Analyze Grades in a Loop</p></template>
                   <div>
                     <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop<a class="fa fa-anchor" href="#exercise-grader-analyze-grades-in-a-loop"></a></h4>
                     <p>Take the program you wrote in the
@@ -893,8 +888,7 @@ Total   : ===================
 Grade   : A
 Continue y/n? n
 </code></pre>
-                    <modal large title id="modal:analyzeGradesInLoop-restructureMain" class="algolia-no-index">
-
+                    <modal large id="modal:analyzeGradesInLoop-restructureMain" class="algolia-no-index"><template slot="_header"></template>
                       <div>
                         <h4 id="exercise-grader-restructure-the-main-function-2">Exercise : Grader - Restructure the <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-restructure-the-main-function-2"></a></h4>
                         <p>Take the
@@ -917,8 +911,7 @@ main()
 </code></pre>
                         <p>The external behavior of the code should remain as before.</p>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You need to add functions <code>read_number</code> and <code>print_report</code>.</p>
-                        <modal large title id="modal:graderRestructureMain-graderMainFunction" class="algolia-no-index">
-
+                        <modal large id="modal:graderRestructureMain-graderMainFunction" class="algolia-no-index"><template slot="_header"></template>
                           <div>
                             <h4 id="exercise-grader-add-a-main-function-3">Exercise : Grader - Add a <code>main</code> Function<a class="fa fa-anchor" href="#exercise-grader-add-a-main-function-3"></a></h4>
                             <p>Take the
@@ -963,8 +956,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
 main()
 </code></pre>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You might have to do minor changes to the existing function <code>calculate_grade</code></p>
-                            <modal large title id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index">
-
+                            <modal large id="modal:graderMainFunction-graderCalculateGradeFunction" class="algolia-no-index"><template slot="_header"></template>
                               <div>
                                 <h4 id="exercise-grader-calculate-grade-function-4">Exercise : Grader - <code>calculate_grade</code> Function<a class="fa fa-anchor" href="#exercise-grader-calculate-grade-function-4"></a></h4>
                                 <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
@@ -1055,7 +1047,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1087,6 +1079,7 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

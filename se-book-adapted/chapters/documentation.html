@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : Documentation</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -33,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -175,11 +175,11 @@
               <h1 id="documentation"><span>Documentation</span><a class="fa fa-anchor" href="#documentation"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -284,9 +284,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about API documentation" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about API documentation</p></template>
                       <question>
                         <p>Choose correct statements about API documentation.</p>
                         <ul class="task-list">
@@ -306,15 +306,15 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="guidelines">
           <span slot="header" class="card-title"><div><h2 id="guidelines"><span>Guidelines</span><a class="fa fa-anchor" href="#guidelines"></a></h2>
       </div>
       </span>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="guideline-go-top-down-not-bottom-up">
         <span slot="header" class="card-title"><div><h3 id="guideline-go-top-down-not-bottom-up"><span>Guideline: Go Top-down, Not Bottom-up</span><a class="fa fa-anchor" href="#guideline-go-top-down-not-bottom-up"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -333,7 +333,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Why<a class='fa fa-anchor' href='#why'></a>" expanded>
+    <panel type="seamless" expanded id="why"><template slot="_header"><h4 id="why">Why<a class="fa fa-anchor" href="#why"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -353,7 +353,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how"><template slot="_header"><h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -398,11 +398,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="guideline-aim-for-comprehensibility">
       <span slot="header" class="card-title"><div><h3 id="guideline-aim-for-comprehensibility"><span>Guideline: Aim for Comprehensibility</span><a class="fa fa-anchor" href="#guideline-aim-for-comprehensibility"></a></h3>
   </div>
   </span>
-  <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+  <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -421,7 +421,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+  <panel type="seamless" expanded id="how-2"><template slot="_header"><h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -447,9 +447,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about documentation" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about documentation</p></template>
                 <question>
                   <p>It is recommended for developer documents,</p>
                   <ul class="task-list">
@@ -471,11 +471,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="guideline-document-minimally-but-sufficiently">
     <span slot="header" class="card-title"><div><h3 id="guideline-document-minimally-but-sufficiently"><span>Guideline: Document Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-document-minimally-but-sufficiently"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-4"><template slot="_header"><h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -498,7 +498,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how-3"><template slot="_header"><h4 id="how-3">How<a class="fa fa-anchor" href="#how-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -536,11 +536,20 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
               <a class="nav-link py-1" href="#why">Why&#x200E;</a>
               <a class="nav-link py-1" href="#how">How&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
+              <a class="nav-link py-1" href="#how-2">How&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
+              <a class="nav-link py-1" href="#how-3">How&#x200E;</a>
+            </nav>
           </nav>
         </nav>
 
@@ -550,7 +559,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -582,6 +591,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

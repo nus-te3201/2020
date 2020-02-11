@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Admin Info</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/admin.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content" id="main">
           <h1 id="te3201-software-engineering"><strong>TE3201 Software Engineering</strong><a class="fa fa-anchor" href="#te3201-software-engineering"></a></h1>
@@ -95,17 +95,17 @@
                   <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
                   <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
                   <box>
-                    <panel header="Some less important info in a minimized panel" minimized class="algolia-no-index">
+                    <panel minimized class="algolia-no-index"><template slot="_header"><p>Some less important info in a minimized panel</p></template>
                       <p>Less important info</p>
                       <p></p>
                     </panel>
                     <p></p>
-                    <panel header="%%Some less important info in a boarder-less panel%%" type="seamless" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a boarder-less panel</span></p></template>
                       <p>Less important info</p>
                       <p></p>
                     </panel>
                     <p></p>
-                    <panel header="%%Some less important info in a panel%%" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a panel</span></p></template>
                       <p>Less important info</p>
                       <p></p>
                     </panel>
@@ -114,27 +114,26 @@
                   <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
                   <box>
                     <tabs>
-                      <tab header="<md>:far-file-alt:</md>">
+                      <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                         <p>Some textual description of X</p>
                       </tab>
-                      <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                         <p>Video describing X</p>
                       </tab>
                     </tabs>
                   </box>
                   <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>                    (activated by clicking) containing additional information.</p>
-                  <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
+                  <popover id="pop:tooltip-example" placement="top"><template slot="header">Tooltip Example</template>
                     <div slot="content" class="algolia-no-index">
                       Additional information
                     </div>
                   </popover>
-                  <modal title="Modal Example" id="modal:modal-example" class="algolia-no-index">
-                    Additional information
+                  <modal id="modal:modal-example" class="algolia-no-index"><template slot="_header">Modal Example</template> Additional information
                   </modal>
                 </div>
                 <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
                 <p>
-                  <panel type src="/2020/admin/moduleExpectations._include_.html#starRatingSystem" header="Admin <md>:glyphicon-log-in:</md> Module Expectations → Star Rating System  " class="embedding algolia-no-index" minimized fragment="starRatingSystem"></panel>
+                  <panel type src="/2020/admin/moduleExpectations._include_.html#starRatingSystem" class="embedding algolia-no-index" minimized fragment="starRatingSystem"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p></template></panel>
                 </p>
               </div>
               <div id="more">
@@ -146,25 +145,25 @@
                     <li>
                       <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
                       <p>
-                        <panel header="%%Example%%" src="/2020/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                        <panel src="/2020/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                       </p>
                     </li>
                     <li>
                       <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
                       <p>
-                        <panel header="%%Example%%" src="/2020/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                        <panel src="/2020/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                       </p>
                     </li>
                     <li>
                       <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
                       <p>
-                        <panel header="%%Example%%" src="/2020/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                        <panel src="/2020/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                       </p>
                     </li>
                     <li>
                       <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
                       <p>
-                        <panel header="%%Example%%" src="/2020/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"></panel>
+                        <panel src="/2020/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
                       </p>
                     </li>
                   </ul>
@@ -278,7 +277,7 @@
               <li>2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.</li>
             </ul>
             <p><strong><span><span aria-hidden="true" class="far fa-images"></span></span> Lecture slides will be uploaded to LumiNUS after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong>              as they have been
-              <tooltip content="i.e., heavy use of graphics and animations">optimized for lecture delivery</tooltip> instead.</p>
+              <tooltip><template slot="_content">i.e., heavy use of graphics and animations</template>optimized for lecture delivery</tooltip> instead.</p>
             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.</p>
           </div>
           <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
@@ -324,7 +323,7 @@
               </li>
             </ul>
           </div>
-          <panel header="### Weekly Project Increments<a class='fa fa-anchor' href='#weekly-project-increments'></a>" class="algolia-no-index">
+          <panel id="weekly-project-increments" class="algolia-no-index"><template slot="_header"><h3 id="weekly-project-increments">Weekly Project Increments<a class="fa fa-anchor" href="#weekly-project-increments"></a></h3></template>
             <h4 id="week-1"><span class="badge badge-dark">Week 1:</span><a class="fa fa-anchor" href="#week-1"></a></h4>
             <div>
               <ul>
@@ -346,7 +345,7 @@ foo
 &gt;&gt;&gt; Your command is: foo
 &gt;&gt;&gt; Bye!
 </code></pre>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-comment"># ADD MORE CODE HERE</span>
 </code></pre>
@@ -403,7 +402,7 @@ exit
 y
 &gt;&gt;&gt; Bye!
 </code></pre>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
 <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
     print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
@@ -444,7 +443,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
 
 main()
 </code></pre>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
@@ -546,7 +545,7 @@ abcde
                         <p>The above technique can be used to extract the item description from an <code>add</code> command.
                         </p>
                       </box>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
 
 items = []
@@ -688,7 +687,7 @@ print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<
             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
 </code></pre>
                       </box>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python">
 items = []
 
@@ -826,7 +825,7 @@ more text
 </code></pre>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
                       </box>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span>
     banner = <span class="hljs-string">'''
 *******************************************************************************************
@@ -942,7 +941,7 @@ return book,pending
                           </li>
                         </ul>
                       </box>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <p>Here is the code for loading data from the file.</p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
     data_file = open(filename)
@@ -1097,7 +1096,7 @@ D,return book,pending,Monday
                           </li>
                         </ul>
                       </box>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <p>Here is the code adding a todo item:</p>
                         <pre><code class="hljs python">
 command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span>
@@ -1127,7 +1126,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
                       <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines,
                         respectively.
                       </p>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <p>Here is the code for an example <code>ToDo</code> class:</p>
                         <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
@@ -1196,7 +1195,7 @@ command_parts = command.strip().split(<span class="hljs-string">' '</span>, <spa
                         <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
                         <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
                       </ul>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <p>Here's the main part of the code that illustrates how these objects can work together:</p>
                         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
@@ -1289,7 +1288,7 @@ list
     ------------------------------------------------------------
 &gt;&gt;&gt; What can I do for you?
 </code></pre>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
                         <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
@@ -1324,7 +1323,7 @@ list
                     <div>
                       <h3 id="level-11-use-inheritance"><span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Inheritance</span><a class="fa fa-anchor" href="#level-11-use-inheritance"></a></h3>
                       <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty10">Monty Level 10 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
-                      <panel header=":fas-battery-quarter: Partial solution" minimized class="algolia-no-index">
+                      <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
                         <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
 
     TYPE_KEY = <span class="hljs-string">'T'</span>
@@ -1427,7 +1426,7 @@ list
                       <p></p>
                       <img src="/2020/programming/monty/images/gui-later.png">
                       <p></p>
-                      <panel type="seamless" header="Skeletal GUI code" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Skeletal GUI code</p></template>
                         <pre><code class="hljs python"><span class="hljs-keyword">import</span> datetime
 <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *
 
@@ -1551,7 +1550,7 @@ GUI(TaskManager()).start()
               </ul>
               <h4 id="2-start-preparing-for-the-final-submission"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Start preparing for the final submission<a class="fa fa-anchor" href="#2-start-preparing-for-the-final-submission"></a></h4>
               <div class="indented-level2">
-                <panel type src="/2020/admin/te3201-admin._include_.html#final-submission-info" header="Admin <md>:glyphicon-log-in:</md> Project → Final Submission  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="final-submission-info"></panel>
+                <panel type src="/2020/admin/te3201-admin._include_.html#final-submission-info" class="embedding algolia-no-index" minimized fragment="final-submission-info"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Final Submission  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
             </div>
@@ -1560,7 +1559,7 @@ GUI(TaskManager()).start()
             <div>
               <h4 id="1-submit-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit the project<a class="fa fa-anchor" href="#1-submit-the-project"></a></h4>
               <div class="indented-level2">
-                <panel type src="/2020/admin/te3201-admin._include_.html#final-submission-info" header="Admin <md>:glyphicon-log-in:</md> Project → Final Submission  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="final-submission-info"></panel>
+                <panel type src="/2020/admin/te3201-admin._include_.html#final-submission-info" class="embedding algolia-no-index" minimized fragment="final-submission-info"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Final Submission  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
             </div>
@@ -1667,7 +1666,7 @@ GUI(TaskManager()).start()
 <li>10%: Documentation</li>
 <li>20%: Functionality, code</li></ul></li>
 <li><strong>60%: Final Exam</strong></li></ul>
-<modal large title="The Policy on Deadlines" id="modal:adminInfo-deadlineInfo" class="algolia-no-index">
+<modal large id="modal:adminInfo-deadlineInfo" class="algolia-no-index"><template slot="_header">The Policy on Deadlines</template>
   <div>
 <h3 id="deadlines-2">Deadlines<a class="fa fa-anchor" href="#deadlines-2"></a></h3>
 <ul>
@@ -1758,7 +1757,7 @@ GUI(TaskManager()).start()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1790,6 +1789,7 @@ GUI(TaskManager()).start()
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

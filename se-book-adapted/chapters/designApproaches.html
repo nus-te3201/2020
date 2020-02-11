@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : Design Approaches</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -33,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -175,11 +175,11 @@
               <h1 id="design-approaches"><span>Design Approaches</span><a class="fa fa-anchor" href="#design-approaches"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="multi-level-design">
             <span slot="header" class="card-title"><div><h2 id="multi-level-design"><span>Multi-Level Design</span><a class="fa fa-anchor" href="#multi-level-design"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -206,11 +206,11 @@
                   <img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300">
                   <p>Here are examples of lower level designs of some components of the same software:</p>
                   <tabs>
-                    <tab header="UI">
+                    <tab><template slot="_header">UI</template>
                       <img src="https://se-edu.github.io/addressbook-level3/images/UiClassDiagram.png" width="700"></tab>
-                    <tab header="Logic" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Logic</template>
                       <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="800"></tab>
-                    <tab header="Storage" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header">Storage</template>
                       <img src="https://se-edu.github.io/addressbook-level3/images/StorageClassDiagram.png" width="700"></tab>
                   </tabs>
                 </box>
@@ -220,11 +220,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="top-down-and-bottom-up-design">
           <span slot="header" class="card-title"><div><h2 id="top-down-and-bottom-up-design"><span>Top-Down and Bottom-Up Design</span><a class="fa fa-anchor" href="#top-down-and-bottom-up-design"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -248,9 +248,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which is better?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which is better?</p></template>
                     <question>
                       <p>Top-down design is better than bottom-up design.</p>
                       <ul radio-group="81698" class="radio-list">
@@ -270,11 +270,11 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="agile-design">
         <span slot="header" class="card-title"><div><h2 id="agile-design"><span>Agile Design</span><a class="fa fa-anchor" href="#agile-design"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -297,9 +297,9 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statement about agile design" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statement about agile design</p></template>
                   <question>
                     <p>Agile design camp expects the design to change over the product’s lifetime.</p>
                     <ul radio-group="07214" class="radio-list">
@@ -332,7 +332,13 @@
             <a class="nav-link py-1" href="#what">What&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#top-down-and-bottom-up-design">Top-Down and Bottom-Up Design&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#agile-design">Agile Design&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
+          </nav>
         </nav>
 
       </nav>
@@ -341,7 +347,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -373,6 +379,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

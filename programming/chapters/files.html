@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Files</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -34,8 +34,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -116,7 +116,7 @@
               <box>
                 <tabs>
 
-                  <tab header="Windows">
+                  <tab><template slot="_header">Windows</template>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> File <code>C:\photos\2018\home.jpg</code></p>
                     <ul>
                       <li>Filename: <code>home.jpg</code></li>
@@ -133,7 +133,7 @@
                         </p>
                   </tab>
 
-                  <tab header="OS-X/Linux" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header">OS-X/Linux</template>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> File <code>/Users/john/home.jpg</code></p>
                     <ul>
                       <li>Filename: <code>home.jpg</code></li>
@@ -152,7 +152,7 @@
                 </tabs>
               </box>
               <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the
-                <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+                <tooltip><template slot="_content">A program has a <em>working directory</em> at any time; it can change over time</template>current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code shows how to print/change current working directory</p>
                 <div>
@@ -183,7 +183,7 @@ C:\photos\vaction
                 </div>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how the path <code>'C:\\temp\\python'</code> uses double slash to
                   <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
-                <modal large title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape" class="algolia-no-index">
+                <modal large id="modal:filePaths-stringsEscape" class="algolia-no-index"><template slot="_header"><strong>Escape Sequences</strong> <span class="dimmed">(extrat from Strings → String Literals)</span></template>
                   <div>
                     <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em>  to include a special character in a string literal</strong>                      without interpreting it as a special character. Given below are some examples:</p>
                     <div class="table-responsive">
@@ -265,7 +265,7 @@ C:\photos\vaction
                   <li><code>..\te3201\exercises\ex1.txt</code></li>
                   <li><code>..\..\modules\te3201\exercises\ex1.txt</code></li>
                 </ul>
-                <panel type="seamless" header="%%another example%%" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">another example</span></p></template>
                   <p><a href="https://automatetheboringstuff.com/images/000032.jpg" target="_self"><img src="https://automatetheboringstuff.com/images/000032.jpg" alt class="img-fluid"></a></p>
                 </panel>
               </box>
@@ -309,7 +309,7 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
               </box>
               <p>
                 <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the
-                <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.</p>
+                <tooltip><template slot="_content">i.e., <code>\\</code> on Windows and <code>/</code> on OS-X/Linux</template>path separators</tooltip>.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
                 <ul>
@@ -326,7 +326,7 @@ print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs
                 </ul>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Create Directory" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Create Directory</p></template>
                   <div>
                     <h4 id="exercise-create-directory">Exercise : Create Directory<a class="fa fa-anchor" href="#exercise-create-directory"></a></h4>
                     <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
@@ -388,7 +388,7 @@ check(<span class="hljs-string">'bar'</span>)
 /home/runner
 </code></pre>
                     <p></p>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
@@ -449,7 +449,7 @@ third line
                   </table>
                 </div>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened
-                  <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
+                  <tooltip><template slot="_content">when a file is open in read mode, you can read from it but cannot write to it</template>in read mode</tooltip>.</p>
               </tip-box>
               <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
               <tip-box>
@@ -472,7 +472,7 @@ third line
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code>                  method.</p>
               </tip-box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: File Stats" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: File Stats</p></template>
                   <div>
                     <h4 id="exercise-file-stats">Exercise : File Stats<a class="fa fa-anchor" href="#exercise-file-stats"></a></h4>
                     <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
@@ -528,12 +528,12 @@ It has 2 lines containing 22 letters
 lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
 It has 4 lines containing 10 letters
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Tips%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Tips</span></p></template>
                       <ul>
                         <li><code>strip()</code> removes trailing line breaks but also trailing spaces. <code>replace('\n', '')</code> will remove the trailing line break but will keep the trailing spaces.</li>
                       </ul>
                     </panel>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
   <span class="hljs-string">"""Return content of the file as a list of lines
   
@@ -591,7 +591,7 @@ third line
 </code></pre>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Add Line Numbers" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add Line Numbers</p></template>
                   <div>
                     <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers<a class="fa fa-anchor" href="#exercise-add-line-numbers"></a></h4>
                     <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
@@ -654,7 +654,7 @@ third line
                     <pre><code class="hljs">['1. first line\n', '2. \n', '3. second line\n', '4. third line']
 ['1. hang in there']
 </code></pre>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
   <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
   
@@ -787,7 +787,7 @@ bananas,3,2.0,False
               </box>
 
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Calcluate GST" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Calcluate GST</p></template>
                   <div>
                     <h4 id="exercise-calculate-gst">Exercise : Calculate GST<a class="fa fa-anchor" href="#exercise-calculate-gst"></a></h4>
                     <p>Suppose there is a CSV file in this format:</p>
@@ -882,7 +882,7 @@ bag,50.0,3.5
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Python hints%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Python hints</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
@@ -969,7 +969,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1001,6 +1001,7 @@ process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-stri
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

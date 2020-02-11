@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 1 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/schedule.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -120,7 +120,7 @@
               <ul>
                 <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
               </ul>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> What is programming (a 2-minute intro from Khan Academy):%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> What is programming (a 2-minute intro from Khan Academy):</span></p></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </div>
@@ -145,7 +145,7 @@
                 <span id="install-python">
 <p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big>
                 </font> We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)</p>
-                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> How to install Python on Windows" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> How to install Python on Windows</p></template>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </panel>
                 </span>
@@ -158,15 +158,15 @@
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell<a class="fa fa-anchor" href="#working-with-an-interactive-shell"></a></h3>
-              <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can
-                type in a python <em>expression</em> and get the shell to evaluate the expression.</p>
+              <p><strong>Some programming environments provide an <em><tooltip><template slot="_content">a tool which allows you to type commands in, and get back output for each command</template>interactive shell</tooltip></em>.</strong> In the python
+                interactive shell you can type in a python <em>expression</em> and get the shell to evaluate the expression.</p>
               <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
 <span class="hljs-number">5</span>
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> * <span class="hljs-number">4</span> * <span class="hljs-number">3</span>
 <span class="hljs-number">24</span>
 &gt;&gt;&gt;
 </code></pre>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Python interactive shell in action:%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Python interactive shell in action:</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -235,9 +235,9 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>(<span class="hljs-number">2</span> + <span class="hljs-number">4</span>) * <span class="hljs-number">5</span>
 <span class="hljs-number">30</span>
 </code></pre>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Operators%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Operators</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
-              <panel type="seamless" header="%%:fas-laptop: Try some expressions using an online interactive shell%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try some expressions using an online interactive shell</span></p></template>
                 <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
                 <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
             </div>
@@ -287,9 +287,9 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'Bye'</span> + (<span class="hljs-string">'!'</span> * <span class="hljs-number">10</span>)
 <span class="hljs-string">'Bye!!!!!!!!!!'</span>
 </code></pre>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Data types%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Data types</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                 <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -299,7 +299,7 @@
                 <p><strong>Variables are used to store information to be referenced and manipulated in a computer program.</strong> They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader
                   and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
               </blockquote>
-              <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
+              <p>The following statement <em><tooltip><template slot="_content">creates</template>declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
               <pre><code class="hljs python">v = <span class="hljs-number">5</span>
 </code></pre>
               <tip-box>
@@ -331,7 +331,7 @@
 <span class="hljs-meta">&gt;&gt;&gt; </span>price - discount
 <span class="hljs-number">9.5</span>
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                   <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
               <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
@@ -373,16 +373,16 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
 <span class="hljs-meta">&gt;&gt;&gt; </span>width
 <span class="hljs-number">5</span>
 </code></pre>
-                <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                   <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
               </tip-box>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Variables%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Variables</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
                 <p></p>
               </panel>
               <p></p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Circle Circumference" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Circle Circumference</p></template>
                   <div>
                     <h4 id="exercise-circle-circumference">Exercise: Circle Circumference<a class="fa fa-anchor" href="#exercise-circle-circumference"></a></h4>
                     <ol>
@@ -400,17 +400,17 @@ NameError: name <span class="hljs-string">'Height'</span> <span class="hljs-keyw
             <h2 id="python-programs"><strong>Python Programs</strong><a class="fa fa-anchor" href="#python-programs"></a></h2>
             <div>
               <h3 id="scripts-programs">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-programs"></a></h3>
-              <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><tooltip content="the tool that interprets the code and executes it">interpreter</tooltip></em>                reads the program and executes statements from top to bottom.</p>
+              <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><tooltip><template slot="_content">the tool that interprets the code and executes it</template>interpreter</tooltip></em>                reads the program and executes statements from top to bottom.</p>
               <p>Let's create and run a Python program:</p>
               <tabs>
 
-                <tab header="Using Repl.it (no need to save as a file)">
+                <tab><template slot="_header">Using <a href="http://Repl.it">Repl.it</a> (no need to save as a file)</template>
                   <p>Press the <span aria-hidden="true" class="fas fa-play"></span> button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </tab>
 
-                <tab header="Using IDLE (need to save as a `.py` file)" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">Using IDLE (need to save as a <code>.py</code> file)</template>
                   <ol>
                     <li>
                       <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.</li>
@@ -423,13 +423,12 @@ print(<span class="hljs-string">'Bye!'</span>)
                     <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
                     <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
                   </ol>
-                  <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Writing your first Python program%%" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Writing your first Python program</span></p></template>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
                   <p></p>
                 </tab>
               </tabs>
-              <modal title="<md>:glyphicon-facetime-video:</md> Opening IDEL in Windows 10" id="modal:scripts-openIdle" class="algolia-no-index">
-
+              <modal id="modal:scripts-openIdle" class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Opening IDEL in Windows 10</template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></modal>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -445,7 +444,7 @@ print(<span class="hljs-string">'What is your name?'</span>)
 name = input()
 </code></pre>
               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the
-                <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
+                <tooltip><template slot="_content">ease of reading</template>readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
@@ -456,7 +455,7 @@ name = input()
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> To print some text, you can use the <code>print</code> function which can take one or more arguments:</p>
               <tabs>
 
-                <tab header="Using the shell">
+                <tab><template slot="_header">Using the shell</template>
                   <pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)
 Hello World
 
@@ -466,7 +465,7 @@ Bye my friend
                   <p></p>
                 </tab>
 
-                <tab header="Running as a script" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">Running as a script</template>
                   <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
 print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
 </code></pre>
@@ -478,7 +477,7 @@ Bye my friend
                   <p></p>
                 </tab>
               </tabs>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
@@ -500,7 +499,7 @@ print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-com
 &lt;class 'str'&gt;
 &lt;class 'float'&gt;
 </code></pre>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                 <p></p>
               </panel>
@@ -522,12 +521,12 @@ print(<span class="hljs-string">'Current price is $'</span> + price) <span class
 discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
 print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
 </code></pre>
-              <panel type="seamless" header="%%:fas-laptop: Try your own%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p></template>
                 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
-              <panel type="seamless" header="%%<md>:glyphicon-facetime-video:</md> Explanation of a similar Python program%%" class="algolia-no-index">
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Explanation of a similar Python program</span></p></template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Length of Names" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Length of Names</p></template>
                   <div>
                     <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name"></a></h4>
                     <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
@@ -580,7 +579,7 @@ The length of your name is 8
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -612,6 +611,7 @@ The length of your name is 8
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : Refactoring</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -33,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -175,7 +175,7 @@
               <h1 id="refactoring"><span>Refactoring</span><a class="fa fa-anchor" href="#refactoring"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+          <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -204,7 +204,7 @@
                 </box>
                 <p>Given below are two common refactorings (
                   <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-                <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what" class="algolia-no-index">
+                <modal id="modal:refactoring-catalog-what" class="algolia-no-index"><template slot="_header"><strong>Refactoring Catalogs</strong></template>
                   <div>
                     <ul>
                       <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -335,9 +335,9 @@ send()
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Results of Refactoring" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
                         <question>
                           <p>Choose the correct statements</p>
                           <ul class="task-list">
@@ -358,7 +358,7 @@ send()
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Do you agree with the following statement? Refactoring and regression testing" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
                         <question has-input="true">
                           <p>Do you agree with the following statement? Justify your answer.</p>
                           <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
@@ -376,7 +376,7 @@ send()
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Explain Refactoring" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
                         <question has-input>
                           <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                         </question>
@@ -387,7 +387,7 @@ send()
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### When<a class='fa fa-anchor' href='#when'></a>" expanded>
+          <panel type="seamless" expanded id="when"><template slot="_header"><h4 id="when">When<a class="fa fa-anchor" href="#when"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -406,9 +406,9 @@ send()
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: ‘Extract method’ and ‘Inline method’ refactorings" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> ‘Extract method’ and ‘Inline method’ refactorings</p></template>
                         <question>
                           <p>‘Extract method’ and ‘Inline method’ refactorings</p>
                           <ul radio-group="93b6b" class="radio-list">
@@ -444,7 +444,7 @@ send()
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -476,6 +476,7 @@ send()
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : Gathering Requirements</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -33,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -175,7 +175,7 @@
               <h1 id="gathering-requirements"><span>Gathering Requirements</span><a class="fa fa-anchor" href="#gathering-requirements"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Brainstorming<a class='fa fa-anchor' href='#brainstorming'></a>" expanded>
+          <panel type="seamless" expanded id="brainstorming"><template slot="_header"><h4 id="brainstorming">Brainstorming<a class="fa fa-anchor" href="#brainstorming"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -199,9 +199,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Characteristic of brainstorming</p></template>
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
                           <ul radio-group="11d89" class="radio-list">
@@ -221,7 +221,7 @@
               </div>
             </div>
           </panel>
-          <panel type="seamless" header="#### User Surveys<a class='fa fa-anchor' href='#user-surveys'></a>" expanded>
+          <panel type="seamless" expanded id="user-surveys"><template slot="_header"><h4 id="user-surveys">User Surveys<a class="fa fa-anchor" href="#user-surveys"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -240,7 +240,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Observation<a class='fa fa-anchor' href='#observation'></a>" expanded>
+          <panel type="seamless" expanded id="observation"><template slot="_header"><h4 id="observation">Observation<a class="fa fa-anchor" href="#observation"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -260,7 +260,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Interviews<a class='fa fa-anchor' href='#interviews'></a>" expanded>
+          <panel type="seamless" expanded id="interviews"><template slot="_header"><h4 id="interviews">Interviews<a class="fa fa-anchor" href="#interviews"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -275,7 +275,7 @@
               <p></p>
               <div>
                 <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
-                <popover id="pop:interviews-domainExpert" title placement="top">
+                <popover id="pop:interviews-domainExpert" placement="top"><template slot="header"></template>
                   <div slot="content" class="algolia-no-index">
                     <div>
                       <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
@@ -286,7 +286,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Focus Groups<a class='fa fa-anchor' href='#focus-groups'></a>" expanded>
+          <panel type="seamless" expanded id="focus-groups"><template slot="_header"><h4 id="focus-groups">Focus Groups<a class="fa fa-anchor" href="#focus-groups"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -320,7 +320,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Prototyping<a class='fa fa-anchor' href='#prototyping'></a>" expanded>
+          <panel type="seamless" expanded id="prototyping"><template slot="_header"><h4 id="prototyping">Prototyping<a class="fa fa-anchor" href="#prototyping"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -358,7 +358,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Product Surveys<a class='fa fa-anchor' href='#product-surveys'></a>" expanded>
+          <panel type="seamless" expanded id="product-surveys"><template slot="_header"><h4 id="product-surveys">Product Surveys<a class="fa fa-anchor" href="#product-surveys"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -406,7 +406,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -438,6 +438,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

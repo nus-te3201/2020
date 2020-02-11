@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter : SDLC Process Models</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -33,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -175,11 +175,11 @@
               <h1 id="sdlc-process-models"><span>SDLC Process Models</span><a class="fa fa-anchor" href="#sdlc-process-models"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -199,7 +199,7 @@
             <div></div>
           </div>
         </panel>
-        <panel type="seamless" header="#### Sequential Models<a class='fa fa-anchor' href='#sequential-models'></a>" expanded>
+        <panel type="seamless" expanded id="sequential-models"><template slot="_header"><h4 id="sequential-models">Sequential Models<a class="fa fa-anchor" href="#sequential-models"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -227,7 +227,7 @@
             <div></div>
           </div>
         </panel>
-        <panel type="seamless" header="#### Iterative Models<a class='fa fa-anchor' href='#iterative-models'></a>" expanded>
+        <panel type="seamless" expanded id="iterative-models"><template slot="_header"><h4 id="iterative-models">Iterative Models<a class="fa fa-anchor" href="#iterative-models"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -259,7 +259,7 @@
             <div></div>
           </div>
         </panel>
-        <panel type="seamless" header="#### Agile Models<a class='fa fa-anchor' href='#agile-models'></a>" expanded>
+        <panel type="seamless" expanded id="agile-models"><template slot="_header"><h4 id="agile-models">Agile Models<a class="fa fa-anchor" href="#agile-models"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -298,9 +298,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about agile processes" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about agile processes</p></template>
                       <question>
                         <p>Choose the correct statements about agile processes.</p>
                         <ul class="task-list">
@@ -321,11 +321,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="example-process-models">
           <span slot="header" class="card-title"><div><h2 id="example-process-models"><span>Example Process Models</span><a class="fa fa-anchor" href="#example-process-models"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### XP<a class='fa fa-anchor' href='#xp'></a>" expanded>
+      <panel type="seamless" expanded id="xp"><template slot="_header"><h4 id="xp">XP<a class="fa fa-anchor" href="#xp"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -360,7 +360,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Scrum<a class='fa fa-anchor' href='#scrum'></a>" expanded>
+      <panel type="seamless" expanded id="scrum"><template slot="_header"><h4 id="scrum">Scrum<a class="fa fa-anchor" href="#scrum"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -412,7 +412,7 @@
               </ul>
               <p>...</p>
               <p>The daily scrum meeting is not used as a problem-solving or issue resolution meeting. <strong>Issues that are raised are taken offline and usually dealt with by the relevant subgroup immediately after the meeting.</strong></p>
-              <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> Intro to Scrum in Under 10 Minutes" class="non-printable algolia-no-index">
+              <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Intro to Scrum in Under 10 Minutes</p></template>
                 <p><sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
@@ -421,7 +421,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Unified Process<a class='fa fa-anchor' href='#unified-process'></a>" expanded>
+      <panel type="seamless" expanded id="unified-process"><template slot="_header"><h4 id="unified-process">Unified Process<a class="fa fa-anchor" href="#unified-process"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -521,9 +521,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the unified process" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about the unified process</p></template>
                     <question>
                       <p>Choose the correct statements about the unified process.</p>
                       <ul class="task-list">
@@ -545,11 +545,11 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="more">
         <span slot="header" class="card-title"><div><h2 id="more"><span>More</span><a class="fa fa-anchor" href="#more"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### CMMI<a class='fa fa-anchor' href='#cmmi'></a>" expanded>
+    <panel type="seamless" expanded id="cmmi"><template slot="_header"><h4 id="cmmi">CMMI<a class="fa fa-anchor" href="#cmmi"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -609,7 +609,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -641,6 +641,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

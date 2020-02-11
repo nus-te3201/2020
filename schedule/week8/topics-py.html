@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 8 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/schedule.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -145,7 +145,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
                 <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
               </ul>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Print Errors in Red" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Print Errors in Red</p></template>
                   <div>
                     <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
                     <p>Update a CLI program you have written in the past to print error messages in red color.</p>
@@ -172,7 +172,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> It is customary to use
                 <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
               <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
-              <modal title="CamelCase" id="modal:classes-camelcase" class="algolia-no-index">
+              <modal id="modal:classes-camelcase" class="algolia-no-index"><template slot="_header">CamelCase</template>
                 <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt class="img-fluid"></a><br></p>
                 <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>.
                   <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
@@ -343,7 +343,7 @@ Sun Tzu
 </code></pre>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Create `StockItem` Class" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Create <code>StockItem</code> Class</p></template>
                   <div>
                     <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
                     <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
@@ -373,7 +373,7 @@ Item info: Bananas
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
@@ -417,7 +417,7 @@ Item info: Bananas
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -449,6 +449,7 @@ Item info: Bananas
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

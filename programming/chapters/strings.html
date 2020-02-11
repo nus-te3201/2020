@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Strings</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -34,8 +34,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -112,9 +112,9 @@
             <div>
               <h3 id="string-literals">String Literals<a class="fa fa-anchor" href="#string-literals"></a></h3>
               <p>A
-                <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the
-                string has a
-                <tooltip content="a character that has special meaning in Python">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
+                <tooltip><template slot="_content">a string value, not a variable</template>string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>.
+                However, this will not work if the string has a
+                <tooltip><template slot="_content">a character that has special meaning in Python</template>special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
               <div id="strings-escape">
                 <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em>  to include a special character in a string literal</strong> without
                   interpreting it as a special character. Given below are some examples:</p>
@@ -179,7 +179,7 @@
                 </div>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Escape Sequences" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Escape Sequences</p></template>
                   <div>
                     <h4 id="exercise-escape-sequences">Exercise : Escape Sequences<a class="fa fa-anchor" href="#exercise-escape-sequences"></a></h4>
                     <p>Modify the <code>get_string()</code> function so that the code prints the given output.<br> Note that these words are separated by tabs, not normal spaces:<code>&quot;oops&quot;</code><span class="dimmed">{tab here}</span><code>&quot;ok&quot;</code>
@@ -193,13 +193,13 @@ print(get_string())
                     </p>
                     <pre><code class="hljs">Which word didn't he/she say? [&quot;oops&quot; &quot;ok&quot; &quot;oh?&quot;]
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Tips%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Tips</span></p></template>
                       <ul>
                         <li>Use <code>\t</code> to print a tab character.</li>
                         <li>Use <code>\'</code> to print a single quote inside a string.</li>
                       </ul>
                     </panel>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_string</span><span class="hljs-params">()</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-string">'Which word didn\'t he/she say? ...'</span>
 
@@ -266,7 +266,7 @@ This is the third line.
               </box>
               <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Multi-Line String" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Multi-Line String</p></template>
                   <div>
                     <h4 id="exercise-multi-line-string">Exercise : Multi-Line String<a class="fa fa-anchor" href="#exercise-multi-line-string"></a></h4>
                     <p>Modify the <code>get_multiline_string()</code> function so that the code prints the given output exactly as given.<br></p>
@@ -282,12 +282,12 @@ print(get_multiline_string())
   * &quot;ok&quot;
     * &quot;oh?&quot;
 </code></pre>
-                    <panel type="seamless" header="%%:bulb: Tips%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Tips</span></p></template>
                       <ul>
                         <li>Use <code>'''</code> to indicate multi-line strings.</li>
                       </ul>
                     </panel>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">'''Which word didn't he/she say?
 
 '''</span>
@@ -313,7 +313,7 @@ print(get_multiline_string())
               </tip-box>
               <p>📎 Vist <a href="https://www.python.org/dev/peps/pep-0257/">this page</a> to learn more about docstrings</p>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
@@ -385,7 +385,7 @@ the
               <p>
                 <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Strings are immutable. The following code will not work: <code>s[0] = 'h'</code></p>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Shorten String" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Shorten String</p></template>
                   <div>
                     <h4 id="exercise-shorten-string">Exercise : Shorten String<a class="fa fa-anchor" href="#exercise-shorten-string"></a></h4>
                     <p>Complete the function given below, to behave as described by its docstring.</p>
@@ -425,7 +425,7 @@ print(shorten(<span class="hljs-string">'1234567890abcd'</span>))
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python">  <span class="hljs-keyword">if</span> len(text) &gt; <span class="hljs-number">10</span>:
     <span class="hljs-keyword">return</span> text[:<span class="hljs-number">4</span>] + <span class="hljs-string">'..'</span> <span class="hljs-comment"># ...</span>
   <span class="hljs-keyword">else</span>:
@@ -463,14 +463,14 @@ True
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Has All Characters" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Has All Characters</p></template>
                   <div>
                     <h4 id="exercise-has-all-characters">Exercise : Has All Characters<a class="fa fa-anchor" href="#exercise-has-all-characters"></a></h4>
                     <p>Complete the function given below so that it returns <code>True</code> if <code>text</code> has all the characters in the list <code>characters</code>.</p>
@@ -500,7 +500,7 @@ False
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
   <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> characters:
     <span class="hljs-keyword">if</span> ...
@@ -600,7 +600,7 @@ True False
                 </div>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Rectify Case" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Rectify Case</p></template>
                   <div>
                     <h4 id="exercise-rectify-case">Exercise : Rectify Case<a class="fa fa-anchor" href="#exercise-rectify-case"></a></h4>
                     <p>Complete the <code>rectify_case(text)</code> function given below, to behave as follows:</p>
@@ -635,7 +635,7 @@ BABY FOX
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python">  <span class="hljs-keyword">if</span> text.isupper(): 
     <span class="hljs-keyword">return</span> text.lower()
   ...
@@ -646,7 +646,7 @@ BABY FOX
                 <p></p>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Is Doctor" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Is Doctor</p></template>
                   <div>
                     <h4 id="exercise-is-doctor">Exercise : Is Doctor<a class="fa fa-anchor" href="#exercise-is-doctor"></a></h4>
                     <p>Complete the <code>is_doctor(name)</code> function to return <code>True</code> for the following cases:</p>
@@ -692,10 +692,10 @@ False
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:bulb: Tips%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Tips</span></p></template>
                       <p>Convert the <code>name</code> to lower case and match with <code>dr.</code> or <code>(dr)</code> using string methods <code>startswith()</code>/<code>endswith()</code></p>
                     </panel>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python">  name = name.lower()
   <span class="hljs-keyword">return</span> name.startswith(<span class="hljs-string">'dr.'</span>) ...
 </code></pre>
@@ -731,7 +731,7 @@ print(s.find(<span class="hljs-string">'Spam'</span>))
                 </div>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Remove From Word" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Remove From Word</p></template>
                   <div>
                     <h4 id="exercise-remove-from-word">Exercise : Remove From Word<a class="fa fa-anchor" href="#exercise-remove-from-word"></a></h4>
                     <p>Complete the <code>remove_from_word(text, word)</code> function given below, to behave as follows:</p>
@@ -769,7 +769,7 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, tail_start_word)</span>:</span>
   tail_start_position = text.find(tail_start_word)
   <span class="hljs-keyword">if</span> tail_start_position != <span class="hljs-number">-1</span>:
@@ -782,7 +782,7 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
                 </panel>
                 <p></p>
               </div>
-              <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.</strong></p>
+              <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip><template slot="_content">the string object upon which the method was called</template>target string object</tooltip> as a <tooltip><template slot="_content">the string that is placed in between each pair of items</template>delimiter</tooltip>.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of the <code>join()</code> method:</p>
                 <div>
@@ -806,7 +806,7 @@ one-to-one
                 </div>
               </box>
               <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any
-                <tooltip content="space, tab, or newline characters">whitespaces</tooltip> in the string are used as delimiters.</p>
+                <tooltip><template slot="_content">space, tab, or newline characters</template>whitespaces</tooltip> in the string are used as delimiters.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using the <code>split()</code> method:</p>
                 <div>
@@ -862,7 +862,7 @@ print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-strin
                 </div>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Get Part" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Get Part</p></template>
                   <div>
                     <h4 id="exercise-get-part">Exercise : Get Part<a class="fa fa-anchor" href="#exercise-get-part"></a></h4>
                     <p>Complete the <code>get_part(text, index)</code> function given below, to behave as follows:</p>
@@ -896,7 +896,7 @@ Dog
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-keyword">return</span> text.split(<span class="hljs-string">'|'</span>)...
 </code></pre>
                     </panel>
@@ -944,14 +944,14 @@ Price===============
                 </div>
               </box>
               <div>
-                <panel type="seamless" header=":fas-laptop: Try your own" minimized class="algolia-no-index">
+                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p></template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </panel>
                 <p></p>
               </div>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Print Formatted Item" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Print Formatted Item</p></template>
                   <div>
                     <h4 id="exercise-print-formatted-item">Exercise : Print Formatted Item<a class="fa fa-anchor" href="#exercise-print-formatted-item"></a></h4>
                     <p>Complete the <code>print_formatted_item(name, count, width)</code> function given below, to behave as follows:</p>
@@ -1011,7 +1011,7 @@ pins(new).......:110
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_formatted_item</span><span class="hljs-params">(name, count, width)</span>:</span>
   name = name.replace(<span class="hljs-string">'['</span>, <span class="hljs-string">'('</span>).replace(...)
   print(name.ljust(width<span class="hljs-number">-4</span>, <span class="hljs-string">'.'</span>) + ...)
@@ -1058,7 +1058,7 @@ pins(new).......:110
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1090,6 +1090,7 @@ pins(new).......:110
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

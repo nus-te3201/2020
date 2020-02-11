@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Object-Oriented Programming</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -34,8 +34,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -124,7 +124,7 @@
               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> It is customary to use
                 <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
               <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
-              <modal title="CamelCase" id="modal:classes-camelcase" class="algolia-no-index">
+              <modal id="modal:classes-camelcase" class="algolia-no-index"><template slot="_header">CamelCase</template>
                 <p><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" target="_self"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt class="img-fluid"></a><br></p>
                 <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>.
                   <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
@@ -295,7 +295,7 @@ Sun Tzu
 </code></pre>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Create `StockItem` Class" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Create <code>StockItem</code> Class</p></template>
                   <div>
                     <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class<a class="fa fa-anchor" href="#exercise-create-stockitem-class"></a></h4>
                     <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
@@ -325,7 +325,7 @@ Item info: Bananas
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
@@ -439,7 +439,7 @@ yak yak
                 </p>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Add Class-Level Members to `Subject` Class" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add Class-Level Members to <code>Subject</code> Class</p></template>
                   <div>
                     <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class"></a></h4>
                     <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
@@ -486,7 +486,7 @@ True
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution and hints%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution and hints</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
   
   <span class="hljs-comment"># ADD `total` attribute here</span>
@@ -616,7 +616,7 @@ AttributeError: 'Account' object has no attribute '__get_income'...
                 </p>
               </tip-box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Change Visibility of `School` Class Members" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Change Visibility of <code>School</code> Class Members</p></template>
                   <div>
                     <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members"></a></h4>
                     <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
@@ -648,7 +648,7 @@ print(s.__max_expenditure())
                         </td>
                       </tr>
                     </table>
-                    <panel type="seamless" header="%%:bulb: Hint%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Hint</span></p></template>
                       <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
                     </panel>
                   </div>
@@ -659,9 +659,9 @@ print(s.__max_expenditure())
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="inheritance">Inheritance<a class="fa fa-anchor" href="#inheritance"></a></h3>
-              <p><strong>You can make a class <tooltip content="define a new class based on an existing class">inherit</tooltip> from another class.</strong> If you do, it is as if the
-                <tooltip content="the new class"><em>child class</em></tooltip> already has all the attributes and methods of the
-                <tooltip content="the class that was inherited from"><em>parent class</em></tooltip>.</p>
+              <p><strong>You can make a class <tooltip><template slot="_content">define a new class based on an existing class</template>inherit</tooltip> from another class.</strong> If you do, it is as if the
+                <tooltip><template slot="_content">the new class</template><em>child class</em></tooltip> already has all the attributes and methods of the
+                <tooltip><template slot="_content">the class that was inherited from</template><em>parent class</em></tooltip>.</p>
               <p>Syntax:</p>
               <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
   <span class="hljs-comment"># statements of the class</span>
@@ -732,7 +732,7 @@ the name is Dan
               </box>
 
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Add `Fish` Class" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add <code>Fish</code> Class</p></template>
                   <div>
                     <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class<a class="fa fa-anchor" href="#exercise-add-fish-class"></a></h4>
                     <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
@@ -770,7 +770,7 @@ I'm swimming
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
     ...
@@ -849,7 +849,7 @@ Ben is learning
                 </div>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Add `FlightlessBird` Class" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add <code>FlightlessBird</code> Class</p></template>
                   <div>
                     <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class<a class="fa fa-anchor" href="#exercise-add-flightlessbird-class"></a></h4>
                     <p>Do the following changes to the given code so that the code below produces the given output:</p>
@@ -904,7 +904,7 @@ I'm waddling
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
@@ -946,7 +946,7 @@ print(book)
                 </div>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Override `__str__()` Method" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Override <code>__str__()</code> Method</p></template>
                   <div>
                     <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method<a class="fa fa-anchor" href="#exercise-override-str-method"></a></h4>
                     <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
@@ -977,7 +977,7 @@ Ben (26years)
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
     <span class="hljs-keyword">return</span> self.name + ...
 </code></pre>
@@ -1062,7 +1062,7 @@ Elsie is grading
                   that is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code>.</p>
               </box>
               <div>
-                <panel type="danger" header=":fas-dumbbell: Exercise: Add `SmartPhone` Class" expanded no-close>
+                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add <code>SmartPhone</code> Class</p></template>
                   <div>
                     <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class<a class="fa fa-anchor" href="#exercise-add-smartphone-class"></a></h4>
                     <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
@@ -1101,7 +1101,7 @@ playing game
                         </tr>
                       </table>
                     </div>
-                    <panel type="seamless" header="%%:fas-battery-quarter: Partial solution%%" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
                       <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
@@ -1196,7 +1196,7 @@ invalid command: HA -&gt; command too short
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -1228,6 +1228,7 @@ invalid command: HA -&gt; command too short
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

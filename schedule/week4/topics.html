@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 4 - SE Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
   <link rel="stylesheet" href="/2020/css/schedule.css">
@@ -34,8 +33,8 @@
           <li><a href="/2020/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
-          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
@@ -68,6 +67,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -84,7 +84,7 @@
           </nav>
           <p></p>
           <h1 id="week-4-feb-3-se-topics">Week 4 <small><small><span class="dimmed">[Feb 3]</span> - SE Topics</small></small><a class="fa fa-anchor" href="#week-4-feb-3-se-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/2020/schedule/week4/topics.html#W4-1">W4.1</a>] <strong>OOP: Objects</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -110,7 +110,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W4-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w4-1-oop-objects">
             <span slot="header" class="card-title"><div><h2 id="w4-1-oop-objects"><span class="dimmed">[W4.1]</span> <strong>OOP: Objects</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w4-1-oop-objects"></a>
             </h2>
@@ -118,7 +118,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W4-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/introduction/what">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/introduction/what" id="paradigms-oop-introduction-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.1a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="paradigms-oop-introduction-what"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#paradigms-oop-introduction-what"></a></h4>
@@ -184,9 +184,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about OOP" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about OOP</p></template>
                           <question>
                             <p>A) Choose the correct statements</p>
                             <ul class="task-list">
@@ -214,7 +214,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: procedural vs OOP" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> procedural vs OOP</p></template>
                           <question>
                             <p>OO is a higher level mechanism than the procedural paradigm.</p>
                             <ul radio-group="07027" class="radio-list">
@@ -235,7 +235,7 @@
             </div>
           </panel>
           <p><span id="W4-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/objects/what">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/objects/what" id="paradigms-oop-objects-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.1b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="paradigms-oop-objects-what"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Objects →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#paradigms-oop-objects-what"></a></h4>
@@ -416,10 +416,10 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
 
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Describe objects in the given scenario" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Describe objects in the given scenario</p></template>
                           <question has-input="true">
                             <p>Consider the following real-world scenario.</p>
                             <box>
@@ -535,7 +535,7 @@
             </div>
           </panel>
           <p><span id="W4-1c"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/objects/abstraction">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/objects/abstraction" id="paradigms-oop-objects-objects-as-abstractions">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.1c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -556,7 +556,7 @@
                 <p></p>
                 <div>
                   <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                  <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index">
+                  <modal large id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index"><template slot="_header">Definition: Abstraction</template>
                     <div>
                       <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                     </div>
@@ -571,7 +571,7 @@
             </div>
           </panel>
           <p><span id="W4-1d"></span></p>
-          <panel type="seamless" expanded popup-url="/2020/book/oop/objects/encapsulation">
+          <panel type="seamless" expanded popup-url="/2020/book/oop/objects/encapsulation" id="paradigms-oop-objects-encapsulation-of-objects">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.1d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -600,9 +600,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Choose the correct statement." class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Choose the correct statement.</p></template>
                           <question>
                             <p>Choose the correct statements</p>
                             <ul class="task-list">
@@ -648,7 +648,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Wed, 05 Feb 2020 08:17:09 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.10.0</a> at Tue, 11 Feb 2020 03:37:08 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -680,6 +680,7 @@
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
