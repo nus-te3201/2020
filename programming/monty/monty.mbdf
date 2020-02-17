@@ -704,7 +704,7 @@ else:
 <p/>
 
 Given below are some more features you can consider adding at this point (it is ==optional to add them to Monty 7==):
-* **Remove the the need for the user to confirm before exiting Monty.** As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+* **Remove the need for the user to confirm before exiting Monty.** As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
   ```
   >>> What can I do for you?
   

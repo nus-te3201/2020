@@ -34,8 +34,8 @@
           <li><a href="/2020/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/2020/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/2020/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
-          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
@@ -597,6 +597,9 @@ T | 1 | join sports club
                 <li>remember to use relative paths rather than absolute paths such as <code>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
                 <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
               </ul>
+              <p>
+                <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must handle the case where the file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for the first
+                time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code>./data/</code>), you must also handle the 'folder does not exist yet' case.</p>
             </div>
             <hr>
             <div id="Level-8">
