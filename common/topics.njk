@@ -47,6 +47,16 @@
 
 
 {%- macro make_anchor(text) %}{{ text | trim | replace(".", "-") }}{% endmacro -%}
+{%- macro slugify(text) %}{{ text | lower | replace(' ', '-') | replace(':', '')  | replace('/', '-') | replace(',', '')  | replace("'", "") }}{% endmacro -%}
+{%- macro commentary(span_id) %}
+<include src="commentary.mbdf#{{ span_id }}" optional />
+{% endmacro -%}
+{%- macro followup(span_id) %}
+<p/>
+<div class="indented">
+<include src="commentary.mbdf#followup-{{ span_id }}" optional />
+</div>
+{% endmacro -%}
 
 
 {% macro apply_to(filter_property, filter_value, entries, op, params={})%}
@@ -72,6 +82,8 @@
 {% if not is_toc %}
 <span id="{{ make_anchor(id_prefix) }}" />
 
+{{ commentary(slugify(full_path)) }}
+
 <panel type="seamless" {{ expanded }} popup-url="{{ baseUrl }}/book/{{  full_path }}">
 <span slot="header" class="card-title">
 <span class='badge badge-pill badge-light text-mute'>{{ id_prefix }}</span> {{ show_stars(priority) }}
@@ -80,6 +92,7 @@
 </span>
   <include src="{{ path_displacement }}../../book/{{  full_path }}/unit-inElsewhere-asPanelBody.md" boilerplate />
 </panel>
+{{ followup(slugify(full_path)) }}
 {% else %}
 * %%[[{{ id_prefix }}](topics.html#{{ make_anchor(id_prefix) }})] <include src="{{ path_displacement }}../../book/{{  full_path }}/../path.md" inline />%% <include src="{{ path_displacement }}../../book/{{  full_path }}/text.md#title" inline /> {{ show_stars(priority) }}
 {% endif %}
@@ -117,6 +130,7 @@
 
 {% macro show_subheading(subheading) %}
 <br/>
+{{ commentary(slugify(subheading)) }}
 
 ### %%**{{ subheading }}**%%
 {% endmacro %}
@@ -154,6 +168,8 @@
 {% else %}
 <span id="{{ anchor }}" />
 
+{{ commentary(slugify(params.topic.heading)) }}
+
 <panel type="seamless" no-close {{ panel_decorations }} expandable="{{ panel_expandable }}" expanded >
 <span slot="header" class="card-title"><markdown>## %%[{{ prefix | trim }}]%% **{{ params.topic.heading }}** <small><small>{{ show_stars(priority) }}</small></small></markdown> </span>
 <div class="indented-level1">
@@ -167,6 +183,7 @@
 {% endfor %}
 </div>
 </panel>
+{{ followup(slugify(params.topic.heading)) }}
 {% endif %} {# if params.is_toc #}
 {% endmacro %}
 

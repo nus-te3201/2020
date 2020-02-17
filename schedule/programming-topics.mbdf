@@ -129,12 +129,26 @@
 * [**Using an IDE**]({{ baseUrl }}/programming/chapters/ide.html#appendix-b-using-an-ide)
 </div>
 
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Most programs need to read from, and write to, files in the hard disk. The topics below cover the Python basics of file reading/writing.
+</variable>
+</include>
+
 ## **Files**
 
 <include src="../programming/files-paths/text.md" />{{ hr_double }}
 <include src="../programming/files-reading/text.md" />{{ hr_double }}
 <include src="../programming/files-writing/text.md" />{{ hr_double }}
 <include src="../programming/files-csv/text.md" />{{ hr_double }}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+You are already familiar with repl.it, which can be considered an _online IDE_ with limited features. It is now time to learn a non-online IDE which often can do more things than an online IDE.
+</variable>
+</include>
 
 <include src="../programming/ide/text.md" />{{ hr_double }}
 
