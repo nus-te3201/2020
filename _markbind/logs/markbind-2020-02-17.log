@@ -1,0 +1,633 @@
+2020-02-17T06:59:45.879Z - info: Website generation started at 2:59:45 PM
+2020-02-17T06:59:48.168Z - info: Building assets...
+2020-02-17T06:59:49.838Z - info: Assets built
+2020-02-17T06:59:49.839Z - info: Generating pages...
+2020-02-17T07:00:19.226Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.227Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.228Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.228Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.229Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.230Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.231Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:19.231Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:00:23.346Z - debug:  
+2020-02-17T07:00:23.346Z - debug:  
+2020-02-17T07:00:23.347Z - debug:  
+2020-02-17T07:00:55.045Z - info: Pages built
+2020-02-17T07:01:06.123Z - info: Website generation complete! Total build time: 80.933s
+2020-02-17T07:01:16.432Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-17T07:01:16.432Z - info: Press CTRL+C to stop ...
+2020-02-17T07:01:16.521Z - info: Site data built
+2020-02-17T07:04:46.727Z - info: [3:04:46 PM] Reload for file add: C:\repos\nus-te3201\te3201-2020-website\schedule\week7\commentary.mbdf
+2020-02-17T07:04:47.729Z - warn: Rebuilding all source files
+2020-02-17T07:04:49.595Z - info: Assets removed
+2020-02-17T07:04:49.595Z - info: Generating pages...
+2020-02-17T07:04:53.267Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week7\topics.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:313:27)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:383:59)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:383:45)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:626:30)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:623:27)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+    at Tokenizer._finish (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Tokenizer.js:890:15)
+    at Tokenizer.end (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Tokenizer.js:881:29)
+    at Parser.end (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:367:21)
+2020-02-17T07:05:18.059Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.059Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.060Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.061Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.062Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.062Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.063Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:18.063Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T07:05:25.282Z - debug:  
+2020-02-17T07:05:25.283Z - debug:  
+2020-02-17T07:05:25.283Z - debug:  
+2020-02-17T07:05:44.387Z - info: [3:05:44 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week7\commentary.mbdf
+2020-02-17T07:05:46.477Z - info: Rebuilding affected source files
+2020-02-17T07:05:46.479Z - info: Rebuilding 1 pages
+2020-02-17T07:06:04.413Z - info: Pages rebuilt
+2020-02-17T07:06:04.426Z - info: Site data built
+2020-02-17T07:06:04.450Z - info: Pages built
+2020-02-17T07:07:02.790Z - info: Website generation started at 3:07:02 PM
+2020-02-17T07:07:04.699Z - info: Building assets...
+2020-02-17T07:07:06.423Z - info: Assets built
+2020-02-17T07:07:06.423Z - info: Generating pages...
+2020-02-17T07:07:07.279Z - info: Pages built
+2020-02-17T07:07:07.548Z - info: Website generation complete! Total build time: 5.35s
+2020-02-17T07:07:17.860Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-17T07:07:17.860Z - info: Press CTRL+C to stop ...
+2020-02-17T07:07:17.943Z - info: Site data built
+2020-02-17T07:07:33.329Z - info: [3:07:33 PM] Reload for file add: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:07:33.427Z - info: [3:07:33 PM] Reload for file deletion: C:\repos\nus-te3201\te3201-2020-website\schedule\week7\commentary.mbdf
+2020-02-17T07:07:34.330Z - warn: Rebuilding all source files
+2020-02-17T07:07:36.141Z - info: Assets removed
+2020-02-17T07:07:36.142Z - info: Generating pages...
+2020-02-17T07:07:37.148Z - info: Pages built
+2020-02-17T07:09:59.845Z - info: [3:09:59 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:10:00.848Z - info: Rebuilding affected source files
+2020-02-17T07:10:00.849Z - info: Rebuilding 2 pages
+2020-02-17T07:10:01.966Z - info: Pages rebuilt
+2020-02-17T07:10:01.970Z - info: Site data built
+2020-02-17T07:10:48.051Z - info: [3:10:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:10:49.053Z - info: Rebuilding affected source files
+2020-02-17T07:10:49.053Z - info: Rebuilding 2 pages
+2020-02-17T07:10:50.165Z - info: Pages rebuilt
+2020-02-17T07:10:50.170Z - info: Site data built
+2020-02-17T07:14:48.070Z - info: [3:14:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\topics.njk
+2020-02-17T07:14:49.076Z - info: Assets built
+2020-02-17T07:14:52.554Z - info: Website generation started at 3:14:52 PM
+2020-02-17T07:14:54.602Z - info: Building assets...
+2020-02-17T07:14:56.237Z - info: Assets built
+2020-02-17T07:14:56.238Z - info: Generating pages...
+2020-02-17T07:14:57.099Z - info: Pages built
+2020-02-17T07:14:57.312Z - info: Website generation complete! Total build time: 5.069s
+2020-02-17T07:15:07.630Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-17T07:15:07.630Z - info: Press CTRL+C to stop ...
+2020-02-17T07:15:07.661Z - info: Site data built
+2020-02-17T07:15:19.297Z - info: [3:15:19 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:15:20.302Z - info: Rebuilding affected source files
+2020-02-17T07:15:20.304Z - info: Rebuilding 1 pages
+2020-02-17T07:15:20.996Z - info: Pages rebuilt
+2020-02-17T07:15:20.999Z - info: Site data built
+2020-02-17T07:15:41.246Z - info: [3:15:41 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:15:42.249Z - info: Rebuilding affected source files
+2020-02-17T07:15:42.249Z - info: Rebuilding 1 pages
+2020-02-17T07:15:42.915Z - info: Pages rebuilt
+2020-02-17T07:15:42.917Z - info: Site data built
+2020-02-17T07:16:38.711Z - info: [3:16:38 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:16:39.712Z - info: Rebuilding affected source files
+2020-02-17T07:16:39.712Z - info: Rebuilding 1 pages
+2020-02-17T07:16:40.440Z - info: Pages rebuilt
+2020-02-17T07:16:40.443Z - info: Site data built
+2020-02-17T07:16:50.344Z - info: [3:16:50 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:16:51.346Z - info: Rebuilding affected source files
+2020-02-17T07:16:51.346Z - info: Rebuilding 1 pages
+2020-02-17T07:16:51.870Z - info: Pages rebuilt
+2020-02-17T07:16:51.875Z - info: Site data built
+2020-02-17T07:16:55.533Z - info: [3:16:55 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:16:56.535Z - info: Rebuilding affected source files
+2020-02-17T07:16:56.536Z - info: Rebuilding 1 pages
+2020-02-17T07:16:57.129Z - info: Pages rebuilt
+2020-02-17T07:16:57.132Z - info: Site data built
+2020-02-17T07:17:42.800Z - info: [3:17:42 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\topics.njk
+2020-02-17T07:17:42.809Z - info: [3:17:42 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:17:43.809Z - info: Rebuilding affected source files
+2020-02-17T07:17:43.810Z - info: Rebuilding 1 pages
+2020-02-17T07:17:43.811Z - info: Assets built
+2020-02-17T07:17:44.558Z - info: Pages rebuilt
+2020-02-17T07:17:44.564Z - info: Site data built
+2020-02-17T07:18:14.647Z - info: [3:18:14 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:18:15.649Z - info: Rebuilding affected source files
+2020-02-17T07:18:15.649Z - info: Rebuilding 1 pages
+2020-02-17T07:18:16.313Z - info: Pages rebuilt
+2020-02-17T07:18:16.316Z - info: Site data built
+2020-02-17T07:19:09.342Z - info: [3:19:09 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:19:10.344Z - info: Rebuilding affected source files
+2020-02-17T07:19:10.345Z - info: Rebuilding 1 pages
+2020-02-17T07:19:11.031Z - info: Pages rebuilt
+2020-02-17T07:19:11.033Z - info: Site data built
+2020-02-17T07:19:37.894Z - info: [3:19:37 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:19:38.894Z - info: Rebuilding affected source files
+2020-02-17T07:19:38.895Z - info: Rebuilding 1 pages
+2020-02-17T07:19:39.644Z - info: Pages rebuilt
+2020-02-17T07:19:39.646Z - info: Site data built
+2020-02-17T07:20:51.568Z - info: [3:20:51 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\topics.njk
+2020-02-17T07:20:52.575Z - info: Assets built
+2020-02-17T07:21:04.616Z - info: [3:21:04 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:21:05.617Z - info: Rebuilding affected source files
+2020-02-17T07:21:05.617Z - info: Rebuilding 1 pages
+2020-02-17T07:21:06.321Z - info: Pages rebuilt
+2020-02-17T07:21:06.323Z - info: Site data built
+2020-02-17T07:21:16.245Z - info: [3:21:16 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:21:17.247Z - info: Rebuilding affected source files
+2020-02-17T07:21:17.248Z - info: Rebuilding 1 pages
+2020-02-17T07:21:17.842Z - info: Pages rebuilt
+2020-02-17T07:21:17.848Z - info: Site data built
+2020-02-17T07:21:35.457Z - info: [3:21:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\topics.njk
+2020-02-17T07:21:36.463Z - info: Assets built
+2020-02-17T07:22:16.014Z - info: [3:22:16 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\topics.njk
+2020-02-17T07:22:17.020Z - info: Assets built
+2020-02-17T07:22:24.636Z - info: Website generation started at 3:22:24 PM
+2020-02-17T07:22:26.642Z - info: Building assets...
+2020-02-17T07:22:28.276Z - info: Assets built
+2020-02-17T07:22:28.276Z - info: Generating pages...
+2020-02-17T07:22:29.133Z - info: Pages built
+2020-02-17T07:22:29.349Z - info: Website generation complete! Total build time: 5.051s
+2020-02-17T07:22:39.679Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-17T07:22:39.679Z - info: Press CTRL+C to stop ...
+2020-02-17T07:22:39.706Z - info: Site data built
+2020-02-17T07:26:28.530Z - info: [3:26:28 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:26:29.536Z - info: Rebuilding affected source files
+2020-02-17T07:26:29.537Z - info: Rebuilding 1 pages
+2020-02-17T07:26:30.277Z - info: Pages rebuilt
+2020-02-17T07:26:30.279Z - info: Site data built
+2020-02-17T07:27:41.905Z - info: [3:27:41 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:27:42.907Z - info: Rebuilding affected source files
+2020-02-17T07:27:42.908Z - info: Rebuilding 1 pages
+2020-02-17T07:27:43.651Z - info: Pages rebuilt
+2020-02-17T07:27:43.654Z - info: Site data built
+2020-02-17T07:28:05.328Z - info: [3:28:05 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:28:06.331Z - info: Rebuilding affected source files
+2020-02-17T07:28:06.332Z - info: Rebuilding 1 pages
+2020-02-17T07:28:07.000Z - info: Pages rebuilt
+2020-02-17T07:28:07.003Z - info: Site data built
+2020-02-17T07:28:37.280Z - info: [3:28:37 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:28:38.283Z - info: Rebuilding affected source files
+2020-02-17T07:28:38.284Z - info: Rebuilding 1 pages
+2020-02-17T07:28:39.027Z - info: Pages rebuilt
+2020-02-17T07:28:39.030Z - info: Site data built
+2020-02-17T07:29:14.278Z - info: [3:29:14 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:29:15.281Z - info: Rebuilding affected source files
+2020-02-17T07:29:15.282Z - info: Rebuilding 1 pages
+2020-02-17T07:29:16.000Z - info: Pages rebuilt
+2020-02-17T07:29:16.003Z - info: Site data built
+2020-02-17T07:29:24.578Z - info: [3:29:24 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:29:25.579Z - info: Rebuilding affected source files
+2020-02-17T07:29:25.580Z - info: Rebuilding 1 pages
+2020-02-17T07:29:26.138Z - info: Pages rebuilt
+2020-02-17T07:29:26.145Z - info: Site data built
+2020-02-17T07:29:36.096Z - info: [3:29:36 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:29:37.098Z - info: Rebuilding affected source files
+2020-02-17T07:29:37.098Z - info: Rebuilding 1 pages
+2020-02-17T07:29:37.658Z - info: Pages rebuilt
+2020-02-17T07:29:37.663Z - info: Site data built
+2020-02-17T07:29:53.757Z - info: [3:29:53 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:29:54.758Z - info: Rebuilding affected source files
+2020-02-17T07:29:54.758Z - info: Rebuilding 1 pages
+2020-02-17T07:29:55.482Z - info: Pages rebuilt
+2020-02-17T07:29:55.485Z - info: Site data built
+2020-02-17T07:30:38.954Z - info: [3:30:38 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:30:39.957Z - info: Rebuilding affected source files
+2020-02-17T07:30:39.958Z - info: Rebuilding 1 pages
+2020-02-17T07:30:40.648Z - info: Pages rebuilt
+2020-02-17T07:30:40.650Z - info: Site data built
+2020-02-17T07:30:54.842Z - info: [3:30:54 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:30:55.844Z - info: Rebuilding affected source files
+2020-02-17T07:30:55.844Z - info: Rebuilding 1 pages
+2020-02-17T07:30:56.391Z - info: Pages rebuilt
+2020-02-17T07:30:56.396Z - info: Site data built
+2020-02-17T07:31:03.921Z - info: [3:31:03 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:31:04.921Z - info: Rebuilding affected source files
+2020-02-17T07:31:04.923Z - info: Rebuilding 1 pages
+2020-02-17T07:31:05.535Z - info: Pages rebuilt
+2020-02-17T07:31:05.537Z - info: Site data built
+2020-02-17T07:31:11.745Z - info: [3:31:11 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:31:12.745Z - info: Rebuilding affected source files
+2020-02-17T07:31:12.746Z - info: Rebuilding 1 pages
+2020-02-17T07:31:13.236Z - info: Pages rebuilt
+2020-02-17T07:31:13.238Z - info: Site data built
+2020-02-17T07:31:35.417Z - info: [3:31:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:31:36.419Z - info: Rebuilding affected source files
+2020-02-17T07:31:36.419Z - info: Rebuilding 1 pages
+2020-02-17T07:31:37.089Z - info: Pages rebuilt
+2020-02-17T07:31:37.092Z - info: Site data built
+2020-02-17T07:31:50.310Z - info: [3:31:50 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:31:51.312Z - info: Rebuilding affected source files
+2020-02-17T07:31:51.312Z - info: Rebuilding 1 pages
+2020-02-17T07:31:51.864Z - info: Pages rebuilt
+2020-02-17T07:31:51.869Z - info: Site data built
+2020-02-17T07:32:41.687Z - info: [3:32:41 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:32:42.689Z - info: Rebuilding affected source files
+2020-02-17T07:32:42.690Z - info: Rebuilding 1 pages
+2020-02-17T07:32:43.424Z - info: Pages rebuilt
+2020-02-17T07:32:43.426Z - info: Site data built
+2020-02-17T07:33:02.014Z - info: [3:33:02 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:33:03.016Z - info: Rebuilding affected source files
+2020-02-17T07:33:03.017Z - info: Rebuilding 1 pages
+2020-02-17T07:33:03.722Z - info: Pages rebuilt
+2020-02-17T07:33:03.725Z - info: Site data built
+2020-02-17T07:33:34.494Z - info: [3:33:34 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:33:35.496Z - info: Rebuilding affected source files
+2020-02-17T07:33:35.497Z - info: Rebuilding 1 pages
+2020-02-17T07:33:36.261Z - info: Pages rebuilt
+2020-02-17T07:33:36.264Z - info: Site data built
+2020-02-17T07:35:02.666Z - info: [3:35:02 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:35:03.665Z - info: Rebuilding affected source files
+2020-02-17T07:35:03.666Z - info: Rebuilding 1 pages
+2020-02-17T07:35:04.421Z - info: Pages rebuilt
+2020-02-17T07:35:04.424Z - info: Site data built
+2020-02-17T07:35:13.152Z - info: [3:35:13 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:35:14.153Z - info: Rebuilding affected source files
+2020-02-17T07:35:14.153Z - info: Rebuilding 1 pages
+2020-02-17T07:35:14.710Z - info: Pages rebuilt
+2020-02-17T07:35:14.716Z - info: Site data built
+2020-02-17T07:35:28.528Z - info: [3:35:28 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:35:29.529Z - info: Rebuilding affected source files
+2020-02-17T07:35:29.530Z - info: Rebuilding 1 pages
+2020-02-17T07:35:30.208Z - info: Pages rebuilt
+2020-02-17T07:35:30.210Z - info: Site data built
+2020-02-17T07:36:52.188Z - info: [3:36:52 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:36:53.188Z - info: Rebuilding affected source files
+2020-02-17T07:36:53.189Z - info: Rebuilding 1 pages
+2020-02-17T07:36:53.950Z - info: Pages rebuilt
+2020-02-17T07:36:53.953Z - info: Site data built
+2020-02-17T07:37:41.995Z - info: [3:37:41 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:37:42.996Z - info: Rebuilding affected source files
+2020-02-17T07:37:42.996Z - info: Rebuilding 1 pages
+2020-02-17T07:37:43.626Z - info: Pages rebuilt
+2020-02-17T07:37:43.628Z - info: Site data built
+2020-02-17T07:38:03.084Z - info: [3:38:03 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:38:04.084Z - info: Rebuilding affected source files
+2020-02-17T07:38:04.085Z - info: Rebuilding 1 pages
+2020-02-17T07:38:04.876Z - info: Pages rebuilt
+2020-02-17T07:38:04.878Z - info: Site data built
+2020-02-17T07:38:12.699Z - info: [3:38:12 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:38:13.701Z - info: Rebuilding affected source files
+2020-02-17T07:38:13.701Z - info: Rebuilding 1 pages
+2020-02-17T07:38:14.298Z - info: Pages rebuilt
+2020-02-17T07:38:14.305Z - info: Site data built
+2020-02-17T07:39:44.381Z - info: [3:39:44 PM] Reload for file add: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:39:45.382Z - warn: Rebuilding all source files
+2020-02-17T07:39:47.255Z - info: Assets removed
+2020-02-17T07:39:47.255Z - info: Generating pages...
+2020-02-17T07:39:48.317Z - info: Pages built
+2020-02-17T07:40:21.501Z - info: [3:40:21 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T07:40:21.504Z - info: [3:40:21 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:40:22.501Z - info: Rebuilding affected source files
+2020-02-17T07:40:22.502Z - info: Rebuilding 2 pages
+2020-02-17T07:40:23.932Z - info: Pages rebuilt
+2020-02-17T07:40:23.941Z - info: Site data built
+2020-02-17T07:43:45.855Z - info: [3:43:45 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:43:46.857Z - info: Rebuilding affected source files
+2020-02-17T07:43:46.857Z - info: Rebuilding 2 pages
+2020-02-17T07:43:48.187Z - info: Pages rebuilt
+2020-02-17T07:43:48.191Z - info: Site data built
+2020-02-17T07:45:16.988Z - info: [3:45:16 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:45:17.990Z - info: Rebuilding affected source files
+2020-02-17T07:45:17.992Z - info: Rebuilding 2 pages
+2020-02-17T07:45:19.201Z - info: Pages rebuilt
+2020-02-17T07:45:19.204Z - info: Site data built
+2020-02-17T07:45:31.956Z - info: [3:45:31 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:45:32.956Z - info: Rebuilding affected source files
+2020-02-17T07:45:32.957Z - info: Rebuilding 2 pages
+2020-02-17T07:45:33.940Z - info: Pages rebuilt
+2020-02-17T07:45:33.944Z - info: Site data built
+2020-02-17T07:45:54.027Z - info: [3:45:54 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:45:55.030Z - info: Rebuilding affected source files
+2020-02-17T07:45:55.031Z - info: Rebuilding 2 pages
+2020-02-17T07:45:56.162Z - info: Pages rebuilt
+2020-02-17T07:45:56.166Z - info: Site data built
+2020-02-17T07:46:41.466Z - info: [3:46:41 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:46:42.467Z - info: Rebuilding affected source files
+2020-02-17T07:46:42.468Z - info: Rebuilding 2 pages
+2020-02-17T07:46:43.586Z - info: Pages rebuilt
+2020-02-17T07:46:43.590Z - info: Site data built
+2020-02-17T07:47:08.767Z - info: [3:47:08 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:47:09.770Z - info: Rebuilding affected source files
+2020-02-17T07:47:09.771Z - info: Rebuilding 2 pages
+2020-02-17T07:47:10.897Z - info: Pages rebuilt
+2020-02-17T07:47:10.902Z - info: Site data built
+2020-02-17T07:47:25.802Z - info: [3:47:25 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:47:26.803Z - info: Rebuilding affected source files
+2020-02-17T07:47:26.804Z - info: Rebuilding 2 pages
+2020-02-17T07:47:27.842Z - info: Pages rebuilt
+2020-02-17T07:47:27.846Z - info: Site data built
+2020-02-17T07:47:41.104Z - info: [3:47:41 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:47:42.111Z - info: Rebuilding affected source files
+2020-02-17T07:47:42.112Z - info: Rebuilding 2 pages
+2020-02-17T07:47:43.128Z - info: Pages rebuilt
+2020-02-17T07:47:43.133Z - info: Site data built
+2020-02-17T07:47:49.775Z - info: [3:47:49 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:47:50.776Z - info: Rebuilding affected source files
+2020-02-17T07:47:50.778Z - info: Rebuilding 2 pages
+2020-02-17T07:47:51.710Z - info: Pages rebuilt
+2020-02-17T07:47:51.716Z - info: Site data built
+2020-02-17T07:48:12.199Z - info: [3:48:12 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:48:13.202Z - info: Rebuilding affected source files
+2020-02-17T07:48:13.203Z - info: Rebuilding 2 pages
+2020-02-17T07:48:14.422Z - info: Pages rebuilt
+2020-02-17T07:48:14.427Z - info: Site data built
+2020-02-17T07:48:18.672Z - info: [3:48:18 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:48:19.672Z - info: Rebuilding affected source files
+2020-02-17T07:48:19.672Z - info: Rebuilding 2 pages
+2020-02-17T07:48:20.601Z - info: Pages rebuilt
+2020-02-17T07:48:20.607Z - info: Site data built
+2020-02-17T07:48:27.935Z - info: [3:48:27 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:48:28.937Z - info: Rebuilding affected source files
+2020-02-17T07:48:28.937Z - info: Rebuilding 2 pages
+2020-02-17T07:48:29.883Z - info: Pages rebuilt
+2020-02-17T07:48:29.887Z - info: Site data built
+2020-02-17T07:48:52.891Z - info: [3:48:52 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:48:53.893Z - info: Rebuilding affected source files
+2020-02-17T07:48:53.894Z - info: Rebuilding 2 pages
+2020-02-17T07:48:55.012Z - info: Pages rebuilt
+2020-02-17T07:48:55.017Z - info: Site data built
+2020-02-17T07:49:12.267Z - info: [3:49:12 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:49:13.270Z - info: Rebuilding affected source files
+2020-02-17T07:49:13.271Z - info: Rebuilding 2 pages
+2020-02-17T07:49:14.500Z - info: Pages rebuilt
+2020-02-17T07:49:14.504Z - info: Site data built
+2020-02-17T07:49:21.547Z - info: [3:49:21 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:49:22.549Z - info: Rebuilding affected source files
+2020-02-17T07:49:22.550Z - info: Rebuilding 2 pages
+2020-02-17T07:49:23.484Z - info: Pages rebuilt
+2020-02-17T07:49:23.490Z - info: Site data built
+2020-02-17T07:49:39.397Z - info: [3:49:39 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:49:40.398Z - info: Rebuilding affected source files
+2020-02-17T07:49:40.400Z - info: Rebuilding 2 pages
+2020-02-17T07:49:41.526Z - info: Pages rebuilt
+2020-02-17T07:49:41.532Z - info: Site data built
+2020-02-17T07:49:47.019Z - info: [3:49:47 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:49:48.022Z - info: Rebuilding affected source files
+2020-02-17T07:49:48.023Z - info: Rebuilding 2 pages
+2020-02-17T07:49:48.983Z - info: Pages rebuilt
+2020-02-17T07:49:48.989Z - info: Site data built
+2020-02-17T07:50:07.228Z - info: [3:50:07 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T07:50:08.230Z - info: Rebuilding affected source files
+2020-02-17T07:50:08.231Z - info: Rebuilding 2 pages
+2020-02-17T07:50:09.375Z - info: Pages rebuilt
+2020-02-17T07:50:09.381Z - info: Site data built
+2020-02-17T07:51:04.061Z - info: [3:51:04 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:51:05.062Z - info: Rebuilding affected source files
+2020-02-17T07:51:05.063Z - info: Rebuilding 2 pages
+2020-02-17T07:51:06.230Z - info: Pages rebuilt
+2020-02-17T07:51:06.242Z - info: Site data built
+2020-02-17T07:51:14.978Z - info: [3:51:14 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:51:15.980Z - info: Rebuilding affected source files
+2020-02-17T07:51:15.981Z - info: Rebuilding 2 pages
+2020-02-17T07:51:17.023Z - info: Pages rebuilt
+2020-02-17T07:51:17.029Z - info: Site data built
+2020-02-17T07:52:07.603Z - info: [3:52:07 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:52:08.605Z - info: Rebuilding affected source files
+2020-02-17T07:52:08.606Z - info: Rebuilding 2 pages
+2020-02-17T07:52:09.821Z - info: Pages rebuilt
+2020-02-17T07:52:09.828Z - info: Site data built
+2020-02-17T07:52:44.882Z - info: [3:52:44 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:52:45.883Z - info: Rebuilding affected source files
+2020-02-17T07:52:45.885Z - info: Rebuilding 2 pages
+2020-02-17T07:52:47.101Z - info: Pages rebuilt
+2020-02-17T07:52:47.106Z - info: Site data built
+2020-02-17T07:53:00.581Z - info: [3:53:00 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T07:53:01.584Z - info: Rebuilding affected source files
+2020-02-17T07:53:01.584Z - info: Rebuilding 2 pages
+2020-02-17T07:53:02.531Z - info: Pages rebuilt
+2020-02-17T07:53:02.534Z - info: Site data built
+2020-02-17T10:28:14.337Z - info: [6:28:14 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T10:28:15.339Z - info: Rebuilding affected source files
+2020-02-17T10:28:15.341Z - info: Rebuilding 2 pages
+2020-02-17T10:28:16.049Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:162:23)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:654:12)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:814:16)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2020-02-17T10:28:16.050Z - warn:  Error: Error while generating C:\repos\nus-te3201\te3201-2020-website\schedule\week6\topics.md
+    at processingFiles.push.page.generate.catch (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:821:35)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:725:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+2020-02-17T10:28:17.206Z - error: Error while generating C:\repos\nus-te3201\te3201-2020-website\schedule\week6\topics.md
+2020-02-17T10:34:18.167Z - info: [6:34:18 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T10:34:18.168Z - info: Rebuilding affected source files
+2020-02-17T10:34:18.169Z - info: Rebuilding 1 pages
+2020-02-17T10:34:19.135Z - info: Pages rebuilt
+2020-02-17T10:34:19.138Z - info: Site data built
+2020-02-17T10:34:19.139Z - error: Error while generating C:\repos\nus-te3201\te3201-2020-website\schedule\week6\topics.md
+2020-02-17T10:34:41.795Z - info: Website generation started at 6:34:41 PM
+2020-02-17T10:34:43.795Z - info: Building assets...
+2020-02-17T10:34:45.637Z - info: Assets built
+2020-02-17T10:34:45.638Z - info: Generating pages...
+2020-02-17T10:34:46.540Z - info: Pages built
+2020-02-17T10:34:46.798Z - info: Website generation complete! Total build time: 5.01s
+2020-02-17T10:34:57.147Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-17T10:34:57.147Z - info: Press CTRL+C to stop ...
+2020-02-17T10:34:57.230Z - info: Site data built
+2020-02-17T10:34:57.720Z - info: [6:34:57 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T10:34:59.049Z - info: Rebuilding affected source files
+2020-02-17T10:34:59.050Z - info: Rebuilding 1 pages
+2020-02-17T10:35:00.546Z - info: Pages rebuilt
+2020-02-17T10:35:00.560Z - info: Site data built
+2020-02-17T10:35:27.159Z - info: [6:35:27 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T10:35:28.161Z - info: Rebuilding affected source files
+2020-02-17T10:35:28.162Z - info: Rebuilding 1 pages
+2020-02-17T10:35:28.960Z - info: Pages rebuilt
+2020-02-17T10:35:28.962Z - info: Site data built
+2020-02-17T10:36:52.883Z - info: [6:36:52 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T10:36:53.885Z - info: Rebuilding affected source files
+2020-02-17T10:36:53.886Z - info: Rebuilding 1 pages
+2020-02-17T10:36:54.618Z - info: Pages rebuilt
+2020-02-17T10:36:54.623Z - info: Site data built
+2020-02-17T10:37:24.178Z - info: [6:37:24 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:37:25.181Z - info: Rebuilding affected source files
+2020-02-17T10:37:25.181Z - info: Rebuilding 1 pages
+2020-02-17T10:37:25.900Z - info: Pages rebuilt
+2020-02-17T10:37:25.903Z - info: Site data built
+2020-02-17T10:38:01.988Z - info: [6:38:01 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T10:38:02.991Z - info: Rebuilding affected source files
+2020-02-17T10:38:02.991Z - info: Rebuilding 1 pages
+2020-02-17T10:38:03.722Z - info: Pages rebuilt
+2020-02-17T10:38:03.725Z - info: Site data built
+2020-02-17T10:39:16.118Z - info: [6:39:16 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T10:39:17.121Z - info: Rebuilding affected source files
+2020-02-17T10:39:17.121Z - info: Rebuilding 1 pages
+2020-02-17T10:39:17.870Z - info: Pages rebuilt
+2020-02-17T10:39:17.873Z - info: Site data built
+2020-02-17T10:39:25.141Z - info: [6:39:25 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T10:39:26.143Z - info: Rebuilding affected source files
+2020-02-17T10:39:26.143Z - info: Rebuilding 1 pages
+2020-02-17T10:39:26.735Z - info: Pages rebuilt
+2020-02-17T10:39:26.738Z - info: Site data built
+2020-02-17T10:43:42.736Z - info: [6:43:42 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T10:43:43.738Z - info: Rebuilding affected source files
+2020-02-17T10:43:43.739Z - info: Rebuilding 1 pages
+2020-02-17T10:43:44.467Z - info: Pages rebuilt
+2020-02-17T10:43:44.470Z - info: Site data built
+2020-02-17T10:45:08.721Z - info: Website generation started at 6:45:08 PM
+2020-02-17T10:45:10.641Z - info: Building assets...
+2020-02-17T10:45:12.243Z - info: Assets built
+2020-02-17T10:45:12.243Z - info: Generating pages...
+2020-02-17T10:45:13.010Z - info: Pages built
+2020-02-17T10:45:13.206Z - info: Website generation complete! Total build time: 4.804s
+2020-02-17T10:45:23.537Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-17T10:45:23.537Z - info: Press CTRL+C to stop ...
+2020-02-17T10:45:23.564Z - info: Site data built
+2020-02-17T10:46:12.694Z - info: [6:46:12 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-02-17T10:46:13.696Z - info: Rebuilding affected source files
+2020-02-17T10:46:13.697Z - info: Rebuilding 1 pages
+2020-02-17T10:46:14.291Z - info: Pages rebuilt
+2020-02-17T10:46:14.294Z - info: Site data built
+2020-02-17T10:47:39.836Z - info: [6:47:39 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-02-17T10:47:40.838Z - info: Rebuilding affected source files
+2020-02-17T10:47:40.839Z - info: Rebuilding 1 pages
+2020-02-17T10:47:41.434Z - info: Pages rebuilt
+2020-02-17T10:47:41.441Z - info: Site data built
+2020-02-17T10:50:21.067Z - info: [6:50:21 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:50:22.070Z - info: Rebuilding affected source files
+2020-02-17T10:50:22.071Z - info: Rebuilding 1 pages
+2020-02-17T10:50:22.693Z - info: Pages rebuilt
+2020-02-17T10:50:22.697Z - info: Site data built
+2020-02-17T10:51:08.205Z - info: [6:51:08 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:51:09.207Z - info: Rebuilding affected source files
+2020-02-17T10:51:09.207Z - info: Rebuilding 1 pages
+2020-02-17T10:51:09.793Z - info: Pages rebuilt
+2020-02-17T10:51:09.802Z - info: Site data built
+2020-02-17T10:51:20.057Z - info: [6:51:20 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:51:21.059Z - info: Rebuilding affected source files
+2020-02-17T10:51:21.060Z - info: Rebuilding 1 pages
+2020-02-17T10:51:21.496Z - info: Pages rebuilt
+2020-02-17T10:51:21.499Z - info: Site data built
+2020-02-17T10:51:29.005Z - info: [6:51:29 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:51:30.005Z - info: Rebuilding affected source files
+2020-02-17T10:51:30.005Z - info: Rebuilding 1 pages
+2020-02-17T10:51:30.395Z - info: Pages rebuilt
+2020-02-17T10:51:30.398Z - info: Site data built
+2020-02-17T10:51:38.729Z - info: [6:51:38 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:51:39.729Z - info: Rebuilding affected source files
+2020-02-17T10:51:39.729Z - info: Rebuilding 1 pages
+2020-02-17T10:51:40.102Z - info: Pages rebuilt
+2020-02-17T10:51:40.105Z - info: Site data built
+2020-02-17T10:51:45.833Z - info: [6:51:45 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:51:46.833Z - info: Rebuilding affected source files
+2020-02-17T10:51:46.834Z - info: Rebuilding 1 pages
+2020-02-17T10:51:47.251Z - info: Pages rebuilt
+2020-02-17T10:51:47.260Z - info: Site data built
+2020-02-17T10:51:55.473Z - info: [6:51:55 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:51:56.475Z - info: Rebuilding affected source files
+2020-02-17T10:51:56.475Z - info: Rebuilding 1 pages
+2020-02-17T10:51:56.913Z - info: Pages rebuilt
+2020-02-17T10:51:56.915Z - info: Site data built
+2020-02-17T10:52:11.355Z - info: [6:52:11 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T10:52:12.358Z - info: Rebuilding affected source files
+2020-02-17T10:52:12.358Z - info: Rebuilding 1 pages
+2020-02-17T10:52:12.915Z - info: Pages rebuilt
+2020-02-17T10:52:12.918Z - info: Site data built
+2020-02-17T10:54:12.453Z - info: [6:54:12 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-02-17T10:54:13.455Z - info: Rebuilding affected source files
+2020-02-17T10:54:13.456Z - info: Rebuilding 1 pages
+2020-02-17T10:54:14.006Z - info: Pages rebuilt
+2020-02-17T10:54:14.014Z - info: Site data built
+2020-02-17T10:55:10.646Z - info: [6:55:10 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-02-17T10:55:11.647Z - info: Rebuilding affected source files
+2020-02-17T10:55:11.649Z - info: Rebuilding 1 pages
+2020-02-17T10:55:12.223Z - info: Pages rebuilt
+2020-02-17T10:55:12.226Z - info: Site data built
+2020-02-17T10:59:15.172Z - info: [6:59:15 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\ide\text.md
+2020-02-17T10:59:16.172Z - info: Rebuilding affected source files
+2020-02-17T10:59:16.173Z - info: Rebuilding 1 pages
+2020-02-17T10:59:16.802Z - info: Pages rebuilt
+2020-02-17T10:59:16.805Z - info: Site data built
+2020-02-17T10:59:44.719Z - info: [6:59:44 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\ide\text.md
+2020-02-17T10:59:45.720Z - info: Rebuilding affected source files
+2020-02-17T10:59:45.721Z - info: Rebuilding 1 pages
+2020-02-17T10:59:46.280Z - info: Pages rebuilt
+2020-02-17T10:59:46.288Z - info: Site data built
+2020-02-17T11:11:48.310Z - info: [7:11:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week6\commentary.mbdf
+2020-02-17T11:11:48.313Z - info: [7:11:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\followup-box.md
+2020-02-17T11:11:48.316Z - info: [7:11:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-02-17T11:11:49.310Z - info: Rebuilding affected source files
+2020-02-17T11:11:49.311Z - info: Rebuilding 1 pages
+2020-02-17T11:11:49.905Z - info: Pages rebuilt
+2020-02-17T11:11:49.907Z - info: Site data built
+2020-02-17T11:14:52.047Z - info: Website generation started at 7:14:51 PM
+2020-02-17T11:14:54.062Z - info: Building assets...
+2020-02-17T11:14:55.863Z - info: Assets built
+2020-02-17T11:14:55.863Z - info: Generating pages...
+2020-02-17T11:15:26.282Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.282Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.283Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.283Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.283Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.283Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.326Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:26.328Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-17T11:15:31.042Z - debug:  
+2020-02-17T11:15:31.044Z - debug:  
+2020-02-17T11:15:31.044Z - debug:  
+2020-02-17T11:16:04.632Z - info: Pages built
+2020-02-17T11:16:17.304Z - info: Website generation complete! Total build time: 85.607s
+2020-02-17T11:16:17.304Z - info: Build success!
+2020-02-17T11:16:17.306Z - info: Site data built
+2020-02-17T11:18:02.349Z - info: Deployed!
