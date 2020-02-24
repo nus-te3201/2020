@@ -5,27 +5,25 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.11.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Project Duke</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-
   <link rel="icon" href="/2020/favicon.ico">
 </head>
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-
     <div id="flex-body">
-
       <div id="content-wrapper">
         <div>
           <link rel="stylesheet" href="/2020/book/css/textbook.css">
@@ -914,6 +912,12 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                       <p>     <big>↳</big> <strong>Package the App as a JAR file</strong></p>
                     </div>
                     <p>Package the app as an executable JAR file so that it can be distributed easily.</p>
+                    <p>You can assume <strong>the user will run the jar file in the following way only</strong>:</p>
+                    <ul>
+                      <li>Copy the jar file into an empty folder</li>
+                      <li>Open a command window in that folder</li>
+                      <li>Run the command <code>java -jar {filename}.jar</code> e.g., <code>java -jar Duke.jar</code> (i.e., run the command in the same folder as the jar file)</li>
+                    </ul>
                     <p><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> Do not commit the JAR file created. Instead, you can make the JAR file available in the following manner.</p>
                     <ul>
                       <li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li>
@@ -1450,7 +1454,6 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
         </div>
       </nav>
     </div>
-
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
@@ -1481,7 +1484,6 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
   }
   MarkBind.afterSetup(initAlgolia);
 </script>
-
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

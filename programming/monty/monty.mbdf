@@ -592,7 +592,7 @@ def print_greeting():
 ### <span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span>
 
 Enhance the [Monty Level 6 code]({{ baseUrl }}/programming/chapters/monty.html#monty6) in the following ways:
-* Monty **saves tasks into a csv file**.
+* Monty **saves tasks into a csv file**, and **loads data from the same file at the start**.
 * **Add a `delete` command** that can delete a task at a specific index.
 
 A sample output is given below. Note the following:
@@ -646,6 +646,11 @@ STATUS | INDEX | DESCRIPTION
   ```python
   DATA_FILE = 'monty7.csv'
   ```
+
+* The following statement will create an empty `data.csv` file if the file doesn't exist, but will keep the file as it is if it already exists %%(it simply opens the file in append mode -- which creates the file it if it doesn't exist -- and close it right after)%%.
+  ```python
+  open('data.csv', 'a').close()
+  ```
 * The format of the file is up to you. Here is an example:
   ```
   borrow book,done
@@ -659,6 +664,7 @@ STATUS | INDEX | DESCRIPTION
    
    
    def main():
+       create_file_if_missing(DATA_FILE)
        load_data(DATA_FILE) # load task data from the file
        print_greeting()
        while True:

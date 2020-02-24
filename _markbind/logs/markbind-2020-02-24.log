@@ -1,0 +1,57 @@
+2020-02-24T04:49:25.541Z - info: Website generation started at 12:49:24 PM
+2020-02-24T04:49:28.852Z - info: Building assets...
+2020-02-24T04:49:31.731Z - info: Assets built
+2020-02-24T04:49:31.731Z - info: Generating pages...
+2020-02-24T04:50:06.250Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.251Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.251Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.251Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.251Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.251Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.252Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.252Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.252Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.253Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.253Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.253Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.258Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:06.258Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-02-24T04:50:10.586Z - debug:  
+2020-02-24T04:50:11.863Z - debug:  
+2020-02-24T04:50:11.863Z - debug:  
+2020-02-24T04:50:45.843Z - info: Pages built
+2020-02-24T04:50:58.516Z - info: Website generation complete! Total build time: 94.356s
+2020-02-24T04:50:58.865Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-02-24T04:50:58.866Z - info: Press CTRL+C to stop ...
+2020-02-24T04:50:58.975Z - info: Site data built
+2020-02-24T04:52:22.279Z - info: [12:52:22 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2020-02-24T04:52:23.281Z - info: Rebuilding affected source files
+2020-02-24T04:52:23.285Z - info: Rebuilding 14 pages
+2020-02-24T04:52:26.842Z - info: Pages rebuilt
+2020-02-24T04:52:26.846Z - info: Site data built
+2020-02-24T04:53:05.746Z - info: [12:53:05 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2020-02-24T04:53:06.748Z - info: Rebuilding affected source files
+2020-02-24T04:53:06.750Z - info: Rebuilding 14 pages
+2020-02-24T04:53:10.313Z - info: Pages rebuilt
+2020-02-24T04:53:10.317Z - info: Site data built
+2020-02-24T04:56:57.648Z - info: [12:56:57 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\monty\monty.mbdf
+2020-02-24T04:56:58.649Z - info: Rebuilding affected source files
+2020-02-24T04:56:58.653Z - info: Rebuilding 14 pages
+2020-02-24T04:57:02.164Z - info: Pages rebuilt
+2020-02-24T04:57:02.169Z - info: Site data built
+2020-02-24T05:01:41.333Z - info: Website generation started at 1:01:39 PM
+2020-02-24T05:01:44.773Z - info: Building assets...
