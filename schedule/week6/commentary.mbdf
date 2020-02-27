@@ -1,4 +1,4 @@
-<span id="ides-basic-features">
+<span id="IDEs-Basic-Features">
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
@@ -7,7 +7,7 @@
 </include>
 </span>
 <!-- ---------------------------------------------------------------------------- -->
-<span id="followup-ides-basic-features">
+<span id="followup-IDEs-Basic-Features">
 <include src="followup-box.md" boilerplate>
 <variable name="commentary_body">
 
@@ -16,7 +16,7 @@ You are already familiar with repl.it, which can be considered an _online IDE_ w
 </include>
 </span>
 <!-- ---------------------------------------------------------------------------- -->
-<span id="project-mgt-scheduling-and-tracking">
+<span id="Project-Mgt-Scheduling-and-Tracking">
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
