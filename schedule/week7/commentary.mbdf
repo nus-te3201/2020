@@ -71,9 +71,11 @@ In bigger software projects, the code is divided into multiple parts, sometimes,
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
 
-It is not enough that the code works. It should be of good quality. In particular, the code should be easy to understand and modify by other developers.
+It is not enough that the code works; it should be of good quality. In particular, the code should be easy to understand and modify by other developers.
 
 **Given below are some guidelines you can use to improve the code quality.** Learn them and ==try to follow at least some of them in your project coding==.
+
+Note: some of the guidelines refer to _classes_. Although we have touched on what OOP is, we still haven't learned to write Python classes. Therefore, you can skip those guidelines and come back to them after we have covered Python classes in a later week.
 </variable>
 </include>
 </span>

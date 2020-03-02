@@ -164,6 +164,13 @@ You are already familiar with repl.it, which can be considered an _online IDE_ w
   * [Nested Dictionaries]({{ baseUrl }}/programming/chapters/dictionaries.html#nested-dictionaries)
 </div>
 
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+So far, we have learned how to use Python lists to store sequences of objects. This week we move onto another slightly more complex data structure called _dictionary_ which can store a collection of key-value pairs.
+</variable>
+</include>
+
 ## **Dictionaries**
 
 <include src="../programming/dictionaries-intro/text.md" />{{ hr_double }}
