@@ -180,10 +180,12 @@ So far, we have learned how to use Python lists to store sequences of objects. T
 <div id="week8">
 <div id="week8-toc">
 
-* [**Installing 3rd Party Modules**]({{ baseUrl }}/programming/chapters/thirdparty.html#appendix-a-installing-3rd-party-modules)
-
 * [**Object-Oriented Programing - Part I**]({{ baseUrl }}/programming/chapters/oop.html#object-oriented-programming)
   * [Classes]({{ baseUrl }}/programming/chapters/oop.html#classes)
+<br>
+<br>
+
+* [**Installing 3rd Party Modules**]({{ baseUrl }}/programming/chapters/thirdparty.html#appendix-a-installing-3rd-party-modules)
 </div>
 
 <include src="../programming/thirdparty/text.md" />{{ hr_double }}
