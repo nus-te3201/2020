@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Installing 3rd Party Libraries</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -104,29 +104,16 @@
               <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads
                 and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
               <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
-              <pre><code class="hljs">pip --version
-</code></pre>
+              <pre><code class="hljs"><span>pip --version</span></code></pre>
               <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
-                <pre><code class="hljs bash">pip install colorama
-</code></pre>
+                <pre><code class="hljs bash"><span>pip install colorama</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs">Collecting colorama
-  Downloading colorama-0.3.9-py2.py3-none-any.whl
-Installing collected packages: colorama
-Successfully installed colorama-0.3.9
-</code></pre>
+                <pre><code class="hljs"><span>Collecting colorama</span><span>  Downloading colorama-0.3.9-py2.py3-none-any.whl</span><span>Installing collected packages: colorama</span><span>Successfully installed colorama-0.3.9</span></code></pre>
                 <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
-
-colorama.init()  <span class="hljs-comment"># one-time initialization</span>
-
-print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
-print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
-print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> colorama</span><span>&#x200B;</span><span>colorama.init()  <span class="hljs-comment"># one-time initialization</span></span><span>&#x200B;</span><span>print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)</span><span>print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)</span><span>print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span><br></p>
                 <img src="/2020/programming/thirdparty/images/coloramaOutput.png"></tip-box>
               <tip-box>
@@ -176,7 +163,7 @@ print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

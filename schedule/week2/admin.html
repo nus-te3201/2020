@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 2 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -121,34 +121,9 @@
                       <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code>show</code> instead of <code>list</code>), and even a different <strong>personality</strong>                        (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
                       </p>
                     </box>
-                    <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Nothing to list
-&gt;&gt;&gt; What can I do for you?
-
-foo
-&gt;&gt;&gt; OOPS! Unknown command
-&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Are you sure? y/n
-n
-&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Are you sure? y/n
-y
-&gt;&gt;&gt; Bye!
-</code></pre>
+                    <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>list</span><span>&gt;&gt;&gt; Nothing to list</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>foo</span><span>&gt;&gt;&gt; OOPS! Unknown command</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>exit</span><span>&gt;&gt;&gt; Are you sure? y/n</span><span>n</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>exit</span><span>&gt;&gt;&gt; Are you sure? y/n</span><span>y</span><span>&gt;&gt;&gt; Bye!</span></code></pre>
                     <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
-<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)
-    <span class="hljs-comment"># ADD MORE CODE HERE</span>
-print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
-</code></pre>
+                      <pre><code class="hljs python"><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)</span><span><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)</span><span>    <span class="hljs-comment"># ADD MORE CODE HERE</span></span><span>print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -175,7 +150,7 @@ print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

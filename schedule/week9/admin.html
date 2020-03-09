@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 9 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -114,112 +114,16 @@
             </ul>
             <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
               <p>Here's the main part of the code that illustrates how these objects can work together:</p>
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-comment"># create a UserInterface object and show the greeting</span>
-    ui = UserInterface()
-    ui.show_greeting()
-
-    <span class="hljs-comment"># create a StorageManager object</span>
-    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)
-
-    <span class="hljs-comment"># create a TaskManager object and load data</span>
-    task_manager = TaskManager(storage)
-    task_manager.load_data()
-
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        <span class="hljs-keyword">try</span>:
-            command = ui.read_command()
-            execute_command(command, task_manager, ui)
-            task_manager.save_data()
-        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))
-
-
-main()
-</code></pre>
+              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span></span><span>    <span class="hljs-comment"># create a UserInterface object and show the greeting</span></span><span>    ui = UserInterface()</span><span>    ui.show_greeting()</span><span>&#x200B;</span><span>    <span class="hljs-comment"># create a StorageManager object</span></span><span>    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)</span><span>&#x200B;</span><span>    <span class="hljs-comment"># create a TaskManager object and load data</span></span><span>    task_manager = TaskManager(storage)</span><span>    task_manager.load_data()</span><span>&#x200B;</span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><span>        <span class="hljs-keyword">try</span>:</span><span>            command = ui.read_command()</span><span>            execute_command(command, task_manager, ui)</span><span>            task_manager.save_data()</span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:</span><span>            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))</span><span>&#x200B;</span><span>&#x200B;</span><span>main()</span></code></pre>
               <p>Here's a partial <code>execute_command</code> function:</p>
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span>
-    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:
-        ui.display(<span class="hljs-string">'Bye!'</span>)
-        sys.exit()
-    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:
-        message = task_manager.get_items_as_table()
-        ui.display(message)
-    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:
-        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))
-        ui.display(message)
-    ...
-</code></pre>
+              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span></span><span>    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:</span><span>        ui.display(<span class="hljs-string">'Bye!'</span>)</span><span>        sys.exit()</span><span>    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:</span><span>        message = task_manager.get_items_as_table()</span><span>        ui.display(message)</span><span>    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:</span><span>        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))</span><span>        ui.display(message)</span><span>    ...</span></code></pre>
             </panel>
             <p></p>
             <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
-            <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-    ============================================================
-    STATUS | INDEX | DESCRIPTION                 | DEADLINE
-    ------------------------------------------------------------
-      ✓    |   1   | borrow book                 | -
-      ✗    |   2   | read book                   | -
-      ✗    |   3   | return book                 | Monday
-    ------------------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0
-&gt;&gt;&gt; What can I do for you?
-
-done 2
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0
-&gt;&gt;&gt; What can I do for you?
-
-done 3
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1
-&gt;&gt;&gt; What can I do for you?
-
-pending 2
-&gt;&gt;&gt; OK, I have marked that item as pending
-&gt;&gt;&gt; What can I do for you?
-
-progress
-&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-    ============================================================
-    STATUS | INDEX | DESCRIPTION                 | DEADLINE
-    ------------------------------------------------------------
-      ✓    |   1   | borrow book                 | -
-      ✗    |   2   | read book                   | -
-      ✓    |   3   | return book                 | Monday
-    ------------------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-</code></pre>
+            <pre><code class="hljs"><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>list</span><span>&gt;&gt;&gt; Here is the list of tasks:</span><span>    ============================================================</span><span>    STATUS | INDEX | DESCRIPTION                 | DEADLINE</span><span>    ------------------------------------------------------------</span><span>      ✓    |   1   | borrow book                 | -</span><span>      ✗    |   2   | read book                   | -</span><span>      ✗    |   3   | return book                 | Monday</span><span>    ------------------------------------------------------------</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>progress</span><span>&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>done 2</span><span>&gt;&gt;&gt; Congrats on completing a task! :-)</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>progress</span><span>&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>done 3</span><span>&gt;&gt;&gt; Congrats on completing a task! :-)</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>progress</span><span>&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>pending 2</span><span>&gt;&gt;&gt; OK, I have marked that item as pending</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>progress</span><span>&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>list</span><span>&gt;&gt;&gt; Here is the list of tasks:</span><span>    ============================================================</span><span>    STATUS | INDEX | DESCRIPTION                 | DEADLINE</span><span>    ------------------------------------------------------------</span><span>      ✓    |   1   | borrow book                 | -</span><span>      ✗    |   2   | read book                   | -</span><span>      ✓    |   3   | return book                 | Monday</span><span>    ------------------------------------------------------------</span><span>&gt;&gt;&gt; What can I do for you?</span></code></pre>
             <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
               <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span>
-
-    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span>
-        self.description = description
-        self.is_done = status
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span>
-            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span>
-        self.is_done = <span class="hljs-literal">True</span>
-</code></pre>
+              <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span></span><span>&#x200B;</span><span>    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span></span><span>        self.description = description</span><span>        self.is_done = status</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span></span><span>            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span></span><span>        self.is_done = <span class="hljs-literal">True</span></span></code></pre>
             </panel>
             <p></p>
           </div>
@@ -246,7 +150,7 @@ list
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

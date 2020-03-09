@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 3 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -107,49 +107,9 @@
           <div>
             <h3 id="level-3-use-functions"><span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span><a class="fa fa-anchor" href="#level-3-use-functions"></a></h3>
             <p>Restructure the <a href="/2020/programming/chapters/monty.html#monty2">Monty Level 2 code</a> to fit the following structure, while keeping the behavior same as before.</p>
-            <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
-
-
-<span class="hljs-comment"># ADD MISSING FUNCTIONS</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        command = read_command()
-        execute_command(command)
-
-
-main()
-</code></pre>
+            <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-comment"># ADD MISSING FUNCTIONS</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span></span><span>    print_greeting()</span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><span>        command = read_command()</span><span>        execute_command(command)</span><span>&#x200B;</span><span>&#x200B;</span><span>main()</span></code></pre>
             <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
-              <pre><code class="hljs python"><span class="hljs-keyword">import</span> sys
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span>
-    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)
-    response = input()
-    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span>
-    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:
-        <span class="hljs-keyword">return</span>
-    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:
-        <span class="hljs-keyword">if</span> is_exit_confirmed():
-            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)
-            sys.exit()
-    <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-    print_greeting()
-    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-        command = read_command()
-        execute_command(command)
-
-
-main()
-</code></pre>
+              <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)</span><span>    response = input()</span><span>    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:</span><span>        <span class="hljs-keyword">return</span></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:</span><span>        <span class="hljs-keyword">if</span> is_exit_confirmed():</span><span>            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)</span><span>            sys.exit()</span><span>    <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span></span><span>    print_greeting()</span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><span>        command = read_command()</span><span>        execute_command(command)</span><span>&#x200B;</span><span>&#x200B;</span><span>main()</span></code></pre>
             </panel>
           </div>
           </panel>
@@ -175,7 +135,7 @@ main()
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

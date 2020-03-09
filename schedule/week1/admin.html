@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 1 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -155,14 +155,14 @@
                             </tab>
                           </tabs>
                         </box>
-                        <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>                          (activated by clicking) containing additional information.</p>
-                        <popover id="pop:tooltip-example" placement="top"><template slot="header">Tooltip Example</template>
-                          <div slot="content" class="algolia-no-index">
-                            Additional information
-                          </div>
-                        </popover>
-                        <modal id="modal:modal-example" class="algolia-no-index"><template slot="_header">Modal Example</template> Additional information
-                        </modal>
+                        <p><strong>Dotted underlines indicate <span for="pop:tooltip-example" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:tooltip-example'].show()" class="trigger">tool tips</span></strong>                          (activated by hovering over it) and <strong>dashed underlines indicate <span for="modal:modal-example" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modal-example'].show()" class="trigger">modal windows</span></strong>                          (activated by clicking) containing additional information.</p>
+                        <span id="pop:tooltip-example" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">Tooltip Example</span>
+                        <div data-mb-html-for="content">
+                          Additional information
+                        </div>
+                        </span>
+                        <b-modal id="modal:modal-example" ok-only size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template> Additional information
+                        </b-modal>
                       </div>
                       <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
                       <panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p></template>
@@ -341,8 +341,9 @@
                     <li>2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.</li>
                     <li>2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.</li>
                   </ul>
-                  <p><strong><span><span aria-hidden="true" class="far fa-images"></span></span> Lecture slides will be uploaded to LumiNUS after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong>                    as they have been
-                    <tooltip><template slot="_content">i.e., heavy use of graphics and animations</template>optimized for lecture delivery</tooltip> instead.</p>
+                  <p><strong><span><span aria-hidden="true" class="far fa-images"></span></span> Lecture slides will be uploaded to LumiNUS after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong>                    as they have been <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., heavy use of graphics and animations</span>optimized for lecture
+                    delivery</span>
+                    instead.</p>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.</p>
                 </div>
               </panel>
@@ -444,62 +445,7 @@
                     </div>
                     <p><strong>The project aims to build a product named <em>Monty</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Monty</em> was chosen as a placeholder name, in honor of the <a href="https://en.wikipedia.org/wiki/Monty_Python">Monty Python comedy group</a> whose work inspired the name of the the Python language.</span>                      <strong>You may give it any other name and personality you wish.</strong></p>
                     <p>Here is a sample interaction with Monty:</p>
-                    <pre><code class="hljs">*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-******************************************************************************************* 
-
-&gt;&gt;&gt; What can I do for you?
-
-help
-&gt;&gt;&gt; I'm glad you asked. Here it is:
-==================================================
-Monty can understand the following commands:
-
-  add DESCRIPTION 
-    Adds a task with the DESCRIPTION to the list
-    Example: add read book
-  done INDEX
-    Marks the task at INDEX as 'done'
-    Example: done 1
-  exit
-    Exits the application
-  help
-    Shows the help information
-  list
-    Lists the tasks in the list
--------------------------------------------------- 
-
-&gt;&gt;&gt; What can I do for you?
-
-add read book
-&gt;&gt;&gt; Task added to the list
-&gt;&gt;&gt; What can I do for you?
-
-add return book
-&gt;&gt;&gt; Task added to the list
-&gt;&gt;&gt; What can I do for you?
-
-done 1
-&gt;&gt;&gt; Congrats on completing a task! :-)
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | read book                  
-  ✗    |   2   | return book                
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-</code></pre>
+                    <pre><code class="hljs"><span>*******************************************************************************************</span><span>*  __          __  _                            _          __  __             _           *</span><span>*  \ \        / / | |                          | |        |  \/  |           | |          *</span><span>*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *</span><span>*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *</span><span>*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *</span><span>*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *</span><span>*                                                                                  __/ |  *</span><span>*                                                                                 |___/   *</span><span>******************************************************************************************* </span><span>&#x200B;</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>help</span><span>&gt;&gt;&gt; I'm glad you asked. Here it is:</span><span>==================================================</span><span>Monty can understand the following commands:</span><span>&#x200B;</span><span>  add DESCRIPTION </span><span>    Adds a task with the DESCRIPTION to the list</span><span>    Example: add read book</span><span>  done INDEX</span><span>    Marks the task at INDEX as 'done'</span><span>    Example: done 1</span><span>  exit</span><span>    Exits the application</span><span>  help</span><span>    Shows the help information</span><span>  list</span><span>    Lists the tasks in the list</span><span>-------------------------------------------------- </span><span>&#x200B;</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>add read book</span><span>&gt;&gt;&gt; Task added to the list</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>add return book</span><span>&gt;&gt;&gt; Task added to the list</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>done 1</span><span>&gt;&gt;&gt; Congrats on completing a task! :-)</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>list</span><span>&gt;&gt;&gt; Here is the list of tasks:</span><span>==================================================</span><span>STATUS | INDEX | DESCRIPTION                </span><span>--------------------------------------------------</span><span>  ✓    |   1   | read book                  </span><span>  ✗    |   2   | return book                </span><span>--------------------------------------------------</span><span>&gt;&gt;&gt; What can I do for you?</span></code></pre>
                   </div>
                 </panel>
               </div>
@@ -513,8 +459,8 @@ STATUS | INDEX | DESCRIPTION
                 <div>
                   <h1 id="assessment">Assessment<a class="fa fa-anchor" href="#assessment"></a></h1>
                   <ul>
-                    <li><strong>10%: Participation</strong> -- To get full marks, submit weekly programming exercises and weekly project increments
-                      <trigger trigger="click" for="modal:adminInfo-deadlineInfo">on time</trigger>.</li>
+                    <li><strong>10%: Participation</strong> -- To get full marks, submit weekly programming exercises and weekly project increments <span trigger="click" for="modal:adminInfo-deadlineInfo" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                        v-on:click="$refs['modal:adminInfo-deadlineInfo'].show()" class="trigger">on time</span>.</li>
                     <li><strong>30%: Project</strong>
                       <ul>
                         <li>10%: Documentation</li>
@@ -523,7 +469,7 @@ STATUS | INDEX | DESCRIPTION
                     </li>
                     <li><strong>60%: Final Exam</strong></li>
                   </ul>
-                  <modal large id="modal:adminInfo-deadlineInfo" class="algolia-no-index"><template slot="_header">The Policy on Deadlines</template>
+                  <b-modal id="modal:adminInfo-deadlineInfo" ok-only size="lg" modal-class="mb-zoom" ref="modal:adminInfo-deadlineInfo"><template slot="modal-title">The Policy on Deadlines</template>
                     <div>
                       <h3 id="deadlines">Deadlines<a class="fa fa-anchor" href="#deadlines"></a></h3>
                       <ul>
@@ -540,7 +486,7 @@ STATUS | INDEX | DESCRIPTION
                         </li>
                       </ul>
                     </div>
-                  </modal>
+                  </b-modal>
                 </div>
               </panel>
             </div>
@@ -558,16 +504,9 @@ STATUS | INDEX | DESCRIPTION
           <div>
             <h3 id="level-1-echo-once"><span class="badge badge-primary">Level 1</span> <span class="text-primary">Echo Once</span><a class="fa fa-anchor" href="#level-1-echo-once"></a></h3>
             <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
-            <pre><code class="hljs">&gt;&gt;&gt; Hello, my name is Monty
-&gt;&gt;&gt; What can I do for you?
-foo
-&gt;&gt;&gt; Your command is: foo
-&gt;&gt;&gt; Bye!
-</code></pre>
+            <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty</span><span>&gt;&gt;&gt; What can I do for you?</span><span>foo</span><span>&gt;&gt;&gt; Your command is: foo</span><span>&gt;&gt;&gt; Bye!</span></code></pre>
             <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
-              <pre><code class="hljs python">print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)
-<span class="hljs-comment"># ADD MORE CODE HERE</span>
-</code></pre>
+              <pre><code class="hljs python"><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)</span><span><span class="hljs-comment"># ADD MORE CODE HERE</span></span></code></pre>
             </panel>
           </div>
           </panel>
@@ -597,7 +536,7 @@ foo
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

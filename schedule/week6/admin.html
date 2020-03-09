@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 6 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -116,157 +116,45 @@
               <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
               <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
             </ul>
-            <pre><code class="hljs">*******************************************************************************************
-*  __          __  _                            _          __  __             _           *
-*  \ \        / / | |                          | |        |  \/  |           | |          *
-*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *
-*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *
-*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *
-*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *
-*                                                                                  __/ |  *
-*                                                                                 |___/   *
-******************************************************************************************* 
-
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | read book                  
-  ✗    |   3   | return book                
---------------------------------------------------
-&gt;&gt;&gt; What can I do for you?
-
-delete 2
-&gt;&gt;&gt; Task deleted from the list
-&gt;&gt;&gt; What can I do for you?
-
-list
-&gt;&gt;&gt; Here is the list of tasks:
-==================================================
-STATUS | INDEX | DESCRIPTION                
---------------------------------------------------
-  ✓    |   1   | borrow book                
-  ✗    |   2   | return book                  
---------------------------------------------------
-</code></pre>
+            <pre><code class="hljs"><span>*******************************************************************************************</span><span>*  __          __  _                            _          __  __             _           *</span><span>*  \ \        / / | |                          | |        |  \/  |           | |          *</span><span>*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *</span><span>*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *</span><span>*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *</span><span>*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *</span><span>*                                                                                  __/ |  *</span><span>*                                                                                 |___/   *</span><span>******************************************************************************************* </span><span>&#x200B;</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>list</span><span>&gt;&gt;&gt; Here is the list of tasks:</span><span>==================================================</span><span>STATUS | INDEX | DESCRIPTION                </span><span>--------------------------------------------------</span><span>  ✓    |   1   | borrow book                </span><span>  ✗    |   2   | read book                  </span><span>  ✗    |   3   | return book                </span><span>--------------------------------------------------</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>delete 2</span><span>&gt;&gt;&gt; Task deleted from the list</span><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>list</span><span>&gt;&gt;&gt; Here is the list of tasks:</span><span>==================================================</span><span>STATUS | INDEX | DESCRIPTION                </span><span>--------------------------------------------------</span><span>  ✓    |   1   | borrow book                </span><span>  ✗    |   2   | return book                  </span><span>--------------------------------------------------</span></code></pre>
             <box>
               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> here are some tips:</p>
               <ul>
                 <li>
                   <p>The filename can be specified in the code. e.g.,</p>
-                  <pre><code class="hljs python">DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
-</code></pre>
+                  <pre><code class="hljs python"><span>DATA_FILE = <span class="hljs-string">'monty7.csv'</span></span></code></pre>
                 </li>
                 <li>
                   <p>The following statement will create an empty <code>data.csv</code> file if the file doesn't exist, but will keep the file as it is if it already exists <span class="dimmed">(it simply opens the file in append mode -- which creates the file it if it doesn't exist -- and close it right after)</span>.</p>
-                  <pre><code class="hljs python">open(<span class="hljs-string">'data.csv'</span>, <span class="hljs-string">'a'</span>).close()
-</code></pre>
+                  <pre><code class="hljs python"><span>open(<span class="hljs-string">'data.csv'</span>, <span class="hljs-string">'a'</span>).close()</span></code></pre>
                 </li>
                 <li>
                   <p>The format of the file is up to you. Here is an example:</p>
-                  <pre><code class="hljs">borrow book,done
-read book,pending
-return book,pending
-</code></pre>
+                  <pre><code class="hljs"><span>borrow book,done</span><span>read book,pending</span><span>return book,pending</span></code></pre>
                 </li>
                 <li>
                   <p>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:</p>
-                  <pre><code class="hljs python"> items = []
- DATA_FILE = <span class="hljs-string">'monty7.csv'</span>
- 
- 
- <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
-     create_file_if_missing(DATA_FILE)
-     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span>
-     print_greeting()
-     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
-         <span class="hljs-keyword">try</span>:
-             command = read_command()
-             execute_command(command)
-             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span>
-         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
-             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)
- 
- 
- main()
-</code></pre>
+                  <pre><code class="hljs python"><span> items = []</span><span> DATA_FILE = <span class="hljs-string">'monty7.csv'</span></span><span> </span><span> </span><span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span></span><span>     create_file_if_missing(DATA_FILE)</span><span>     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span></span><span>     print_greeting()</span><span>     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><span>         <span class="hljs-keyword">try</span>:</span><span>             command = read_command()</span><span>             execute_command(command)</span><span>             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span></span><span>         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:</span><span>             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)</span><span> </span><span> </span><span> main()</span></code></pre>
                 </li>
               </ul>
             </box>
             <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
               <p>Here is the code for loading data from the file.</p>
-              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span>
-    data_file = open(filename)
-    deliveries_reader = csv.reader(data_file)
-    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:
-            <span class="hljs-keyword">continue</span>
-        add_item_from_csv_line(row)
-    data_file.close()
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span>
-    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>
-    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span>
-</code></pre>
+              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span></span><span>    data_file = open(filename)</span><span>    deliveries_reader = csv.reader(data_file)</span><span>    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:</span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:</span><span>            <span class="hljs-keyword">continue</span></span><span>        add_item_from_csv_line(row)</span><span>    data_file.close()</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span></span><span>    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></span><span>    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span></span></code></pre>
               <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code>                is a shortcut syntax. It is equivalent to the code below:</p>
-              <pre><code class="hljs">if values[1] == 'done':
-    status = True
-else:
-    status = False
-</code></pre>
+              <pre><code class="hljs"><span>if values[1] == 'done':</span><span>    status = True</span><span>else:</span><span>    status = False</span></code></pre>
             </panel>
             <p></p>
             <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
             <ul>
               <li><strong>Remove the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
-                <pre><code class="hljs">&gt;&gt;&gt; What can I do for you?
-
-exit
-&gt;&gt;&gt; Bye!
-</code></pre>
+                <pre><code class="hljs"><span>&gt;&gt;&gt; What can I do for you?</span><span>&#x200B;</span><span>exit</span><span>&gt;&gt;&gt; Bye!</span></code></pre>
               </li>
               <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
-                <pre><code class="hljs"> &gt;&gt;&gt; What can I do for you?
- 
- list
- &gt;&gt;&gt; Here is the list of tasks:
- ==================================================
- STATUS | INDEX | DESCRIPTION                
- --------------------------------------------------
-   ✓    |   1   | borrow book                
-   ✗    |   2   | read book                  
-   ✗    |   3   | return book                
- --------------------------------------------------
- &gt;&gt;&gt; What can I do for you?
- 
- pending 1
- &gt;&gt;&gt; OK, I have marked that item as pending
- &gt;&gt;&gt; What can I do for you?
- 
- list
- &gt;&gt;&gt; Here is the list of tasks:
- ==================================================
- STATUS | INDEX | DESCRIPTION                
- --------------------------------------------------
-   ✗    |   1   | borrow book                
-   ✗    |   2   | read book                  
-   ✗    |   3   | return book                
- --------------------------------------------------
- &gt;&gt;&gt; What can I do for you?
-</code></pre>
+                <pre><code class="hljs"><span> &gt;&gt;&gt; What can I do for you?</span><span> </span><span> list</span><span> &gt;&gt;&gt; Here is the list of tasks:</span><span> ==================================================</span><span> STATUS | INDEX | DESCRIPTION                </span><span> --------------------------------------------------</span><span>   ✓    |   1   | borrow book                </span><span>   ✗    |   2   | read book                  </span><span>   ✗    |   3   | return book                </span><span> --------------------------------------------------</span><span> &gt;&gt;&gt; What can I do for you?</span><span> </span><span> pending 1</span><span> &gt;&gt;&gt; OK, I have marked that item as pending</span><span> &gt;&gt;&gt; What can I do for you?</span><span> </span><span> list</span><span> &gt;&gt;&gt; Here is the list of tasks:</span><span> ==================================================</span><span> STATUS | INDEX | DESCRIPTION                </span><span> --------------------------------------------------</span><span>   ✗    |   1   | borrow book                </span><span>   ✗    |   2   | read book                  </span><span>   ✗    |   3   | return book                </span><span> --------------------------------------------------</span><span> &gt;&gt;&gt; What can I do for you?</span></code></pre>
               </li>
               <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
-                <pre><code class="hljs">add read book
-ADD read book
-Add read book
-add    read book
-    add read book
-</code></pre>
+                <pre><code class="hljs"><span>add read book</span><span>ADD read book</span><span>Add read book</span><span>add    read book</span><span>    add read book</span></code></pre>
               </li>
             </ul>
           </div>
@@ -293,7 +181,7 @@ add    read book
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
   </footer>
   </div>
 </body>

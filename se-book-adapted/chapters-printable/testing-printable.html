@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : Testing</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -189,60 +189,13 @@
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
                     <div class="alt-java">
                       <div>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-    
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//a unit test for Foo#read() method</span>
-    }
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span>
-    }  
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span>
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>    </span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{</span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span></span><span>    }</span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span></span><span>    }  </span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span></span><span>    }</span><span>}</span></code></pre>
                       </div>
                     </div>
                     <div class="alt-python">
                       <div>
-                        <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># ...</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span>
-      <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span>
-      <span class="hljs-comment"># a unit test for read() method</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># a unit tests for write(string) method</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># another unit tests for write(string) method</span>
-</code></pre>
+                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> unittest</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># ...</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span></span><span>      <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span></span><span>      <span class="hljs-comment"># a unit test for read() method</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span></span></code></pre>
                       </div>
                     </div>
                   </box>
@@ -301,10 +254,7 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully
                       if pushed beyond its limits.</p>
-                    <pre><code class="hljs">Test case: load a web page that is too big
-* Input: load a web page containing more than 5000 characters. 
-* Expected behavior: abort the loading of the page and show a meaningful error message. 
-</code></pre>
+                    <pre><code class="hljs"><span>Test case: load a web page that is too big</span><span>* Input: load a web page containing more than 5000 characters. </span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. </span></code></pre>
                     <p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p>
                   </box>
                   <p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
@@ -365,9 +315,10 @@
                       <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
                     </li>
                   </ol>
-                  <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-                    <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em>                    because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those
-                    operations where more faults are found.</p>
+                  <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                      v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other
+                    words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone,
+                    based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                     <blockquote>
@@ -378,12 +329,12 @@
                   <box>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                   </box>
-                  <modal id="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="_header">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                  <b-modal id="modal:exploratoryWhat-bach-et-explained" ok-only size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                     <div>
                       <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought
                         leader in software testing).</p>
                     </div>
-                  </modal>
+                  </b-modal>
                 </div>
               </div>
             </div>
@@ -534,20 +485,13 @@
                     <li>
                       <p>Store the test input in the text file <code>input.txt</code>.</p>
                       <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>input.txt</code></span></p></template>
-                        <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
-add Valid Name 12345 e/valid@email.butPhonePrefixMissing
-</code></pre>
+                        <pre><code class="hljs"><span>add Valid Name p/12345 valid@email.butNoPrefix</span><span>add Valid Name 12345 e/valid@email.butPhonePrefixMissing</span></code></pre>
                       </panel>
                     </li>
                     <li>
                       <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
                       <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>expected.txt</code></span></p></template>
-                        <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
-Invalid command format: add 
-
-Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
-Invalid command format: add 
-</code></pre>
+                        <pre><code class="hljs"><span>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]</span><span>Invalid command format: add </span><span>&#x200B;</span><span>Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]</span><span>Invalid command format: add </span></code></pre>
                       </panel>
                     </li>
                     <li>
@@ -555,8 +499,7 @@ Invalid command format: add
                         <span
                           class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span>
                       </p>
-                      <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
-</code></pre>
+                      <pre><code class="hljs sh"><span>java AddressBook &lt; input.txt &gt; output.txt</span></code></pre>
                       <ul>
                         <li>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code>                            file, use the command<br>
@@ -572,8 +515,7 @@ Invalid command format: add
                         </span>
                         </span>
                         <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code>                          operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                        <pre><code class="hljs sh">java AddressBook &gt; output.txt 
-</code></pre>
+                        <pre><code class="hljs sh"><span>java AddressBook &gt; output.txt </span></code></pre>
                         <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any
                           other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
                         <box>
@@ -588,20 +530,15 @@ Invalid command format: add
                     </li>
                     <li>
                       <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
-                      <pre><code class="hljs">FC output.txt expected.txt
-</code></pre>
+                      <pre><code class="hljs"><span>FC output.txt expected.txt</span></code></pre>
                     </li>
                   </ol>
                   <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
                   <div>
-                    <popover id="pop:cli" placement="top">
-                      <div slot="content" class="algolia-no-index">
-                        <div>
-                          <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
-                        </div>
-                      </div>
-                    </popover>
-                  </div>
+                    <span id="pop:cli" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p></div></div></span></div>
                 </div>
               </div>
             </div>
@@ -611,7 +548,7 @@ Invalid command format: add
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

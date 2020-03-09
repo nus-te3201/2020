@@ -1,6 +1,7 @@
 {
   "baseUrl": "/2020",
   "titlePrefix": "TE3201 Website",
+  "timeZone": "Asia/Singapore",
   "ignore": [
     "_site/*",
     ".idea/*",

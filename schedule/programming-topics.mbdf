@@ -188,11 +188,29 @@ So far, we have learned how to use Python lists to store sequences of objects. T
 * [**Installing 3rd Party Modules**]({{ baseUrl }}/programming/chapters/thirdparty.html#appendix-a-installing-3rd-party-modules)
 </div>
 
-<include src="../programming/thirdparty/text.md" />{{ hr_double }}
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+So far, we have been using simple objects provided by Python (e.g., str, int, bool) and putting them into lists, dictionaries (which are objects themselves), and combinations of the two (e.g., a list of dictionaries) to arrange our data.
+
+**It is now time to learn how to define our own classes** so that we can create objects that match our needs e.g., to use `Task` objects to represent a task in Monty, instead of using a list such as `["read book", True]`{.python}.
+
+==Before reading the section below which explains how to write Python classes, read the SE topic [OOP: Basics]({{ baseUrl }}/book/oop/classes/what/index.html) get a general idea about classes.==
+</variable>
+</include>
 
 ## **Object-Oriented Programming**
 
 <include src="../programming/oop-classes/text.md" />{{ hr_double }}
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Next, let's learn how to install and use third-party libraries** so that you can use even more functionality than those Python provides by default.
+</variable>
+</include>
+
+<include src="../programming/thirdparty/text.md" />{{ hr_double }}
 
 </div>
 <div id="week9">

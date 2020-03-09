@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 7 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -197,12 +197,7 @@
               </box>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of defining dictionaries.</p>
-                <pre><code class="hljs python">friends = {} <span class="hljs-comment"># empty dictionary</span>
-grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
-numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
-is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>, <span class="hljs-string">'ravi'</span>: <span class="hljs-literal">True</span>}
-prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-</code></pre>
+                <pre><code class="hljs python"><span>friends = {} <span class="hljs-comment"># empty dictionary</span></span><span>grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}</span><span>numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}</span><span>is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>, <span class="hljs-string">'ravi'</span>: <span class="hljs-literal">True</span>}</span><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span></code></pre>
               </box>
               <p>Unlike lists which contain an ordered sequence of items, <strong>dictionaries are not ordered</strong> i.e., you cannot force a key-value pair in a dictionary to be at a specific position <span class="dimmed">e.g., in the example above, there is no guarantee that <code>'bread'</code>:<code>'3.50'</code> pair will be at the first position of the dictionary <code>prices</code> after adding more key-value pairs to it</span>.</p>
               <div>
@@ -210,23 +205,12 @@ prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.
                   <div>
                     <h4 id="exercise-get-subject-info">Exercise: Get Subject Info<a class="fa fa-anchor" href="#exercise-get-subject-info"></a></h4>
                     <p>Complete the <code>get_subject_info</code> function below to return a dictionary such that the code produces the given output.</p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
-  <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span>
-  
-print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))
-print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">True</span>))
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span></span><span>  <span class="hljs-keyword">return</span> {} <span class="hljs-comment"># UPDATE THIS LINE</span></span><span>  </span><span>print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))</span><span>print(get_subject_info(<span class="hljs-string">'CS1101'</span>, <span class="hljs-string">'Programming Basics'</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">True</span>))</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}
-{'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}
-</code></pre>
+                    <pre><code class="hljs"><span>{'code': 'TE3201', 'name': 'Software Engineering', 'level': 3, 'core?': False}</span><span>{'code': 'CS1101', 'name': 'Programming Basics', 'level': 1, 'core?': True}</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span>
-  <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} 
-  
-print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_subject_info</span><span class="hljs-params">(code, name, level, is_core)</span>:</span></span><span>  <span class="hljs-keyword">return</span> {<span class="hljs-string">'code'</span>: code, ...} </span><span>  </span><span>print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>, <span class="hljs-number">3</span>, <span class="hljs-literal">False</span>))</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -245,19 +229,11 @@ print(get_subject_info(<span class="hljs-string">'TE3201'</span>, <span class="h
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}
-prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-print(type(numbers))
-print(numbers[<span class="hljs-number">1</span>])
-print(prices[<span class="hljs-string">'butter'</span>])
-</code></pre>
+                        <pre><code class="hljs python"><span>numbers = {<span class="hljs-number">1</span>: <span class="hljs-string">'one'</span>, <span class="hljs-number">2</span>: <span class="hljs-string">'two'</span>, <span class="hljs-number">3</span>: <span class="hljs-string">'three'</span>}</span><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span><span>print(type(numbers))</span><span>print(numbers[<span class="hljs-number">1</span>])</span><span>print(prices[<span class="hljs-string">'butter'</span>])</span></code></pre>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">&lt;class 'dict'&gt;
-one
-5.0
-</code></pre>
+                        <pre><code class="hljs"><span>&lt;class 'dict'&gt;</span><span>one</span><span>5.0</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -269,21 +245,11 @@ one
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
-grades[<span class="hljs-string">'CS2103'</span>] = <span class="hljs-string">'B'</span>
-print(<span class="hljs-string">'After adding:'</span>,grades)
-grades[<span class="hljs-string">'TE3201'</span>] = <span class="hljs-string">'A+'</span>
-print(<span class="hljs-string">'After updating:'</span>,grades)
-<span class="hljs-keyword">del</span> grades[<span class="hljs-string">'CS2103'</span>]
-print(<span class="hljs-string">'After deleting:'</span>, grades)
-</code></pre>
+                        <pre><code class="hljs python"><span>grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}</span><span>grades[<span class="hljs-string">'CS2103'</span>] = <span class="hljs-string">'B'</span></span><span>print(<span class="hljs-string">'After adding:'</span>,grades)</span><span>grades[<span class="hljs-string">'TE3201'</span>] = <span class="hljs-string">'A+'</span></span><span>print(<span class="hljs-string">'After updating:'</span>,grades)</span><span><span class="hljs-keyword">del</span> grades[<span class="hljs-string">'CS2103'</span>]</span><span>print(<span class="hljs-string">'After deleting:'</span>, grades)</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">After adding: {'TE3201': 'A', 'CS2103': 'B'}
-After updating: {'TE3201': 'A+', 'CS2103': 'B'}
-After deleting: {'TE3201': 'A+'}
-</code></pre>
+                        <pre><code class="hljs"><span>After adding: {'TE3201': 'A', 'CS2103': 'B'}</span><span>After updating: {'TE3201': 'A+', 'CS2103': 'B'}</span><span>After deleting: {'TE3201': 'A+'}</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -300,38 +266,12 @@ After deleting: {'TE3201': 'A+'}
                       <li><code>set_score(scores, player, new_score)</code>: sets the value of the key <code>player</code> to the <code>new_score</code></li>
                       <li><code>delete_score(scores, player)</code>: deletes the value for key <code>player</code></li>
                     </ul>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment"># UPDATE HERE!</span>
-    
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE!</span>
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_score</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE!</span>
-  
-game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}
-print(get_score(game1_scores, <span class="hljs-string">'betty'</span>))
-print(get_score(game1_scores, <span class="hljs-string">'amy'</span>))
-set_score(game1_scores, <span class="hljs-string">'charlie'</span>, <span class="hljs-number">5</span>)
-set_score(game1_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">0</span>)
-print(game1_scores)
-delete_score(game1_scores, <span class="hljs-string">'dan'</span>)
-print(game1_scores)
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span></span><span>  <span class="hljs-keyword">return</span> <span class="hljs-comment"># UPDATE HERE!</span></span><span>    </span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span></span><span>  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE!</span></span><span>  </span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete_score</span><span class="hljs-params">(scores, player)</span>:</span></span><span>  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE!</span></span><span>  </span><span>game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}</span><span>print(get_score(game1_scores, <span class="hljs-string">'betty'</span>))</span><span>print(get_score(game1_scores, <span class="hljs-string">'amy'</span>))</span><span>set_score(game1_scores, <span class="hljs-string">'charlie'</span>, <span class="hljs-number">5</span>)</span><span>set_score(game1_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">0</span>)</span><span>print(game1_scores)</span><span>delete_score(game1_scores, <span class="hljs-string">'dan'</span>)</span><span>print(game1_scores)</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">36
-35
-{'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}
-{'amy': 35, 'betty': 36, 'charlie': 5}
-</code></pre>
+                    <pre><code class="hljs"><span>36</span><span>35</span><span>{'amy': 35, 'betty': 36, 'charlie': 5, 'dan': 0}</span><span>{'amy': 35, 'betty': 36, 'charlie': 5}</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">return</span> scores[player]
-    
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span>
-  scores[player] = new_score
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score</span><span class="hljs-params">(scores, player)</span>:</span></span><span>  <span class="hljs-keyword">return</span> scores[player]</span><span>    </span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_score</span><span class="hljs-params">(scores, player, new_score)</span>:</span></span><span>  scores[player] = new_score</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -346,16 +286,11 @@ print(game1_scores)
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>}
-print(is_nice[<span class="hljs-string">'santa'</span>])
-</code></pre>
+                        <pre><code class="hljs python"><span>is_nice = {<span class="hljs-string">'jane'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'hakim'</span>: <span class="hljs-literal">True</span>}</span><span>print(is_nice[<span class="hljs-string">'santa'</span>])</span></code></pre>
                       </td>
                       <td valign="top">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">Traceback (most recent call last):
-  File &quot;python&quot;, line 9, in &lt;module&gt;
-KeyError: 'santa'
-</code></pre>
+                        <pre><code class="hljs"><span>Traceback (most recent call last):</span><span>  File &quot;python&quot;, line 9, in &lt;module&gt;</span><span>KeyError: 'santa'</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -370,25 +305,12 @@ KeyError: 'santa'
                     <ul>
                       <li><code>get_score1(scores, player)</code>: returns the value of the key <code>player</code>. <mark>Returns an error message if the <code>player</code> is not in <code>scores</code></mark>.</li>
                     </ul>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">return</span> scores[player] <span class="hljs-comment"># UPDATE HERE!</span>
-    
-game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}
-print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))
-print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span></span><span>  <span class="hljs-keyword">return</span> scores[player] <span class="hljs-comment"># UPDATE HERE!</span></span><span>    </span><span>game1_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}</span><span>print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))</span><span>print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">30
-brown is not in the game!
-</code></pre>
+                    <pre><code class="hljs"><span>30</span><span>brown is not in the game!</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span>
-  <span class="hljs-keyword">try</span>:
-    <span class="hljs-keyword">return</span> scores[player]
-  <span class="hljs-keyword">except</span> KeyError:
-    ...
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_score1</span><span class="hljs-params">(scores, player)</span>:</span></span><span>  <span class="hljs-keyword">try</span>:</span><span>    <span class="hljs-keyword">return</span> scores[player]</span><span>  <span class="hljs-keyword">except</span> KeyError:</span><span>    ...</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -403,17 +325,11 @@ brown is not in the game!
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> prices.keys():
-  print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
-</code></pre>
+                        <pre><code class="hljs python"><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span><span><span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> prices.keys():</span><span>  print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">bread -&gt; 3.5
-butter -&gt; 5.0
-banana -&gt; 0.15
-</code></pre>
+                        <pre><code class="hljs"><span>bread -&gt; 3.5</span><span>butter -&gt; 5.0</span><span>banana -&gt; 0.15</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -424,17 +340,11 @@ banana -&gt; 0.15
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-<span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> prices.values():
-  print(v)
-</code></pre>
+                        <pre><code class="hljs python"><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span><span><span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> prices.values():</span><span>  print(v)</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">3.5
-5.0
-0.15
-</code></pre>
+                        <pre><code class="hljs"><span>3.5</span><span>5.0</span><span>0.15</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -449,17 +359,11 @@ banana -&gt; 0.15
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(prices.keys()):
-  print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
-</code></pre>
+                        <pre><code class="hljs python"><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span><span><span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(prices.keys()):</span><span>  print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">banana -&gt; 0.15
-bread -&gt; 3.5
-butter -&gt; 5.0
-</code></pre>
+                        <pre><code class="hljs"><span>banana -&gt; 0.15</span><span>bread -&gt; 3.5</span><span>butter -&gt; 5.0</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -475,32 +379,12 @@ butter -&gt; 5.0
                       <li><code>get_team_score(scores)</code>: returns the total of all scores of all players in <code>scores</code>.</li>
                       <li><code>print_scorecard(scores)</code>: prints scores of each player in the format given, in the alphabetical order of player names.</li>
                     </ul>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span>
-  total = <span class="hljs-number">0</span>
-  <span class="hljs-comment">#ADD YOUR CODE HERE!</span>
-  <span class="hljs-keyword">return</span> total
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_scorecard</span><span class="hljs-params">(scores)</span>:</span>
-  <span class="hljs-comment">#pass #REPLACE WITH YOUR CODE!</span>
-
-game2_scores = {<span class="hljs-string">'zac'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'aaron'</span>: <span class="hljs-number">10</span>}
-print_scorecard(game2_scores)
-print(<span class="hljs-string">'total ='</span>, get_team_score(game2_scores))
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_team_score</span><span class="hljs-params">(scores)</span>:</span></span><span>  total = <span class="hljs-number">0</span></span><span>  <span class="hljs-comment">#ADD YOUR CODE HERE!</span></span><span>  <span class="hljs-keyword">return</span> total</span><span>  </span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_scorecard</span><span class="hljs-params">(scores)</span>:</span></span><span>  <span class="hljs-comment">#pass #REPLACE WITH YOUR CODE!</span></span><span>&#x200B;</span><span>game2_scores = {<span class="hljs-string">'zac'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'aaron'</span>: <span class="hljs-number">10</span>}</span><span>print_scorecard(game2_scores)</span><span>print(<span class="hljs-string">'total ='</span>, get_team_score(game2_scores))</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">aaron = 10
-betty = 30
-zac = 35
-total = 75
-</code></pre>
+                    <pre><code class="hljs"><span>aaron = 10</span><span>betty = 30</span><span>zac = 35</span><span>total = 75</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():
-  ...
-  
-<span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> sorted(scores.keys()):
-  ...
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> scores.keys():</span><span>  ...</span><span>  </span><span><span class="hljs-keyword">for</span> p <span class="hljs-keyword">in</span> sorted(scores.keys()):</span><span>  ...</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -515,16 +399,11 @@ total = 75
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-print(<span class="hljs-string">'bread'</span> <span class="hljs-keyword">in</span> prices.keys())
-print(<span class="hljs-string">'sugar'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> prices.keys())
-</code></pre>
+                        <pre><code class="hljs python"><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span><span>print(<span class="hljs-string">'bread'</span> <span class="hljs-keyword">in</span> prices.keys())</span><span>print(<span class="hljs-string">'sugar'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> prices.keys())</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">True
-True
-</code></pre>
+                        <pre><code class="hljs"><span>True</span><span>True</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -535,16 +414,11 @@ True
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
-print(<span class="hljs-number">3.5</span> <span class="hljs-keyword">in</span> prices.values())
-print(<span class="hljs-number">6.0</span> <span class="hljs-keyword">in</span> prices.values())
-</code></pre>
+                        <pre><code class="hljs python"><span>prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}</span><span>print(<span class="hljs-number">3.5</span> <span class="hljs-keyword">in</span> prices.values())</span><span>print(<span class="hljs-number">6.0</span> <span class="hljs-keyword">in</span> prices.values())</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">True
-False
-</code></pre>
+                        <pre><code class="hljs"><span>True</span><span>False</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -567,26 +441,12 @@ False
                       <li><code>add_bonus(scores, player, bonus)</code>: adds the <code>bonus</code> to the value of the <code>player</code> if player already exists in <code>scores</code>. Otherwise, adds the <code>player</code> to <code>scores</code> with
                         the value <code>bonus</code>.</li>
                     </ul>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
-
-
-game3_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}    
-add_bonus(game3_scores, <span class="hljs-string">'amy'</span>, <span class="hljs-number">5</span>)
-add_bonus(game3_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">10</span>)
-print(game3_scores)
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span></span><span>  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span></span><span>&#x200B;</span><span>&#x200B;</span><span>game3_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}    </span><span>add_bonus(game3_scores, <span class="hljs-string">'amy'</span>, <span class="hljs-number">5</span>)</span><span>add_bonus(game3_scores, <span class="hljs-string">'dan'</span>, <span class="hljs-number">10</span>)</span><span>print(game3_scores)</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}
-</code></pre>
+                    <pre><code class="hljs"><span>{'amy': 40, 'betty': 36, 'charlie': 30, 'dan': 10}</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
-  <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():
-    ...
-  <span class="hljs-keyword">else</span>:
-    ...
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span></span><span>  <span class="hljs-keyword">if</span> player <span class="hljs-keyword">in</span> scores.keys():</span><span>    ...</span><span>  <span class="hljs-keyword">else</span>:</span><span>    ...</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -599,32 +459,13 @@ print(game3_scores)
               <p><strong>Dictionaries and lists can be nested in each other to create more complicated data structures.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This dictionary keeps track of assignments of each subject. Note how the value is a <code>list</code> rather than a simple value such as an <code>int</code> or a <code>string</code>.</p>
-                <pre><code class="hljs python">assignments = {<span class="hljs-string">'TE3201'</span>: [<span class="hljs-string">'do exercises'</span>, <span class="hljs-string">'submit project'</span>],
-               <span class="hljs-string">'CS2103'</span>: [],
-               <span class="hljs-string">'CS3281'</span>: [<span class="hljs-string">'do presentation'</span>]}
-</code></pre>
+                <pre><code class="hljs python"><span>assignments = {<span class="hljs-string">'TE3201'</span>: [<span class="hljs-string">'do exercises'</span>, <span class="hljs-string">'submit project'</span>],</span><span>               <span class="hljs-string">'CS2103'</span>: [],</span><span>               <span class="hljs-string">'CS3281'</span>: [<span class="hljs-string">'do presentation'</span>]}</span></code></pre>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Python ignores line breaks and indentations in the middle of a dictionary/list definition <span class="dimmed">which allows you to structure the code into a more readable format (e.g., one key-value pair per line).</span></p>
                 <p>As the values in this dictionary are lists, you can do list operations on them, e.g., <code>append()</code>, <code>len()</code></p>
-                <pre><code class="hljs python">print(<span class="hljs-string">'CS3281 assignments:'</span>, assignments[<span class="hljs-string">'CS3281'</span>])
-
-assignments[<span class="hljs-string">'CS3281'</span>].append(<span class="hljs-string">'study for exams'</span>)
-print(assignments[<span class="hljs-string">'CS3281'</span>])
-
-print(<span class="hljs-string">'How many things to do in TE3201?'</span>, len(assignments[<span class="hljs-string">'TE3201'</span>]))
-
-<span class="hljs-comment"># calculate total assignments</span>
-total = <span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> assignments.values():
-  total = total + len(a)
-print(<span class="hljs-string">'total tasks to do:'</span>, total)
-</code></pre>
+                <pre><code class="hljs python"><span>print(<span class="hljs-string">'CS3281 assignments:'</span>, assignments[<span class="hljs-string">'CS3281'</span>])</span><span>&#x200B;</span><span>assignments[<span class="hljs-string">'CS3281'</span>].append(<span class="hljs-string">'study for exams'</span>)</span><span>print(assignments[<span class="hljs-string">'CS3281'</span>])</span><span>&#x200B;</span><span>print(<span class="hljs-string">'How many things to do in TE3201?'</span>, len(assignments[<span class="hljs-string">'TE3201'</span>]))</span><span>&#x200B;</span><span><span class="hljs-comment"># calculate total assignments</span></span><span>total = <span class="hljs-number">0</span></span><span><span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> assignments.values():</span><span>  total = total + len(a)</span><span>print(<span class="hljs-string">'total tasks to do:'</span>, total)</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs">CS3281 assignments: ['do presentation']
-['do presentation', 'study for exams']
-How many things to do in TE3201? 2
-total tasks to do: 4
-</code></pre>
+                <pre><code class="hljs"><span>CS3281 assignments: ['do presentation']</span><span>['do presentation', 'study for exams']</span><span>How many things to do in TE3201? 2</span><span>total tasks to do: 4</span></code></pre>
               </box>
               <div>
                 <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Inning-Scores</p></template>
@@ -658,20 +499,12 @@ total tasks to do: 4
                         </tbody>
                       </table>
                     </div>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: <span class="hljs-number">20</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>} <span class="hljs-comment">#REPLACE WITH YOUR CODE! </span>
-
-print(get_detailed_scores())
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span></span><span>  <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: <span class="hljs-number">20</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">30</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>} <span class="hljs-comment">#REPLACE WITH YOUR CODE! </span></span><span>&#x200B;</span><span>print(get_detailed_scores())</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}
-</code></pre>
+                    <pre><code class="hljs"><span>{'amy': [5, 5, 10], 'betty': [10], 'charlie': []}</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],
-          ...}
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_detailed_scores</span><span class="hljs-params">()</span>:</span></span><span>  <span class="hljs-keyword">return</span> {<span class="hljs-string">'amy'</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>],</span><span>          ...}</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -679,25 +512,10 @@ print(get_detailed_scores())
               </div>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.</p>
-                <pre><code class="hljs python">friends = {<span class="hljs-string">'john'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>},
-           <span class="hljs-string">'sara'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Sara Parker'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jun 30'</span>},
-           <span class="hljs-string">'betty'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Betsy Sims'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>}}
-           
-print(friends[<span class="hljs-string">'john'</span>][<span class="hljs-string">'birthday'</span>])
-
-<span class="hljs-comment"># print friends whose birthday is Jan 12</span>
-
-<span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> friends.keys():
-  details = friends[f]
-  <span class="hljs-keyword">if</span> details[<span class="hljs-string">'birthday'</span>] == <span class="hljs-string">'Jan 12'</span>:
-    print(details[<span class="hljs-string">'name'</span>])
-</code></pre>
+                <pre><code class="hljs python"><span>friends = {<span class="hljs-string">'john'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>},</span><span>           <span class="hljs-string">'sara'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Sara Parker'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jun 30'</span>},</span><span>           <span class="hljs-string">'betty'</span>: {<span class="hljs-string">'name'</span>: <span class="hljs-string">'Betsy Sims'</span>, <span class="hljs-string">'birthday'</span>: <span class="hljs-string">'Jan 12'</span>}}</span><span>           </span><span>print(friends[<span class="hljs-string">'john'</span>][<span class="hljs-string">'birthday'</span>])</span><span>&#x200B;</span><span><span class="hljs-comment"># print friends whose birthday is Jan 12</span></span><span>&#x200B;</span><span><span class="hljs-keyword">for</span> f <span class="hljs-keyword">in</span> friends.keys():</span><span>  details = friends[f]</span><span>  <span class="hljs-keyword">if</span> details[<span class="hljs-string">'birthday'</span>] == <span class="hljs-string">'Jan 12'</span>:</span><span>    print(details[<span class="hljs-string">'name'</span>])</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs">Jan 12
-John Doe
-Betsy Sims
-</code></pre>
+                <pre><code class="hljs"><span>Jan 12</span><span>John Doe</span><span>Betsy Sims</span></code></pre>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> As <code>friends['john']</code> evaluates to a dictionary, you can use the <code>['birthday']</code> notation to find the birthday
                   of that person.<br>
                   <code>friends['john']['birthday']</code><br> → <code>{'name': 'John Doe', 'birthday': 'Jan 12'}['birthday']</code><br> → <code>'Jan 12'</code></p>
@@ -715,30 +533,15 @@ Betsy Sims
                     <h4 id="exercise-player-stats">Exercise: Player Stats<a class="fa fa-anchor" href="#exercise-player-stats"></a></h4>
                     <p>Assume in each inning a player gets to bat a number of times and each hit can score 0, 1, 4, or 6, which are known as <em>hit sizes</em>. There is a need to keep track of how many times a player achieved each hit size in an inning.</p>
                     <p>Note how the <code>player_stats</code> dictionary in the code below uses lists which contain dictionaries to store, for each player, how many times the player scored a certain hit size, for each inning. For example, the player <code>amy</code>                      scored hit size of 0 x 0 times; hit size of 1 x 1 times; hit size of 4 x 1 times; hit size of 6 x 0 time in the first inning (which adds up to a score of <code>0*0 + 1*1 + 4*1 + 6*0 = 10</code> for her first inning).</p>
-                    <pre><code class="hljs python">player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span>
-                        {<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">5</span>, <span class="hljs-number">4</span>:<span class="hljs-number">0</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's second inning stats</span>
-                        {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">0</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">1</span>}], <span class="hljs-comment"># amy's third inning stats</span>
-                <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],
-                <span class="hljs-string">'charlie'</span>: []}
-</code></pre>
+                    <pre><code class="hljs python"><span>player_stats = {<span class="hljs-string">'amy'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">1</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's first inning stats</span></span><span>                        {<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">5</span>, <span class="hljs-number">4</span>:<span class="hljs-number">0</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>},  <span class="hljs-comment"># amy's second inning stats</span></span><span>                        {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>, <span class="hljs-number">1</span>:<span class="hljs-number">0</span>, <span class="hljs-number">4</span>:<span class="hljs-number">1</span>, <span class="hljs-number">6</span>:<span class="hljs-number">1</span>}], <span class="hljs-comment"># amy's third inning stats</span></span><span>                <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],</span><span>                <span class="hljs-string">'charlie'</span>: []}</span></code></pre>
                     <p>Update the <code>get_player_hit_count(player_stats, player, inning, hit_size)</code> functions in the code such that it uses the <code>player_stats</code> dictionary to return the hit count for the <code>player</code> in the <code>inning</code>                      for the given <code>hit_size</code>.<br> e.g., <code>get_player_hit_count(player_stats, 'amy', 2, 6)</code> should return how many times <code>amy</code>'s hits in her second inning (i.e., <code>inning = 2</code>) scored <code>6</code>s;
                       the return value should be <code>0</code>.</p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
-  
-print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))
-print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span></span><span>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span></span><span>  </span><span>print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))</span><span>print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">5
-2
-</code></pre>
+                    <pre><code class="hljs"><span>5</span><span>2</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p></template>
-                      <pre><code class="hljs python">
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
-  <span class="hljs-keyword">return</span> player_stats[...][inning<span class="hljs-number">-1</span>][...]
-</code></pre>
+                      <pre><code class="hljs python"><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span></span><span>  <span class="hljs-keyword">return</span> player_stats[...][inning<span class="hljs-number">-1</span>][...]</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -749,35 +552,11 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
                   <div>
                     <h4 id="exercise-grade-report">Exercise: Grade Report<a class="fa fa-anchor" href="#exercise-grade-report"></a></h4>
                     <p>Write a program that reads student grades one entry at a time and print a consolidated grade report at the end. Follow the sample output given below.</p>
-                    <pre><code class="hljs">-----------------------------------------------------
-     ~ Welcome to Grade Report System ~
-* Enter one entry at a time in the format NAME GRADE
-* NAME should be one word
-* Enter an empty line to proceed to printing report
------------------------------------------------------
-Student name and grade? amy A
-Student name and grade? ben B
-Student name and grade? ben 
-Invalid input! Entry rejected.
-Student name and grade? ben C D
-Invalid input! Entry rejected.
-Student name and grade? ben A
-Student name and grade? charlie F
-Student name and grade? amy A+
-Student name and grade? amy D
-Student name and grade? 
-============ Grade Report ===============
-amy : A A+ D
-ben : B A
-charlie : F
-</code></pre>
+                    <pre><code class="hljs"><span>-----------------------------------------------------</span><span>     ~ Welcome to Grade Report System ~</span><span>* Enter one entry at a time in the format NAME GRADE</span><span>* NAME should be one word</span><span>* Enter an empty line to proceed to printing report</span><span>-----------------------------------------------------</span><span>Student name and grade? amy A</span><span>Student name and grade? ben B</span><span>Student name and grade? ben </span><span>Invalid input! Entry rejected.</span><span>Student name and grade? ben C D</span><span>Invalid input! Entry rejected.</span><span>Student name and grade? ben A</span><span>Student name and grade? charlie F</span><span>Student name and grade? amy A+</span><span>Student name and grade? amy D</span><span>Student name and grade? </span><span>============ Grade Report ===============</span><span>amy : A A+ D</span><span>ben : B A</span><span>charlie : F</span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 Python hints</span></p></template>
                       <ul>
                         <li>use a dictionary of this format to store grades:
-                          <pre><code class="hljs python">{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],
- <span class="hljs-string">'ben'</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'A'</span>],
- <span class="hljs-string">'charlie'</span>: [<span class="hljs-string">'F'</span>]}
-</code></pre>
+                          <pre><code class="hljs python"><span>{<span class="hljs-string">'amy'</span>: [<span class="hljs-string">'A'</span>, <span class="hljs-string">'A+'</span>, <span class="hljs-string">'D'</span>],</span><span> <span class="hljs-string">'ben'</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'A'</span>],</span><span> <span class="hljs-string">'charlie'</span>: [<span class="hljs-string">'F'</span>]}</span></code></pre>
                         </li>
                         <li>The string method <code>split()</code> can be useful to break the user entry into name and grade.<br> As you know,<code>'aaa bbb ccc'.split()</code> evaluates to a list <code>['aaa', 'bbb', 'ccc']</code></li>
                         <li>The string method <code>join()</code> can be useful when printing grades.<br> As you know, <code>' '.join(['aaa', 'bbb', 'ccc'])</code> evaluates to <code>'aaa bbb ccc'</code></li>
@@ -827,15 +606,7 @@ charlie : F
                             </td>
                             <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                             <td valign="bottom">
-                              <pre><code class="hljs">###############
-### KITCHEN ###
-###############
-eggs.......:100
-pots.......:  5
-            ---
-total......:105
-            ===
-</code></pre>
+                              <pre><code class="hljs"><span>###############</span><span>### KITCHEN ###</span><span>###############</span><span>eggs.......:100</span><span>pots.......:  5</span><span>            ---</span><span>total......:105</span><span>            ===</span></code></pre>
                             </td>
                           </tr>
                         </table>
@@ -880,16 +651,7 @@ total......:105
                             </td>
                             <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                             <td valign="bottom">
-                              <pre><code class="hljs">#########################
-####### BOOK SHOP #######
-#########################
-books................:  3
-pencils..............: 22
-pens.................: 85
-                      ---
-total................:110
-                      ===
-</code></pre>
+                              <pre><code class="hljs"><span>#########################</span><span>####### BOOK SHOP #######</span><span>#########################</span><span>books................:  3</span><span>pencils..............: 22</span><span>pens.................: 85</span><span>                      ---</span><span>total................:110</span><span>                      ===</span></code></pre>
                             </td>
                           </tr>
                         </table>
@@ -902,75 +664,7 @@ total................:110
                     </ul>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">💡 (Python) Partial solution</span></p></template>
                       <p>This exercise requires string formatting methods you learned in an earlier lesson.</p>
-                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span>
-  print_header(width, title)
-  <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(items.keys()):
-    print_item(k, items[k], width)
-  print_total(calculate_total(items), width)
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_header</span><span class="hljs-params">(width, title)</span>:</span>
-  <span class="hljs-string">""" print the given title in the format of a banner.
-
-  Example: print_header(10, 'hi')
-  ##########
-  ### HI ###
-  ##########
-
-  * The title is center aligned and in upper case
-
-  Arguments:
-  word -- (type:string) the title of the banner
-  width -- (type:int) the width of the banner
-  """</span>
-  print(<span class="hljs-string">'#'</span>*width)
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_total</span><span class="hljs-params">(total, width)</span>:</span>
-  <span class="hljs-string">""" print the given total in the following format
-
-  Example: print_total(5, 12)
-           ---
-  total...:  5
-           ===
-
-  * The total is right-justified
-
-  Arguments:
-  total -- (type:int) the total to print
-  width -- (type:int) the width to use for printing
-  """</span>
-  print(<span class="hljs-string">'---'</span>.rjust(width, <span class="hljs-string">' '</span>))
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_item</span><span class="hljs-params">(name, count, width)</span>:</span>
-  <span class="hljs-string">""" Print the name and count as a row in the inventory listing.
-
-  Example: print_item('pins', 2, 12)
-  pins....:  2
-
-  * The count is right-justified in a column that is 3 characters wide.
-
-  Arguments:
-  name -- (type:string) name of the item
-  count -- (type:int) number of items
-  width -- (type:int) the width to use for printing
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#  REPLACE WITH YOUR CODE</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_total</span><span class="hljs-params">(items)</span>:</span>
-  total = <span class="hljs-number">0</span>
-  <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> items.values():
-    total = total + v
-  <span class="hljs-keyword">return</span> total
-
-print_inventory({<span class="hljs-string">'pots'</span>:<span class="hljs-number">5</span>, <span class="hljs-string">'eggs'</span>:<span class="hljs-number">100</span>}, <span class="hljs-string">'Kitchen'</span>, <span class="hljs-number">15</span>)
-print(<span class="hljs-string">'\n'</span>)
-print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-number">85</span>, <span class="hljs-string">'books'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'pencils'</span>: <span class="hljs-number">22</span>}, <span class="hljs-string">'Book Shop'</span>, <span class="hljs-number">25</span>)
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_inventory</span><span class="hljs-params">(items, title, width)</span>:</span></span><span>  print_header(width, title)</span><span>  <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(items.keys()):</span><span>    print_item(k, items[k], width)</span><span>  print_total(calculate_total(items), width)</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_header</span><span class="hljs-params">(width, title)</span>:</span></span><span>  <span class="hljs-string">""" print the given title in the format of a banner.</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  Example: print_header(10, 'hi')</span></span><span><span class="hljs-string">  ##########</span></span><span><span class="hljs-string">  ### HI ###</span></span><span><span class="hljs-string">  ##########</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  * The title is center aligned and in upper case</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  Arguments:</span></span><span><span class="hljs-string">  word -- (type:string) the title of the banner</span></span><span><span class="hljs-string">  width -- (type:int) the width of the banner</span></span><span><span class="hljs-string">  """</span></span><span>  print(<span class="hljs-string">'#'</span>*width)</span><span>  <span class="hljs-comment"># ADD YOUR CODE HERE</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_total</span><span class="hljs-params">(total, width)</span>:</span></span><span>  <span class="hljs-string">""" print the given total in the following format</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  Example: print_total(5, 12)</span></span><span><span class="hljs-string">           ---</span></span><span><span class="hljs-string">  total...:  5</span></span><span><span class="hljs-string">           ===</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  * The total is right-justified</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  Arguments:</span></span><span><span class="hljs-string">  total -- (type:int) the total to print</span></span><span><span class="hljs-string">  width -- (type:int) the width to use for printing</span></span><span><span class="hljs-string">  """</span></span><span>  print(<span class="hljs-string">'---'</span>.rjust(width, <span class="hljs-string">' '</span>))</span><span>  <span class="hljs-comment"># ADD YOUR CODE HERE</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_item</span><span class="hljs-params">(name, count, width)</span>:</span></span><span>  <span class="hljs-string">""" Print the name and count as a row in the inventory listing.</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  Example: print_item('pins', 2, 12)</span></span><span><span class="hljs-string">  pins....:  2</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  * The count is right-justified in a column that is 3 characters wide.</span></span><span><span class="hljs-string"></span></span><span><span class="hljs-string">  Arguments:</span></span><span><span class="hljs-string">  name -- (type:string) name of the item</span></span><span><span class="hljs-string">  count -- (type:int) number of items</span></span><span><span class="hljs-string">  width -- (type:int) the width to use for printing</span></span><span><span class="hljs-string">  """</span></span><span>  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#  REPLACE WITH YOUR CODE</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_total</span><span class="hljs-params">(items)</span>:</span></span><span>  total = <span class="hljs-number">0</span></span><span>  <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> items.values():</span><span>    total = total + v</span><span>  <span class="hljs-keyword">return</span> total</span><span>&#x200B;</span><span>print_inventory({<span class="hljs-string">'pots'</span>:<span class="hljs-number">5</span>, <span class="hljs-string">'eggs'</span>:<span class="hljs-number">100</span>}, <span class="hljs-string">'Kitchen'</span>, <span class="hljs-number">15</span>)</span><span>print(<span class="hljs-string">'\n'</span>)</span><span>print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-number">85</span>, <span class="hljs-string">'books'</span>: <span class="hljs-number">3</span>, <span class="hljs-string">'pencils'</span>: <span class="hljs-number">22</span>}, <span class="hljs-string">'Book Shop'</span>, <span class="hljs-number">25</span>)</span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -1016,7 +710,7 @@ print_inventory({<span class="hljs-string">'pens'</span>: <span class="hljs-numb
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

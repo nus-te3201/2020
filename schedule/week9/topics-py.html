@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 9 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-    <header>
+    <header class="header-fixed">
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -103,64 +103,21 @@
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects
                   created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
-  
-  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span>
-    self.name = student_name <span class="hljs-comment"># instance-level attribute</span>
-    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
-    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span></span><span>  </span><span>  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span></span><span>    self.name = student_name <span class="hljs-comment"># instance-level attribute</span></span><span>    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span></span><span>    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span></span></code></pre>
                 <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
                 <ul>
                   <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
                   <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
                 </ul>
-                <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
-print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
-print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
-print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
-
-ben = Student(<span class="hljs-string">"Ben"</span>)
-print(<span class="hljs-string">'total students:'</span>, Student.total_students)
-print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
-print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
-</code></pre>
+                <pre><code class="hljs python"><span>amy = Student(<span class="hljs-string">"Amy"</span>)</span><span>print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span></span><span>print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span></span><span>print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)</span><span>&#x200B;</span><span>ben = Student(<span class="hljs-string">"Ben"</span>)</span><span>print(<span class="hljs-string">'total students:'</span>, Student.total_students)</span><span>print(<span class="hljs-string">'total students:'</span>, ben.total_students) </span><span>print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs">total students: 1
-total students: 1
-Amy course count: 0
-total students: 2
-total students: 2
-Ben course count: 0
-</code></pre>
+                <pre><code class="hljs"><span>total students: 1</span><span>total students: 1</span><span>Amy course count: 0</span><span>total students: 2</span><span>total students: 2</span><span>Ben course count: 0</span></code></pre>
               </box>
               <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong>                <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
-
-  enabled = <span class="hljs-literal">True</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span>
-    self.text = new_text
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">if</span> Printer.enabled:
-      print(self.text)
-
-<span class="hljs-meta">  @classmethod</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span>
-    cls.enabled = <span class="hljs-literal">False</span>  <span class="hljs-comment"># cls here is same as Printer</span>
-    print(<span class="hljs-string">'All Printers disabled'</span>)
-
-<span class="hljs-meta">  @classmethod</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span>
-    cls.enabled = <span class="hljs-literal">True</span>
-    print(<span class="hljs-string">'All Printers enabled'</span>)
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span></span><span>&#x200B;</span><span>  enabled = <span class="hljs-literal">True</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span></span><span>    self.text = new_text</span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span></span><span>    <span class="hljs-keyword">if</span> Printer.enabled:</span><span>      print(self.text)</span><span>&#x200B;</span><span><span class="hljs-meta">  @classmethod</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span></span><span>    cls.enabled = <span class="hljs-literal">False</span>  <span class="hljs-comment"># cls here is same as Printer</span></span><span>    print(<span class="hljs-string">'All Printers disabled'</span>)</span><span>&#x200B;</span><span><span class="hljs-meta">  @classmethod</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span></span><span>    cls.enabled = <span class="hljs-literal">True</span></span><span>    print(<span class="hljs-string">'All Printers enabled'</span>)</span></code></pre>
                 <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
                 <div>
                   <div></div>
@@ -168,24 +125,11 @@ Ben course count: 0
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">Printer.disable()
-p1 = Printer(<span class="hljs-string">'blah blah'</span>)
-p2 = Printer(<span class="hljs-string">'yak yak'</span>)
-p1.print_text() <span class="hljs-comment"># will not print</span>
-p2.print_text() <span class="hljs-comment"># will not print</span>
-
-Printer.enable() 
-p1.print_text()
-p2.print_text()
-</code></pre>
+                        <pre><code class="hljs python"><span>Printer.disable()</span><span>p1 = Printer(<span class="hljs-string">'blah blah'</span>)</span><span>p2 = Printer(<span class="hljs-string">'yak yak'</span>)</span><span>p1.print_text() <span class="hljs-comment"># will not print</span></span><span>p2.print_text() <span class="hljs-comment"># will not print</span></span><span>&#x200B;</span><span>Printer.enable() </span><span>p1.print_text()</span><span>p2.print_text()</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">All Printers disabled
-All Printers enabled
-blah blah
-yak yak
-</code></pre>
+                        <pre><code class="hljs"><span>All Printers disabled</span><span>All Printers enabled</span><span>blah blah</span><span>yak yak</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -205,59 +149,16 @@ yak yak
                     <table>
                       <tr>
                         <td>
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
-    self.name = name
-    self.code = code
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(self.code, <span class="hljs-string">':'</span>, self.name)
-    
-print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
-s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) 
-print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
-print(Subject.limit_reached(<span class="hljs-number">1</span>))
-print(Subject.limit_reached(<span class="hljs-number">2</span>))
-s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)
-print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
-print(Subject.limit_reached(<span class="hljs-number">2</span>))
-print(Subject.limit_reached(<span class="hljs-number">3</span>))
-Subject.total = <span class="hljs-number">100</span>
-print(Subject.limit_reached(<span class="hljs-number">100</span>))
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span></span><span>    self.name = name</span><span>    self.code = code</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.code, <span class="hljs-string">':'</span>, self.name)</span><span>    </span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)</span><span>s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) </span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)</span><span>print(Subject.limit_reached(<span class="hljs-number">1</span>))</span><span>print(Subject.limit_reached(<span class="hljs-number">2</span>))</span><span>s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)</span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)</span><span>print(Subject.limit_reached(<span class="hljs-number">2</span>))</span><span>print(Subject.limit_reached(<span class="hljs-number">3</span>))</span><span>Subject.total = <span class="hljs-number">100</span></span><span>print(Subject.limit_reached(<span class="hljs-number">100</span>))</span></code></pre>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
-                          <pre><code class="hljs">total subjects: 0
-total subjects: 1
-True
-False
-total subjects: 2
-True
-False
-True
-</code></pre>
+                          <pre><code class="hljs"><span>total subjects: 0</span><span>total subjects: 1</span><span>True</span><span>False</span><span>total subjects: 2</span><span>True</span><span>False</span><span>True</span></code></pre>
                         </td>
                       </tr>
                     </table>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution and hints</span></p></template>
-                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
-  
-  <span class="hljs-comment"># ADD `total` attribute here</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
-    self.name = name
-    self.code = code
-    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(self.code, <span class="hljs-string">':'</span>, self.name)
-    
-<span class="hljs-meta">  @classmethod</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
-    ... <span class="hljs-comment"># ADD implementation</span>
-</code></pre>
+                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span></span><span>  </span><span>  <span class="hljs-comment"># ADD `total` attribute here</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span></span><span>    self.name = name</span><span>    self.code = code</span><span>    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span></span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.code, <span class="hljs-string">':'</span>, self.name)</span><span>    </span><span><span class="hljs-meta">  @classmethod</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span></span><span>    ... <span class="hljs-comment"># ADD implementation</span></span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -284,28 +185,7 @@ True
               </ul>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Account</code> class below.</p>
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
-  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
-  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
-  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span>
-    self.__balance = amount <span class="hljs-comment"># private</span>
-    self._owner = person    <span class="hljs-comment"># protected</span>
-    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span>
-    <span class="hljs-keyword">return</span> [self.status]
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span>
-    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span>
-    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
-    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span></span><span>  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span></span><span>  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span></span><span>  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span></span><span>    self.__balance = amount <span class="hljs-comment"># private</span></span><span>    self._owner = person    <span class="hljs-comment"># protected</span></span><span>    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span></span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span></span><span>    <span class="hljs-keyword">return</span> [self.status]</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span></span><span>    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span></span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span></span><span>    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span></span><span>    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span></span></code></pre>
                 <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                   </span> The following code works fine because the members being accessed are public.</p>
                 <div>
@@ -314,18 +194,11 @@ True
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
-a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
-print(<span class="hljs-string">'status:'</span>, a.status)
-print(<span class="hljs-string">'info:'</span>, a.get_info())
-</code></pre>
+                        <pre><code class="hljs python"><span>print(<span class="hljs-string">'currency:'</span>, Account.currency)</span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)</span><span>print(<span class="hljs-string">'status:'</span>, a.status)</span><span>print(<span class="hljs-string">'info:'</span>, a.get_info())</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">currency: $
-status: OK
-info: ['OK']
-</code></pre>
+                        <pre><code class="hljs"><span>currency: $</span><span>status: OK</span><span>info: ['OK']</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -338,35 +211,21 @@ info: ['OK']
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
-a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
-print(<span class="hljs-string">'owner:'</span>, a._owner) 
-print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
-</code></pre>
+                        <pre><code class="hljs python"><span>print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) </span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)</span><span>print(<span class="hljs-string">'owner:'</span>, a._owner) </span><span>print(<span class="hljs-string">'more info:'</span>, a._get_more_info())</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs">minimum allowed: 10.0
-owner: Adam
-more info: ['OK', 'Adam']
-</code></pre>
+                        <pre><code class="hljs"><span>minimum allowed: 10.0</span><span>owner: Adam</span><span>more info: ['OK', 'Adam']</span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                   </span> The following code will not work because they try to access private members.</p>
-                <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
-a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
-print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
-print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
-</code></pre>
+                <pre><code class="hljs python"><span>print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)</span><span>print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span></span><span>print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span></span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs">AttributeError: type object 'Account' has no attribute '__max'...
-AttributeError: 'Account' object has no attribute '__balance'...
-AttributeError: 'Account' object has no attribute '__get_income'...
-</code></pre>
+                <pre><code class="hljs"><span>AttributeError: type object 'Account' has no attribute '__max'...</span><span>AttributeError: 'Account' object has no attribute '__balance'...</span><span>AttributeError: 'Account' object has no attribute '__get_income'...</span></code></pre>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
                 </p>
               </tip-box>
@@ -378,28 +237,11 @@ AttributeError: 'Account' object has no attribute '__get_income'...
                     <table>
                       <tr>
                         <td>
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
-  
-  __target = <span class="hljs-number">0.99</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span>
-    self.__budget = capital
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-keyword">return</span> self.__budget * School.__target
-    
-print(School.__target)
-s = School(<span class="hljs-number">100000</span>)
-print(s.__budget)
-print(s.__max_expenditure())
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span></span><span>  </span><span>  __target = <span class="hljs-number">0.99</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span></span><span>    self.__budget = capital</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span></span><span>    <span class="hljs-keyword">return</span> self.__budget * School.__target</span><span>    </span><span>print(School.__target)</span><span>s = School(<span class="hljs-number">100000</span>)</span><span>print(s.__budget)</span><span>print(s.__max_expenditure())</span></code></pre>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
-                          <pre><code class="hljs">0.99
-100000
-99000.0
-</code></pre>
+                          <pre><code class="hljs"><span>0.99</span><span>100000</span><span>99000.0</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -440,7 +282,7 @@ print(s.__max_expenditure())
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.11.0</a> at Sun, 08 Mar 2020 12:16:08 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 9, 2020, 8:17:37 PM GMT+8</small></div>
     </footer>
   </div>
 </body>
