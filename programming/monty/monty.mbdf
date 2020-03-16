@@ -1056,7 +1056,7 @@ class ToDo:
 
 ### <span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Multiple Code Files</span>
 
-Enhance the [Monty Level 11 code]({{ baseUrl }}/programming/chapters/monty.html#monty11) to divide the source code into multiple files (e.g., `todo.py`, `deadline.py`, etc.).
+Enhance the [Monty Level 10 code]({{ baseUrl }}/programming/chapters/monty.html#monty10) to divide the source code into multiple files (e.g., `todo.py`, `deadline.py`, etc.).
 
 </div>
 
@@ -1066,7 +1066,7 @@ Enhance the [Monty Level 11 code]({{ baseUrl }}/programming/chapters/monty.html#
 
 ### <span class="badge badge-primary">Level 12</span> <span class="text-primary">Use Inheritance</span>
 
-Enhance the [Monty Level 10 code]({{ baseUrl }}/programming/chapters/monty.html#monty10) to make the `Deadline` class inherit from the `ToDo` class:
+Enhance the [Monty Level 11 code]({{ baseUrl }}/programming/chapters/monty.html#monty11) to make the `Deadline` class inherit from the `ToDo` class:
 
 
 
