@@ -219,27 +219,51 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 * [**Object-Oriented Programing - Part II**]({{ baseUrl }}/programming/chapters/oop.html#object-oriented-programming)
   * [Class-Level Members]({{ baseUrl }}/programming/chapters/oop.html#class-level-members)
   * [Visibility]({{ baseUrl }}/programming/chapters/oop.html#visibility)
+* [**Organizing Python Code**]({{ baseUrl }}/programming/chapters/organizing.html#appendix-c-organizing-python-code)
 </div>
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**This week, we continue to learn more about Python classes.** Let's start with _class-level_ variables and methods.
+</variable>
+</include>
 
 ## **Object-Oriented Programming**
 
 <include src="../programming/oop-classLevelMembers/text.md" />{{ hr_double }}
+
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Next, let us learn to to control access to variables and methods of an object.
+</variable>
+</include>
+
 <include src="../programming/oop-visibility/text.md" />{{ hr_double }}
+
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+As your project code gets bigger, it becomes cumbersome to have all code in one file. **Let's learn how to organize Python code into files and folders.**
+</variable>
+</include>
+
+<include src="../programming/organizing/text.md" />{{ hr_double }}
 </div>
 <div id="week10">
 <div id="week10-toc">
 
 * [**Object-Oriented Programing - Part III**]({{ baseUrl }}/programming/chapters/oop.html#object-oriented-programming---continued)
   * [Inheritance]({{ baseUrl }}/programming/chapters/oop.html#inheritance)
-* [**Organizing Python Code**]({{ baseUrl }}/programming/chapters/organizing.html#appendix-c-organizing-python-code)
 * [**Unit Testing**]({{ baseUrl }}/programming/chapters/unittesting.html#appendix-d-unit-testing)
 </div>
 
 ## **Object-Oriented Programming**
 
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
-
-<include src="../programming/organizing/text.md" />{{ hr_double }}
   
 <include src="../programming/unittesting/text.md" />{{ hr_double }}
 </div>

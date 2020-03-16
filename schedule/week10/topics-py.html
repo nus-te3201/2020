@@ -38,8 +38,8 @@
           <li><a href="/2020/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
           <li><a href="/2020/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
-          <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
@@ -92,7 +92,6 @@
                     <li><a href="/2020/programming/chapters/oop.html#inheritance">Inheritance</a></li>
                   </ul>
                 </li>
-                <li><a href="/2020/programming/chapters/organizing.html#appendix-c-organizing-python-code"><strong>Organizing Python Code</strong></a></li>
                 <li><a href="/2020/programming/chapters/unittesting.html#appendix-d-unit-testing"><strong>Unit Testing</strong></a></li>
               </ul>
             </div>
@@ -370,88 +369,6 @@
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
-              <h2 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code"></a></h2>
-              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
-                <p><code>[project_root]/student.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span></span><span>    print(name, <span class="hljs-string">'is a student'</span>)</span></code></pre>
-                <p><code>[project_root]/course.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student</span><span>&#x200B;</span><span>student.describe(<span class="hljs-string">'Adam'</span>)</span></code></pre>
-                <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
-              </box>
-              <p><strong>You can organize files into sub-directories too.</strong></p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
-                <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span></span><span>    print(list(text))</span></code></pre>
-                <p><code>[project_root]/course.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc </span><span>&#x200B;</span><span>misc.print_as_list(<span class="hljs-string">'Adam'</span>)</span></code></pre>
-                <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
-              </box>
-              <p>When you import a module, Python will interpret and execute any code in it.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
-                <p><code>[project_root]/student.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span></span><span>    print(name, <span class="hljs-string">'is a student'</span>)</span><span>&#x200B;</span><span>describe(<span class="hljs-string">'Betty'</span>)</span></code></pre>
-                <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <p><code>[project_root]/course.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student</span><span>&#x200B;</span><span>student.describe(<span class="hljs-string">'Adam'</span>)</span></code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs"><span>Betty is a student</span><span>Adam is a student</span></code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
-              </box>
-              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
-                <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <p><code>[project_root]/student.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span></span><span>    print(name, <span class="hljs-string">'is a student'</span>)</span><span>&#x200B;</span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</span><span>    describe(<span class="hljs-string">'Betty'</span>)</span></code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs"><span>Betty is a student</span></code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
-                <div>
-                  <div></div>
-                  <div></div>
-                  <table>
-                    <tr>
-                      <td valign="top">
-                        <p><code>[project_root]/course.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student</span><span>&#x200B;</span><span>student.describe(<span class="hljs-string">'Adam'</span>)</span></code></pre>
-                      </td>
-                      <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
-                      <td valign="bottom">
-                        <pre><code class="hljs"><span>Adam is a student</span></code></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </box>
-            </div>
-            <hr style="border-top: 3px double #c5c5c5;">
-            <div>
               <h2 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing"></a></h2>
               <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
               <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
@@ -503,7 +420,6 @@
                   <a class="nav-link py-1" href="#exercise-add-smartphone-class">Exercise : Add SmartPhone Class&#x200E;</a>
                 </nav>
               </nav>
-              <a class="nav-link py-1" href="#appendix-c-organizing-python-code">Appendix C: Organizing Python Code&#x200E;</a>
               <a class="nav-link py-1" href="#appendix-d-unit-testing">Appendix D: Unit Testing&#x200E;</a>
             </nav>
 
@@ -513,7 +429,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Tue, Mar 10, 2020, 11:28:25 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Tue, Mar 17, 2020, 1:09:00 AM GMT+8</small></div>
     </footer>
   </div>
 </body>

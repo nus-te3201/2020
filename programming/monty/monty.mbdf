@@ -1054,7 +1054,17 @@ class ToDo:
 
 <div id="monty11">
 
-### <span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Inheritance</span>
+### <span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Multiple Code Files</span>
+
+Enhance the [Monty Level 11 code]({{ baseUrl }}/programming/chapters/monty.html#monty11) to divide the source code into multiple files (e.g., `todo.py`, `deadline.py`, etc.).
+
+</div>
+
+{{ hr_double }}
+
+<div id="monty12">
+
+### <span class="badge badge-primary">Level 12</span> <span class="text-primary">Use Inheritance</span>
 
 Enhance the [Monty Level 10 code]({{ baseUrl }}/programming/chapters/monty.html#monty10) to make the `Deadline` class inherit from the `ToDo` class:
 
@@ -1105,16 +1115,6 @@ Note:
 * Note how the `Deadline` class overrides some methods (e.g., `__init__`) but uses the parent class method inside the overridden method (e.g., `__init__` method of the `Deadline` class calls the `super().__init__()` method.
 
 </panel>
-
-</div>
-
-{{ hr_double }}
-
-<div id="monty12">
-
-### <span class="badge badge-primary">Level 12</span> <span class="text-primary">Use Multiple Code Files</span>
-
-Enhance the [Monty Level 11 code]({{ baseUrl }}/programming/chapters/monty.html#monty11) to divide the source code into multiple files (e.g., `todo.py`, `deadline.py`, etc.).
 
 </div>
 
