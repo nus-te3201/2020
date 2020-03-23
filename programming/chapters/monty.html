@@ -409,31 +409,13 @@
               <div>
                 <h2 id="extensions-category-b">
                   <div class="text-white bg-info p-1">Extensions: Category B</div><a class="fa fa-anchor" href="#extensions-category-b"></a></h2>
-                <div id="B-TentativeScheduling">
+                <div id="B-Events">
                   <div>
                     <div></div>
-                    <h3 id="b-tentativescheduling"><span class="badge badge-pill badge-info">B-TentativeScheduling</span><a class="fa fa-anchor" href="#b-tentativescheduling"></a></h3>
-                    <p><strong>Tentative scheduling</strong></p>
+                    <h3 id="b-events"><span class="badge badge-pill badge-info">B-Events</span><a class="fa fa-anchor" href="#b-events"></a></h3>
+                    <p><strong>Events</strong></p>
                   </div>
-                  <p>Provide a way for an event to be tentatively scheduled in multiple slots, and later to be confirmed to one the slots.</p>
-                </div>
-                <hr>
-                <div id="B-Snooze">
-                  <div>
-                    <div></div>
-                    <h3 id="b-snooze"><span class="badge badge-pill badge-info">B-Snooze</span><a class="fa fa-anchor" href="#b-snooze"></a></h3>
-                    <p><strong>Snoozing/postponing tasks</strong></p>
-                  </div>
-                  <p>Provide a way to easily snooze/postpone/reschedule tasks.</p>
-                </div>
-                <hr>
-                <div id="B-RecurringTasks">
-                  <div>
-                    <div></div>
-                    <h3 id="b-recurringtasks"><span class="badge badge-pill badge-info">B-RecurringTasks</span><a class="fa fa-anchor" href="#b-recurringtasks"></a></h3>
-                    <p><strong>Recurring tasks</strong></p>
-                  </div>
-                  <p>Provide support for managing <em>recurring</em> tasks <span class="dimmed">e.g., a weekly project meeting</span>.</p>
+                  <p>Provide a way for the user to track <em>events</em> (i.e., things with a start time and an end time such as a meeting), in addition to <em>todo</em> and <em>deadline</em> tasks.</p>
                 </div>
                 <hr>
                 <div id="B-DoAfterTasks">
@@ -463,41 +445,7 @@
                   <p>Provide support for managing tasks that takes a fixed amount of time but does not have a fixed start/end time <span class="dimmed">e.g., reading the sales report (needs 2 hours)</span>.</p>
                 </div>
                 <hr>
-                <div id="B-Reminders">
-                  <div>
-                    <div></div>
-                    <h3 id="b-reminders"><span class="badge badge-pill badge-info">B-Reminders</span><a class="fa fa-anchor" href="#b-reminders"></a></h3>
-                    <p><strong>Reminders for tasks</strong></p>
-                  </div>
-                  <p>Provide a way to get reminders about tasks <span class="dimmed">e.g., remind the user about upcoming deadlines</span>.</p>
-                </div>
-                <hr>
-                <div id="B-FindFreeTimes">
-                  <div>
-                    <div></div>
-                    <h3 id="b-findfreetimes"><span class="badge badge-pill badge-info">B-FindFreeTimes</span><a class="fa fa-anchor" href="#b-findfreetimes"></a></h3>
-                    <p><strong>Find free times</strong></p>
-                  </div>
-                  <p>Provide a way for the user to find free times <span class="dimmed">e.g., when is the nearest day in which I have a 4 hour free slot?</span>.</p>
-                </div>
-                <hr>
-                <div id="B-ViewSchedules">
-                  <div>
-                    <div></div>
-                    <h3 id="b-viewschedules"><span class="badge badge-pill badge-info">B-ViewSchedules</span><a class="fa fa-anchor" href="#b-viewschedules"></a></h3>
-                    <p><strong>View schedules</strong></p>
-                  </div>
-                  <p>Provide a way to view tasks in the form of a schedule <span class="dimmed">e.g., view the schedule for a specific date</span>.</p>
-                </div>
-                <hr>
-                <div id="B-DetectAnomalies">
-                  <div>
-                    <div></div>
-                    <h3 id="b-detectanomalies"><span class="badge badge-pill badge-info">B-DetectAnomalies</span><a class="fa fa-anchor" href="#b-detectanomalies"></a></h3>
-                    <p><strong>Detect scheduling anomalies</strong></p>
-                  </div>
-                  <p>Deal with schedule anomalies <span class="dimmed">e.g., detect if a task being added clashes with another task in the list</span>.</p>
-                </div>
+
                 <h2 id="extensions-category-c">
                   <div class="text-white bg-success p-1">Extensions: Category C</div><a class="fa fa-anchor" href="#extensions-category-c"></a></h2>
                 <div id="C-DetectDuplicates">
@@ -518,6 +466,15 @@
                   <p>Provide more flexibility with the data source <span class="dimmed">e.g., the ability for the user to specify which file to use as the data source</span>.</p>
                 </div>
                 <hr>
+                <div id="C-DateTimes">
+                  <div>
+                    <div></div>
+                    <h3 id="c-datetimes"><span class="badge badge-pill badge-info">C-DateTimes</span><a class="fa fa-anchor" href="#c-datetimes"></a></h3>
+                    <p><strong>Meaningful date/times</strong></p>
+                  </div>
+                  <p>Make Monty understand the meaning of dates/times attached to a task. e.g., sort deadlines based on their dates/times</p>
+                </div>
+                <hr>
                 <div id="C-Sort">
                   <div>
                     <div></div>
@@ -526,21 +483,13 @@
                   </div>
                   <p>The ability to sort items <span class="dimmed">e.g., sort deadlines chronologically</span>.</p>
                 </div>
-                <div id="C-NaturalDates">
+                <div id="C-Search">
                   <div>
                     <div></div>
-                    <h3 id="c-naturaldates"><span class="badge badge-pill badge-success">C-NaturalDates</span><a class="fa fa-anchor" href="#c-naturaldates"></a></h3>
-                    <p><strong>More natural date formats</strong></p>
-                  </div>
-                  <p>Support more natural date formats <span class="dimmed">e.g., <code>Mon</code> in a user command can be interpreted as the date of the next Monday in the calendar</span>.</p>
-                </div>
-                <div id="C-BetterSearch">
-                  <div>
-                    <div></div>
-                    <h3 id="c-bettersearch"><span class="badge badge-pill badge-success">C-BetterSearch</span><a class="fa fa-anchor" href="#c-bettersearch"></a></h3>
+                    <h3 id="c-search"><span class="badge badge-pill badge-success">C-Search</span><a class="fa fa-anchor" href="#c-search"></a></h3>
                     <p><strong>More flexibility in searching for items</strong></p>
                   </div>
-                  <p>All more flexibility in search <span class="dimmed">e.g., find items even if the keyword matches the item only partially</span>.</p>
+                  <p>Provide the ability to find tasks based on a search criterion <span class="dimmed">e.g., find items that contains the provided keyword in their description</span>.</p>
                 </div>
                 <div id="C-Update">
                   <div>
@@ -548,7 +497,7 @@
                     <h3 id="c-update"><span class="badge badge-pill badge-success">C-Update</span><a class="fa fa-anchor" href="#c-update"></a></h3>
                     <p><strong>Easily edit items</strong></p>
                   </div>
-                  <p>Support a way to easily edit details of items <span class="dimmed">e.g., change the end time of an event without changing anything else</span>.</p>
+                  <p>Support a way to easily edit details of items <span class="dimmed">e.g., change the deadline date without changing anything else</span>.</p>
                   <p>Minimal: the ability to update an existing item without having to delete it first</p>
                   <p>Other ideas:</p>
                   <ul>
@@ -594,28 +543,6 @@
                     <p><strong>Statistics and insights</strong></p>
                   </div>
                   <p>Provide a way to leverage statistics about the items managed by the App <span class="dimmed">e.g., show the number of tasks that have been completed in the past week</span>.</p>
-                </div>
-                <div id="C-UndoRedo">
-                  <div>
-                    <div></div>
-                    <h3 id="c-undo"><span class="badge badge-pill badge-success">C-Undo</span><a class="fa fa-anchor" href="#c-undo"></a></h3>
-                    <p><strong>Undo</strong></p>
-                  </div>
-                  <p>Provide a way to undo a command.</p>
-                  <p>Minimal: the ability to undo the most recent command.</p>
-                </div>
-                <div id="C-Help">
-                  <div>
-                    <div></div>
-                    <h3 id="c-help"><span class="badge badge-pill badge-success">C-Help</span><a class="fa fa-anchor" href="#c-help"></a></h3>
-                    <p><strong>Give help to users</strong></p>
-                  </div>
-                  <p>Provide in-App guidance to users.</p>
-                  <p>Minimal: add a command to access a help page.</p>
-                  <p>Other ideas:</p>
-                  <ul>
-                    <li>Load the App with some sample data at the first run.</li>
-                  </ul>
                 </div>
                 <div id="C-FriendlierSyntax">
                   <div>
@@ -730,33 +657,25 @@
               <a class="nav-link py-1" href="#extensions-category-b">
             Extensions: Category B&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#b-tentativescheduling">B-TentativeScheduling&#x200E;</a>
-                <a class="nav-link py-1" href="#b-snooze">B-Snooze&#x200E;</a>
-                <a class="nav-link py-1" href="#b-recurringtasks">B-RecurringTasks&#x200E;</a>
+                <a class="nav-link py-1" href="#b-events">B-Events&#x200E;</a>
                 <a class="nav-link py-1" href="#b-doaftertasks">B-DoAfterTasks&#x200E;</a>
                 <a class="nav-link py-1" href="#b-dowithinperiodtasks">B-DoWithinPeriodTasks&#x200E;</a>
                 <a class="nav-link py-1" href="#b-fixeddurationtasks">B-FixedDurationTasks&#x200E;</a>
-                <a class="nav-link py-1" href="#b-reminders">B-Reminders&#x200E;</a>
-                <a class="nav-link py-1" href="#b-findfreetimes">B-FindFreeTimes&#x200E;</a>
-                <a class="nav-link py-1" href="#b-viewschedules">B-ViewSchedules&#x200E;</a>
-                <a class="nav-link py-1" href="#b-detectanomalies">B-DetectAnomalies&#x200E;</a>
               </nav>
               <a class="nav-link py-1" href="#extensions-category-c">
             Extensions: Category C&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#c-detectduplicates">C-DetectDuplicates&#x200E;</a>
                 <a class="nav-link py-1" href="#c-flexibledatasource">C-FlexibleDataSource&#x200E;</a>
+                <a class="nav-link py-1" href="#c-datetimes">C-DateTimes&#x200E;</a>
                 <a class="nav-link py-1" href="#c-sort">C-Sort&#x200E;</a>
-                <a class="nav-link py-1" href="#c-naturaldates">C-NaturalDates&#x200E;</a>
-                <a class="nav-link py-1" href="#c-bettersearch">C-BetterSearch&#x200E;</a>
+                <a class="nav-link py-1" href="#c-search">C-Search&#x200E;</a>
                 <a class="nav-link py-1" href="#c-update">C-Update&#x200E;</a>
                 <a class="nav-link py-1" href="#c-tagging">C-Tagging&#x200E;</a>
                 <a class="nav-link py-1" href="#c-priority">C-Priority&#x200E;</a>
                 <a class="nav-link py-1" href="#c-archive">C-Archive&#x200E;</a>
                 <a class="nav-link py-1" href="#c-massops">C-MassOps&#x200E;</a>
                 <a class="nav-link py-1" href="#c-statistics">C-Statistics&#x200E;</a>
-                <a class="nav-link py-1" href="#c-undo">C-Undo&#x200E;</a>
-                <a class="nav-link py-1" href="#c-help">C-Help&#x200E;</a>
                 <a class="nav-link py-1" href="#c-friendliersyntax">C-FriendlierSyntax&#x200E;</a>
               </nav>
               <a class="nav-link py-1" href="#extensions-category-d">
@@ -779,7 +698,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Tue, Mar 17, 2020, 1:15:18 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 23, 2020, 7:52:48 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

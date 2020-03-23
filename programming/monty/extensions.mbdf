@@ -1,22 +1,10 @@
 ## <div class="text-white bg-info p-1">Extensions: Category B</div>
 
-<div id="B-TentativeScheduling">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-TentativeScheduling" var-extStyle="info"
-         var-extHeading="Tentative scheduling"/>
+<div id="B-Events">
+<include boilerplate src="montyExtensionTitle.md" var-extId="B-Events" var-extStyle="info"
+         var-extHeading="Events"/>
 
-Provide a way for an event to be tentatively scheduled in multiple slots, and later to be confirmed to one the slots.
-</div><hr>
-<div id="B-Snooze">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-Snooze" var-extStyle="info"
-         var-extHeading="Snoozing/postponing tasks"/>
-
-Provide a way to easily snooze/postpone/reschedule tasks.
-</div><hr>
-<div id="B-RecurringTasks">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-RecurringTasks" var-extStyle="info"
-         var-extHeading="Recurring tasks"/>
-
-Provide support for managing _recurring_ tasks %%e.g., a weekly project meeting%%.
+Provide a way for the user to track _events_ (i.e., things with a start time and an end time such as a meeting), in addition to _todo_ and _deadline_ tasks.
 </div><hr>
 <div id="B-DoAfterTasks">
 <include boilerplate src="montyExtensionTitle.md" var-extId="B-DoAfterTasks" var-extStyle="info"
@@ -36,30 +24,7 @@ Provide support for managing tasks that need to be done within a certain period 
 
 Provide support for managing tasks that takes a fixed amount of time but does not have a fixed start/end time %%e.g., reading the sales report (needs 2 hours)%%.
 </div><hr>
-<div id="B-Reminders">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-Reminders" var-extStyle="info"
-         var-extHeading="Reminders for tasks"/>
-
-Provide a way to get reminders about tasks %%e.g., remind the user about upcoming deadlines%%.
-</div><hr>
-<div id="B-FindFreeTimes">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-FindFreeTimes" var-extStyle="info"
-         var-extHeading="Find free times"/>
-
-Provide a way for the user to find free times %%e.g., when is the nearest day in which I have a 4 hour free slot?%%.
-</div><hr>
-<div id="B-ViewSchedules">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-ViewSchedules" var-extStyle="info"
-         var-extHeading="View schedules"/>
-
-Provide a way to view tasks in the form of a schedule %%e.g., view the schedule for a specific date%%.
-</div><hr>
-<div id="B-DetectAnomalies">
-<include boilerplate src="montyExtensionTitle.md" var-extId="B-DetectAnomalies" var-extStyle="info"
-         var-extHeading="Detect scheduling anomalies"/>
-
-Deal with schedule anomalies %%e.g., detect if a task being added clashes with another task in the list%%.
-</div><!-- ======================================================================================================= -->
+<!-- ======================================================================================================= -->
 
 ## <div class="text-white bg-success p-1">Extensions: Category C</div>
 
@@ -75,6 +40,12 @@ Add the ability to recognize and deal with duplicate items. %%e.g., the same tas
 
 Provide more flexibility with the data source %%e.g., the ability for the user to specify which file to use as the data source%%.
 </div><hr>
+<div id="C-DateTimes">
+<include boilerplate src="montyExtensionTitle.md" var-extId="C-DateTimes" var-extStyle="info"
+         var-extHeading="Meaningful date/times"/>
+
+Make Monty understand the meaning of dates/times attached to a task. e.g., sort deadlines based on their dates/times
+</div><hr>
 
 <div id="C-Sort">
 <include boilerplate src="montyExtensionTitle.md" var-extId="C-Sort" var-extStyle="success"
@@ -82,23 +53,17 @@ Provide more flexibility with the data source %%e.g., the ability for the user t
 
 The ability to sort items %%e.g., sort deadlines chronologically%%.
 </div>
-<div id="C-NaturalDates">
-<include boilerplate src="montyExtensionTitle.md" var-extId="C-NaturalDates" var-extStyle="success"
-         var-extHeading="More natural date formats"/>
-
-Support more natural date formats %%e.g., `Mon` in a user command can be interpreted as the date of the next Monday in the calendar%%.
-</div>
-<div id="C-BetterSearch">
-<include boilerplate src="montyExtensionTitle.md" var-extId="C-BetterSearch" var-extStyle="success"
+<div id="C-Search">
+<include boilerplate src="montyExtensionTitle.md" var-extId="C-Search" var-extStyle="success"
          var-extHeading="More flexibility in searching for items"/>
 
-All more flexibility in search %%e.g., find items even if the keyword matches the item only partially%%.
+Provide the ability to find tasks based on a search criterion %%e.g., find items that contains the provided keyword in their description%%.
 </div>
 <div id="C-Update">
 <include boilerplate src="montyExtensionTitle.md" var-extId="C-Update" var-extStyle="success"
          var-extHeading="Easily edit items"/>
 
-Support a way to easily edit details of items %%e.g., change the end time of an event without changing anything else%%.
+Support a way to easily edit details of items %%e.g., change the deadline date without changing anything else%%.
 
 Minimal: the ability to update an existing item without having to delete it first
 
@@ -134,26 +99,6 @@ Provide a way to perform tasks on multiple items %%e.g., delete some specific it
          var-extHeading="Statistics and insights"/>
 
 Provide a way to leverage statistics about the items managed by the App %%e.g., show the number of tasks that have been completed in the past week%%. 
-</div>
-<div id="C-UndoRedo">
-<include boilerplate src="montyExtensionTitle.md" var-extId="C-Undo" var-extStyle="success"
-         var-extHeading="Undo"/>
-
-Provide a way to undo a command.
-
-Minimal: the ability to undo the most recent command.
-</div>
-<div id="C-Help">
-<include boilerplate src="montyExtensionTitle.md" var-extId="C-Help" var-extStyle="success"
-         var-extHeading="Give help to users"/>
-
-Provide in-App guidance to users. 
-
-Minimal: add a command to access a help page.
-
-Other ideas:
-* Load the App with some sample data at the first run.
-
 </div>
 <div id="C-FriendlierSyntax">
 <include boilerplate src="montyExtensionTitle.md" var-extId="C-FriendlierSyntax" var-extStyle="success"

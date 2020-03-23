@@ -114,7 +114,7 @@
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>My name is Amy</span></code></pre>
+                        <pre><code class="no-line-numbers hljs"><span>My name is Amy</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -130,7 +130,7 @@
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>My name is Dan</span><span>Dan is teaching</span><span>the name is Dan</span></code></pre>
+                        <pre><code class="no-line-numbers hljs"><span>My name is Dan</span><span>Dan is teaching</span><span>the name is Dan</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -160,7 +160,7 @@
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
-                            <pre><code class="hljs"><span>I'm a Tuna</span><span>I'm swimming</span><span>I'm a Guppy</span><span>I'm swimming</span></code></pre>
+                            <pre><code class="no-line-numbers hljs"><span>I'm a Tuna</span><span>I'm swimming</span><span>I'm a Guppy</span><span>I'm swimming</span></code></pre>
                           </td>
                         </tr>
                       </table>
@@ -181,11 +181,14 @@
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span></span><span>    self.name = name</span><span>    self.matric = matric</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">learn</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is learning'</span>)</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is a student'</span>)</span><span>&#x200B;</span><span>ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)</span><span>ben.print_info()</span><span>ben.learn()</span></code></pre>
+                        <pre><code highlight-lines="2-4,9-10" class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span></span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span></span><span class="highlighted">    self.name = name</span><span class="highlighted">    self.matric = matric</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">learn</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is learning'</span>)</span><span>    </span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span></span><span class="highlighted">    print(self.name, <span class="hljs-string">'is a student'</span>)</span><span>&#x200B;</span><span>adam = Person(<span class="hljs-string">'Adam'</span>)</span><span>adam.print_info()</span><span>ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)</span><span>ben.print_info()</span><span>ben.learn()</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Ben is a student</span><span>Ben is learning</span></code></pre>
+                        <p>For reference, there is the <code>Person</code> class.</p>
+                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span></span><span>    self.name = name</span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is a person'</span>)</span></code></pre>
+                        <p><br><br></p>
+                        <pre><code class="no-line-numbers hljs"><span>Adam is a person</span><span>Ben is a student</span><span>Ben is learning</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -207,7 +210,7 @@
                       <td valign="bottom">&nbsp; = &nbsp;<br><br></td>
                       <td valign="bottom">
                         <p>Override but reuse parent's method</p>
-                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span></span><span>    super().__init__(name) <span class="hljs-comment"># reuse parent's method</span></span><span>    self.matric = matric</span></code></pre>
+                        <pre><code highlight-lines="3" class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span></span><span class="highlighted">    super().__init__(name) <span class="hljs-comment"># reuse parent's method</span></span><span>    self.matric = matric</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -232,7 +235,7 @@
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
-                            <pre><code class="hljs"><span>I'm a Crow</span><span>I have feathers</span><span>I'm flying</span><span>I'm a Penguin</span><span>I have feathers</span><span>I'm waddling</span></code></pre>
+                            <pre><code class="no-line-numbers hljs"><span>I'm a Crow</span><span>I have feathers</span><span>I'm flying</span><span>I'm a Penguin</span><span>I have feathers</span><span>I'm waddling</span></code></pre>
                           </td>
                         </tr>
                       </table>
@@ -254,11 +257,11 @@
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, title)</span>:</span></span><span>    self.title = title</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'Book title: '</span> + self.title</span><span>    </span><span>book = Book(<span class="hljs-string">'Python for Beginners'</span>)</span><span>print(book)</span></code></pre>
+                        <pre><code highlight-lines="5-6,9" class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, title)</span>:</span></span><span>    self.title = title</span><span>    </span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span></span><span class="highlighted">    <span class="hljs-keyword">return</span> <span class="hljs-string">'Book title: '</span> + self.title</span><span>    </span><span>book = Book(<span class="hljs-string">'Python for Beginners'</span>)</span><span class="highlighted">print(book)</span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Book title: Python for Beginners</span></code></pre>
+                        <pre><code class="no-line-numbers hljs"><span>Book title: Python for Beginners</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -279,7 +282,7 @@
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
-                            <pre><code class="hljs"><span>Amy (25years)</span><span>Ben (26years)</span></code></pre>
+                            <pre><code class="no-line-numbers hljs"><span>Amy (25years)</span><span>Ben (26years)</span></code></pre>
                           </td>
                         </tr>
                       </table>
@@ -305,7 +308,7 @@
                       <td valign="bottom">&nbsp;&nbsp;<br><br></td>
                       <td valign="bottom">
                         <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span></span><span>    super().__init__(name)</span><span>    self.matric = matric</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">learn</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is learning'</span>)</span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is a student'</span>)</span></code></pre>
-                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">grade</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is grading'</span>)</span></code></pre>
+                        <pre><code highlight-lines="1" class="hljs python"><span class="highlighted"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">grade</span><span class="hljs-params">(self)</span>:</span></span><span>    print(self.name, <span class="hljs-string">'is grading'</span>)</span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -321,7 +324,7 @@
                     <td valign="bottom"> → <br><br></td>
 
                     <td valign="bottom">
-                      <pre><code class="hljs"><span>Elsie is a teacher</span><span>Elsie is teaching</span><span>Elsie is learning</span><span>Elsie is grading</span></code></pre>
+                      <pre><code class="no-line-numbers hljs"><span>Elsie is a teacher</span><span>Elsie is teaching</span><span>Elsie is learning</span><span>Elsie is grading</span></code></pre>
                       <p></p>
                     </td>
                   </tr>
@@ -344,7 +347,7 @@
                           </td>
                           <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                           <td valign="bottom">
-                            <pre><code class="hljs"><span>My model: iPhone</span><span>taking photo</span><span>making call</span><span>playing game</span></code></pre>
+                            <pre><code class="no-line-numbers hljs"><span>My model: iPhone</span><span>taking photo</span><span>making call</span><span>playing game</span></code></pre>
                           </td>
                         </tr>
                       </table>
@@ -361,10 +364,10 @@
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, <code>EmptyCommandError</code> and <code>InvalidCommandError</code> are user-defined exceptions. The latter has overridden the constructor to take
                   additional parameters.
                 </p>
-                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span></span><span>    <span class="hljs-string">"""Indicates a task has expired."""</span></span><span>    <span class="hljs-keyword">pass</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InvalidCommandError</span><span class="hljs-params">(Exception)</span>:</span></span><span>    <span class="hljs-string">"""Indicates that the user entered an invalid command"""</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, command, explanation)</span>:</span></span><span>        self.command = command</span><span>        self.explanation = explanation</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:</span><span>        <span class="hljs-keyword">raise</span> EmptyCommandError()</span><span>    <span class="hljs-keyword">elif</span> len(command) &lt; <span class="hljs-number">4</span>:</span><span>        <span class="hljs-keyword">raise</span> InvalidCommandError(command, <span class="hljs-string">"command too short"</span>)</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(command)</span>:</span></span><span>    <span class="hljs-keyword">try</span>:</span><span>        execute_command(command)</span><span>    <span class="hljs-keyword">except</span> EmptyCommandError:</span><span>        print(<span class="hljs-string">'empty command'</span>)</span><span>    <span class="hljs-keyword">except</span> InvalidCommandError <span class="hljs-keyword">as</span> e:</span><span>        print(<span class="hljs-string">'invalid command:'</span>, e.command, <span class="hljs-string">'-&gt;'</span>, e.explanation)</span><span>&#x200B;</span><span>&#x200B;</span><span>process(<span class="hljs-string">''</span>)</span><span>process(<span class="hljs-string">'HA'</span>)</span></code></pre>
+                <pre><code highlight-lines="1,6" class="hljs python"><span class="highlighted"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmptyCommandError</span><span class="hljs-params">(Exception)</span>:</span></span><span>    <span class="hljs-string">"""Indicates a task has expired."""</span></span><span>    <span class="hljs-keyword">pass</span></span><span>&#x200B;</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InvalidCommandError</span><span class="hljs-params">(Exception)</span>:</span></span><span>    <span class="hljs-string">"""Indicates that the user entered an invalid command"""</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, command, explanation)</span>:</span></span><span>        self.command = command</span><span>        self.explanation = explanation</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:</span><span>        <span class="hljs-keyword">raise</span> EmptyCommandError()</span><span>    <span class="hljs-keyword">elif</span> len(command) &lt; <span class="hljs-number">4</span>:</span><span>        <span class="hljs-keyword">raise</span> InvalidCommandError(command, <span class="hljs-string">"command too short"</span>)</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(command)</span>:</span></span><span>    <span class="hljs-keyword">try</span>:</span><span>        execute_command(command)</span><span>    <span class="hljs-keyword">except</span> EmptyCommandError:</span><span>        print(<span class="hljs-string">'empty command'</span>)</span><span>    <span class="hljs-keyword">except</span> InvalidCommandError <span class="hljs-keyword">as</span> e:</span><span>        print(<span class="hljs-string">'invalid command:'</span>, e.command, <span class="hljs-string">'-&gt;'</span>, e.explanation)</span><span>&#x200B;</span><span>&#x200B;</span><span>process(<span class="hljs-string">''</span>)</span><span>process(<span class="hljs-string">'HA'</span>)</span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                 </p>
-                <pre><code class="hljs"><span>empty command</span><span>invalid command: HA -&gt; command too short</span></code></pre>
+                <pre><code class="no-line-numbers hljs"><span>empty command</span><span>invalid command: HA -&gt; command too short</span></code></pre>
               </box>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -376,7 +379,7 @@
               <p>This is how we can write some unit tests for the two functions.</p>
               <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> search, unittest</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span></span><span>    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))</span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))</span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))</span><span>    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))</span><span>    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):</span><span>      search.is_same_person({}, <span class="hljs-string">'jack'</span>)</span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)</span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)</span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)</span><span>    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):</span><span>      search.get_first_name(<span class="hljs-string">''</span>)</span><span>&#x200B;</span><span><span class="hljs-comment"># activate the test runner      </span></span><span>unittest.main()</span></code></pre>
               <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
-              <pre><code class="hljs"><span>...</span><span>----------------------------------------------------------------------</span><span>Ran 2 tests in 0.019s</span><span>&#x200B;</span><span>OK</span></code></pre>
+              <pre><code class="no-line-numbers hljs"><span>...</span><span>----------------------------------------------------------------------</span><span>Ran 2 tests in 0.019s</span><span>&#x200B;</span><span>OK</span></code></pre>
               <p>Things to note:</p>
               <ul>
                 <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
@@ -391,9 +394,9 @@
                 </li>
               </ul>
               <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
-              <pre><code class="hljs python"><span>self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)</span></code></pre>
+              <pre><code class="no-line-numbers hljs python"><span>self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)</span></code></pre>
               <p>the output will be something like this:</p>
-              <pre><code class="hljs"><span>F.</span><span>======================================================================</span><span>FAIL: test_get_first_name (__main__.TestSearch)</span><span>----------------------------------------------------------------------</span><span>Traceback (most recent call last):</span><span>  File &quot;main.py&quot;, line 19, in test_get_first_name</span><span>    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')</span><span>AssertionError: 'Amy' != 'Foo'</span><span>- Amy</span><span>+ Foo</span><span>&#x200B;</span><span>&#x200B;</span><span>----------------------------------------------------------------------</span><span>Ran 2 tests in 0.001s</span><span>&#x200B;</span><span>FAILED (failures=1)</span></code></pre>
+              <pre><code class="no-line-numbers hljs"><span>F.</span><span>======================================================================</span><span>FAIL: test_get_first_name (__main__.TestSearch)</span><span>----------------------------------------------------------------------</span><span>Traceback (most recent call last):</span><span>  File &quot;main.py&quot;, line 19, in test_get_first_name</span><span>    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')</span><span>AssertionError: 'Amy' != 'Foo'</span><span>- Amy</span><span>+ Foo</span><span>&#x200B;</span><span>&#x200B;</span><span>----------------------------------------------------------------------</span><span>Ran 2 tests in 0.001s</span><span>&#x200B;</span><span>FAILED (failures=1)</span></code></pre>
               <p>📎 Resources:</p>
               <ul>
                 <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
@@ -429,7 +432,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Tue, Mar 17, 2020, 1:15:18 AM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 23, 2020, 7:52:48 PM GMT+8</small></div>
     </footer>
   </div>
 </body>
