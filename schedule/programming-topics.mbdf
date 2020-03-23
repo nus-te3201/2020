@@ -196,6 +196,8 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 **It is now time to learn how to define our own classes** so that we can create objects that match our needs e.g., to use `Task` objects to represent a task in Monty, instead of using a list such as `["read book", True]`{.python}.
 
 ==Before reading the section below which explains how to write Python classes, read the SE topic [OOP: Basics]({{ baseUrl }}/book/oop/classes/what/index.html) get a general idea about classes.==
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=c24f1e47-7974-4b75-bf5e-ab7a00a201fd).
 </variable>
 </include>
 
@@ -207,6 +209,8 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 <variable name="commentary_body">
 
 **Next, let's learn how to install and use third-party libraries** so that you can use even more functionality than those Python provides by default.
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=e579523f-89cb-4e39-a315-ab7a00a8bc8b).
 </variable>
 </include>
 
@@ -226,6 +230,8 @@ So far, we have been using simple objects provided by Python (e.g., str, int, bo
 <variable name="commentary_body">
 
 **This week, we continue to learn more about Python classes.** Let's start with _class-level_ variables and methods.
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=37c74051-6261-4d0b-a517-ab8100a9c87d).
 </variable>
 </include>
 
@@ -248,6 +254,8 @@ Next, let us learn to to control access to variables and methods of an object.
 <variable name="commentary_body">
 
 As your project code gets bigger, it becomes cumbersome to have all code in one file. **Let's learn how to organize Python code into files and folders.**
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=bb9cc539-a07b-4d66-ad2b-ab82009e5eed).
 </variable>
 </include>
 
@@ -263,8 +271,21 @@ As your project code gets bigger, it becomes cumbersome to have all code in one 
 
 ## **Object-Oriented Programming**
 
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+As you learn about the OOP inheritance concept (under this week's SE topics), let us also learn how to use inheritance in Python.
+
+</variable>
+</include>
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
-  
+
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+Let us learn how to automate the testing of Python code using unit tests (one of the testing types you learned under this week's SE topics).
+</variable>
+</include>
 <include src="../programming/unittesting/text.md" />{{ hr_double }}
 </div>
 <div id="week11">

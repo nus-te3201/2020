@@ -1,0 +1,29 @@
+{% from "common/topics.njk" import slugify with context %}
+
+<span id="{{ slugify('OOP and UML Class/Object Diagrams: Inheritance') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Let's learn the important OOP concept of _inheritance_** this week, together with how to show it in UML class diagrams.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('UML Class/Object Diagrams: Composition, Aggregation, Dependencies') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Next, we cover some additional class/object diagram notations** used to show different types of relationships in class/object diagrams.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
+<span id="{{ slugify('Types of Testing') }}">
+<include src="commentary-box.md" boilerplate>
+<variable name="commentary_body">
+
+**Let's also have a brief look at various types of testing** that is done in software projects, as you will be learning how to do one of them using Python in this week too.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
