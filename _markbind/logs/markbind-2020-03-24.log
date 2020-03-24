@@ -1,0 +1,20 @@
+2020-03-24T10:10:29.077Z - info: Website generation (lazy) started at 6:10:27 PM
+2020-03-24T10:10:32.232Z - info: Building assets...
+2020-03-24T10:10:34.421Z - info: Assets built
+2020-03-24T10:10:34.422Z - info: Generating landing page...
+2020-03-24T10:10:35.181Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-24T10:10:35.341Z - info: Website generation (lazy) complete! Total build time: 7.477s
+2020-03-24T10:10:35.711Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-24T10:10:35.711Z - info: Press CTRL+C to stop ...
+2020-03-24T10:10:35.812Z - info: Site data built
+2020-03-24T10:12:39.896Z - info: [6:12:39 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\unittesting\text.md
+2020-03-24T10:12:40.899Z - info: Rebuilding affected source files
+2020-03-24T10:12:40.902Z - info: Rebuilding 0 pages
+2020-03-24T10:12:40.903Z - info: Pages rebuilt
+2020-03-24T10:12:40.903Z - info: Website regeneration complete! Total build time: 0.003s
+2020-03-24T10:12:40.908Z - info: Site data built
+2020-03-24T10:12:44.299Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\topics-py as some of its dependencies were changed since the last visit
+2020-03-24T10:12:45.021Z - info: Site data built
+2020-03-24T10:12:45.022Z - info: Lazy website regeneration complete! Total build time: 0.723s
+2020-03-24T10:14:49.693Z - info: Website generation started at 6:14:49 PM
+2020-03-24T10:14:52.505Z - info: Building assets...
