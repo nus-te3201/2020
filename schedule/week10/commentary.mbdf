@@ -5,6 +5,8 @@
 <variable name="commentary_body">
 
 **Let's learn the important OOP concept of _inheritance_** this week, together with how to show it in UML class diagrams.
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=1c82c417-5378-4b7c-84c0-ab88009b476b).
 </variable>
 </include>
 </span>
@@ -14,6 +16,8 @@
 <variable name="commentary_body">
 
 **Next, we cover some additional class/object diagram notations** used to show different types of relationships in class/object diagrams.
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=b29faf7d-b575-4ad9-a43b-ab880073e127).
 </variable>
 </include>
 </span>
@@ -23,6 +27,8 @@
 <variable name="commentary_body">
 
 **Let's also have a brief look at various types of testing** that is done in software projects, as you will be learning how to do one of them using Python in this week too.
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=f978d66a-214b-487d-8731-ab880081c9ef).
 </variable>
 </include>
 </span>

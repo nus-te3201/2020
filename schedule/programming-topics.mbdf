@@ -276,6 +276,8 @@ As your project code gets bigger, it becomes cumbersome to have all code in one 
 
 As you learn about the OOP inheritance concept (under this week's SE topics), let us also learn how to use inheritance in Python.
 
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=1c82c417-5378-4b7c-84c0-ab88009b476b).
+
 </variable>
 </include>
 <include src="../programming/oop-inheritance/text.md" />{{ hr_double }}
@@ -284,6 +286,8 @@ As you learn about the OOP inheritance concept (under this week's SE topics), le
 <variable name="commentary_body">
 
 Let us learn how to automate the testing of Python code using unit tests (one of the testing types you learned under this week's SE topics).
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=3c10dfe4-413a-449d-aec8-ab8800aa5ffc).
 </variable>
 </include>
 <include src="../programming/unittesting/text.md" />{{ hr_double }}

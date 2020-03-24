@@ -18,3 +18,129 @@
 2020-03-24T10:12:45.022Z - info: Lazy website regeneration complete! Total build time: 0.723s
 2020-03-24T10:14:49.693Z - info: Website generation started at 6:14:49 PM
 2020-03-24T10:14:52.505Z - info: Building assets...
+2020-03-24T10:14:54.778Z - info: Assets built
+2020-03-24T10:14:54.778Z - info: Generating pages...
+2020-03-24T10:15:31.140Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.141Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.141Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.142Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.142Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.142Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.142Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.143Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.143Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.143Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.143Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.143Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.144Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:31.144Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:15:36.122Z - debug:  
+2020-03-24T10:15:36.122Z - debug:  
+2020-03-24T10:15:36.122Z - debug:  
+2020-03-24T10:16:09.052Z - debug:  
+2020-03-24T10:16:09.052Z - debug:  
+2020-03-24T10:16:15.399Z - info: Pages built
+2020-03-24T10:16:29.349Z - info: Website generation complete! Total build time: 100.24s
+2020-03-24T10:16:29.350Z - info: Build success!
+2020-03-24T10:16:29.355Z - info: Site data built
+2020-03-24T10:17:09.579Z - info: Deployed!
+2020-03-24T10:36:36.374Z - info: Website generation (lazy) started at 6:36:35 PM
+2020-03-24T10:36:39.032Z - info: Building assets...
+2020-03-24T10:36:41.379Z - info: Assets built
+2020-03-24T10:36:41.379Z - info: Generating landing page...
+2020-03-24T10:36:42.153Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-24T10:36:42.304Z - info: Website generation (lazy) complete! Total build time: 7.106s
+2020-03-24T10:36:42.656Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-24T10:36:42.656Z - info: Press CTRL+C to stop ...
+2020-03-24T10:36:42.752Z - info: Site data built
+2020-03-24T10:37:30.960Z - info: [6:37:30 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week10\commentary.mbdf
+2020-03-24T10:37:31.965Z - info: Rebuilding affected source files
+2020-03-24T10:37:31.967Z - info: Rebuilding 0 pages
+2020-03-24T10:37:31.968Z - info: Pages rebuilt
+2020-03-24T10:37:31.968Z - info: Website regeneration complete! Total build time: 0.002s
+2020-03-24T10:37:31.971Z - info: Site data built
+2020-03-24T10:37:55.921Z - info: [6:37:55 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week10\commentary.mbdf
+2020-03-24T10:37:56.923Z - info: Rebuilding affected source files
+2020-03-24T10:37:56.925Z - info: Rebuilding 0 pages
+2020-03-24T10:37:56.926Z - info: Pages rebuilt
+2020-03-24T10:37:56.926Z - info: Website regeneration complete! Total build time: 0.002s
+2020-03-24T10:37:56.929Z - info: Site data built
+2020-03-24T10:38:11.549Z - info: [6:38:11 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week10\commentary.mbdf
+2020-03-24T10:38:12.551Z - info: Rebuilding affected source files
+2020-03-24T10:38:12.553Z - info: Rebuilding 0 pages
+2020-03-24T10:38:12.553Z - info: Pages rebuilt
+2020-03-24T10:38:12.553Z - info: Website regeneration complete! Total build time: 0.002s
+2020-03-24T10:38:12.556Z - info: Site data built
+2020-03-24T10:38:33.675Z - info: [6:38:33 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week10\commentary.mbdf
+2020-03-24T10:38:34.677Z - info: Rebuilding affected source files
+2020-03-24T10:38:34.678Z - info: Rebuilding 0 pages
+2020-03-24T10:38:34.679Z - info: Pages rebuilt
+2020-03-24T10:38:34.679Z - info: Website regeneration complete! Total build time: 0.002s
+2020-03-24T10:38:34.681Z - info: Site data built
+2020-03-24T10:38:38.021Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\topics as some of its dependencies were changed since the last visit
+2020-03-24T10:38:39.574Z - info: Site data built
+2020-03-24T10:38:39.575Z - info: Lazy website regeneration complete! Total build time: 1.554s
+2020-03-24T10:39:10.807Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\topics-py as some of its dependencies were changed since the last visit
+2020-03-24T10:39:11.525Z - info: Site data built
+2020-03-24T10:39:11.526Z - info: Lazy website regeneration complete! Total build time: 0.719s
+2020-03-24T10:40:05.584Z - info: [6:40:05 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-03-24T10:40:06.585Z - info: Rebuilding affected source files
+2020-03-24T10:40:06.587Z - info: Rebuilding 1 pages
+2020-03-24T10:40:07.252Z - info: Pages rebuilt
+2020-03-24T10:40:07.253Z - info: Website regeneration complete! Total build time: 0.668s
+2020-03-24T10:40:07.259Z - info: Site data built
+2020-03-24T10:40:27.521Z - info: [6:40:27 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-03-24T10:40:28.523Z - info: Rebuilding affected source files
+2020-03-24T10:40:28.525Z - info: Rebuilding 1 pages
+2020-03-24T10:40:29.218Z - info: Pages rebuilt
+2020-03-24T10:40:29.218Z - info: Website regeneration complete! Total build time: 0.695s
+2020-03-24T10:40:29.224Z - info: Site data built
+2020-03-24T10:40:46.240Z - info: [6:40:46 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\programming-topics.mbdf
+2020-03-24T10:40:47.243Z - info: Rebuilding affected source files
+2020-03-24T10:40:47.247Z - info: Rebuilding 1 pages
+2020-03-24T10:40:47.890Z - info: Pages rebuilt
+2020-03-24T10:40:47.890Z - info: Website regeneration complete! Total build time: 0.647s
+2020-03-24T10:40:47.897Z - info: Site data built
+2020-03-24T10:41:09.291Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week9\index as some of its dependencies were changed since the last visit
+2020-03-24T10:41:10.016Z - info: Site data built
+2020-03-24T10:41:10.016Z - info: Lazy website regeneration complete! Total build time: 0.725s
+2020-03-24T10:41:15.407Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week9\topics-py as some of its dependencies were changed since the last visit
+2020-03-24T10:41:15.784Z - info: Site data built
+2020-03-24T10:41:15.785Z - info: Lazy website regeneration complete! Total build time: 0.378s
+2020-03-24T10:41:19.727Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week9\topics as some of its dependencies were changed since the last visit
+2020-03-24T10:41:21.420Z - info: Site data built
+2020-03-24T10:41:21.420Z - info: Lazy website regeneration complete! Total build time: 1.693s
+2020-03-24T10:43:04.643Z - info: [6:43:04 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week9\commentary.mbdf
+2020-03-24T10:43:05.643Z - info: Rebuilding affected source files
+2020-03-24T10:43:05.645Z - info: Rebuilding 1 pages
+2020-03-24T10:43:07.448Z - info: Pages rebuilt
+2020-03-24T10:43:07.448Z - info: Website regeneration complete! Total build time: 1.805s
+2020-03-24T10:43:07.451Z - info: Site data built
+2020-03-24T10:43:51.007Z - info: [6:43:51 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week9\commentary.mbdf
+2020-03-24T10:43:52.009Z - info: Rebuilding affected source files
+2020-03-24T10:43:52.012Z - info: Rebuilding 1 pages
+2020-03-24T10:43:53.971Z - info: Pages rebuilt
+2020-03-24T10:43:53.971Z - info: Website regeneration complete! Total build time: 1.962s
+2020-03-24T10:43:53.974Z - info: Site data built
+2020-03-24T10:44:07.432Z - info: [6:44:07 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week9\commentary.mbdf
+2020-03-24T10:44:08.435Z - info: Rebuilding affected source files
+2020-03-24T10:44:08.436Z - info: Rebuilding 1 pages
+2020-03-24T10:44:10.018Z - info: Pages rebuilt
+2020-03-24T10:44:10.018Z - info: Website regeneration complete! Total build time: 1.583s
+2020-03-24T10:44:10.021Z - info: Site data built
+2020-03-24T10:45:03.710Z - info: Website generation started at 6:45:03 PM
+2020-03-24T10:45:06.535Z - info: Building assets...

@@ -30,6 +30,17 @@ This week, **we start learning a UML diagram called _Class Diagrams_.**
 </include>
 </span>
 <!-- ---------------------------------------------------------------------------- -->
+<span id="followup-uml-notes-constraints">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+After learning the UML notations above, you can attempt the exercise in the following video:
+
+:fas-video: The relevant video lecture is [here](https://mediaweb.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=dab3bb0f-c0cd-40af-8e39-ab88005aa195).
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->
 <span id="{{ slugify('SDLC Process Models') }}">
 <include src="commentary-box.md" boilerplate>
 <variable name="commentary_body">
