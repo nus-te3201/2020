@@ -1,0 +1,23 @@
+2020-03-29T07:45:19.886Z - info: Website generation (lazy) started at 3:45:18 PM
+2020-03-29T07:45:22.799Z - info: Building assets...
+2020-03-29T07:45:25.091Z - info: Assets built
+2020-03-29T07:45:25.092Z - info: Generating landing page...
+2020-03-29T07:45:25.914Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-29T07:45:26.071Z - info: Website generation (lazy) complete! Total build time: 7.366s
+2020-03-29T07:45:26.364Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-29T07:45:26.364Z - info: Press CTRL+C to stop ...
+2020-03-29T07:45:26.458Z - info: Site data built
+2020-03-29T07:45:33.983Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\topics-py as some of its dependencies were changed since the last visit
+2020-03-29T07:45:34.511Z - info: Site data built
+2020-03-29T07:45:34.512Z - info: Lazy website regeneration complete! Total build time: 0.528s
+2020-03-29T07:45:38.008Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics-py as some of its dependencies were changed since the last visit
+2020-03-29T07:45:38.225Z - info: Site data built
+2020-03-29T07:45:38.229Z - info: Lazy website regeneration complete! Total build time: 0.221s
+2020-03-29T07:45:40.661Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics as some of its dependencies were changed since the last visit
+2020-03-29T07:45:41.604Z - info: Site data built
+2020-03-29T07:45:41.605Z - info: Lazy website regeneration complete! Total build time: 0.944s
+2020-03-29T07:48:00.370Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\admin as some of its dependencies were changed since the last visit
+2020-03-29T07:48:00.788Z - info: Site data built
+2020-03-29T07:48:00.789Z - info: Lazy website regeneration complete! Total build time: 0.419s
+2020-03-29T12:55:23.148Z - info: Website generation started at 8:55:22 PM
+2020-03-29T12:55:25.942Z - info: Building assets...

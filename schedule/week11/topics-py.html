@@ -166,12 +166,12 @@
                   </ul>
                 </li>
                 <li>
-                  <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment">#1</span></span><span>    textbox_value = int(textbox.get())  <span class="hljs-comment">#2</span></span><span>    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment">#3</span></span></code></pre>
+                  <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])</span><span>    textbox_value = int(textbox.get())</span><span>    label.configure(text=str(label_value + textbox_value))</span></code></pre>
                   <p><strong>Creats a function to be called when the button is clicked.</strong> It will increment the value shown in the label by the amount shown in the entry widget.</p>
                   <ul>
-                    <li><span class="dimmed">#1</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
-                    <li><span class="dimmed">#2</span>: Reads the value of the entry widget and converts it to an <code>int</code></li>
-                    <li><span class="dimmed">#3</span>: Sums the two values, converts the sum into a <code>str</code>, and sets it as the value of the label widget.
+                    <li>line <span class="dimmed">#2</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
+                    <li>line <span class="dimmed">#3</span>: Reads the value of the entry widget and converts it to an <code>int</code></li>
+                    <li>line <span class="dimmed">#4</span>: Sums the two values, converts the sum into a <code>str</code>, and sets it as the value of the label widget.
                       <p></p>
                     </li>
                   </ul>
@@ -212,7 +212,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Tue, Mar 24, 2020, 6:45:09 PM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Sun, Mar 29, 2020, 8:55:28 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

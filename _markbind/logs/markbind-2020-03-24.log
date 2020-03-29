@@ -144,3 +144,43 @@
 2020-03-24T10:44:10.021Z - info: Site data built
 2020-03-24T10:45:03.710Z - info: Website generation started at 6:45:03 PM
 2020-03-24T10:45:06.535Z - info: Building assets...
+2020-03-24T10:45:09.066Z - info: Assets built
+2020-03-24T10:45:09.067Z - info: Generating pages...
+2020-03-24T10:45:43.152Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.186Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.187Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.187Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.188Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.188Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.188Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.189Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.189Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.189Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.189Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.189Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.191Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:43.191Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-03-24T10:45:47.070Z - debug:  
+2020-03-24T10:45:48.616Z - debug:  
+2020-03-24T10:45:48.616Z - debug:  
+2020-03-24T10:46:17.843Z - debug:  
+2020-03-24T10:46:17.843Z - debug:  
+2020-03-24T10:46:24.702Z - info: Pages built
+2020-03-24T10:46:38.249Z - info: Website generation complete! Total build time: 95.17s
+2020-03-24T10:46:38.249Z - info: Build success!
+2020-03-24T10:46:38.251Z - info: Site data built
+2020-03-24T10:47:12.916Z - info: Deployed!
