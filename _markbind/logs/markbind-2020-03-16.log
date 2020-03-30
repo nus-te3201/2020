@@ -1,0 +1,15 @@
+2020-03-16T15:57:08.838Z - info: Website generation (lazy) started at 23:57:02
+2020-03-16T15:57:14.759Z - info: Building assets...
+2020-03-16T15:57:18.953Z - info: Assets built
+2020-03-16T15:57:18.953Z - info: Generating landing page...
+2020-03-16T15:57:20.235Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-16T15:57:20.315Z - info: Website generation (lazy) complete! Total build time: 18.114s
+2020-03-16T15:57:20.727Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-16T15:57:20.727Z - info: Press CTRL+C to stop ...
+2020-03-16T15:57:20.795Z - info: Site data built
+2020-03-16T15:57:56.562Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week9\index as some of its dependencies were changed since the last visit
+2020-03-16T15:57:57.726Z - info: Site data built
+2020-03-16T15:57:57.726Z - info: Lazy website regeneration complete! Total build time: 1.164s
+2020-03-16T15:58:33.209Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week9\admin as some of its dependencies were changed since the last visit
+2020-03-16T15:58:33.927Z - info: Site data built
+2020-03-16T15:58:33.927Z - info: Lazy website regeneration complete! Total build time: 0.718s
