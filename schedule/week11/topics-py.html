@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 11 - Programming Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -40,8 +40,8 @@
           <li><a href="/2020/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
           <li><a href="/2020/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
-          <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
@@ -136,17 +136,17 @@
               </div>
               <p></p>
               <p>Here's the full code for the above example:</p>
-              <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *</span><span>&#x200B;</span><span><span class="hljs-comment"># create a window</span></span><span>window = Tk()</span><span>window.title(<span class="hljs-string">'Increment!'</span>)</span><span>window.geometry(<span class="hljs-string">'250x150'</span>)</span><span>&#x200B;</span><span><span class="hljs-comment"># create a label</span></span><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))</span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)</span><span>&#x200B;</span><span><span class="hljs-comment"># create a text box</span></span><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)</span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)</span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-comment"># define a function to be called when the button is clicked</span></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment"># get int value of the label text</span></span><span>    textbox_value = int(textbox.get())  <span class="hljs-comment"># get int value of the textbox text</span></span><span>    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment"># set label text to the sum of above two</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-comment"># add a button, bind it to the function</span></span><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)</span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)</span><span>&#x200B;</span><span><span class="hljs-comment"># start the window</span></span><span>window.mainloop()</span></code></pre>
+              <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-comment"># create a window</span></span><span>window = Tk()</span><span>window.title(<span class="hljs-string">'Increment!'</span>)</span><span>window.geometry(<span class="hljs-string">'250x150'</span>)</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-comment"># create a label</span></span><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))</span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-comment"># create a text box</span></span><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)</span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)</span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)</span><span>&#x200B;</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-comment"># define a function to be called when the button is clicked</span></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment"># get int value of the label text</span></span><span>    textbox_value = int(textbox.get())  <span class="hljs-comment"># get int value of the textbox text</span></span><span>    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment"># set label text to the sum of above two</span></span><span>&#x200B;</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-comment"># add a button, bind it to the function</span></span><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)</span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)</span><span>&#x200B;</span><span class="highlighted"><span class="hljs-comment"># start the window</span></span><span>window.mainloop()</span></code></pre>
               <p>Let's go through the code to see how it works.</p>
               <ul>
                 <li>
-                  <pre><code class="hljs python"><span>window.geometry(<span class="hljs-string">'250x150'</span>)</span></code></pre>
+                  <pre><code style="counter-reset: line 5;" class="hljs python"><span>window.geometry(<span class="hljs-string">'250x150'</span>)</span></code></pre>
                   <p>Sets the size of the Window.</p>
                   <p></p>
                   <p></p>
                 </li>
                 <li>
-                  <pre><code class="hljs python"><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))</span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)</span></code></pre>
+                  <pre><code style="counter-reset: line 8;" class="hljs python"><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))</span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)</span></code></pre>
                   <ul>
                     <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code>0</code>. Sets the font to <code>Arial Bold</code> and font size to <code>50</code>.</li>
                     <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., where widgets are placed</span>layout</span> of the GUI</a>.
@@ -156,7 +156,7 @@
                   </ul>
                 </li>
                 <li>
-                  <pre><code class="hljs python"><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)</span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)</span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)</span></code></pre>
+                  <pre><code style="counter-reset: line 12;" class="hljs python"><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)</span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)</span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)</span></code></pre>
                   <ul>
                     <li><strong>Creates an <a href="https://www.python-course.eu/tkinter_entry_widgets.php"><em>Entry</em> widget</a></strong> for the user to enter the increment size. Sets its width to <code>2</code> characters.</li>
                     <li>Places it at the <code>0,1</code> cell <span class="dimmed">(i.e., first column, 2nd row)</span>.</li>
@@ -166,18 +166,18 @@
                   </ul>
                 </li>
                 <li>
-                  <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])</span><span>    textbox_value = int(textbox.get())</span><span>    label.configure(text=str(label_value + textbox_value))</span></code></pre>
+                  <pre><code style="counter-reset: line 18;" class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])</span><span>    textbox_value = int(textbox.get())</span><span>    label.configure(text=str(label_value + textbox_value))</span></code></pre>
                   <p><strong>Creats a function to be called when the button is clicked.</strong> It will increment the value shown in the label by the amount shown in the entry widget.</p>
                   <ul>
-                    <li>line <span class="dimmed">#2</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
-                    <li>line <span class="dimmed">#3</span>: Reads the value of the entry widget and converts it to an <code>int</code></li>
-                    <li>line <span class="dimmed">#4</span>: Sums the two values, converts the sum into a <code>str</code>, and sets it as the value of the label widget.
+                    <li>line <span class="dimmed">#20</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
+                    <li>line <span class="dimmed">#21</span>: Reads the value of the entry widget and converts it to an <code>int</code></li>
+                    <li>line <span class="dimmed">#22</span>: Sums the two values, converts the sum into a <code>str</code>, and sets it as the value of the label widget.
                       <p></p>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <pre><code class="hljs python"><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)</span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)</span></code></pre>
+                  <pre><code style="counter-reset: line 25;" class="hljs python"><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)</span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)</span></code></pre>
                   <ul>
                     <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_buttons.php"><em>Button</em> widget</a></strong> for the user to click. Sets its display text to <code>Add</code>. Sets its command to the function <code>button_clicked</code>                      i.e., when the button is clicked, the specified function will be called.</li>
                     <li>Places the button in the <code>1,1</code> cell of the grid.</li>
@@ -212,7 +212,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.12.0</a> at Mon, Mar 30, 2020, 11:37:59 PM GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Tue, Mar 31, 2020, 2:51:01 PM GMT+8</small></div>
     </footer>
   </div>
 </body>

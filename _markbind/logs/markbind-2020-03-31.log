@@ -1,0 +1,329 @@
+2020-03-31T06:22:32.861Z - info: Website generation (lazy) started at 2:22:31 PM
+2020-03-31T06:22:35.836Z - info: Building assets...
+2020-03-31T06:22:37.975Z - info: Assets built
+2020-03-31T06:22:37.975Z - info: Generating landing page...
+2020-03-31T06:22:38.733Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-31T06:22:38.882Z - info: Website generation (lazy) complete! Total build time: 7.258s
+2020-03-31T06:22:39.171Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-31T06:22:39.171Z - info: Press CTRL+C to stop ...
+2020-03-31T06:22:39.265Z - info: Site data built
+2020-03-31T06:22:46.821Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\admin as some of its dependencies were changed since the last visit
+2020-03-31T06:22:47.076Z - info: Site data built
+2020-03-31T06:22:47.076Z - info: Lazy website regeneration complete! Total build time: 0.255s
+2020-03-31T06:23:03.428Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\topics as some of its dependencies were changed since the last visit
+2020-03-31T06:23:04.742Z - info: Site data built
+2020-03-31T06:23:04.743Z - info: Lazy website regeneration complete! Total build time: 1.315s
+2020-03-31T06:24:32.723Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week10\topics-py as some of its dependencies were changed since the last visit
+2020-03-31T06:24:33.332Z - info: Site data built
+2020-03-31T06:24:33.332Z - info: Lazy website regeneration complete! Total build time: 0.61s
+2020-03-31T06:24:51.726Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\index as some of its dependencies were changed since the last visit
+2020-03-31T06:24:52.241Z - info: Site data built
+2020-03-31T06:24:52.241Z - info: Lazy website regeneration complete! Total build time: 0.516s
+2020-03-31T06:24:55.746Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics-py as some of its dependencies were changed since the last visit
+2020-03-31T06:24:55.999Z - info: Site data built
+2020-03-31T06:24:55.999Z - info: Lazy website regeneration complete! Total build time: 0.253s
+2020-03-31T06:27:13.239Z - info: [2:27:13 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\gui\text.md
+2020-03-31T06:27:14.242Z - info: Rebuilding affected source files
+2020-03-31T06:27:14.244Z - info: Rebuilding 1 pages
+2020-03-31T06:27:14.602Z - info: Pages rebuilt
+2020-03-31T06:27:14.603Z - info: Website regeneration complete! Total build time: 0.361s
+2020-03-31T06:27:14.606Z - info: Site data built
+2020-03-31T06:27:35.687Z - info: [2:27:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\gui\text.md
+2020-03-31T06:27:36.688Z - info: Rebuilding affected source files
+2020-03-31T06:27:36.690Z - info: Rebuilding 1 pages
+2020-03-31T06:27:36.959Z - info: Pages rebuilt
+2020-03-31T06:27:36.959Z - info: Website regeneration complete! Total build time: 0.271s
+2020-03-31T06:27:36.965Z - info: Site data built
+2020-03-31T06:28:20.111Z - info: [2:28:20 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\gui\text.md
+2020-03-31T06:28:21.113Z - info: Rebuilding affected source files
+2020-03-31T06:28:21.118Z - info: Rebuilding 1 pages
+2020-03-31T06:28:21.441Z - info: Pages rebuilt
+2020-03-31T06:28:21.441Z - info: Website regeneration complete! Total build time: 0.328s
+2020-03-31T06:28:21.444Z - info: Site data built
+2020-03-31T06:29:52.247Z - info: [2:29:52 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\gui\text.md
+2020-03-31T06:29:53.252Z - info: Rebuilding affected source files
+2020-03-31T06:29:53.256Z - info: Rebuilding 1 pages
+2020-03-31T06:29:53.505Z - info: Pages rebuilt
+2020-03-31T06:29:53.505Z - info: Website regeneration complete! Total build time: 0.253s
+2020-03-31T06:29:53.512Z - info: Site data built
+2020-03-31T06:30:51.285Z - info: [2:30:51 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\programming\gui\text.md
+2020-03-31T06:30:52.288Z - info: Rebuilding affected source files
+2020-03-31T06:30:52.292Z - info: Rebuilding 1 pages
+2020-03-31T06:30:52.639Z - info: Pages rebuilt
+2020-03-31T06:30:52.639Z - info: Website regeneration complete! Total build time: 0.351s
+2020-03-31T06:30:52.642Z - info: Site data built
+2020-03-31T06:31:34.005Z - info: [2:31:34 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\index.md
+2020-03-31T06:31:35.006Z - info: Rebuilding affected source files
+2020-03-31T06:31:35.008Z - info: Rebuilding 0 pages
+2020-03-31T06:31:35.023Z - info: Pages rebuilt
+2020-03-31T06:31:35.024Z - info: Website regeneration complete! Total build time: 0.017s
+2020-03-31T06:31:35.026Z - info: Site data built
+2020-03-31T06:31:35.093Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics as some of its dependencies were changed since the last visit
+2020-03-31T06:31:36.301Z - info: Site data built
+2020-03-31T06:31:36.301Z - info: Lazy website regeneration complete! Total build time: 1.209s
+2020-03-31T06:34:23.590Z - info: [2:34:23 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:34:24.592Z - info: Rebuilding affected source files
+2020-03-31T06:34:24.596Z - info: Rebuilding 1 pages
+2020-03-31T06:34:25.781Z - info: Pages rebuilt
+2020-03-31T06:34:25.781Z - info: Website regeneration complete! Total build time: 1.189s
+2020-03-31T06:34:25.784Z - info: Site data built
+2020-03-31T06:37:04.857Z - info: [2:37:04 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\macros.njk
+2020-03-31T06:37:04.863Z - info: [2:37:04 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:37:05.863Z - info: Rebuilding affected source files
+2020-03-31T06:37:05.865Z - info: Rebuilding 1 pages
+2020-03-31T06:37:06.005Z - error:  Template render error: (C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf)
+  Error: cannot import 'show_video_link'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:27:1)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:613:9
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:676:1)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:613:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:245:1)
+    at Template.getExported (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:609:10)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:277:9)
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:9:5)
+    at Template.getExported (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:609:10)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:22:5)
+    at Environment.getTemplate (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:277:9)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:20:5)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:613:9
+2020-03-31T06:37:06.019Z - info: Assets built
+2020-03-31T06:37:06.026Z - info: Pages rebuilt
+2020-03-31T06:37:06.026Z - info: Website regeneration complete! Total build time: 0.163s
+2020-03-31T06:37:06.030Z - info: Site data built
+2020-03-31T06:37:18.932Z - info: Website generation (lazy) started at 2:37:18 PM
+2020-03-31T06:37:21.665Z - info: Building assets...
+2020-03-31T06:37:24.076Z - info: Assets built
+2020-03-31T06:37:24.076Z - info: Generating landing page...
+2020-03-31T06:37:24.807Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-31T06:37:24.961Z - info: Website generation (lazy) complete! Total build time: 6.595s
+2020-03-31T06:37:25.255Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-31T06:37:25.255Z - info: Press CTRL+C to stop ...
+2020-03-31T06:37:25.354Z - info: Site data built
+2020-03-31T06:40:05.980Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics as some of its dependencies were changed since the last visit
+2020-03-31T06:40:07.340Z - info: Site data built
+2020-03-31T06:40:07.341Z - info: Lazy website regeneration complete! Total build time: 1.361s
+2020-03-31T06:40:43.905Z - info: [2:40:43 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:40:44.908Z - info: Rebuilding affected source files
+2020-03-31T06:40:44.909Z - info: Rebuilding 1 pages
+2020-03-31T06:40:45.042Z - error:  Template render error: (unknown path) [Line 4, Column 18]
+  Error: Unable to call `show_video_link`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:40:45.063Z - info: Pages rebuilt
+2020-03-31T06:40:45.063Z - info: Website regeneration complete! Total build time: 0.155s
+2020-03-31T06:40:45.065Z - info: Site data built
+2020-03-31T06:45:19.737Z - info: [2:45:19 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:45:20.738Z - info: Rebuilding affected source files
+2020-03-31T06:45:20.743Z - info: Rebuilding 1 pages
+2020-03-31T06:45:20.989Z - error:  Template render error: (unknown path) [Line 4, Column 18]
+  Error: Unable to call `show_video_link`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:45:21.009Z - info: Pages rebuilt
+2020-03-31T06:45:21.009Z - info: Website regeneration complete! Total build time: 0.271s
+2020-03-31T06:45:21.012Z - info: Site data built
+2020-03-31T06:46:30.558Z - info: [2:46:30 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\_markbind\boilerplates\commentary-box.md
+2020-03-31T06:46:31.561Z - info: Rebuilding affected source files
+2020-03-31T06:46:31.563Z - info: Rebuilding 0 pages
+2020-03-31T06:46:31.563Z - info: Pages rebuilt
+2020-03-31T06:46:31.563Z - info: Website regeneration complete! Total build time: 0.002s
+2020-03-31T06:46:31.566Z - info: Site data built
+2020-03-31T06:46:49.166Z - info: Website generation (lazy) started at 2:46:48 PM
+2020-03-31T06:46:51.752Z - info: Building assets...
+2020-03-31T06:46:54.063Z - info: Assets built
+2020-03-31T06:46:54.063Z - info: Generating landing page...
+2020-03-31T06:46:54.740Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-03-31T06:46:54.884Z - info: Website generation (lazy) complete! Total build time: 6.27s
+2020-03-31T06:46:55.201Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-03-31T06:46:55.202Z - info: Press CTRL+C to stop ...
+2020-03-31T06:46:55.284Z - info: Site data built
+2020-03-31T06:47:00.476Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics as some of its dependencies were changed since the last visit
+2020-03-31T06:47:00.606Z - error:  Template render error: (unknown path) [Line 4, Column 18]
+  Error: Unable to call `show_video_link`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:47:00.631Z - info: Site data built
+2020-03-31T06:47:00.632Z - info: Lazy website regeneration complete! Total build time: 0.156s
+2020-03-31T06:47:47.081Z - info: [2:47:47 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:47:48.100Z - info: Rebuilding affected source files
+2020-03-31T06:47:48.104Z - info: Rebuilding 1 pages
+2020-03-31T06:47:48.329Z - error:  Template render error: (unknown path) [Line 4, Column 22]
+  Error: Unable to call `show_as_rounded_tab`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:47:48.354Z - info: Pages rebuilt
+2020-03-31T06:47:48.355Z - info: Website regeneration complete! Total build time: 0.255s
+2020-03-31T06:47:48.360Z - info: Site data built
+2020-03-31T06:48:04.138Z - info: [2:48:04 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:48:05.152Z - info: Rebuilding affected source files
+2020-03-31T06:48:05.153Z - info: Rebuilding 1 pages
+2020-03-31T06:48:05.329Z - error:  Template render error: (unknown path) [Line 4, Column 22]
+  Error: Unable to call `show_as_rounded_tab`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:48:05.349Z - info: Pages rebuilt
+2020-03-31T06:48:05.349Z - info: Website regeneration complete! Total build time: 0.197s
+2020-03-31T06:48:05.354Z - info: Site data built
+2020-03-31T06:48:53.483Z - info: [2:48:53 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:48:54.485Z - info: Rebuilding affected source files
+2020-03-31T06:48:54.489Z - info: Rebuilding 1 pages
+2020-03-31T06:48:54.637Z - error:  Template render error: (unknown path) [Line 4, Column 22]
+  Error: Unable to call `show_as_rounded_tab`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:48:54.657Z - info: Pages rebuilt
+2020-03-31T06:48:54.657Z - info: Website regeneration complete! Total build time: 0.172s
+2020-03-31T06:48:54.663Z - info: Site data built
+2020-03-31T06:49:18.969Z - info: [2:49:18 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:49:19.974Z - info: Rebuilding affected source files
+2020-03-31T06:49:19.978Z - info: Rebuilding 1 pages
+2020-03-31T06:49:20.132Z - error:  Template render error: (unknown path) [Line 4, Column 11]
+  Error: Unable to call `sluggify`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:49:20.152Z - info: Pages rebuilt
+2020-03-31T06:49:20.153Z - info: Website regeneration complete! Total build time: 0.178s
+2020-03-31T06:49:20.158Z - info: Site data built
+2020-03-31T06:49:26.393Z - info: [2:49:26 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:49:27.393Z - info: Rebuilding affected source files
+2020-03-31T06:49:27.395Z - info: Rebuilding 1 pages
+2020-03-31T06:49:27.527Z - error:  Template render error: (unknown path) [Line 4, Column 10]
+  Error: Unable to call `slugify`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:631:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:550:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:378:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Object.renderEscaped (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\utils\nunjuckUtils.js:12:21)
+    at setPageVariable (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:105:42)
+    at Object.<anonymous> (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:132:9)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Parser.extractPageVariables (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:111:19)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:172:14)
+    at _preprocessInclude (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:283:14)
+    at preProcessComponent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-03-31T06:49:27.542Z - info: Pages rebuilt
+2020-03-31T06:49:27.542Z - info: Website regeneration complete! Total build time: 0.149s
+2020-03-31T06:49:27.545Z - info: Site data built
+2020-03-31T06:49:48.865Z - info: [2:49:48 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week11\commentary.mbdf
+2020-03-31T06:49:49.867Z - info: Rebuilding affected source files
+2020-03-31T06:49:49.870Z - info: Rebuilding 1 pages
+2020-03-31T06:49:51.195Z - info: Pages rebuilt
+2020-03-31T06:49:51.195Z - info: Website regeneration complete! Total build time: 1.328s
+2020-03-31T06:49:51.198Z - info: Site data built
+2020-03-31T06:50:00.765Z - info: [2:50:00 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\common\macros.njk
+2020-03-31T06:50:01.774Z - info: Assets built
+2020-03-31T06:50:55.931Z - info: Website generation started at 2:50:55 PM
+2020-03-31T06:50:58.785Z - info: Building assets...
