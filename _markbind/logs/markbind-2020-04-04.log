@@ -1,0 +1,41 @@
+2020-04-04T07:36:14.423Z - info: Website generation (lazy) started at 3:36:10 PM
+2020-04-04T07:36:19.149Z - info: Building assets...
+2020-04-04T07:36:22.741Z - info: Assets built
+2020-04-04T07:36:22.743Z - info: Generating landing page...
+2020-04-04T07:36:23.874Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-04-04T07:36:23.959Z - info: Website generation (lazy) complete! Total build time: 13.119s
+2020-04-04T07:36:24.656Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-04-04T07:36:24.656Z - info: Press CTRL+C to stop ...
+2020-04-04T07:36:24.714Z - info: Site data built
+2020-04-04T07:37:10.744Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\topics as some of its dependencies were changed since the last visit
+2020-04-04T07:37:12.980Z - info: Site data built
+2020-04-04T07:37:12.980Z - info: Lazy website regeneration complete! Total build time: 2.238s
+2020-04-04T07:51:20.149Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week11\admin as some of its dependencies were changed since the last visit
+2020-04-04T07:51:20.961Z - info: Site data built
+2020-04-04T07:51:20.961Z - info: Lazy website regeneration complete! Total build time: 0.819s
+2020-04-04T07:51:32.075Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\index as some of its dependencies were changed since the last visit
+2020-04-04T07:51:32.577Z - info: Site data built
+2020-04-04T07:51:32.577Z - info: Lazy website regeneration complete! Total build time: 0.503s
+2020-04-04T07:51:39.948Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\topics-py as some of its dependencies were changed since the last visit
+2020-04-04T07:51:40.194Z - info: Site data built
+2020-04-04T07:51:40.194Z - info: Lazy website regeneration complete! Total build time: 0.247s
+2020-04-04T07:51:44.418Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\topics as some of its dependencies were changed since the last visit
+2020-04-04T07:51:45.220Z - info: Site data built
+2020-04-04T07:51:45.220Z - info: Lazy website regeneration complete! Total build time: 0.802s
+2020-04-04T07:52:17.734Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\admin as some of its dependencies were changed since the last visit
+2020-04-04T07:52:18.262Z - info: Site data built
+2020-04-04T07:52:18.262Z - info: Lazy website regeneration complete! Total build time: 0.529s
+2020-04-04T07:54:35.094Z - info: [3:54:35 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-04T07:54:36.098Z - info: Rebuilding affected source files
+2020-04-04T07:54:36.100Z - info: Rebuilding 1 pages
+2020-04-04T07:54:36.674Z - info: Pages rebuilt
+2020-04-04T07:54:36.675Z - info: Website regeneration complete! Total build time: 0.577s
+2020-04-04T07:54:36.677Z - info: Site data built
+2020-04-04T07:56:21.141Z - info: [3:56:21 PM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-04T07:56:22.142Z - info: Rebuilding affected source files
+2020-04-04T07:56:22.144Z - info: Rebuilding 1 pages
+2020-04-04T07:56:22.473Z - info: Pages rebuilt
+2020-04-04T07:56:22.473Z - info: Website regeneration complete! Total build time: 0.33s
+2020-04-04T07:56:22.475Z - info: Site data built
+2020-04-04T08:00:07.572Z - info: Website generation started at 4:00:02 PM
+2020-04-04T08:00:13.948Z - info: Building assets...
