@@ -16,6 +16,8 @@
 
 #### {{ thumb(2) }} Start preparing for the final submission
 
+* ==Note that you can get prof's feedback for your project report before the final submission==. See the panel below for more details.
+
 {{ embed_topic("../../admin/te3201-admin.md#final-submission-info", "Admin " + icon_embedding + " Project → Final Submission", "1", indent="2") }}
 
 </span>
