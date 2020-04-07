@@ -1,0 +1,126 @@
+2020-04-07T03:50:50.844Z - info: Website generation (lazy) started at 11:50:41 AM
+2020-04-07T03:50:55.042Z - info: Building assets...
+2020-04-07T03:50:58.891Z - info: Assets built
+2020-04-07T03:50:58.892Z - info: Generating landing page...
+2020-04-07T03:51:00.879Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-04-07T03:51:00.963Z - info: Website generation (lazy) complete! Total build time: 19.232s
+2020-04-07T03:51:01.731Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-04-07T03:51:01.731Z - info: Press CTRL+C to stop ...
+2020-04-07T03:51:01.801Z - info: Site data built
+2020-04-07T03:51:03.478Z - info: [11:51:03 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week12\commentary.mbdf
+2020-04-07T03:51:04.717Z - info: Rebuilding affected source files
+2020-04-07T03:51:04.724Z - info: Rebuilding 0 pages
+2020-04-07T03:51:05.140Z - info: Pages rebuilt
+2020-04-07T03:51:05.140Z - info: Website regeneration complete! Total build time: 0.422s
+2020-04-07T03:51:05.336Z - info: Site data built
+2020-04-07T03:51:43.777Z - info: [11:51:43 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week12\commentary.mbdf
+2020-04-07T03:51:44.787Z - info: Rebuilding affected source files
+2020-04-07T03:51:44.789Z - info: Rebuilding 0 pages
+2020-04-07T03:51:44.793Z - info: Pages rebuilt
+2020-04-07T03:51:44.793Z - info: Website regeneration complete! Total build time: 0.005s
+2020-04-07T03:51:44.803Z - info: Site data built
+2020-04-07T03:51:47.892Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\topics as some of its dependencies were changed since the last visit
+2020-04-07T03:51:49.689Z - info: Site data built
+2020-04-07T03:51:49.690Z - info: Lazy website regeneration complete! Total build time: 1.799s
+2020-04-07T03:55:12.500Z - info: [11:55:12 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week12\commentary.mbdf
+2020-04-07T03:55:13.501Z - info: Rebuilding affected source files
+2020-04-07T03:55:13.505Z - info: Rebuilding 1 pages
+2020-04-07T03:55:15.128Z - info: Pages rebuilt
+2020-04-07T03:55:15.129Z - info: Website regeneration complete! Total build time: 1.626s
+2020-04-07T03:55:15.142Z - info: Site data built
+2020-04-07T03:55:38.053Z - info: [11:55:38 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week12\commentary.mbdf
+2020-04-07T03:55:39.055Z - info: Rebuilding affected source files
+2020-04-07T03:55:39.056Z - info: Rebuilding 1 pages
+2020-04-07T03:55:40.224Z - info: Pages rebuilt
+2020-04-07T03:55:40.226Z - info: Website regeneration complete! Total build time: 1.171s
+2020-04-07T03:55:40.235Z - info: Site data built
+2020-04-07T03:56:08.586Z - info: [11:56:08 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\schedule\week12\commentary.mbdf
+2020-04-07T03:56:09.589Z - info: Rebuilding affected source files
+2020-04-07T03:56:09.602Z - info: Rebuilding 1 pages
+2020-04-07T03:56:11.108Z - info: Pages rebuilt
+2020-04-07T03:56:11.108Z - info: Website regeneration complete! Total build time: 1.518s
+2020-04-07T03:56:11.116Z - info: Site data built
+2020-04-07T03:57:27.067Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week13\index as some of its dependencies were changed since the last visit
+2020-04-07T03:57:27.465Z - info: Site data built
+2020-04-07T03:57:27.466Z - info: Lazy website regeneration complete! Total build time: 0.4s
+2020-04-07T03:57:33.385Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week13\topics-py as some of its dependencies were changed since the last visit
+2020-04-07T03:57:33.663Z - info: Site data built
+2020-04-07T03:57:33.663Z - info: Lazy website regeneration complete! Total build time: 0.278s
+2020-04-07T03:57:36.891Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week13\topics as some of its dependencies were changed since the last visit
+2020-04-07T03:57:37.169Z - info: Site data built
+2020-04-07T03:57:37.169Z - info: Lazy website regeneration complete! Total build time: 0.278s
+2020-04-07T03:57:40.096Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week13\admin as some of its dependencies were changed since the last visit
+2020-04-07T03:57:40.390Z - info: Site data built
+2020-04-07T03:57:40.391Z - info: Lazy website regeneration complete! Total build time: 0.296s
+2020-04-07T03:58:29.321Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\index as some of its dependencies were changed since the last visit
+2020-04-07T03:58:30.048Z - info: Site data built
+2020-04-07T03:58:30.048Z - info: Lazy website regeneration complete! Total build time: 0.727s
+2020-04-07T03:58:33.040Z - info: Building C:\repos\nus-te3201\te3201-2020-website\schedule\week12\topics-py as some of its dependencies were changed since the last visit
+2020-04-07T03:58:33.338Z - info: Site data built
+2020-04-07T03:58:33.339Z - info: Lazy website regeneration complete! Total build time: 0.298s
+2020-04-07T03:59:30.379Z - info: Website generation started at 11:59:27 AM
+2020-04-07T03:59:34.651Z - info: Building assets...
+2020-04-07T03:59:38.105Z - info: Assets built
+2020-04-07T03:59:38.106Z - info: Generating pages...
+2020-04-07T03:59:47.380Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\softwareEngineering\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-07T04:01:15.895Z - info: Website generation started at 12:01:11 PM
+2020-04-07T04:01:19.622Z - info: Building assets...
+2020-04-07T04:01:22.931Z - info: Assets built
+2020-04-07T04:01:22.932Z - info: Generating pages...
+2020-04-07T04:02:53.092Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.021Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.022Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.022Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.026Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.027Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.027Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.028Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.028Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.029Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.029Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.030Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.030Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:54.155Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:02:59.536Z - debug:  
+2020-04-07T04:02:59.537Z - debug:  
+2020-04-07T04:02:59.539Z - debug:  
+2020-04-07T04:03:00.062Z - info: Pages built
+2020-04-07T04:03:19.873Z - info: Website generation complete! Total build time: 128.019s
+2020-04-07T04:03:20.572Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-04-07T04:03:20.572Z - info: Press CTRL+C to stop ...
+2020-04-07T04:03:20.637Z - debug:  
+2020-04-07T04:03:20.637Z - debug:  
+2020-04-07T04:03:20.641Z - info: Site data built
+2020-04-07T04:07:43.898Z - info: Website generation started at 12:07:38 PM
+2020-04-07T04:07:47.543Z - info: Building assets...

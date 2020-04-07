@@ -18,3 +18,14 @@ In this module you learned some UML diagrams that can be useful in software docu
 </include>
 </span>
 <!-- ---------------------------------------------------------------------------- -->
+<span id="followup-revisionControl-repositories">
+<include src="followup-box.md" boilerplate>
+<variable name="commentary_body">
+
+Two tools related to revision control to keep in mind (as they come up in conversation often):
+* **[Git](https://git-scm.com/) is the most popular tool used for revision control.**
+* **[GitHub](https://github.com) is one of the popular online platform that provides project management facilities centered around Git**.
+</variable>
+</include>
+</span>
+<!-- ---------------------------------------------------------------------------- -->

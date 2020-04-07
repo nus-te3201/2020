@@ -114,3 +114,457 @@
 2020-04-05T16:44:01.842Z - info: Site data built
 2020-04-05T16:45:16.241Z - info: Website generation started at 12:45:12 AM
 2020-04-05T16:45:20.295Z - info: Building assets...
+2020-04-05T16:45:23.760Z - info: Assets built
+2020-04-05T16:45:23.761Z - info: Generating pages...
+2020-04-05T16:45:33.201Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\softwareEngineering\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.204Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\requirements\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.205Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\gatheringRequirements\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.207Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\specifyingRequirements\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.208Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\design\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.210Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\designFundamentals\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.212Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\modeling\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.223Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\oop\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.225Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\errorHandling\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.226Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\ides\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.231Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\integration\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.234Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\codeQuality\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.235Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\refactoring\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.239Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\reuse\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.240Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\documentation\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.244Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\testing\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.245Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\testCaseDesign\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.246Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\qualityAssurance\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.246Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\projectPlanning\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.247Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\teamwork\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.250Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\processModels\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.256Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\revisionControl\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:45:33.259Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\book\uml\preview.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index.md
+    at _getFileExistsNode (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:92:19)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:255:26)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52
+    at Array.map (<anonymous>)
+    at Object.preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:394:47
+2020-04-05T16:47:06.096Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.102Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.103Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.105Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.106Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.106Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.110Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:06.125Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:07.644Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:07.644Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:07.645Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:07.645Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:07.645Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:07.659Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-05T16:47:10.644Z - debug:  
+2020-04-05T16:47:10.644Z - debug:  
+2020-04-05T16:47:10.644Z - debug:  
+2020-04-05T16:47:11.186Z - info: Pages built
+2020-04-05T16:47:32.269Z - info: Website generation complete! Total build time: 139.939s
+2020-04-05T16:47:32.270Z - info: Build success!
+2020-04-05T16:47:32.286Z - debug:  
+2020-04-05T16:47:32.287Z - debug:  
+2020-04-05T16:47:32.289Z - info: Site data built
+2020-04-05T16:48:07.136Z - info: Deployed!
