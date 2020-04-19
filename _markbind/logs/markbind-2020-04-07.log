@@ -124,3 +124,58 @@ Missing reference in C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\ind
 2020-04-07T04:03:20.641Z - info: Site data built
 2020-04-07T04:07:43.898Z - info: Website generation started at 12:07:38 PM
 2020-04-07T04:07:47.543Z - info: Building assets...
+2020-04-07T04:07:50.768Z - info: Assets built
+2020-04-07T04:07:50.768Z - info: Generating pages...
+2020-04-07T04:09:29.949Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.495Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.496Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.497Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.504Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.506Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.510Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.510Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.512Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.513Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.514Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.517Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.518Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:30.528Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-07T04:09:33.427Z - debug:  
+2020-04-07T04:09:33.428Z - debug:  
+2020-04-07T04:09:33.428Z - debug:  
+2020-04-07T04:09:35.935Z - info: Pages built
+2020-04-07T04:09:58.619Z - info: Website generation complete! Total build time: 140.216s
+2020-04-07T04:09:58.619Z - info: Build success!
+2020-04-07T04:09:58.621Z - debug:  
+2020-04-07T04:09:58.624Z - info: Site data built
+2020-04-07T04:09:58.818Z - debug:  
+2020-04-07T04:10:31.834Z - info: Deployed!
+2020-04-07T04:16:26.058Z - info: Website generation (lazy) started at 12:16:18 PM
+2020-04-07T04:16:29.438Z - info: Building assets...
+2020-04-07T04:16:32.472Z - info: Assets built
+2020-04-07T04:16:32.473Z - info: Generating landing page...
+2020-04-07T04:16:33.449Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-04-07T04:16:33.554Z - info: Website generation (lazy) complete! Total build time: 14.644s
+2020-04-07T04:16:34.254Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-04-07T04:16:34.254Z - info: Press CTRL+C to stop ...
+2020-04-07T04:16:34.308Z - info: Site data built
+2020-04-07T04:16:58.107Z - info: Building C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\index as some of its dependencies were changed since the last visit
+2020-04-07T04:16:58.595Z - info: Site data built
+2020-04-07T04:16:58.596Z - info: Lazy website regeneration complete! Total build time: 0.489s
+2020-04-07T04:17:03.455Z - info: Building C:\repos\nus-te3201\te3201-2020-website\se-book-adapted\chapters-printable\design-printable as some of its dependencies were changed since the last visit
+2020-04-07T04:17:03.617Z - info: Site data built
+2020-04-07T04:17:03.617Z - info: Lazy website regeneration complete! Total build time: 0.163s

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Installing 3rd Party Libraries</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/2020/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -43,7 +44,7 @@
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
           <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
-          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">**Textbook**</div>
@@ -95,27 +96,27 @@
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content" id="main">
           <div id="toc"></div>
           <div id="main">
             <div>
-              <h2 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a-installing-3rd-party-modules"></a></h2>
-              <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads
-                and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
+              <h2 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules<a class="fa fa-anchor" href="#appendix-a-installing-3rd-party-modules" onclick="event.stopPropagation()"></a></h2>
+              <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
               <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
-              <pre><code class="hljs"><span>pip --version</span></code></pre>
+              <pre><code class="hljs"><span>pip --version<br></span></code></pre>
               <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
-                <pre><code class="hljs bash"><span>pip install colorama</span></code></pre>
-                <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-                </p>
-                <pre><code class="hljs"><span>Collecting colorama</span><span>  Downloading colorama-0.3.9-py2.py3-none-any.whl</span><span>Installing collected packages: colorama</span><span>Successfully installed colorama-0.3.9</span></code></pre>
+                <pre><code class="hljs bash"><span>pip install colorama<br></span></code></pre>
+                <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+                <pre><code class="hljs"><span>Collecting colorama<br></span><span>  Downloading colorama-0.3.9-py2.py3-none-any.whl<br></span><span>Installing collected packages: colorama<br></span><span>Successfully installed colorama-0.3.9<br></span></code></pre>
                 <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> colorama</span><span>&#x200B;</span><span>colorama.init()  <span class="hljs-comment"># one-time initialization</span></span><span>&#x200B;</span><span>print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)</span><span>print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)</span><span>print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)</span></code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> colorama<br></span><span><br></span><span>colorama.init()  <span class="hljs-comment"># one-time initialization</span><br></span><span><br></span><span>print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)<br></span><span>print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)<br></span><span>print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)<br></span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span><br></p>
-                <img src="/2020/programming/thirdparty/images/coloramaOutput.png"></tip-box>
+                <img src="/2020/programming/thirdparty/images/coloramaOutput.png">
+              </tip-box>
               <tip-box>
                 <p><strong><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some useful third-party modules:</strong></p>
                 <ul>
@@ -133,12 +134,13 @@
                 <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
               </ul>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header"><p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Print Errors in Red</p></template>
+                <panel type="danger" expanded no-close><template slot="_header">
+                    <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Print Errors in Red</p>
+                  </template>
                   <div>
-                    <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red"></a></h4>
+                    <h4 id="exercise-print-errors-in-red">Exercise : Print Errors In Red<a class="fa fa-anchor" href="#exercise-print-errors-in-red" onclick="event.stopPropagation()"></a></h4>
                     <p>Update a CLI program you have written in the past to print error messages in red color.</p>
-                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program
-                      in a normal command shell to see the colors.</p>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Colorama module does not work in <a href="http://Repl.io">Repl.io</a>, or inside PyCharm. You'll need to run the program in a normal command shell to see the colors.</p>
                   </div>
                 </panel>
                 <p></p>
@@ -148,6 +150,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -163,7 +166,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Tue, 7 Apr 2020, 12:07:50 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sun, 19 Apr 2020, 19:56:28 GMT+8</small></div>
     </footer>
   </div>
 </body>

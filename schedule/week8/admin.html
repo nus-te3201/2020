@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 8 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/2020/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
@@ -42,7 +43,7 @@
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
           <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
-          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">**Textbook**</div>
@@ -68,6 +69,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -83,7 +85,7 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-8-mar-9-tasks">Week 8 <small><small><span class="dimmed">[Mar 9]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-8-mar-9-tasks"></a></h1>
+          <h1 id="week-8-mar-9-tasks">Week 8 <small><small><span class="dimmed">[Mar 9]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-8-mar-9-tasks" onclick="event.stopPropagation()"></a></h1>
           <div>
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
@@ -91,55 +93,57 @@
                 <li>Submit weekly project increment <code>Level 9. Use Classes</code></li>
               </ol>
             </div>
-            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises"></a></h4>
+            <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>As usual</li>
             </ul>
-            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments"></a></h4>
+            <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments" onclick="event.stopPropagation()"></a></h4>
             <span id="week8-project">
-<div>
-<div class="indented-level2">
-<panel type="primary" no-close class="algolia-no-index">
-<div></div>
-<div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 9. Use Classes</strong> <span class="badge badge-pill badge-warning"></span></span>
+              <div>
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 9. Use Classes</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes" onclick="event.stopPropagation()"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
+                      <panel minimized class="algolia-no-index"><template slot="_header">
+                          <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                        </template>
+                        <p>Here is the code for an example <code>ToDo</code> class:</p>
+                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span><br></span><span>        self.description = description<br></span><span>        self.is_done = status<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">True</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">False</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-string">""" Return the details of todo object as a string"""</span><br></span><span>        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span><br></span><span>        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-string">""" Return the details of todo object as a list,</span><br></span><span><span class="hljs-string">        suitable to be stored in a csv file.</span><br></span><span><span class="hljs-string">        """</span><br></span><span>        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]<br></span></code></pre>
+                        <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
+                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span><br></span><span>    data_file = open(filename)<br></span><span>    deliveries_reader = csv.reader(data_file)<br></span><span>    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:<br></span><span>        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:<br></span><span>            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))<br></span><span>        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:<br></span><span>            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))<br></span><span>    data_file.close()<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span><br></span><span>    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)<br></span><span>    output_writer = csv.writer(output_file)<br></span><span>    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:<br></span><span>        output_writer.writerow(item.as_csv())<br></span><span>    output_file.close()<br></span></code></pre>
+                      </panel>
+                      <p></p>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </span>
           </div>
-          <div></div>
-          <div>
-            <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes"></a></h3>
-            <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
-            <panel minimized class="algolia-no-index"><template slot="_header"><p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p></template>
-              <p>Here is the code for an example <code>ToDo</code> class:</p>
-              <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span></span><span>        self.description = description</span><span>        self.is_done = status</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span></span><span>        self.is_done = <span class="hljs-literal">True</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span></span><span>        self.is_done = <span class="hljs-literal">False</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span></span><span>        <span class="hljs-string">""" Return the details of todo object as a string"""</span></span><span>        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span></span><span>        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span></span><span>        <span class="hljs-string">""" Return the details of todo object as a list,</span></span><span><span class="hljs-string">        suitable to be stored in a csv file.</span></span><span><span class="hljs-string">        """</span></span><span>        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]</span></code></pre>
-              <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
-              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span></span><span>    data_file = open(filename)</span><span>    deliveries_reader = csv.reader(data_file)</span><span>    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:</span><span>        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:</span><span>            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))</span><span>        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:</span><span>            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))</span><span>    data_file.close()</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span></span><span>    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)</span><span>    output_writer = csv.writer(output_file)</span><span>    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:</span><span>        output_writer.writerow(item.as_csv())</span><span>    output_file.close()</span></code></pre>
-            </panel>
-            <p></p>
-          </div>
-          </panel>
         </div>
       </div>
-      </span>
-    </div>
-  </div>
-  </div>
-  <nav id="page-nav" class="navbar navbar-light bg-transparent">
-    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-        <a class="nav-link py-1" href="#week-8-mar-9-tasks">Week 8 [Mar 9] - Tasks&#x200E;</a>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-          <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
-          <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
-        </nav>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-8-mar-9-tasks">Week 8 [Mar 9] - Tasks&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-submit-weekly-exercises">1 Submit weekly exercises&#x200E;</a>
+              <a class="nav-link py-1" href="#2-submit-weekly-project-increments">2 Submit weekly project increments&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
       </nav>
     </div>
-  </nav>
-  </div>
-  <footer>
-    <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Tue, 7 Apr 2020, 12:07:50 GMT+8</small></div>
-  </footer>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sun, 19 Apr 2020, 19:56:28 GMT+8</small></div>
+    </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>

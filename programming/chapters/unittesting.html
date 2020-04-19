@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Python Basics: Unit Testing</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/2020/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -43,7 +44,7 @@
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
           <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
-          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">**Textbook**</div>
@@ -95,29 +96,30 @@
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content" id="main">
           <div id="toc"></div>
           <div id="main">
             <div>
-              <h2 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing"></a></h2>
+              <h2 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing" onclick="event.stopPropagation()"></a></h2>
               <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
               <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
               <div class="code-block">
                 <div class="code-block-heading inline-markdown-heading"><span>in <a href="http://search.py">search.py</a></span></div>
                 <div class="code-block-content">
-                  <pre><code heading="in search.py" class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span></span><span>  <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span></span><span>  <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_same_person</span><span class="hljs-params">(person, keyword)</span>:</span></span><span>  <span class="hljs-string">"""Return True if the parameter 'person' (type: dictionary)</span></span><span><span class="hljs-string">  contains a key 'name' whose value contains the </span></span><span><span class="hljs-string">  parameter 'keyword' (type: string)</span></span><span><span class="hljs-string">  e.g., </span></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jack') returns True</span></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jackie-chan') returns False</span></span><span><span class="hljs-string">  """</span></span><span>  <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]</span></code></pre>
+                  <pre><code heading="in search.py" class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span><br></span><span>  <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span><br></span><span>  <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_same_person</span><span class="hljs-params">(person, keyword)</span>:</span><br></span><span>  <span class="hljs-string">"""Return True if the parameter 'person' (type: dictionary)</span><br></span><span><span class="hljs-string">  contains a key 'name' whose value contains the </span><br></span><span><span class="hljs-string">  parameter 'keyword' (type: string)</span><br></span><span><span class="hljs-string">  e.g., </span><br></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jack') returns True</span><br></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jackie-chan') returns False</span><br></span><span><span class="hljs-string">  """</span><br></span><span>  <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]<br></span></code></pre>
                 </div>
               </div>
               <p>This is how we can write some unit tests for the two functions.</p>
               <div class="code-block">
                 <div class="code-block-heading"><span>in test_search.py</span></div>
                 <div class="code-block-content">
-                  <pre><code heading="in test_search.py" class="hljs python"><span><span class="hljs-keyword">import</span> search, unittest</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span></span><span>    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))</span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))</span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))</span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))</span><span>    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))</span><span>    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):</span><span>      search.is_same_person({}, <span class="hljs-string">'jack'</span>)</span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)</span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)</span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)</span><span>    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):</span><span>      search.get_first_name(<span class="hljs-string">''</span>)</span><span>&#x200B;</span><span><span class="hljs-comment"># activate the test runner</span></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:</span><span>    unittest.main()</span></code></pre>
+                  <pre><code heading="in test_search.py" class="hljs python"><span><span class="hljs-keyword">import</span> search, unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span><br></span><span>    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))<br></span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))<br></span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))<br></span><span>    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))<br></span><span>    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):<br></span><span>      search.is_same_person({}, <span class="hljs-string">'jack'</span>)<br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span><br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)<br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)<br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)<br></span><span>    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):<br></span><span>      search.get_first_name(<span class="hljs-string">''</span>)<br></span><span><br></span><span><span class="hljs-comment"># activate the test runner</span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:<br></span><span>    unittest.main()<br></span></code></pre>
                 </div>
               </div>
               <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
-              <pre><code class="no-line-numbers hljs"><span>...</span><span>----------------------------------------------------------------------</span><span>Ran 2 tests in 0.019s</span><span>&#x200B;</span><span>OK</span></code></pre>
+              <pre><code class="no-line-numbers hljs"><span>...<br></span><span>----------------------------------------------------------------------<br></span><span>Ran 2 tests in 0.019s<br></span><span><br></span><span>OK<br></span></code></pre>
               <p>Things to note:</p>
               <ul>
                 <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
@@ -132,9 +134,9 @@
                 </li>
               </ul>
               <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
-              <pre><code class="no-line-numbers hljs python"><span>self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)</span></code></pre>
+              <pre><code class="no-line-numbers hljs python"><span>self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)<br></span></code></pre>
               <p>the output will be something like this:</p>
-              <pre><code class="no-line-numbers hljs"><span>F.</span><span>======================================================================</span><span>FAIL: test_get_first_name (__main__.TestSearch)</span><span>----------------------------------------------------------------------</span><span>Traceback (most recent call last):</span><span>  File &quot;main.py&quot;, line 19, in test_get_first_name</span><span>    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')</span><span>AssertionError: 'Amy' != 'Foo'</span><span>- Amy</span><span>+ Foo</span><span>&#x200B;</span><span>&#x200B;</span><span>----------------------------------------------------------------------</span><span>Ran 2 tests in 0.001s</span><span>&#x200B;</span><span>FAILED (failures=1)</span></code></pre>
+              <pre><code class="no-line-numbers hljs"><span>F.<br></span><span>======================================================================<br></span><span>FAIL: test_get_first_name (__main__.TestSearch)<br></span><span>----------------------------------------------------------------------<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;main.py&quot;, line 19, in test_get_first_name<br></span><span>    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')<br></span><span>AssertionError: 'Amy' != 'Foo'<br></span><span>- Amy<br></span><span>+ Foo<br></span><span><br></span><span><br></span><span>----------------------------------------------------------------------<br></span><span>Ran 2 tests in 0.001s<br></span><span><br></span><span>FAILED (failures=1)<br></span></code></pre>
               <p>📎 Resources:</p>
               <ul>
                 <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
@@ -145,6 +147,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -157,7 +160,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Tue, 7 Apr 2020, 12:07:50 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sun, 19 Apr 2020, 19:56:28 GMT+8</small></div>
     </footer>
   </div>
 </body>

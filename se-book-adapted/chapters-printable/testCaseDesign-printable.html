@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Textbook Chapter [Printable] : Test Case Design</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/2020/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="icon" href="/2020/favicon.ico">
 </head>
@@ -30,28 +31,25 @@
         <div class="website-content">
           <div id="title">
             <div>
-              <h1 id="test-case-design"><span>Test Case Design</span><a class="fa fa-anchor" href="#test-case-design"></a></h1>
+              <h1 id="test-case-design"><span>Test Case Design</span><a class="fa fa-anchor" href="#test-case-design" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
           <div>
             <p><small><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
           </div>
           <p>
-            <div>
-              <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
-            </div>
+          <div>
+            <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
+          </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#what"></a></h4>
+              <h4 id="what">What <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong>                    because such testing often requires a massive/infinite number of test cases.</p>
+                  <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></span>collection</span>:</p>
                     <ul>
@@ -71,7 +69,7 @@
                       <sub>--Edsger Dijkstra</sub></p>
                   </blockquote>
                   <div id="e-and-e">
-                    <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                      In particular:</p>
+                    <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
                     <ul>
                       <li>
                         <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
@@ -80,16 +78,15 @@
                         <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                       </li>
                     </ul>
-                    <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                      There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                    <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true"
-                  class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
-                </small>
-                </span><a class="fa fa-anchor" href="#black-box-vs-glass-box"></a></h4>
+              <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#black-box-vs-glass-box" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
@@ -101,11 +98,12 @@
                       <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
                     </li>
                     <li>
-                      <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter
-                        than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
+                      <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
                     </li>
                   </ul>
-                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> <span class="dimmed">Black-box and white-box testing</span></p></template>
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> <span class="dimmed">Black-box and white-box testing</span></p>
+                    </template>
                     <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                     <tabs>
                       <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box vs White-box testing</template>
@@ -124,18 +122,15 @@
             </div>
           </div>
           <p>
-            <div>
-              <h2 id="equivalence-partitions"><span>Equivalence Partitions</span><a class="fa fa-anchor" href="#equivalence-partitions"></a></h2>
-            </div>
+          <div>
+            <h2 id="equivalence-partitions"><span>Equivalence Partitions</span><a class="fa fa-anchor" href="#equivalence-partitions" onclick="event.stopPropagation()"></a></h2>
+          </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-2">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#what-2"></a></h4>
+              <h4 id="what-2">What <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Consider the testing of the following operation.</p>
@@ -144,8 +139,7 @@
                       <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                     </div>
                   </box>
-                  <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed
-                    to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+                  <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
                   <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
                     <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
                   <box type="definition">
@@ -162,18 +156,14 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="basic">Basic <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#basic"></a></h4>
+              <h4 id="basic">Basic <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#basic" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the <span for="pop:epBasic-isValidMonth" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:epBasic-isValidMonth'].show()"
-                        class="trigger">isValidMonth</span> example:</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the <span for="pop:epBasic-isValidMonth" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:epBasic-isValidMonth'].show()" class="trigger">isValidMonth</span> example:</p>
                     <ul>
                       <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                       <li>[1 … 12] : the range that produces <code>true</code></li>
@@ -181,11 +171,11 @@
                     </ul>
                   </box>
                   <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code>isValidMonth</code></span>
-                  <div data-mb-html-for="content">
-                    <div>
-                      <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                    <div data-mb-html-for="content">
+                      <div>
+                        <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                      </div>
                     </div>
-                  </div>
                   </span>
                   <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
                   <box>
@@ -214,10 +204,9 @@
                   </box>
                   <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code>                      is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
                   </box>
-                  <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’
-                    the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
+                  <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
                     <ul>
@@ -234,7 +223,8 @@
                       </tr>
                       <tr>
                         <td>
-                          <p><code>isValidFlag(String s): boolean</code><br> Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
+                          <p><code>isValidFlag(String s): boolean</code><br>
+                            Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
                         </td>
                         <td>
                           <p>[<code>&quot;F&quot;</code>] [<code>&quot;T&quot;</code>] [<code>&quot;D&quot;</code>] [<code>&quot;f&quot;</code>, <code>&quot;t&quot;</code>, <code>&quot;d&quot;</code>] [any other string][null]</p>
@@ -242,7 +232,9 @@
                       </tr>
                       <tr>
                         <td>
-                          <p><code>squareRoot(String s): int</code><br> Pre-conditions: s represents a positive integer<br> Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
+                          <p><code>squareRoot(String s): int</code><br>
+                            Pre-conditions: s represents a positive integer<br>
+                            Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
                         </td>
                         <td>
                           <p>[<code>s</code> is not a valid number] [<code>s</code> is a negative integer] [<code>s</code> has an integer square root] [<code>s</code> does not have an integer square root]</p>
@@ -254,12 +246,9 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="intermediate">Intermediate <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true"
-                  class="glyphicon glyphicon-star"></span></font>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#intermediate"></a></h4>
+              <h4 id="intermediate">Intermediate <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#intermediate" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
@@ -291,10 +280,8 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
                     <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
-                    <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant
-                      of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
-                    <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently
-                      based on the game state. Therefore, the equivalence partitions are:</p>
+                    <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
+                    <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
                     <ul>
                       <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
                       <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
@@ -303,7 +290,7 @@
                     </ul>
                   </box>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong>                      represent valid inputs.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
                     <ul>
                       <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
                       <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(we assume a minefield size of WxH)</span></li>
@@ -316,26 +303,20 @@
             </div>
           </div>
           <p>
-            <div>
-              <h2 id="boundary-value-analysis"><span>Boundary Value Analysis</span><a class="fa fa-anchor" href="#boundary-value-analysis"></a></h2>
-            </div>
+          <div>
+            <h2 id="boundary-value-analysis"><span>Boundary Value Analysis</span><a class="fa fa-anchor" href="#boundary-value-analysis" onclick="event.stopPropagation()"></a></h2>
+          </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-3">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true"
-                  class="glyphicon glyphicon-star-empty"></span>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#what-3"></a></h4>
+              <h4 id="what-3">What <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#what-3" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as
-                    the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
+                  <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence
-                      partitions.
-                    </p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
                   </box>
                   <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
                   <p>Boundary values are sometimes called <em>corner cases</em>.</p>
@@ -343,15 +324,12 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="how">How <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
-                <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                </small>
-                </small>
-                </span><a class="fa fa-anchor" href="#how"></a></h4>
+              <h4 id="how">How <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors,
-                    such as the cost of each test case.</p>
+                  <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
                   <box>
                     <div class="text-monospace">
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples:</p>
@@ -387,11 +365,14 @@
                         </tr>
                         <tr>
                           <td>
-                            <p>[prime numbers]<br> [“F”]
-                              <br> [“A”, “D”, “X”]</p>
+                            <p>[prime numbers]<br>
+                              [“F”]<br>
+                              [“A”, “D”, “X”]</p>
                           </td>
                           <td>
-                            <p>No specific boundary<br> No specific boundary<br> No specific boundary</p>
+                            <p>No specific boundary<br>
+                              No specific boundary<br>
+                              No specific boundary</p>
                           </td>
                         </tr>
                         <tr>
@@ -412,10 +393,11 @@
           </div>
         </div>
       </div>
+
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Tue, 7 Apr 2020, 12:07:50 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sun, 19 Apr 2020, 19:56:28 GMT+8</small></div>
     </footer>
   </div>
 </body>

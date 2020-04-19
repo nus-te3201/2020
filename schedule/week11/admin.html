@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TE3201 Website - Week 11 - Tasks</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/2020/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
@@ -42,7 +43,7 @@
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
           <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
-          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">**Textbook**</div>
@@ -68,6 +69,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -83,158 +85,161 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-11-mar-30-tasks">Week 11 <small><small><span class="dimmed">[Mar 30]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-11-mar-30-tasks"></a></h1>
+          <h1 id="week-11-mar-30-tasks">Week 11 <small><small><span class="dimmed">[Mar 30]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-11-mar-30-tasks" onclick="event.stopPropagation()"></a></h1>
           <div>
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
                 <li>Monty: Add <code>Level 14. Add a GUI</code> or the individual feature.</li>
               </ol>
             </div>
-            <h4 id="1-monty-add-level-14-add-a-gui-or-the-individual-feature"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Monty: Add <code>Level 14. Add a GUI</code> or the individual feature.<a class="fa fa-anchor" href="#1-monty-add-level-14-add-a-gui-or-the-individual-feature"></a></h4>
+            <h4 id="1-monty-add-level-14-add-a-gui-or-the-individual-feature"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Monty: Add <code>Level 14. Add a GUI</code> or the individual feature.<a class="fa fa-anchor" href="#1-monty-add-level-14-add-a-gui-or-the-individual-feature" onclick="event.stopPropagation()"></a></h4>
             <span id="week11-project">
-<ul>
-<li><strong>Option 1:</strong> Add the following project increment.</li></ul>
-<div tag="optional">
-<div class="indented-level2">
-<panel type="primary" no-close class="algolia-no-index">
-<div></div>
-<div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 14. Add a GUI</strong> <span class="badge badge-pill badge-warning"></span></span>
-          </div>
-          <div></div>
-          <div>
-            <h3 id="level-14-add-a-gui"><span class="badge badge-primary">Level 14</span> <span class="text-primary">Add a GUI</span><a class="fa fa-anchor" href="#level-14-add-a-gui"></a></h3>
-            <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty13">Monty Level 13 code</a> to integrate it with the skeletal GUI given below.</p>
-            <p>Notes about the given version of the GUI:</p>
-            <ul>
-              <li>The GUI shows the list of tasks all the time.</li>
-              <li>It initializes with some dummy data.</li>
-              <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
-            </ul>
-            <p>Here are some screenshots of the GUI:<br>
-              <img src="/2020/programming/monty/images/gui-start.png"></p>
-            <p></p>
-            <img src="/2020/programming/monty/images/gui-later.png">
-            <p></p>
-            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Skeletal GUI code</p></template>
-              <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> datetime</span><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> sys</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span></span><span>        self.task_manager = task_manager</span><span>        self.window = Tk()</span><span>        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span></span><span>        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span></span><span>&#x200B;</span><span>        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span></span><span>        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span></span><span>        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span></span><span>        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span></span><span>&#x200B;</span><span>        <span class="hljs-comment"># add a text area to show the chat history</span></span><span>        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)</span><span>        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)</span><span>        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)</span><span>        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)</span><span>        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)</span><span>        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)</span><span>&#x200B;</span><span>        <span class="hljs-comment"># add a text area to show the list of tasks</span></span><span>        self.list_area = Text(self.window)</span><span>        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)</span><span>        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)</span><span>        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)</span><span>        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)</span><span>&#x200B;</span><span>        <span class="hljs-comment"># show the welcome message and the list of tasks</span></span><span>        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)</span><span>        self.update_task_list(self.task_manager.items)</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span></span><span>        <span class="hljs-string">"""</span></span><span><span class="hljs-string">        status_format: indicates which color to use for the status message</span></span><span><span class="hljs-string">          can be 'error_format', 'success_format', or 'normal_format'</span></span><span><span class="hljs-string">        """</span></span><span>        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)</span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)</span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)</span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)</span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span></span><span>        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span></span><span>        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):</span><span>            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:</span><span>                icon = <span class="hljs-string">'✓'</span></span><span>                output_format = <span class="hljs-string">'done_format'</span></span><span>            <span class="hljs-keyword">else</span>:</span><span>                icon = <span class="hljs-string">'✗'</span></span><span>                output_format = <span class="hljs-string">'pending_format'</span></span><span>            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span></span><span>        self.input_box.delete(<span class="hljs-number">0</span>, END)</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span></span><span>        command = <span class="hljs-literal">None</span></span><span>        <span class="hljs-keyword">try</span>:</span><span>            command = self.input_box.get()</span><span>            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:</span><span>                sys.exit()</span><span>            output = self.task_manager.execute_command(command)</span><span>            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)</span><span>            self.update_task_list(self.task_manager.items)</span><span>            self.clear_input_box()</span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:</span><span>            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span></span><span>        self.window.mainloop()</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>        self.items = [</span><span>            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],</span><span>            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],</span><span>            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]</span><span>        ]</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span></span><span>        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:</span><span>            <span class="hljs-keyword">return</span> self.get_help()</span><span>        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):</span><span>            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span></span><span>        <span class="hljs-keyword">else</span>:</span><span>            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)</span><span>&#x200B;</span><span>&#x200B;</span><span>GUI(TaskManager()).start()</span></code></pre>
-            </panel>
-          </div>
-          </panel>
-        </div>
-      </div>
-      <p></p>
-      <ul>
-        <li><strong>Option 2: Add the allocated individual feature.</strong> You will be given which feature to implement around week 10.
-          <ul>
-            <li>Note that <mark>a very minimal implementation of the feature is good enough</mark>.</li>
-            <li>Steps to find the feature you should implement:
               <ul>
-                <li>First take the last digit of your student number. For example, if your student number is <code>A0123456H</code>, the last digit is <code>6</code>.</li>
-                <li>Then, find the matching row in the table below. That row gives you three options.</li>
-                <li>You may implement any one of the three options. Click on the link to find details of the feature.</li>
-                <li>The expected amount of work for this option is about 1/4 to 1/3 of the amount of code you have written so far in the project.</li>
+                <li><strong>Option 1:</strong> Add the following project increment.</li>
               </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="indented-level4" id="feature-allocation">
-        <div class="table-responsive">
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>digit</th>
-                <th>option 1</th>
-                <th>option 2</th>
-                <th>option 3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>0</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-update"><code>C-Update</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-detectduplicates"><code>C-DetectDuplicates</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-statistics"><code>C-Statistics</code></a></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-tagging"><code>C-Tagging</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-flexibledatasource"><code>C-FlexibleDataSource</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-friendliersyntax"><code>C-FriendlierSyntax</code></a></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-priority"><code>C-Priority</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-datetimes"><code>C-DateTimes</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#b-dowithinperiodtasks"><code>B-DoWithinPeriodTasks</code></a></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-archive"><code>C-Archive</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-sort"><code>C-Sort</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#b-events"><code>B-Events</code></a></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-massops"><code>C-MassOps</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-search"><code>C-Search</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#b-fixeddurationtasks"><code>B-FixedDurationTasks</code></a></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-statistics"><code>C-Statistics</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-update"><code>C-Update</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-detectduplicates"><code>C-DetectDuplicates</code></a></td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td><a href="/2020/programming/chapters/monty.html#c-friendliersyntax"><code>C-FriendlierSyntax</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-tagging"><code>C-Tagging</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-flexibledatasource"><code>C-FlexibleDataSource</code></a></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td><a href="/2020/programming/chapters/monty.html#b-dowithinperiodtasks"><code>B-DoWithinPeriodTasks</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-priority"><code>C-Priority</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-datetimes"><code>C-DateTimes</code></a></td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td><a href="/2020/programming/chapters/monty.html#b-events"><code>B-Events</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-archive"><code>C-Archive</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-sort"><code>C-Sort</code></a></td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td><a href="/2020/programming/chapters/monty.html#b-fixeddurationtasks"><code>B-FixedDurationTasks</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-massops"><code>C-MassOps</code></a></td>
-                <td><a href="/2020/programming/chapters/monty.html#c-search"><code>C-Search</code></a></td>
-              </tr>
-            </tbody>
-          </table>
+              <div tag="optional">
+                <div class="indented-level2">
+                  <panel type="primary" no-close class="algolia-no-index">
+                    <div></div>
+                    <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 14. Add a GUI</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                    <div></div>
+                    <div>
+                      <h3 id="level-14-add-a-gui"><span class="badge badge-primary">Level 14</span> <span class="text-primary">Add a GUI</span><a class="fa fa-anchor" href="#level-14-add-a-gui" onclick="event.stopPropagation()"></a></h3>
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty13">Monty Level 13 code</a> to integrate it with the skeletal GUI given below.</p>
+                      <p>Notes about the given version of the GUI:</p>
+                      <ul>
+                        <li>The GUI shows the list of tasks all the time.</li>
+                        <li>It initializes with some dummy data.</li>
+                        <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
+                      </ul>
+                      <p>Here are some screenshots of the GUI:<br>
+                        <img src="/2020/programming/monty/images/gui-start.png"></p>
+                      <p></p>
+                      <img src="/2020/programming/monty/images/gui-later.png">
+                      <p></p>
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                          <p>Skeletal GUI code</p>
+                        </template>
+                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> datetime<br></span><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *<br></span><span><br></span><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span><br></span><span>        self.task_manager = task_manager<br></span><span>        self.window = Tk()<br></span><span>        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span><br></span><span>        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span><br></span><span><br></span><span>        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span><br></span><span>        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span><br></span><span>        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span><br></span><span>        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span><br></span><span><br></span><span>        <span class="hljs-comment"># add a text area to show the chat history</span><br></span><span>        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)<br></span><span>        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)<br></span><span>        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)<br></span><span>        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)<br></span><span>        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)<br></span><span>        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)<br></span><span><br></span><span>        <span class="hljs-comment"># add a text area to show the list of tasks</span><br></span><span>        self.list_area = Text(self.window)<br></span><span>        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)<br></span><span>        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)<br></span><span>        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)<br></span><span>        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)<br></span><span><br></span><span>        <span class="hljs-comment"># show the welcome message and the list of tasks</span><br></span><span>        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)<br></span><span>        self.update_task_list(self.task_manager.items)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span><br></span><span>        <span class="hljs-string">"""</span><br></span><span><span class="hljs-string">        status_format: indicates which color to use for the status message</span><br></span><span><span class="hljs-string">          can be 'error_format', 'success_format', or 'normal_format'</span><br></span><span><span class="hljs-string">        """</span><br></span><span>        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span><br></span><span>        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span><br></span><span>        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):<br></span><span>            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:<br></span><span>                icon = <span class="hljs-string">'✓'</span><br></span><span>                output_format = <span class="hljs-string">'done_format'</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                icon = <span class="hljs-string">'✗'</span><br></span><span>                output_format = <span class="hljs-string">'pending_format'</span><br></span><span>            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.input_box.delete(<span class="hljs-number">0</span>, END)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span><br></span><span>        command = <span class="hljs-literal">None</span><br></span><span>        <span class="hljs-keyword">try</span>:<br></span><span>            command = self.input_box.get()<br></span><span>            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:<br></span><span>                sys.exit()<br></span><span>            output = self.task_manager.execute_command(command)<br></span><span>            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)<br></span><span>            self.update_task_list(self.task_manager.items)<br></span><span>            self.clear_input_box()<br></span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br></span><span>            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.window.mainloop()<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.items = [<br></span><span>            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],<br></span><span>            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],<br></span><span>            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]<br></span><span>        ]<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span><br></span><span>        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:<br></span><span>            <span class="hljs-keyword">return</span> self.get_help()<br></span><span>        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):<br></span><span>            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)<br></span><span><br></span><span><br></span><span>GUI(TaskManager()).start()<br></span></code></pre>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+              <p></p>
+              <ul>
+                <li><strong>Option 2: Add the allocated individual feature.</strong> You will be given which feature to implement around week 10.
+                  <ul>
+                    <li>Note that <mark>a very minimal implementation of the feature is good enough</mark>.</li>
+                    <li>Steps to find the feature you should implement:
+                      <ul>
+                        <li>First take the last digit of your student number. For example, if your student number is <code>A0123456H</code>, the last digit is <code>6</code>.</li>
+                        <li>Then, find the matching row in the table below. That row gives you three options.</li>
+                        <li>You may implement any one of the three options. Click on the link to find details of the feature.</li>
+                        <li>The expected amount of work for this option is about 1/4 to 1/3 of the amount of code you have written so far in the project.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="indented-level4" id="feature-allocation">
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>digit</th>
+                        <th>option 1</th>
+                        <th>option 2</th>
+                        <th>option 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-update"><code>C-Update</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-detectduplicates"><code>C-DetectDuplicates</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-statistics"><code>C-Statistics</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-tagging"><code>C-Tagging</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-flexibledatasource"><code>C-FlexibleDataSource</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-friendliersyntax"><code>C-FriendlierSyntax</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-priority"><code>C-Priority</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-datetimes"><code>C-DateTimes</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#b-dowithinperiodtasks"><code>B-DoWithinPeriodTasks</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-archive"><code>C-Archive</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-sort"><code>C-Sort</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#b-events"><code>B-Events</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-massops"><code>C-MassOps</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-search"><code>C-Search</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#b-fixeddurationtasks"><code>B-FixedDurationTasks</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-statistics"><code>C-Statistics</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-update"><code>C-Update</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-detectduplicates"><code>C-DetectDuplicates</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-friendliersyntax"><code>C-FriendlierSyntax</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-tagging"><code>C-Tagging</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-flexibledatasource"><code>C-FlexibleDataSource</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td><a href="/2020/programming/chapters/monty.html#b-dowithinperiodtasks"><code>B-DoWithinPeriodTasks</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-priority"><code>C-Priority</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-datetimes"><code>C-DateTimes</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td><a href="/2020/programming/chapters/monty.html#b-events"><code>B-Events</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-archive"><code>C-Archive</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-sort"><code>C-Sort</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td><a href="/2020/programming/chapters/monty.html#b-fixeddurationtasks"><code>B-FixedDurationTasks</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-massops"><code>C-MassOps</code></a></td>
+                        <td><a href="/2020/programming/chapters/monty.html#c-search"><code>C-Search</code></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
-      </span>
-    </div>
-  </div>
-  </div>
-  <nav id="page-nav" class="navbar navbar-light bg-transparent">
-    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-        <a class="nav-link py-1" href="#week-11-mar-30-tasks">Week 11 [Mar 30] - Tasks&#x200E;</a>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-          <a class="nav-link py-1" href="#1-monty-add-level-14-add-a-gui-or-the-individual-feature">1 Monty: Add Level 14. Add a GUI or the individual feature.&#x200E;</a>
-        </nav>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-11-mar-30-tasks">Week 11 [Mar 30] - Tasks&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-monty-add-level-14-add-a-gui-or-the-individual-feature">1 Monty: Add Level 14. Add a GUI or the individual feature.&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
       </nav>
     </div>
-  </nav>
-  </div>
-  <footer>
-    <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Tue, 7 Apr 2020, 12:07:50 GMT+8</small></div>
-  </footer>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sun, 19 Apr 2020, 19:56:28 GMT+8</small></div>
+    </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
