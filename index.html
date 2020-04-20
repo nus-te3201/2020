@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TE3201 Website - Schedule</title>
+  <title>TE3201 Website - Admin Info</title>
   <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="markbind/fontawesome/css/all.min.css">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="markbind/css/page-nav.css">
   <link rel="stylesheet" href="/2020/css/main.css">
-  <link rel="stylesheet" href="/2020/css/schedule.css">
+  <link rel="stylesheet" href="/2020/css/admin.css">
   <link rel="icon" href="/2020/favicon.ico">
 </head>
 
@@ -43,7 +43,7 @@
           <li><a href="/2020/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
           <li><a href="/2020/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/2020/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
-          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/2020/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
           <li><a href="/2020/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
         </dropdown>
         <div class="nav-link temp-dropdown-placeholder">**Textbook**</div>
@@ -71,133 +71,1167 @@
     <div id="flex-body">
 
       <div id="content-wrapper">
-        <div>
-
-
+        <div id="website-content">
           <div>
-            <div class="website-content">
-              <nav>
-                <ul class="pagination mt-2">
-                  <li class="page-item"><a class="page-link" href="/2020/schedule/week11"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-                  <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-                  <li class="page-item active"><a class="page-link" href="/2020/schedule/week12/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-                  <li class="page-item"><a class="page-link" href="/2020/schedule/week12/topics-py.html"><span><span aria-hidden="true" class="fas fa-code"></span></span> Programming Topics</a></li>
-                  <li class="page-item"><a class="page-link" href="/2020/schedule/week12/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> SE Topics</a></li>
-                  <li class="page-item"><a class="page-link" href="/2020/schedule/week12/admin.html"><span><span aria-hidden="true" class="fas fa-tasks"></span></span> Tasks</a></li>
-                  <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-                  <li class="page-item"><a class="page-link" href="/2020/schedule/week13"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-                </ul>
-              </nav>
-              <p></p>
-              <h1 id="week-12-apr-6-summary">Week 12 <small><small><span class="dimmed">[Apr 6]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-12-apr-6-summary" onclick="event.stopPropagation()"></a></h1>
-              <div></div>
-              <span id="summary">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm" style="border-right: 1px dotted lightgrey">
-                      <h4 id="programming-topics"><a href="/2020/schedule/week12/topics-py.html" class="badge badge-light"><span aria-hidden="true" class="fas fa-code"></span> Programming Topics</a><a class="fa fa-anchor" href="#programming-topics" onclick="event.stopPropagation()"></a></h4>
+            <div class="website-content" id="main">
+              <h1 id="te3201-software-engineering"><strong>TE3201 Software Engineering</strong><a class="fa fa-anchor" href="#te3201-software-engineering" onclick="event.stopPropagation()"></a></h1>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="module-overview">Module overview<a class="fa fa-anchor" href="#module-overview" onclick="event.stopPropagation()"></a></h1>
+              <div class="indented" id="module-info">
+                <img src="/2020/images/growingPlant.png" width="700">
+                <p><em>TIC2002 Software Engineering</em> contains roughly a <strong>50-50 balance of theory and practice</strong> of SE. It covers the knowledge/skills necessary to do small software projects.</p>
+              </div>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="using-this-module-website">Using this module website<a class="fa fa-anchor" href="#using-this-module-website" onclick="event.stopPropagation()"></a></h1>
+              <div class="indented" id="website-info">
+                <div>
+                  <div id="essential">
+                    <p>
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> The <span><a href="/2020/schedule/index.html">Schedule page</a></span> is your main source of information for TE3201. You will need to refer to it weekly. For an overview of the full schedule, refer to the <a href="/2020/schedule/timeline.html">Full Timeline</a> page.
+                    </p>
+                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> More details for the upcoming weeks will be added as the weeks progress. In general, <mark>information given for more than 1 week into the future should be treated as <em>tentative</em></mark>.</p>
+                    <div>
+                      <h3 id="browser-compatibility">Browser Compatibility<a class="fa fa-anchor" href="#browser-compatibility" onclick="event.stopPropagation()"></a></h3>
+                      <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
+                    </div>
+                    <div>
+                      <h3 id="information-layers">Information Layers<a class="fa fa-anchor" href="#information-layers" onclick="event.stopPropagation()"></a></h3>
+                      <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
+                      <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
+                      <box>
+                        <panel minimized class="algolia-no-index"><template slot="_header">
+                            <p>Some less important info in a minimized panel</p>
+                          </template>
+                          <p>Less important info</p>
+                          <p></p>
+                        </panel>
+                        <p></p>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                            <p><span class="dimmed">Some less important info in a boarder-less panel</span></p>
+                          </template>
+                          <p>Less important info</p>
+                          <p></p>
+                        </panel>
+                        <p></p>
+                        <panel class="algolia-no-index"><template slot="_header">
+                            <p><span class="dimmed">Some less important info in a panel</span></p>
+                          </template>
+                          <p>Less important info</p>
+                          <p></p>
+                        </panel>
+                        <p></p>
+                      </box>
+                      <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
+                      <box>
+                        <tabs>
+                          <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
+                            <p>Some textual description of X</p>
+                          </tab>
+                          <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                            <p>Video describing X</p>
+                          </tab>
+                        </tabs>
+                      </box>
+                      <p><strong>Dotted underlines indicate <span for="pop:tooltip-example" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:tooltip-example'].show()" class="trigger">tool tips</span></strong> (activated by hovering over it) and <strong>dashed underlines indicate <span for="modal:modal-example" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modal-example'].show()" class="trigger-click">modal windows</span></strong> (activated by clicking) containing additional information.</p>
+                      <span id="pop:tooltip-example" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">Tooltip Example</span>
+                        <div data-mb-html-for="content">
+                          Additional information
+                        </div>
+                      </span>
+                      <b-modal id="modal:modal-example" hide-footer size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template>
+                        Additional information
+                      </b-modal>
+                    </div>
+                    <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p>
+                      </template>
                       <div>
-                        <p><span class="indented">~No more Python Topics~</span></p>
+                        <h4 id="star-rating-system">Star Rating System<a class="fa fa-anchor" href="#star-rating-system" onclick="event.stopPropagation()"></a></h4>
+                        <div class="indented">
+                          <p class="lead"><span>We use a <em>star rating system</em> indicate the importance of module components. <strong>Start with things that are rated one-star and progress to things with more stars.</strong> Things rated four stars are optional.</span></p>
+                          <p><strong>Star ratings for topics</strong> (and textbook sections):</p>
+                          <ul>
+                            <li>
+                              <p><strong>One-star topics</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are essential to keep up with the module. We recommend you to <mark>learn these topics if you want to pass the module</mark> (i.e. up to a <strong>C</strong> grade).</p>
+                            </li>
+                            <li>
+                              <p><strong>Two-stars topics</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> can get you up to a <strong>B+</strong>.</p>
+                            </li>
+                            <li>
+                              <p><strong>Three-stars topics</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> can get you up to an <strong>A</strong>.</p>
+                            </li>
+                            <li>
+                              <p><strong>Four-stars topics</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span> can push you beyond the limits of the module, and help you get into a level above those who merely limit themselves to the topics of the module. They <mark>are not examinable</mark>.</p>
+                            </li>
+                            <li>
+                              <p>Topics marked with two <span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> icons e.g., <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>,<span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span> are relevant topics you are expected to have learned in prerequisite modules. They are given for reference, but <mark>are examinable</mark>. The number of stars indicates the progression of topics, similar to the star rating system above i.e., one-star prerequisite topics are the most basic and the most important. four-star pre-requisite topics can be ignored without affecting CAP.</p>
+                            </li>
+                          </ul>
+                          <p><strong>Star ratings for other things</strong> e.g., admin info sections:</p>
+                          <ul>
+                            <li>The module uses a similar star rating system to indicate the importance of other info in this website. i.e., information rated as one-star are the most essential. <mark>Info rated four stars are non-essential and can be ignored</mark> without affecting your ability to follow the module.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </panel>
+                  </div>
+                  <div id="more">
+                    <div name="Conventions Used">
+                      <h3 id="conventions-used">Conventions Used<a class="fa fa-anchor" href="#conventions-used" onclick="event.stopPropagation()"></a></h3>
+                      <h4 id="shorthand-headings">Shorthand Headings<a class="fa fa-anchor" href="#shorthand-headings" onclick="event.stopPropagation()"></a></h4>
+                      <p>Meaning of some shortened headings:</p>
+                      <ul>
+                        <li>
+                          <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
+                          <p>
+                            <panel src="/2020/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header">
+                                <p><span class="dimmed">Example</span></p>
+                              </template></panel>
+                          </p>
+                        </li>
+                        <li>
+                          <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
+                          <p>
+                            <panel src="/2020/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header">
+                                <p><span class="dimmed">Example</span></p>
+                              </template></panel>
+                          </p>
+                        </li>
+                        <li>
+                          <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
+                          <p>
+                            <panel src="/2020/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header">
+                                <p><span class="dimmed">Example</span></p>
+                              </template></panel>
+                          </p>
+                        </li>
+                        <li>
+                          <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
+                          <p>
+                            <panel src="/2020/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header">
+                                <p><span class="dimmed">Example</span></p>
+                              </template></panel>
+                          </p>
+                        </li>
+                      </ul>
+                      <h4 id="boxed-text-styles">Boxed-Text Styles<a class="fa fa-anchor" href="#boxed-text-styles" onclick="event.stopPropagation()"></a></h4>
+                      <div class="indented">
+                        <box type="info">
+                          additional info
+                        </box>
+                        <box type="warning">
+                          warning
+                        </box>
+                        <box type="success">
+                          positive message
+                        </box>
+                        <box type="important">
+                          important message
+                        </box>
+                        <box type="wrong">
+                          an error to avoid
+                        </box>
+                        <box type="tip">
+                          tip
+                        </box>
+                        <box type="definition">
+                          definition
+                        </box>
+                      </div>
+                      <h4 id="meaning-of-icons">Meaning of Icons<a class="fa fa-anchor" href="#meaning-of-icons" onclick="event.stopPropagation()"></a></h4>
+                      <div class="indented">
+                        <p><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span></span> : tangential info, can be ignored if not interested<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-new-window"></span></span> : direct link to the LO. <kbd>Ctrl</kbd>+<code>Click</code> to open the LO in new window/tab.<br>
+                          <span><span aria-hidden="true" class="fas fa-trophy"></span></span> : learning outcomes<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : prerequisite learning outcome<br>
+                          <span><span aria-hidden="true" class="fas fa-cube"></span></span> : examples<br>
+                          <span><span aria-hidden="true" class="fas fa-paperclip"></span></span> : resources<br>
+                          <span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> : exercises<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> : printable version<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> : preview/more info<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> : video<br>
+                          <smal><span class="badge badge-secondary">&gt;_</span></smal> : a command to be run in a terminal<br>
+                          <span><span aria-hidden="true" class="far fa-file-alt"></span></span> : textual description<br>
+                          <span><span aria-hidden="true" class="far fa-images"></span></span> : slides<br>
+                          <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> : output produced by running code<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> question without answer<br>
+                          <span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> question with answer<br>
+                        </p>
                       </div>
                     </div>
-                    <div class="col-sm">
-                      <h4 id="se-topics"><a href="/2020/schedule/week12/topics.html" class="badge badge-light"><span><span aria-hidden="true" class="fas fa-book"></span></span> SE Topics</a><a class="fa fa-anchor" href="#se-topics" onclick="event.stopPropagation()"></a></h4>
-                      <ul>
-                        <li>[<a href="/2020/schedule/week12/topics.html#W12-1">W12.1</a>] <strong>Revision Control</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
-                      </ul>
-                      <p></p>
-                      <ul>
-                        <li>[<a href="/2020/schedule/week12/topics.html#W12-2">W12.2</a>] <strong>Writing Developer Documents</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
-                      </ul>
-                      <p></p>
-                      <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                          <p><span class="dimmed">Full ToC</span></p>
-                        </template>
+                    <div class="indented">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span> : tasks to do<br>
+                        <span><span aria-hidden="true" class="glyphicon glyphicon-blackboard"></span></span> : lecture<br>
+                        <span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> : tutorial<br>
+                        <span><span aria-hidden="true" class="fas fa-briefcase"></span></span> : evidence you can use to prove you have achieved a learning outcome<br>
+                        ⏰ : deadline<br></p>
+                    </div>
+                    <h3 id="searching-for-keywords">Searching for keywords<a class="fa fa-anchor" href="#searching-for-keywords" onclick="event.stopPropagation()"></a></h3>
+                    <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum">in the forum</a> so that we can add the missing keyword to our search index.</p>
+                    <div>
+                      <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
+                      <ol>
+                        <li>
+                          <p>Use Chrome to load the page you want to save as pdf.</p>
+                        </li>
+                        <li>
+                          <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                        </li>
+                        <li>
+                          <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                            <img src="/2020/book/about/images/chromeSaveAsPdf.png"></p>
+                        </li>
+                      </ol>
+                    </div>
+                    <h3 id="printing-textbook-content">Printing Textbook Content<a class="fa fa-anchor" href="#printing-textbook-content" onclick="event.stopPropagation()"></a></h3>
+                    <p>Printer-friendly version <span class="dimmed">(indicated by <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> icon)</span> have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.</p>
+                    <h3 id="making-this-website-better">Making this Website Better<a class="fa fa-anchor" href="#making-this-website-better" onclick="event.stopPropagation()"></a></h3>
+                    <p>This website was generated using the <a href="https://markbind.org/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-te3201-AY1920S2/website/issues">at the website issue tracker</a>.</p>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="instructors">Instructors<a class="fa fa-anchor" href="#instructors" onclick="event.stopPropagation()"></a></h1>
+              <div class="indented">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3">
+                      <p><a href="/2020/admin/images/damith.png" target="_self"><img src="/2020/admin/images/damith.png" alt class="img-fluid"></a></p>
+                    </div>
+                    <div class="col">
+                      <p><strong>Damith Chatura RAJAPAKSE</strong><br>
+                        Associate Professor, NUS School of Computing<br>
+                        PhD, Software Engineering, NUS, 2002-2006<br>
+                        BSc, Computer Science &amp; Engineering, University of Moratuwa, 1996-2001<br>
+                        <span class="dimmed"><span aria-hidden="true" class="fas fa-envelope"></span></span> <span id="prof-email"><code>damith</code>[at]<code>comp.nus.edu.sg</code></span><br>
+                        <span class="dimmed"><span aria-hidden="true" class="fas fa-map-marker-alt"></span></span> COM2-02-57<br>
+                        <span class="dimmed"><span aria-hidden="true" class="fas fa-phone-square"></span></span> 651 64359<br>
+                        <span class="dimmed"><span aria-hidden="true" class="fas fa-home"></span></span> <a href="https://www.comp.nus.edu.sg/~damithch">https://www.comp.nus.edu.sg/~damithch</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="lectures">Lectures<a class="fa fa-anchor" href="#lectures" onclick="event.stopPropagation()"></a></h1>
+              <div class="indented" id="lectures-info">
+                <p><span class="dimmed"><span aria-hidden="true" class="far fa-clock"></span></span> Tuesdays 1800-2130<br>
+                  <span class="dimmed"><span aria-hidden="true" class="fas fa-map-marker-alt"></span></span> Venue E3-06-15<br></p>
+                <p><span aria-hidden="true" class="far fa-frown"></span> <strong>Lectures will not be webcast</strong> as the venue does not have a webcast facility. <mark>Please bring your laptop to the lecture</mark> as you will need to be using it for the most part of the lecture.</p>
+                <p>The rough break-down of a typical lecture:</p>
+                <ul>
+                  <li>1800-1830: No formal lecture. This is a time for you to talk to the prof and clarify doubts about the previous week's topics.</li>
+                  <li>1830-1900: Doing exercises related to previous week topics.</li>
+                  <li>1900-2000: SE topics for the current week.</li>
+                  <li>2000-2100: Programming topics for the current week. Those who are already familiar with programming and not interested in learning Python can leave early.</li>
+                  <li>2100-2130: You can stay back and do exercises for the current week. Approach prof for help as needed.</li>
+                </ul>
+                <p><strong><span><span aria-hidden="true" class="far fa-images"></span></span> Lecture slides will be uploaded to LumiNUS after the lecture</strong>, usually by midnight of the same day. <strong>Lecture slides are not suitable to be used as reference materials</strong> as they have been <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., heavy use of graphics and animations</span>optimized for lecture delivery</span> instead.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If slides are not in LumiNUS by the expected times, please feel free to ping the lecturer.</p>
+              </div>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="tutorials">Tutorials<a class="fa fa-anchor" href="#tutorials" onclick="event.stopPropagation()"></a></h1>
+              <p>There is no formal tutorial. Instead, tutorial-like activities are integrated into the lecture.</p>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="textbook">Textbook<a class="fa fa-anchor" href="#textbook" onclick="event.stopPropagation()"></a></h1>
+              <p><strong>Software Engineering Textbook</strong>:</p>
+              <p>A customized <strong>online text book</strong> is used for this module. Topic coverage may not follow the exact topic sequence in the book. There are several ways for you to access the text book.</p>
+              <ul>
+                <li>Full version is <a href="/2020/se-book-adapted/index.html">here</a>: The relevant sections are embedded under the corresponding week in the <a href="/2020/schedule/index.html">schedule page</a>.</li>
+                <li><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> Printable version is <a href="/2020/se-book-adapted/print.html">here</a>. <mark>You are encouraged to use the online full version when possible</mark> (instead of the printable version or the PDF version), as it has more content <span class="dimmed">videos, exercises, etc.</span></li>
+              </ul>
+              <p><strong>Programming Textbook</strong>:</p>
+              <p><a href="/2020/programming/index.html">An additional <strong>guide on programming basics</strong></a> is provided for you to get started or programming. The topics in that textbook are to help you do the programming part of the project; they are not examinable in the final exam. Furthermore, we try to use external resources as much as possible in our guide so that you can continue your learning using those resources beyond the scope of this module.</p>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="programming-language">Programming Language<a class="fa fa-anchor" href="#programming-language" onclick="event.stopPropagation()"></a></h1>
+              <p>This module uses Python programming language to teach you programming basics required for software engineering. However, Python is not examinable.</p>
+              <p><strong>Install <a href="https://www.python.org/downloads/">Python (the latest 3.x version)</a></strong> in your computer.</p>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="programming-exercises">Programming Exercises<a class="fa fa-anchor" href="#programming-exercises" onclick="event.stopPropagation()"></a></h1>
+              <span id="exercises-info">
+                <p>In some weeks, there will be some programming exercises for you to submit (on <code>Repl.it</code>). You should do the exercises as you learn the topics.</p>
+                <box type="warning">
+                  <p><strong>Learn the topic first before trying the exercises</strong>. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercises.
+                  </p>
+                </box>
+              </span>
+              <h1 id="project">Project<a class="fa fa-anchor" href="#project" onclick="event.stopPropagation()"></a></h1>
+              <div id="project-info">
+                <ul>
+                  <li>The project is to be done <strong>individually</strong>.</li>
+                  <li>The project based on a <a href="/2020/programming/chapters/monty.html">generic project called Monty</a>.</li>
+                  <li>In the project, you will build a small chatbot, <strong>using Python</strong> (if you wish to use a different programming language, please ask for permission first).</li>
+                  <li>The project is to be done in small increments. You will be given a schedule of what increments to be done in each week.</li>
+                  <li>Some project increments will be common to all students, while some will vary from student to student (to be announced near to the date). That means your final product will be unique in terms of total features, but some features will be common to other students in the class.</li>
+                  <li>Constraints:
+                    <ol>
+                      <li>You should not use relational/SQL databases e.g., MySQL</li>
+                      <li>The software should work in a Windows computer that has Python 3. If your software needs other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+              <panel id="weekly-project-increments" class="algolia-no-index"><template slot="_header">
+                  <h3 id="weekly-project-increments">Weekly Project Increments<a class="fa fa-anchor" href="#weekly-project-increments" onclick="event.stopPropagation()"></a></h3>
+                </template>
+                <h4 id="week-1"><span class="badge badge-dark">Week 1:</span><a class="fa fa-anchor" href="#week-1" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <ul>
+                    <li>Use the exercise <code>Week 1 Project Submission</code> on <a href="http://repl.it">repl.it</a> to do this week's project task given below.</li>
+                  </ul>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 1. Echo Once</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
                         <div>
+                          <h3 id="level-1-echo-once"><span class="badge badge-primary">Level 1</span> <span class="text-primary">Echo Once</span><a class="fa fa-anchor" href="#level-1-echo-once" onclick="event.stopPropagation()"></a></h3>
+                          <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
+                          <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span>foo<br></span><span>&gt;&gt;&gt; Your command is: foo<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)<br></span><span><span class="hljs-comment"># ADD MORE CODE HERE</span><br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-2"><span class="badge badge-dark">Week 2:</span><a class="fa fa-anchor" href="#week-2" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <ul>
+                    <li>Add the following increment to your project. As before (and also in future weeks), copy-paste-submit the updated code via the weekly exercise named <code>Week N Project Submission</code> where <code>N</code> is the week number <span class="dimmed">e.g., submit this week's project code via the repl exercise named <code>Week 2 Project Submission</code></span>.</li>
+                  </ul>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 2. Recognize Known Commands</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-2-recognize-known-commands"><span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span><a class="fa fa-anchor" href="#level-2-recognize-known-commands" onclick="event.stopPropagation()"></a></h3>
+                          <p>Extend <a href="/2020/programming/chapters/monty.html#monty1">Monty 1 code</a> to work as follows:</p>
                           <ul>
-                            <li>[<a href="/2020/schedule/week12/topics.html#W12-1">W12.1</a>] <strong>Revision Control</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                            <li>It recognizes the <code>list</code> command and responds with a fixed message.</li>
+                            <li>It recognizes the <code>exit</code> command and exits the program if user confirms.</li>
+                            <li>For all other inputs, it responds with a fixed error message.</li>
                           </ul>
-                          <div class="indented-level2">
-                            <small>
-                              <ul>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1a">W12.1a</a>] <span>Project Management → Revision Control →
-                                      </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-1b">W12.1b</a>] <span>Project Management → Revision Control →
-                                      </span></span> <span>Repositories</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
-                                </li>
-                              </ul>
-                            </small></div>
+                          <p>A sample session is given below.</p>
+                          <box type="warning">
+                            <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code>show</code> instead of <code>list</code>), and even a different <strong>personality</strong> (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
+                            </p>
+                          </box>
+                          <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Nothing to list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>foo<br></span><span>&gt;&gt;&gt; OOPS! Unknown command<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>n<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)<br></span><span><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)<br></span><span>    <span class="hljs-comment"># ADD MORE CODE HERE</span><br></span><span>print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)<br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-3"><span class="badge badge-dark">Week 3:</span><a class="fa fa-anchor" href="#week-3" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 3. Use Functions</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-3-use-functions"><span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span><a class="fa fa-anchor" href="#level-3-use-functions" onclick="event.stopPropagation()"></a></h3>
+                          <p>Restructure the <a href="/2020/programming/chapters/monty.html#monty2">Monty Level 2 code</a> to fit the following structure, while keeping the behavior same as before.</p>
+                          <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><br></span><span><span class="hljs-comment"># ADD MISSING FUNCTIONS</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span><br></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)<br></span><span>    response = input()<br></span><span>    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        <span class="hljs-keyword">if</span> is_exit_confirmed():<br></span><span>            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)<br></span><span>            sys.exit()<br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-4"><span class="badge badge-dark">Week 4:</span><a class="fa fa-anchor" href="#week-4" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 4. Collect Tasks in Memory</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-4-collect-tasks-in-memory"><span class="badge badge-primary">Level 4</span> <span class="text-primary">Collect Tasks in Memory</span><a class="fa fa-anchor" href="#level-4-collect-tasks-in-memory" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty3">Monty Level 3 code</a> to improve the functionality as per the sample output given below.</p>
+                          <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Nothing to list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     1. read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     1. read book<br></span><span>     2. return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                          <box>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the list slicing syntax to extract a portion of a string.<br></p>
+                            <div>
+                              <div></div>
+                              <div></div>
+                              <table>
+                                <tr>
+                                  <td valign="top">
+                                    <pre><code class="hljs python"><span><br></span><span>s = <span class="hljs-string">'abcdefgh'</span><br></span><span>print(s[<span class="hljs-number">2</span>:])<br></span><span>print(s[:<span class="hljs-number">5</span>])<br></span></code></pre>
+                                  </td>
+                                  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+                                  <td valign="bottom">
+                                    <pre><code class="hljs"><span>cdefgh<br></span><span>abcde<br></span></code></pre>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <p>The above technique can be used to extract the item description from an <code>add</code> command.
+                            </p>
+                          </box>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span>items = []<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_items</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> len(items) == <span class="hljs-number">0</span>:<br></span><span>        print(<span class="hljs-string">'&gt;&gt;&gt; Nothing to list'</span>)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> enumerate(items):<br></span><span>            <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item</span><span class="hljs-params">(user_input)</span>:</span><br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">terminate</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        terminate()<br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:<br></span><span>        print_items()<br></span><span>    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):<br></span><span>        add_item(command)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        print(<span class="hljs-string">'&gt;&gt;&gt; OOPS! Unknown command'</span>)<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-5"><span class="badge badge-dark">Week 5:</span><a class="fa fa-anchor" href="#week-5" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 5. Mark Tasks as Done</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-5-mark-tasks-as-done"><span class="badge badge-primary">Level 5</span> <span class="text-primary">Mark Tasks as Done</span><a class="fa fa-anchor" href="#level-5-mark-tasks-as-done" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty4">Monty Level 4 code</a> in the following ways:</p>
+                          <ul>
+                            <li>Add a <code>done</code> command so that the user can mark a task as done. e.g., <code>done 2</code> marks the task at index 2 as 'done'.</li>
+                            <li>Show appropriate error messages if the user gives an invalid index for the <code>done</code> command</li>
+                          </ul>
+                          <p>A sample output is given below.</p>
+                          <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add borrow book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     [✗] 1. borrow book<br></span><span>     [✗] 2. read book<br></span><span>     [✗] 3. return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 1<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     [✓] 1. borrow book<br></span><span>     [✗] 2. read book<br></span><span>     [✗] 3. return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done abc<br></span><span>&gt;&gt;&gt; SORRY, I could not perform that command. Problem: abc is not a number<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 5<br></span><span>&gt;&gt;&gt; SORRY, I could not perform that command. Problem: No item at index 5<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 0<br></span><span>&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Index must be greater than 0<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>garbage<br></span><span>&gt;&gt;&gt; SORRY, I could not perform that command. Problem: Command not recognized<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                          <box>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Each task has two data values: the description and the 'done' status. You can use a list to hold these two data items. That means your list of tasks will be a list containing lists. Example:</p>
+                            <pre><code class="hljs python"><span>tasks = []<br></span><span>tasks.append([<span class="hljs-string">'read book'</span>, <span class="hljs-literal">False</span>])<br></span><span>print(<span class="hljs-string">'Description of the first task:'</span>, tasks[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>])<br></span><span><br></span><span><span class="hljs-keyword">if</span> tasks[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]:<br></span><span>    print(<span class="hljs-string">'✓'</span>)<br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    print(<span class="hljs-string">'✗'</span>)<br></span></code></pre>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use exceptions to identify and handle errors in the command.</p>
+                            <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        <span class="hljs-keyword">try</span>:<br></span><span>            command = read_command()<br></span><span>            execute_command(command)<br></span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br></span><span>            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)<br></span></code></pre>
+                          </box>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span><br></span><span>items = []<br></span><span><br></span><span><span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_item_for_index</span><span class="hljs-params">(index_as_string)</span>:</span><br></span><span>    <span class="hljs-keyword">try</span>:<br></span><span>        index = int(index_as_string.strip())<br></span><span>    <span class="hljs-keyword">except</span> Exception:<br></span><span>        <span class="hljs-keyword">raise</span> ValueError(index_as_string + <span class="hljs-string">' is not a number '</span>)<br></span><span><br></span><span>    <span class="hljs-keyword">if</span> index &lt; <span class="hljs-number">1</span>:<br></span><span>        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Index must be greater than 0 '</span>)<br></span><span><br></span><span>    <span class="hljs-keyword">try</span>:<br></span><span>        <span class="hljs-keyword">return</span> items[index - <span class="hljs-number">1</span>]<br></span><span>    <span class="hljs-keyword">except</span> IndexError:<br></span><span>        <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'No item at index '</span> + index_as_string)<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_item_as_done</span><span class="hljs-params">(user_input)</span>:</span><br></span><span>    index_as_string = user_input[<span class="hljs-number">5</span>:]<br></span><span>    get_item_for_index(index_as_string)[<span class="hljs-number">1</span>] = <span class="hljs-literal">True</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        terminate()<br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:<br></span><span>        print_items()<br></span><span>    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):<br></span><span>        add_item(command)<br></span><span>    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'done '</span>):<br></span><span>        mark_item_as_done(command)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        <span class="hljs-keyword">try</span>:<br></span><span>            command = read_command()<br></span><span>            execute_command(command)<br></span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br></span><span>            print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 6. Give Help</strong> <span class="badge badge-pill badge-warning">optional</span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-6-give-help"><span class="badge badge-primary">Level 6</span> <span class="text-primary">Give Help</span><a class="fa fa-anchor" href="#level-6-give-help" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty5">Monty Level 5 code</a> in the following ways:</p>
+                          <ul>
+                            <li>Add a <code>help</code> command so that the user can view how to use the app.</li>
+                            <li>Improve the formatting of the text displayed to the user to make the user experience nicer.</li>
+                          </ul>
+                          <p>A sample output is given below.</p>
+                          <pre><code class="hljs"><span>*******************************************************************************************<br></span><span>*  __          __  _                            _          __  __             _           *<br></span><span>*  \ \        / / | |                          | |        |  \/  |           | |          *<br></span><span>*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *<br></span><span>*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *<br></span><span>*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *<br></span><span>*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *<br></span><span>*                                                                                  __/ |  *<br></span><span>*                                                                                 |___/   *<br></span><span>******************************************************************************************* <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>help<br></span><span>&gt;&gt;&gt; I'm glad you asked. Here it is:<br></span><span>==================================================<br></span><span>Monty can understand the following commands:<br></span><span><br></span><span>  add DESCRIPTION <br></span><span>    Adds a task to the list<br></span><span>    Example: add read book<br></span><span>  done INDEX<br></span><span>    Marks the task at INDEX as 'done'<br></span><span>    Example: done 1<br></span><span>  exit<br></span><span>    Exits the application<br></span><span>  help<br></span><span>    Shows the help information<br></span><span>  list<br></span><span>    Lists the tasks in the list<br></span><span>-------------------------------------------------- <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; Task added to the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; Task added to the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 1<br></span><span>&gt;&gt;&gt; Congrats on completing a task! :-)<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>==================================================<br></span><span>STATUS | INDEX | DESCRIPTION                <br></span><span>--------------------------------------------------<br></span><span>  ✓    |   1   | read book                  <br></span><span>  ✗    |   2   | return book                <br></span><span>--------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
+                          <box>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use triple quotes to define a long string such as the help text.</p>
+                            <pre><code class="hljs python"><span>help_text =<span class="hljs-string">'''</span><br></span><span><span class="hljs-string">long text</span><br></span><span><span class="hljs-string">more text</span><br></span><span><span class="hljs-string">'''</span><br></span></code></pre>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can generate ASCII art using online resources such as <a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag</a></p>
+                          </box>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_greeting</span><span class="hljs-params">()</span>:</span><br></span><span>    banner = <span class="hljs-string">'''</span><br></span><span><span class="hljs-string">*******************************************************************************************</span><br></span><span><span class="hljs-string">*  __          __  _                            _          __  __             _           *</span><br></span><span><span class="hljs-string">*  \ \        / / | |                          | |        |  \/  |           | |          *</span><br></span><span><span class="hljs-string">*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *</span><br></span><span><span class="hljs-string">*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *</span><br></span><span><span class="hljs-string">*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *</span><br></span><span><span class="hljs-string">*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *</span><br></span><span><span class="hljs-string">*                                                                                  __/ |  *</span><br></span><span><span class="hljs-string">*                                                                                 |___/   *</span><br></span><span><span class="hljs-string">*******************************************************************************************</span><br></span><span><span class="hljs-string">'''</span><br></span><span>    print(banner.strip(), <span class="hljs-string">'\n'</span>)<br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-6"><span class="badge badge-dark">Week 6:</span><a class="fa fa-anchor" href="#week-6" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 7. Save Tasks to Disk</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-7-save-tasks-to-disk"><span class="badge badge-primary">Level 7</span> <span class="text-primary">Save Tasks to Disk</span><a class="fa fa-anchor" href="#level-7-save-tasks-to-disk" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty6">Monty Level 6 code</a> in the following ways:</p>
+                          <ul>
+                            <li>Monty <strong>saves tasks into a csv file</strong>, and <strong>loads data from the same file at the start</strong>.</li>
+                            <li><strong>Add a <code>delete</code> command</strong> that can delete a task at a specific index.</li>
+                          </ul>
+                          <p>A sample output is given below. Note the following:</p>
+                          <ul>
+                            <li>Monty is able to show at the very start the three tasks loaded from the file.</li>
+                            <li>When item 2 is deleted, the item previously at index 3 moves to position 2.</li>
+                          </ul>
+                          <pre><code class="hljs"><span>*******************************************************************************************<br></span><span>*  __          __  _                            _          __  __             _           *<br></span><span>*  \ \        / / | |                          | |        |  \/  |           | |          *<br></span><span>*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *<br></span><span>*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *<br></span><span>*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *<br></span><span>*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *<br></span><span>*                                                                                  __/ |  *<br></span><span>*                                                                                 |___/   *<br></span><span>******************************************************************************************* <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>==================================================<br></span><span>STATUS | INDEX | DESCRIPTION                <br></span><span>--------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                <br></span><span>  ✗    |   2   | read book                  <br></span><span>  ✗    |   3   | return book                <br></span><span>--------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>delete 2<br></span><span>&gt;&gt;&gt; Task deleted from the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>==================================================<br></span><span>STATUS | INDEX | DESCRIPTION                <br></span><span>--------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                <br></span><span>  ✗    |   2   | return book                  <br></span><span>--------------------------------------------------<br></span></code></pre>
+                          <box>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> here are some tips:</p>
+                            <ul>
+                              <li>
+                                <p>The filename can be specified in the code. e.g.,</p>
+                                <pre><code class="hljs python"><span>DATA_FILE = <span class="hljs-string">'monty7.csv'</span><br></span></code></pre>
+                              </li>
+                              <li>
+                                <p>The following statement will create an empty <code>data.csv</code> file if the file doesn't exist, but will keep the file as it is if it already exists <span class="dimmed">(it simply opens the file in append mode -- which creates the file it if it doesn't exist -- and close it right after)</span>.</p>
+                                <pre><code class="hljs python"><span>open(<span class="hljs-string">'data.csv'</span>, <span class="hljs-string">'a'</span>).close()<br></span></code></pre>
+                              </li>
+                              <li>
+                                <p>The format of the file is up to you. Here is an example:</p>
+                                <pre><code class="hljs"><span>borrow book,done<br></span><span>read book,pending<br></span><span>return book,pending<br></span></code></pre>
+                              </li>
+                              <li>
+                                <p>The program can load the tasks from the file at the beginning. It can save the data after each command. For example, as follows:</p>
+                                <pre><code class="hljs python"><span> items = []<br></span><span> DATA_FILE = <span class="hljs-string">'monty7.csv'</span><br></span><span> <br></span><span> <br></span><span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>     create_file_if_missing(DATA_FILE)<br></span><span>     load_data(DATA_FILE) <span class="hljs-comment"># load task data from the file</span><br></span><span>     print_greeting()<br></span><span>     <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>         <span class="hljs-keyword">try</span>:<br></span><span>             command = read_command()<br></span><span>             execute_command(command)<br></span><span>             save_data(DATA_FILE, items) <span class="hljs-comment"># save all tasks in the file</span><br></span><span>         <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br></span><span>             print(<span class="hljs-string">'&gt;&gt;&gt; SORRY, I could not perform that command. Problem:'</span>, e)<br></span><span> <br></span><span> <br></span><span> main()<br></span></code></pre>
+                              </li>
+                            </ul>
+                          </box>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <p>Here is the code for loading data from the file.</p>
+                            <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span><br></span><span>    data_file = open(filename)<br></span><span>    deliveries_reader = csv.reader(data_file)<br></span><span>    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> row:<br></span><span>            <span class="hljs-keyword">continue</span><br></span><span>        add_item_from_csv_line(row)<br></span><span>    data_file.close()<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item_from_csv_line</span><span class="hljs-params">(values)</span>:</span><br></span><span>    status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span><br></span><span>    items.append([values[<span class="hljs-number">0</span>], status])  <span class="hljs-comment"># items is a global variable</span><br></span></code></pre>
+                            <p>Note that <code class="hljs inline python">status = <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> values[<span class="hljs-number">1</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span></code> is a shortcut syntax. It is equivalent to the code below:</p>
+                            <pre><code class="hljs"><span>if values[1] == 'done':<br></span><span>    status = True<br></span><span>else:<br></span><span>    status = False<br></span></code></pre>
+                          </panel>
                           <p></p>
+                          <p>Given below are some more features you can consider adding at this point (it is <mark>optional to add them to Monty 7</mark>):</p>
                           <ul>
-                            <li>[<a href="/2020/schedule/week12/topics.html#W12-2">W12.2</a>] <strong>Writing Developer Documents</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                            <li><strong>Remove the need for the user to confirm before exiting Monty.</strong> As data are saved to a file, such a confirmation is no longer necessary because an accidental exit will not cause any permanent damage.
+                              <pre><code class="hljs"><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                            </li>
+                            <li><strong>Add a <code>pending</code> command</strong> that can mark a task as pending (i.e., the opposite of the <code>done</code> command).
+                              <pre><code class="hljs"><span> &gt;&gt;&gt; What can I do for you?<br></span><span> <br></span><span> list<br></span><span> &gt;&gt;&gt; Here is the list of tasks:<br></span><span> ==================================================<br></span><span> STATUS | INDEX | DESCRIPTION                <br></span><span> --------------------------------------------------<br></span><span>   ✓    |   1   | borrow book                <br></span><span>   ✗    |   2   | read book                  <br></span><span>   ✗    |   3   | return book                <br></span><span> --------------------------------------------------<br></span><span> &gt;&gt;&gt; What can I do for you?<br></span><span> <br></span><span> pending 1<br></span><span> &gt;&gt;&gt; OK, I have marked that item as pending<br></span><span> &gt;&gt;&gt; What can I do for you?<br></span><span> <br></span><span> list<br></span><span> &gt;&gt;&gt; Here is the list of tasks:<br></span><span> ==================================================<br></span><span> STATUS | INDEX | DESCRIPTION                <br></span><span> --------------------------------------------------<br></span><span>   ✗    |   1   | borrow book                <br></span><span>   ✗    |   2   | read book                  <br></span><span>   ✗    |   3   | return book                <br></span><span> --------------------------------------------------<br></span><span> &gt;&gt;&gt; What can I do for you?<br></span></code></pre>
+                            </li>
+                            <li><strong>Make commands case insensitive and immune to extra leading/trailing spaces</strong>. For example, all these commands should work the same way.
+                              <pre><code class="hljs"><span>add read book<br></span><span>ADD read book<br></span><span>Add read book<br></span><span>add    read book<br></span><span>    add read book<br></span></code></pre>
+                            </li>
                           </ul>
-                          <div class="indented-level2">
-                            <small>
-                              <p>   <strong>Type of Developer Docs</strong></p>
-                              <ul>
-                                <li><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2a">W12.2a</a>] <span>Implementation → Documentation → Introduction →
-                                    </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
-                              </ul>
-                              <p>   <strong>Guideline: Aim for Comprehensibility</strong></p>
-                              <ul>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2b">W12.2b</a>] <span>Implementation → Documentation → Guidelines → Aim for Comprehensibility →
-                                      </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2c">W12.2c</a>] <span>Implementation → Documentation → Guidelines → Aim for Comprehensibility →
-                                      </span></span> <span>How</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                              </ul>
-                              <p>   <strong>Guideline: Describe Top-Down</strong></p>
-                              <ul>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2d">W12.2d</a>] <span>Implementation → Documentation → Guidelines → Describe Top-Down →
-                                      </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2e">W12.2e</a>] <span>Implementation → Documentation → Guidelines → Describe Top-Down →
-                                      </span></span> <span>Why</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2f">W12.2f</a>] <span>Implementation → Documentation → Guidelines → Describe Top-Down →
-                                      </span></span> <span>How</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                              </ul>
-                              <p>   <strong>Guideline: Minimal but Sufficient</strong></p>
-                              <ul>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2g">W12.2g</a>] <span>Implementation → Documentation → Guidelines → Minimal but Sufficient →
-                                      </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                                <li>
-                                  <p><span class="dimmed">[<a href="/2020/schedule/week12/topics.html#W12-2h">W12.2h</a>] <span>Implementation → Documentation → Guidelines → Minimal but Sufficient →
-                                      </span></span> <span>How</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                                </li>
-                              </ul>
-                            </small></div>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-7"><span class="badge badge-dark">Week 7:</span><a class="fa fa-anchor" href="#week-7" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 8. Support Deadlines</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-8-support-deadlines"><span class="badge badge-primary">Level 8</span> <span class="text-primary">Support Deadlines</span><a class="fa fa-anchor" href="#level-8-support-deadlines" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty7">Monty Level 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
+                          <p>Previous behavior:</p>
+                          <ul>
+                            <li><code>add buy book</code>: adds a task <code>buy book</code></li>
+                          </ul>
+                          <p>Proposed change - replace the above command with the following two:</p>
+                          <ul>
+                            <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
+                            <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br>
+                              Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description of the deadline.</li>
+                          </ul>
+                          <p>A sample output is given below.</p>
+                          <pre><code class="hljs"><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>============================================================<br></span><span>STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>------------------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                 | -<br></span><span>  ✗    |   2   | read book                   | -<br></span><span>  ✗    |   3   | return book                 | Monday<br></span><span>------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>todo watch movie<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>deadline submit assignment by: end of May<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>============================================================<br></span><span>STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>------------------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                 | -<br></span><span>  ✗    |   2   | read book                   | -<br></span><span>  ✗    |   3   | return book                 | Monday<br></span><span>  ✗    |   4   | watch movie                 | -<br></span><span>  ✗    |   5   | submit assignment           | end of May<br></span><span>------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
+                          <box>
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> here are some tips:</p>
+                            <ul>
+                              <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline items, respectively.
+                                <pre><code class="hljs python"><span>[<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}<br></span><span>]<br></span><span><br></span></code></pre>
+                              </li>
+                              <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
+                                <pre><code class="hljs"><span>T,borrow book,done<br></span><span>T,read book,pending<br></span><span>D,return book,pending,Monday<br></span></code></pre>
+                              </li>
+                            </ul>
+                          </box>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <p>Here is the code adding a todo item:</p>
+                            <pre><code class="hljs python"><span><br></span><span>command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span><br></span><span><span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:<br></span><span>    items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})<br></span><span><span class="hljs-keyword">elif</span>  ...<br></span></code></pre>
+                          </panel>
                           <p></p>
                         </div>
                       </panel>
                     </div>
                   </div>
-                  <div class="row" style="border-top: 1px dotted lightgrey">
-                    <div class="col-sm">
-                      <h4 id="tasks"><a href="/2020/schedule/week12/admin.html" class="badge badge-light mt-2"><span aria-hidden="true" class="fas fa-tasks"></span> Tasks</a><a class="fa fa-anchor" href="#tasks" onclick="event.stopPropagation()"></a></h4>
-                      <div>
-                        <ol>
-                          <li>Enhance previous week's increment or add another individual feature</li>
-                          <li>Start preparing for the final submission</li>
-                        </ol>
-                      </div>
+                </div>
+                <hr>
+                <h4 id="week-8"><span class="badge badge-dark">Week 8:</span><a class="fa fa-anchor" href="#week-8" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 9. Use Classes</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-9-use-classes"><span class="badge badge-primary">Level 9</span> <span class="text-primary">Use Classes</span><a class="fa fa-anchor" href="#level-9-use-classes" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty8">Monty Level 8 code</a> to use classes <code>ToDo</code> and <code>Deadline</code> (i.e., you need to define these two classes) to represent todo tasks and deadlines, respectively.</p>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <p>Here is the code for an example <code>ToDo</code> class:</p>
+                            <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span><br></span><span>        self.description = description<br></span><span>        self.is_done = status<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">True</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">False</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_string</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-string">""" Return the details of todo object as a string"""</span><br></span><span>        status = <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span><br></span><span>        <span class="hljs-keyword">return</span> status.center(<span class="hljs-number">6</span>) + <span class="hljs-string">' '</span> + <span class="hljs-string">'   -'</span>.ljust(<span class="hljs-number">13</span>) + self.description<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">as_csv</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-string">""" Return the details of todo object as a list,</span><br></span><span><span class="hljs-string">        suitable to be stored in a csv file.</span><br></span><span><span class="hljs-string">        """</span><br></span><span>        <span class="hljs-keyword">return</span> [<span class="hljs-string">'T'</span>, self.description, <span class="hljs-string">'done'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'pending'</span>]<br></span></code></pre>
+                            <p>Here are some sample functions that work with <code>ToDo</code> objects:</p>
+                            <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_data</span><span class="hljs-params">(filename)</span>:</span><br></span><span>    data_file = open(filename)<br></span><span>    deliveries_reader = csv.reader(data_file)<br></span><span>    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:<br></span><span>        <span class="hljs-keyword">if</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'T'</span>:<br></span><span>            items.append(ToDo(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>))<br></span><span>        <span class="hljs-keyword">elif</span> row[<span class="hljs-number">0</span>] == <span class="hljs-string">'D'</span>:<br></span><span>            items.append(Deadline(row[<span class="hljs-number">1</span>], <span class="hljs-literal">True</span> <span class="hljs-keyword">if</span> row[<span class="hljs-number">2</span>] == <span class="hljs-string">'done'</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">False</span>, row[<span class="hljs-number">3</span>]))<br></span><span>    data_file.close()<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">save_data</span><span class="hljs-params">(filename, items_to_save)</span>:</span><br></span><span>    output_file = open(filename, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>)<br></span><span>    output_writer = csv.writer(output_file)<br></span><span>    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items_to_save:<br></span><span>        output_writer.writerow(item.as_csv())<br></span><span>    output_file.close()<br></span></code></pre>
+                          </panel>
+                          <p></p>
+                        </div>
+                      </panel>
                     </div>
                   </div>
                 </div>
+                <hr>
+                <h4 id="week-9"><span class="badge badge-dark">Week 9:</span><a class="fa fa-anchor" href="#week-9" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 10. Use More Classes</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-10-use-more-classes"><span class="badge badge-primary">Level 10</span> <span class="text-primary">Use More Classes</span><a class="fa fa-anchor" href="#level-10-use-more-classes" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty9">Monty Level 9 code</a> to extract the following classes:</p>
+                          <ul>
+                            <li><code>UserInterface</code>: an object of this class can be used to handle reading input from the user and showing output back to the user.</li>
+                            <li><code>StorageManager</code>: an object of this class can be used to read data from the data file and write data back to the data file.</li>
+                            <li><code>TaskManager</code>: an object of this class will hold the list of <code>Task</code>/<code>Deadline</code> objects and will execute commands.</li>
+                          </ul>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <p>Here's the main part of the code that illustrates how these objects can work together:</p>
+                            <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-comment"># create a UserInterface object and show the greeting</span><br></span><span>    ui = UserInterface()<br></span><span>    ui.show_greeting()<br></span><span><br></span><span>    <span class="hljs-comment"># create a StorageManager object</span><br></span><span>    storage = StorageManager(<span class="hljs-string">'data.csv'</span>)<br></span><span><br></span><span>    <span class="hljs-comment"># create a TaskManager object and load data</span><br></span><span>    task_manager = TaskManager(storage)<br></span><span>    task_manager.load_data()<br></span><span><br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        <span class="hljs-keyword">try</span>:<br></span><span>            command = ui.read_command()<br></span><span>            execute_command(command, task_manager, ui)<br></span><span>            task_manager.save_data()<br></span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br></span><span>            ui.display(<span class="hljs-string">'SORRY, I could not perform that command. Problem:'</span> + str(e))<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                            <p>Here's a partial <code>execute_command</code> function:</p>
+                            <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command_parts, task_manager, ui)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> action == <span class="hljs-string">'exit'</span>:<br></span><span>        ui.display(<span class="hljs-string">'Bye!'</span>)<br></span><span>        sys.exit()<br></span><span>    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'list'</span>:<br></span><span>        message = task_manager.get_items_as_table()<br></span><span>        ui.display(message)<br></span><span>    <span class="hljs-keyword">elif</span> action == <span class="hljs-string">'todo'</span>:<br></span><span>        message = task_manager.add_item(ToDo(command_parts[<span class="hljs-number">1</span>], <span class="hljs-literal">False</span>))<br></span><span>        ui.display(message)<br></span><span>    ...<br></span></code></pre>
+                          </panel>
+                          <p></p>
+                          <p><strong>Optional feature to consider:</strong> add a <code>progress</code> command that shows how many tasks/deadlines were marked as <em>done</em> during a session so far. Here is an example output:</p>
+                          <pre><code class="hljs"><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>    ============================================================<br></span><span>    STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>    ------------------------------------------------------------<br></span><span>      ✓    |   1   | borrow book                 | -<br></span><span>      ✗    |   2   | read book                   | -<br></span><span>      ✗    |   3   | return book                 | Monday<br></span><span>    ------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>progress<br></span><span>&gt;&gt;&gt; Progress for this session: todos 0 deadlines 0<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 2<br></span><span>&gt;&gt;&gt; Congrats on completing a task! :-)<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>progress<br></span><span>&gt;&gt;&gt; Progress for this session: todos 1 deadlines 0<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 3<br></span><span>&gt;&gt;&gt; Congrats on completing a task! :-)<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>progress<br></span><span>&gt;&gt;&gt; Progress for this session: todos 1 deadlines 1<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>pending 2<br></span><span>&gt;&gt;&gt; OK, I have marked that item as pending<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>progress<br></span><span>&gt;&gt;&gt; Progress for this session: todos 0 deadlines 1<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>    ============================================================<br></span><span>    STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>    ------------------------------------------------------------<br></span><span>      ✓    |   1   | borrow book                 | -<br></span><span>      ✗    |   2   | read book                   | -<br></span><span>      ✓    |   3   | return book                 | Monday<br></span><span>    ------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <p>A class-level variable in the <code>ToDo</code> class can be used to track the number of todo tasks marked as <em>done</em> in a session.</p>
+                            <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span><br></span><span><br></span><span>    progress = <span class="hljs-number">0</span>  <span class="hljs-comment"># class-level variable</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span><br></span><span>        self.description = description<br></span><span>        self.is_done = status<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_done: <span class="hljs-comment"># increment progress if needed</span><br></span><span>            ToDo.progress = ToDo.progress + <span class="hljs-number">1</span><br></span><span>        self.is_done = <span class="hljs-literal">True</span><br></span></code></pre>
+                          </panel>
+                          <p></p>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                  <p></p>
+                  <ul>
+                    <li><mark>After submitting the above increment, there is no need to submit subsequent project increments (i.e., Level 11 onwards) on <a href="http://repl.it">repl.it</a>.</mark></li>
+                  </ul>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 11. Use Multiple Code Files</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-11-use-multiple-code-files"><span class="badge badge-primary">Level 11</span> <span class="text-primary">Use Multiple Code Files</span><a class="fa fa-anchor" href="#level-11-use-multiple-code-files" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty10">Monty Level 10 code</a> to divide the source code into multiple files (e.g., <code>todo.py</code>, <code>deadline.py</code>, etc.).</p>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-10"><span class="badge badge-dark">Week 10:</span><a class="fa fa-anchor" href="#week-10" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 12. Use Inheritance</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-12-use-inheritance"><span class="badge badge-primary">Level 12</span> <span class="text-primary">Use Inheritance</span><a class="fa fa-anchor" href="#level-12-use-inheritance" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty11">Monty Level 11 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
+                          <panel minimized class="algolia-no-index"><template slot="_header">
+                              <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
+                            </template>
+                            <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span><br></span><span><br></span><span>    TYPE_KEY = <span class="hljs-string">'T'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span><br></span><span>        self.description = description<br></span><span>        self.is_done = status<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">True</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">False</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__status_as_icon</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'('</span> + self.__status_as_icon() + <span class="hljs-string">') '</span> + self.description<br></span><span><br></span><span>    <span class="hljs-comment"># more code ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-params">(ToDo)</span>:</span><br></span><span><br></span><span>    TYPE_KEY = <span class="hljs-string">'D'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status, by)</span>:</span><br></span><span>        super().__init__(description, status)<br></span><span>        self.by = by<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span><br></span><span><br></span></code></pre>
+                            <p>Note:</p>
+                            <ul>
+                              <li>There no need for the <code>Deadline</code> class to implement methods such as <code>mark_as_done</code> because it inherits those methods from the parent class.</li>
+                              <li>Note how the <code>Deadline</code> class overrides some methods (e.g., <code>__init__</code>) but uses the parent class method inside the overridden method (e.g., <code>__init__</code> method of the <code>Deadline</code> class calls the <code>super().__init__()</code> method.</li>
+                            </ul>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 13. Add Unit Tests</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-13-add-unit-tests"><span class="badge badge-primary">Level 13</span> <span class="text-primary">Add Unit Tests</span><a class="fa fa-anchor" href="#level-13-add-unit-tests" onclick="event.stopPropagation()"></a></h3>
+                          <p>Add some unit tests to <a href="/2020/programming/chapters/monty.html#monty12">Monty Level 12 code</a>.</p>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-11"><span class="badge badge-dark">Week 11:</span><a class="fa fa-anchor" href="#week-11" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <ul>
+                    <li><strong>Option 1:</strong> Add the following project increment.</li>
+                  </ul>
+                  <div tag="optional">
+                    <div class="indented-level2">
+                      <panel type="primary" no-close class="algolia-no-index">
+                        <div></div>
+                        <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 14. Add a GUI</strong> <span class="badge badge-pill badge-warning"></span></span></div>
+                        <div></div>
+                        <div>
+                          <h3 id="level-14-add-a-gui"><span class="badge badge-primary">Level 14</span> <span class="text-primary">Add a GUI</span><a class="fa fa-anchor" href="#level-14-add-a-gui" onclick="event.stopPropagation()"></a></h3>
+                          <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty13">Monty Level 13 code</a> to integrate it with the skeletal GUI given below.</p>
+                          <p>Notes about the given version of the GUI:</p>
+                          <ul>
+                            <li>The GUI shows the list of tasks all the time.</li>
+                            <li>It initializes with some dummy data.</li>
+                            <li>It only supports an <code>add</code> command and a <code>help</code> command.</li>
+                          </ul>
+                          <p>Here are some screenshots of the GUI:<br>
+                            <img src="/2020/programming/monty/images/gui-start.png"></p>
+                          <p></p>
+                          <img src="/2020/programming/monty/images/gui-later.png">
+                          <p></p>
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
+                              <p>Skeletal GUI code</p>
+                            </template>
+                            <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> datetime<br></span><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *<br></span><span><br></span><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GUI</span>:</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, task_manager)</span>:</span><br></span><span>        self.task_manager = task_manager<br></span><span>        self.window = Tk()<br></span><span>        self.window.geometry(<span class="hljs-string">'800x700'</span>)  <span class="hljs-comment"># set Window size</span><br></span><span>        self.window.title(<span class="hljs-string">'Monty'</span>)  <span class="hljs-comment"># set Window title</span><br></span><span><br></span><span>        self.input_box = Entry(self.window)  <span class="hljs-comment"># create an input box</span><br></span><span>        self.input_box.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, fill=<span class="hljs-string">'x'</span>)  <span class="hljs-comment"># make the input box fill the width of the Window</span><br></span><span>        self.input_box.bind(<span class="hljs-string">'&lt;Return&gt;'</span>, self.command_entered)  <span class="hljs-comment"># bind the command_entered function to the Enter key</span><br></span><span>        self.input_box.focus()  <span class="hljs-comment"># set focus to the input box</span><br></span><span><br></span><span>        <span class="hljs-comment"># add a text area to show the chat history</span><br></span><span>        self.history_area = Text(self.window, width=<span class="hljs-string">"50"</span>)<br></span><span>        self.history_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=LEFT, fill=<span class="hljs-string">"y"</span>)<br></span><span>        self.output_font = (<span class="hljs-string">'Courier New'</span>, <span class="hljs-number">12</span>)<br></span><span>        self.history_area.tag_configure(<span class="hljs-string">'error_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)<br></span><span>        self.history_area.tag_configure(<span class="hljs-string">'success_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)<br></span><span>        self.history_area.tag_configure(<span class="hljs-string">'normal_format'</span>, font=self.output_font)<br></span><span><br></span><span>        <span class="hljs-comment"># add a text area to show the list of tasks</span><br></span><span>        self.list_area = Text(self.window)<br></span><span>        self.list_area.pack(padx=<span class="hljs-number">5</span>, pady=<span class="hljs-number">5</span>, side=RIGHT, fill=<span class="hljs-string">"both"</span>)<br></span><span>        self.list_area.tag_configure(<span class="hljs-string">'normal_format'</span>,  font=self.output_font)<br></span><span>        self.list_area.tag_configure(<span class="hljs-string">'pending_format'</span>, foreground=<span class="hljs-string">'red'</span>, font=self.output_font)<br></span><span>        self.list_area.tag_configure(<span class="hljs-string">'done_format'</span>, foreground=<span class="hljs-string">'green'</span>, font=self.output_font)<br></span><span><br></span><span>        <span class="hljs-comment"># show the welcome message and the list of tasks</span><br></span><span>        self.update_chat_history(<span class="hljs-string">'start'</span>, <span class="hljs-string">'Welcome to Monty!'</span>, <span class="hljs-string">'success_format'</span>)<br></span><span>        self.update_task_list(self.task_manager.items)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_chat_history</span><span class="hljs-params">(self, command, response, status_format)</span>:</span><br></span><span>        <span class="hljs-string">"""</span><br></span><span><span class="hljs-string">        status_format: indicates which color to use for the status message</span><br></span><span><span class="hljs-string">          can be 'error_format', 'success_format', or 'normal_format'</span><br></span><span><span class="hljs-string">        """</span><br></span><span>        current_time = datetime.datetime.now().strftime(<span class="hljs-string">"%H:%M:%S"</span>)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'-'</span> * <span class="hljs-number">40</span> + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'&gt;&gt;&gt; '</span> + response + <span class="hljs-string">'\n'</span>, status_format)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, <span class="hljs-string">'You said: '</span> + command + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)<br></span><span>        self.history_area.insert(<span class="hljs-number">1.0</span>, current_time + <span class="hljs-string">'\n'</span>, <span class="hljs-string">'normal_format'</span>)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_task_list</span><span class="hljs-params">(self, tasks)</span>:</span><br></span><span>        self.list_area.delete(<span class="hljs-string">'1.0'</span>, END)  <span class="hljs-comment"># clear the list area</span><br></span><span>        <span class="hljs-keyword">for</span> i, task <span class="hljs-keyword">in</span> enumerate(tasks):<br></span><span>            <span class="hljs-keyword">if</span> task[<span class="hljs-number">1</span>]:<br></span><span>                icon = <span class="hljs-string">'✓'</span><br></span><span>                output_format = <span class="hljs-string">'done_format'</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                icon = <span class="hljs-string">'✗'</span><br></span><span>                output_format = <span class="hljs-string">'pending_format'</span><br></span><span>            self.list_area.insert(END, icon + <span class="hljs-string">' '</span> + str(i+<span class="hljs-number">1</span>) + <span class="hljs-string">' '</span> + task[<span class="hljs-number">0</span>] + <span class="hljs-string">'\n'</span>, output_format)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear_input_box</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.input_box.delete(<span class="hljs-number">0</span>, END)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">command_entered</span><span class="hljs-params">(self, event)</span>:</span><br></span><span>        command = <span class="hljs-literal">None</span><br></span><span>        <span class="hljs-keyword">try</span>:<br></span><span>            command = self.input_box.get()<br></span><span>            <span class="hljs-keyword">if</span> command.strip().lower() == <span class="hljs-string">'exit'</span>:<br></span><span>                sys.exit()<br></span><span>            output = self.task_manager.execute_command(command)<br></span><span>            self.update_chat_history(command, output, <span class="hljs-string">'success_format'</span>)<br></span><span>            self.update_task_list(self.task_manager.items)<br></span><span>            self.clear_input_box()<br></span><span>        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br></span><span>            self.update_chat_history(command, str(e) + <span class="hljs-string">'\n'</span> + self.task_manager.get_help(), <span class="hljs-string">'error_format'</span>)<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.window.mainloop()<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TaskManager</span>:</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.items = [<br></span><span>            [<span class="hljs-string">'task 1'</span>, <span class="hljs-literal">True</span>],<br></span><span>            [<span class="hljs-string">'task 2'</span>, <span class="hljs-literal">False</span>],<br></span><span>            [<span class="hljs-string">'task 3'</span>, <span class="hljs-literal">True</span>]<br></span><span>        ]<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_help</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'help:\n...'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(self, command)</span>:</span><br></span><span>        <span class="hljs-keyword">if</span> command == <span class="hljs-string">'help'</span>:<br></span><span>            <span class="hljs-keyword">return</span> self.get_help()<br></span><span>        <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):<br></span><span>            self.items.append([command[<span class="hljs-number">4</span>:], <span class="hljs-literal">False</span>])<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">'task added'</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">'Command not recognized'</span>)<br></span><span><br></span><span><br></span><span>GUI(TaskManager()).start()<br></span></code></pre>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                  <p></p>
+                  <ul>
+                    <li><strong>Option 2: Add the allocated individual feature.</strong> You will be given which feature to implement around week 10.
+                      <ul>
+                        <li>Note that <mark>a very minimal implementation of the feature is good enough</mark>.</li>
+                        <li>Steps to find the feature you should implement:
+                          <ul>
+                            <li>First take the last digit of your student number. For example, if your student number is <code>A0123456H</code>, the last digit is <code>6</code>.</li>
+                            <li>Then, find the matching row in the table below. That row gives you three options.</li>
+                            <li>You may implement any one of the three options. Click on the link to find details of the feature.</li>
+                            <li>The expected amount of work for this option is about 1/4 to 1/3 of the amount of code you have written so far in the project.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="indented-level4" id="feature-allocation">
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>digit</th>
+                            <th>option 1</th>
+                            <th>option 2</th>
+                            <th>option 3</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>0</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-update"><code>C-Update</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-detectduplicates"><code>C-DetectDuplicates</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-statistics"><code>C-Statistics</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-tagging"><code>C-Tagging</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-flexibledatasource"><code>C-FlexibleDataSource</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-friendliersyntax"><code>C-FriendlierSyntax</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-priority"><code>C-Priority</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-datetimes"><code>C-DateTimes</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#b-dowithinperiodtasks"><code>B-DoWithinPeriodTasks</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-archive"><code>C-Archive</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-sort"><code>C-Sort</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#b-events"><code>B-Events</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-massops"><code>C-MassOps</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-search"><code>C-Search</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#b-fixeddurationtasks"><code>B-FixedDurationTasks</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-statistics"><code>C-Statistics</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-update"><code>C-Update</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-detectduplicates"><code>C-DetectDuplicates</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-friendliersyntax"><code>C-FriendlierSyntax</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-tagging"><code>C-Tagging</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-flexibledatasource"><code>C-FlexibleDataSource</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td><a href="/2020/programming/chapters/monty.html#b-dowithinperiodtasks"><code>B-DoWithinPeriodTasks</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-priority"><code>C-Priority</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-datetimes"><code>C-DateTimes</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td><a href="/2020/programming/chapters/monty.html#b-events"><code>B-Events</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-archive"><code>C-Archive</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-sort"><code>C-Sort</code></a></td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td><a href="/2020/programming/chapters/monty.html#b-fixeddurationtasks"><code>B-FixedDurationTasks</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-massops"><code>C-MassOps</code></a></td>
+                            <td><a href="/2020/programming/chapters/monty.html#c-search"><code>C-Search</code></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4 id="week-12"><span class="badge badge-dark">Week 12:</span><a class="fa fa-anchor" href="#week-12" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <h4 id="1-enhance-previous-week-s-feature"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Enhance previous week's feature<a class="fa fa-anchor" href="#1-enhance-previous-week-s-feature" onclick="event.stopPropagation()"></a></h4>
+                  <ul>
+                    <li>If you chose option 1 in the previous week, you can either continue to enhance the GUI or add an individual feature this week (from the three choices from option 2).</li>
+                    <li>If you chose option 2 in the previous week, you can either continue to enhance that individual feature or add another individual feature from the three choices given to you.</li>
+                  </ul>
+                  <h4 id="2-start-preparing-for-the-final-submission"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Start preparing for the final submission<a class="fa fa-anchor" href="#2-start-preparing-for-the-final-submission" onclick="event.stopPropagation()"></a></h4>
+                  <ul>
+                    <li><mark>Note that you can get prof's feedback for your project report before the final submission</mark>. See the panel below for more details.</li>
+                  </ul>
+                  <div class="indented-level2">
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Final Submission <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
+                      <div>
+                        <h3 id="week-13-final-submission">Week 13: Final Submission<a class="fa fa-anchor" href="#week-13-final-submission" onclick="event.stopPropagation()"></a></h3>
+                        <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., <code>-1</code> per day).</p>
+                        <ul>
+                          <li><strong>The deadline for seeking feedback on the project report draft</strong>: week 13 lecture.
+                            <ul>
+                              <li>Preferred mode of feedback: <s>in-person (reason: it is hard to give written feedback on diagrams)</s> via email</li>
+                              <li>Such feedback will be limited to high-level comments only (reason: the report is graded).</li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <p><strong>Deliverables</strong>:</p>
+                        <ol>
+                          <li><strong>Source code</strong> of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
+                            File name: <code>{YourName}.zip</code> e.g., <code>JunHao.zip</code></li>
+                          <li><strong>Documentation</strong>: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br>
+                            Submission: Upload to LumiNUS. The file name should be your name e.g., <code>JunHao.docx</code></li>
+                          <li><strong>Demo video</strong>:
+                            <ul>
+                              <li>Record a demo video showcasing the features of your product.</li>
+                              <li>Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).</li>
+                              <li>Recommended length 7 minutes, max length 10 minutes).</li>
+                              <li>Audio narration is optional if the demo can be understood without the audio.</li>
+                              <li>Ensure the video is in a format that can be played by any computer.</li>
+                              <li>Submission: Name the file with your name (to match the zip and the report file) and upload to LumiNUS.</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </panel>
+                  </div>
+                  <p></p>
+                </div>
+                <hr>
+                <h4 id="week-13"><span class="badge badge-dark">Week 13:</span><a class="fa fa-anchor" href="#week-13" onclick="event.stopPropagation()"></a></h4>
+                <div>
+                  <h4 id="1-submit-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit the project<a class="fa fa-anchor" href="#1-submit-the-project" onclick="event.stopPropagation()"></a></h4>
+                  <div class="indented-level2">
+                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Final Submission <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                      </template>
+                      <div>
+                        <h3 id="week-13-final-submission-2">Week 13: Final Submission<a class="fa fa-anchor" href="#week-13-final-submission-2" onclick="event.stopPropagation()"></a></h3>
+                        <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., <code>-1</code> per day).</p>
+                        <ul>
+                          <li><strong>The deadline for seeking feedback on the project report draft</strong>: week 13 lecture.
+                            <ul>
+                              <li>Preferred mode of feedback: <s>in-person (reason: it is hard to give written feedback on diagrams)</s> via email</li>
+                              <li>Such feedback will be limited to high-level comments only (reason: the report is graded).</li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <p><strong>Deliverables</strong>:</p>
+                        <ol>
+                          <li><strong>Source code</strong> of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
+                            File name: <code>{YourName}.zip</code> e.g., <code>JunHao.zip</code></li>
+                          <li><strong>Documentation</strong>: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br>
+                            Submission: Upload to LumiNUS. The file name should be your name e.g., <code>JunHao.docx</code></li>
+                          <li><strong>Demo video</strong>:
+                            <ul>
+                              <li>Record a demo video showcasing the features of your product.</li>
+                              <li>Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).</li>
+                              <li>Recommended length 7 minutes, max length 10 minutes).</li>
+                              <li>Audio narration is optional if the demo can be understood without the audio.</li>
+                              <li>Ensure the video is in a format that can be played by any computer.</li>
+                              <li>Submission: Name the file with your name (to match the zip and the report file) and upload to LumiNUS.</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </panel>
+                  </div>
+                  <p></p>
+                </div>
+                <hr>
+              </panel>
+              <p></p>
+              <div id="final-submission-info">
+                <h3 id="week-13-final-submission-3">Week 13: Final Submission<a class="fa fa-anchor" href="#week-13-final-submission-3" onclick="event.stopPropagation()"></a></h3>
+                <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., <code>-1</code> per day).</p>
+                <ul>
+                  <li><strong>The deadline for seeking feedback on the project report draft</strong>: week 13 lecture.
+                    <ul>
+                      <li>Preferred mode of feedback: <s>in-person (reason: it is hard to give written feedback on diagrams)</s> via email</li>
+                      <li>Such feedback will be limited to high-level comments only (reason: the report is graded).</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p><strong>Deliverables</strong>:</p>
+                <ol>
+                  <li><strong>Source code</strong> of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
+                    File name: <code>{YourName}.zip</code> e.g., <code>JunHao.zip</code></li>
+                  <li><strong>Documentation</strong>: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br>
+                    Submission: Upload to LumiNUS. The file name should be your name e.g., <code>JunHao.docx</code></li>
+                  <li><strong>Demo video</strong>:
+                    <ul>
+                      <li>Record a demo video showcasing the features of your product.</li>
+                      <li>Use the exact version of the code you submitted (i.e., the demo should match the submitted code exactly).</li>
+                      <li>Recommended length 7 minutes, max length 10 minutes).</li>
+                      <li>Audio narration is optional if the demo can be understood without the audio.</li>
+                      <li>Ensure the video is in a format that can be played by any computer.</li>
+                      <li>Submission: Name the file with your name (to match the zip and the report file) and upload to LumiNUS.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="policies">Policies<a class="fa fa-anchor" href="#policies" onclick="event.stopPropagation()"></a></h1>
+              <span id="deadlines-info">
+                <h3 id="deadlines">Deadlines<a class="fa fa-anchor" href="#deadlines" onclick="event.stopPropagation()"></a></h3>
+                <ul>
+                  <li>Deadline for weekly tasks:
+                    <ul>
+                      <li><strong>If a specific deadline is given</strong>, adhere to that.</li>
+                      <li><strong>If no specific deadline is given</strong>,
+                        <ul>
+                          <li>Soft deadline: try to complete tasks allocated to a week by Tuesday 6.00pm of the following week (i.e., before the next lecture).</li>
+                          <li>Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </span>
-              <br>
+
+
+
+
+
+              <span id="plagiarism-info">
+                <h3 id="plagiarism">Plagiarism<a class="fa fa-anchor" href="#plagiarism" onclick="event.stopPropagation()"></a></h3>
+                <ul>
+                  <li>You may view/discuss others' work or get help from others. However, <span class="text-danger"> <mark>the work you submit should be your own</mark>. In case of similar submissions, marks will be divided among those submissions</span> e.g., if your submission scored 8/10 and there is another submission that is similar to your work (beyond co-incidental similarity), each submission will get 4 marks.
+                  </li>
+                </ul>
+              </span>
+
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="tools">Tools<a class="fa fa-anchor" href="#tools" onclick="event.stopPropagation()"></a></h1>
+              <div class="indented">
+                <div id="repl-info">
+                  <h3 id="repl-it"><code>repl.it</code><a class="fa fa-anchor" href="#repl-it" onclick="event.stopPropagation()"></a></h3>
+                  <ul>
+                    <li>We'll be using <code>Repl.it</code> for coding exercises (compulsory).</li>
+                    <li>
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Create an account on <a href="https://repl.it">https://repl.it</a>.
+                    </li>
+                    <li><mark>Make sure you set your display name in your <code>repl.it</code> user profile to match your real name</mark> (so that the prof can trace your <code>repl.it</code> submissions to you).</li>
+                    <li>Join the <code>repl.it</code> classroom <code>tic2002-2020</code> using this link <a href="https://repl.it/classroom/invite/jcXc9CX">https://repl.it/classroom/invite/jcXc9CX</a>.</li>
+                  </ul>
+                </div>
+                <div id="intellij-info">
+                  <h3 id="pycharm">PyCharm<a class="fa fa-anchor" href="#pycharm" onclick="event.stopPropagation()"></a></h3>
+                  <ul>
+                    <li>
+                      <p>PyCharm is the recommended Python editor. While using PyCharm is optional, there will be no help/instructions given for other editors.</p>
+                    </li>
+                    <li>
+                      <p>In the initial weeks, <code>repl.it</code> online editor is good enough for writing Python code. As your project code gets bigger in later weeks, you can consider installing <a href="https://www.jetbrains.com/pycharm/download">PyCharm</a> on your computer. You may use the Community Edition (free) or the Professional Edition (free for students).</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="getting-help">Getting Help<a class="fa fa-anchor" href="#getting-help" onclick="event.stopPropagation()"></a></h1>
+              <span id="help-info">
+                <p>If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks</p>
+                <ul>
+                  <li>you can post in the <a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum">module forum</a></li>
+                  <li>email prof at <span><code>damith</code>[at]<code>comp.nus.edu.sg</code></span></li>
+                  <li>ask for prof's help during the following week’s tutorial hour</li>
+                </ul>
+              </span>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <span id="assessment-info">
+                <h1 id="assessment">Assessment<a class="fa fa-anchor" href="#assessment" onclick="event.stopPropagation()"></a></h1>
+                <ul>
+                  <li><strong>10%: Participation</strong> -- To get full marks, submit weekly programming exercises and weekly project increments <span trigger="click" for="modal:adminInfo-deadlineInfo" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:adminInfo-deadlineInfo'].show()" class="trigger-click">on time</span>.</li>
+                  <li><strong>30%: Project</strong>
+                    <ul>
+                      <li>10%: Documentation</li>
+                      <li>20%: Functionality, code</li>
+                    </ul>
+                  </li>
+                  <li><strong>60%: Final Exam</strong></li>
+                </ul>
+                <b-modal id="modal:adminInfo-deadlineInfo" hide-footer size="lg" modal-class="mb-zoom" ref="modal:adminInfo-deadlineInfo"><template slot="modal-title">The Policy on Deadlines</template>
+                  <div>
+                    <h3 id="deadlines-2">Deadlines<a class="fa fa-anchor" href="#deadlines-2" onclick="event.stopPropagation()"></a></h3>
+                    <ul>
+                      <li>Deadline for weekly tasks:
+                        <ul>
+                          <li><strong>If a specific deadline is given</strong>, adhere to that.</li>
+                          <li><strong>If no specific deadline is given</strong>,
+                            <ul>
+                              <li>Soft deadline: try to complete tasks allocated to a week by Tuesday 6.00pm of the following week (i.e., before the next lecture).</li>
+                              <li>Hard deadline: In case you fail to meet the soft deadline, there will be no penalty if a task is done within one week after the soft deadline.</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </b-modal>
+              </span>
+              <hr style="border-width: 1px; border-color: #f3ccff; border-style: dotted">
+              <h1 id="exam">Exam<a class="fa fa-anchor" href="#exam" onclick="event.stopPropagation()"></a></h1>
+              <ul>
+                <li>The final exam will be on <strong>Wed 29th April, 1-3pm</strong>.</li>
+              </ul>
+              <h2 id="requirements-due-to-online-invigilation">Requirements due to Online Invigilation<a class="fa fa-anchor" href="#requirements-due-to-online-invigilation" onclick="event.stopPropagation()"></a></h2>
+              <ul>
+                <li>The exam will be done online, using LumiNUS and Zoom (and Microsoft Team).</li>
+              </ul>
+              <h4 id="long-before-the-exam">Long before the exam<a class="fa fa-anchor" href="#long-before-the-exam" onclick="event.stopPropagation()"></a></h4>
+              <ul>
+                <li><strong>Set up Zoom</strong>: Follow the <a href="https://wiki.nus.edu.sg/display/THES/Proctoring+with+Zoom">Zoom exam instructions provided by NUS</a>.
+                  <ul>
+                    <li>As per NUS requirements, your Zoom video feed is recorded by us and will be shared with NUS administration. If you do not consent to that, please let us know by Tuesday 21st April so that we can put you in touch with the NUS administration to sort it out.</li>
+                  </ul>
+                </li>
+                <li><strong>Set up MS-Team</strong>: Follow the <a href="https://wiki.nus.edu.sg/display/THES/Before+exams+-+Install+and+log+in+to+Microsoft+Teams"><em>Microsoft Team</em> instructions provided by NUS</a>. We'll be using MS-Team as a backup in case of Zoom fails.</li>
+                <li><strong>Note the requirements for video camera placement</strong>: Your Zoom video feed need to capture your upper body and the work area, including the computer screen (as explained in <a href="https://www.youtube.com/watch?v=BoeXRLfpYv4">this example</a>). That means <strong>the built-in camera of your computer is not suitable</strong> for this purpose. Use either a separate web cam (attached to your Computer) or use Zoom through your smart phone. If neither of those options are available to you, let the prof know by Tuesday 21st April.</li>
+              </ul>
+              <h4 id="a-few-minutes-before-the-exam">A few minutes before the exam<a class="fa fa-anchor" href="#a-few-minutes-before-the-exam" onclick="event.stopPropagation()"></a></h4>
+              <ul>
+                <li>Launch MS-Team, login to it, and close the app without exiting (which makes it run in the background).</li>
+                <li>Launch Zoom, login, and join the meeting. Wait for the invigilator to take you into the meeting.
+                  <ul>
+                    <li>Ensure the name of your Zoom profile should <strong>match the exact name on your student card</strong>.<br></li>
+                  </ul>
+                </li>
+                <li>Ensure your computer and the phone (if applicable) are charged and within reach of a power supply.</li>
+                <li>Login to LumiNUS.</li>
+                <li>Close all other apps other than the ones permitted to be use for the exam. Remember to exit other background apps that starts automatically such as telegram.</li>
+              </ul>
+              <h4 id="during-the-exam">During the exam<a class="fa fa-anchor" href="#during-the-exam" onclick="event.stopPropagation()"></a></h4>
+              <ul>
+                <li>Keep both the video and audio on your Zoom during the entire exam.</li>
+                <li>Do not use MS-Team during the exam unless the invigilator uses to contact you, you need to contact the invigilator, or you need to contact CIT for tech help.</li>
+                <li>You are expected to be in the video feed for the entire exam duration, except when you go to the restroom.
+                  You are <strong>not allowed to use virtual backgrounds</strong> in Zoom. You are not allowed to use pre-recorded videos as your video feed.</li>
+                <li>As the exam is open-book, you can refer to any printed/written materials or use the computer to read any PDF/word documents that are in your computer..<br>
+                  You should not visit any other websites, use any other apps, or online search engines during the exam.</li>
+                <li>After you have submitted the quiz, you should remain in position until the invigilator ends the exam. You are not allowed to use the computer or other communication devices during that period (suggestion: have something ready to read during this time e.g., lecture notes of another module).</li>
+              </ul>
+              <h4 id="troubleshooting-exam-problems">Troubleshooting Exam Problems<a class="fa fa-anchor" href="#troubleshooting-exam-problems" onclick="event.stopPropagation()"></a></h4>
+              <ul>
+                <li><strong>If you have a doubt/query about a question</strong>, or want to make an assumption about a question, please write it down in the 'justification' text box. <mark>Do not try to communicate those with the invigilator during the exam.</mark> We'll take your doubt/query/assumption into account when grading. For example, if many had queries about a specific question, we can conclude that the question is unclear and omit it from grading.</li>
+                <li><strong>If you encounter a serious problem</strong> that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), contact the invigilator using Zoom chat or MS-Team.</li>
+                <li><strong>If your computer crashed/restarted</strong> during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier and the timer will not run during the time the computer was down. However, note that there is a deadline to finish the survey and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.</li>
+              </ul>
+              <h2 id="exam-contents-tentative">Exam Contents (tentative)<a class="fa fa-anchor" href="#exam-contents-tentative" onclick="event.stopPropagation()"></a></h2>
+              <ul>
+                <li>The exam will be in the form of LumiNUS Quizzes.<br>
+                  For the ease of administration, the exam is split into two equal size quizzes: part 1, part 2.<br></li>
+                <li>Each quiz,
+                  <ul>
+                    <li>consists of 15 MCQ questions</li>
+                    <li>is to be done in 30 minutes</li>
+                  </ul>
+                </li>
+                <li>All 30 questions have the same the weight (2 marks each) and each question is expected to take a similar amount of time (around 2 minutes).</li>
+                <li>The questions and the answer choices will be presented in random order.</li>
+                <li>You are not allowed to go back to previous questions.</li>
+                <li>You are required to give a justification for your answer. The question will specify what should be included in the justification.<br>
+                  <mark><strong>Answers without the correct justification will not earn full marks.</strong></mark> However, we'll give full marks up to two correct answers (per 15 questions) that do not have justifications (to cater for cases where you accidentally proceeded to the next question before adding the justification).</li>
+                <li>Here is an example question. The answer is <code>a</code> and the justification can be <code>OOP is only one of the choices for an SE project</code>.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel haader="A sample question" expanded>
+                  <p>Choose the incorrect statement.</p>
+                  <p><span class="text-info">[Justification: why is it incorrect?]</span></p>
+                  <ul radio-group="73554" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="73554" type="radio"> a. Software engineering projects always use OOP.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="73554" type="radio"> b. Some software engineering projects can be large and complex.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="73554" type="radio"> c. Some software engineering projects can go on for many years.</label></li>
+                  </ul>
+                </panel>
+                <p></p>
+              </div>
+              <ul>
+                <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Almost all questions will ask you to choose the INCORRECT statement and justify why it is incorrect.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -207,7 +1241,25 @@
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-12-apr-6-summary">Week 12 [Apr 6] - Summary&#x200E;</a>
+            <a class="nav-link py-1" href="#te3201-software-engineering">TE3201 Software Engineering&#x200E;</a>
+            <a class="nav-link py-1" href="#module-overview">Module overview&#x200E;</a>
+            <a class="nav-link py-1" href="#using-this-module-website">Using this module website&#x200E;</a>
+            <a class="nav-link py-1" href="#instructors">Instructors&#x200E;</a>
+            <a class="nav-link py-1" href="#lectures">Lectures&#x200E;</a>
+            <a class="nav-link py-1" href="#tutorials">Tutorials&#x200E;</a>
+            <a class="nav-link py-1" href="#textbook">Textbook&#x200E;</a>
+            <a class="nav-link py-1" href="#programming-language">Programming Language&#x200E;</a>
+            <a class="nav-link py-1" href="#programming-exercises">Programming Exercises&#x200E;</a>
+            <a class="nav-link py-1" href="#project">Project&#x200E;</a>
+            <a class="nav-link py-1" href="#policies">Policies&#x200E;</a>
+            <a class="nav-link py-1" href="#tools">Tools&#x200E;</a>
+            <a class="nav-link py-1" href="#getting-help">Getting Help&#x200E;</a>
+            <a class="nav-link py-1" href="#assessment">Assessment&#x200E;</a>
+            <a class="nav-link py-1" href="#exam">Exam&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#requirements-due-to-online-invigilation">Requirements due to Online Invigilation&#x200E;</a>
+              <a class="nav-link py-1" href="#exam-contents-tentative">Exam Contents (tentative)&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
@@ -215,7 +1267,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Sun, 19 Apr 2020, 19:56:28 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Mon, 20 Apr 2020, 20:34:49 GMT+8</small></div>
     </footer>
   </div>
 </body>
