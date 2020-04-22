@@ -136,3 +136,29 @@
 2020-04-20T12:33:58.989Z - info: Site data built
 2020-04-20T12:34:39.774Z - info: Website generation started at 8:34:36 PM
 2020-04-20T12:34:45.554Z - info: Building assets...
+2020-04-20T12:34:49.854Z - info: Assets built
+2020-04-20T12:34:49.855Z - info: Generating pages...
+2020-04-20T12:36:29.549Z - debug:  
+2020-04-20T12:36:29.555Z - debug:  
+2020-04-20T12:36:29.555Z - debug:  
+2020-04-20T12:36:29.555Z - debug:  
+2020-04-20T12:36:29.635Z - debug:  
+2020-04-20T12:36:29.636Z - debug:  
+2020-04-20T12:36:29.637Z - debug:  
+2020-04-20T12:36:29.638Z - debug:  
+2020-04-20T12:36:29.639Z - debug:  
+2020-04-20T12:36:29.823Z - debug:  
+2020-04-20T12:36:29.824Z - debug:  
+2020-04-20T12:36:30.065Z - debug:  
+2020-04-20T12:36:33.579Z - debug:  
+2020-04-20T12:36:35.231Z - debug:  
+2020-04-20T12:36:35.231Z - debug:  
+2020-04-20T12:36:35.231Z - debug:  
+2020-04-20T12:36:35.232Z - debug:  
+2020-04-20T12:36:38.442Z - debug:  
+2020-04-20T12:36:38.442Z - debug:  
+2020-04-20T12:36:38.498Z - info: Pages built
+2020-04-20T12:37:00.084Z - info: Website generation complete! Total build time: 143.609s
+2020-04-20T12:37:00.085Z - info: Build success!
+2020-04-20T12:37:00.088Z - info: Site data built
+2020-04-20T12:37:55.132Z - info: Deployed!

@@ -1,0 +1,168 @@
+2020-04-22T16:40:22.728Z - info: Website generation (lazy) started at 12:40:14 AM
+2020-04-22T16:40:29.624Z - info: Building assets...
+2020-04-22T16:40:33.961Z - info: Assets built
+2020-04-22T16:40:33.962Z - info: Generating landing page...
+2020-04-22T16:40:35.802Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-04-22T16:40:35.906Z - info: Website generation (lazy) complete! Total build time: 20.964s
+2020-04-22T16:40:36.705Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-04-22T16:40:36.706Z - info: Press CTRL+C to stop ...
+2020-04-22T16:40:36.773Z - info: Site data built
+2020-04-22T16:47:29.023Z - info: [12:47:29 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:47:30.025Z - info: Rebuilding affected source files
+2020-04-22T16:47:30.027Z - info: Rebuilding 1 pages
+2020-04-22T16:47:31.988Z - info: Pages rebuilt
+2020-04-22T16:47:31.989Z - info: Website regeneration complete! Total build time: 1.964s
+2020-04-22T16:47:32.010Z - info: Site data built
+2020-04-22T16:48:41.574Z - info: [12:48:41 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:48:42.584Z - info: Rebuilding affected source files
+2020-04-22T16:48:42.592Z - info: Rebuilding 1 pages
+2020-04-22T16:48:44.848Z - info: Pages rebuilt
+2020-04-22T16:48:44.849Z - info: Website regeneration complete! Total build time: 2.264s
+2020-04-22T16:48:44.865Z - info: Site data built
+2020-04-22T16:49:43.051Z - info: [12:49:43 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:49:44.057Z - info: Rebuilding affected source files
+2020-04-22T16:49:44.059Z - info: Rebuilding 1 pages
+2020-04-22T16:49:45.825Z - info: Pages rebuilt
+2020-04-22T16:49:45.825Z - info: Website regeneration complete! Total build time: 1.768s
+2020-04-22T16:49:45.844Z - info: Site data built
+2020-04-22T16:50:09.497Z - info: [12:50:09 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:50:10.501Z - info: Rebuilding affected source files
+2020-04-22T16:50:10.504Z - info: Rebuilding 1 pages
+2020-04-22T16:50:12.168Z - info: Pages rebuilt
+2020-04-22T16:50:12.168Z - info: Website regeneration complete! Total build time: 1.666s
+2020-04-22T16:50:12.180Z - info: Site data built
+2020-04-22T16:52:04.981Z - info: [12:52:04 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:52:05.985Z - info: Rebuilding affected source files
+2020-04-22T16:52:05.987Z - info: Rebuilding 1 pages
+2020-04-22T16:52:07.657Z - info: Pages rebuilt
+2020-04-22T16:52:07.657Z - info: Website regeneration complete! Total build time: 1.672s
+2020-04-22T16:52:07.670Z - info: Site data built
+2020-04-22T16:52:58.283Z - info: [12:52:58 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:52:59.302Z - info: Rebuilding affected source files
+2020-04-22T16:52:59.304Z - info: Rebuilding 1 pages
+2020-04-22T16:53:01.280Z - info: Pages rebuilt
+2020-04-22T16:53:01.281Z - info: Website regeneration complete! Total build time: 1.979s
+2020-04-22T16:53:01.296Z - info: Site data built
+2020-04-22T16:53:39.255Z - info: [12:53:39 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:53:40.257Z - info: Rebuilding affected source files
+2020-04-22T16:53:40.258Z - info: Rebuilding 1 pages
+2020-04-22T16:53:41.581Z - info: Pages rebuilt
+2020-04-22T16:53:41.582Z - info: Website regeneration complete! Total build time: 1.325s
+2020-04-22T16:53:41.599Z - info: Site data built
+2020-04-22T16:54:05.241Z - info: [12:54:05 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:54:06.246Z - info: Rebuilding affected source files
+2020-04-22T16:54:06.247Z - info: Rebuilding 1 pages
+2020-04-22T16:54:07.487Z - info: Pages rebuilt
+2020-04-22T16:54:07.487Z - info: Website regeneration complete! Total build time: 1.241s
+2020-04-22T16:54:07.498Z - info: Site data built
+2020-04-22T16:56:11.322Z - info: [12:56:11 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:56:12.327Z - info: Rebuilding affected source files
+2020-04-22T16:56:12.328Z - info: Rebuilding 1 pages
+2020-04-22T16:56:13.571Z - info: Pages rebuilt
+2020-04-22T16:56:13.571Z - info: Website regeneration complete! Total build time: 1.244s
+2020-04-22T16:56:13.581Z - info: Site data built
+2020-04-22T16:58:21.542Z - info: [12:58:21 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T16:58:22.568Z - info: Rebuilding affected source files
+2020-04-22T16:58:22.570Z - info: Rebuilding 1 pages
+2020-04-22T16:58:23.820Z - info: Pages rebuilt
+2020-04-22T16:58:23.821Z - info: Website regeneration complete! Total build time: 1.253s
+2020-04-22T16:58:23.834Z - info: Site data built
+2020-04-22T17:04:21.379Z - info: [1:04:21 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:04:22.385Z - info: Rebuilding affected source files
+2020-04-22T17:04:22.387Z - info: Rebuilding 1 pages
+2020-04-22T17:04:23.693Z - info: Pages rebuilt
+2020-04-22T17:04:23.693Z - info: Website regeneration complete! Total build time: 1.308s
+2020-04-22T17:04:23.709Z - info: Site data built
+2020-04-22T17:06:13.874Z - info: [1:06:13 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:06:14.879Z - info: Rebuilding affected source files
+2020-04-22T17:06:14.881Z - info: Rebuilding 1 pages
+2020-04-22T17:06:16.077Z - info: Pages rebuilt
+2020-04-22T17:06:16.077Z - info: Website regeneration complete! Total build time: 1.197s
+2020-04-22T17:06:16.095Z - info: Site data built
+2020-04-22T17:18:44.474Z - info: [1:18:44 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:18:45.489Z - info: Rebuilding affected source files
+2020-04-22T17:18:45.492Z - info: Rebuilding 1 pages
+2020-04-22T17:18:46.890Z - info: Pages rebuilt
+2020-04-22T17:18:46.891Z - info: Website regeneration complete! Total build time: 1.4s
+2020-04-22T17:18:46.900Z - info: Site data built
+2020-04-22T17:19:00.896Z - info: [1:19:00 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:19:01.908Z - info: Rebuilding affected source files
+2020-04-22T17:19:01.911Z - info: Rebuilding 1 pages
+2020-04-22T17:19:03.143Z - info: Pages rebuilt
+2020-04-22T17:19:03.143Z - info: Website regeneration complete! Total build time: 1.235s
+2020-04-22T17:19:03.193Z - info: Site data built
+2020-04-22T17:22:22.256Z - info: [1:22:22 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:22:23.268Z - info: Rebuilding affected source files
+2020-04-22T17:22:23.277Z - info: Rebuilding 1 pages
+2020-04-22T17:22:24.954Z - info: Pages rebuilt
+2020-04-22T17:22:24.954Z - info: Website regeneration complete! Total build time: 1.685s
+2020-04-22T17:22:24.963Z - info: Site data built
+2020-04-22T17:23:00.772Z - info: [1:23:00 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:23:01.773Z - info: Rebuilding affected source files
+2020-04-22T17:23:01.776Z - info: Rebuilding 1 pages
+2020-04-22T17:23:03.237Z - info: Pages rebuilt
+2020-04-22T17:23:03.238Z - info: Website regeneration complete! Total build time: 1.464s
+2020-04-22T17:23:03.246Z - info: Site data built
+2020-04-22T17:23:19.390Z - info: [1:23:19 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:23:20.399Z - info: Rebuilding affected source files
+2020-04-22T17:23:20.402Z - info: Rebuilding 1 pages
+2020-04-22T17:23:21.685Z - info: Pages rebuilt
+2020-04-22T17:23:21.685Z - info: Website regeneration complete! Total build time: 1.285s
+2020-04-22T17:23:21.728Z - info: Site data built
+2020-04-22T17:23:28.045Z - info: [1:23:28 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:23:29.056Z - info: Rebuilding affected source files
+2020-04-22T17:23:29.058Z - info: Rebuilding 1 pages
+2020-04-22T17:23:30.610Z - info: Pages rebuilt
+2020-04-22T17:23:30.611Z - info: Website regeneration complete! Total build time: 1.555s
+2020-04-22T17:23:30.626Z - info: Site data built
+2020-04-22T17:24:11.634Z - info: [1:24:11 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:24:12.644Z - info: Rebuilding affected source files
+2020-04-22T17:24:12.647Z - info: Rebuilding 1 pages
+2020-04-22T17:24:14.084Z - info: Pages rebuilt
+2020-04-22T17:24:14.085Z - info: Website regeneration complete! Total build time: 1.44s
+2020-04-22T17:24:14.095Z - info: Site data built
+2020-04-22T17:25:44.502Z - info: [1:25:44 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:25:45.541Z - info: Rebuilding affected source files
+2020-04-22T17:25:45.552Z - info: Rebuilding 1 pages
+2020-04-22T17:25:46.802Z - info: Pages rebuilt
+2020-04-22T17:25:46.802Z - info: Website regeneration complete! Total build time: 1.26s
+2020-04-22T17:25:46.817Z - info: Site data built
+2020-04-22T17:28:34.503Z - info: [1:28:34 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:28:35.538Z - info: Rebuilding affected source files
+2020-04-22T17:28:35.546Z - info: Rebuilding 1 pages
+2020-04-22T17:28:36.859Z - info: Pages rebuilt
+2020-04-22T17:28:36.860Z - info: Website regeneration complete! Total build time: 1.322s
+2020-04-22T17:28:36.930Z - info: Site data built
+2020-04-22T17:29:49.816Z - info: [1:29:49 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:29:50.823Z - info: Rebuilding affected source files
+2020-04-22T17:29:50.837Z - info: Rebuilding 1 pages
+2020-04-22T17:29:52.145Z - info: Pages rebuilt
+2020-04-22T17:29:52.145Z - info: Website regeneration complete! Total build time: 1.322s
+2020-04-22T17:29:52.152Z - info: Site data built
+2020-04-22T17:31:23.364Z - info: [1:31:23 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:31:23.429Z - info: [1:31:23 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:31:24.424Z - info: Rebuilding affected source files
+2020-04-22T17:31:24.429Z - info: Rebuilding 1 pages
+2020-04-22T17:31:25.769Z - info: Pages rebuilt
+2020-04-22T17:31:25.769Z - info: Website regeneration complete! Total build time: 1.345s
+2020-04-22T17:31:25.781Z - info: Site data built
+2020-04-22T17:37:11.075Z - info: [1:37:11 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:37:12.075Z - info: Rebuilding affected source files
+2020-04-22T17:37:12.077Z - info: Rebuilding 1 pages
+2020-04-22T17:37:13.674Z - info: Pages rebuilt
+2020-04-22T17:37:13.675Z - info: Website regeneration complete! Total build time: 1.599s
+2020-04-22T17:37:13.706Z - info: Site data built
+2020-04-22T17:37:28.992Z - info: [1:37:28 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:37:30.016Z - info: Rebuilding affected source files
+2020-04-22T17:37:30.023Z - info: Rebuilding 1 pages
+2020-04-22T17:37:31.471Z - info: Pages rebuilt
+2020-04-22T17:37:31.471Z - info: Website regeneration complete! Total build time: 1.455s
+2020-04-22T17:37:31.509Z - info: Site data built
+2020-04-22T17:42:03.497Z - info: [1:42:03 AM] Reload for file change: C:\repos\nus-te3201\te3201-2020-website\admin\te3201-admin.md
+2020-04-22T17:42:04.504Z - info: Rebuilding affected source files
+2020-04-22T17:42:04.508Z - info: Rebuilding 1 pages
+2020-04-22T17:42:08.491Z - info: Pages rebuilt
+2020-04-22T17:42:08.491Z - info: Website regeneration complete! Total build time: 3.986s
+2020-04-22T17:42:08.508Z - info: Site data built
+2020-04-22T17:43:52.738Z - info: Website generation started at 1:43:49 AM
+2020-04-22T17:44:01.716Z - info: Building assets...
