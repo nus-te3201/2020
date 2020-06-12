@@ -28,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -58,13 +59,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -72,27 +73,63 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/programming/chapters/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/programs.html" class="site-nav__a">Python Programs</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/functions.html" class="site-nav__a">Functions</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/lists.html" class="site-nav__a">Lists</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/errors.html" class="site-nav__a">Error Handling</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/strings.html" class="site-nav__a">Strings</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/files.html" class="site-nav__a">Files</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/gui.html" class="site-nav__a">GUIs</a></li>
-            <li class="mt-2">
-              <hr>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/expressions-types-variables.html">Expressions, Data Types, Variables</a></div>
             </li>
-            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/unittesting.html" class="site-nav__a current"><strong>D.</strong> Unit Testing</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/programs.html">Python Programs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/flowcontrol.html">Program Flow Control</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/functions.html">Functions</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/lists.html">Lists</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/errors.html">Error Handling</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/strings.html">Strings</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/files.html">Files</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/dictionaries.html">Dictionaries</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/oop.html">Object-Oriented Programming</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/gui.html">GUIs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">
+                <hr>
+              </div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><span class="dimmed"><strong>Appendices</strong></span></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/thirdparty.html"><strong>A.</strong> Installing 3rd Party Modules</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/ide.html"><strong>B.</strong> Using an IDE</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/organizing.html"><strong>C.</strong> Organizing Python Code</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/unittesting.html" class="current"><strong>D.</strong> Unit Testing</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/monty.html"><strong>E.</strong> The Monty Project</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -103,40 +140,40 @@
           <div id="main">
             <div>
               <h2 id="appendix-d-unit-testing">Appendix D: Unit Testing<a class="fa fa-anchor" href="#appendix-d-unit-testing" onclick="event.stopPropagation()"></a></h2>
-              <p>The built-in module <code>unittest</code> supports automation of unit testing in an object-oriented way.</p>
-              <p>Let's assume you have a file called <code>search.py</code> which has the following two functions.</p>
+              <p>The built-in module <code v-pre="">unittest</code> supports automation of unit testing in an object-oriented way.</p>
+              <p>Let's assume you have a file called <code v-pre="">search.py</code> which has the following two functions.</p>
               <div class="code-block">
                 <div class="code-block-heading inline-markdown-heading"><span>in <a href="http://search.py">search.py</a></span></div>
                 <div class="code-block-content">
-                  <pre><code heading="in search.py" class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span><br></span><span>  <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span><br></span><span>  <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_same_person</span><span class="hljs-params">(person, keyword)</span>:</span><br></span><span>  <span class="hljs-string">"""Return True if the parameter 'person' (type: dictionary)</span><br></span><span><span class="hljs-string">  contains a key 'name' whose value contains the </span><br></span><span><span class="hljs-string">  parameter 'keyword' (type: string)</span><br></span><span><span class="hljs-string">  e.g., </span><br></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jack') returns True</span><br></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jackie-chan') returns False</span><br></span><span><span class="hljs-string">  """</span><br></span><span>  <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]<br></span></code></pre>
+                  <pre><code heading="in search.py" class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_first_name</span><span class="hljs-params">(name)</span>:</span><br></span><span>  <span class="hljs-string">"""Return the first part of the parameter 'name'"""</span><br></span><span>  <span class="hljs-keyword">return</span> name.split()[<span class="hljs-number">0</span>]<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_same_person</span><span class="hljs-params">(person, keyword)</span>:</span><br></span><span>  <span class="hljs-string">"""Return True if the parameter 'person' (type: dictionary)</span><br></span><span><span class="hljs-string">  contains a key 'name' whose value contains the </span><br></span><span><span class="hljs-string">  parameter 'keyword' (type: string)</span><br></span><span><span class="hljs-string">  e.g., </span><br></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jack') returns True</span><br></span><span><span class="hljs-string">  * is_same_person({'name': 'jackie'}, 'jackie-chan') returns False</span><br></span><span><span class="hljs-string">  """</span><br></span><span>  <span class="hljs-keyword">return</span> keyword <span class="hljs-keyword">in</span> person[<span class="hljs-string">'name'</span>]<br></span></code></pre>
                 </div>
               </div>
               <p>This is how we can write some unit tests for the two functions.</p>
               <div class="code-block">
                 <div class="code-block-heading"><span>in test_search.py</span></div>
                 <div class="code-block-content">
-                  <pre><code heading="in test_search.py" class="hljs python"><span><span class="hljs-keyword">import</span> search, unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span><br></span><span>    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))<br></span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))<br></span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))<br></span><span>    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))<br></span><span>    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):<br></span><span>      search.is_same_person({}, <span class="hljs-string">'jack'</span>)<br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span><br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)<br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)<br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)<br></span><span>    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):<br></span><span>      search.get_first_name(<span class="hljs-string">''</span>)<br></span><span><br></span><span><span class="hljs-comment"># activate the test runner</span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:<br></span><span>    unittest.main()<br></span></code></pre>
+                  <pre><code heading="in test_search.py" class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> search, unittest<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSearch</span><span class="hljs-params">(unittest.TestCase)</span>:</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_is_same_person</span><span class="hljs-params">(self)</span>:</span><br></span><span>    jack = {<span class="hljs-string">'name'</span>:<span class="hljs-string">'jack'</span>}<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'jack'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ack'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'ac'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'j'</span>))<br></span><span>    self.assertTrue(search.is_same_person(jack, <span class="hljs-string">'k'</span>))<br></span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'jackie'</span>))<br></span><span>    self.assertFalse(search.is_same_person(jack, <span class="hljs-string">'blackjack'</span>))<br></span><span>    self.assertFalse(search.is_same_person({<span class="hljs-string">'name'</span>: <span class="hljs-string">'x'</span>, <span class="hljs-string">'other'</span>: <span class="hljs-string">'jack'</span>}, <span class="hljs-string">'jack'</span>))<br></span><span>    <span class="hljs-keyword">with</span> self.assertRaises(KeyError):<br></span><span>      search.is_same_person({}, <span class="hljs-string">'jack'</span>)<br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_get_first_name</span><span class="hljs-params">(self)</span>:</span><br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy'</span>), <span class="hljs-string">'Amy'</span>)<br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Bernice'</span>), <span class="hljs-string">'Amy'</span>)<br></span><span>    self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)<br></span><span>    <span class="hljs-keyword">with</span> self.assertRaises(IndexError):<br></span><span>      search.get_first_name(<span class="hljs-string">''</span>)<br></span><span><br></span><span><span class="hljs-comment"># activate the test runner</span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:<br></span><span>    unittest.main()<br></span></code></pre>
                 </div>
               </div>
               <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
-              <pre><code class="no-line-numbers hljs"><span>...<br></span><span>----------------------------------------------------------------------<br></span><span>Ran 2 tests in 0.019s<br></span><span><br></span><span>OK<br></span></code></pre>
+              <pre><code class="no-line-numbers hljs" v-pre=""><span>...<br></span><span>----------------------------------------------------------------------<br></span><span>Ran 2 tests in 0.019s<br></span><span><br></span><span>OK<br></span></code></pre>
               <p>Things to note:</p>
               <ul>
-                <li>A class containing unit tests should inherit from <code>unittest.TestCase</code></li>
-                <li>Names of functions containing test code should start with <code>test</code> e.g., <code>test_is_same_person()</code></li>
+                <li>A class containing unit tests should inherit from <code v-pre="">unittest.TestCase</code></li>
+                <li>Names of functions containing test code should start with <code v-pre="">test</code> e.g., <code v-pre="">test_is_same_person()</code></li>
                 <li>These methods (inherited from the parent class) can be used to compare actual with the expected value:
                   <ul>
-                    <li><code>assertTrue(actual)</code> : test passes if <code>actual == True</code></li>
-                    <li><code>assertFalse(actual)</code> : test passes if <code>actual == False</code></li>
-                    <li><code>assertEquals(actual, expected)</code> : test passes if <code>actual == expected</code></li>
-                    <li><code>with self.assertRaises(Exception):</code> passes if the code block it contains raises the specified exception.</li>
+                    <li><code v-pre="">assertTrue(actual)</code> : test passes if <code v-pre="">actual == True</code></li>
+                    <li><code v-pre="">assertFalse(actual)</code> : test passes if <code v-pre="">actual == False</code></li>
+                    <li><code v-pre="">assertEquals(actual, expected)</code> : test passes if <code v-pre="">actual == expected</code></li>
+                    <li><code v-pre="">with self.assertRaises(Exception):</code> passes if the code block it contains raises the specified exception.</li>
                   </ul>
                 </li>
               </ul>
-              <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code>test_get_first_name</code> method,</p>
-              <pre><code class="no-line-numbers hljs python"><span>self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)<br></span></code></pre>
+              <p>If the expected value is not as same as the actual, the test runner will report the test failure. For example, if we were to insert this statement into <code v-pre="">test_get_first_name</code> method,</p>
+              <pre><code class="no-line-numbers hljs python" v-pre=""><span>self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy Foo'</span>), <span class="hljs-string">'Foo'</span>)<br></span></code></pre>
               <p>the output will be something like this:</p>
-              <pre><code class="no-line-numbers hljs"><span>F.<br></span><span>======================================================================<br></span><span>FAIL: test_get_first_name (__main__.TestSearch)<br></span><span>----------------------------------------------------------------------<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;main.py&quot;, line 19, in test_get_first_name<br></span><span>    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')<br></span><span>AssertionError: 'Amy' != 'Foo'<br></span><span>- Amy<br></span><span>+ Foo<br></span><span><br></span><span><br></span><span>----------------------------------------------------------------------<br></span><span>Ran 2 tests in 0.001s<br></span><span><br></span><span>FAILED (failures=1)<br></span></code></pre>
+              <pre><code class="no-line-numbers hljs" v-pre=""><span>F.<br></span><span>======================================================================<br></span><span>FAIL: test_get_first_name (__main__.TestSearch)<br></span><span>----------------------------------------------------------------------<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;main.py&quot;, line 19, in test_get_first_name<br></span><span>    self.assertEqual(search.get_first_name('Amy Foo'), 'Foo')<br></span><span>AssertionError: 'Amy' != 'Foo'<br></span><span>- Amy<br></span><span>+ Foo<br></span><span><br></span><span><br></span><span>----------------------------------------------------------------------<br></span><span>Ran 2 tests in 0.001s<br></span><span><br></span><span>FAILED (failures=1)<br></span></code></pre>
               <p>📎 Resources:</p>
               <ul>
                 <li>More on unit testing: <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></li>
@@ -160,7 +197,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

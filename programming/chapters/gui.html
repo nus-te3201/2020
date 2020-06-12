@@ -28,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -58,13 +59,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -72,27 +73,63 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/programming/chapters/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/programs.html" class="site-nav__a">Python Programs</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/functions.html" class="site-nav__a">Functions</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/lists.html" class="site-nav__a">Lists</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/errors.html" class="site-nav__a">Error Handling</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/strings.html" class="site-nav__a">Strings</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/files.html" class="site-nav__a">Files</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/gui.html" class="site-nav__a current">GUIs</a></li>
-            <li class="mt-2">
-              <hr>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/expressions-types-variables.html">Expressions, Data Types, Variables</a></div>
             </li>
-            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/programs.html">Python Programs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/flowcontrol.html">Program Flow Control</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/functions.html">Functions</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/lists.html">Lists</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/errors.html">Error Handling</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/strings.html">Strings</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/files.html">Files</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/dictionaries.html">Dictionaries</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/oop.html">Object-Oriented Programming</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/gui.html" class="current">GUIs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">
+                <hr>
+              </div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><span class="dimmed"><strong>Appendices</strong></span></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/thirdparty.html"><strong>A.</strong> Installing 3rd Party Modules</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/ide.html"><strong>B.</strong> Using an IDE</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/organizing.html"><strong>C.</strong> Organizing Python Code</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/unittesting.html"><strong>D.</strong> Unit Testing</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/monty.html"><strong>E.</strong> The Monty Project</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -125,7 +162,7 @@
                 <table>
                   <tr>
                     <td valign="top">
-                      <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *<br></span><span><br></span><span><span class="hljs-comment"># create a Window</span><br></span><span>window = Tk()<br></span><span><br></span><span><span class="hljs-comment"># set Window title</span><br></span><span>window.title(<span class="hljs-string">'Hello World!'</span>)<br></span><span><br></span><span><span class="hljs-comment"># start the Window</span><br></span><span>window.mainloop()<br></span></code></pre>
+                      <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *<br></span><span><br></span><span><span class="hljs-comment"># create a Window</span><br></span><span>window = Tk()<br></span><span><br></span><span><span class="hljs-comment"># set Window title</span><br></span><span>window.title(<span class="hljs-string">'Hello World!'</span>)<br></span><span><br></span><span><span class="hljs-comment"># start the Window</span><br></span><span>window.mainloop()<br></span></code></pre>
                     </td>
                     <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                     <td valign="bottom">
@@ -150,47 +187,47 @@
               </div>
               <p></p>
               <p>Here's the full code for the above example:</p>
-              <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># create a window</span><br></span><span>window = Tk()<br></span><span>window.title(<span class="hljs-string">'Increment!'</span>)<br></span><span>window.geometry(<span class="hljs-string">'250x150'</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># create a label</span><br></span><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))<br></span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># create a text box</span><br></span><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)<br></span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)<br></span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)<br></span><span><br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># define a function to be called when the button is clicked</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span><br></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment"># get int value of the label text</span><br></span><span>    textbox_value = int(textbox.get())  <span class="hljs-comment"># get int value of the textbox text</span><br></span><span>    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment"># set label text to the sum of above two</span><br></span><span><br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># add a button, bind it to the function</span><br></span><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)<br></span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># start the window</span><br></span><span>window.mainloop()<br></span></code></pre>
+              <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> *<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># create a window</span><br></span><span>window = Tk()<br></span><span>window.title(<span class="hljs-string">'Increment!'</span>)<br></span><span>window.geometry(<span class="hljs-string">'250x150'</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># create a label</span><br></span><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))<br></span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># create a text box</span><br></span><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)<br></span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)<br></span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)<br></span><span><br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># define a function to be called when the button is clicked</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span><br></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])  <span class="hljs-comment"># get int value of the label text</span><br></span><span>    textbox_value = int(textbox.get())  <span class="hljs-comment"># get int value of the textbox text</span><br></span><span>    label.configure(text=str(label_value + textbox_value))  <span class="hljs-comment"># set label text to the sum of above two</span><br></span><span><br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># add a button, bind it to the function</span><br></span><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)<br></span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-comment"># start the window</span><br></span><span>window.mainloop()<br></span></code></pre>
               <p>Let's go through the code to see how it works.</p>
               <ul>
                 <li>
-                  <pre><code style="counter-reset: line 5;" class="hljs python"><span>window.geometry(<span class="hljs-string">'250x150'</span>)<br></span></code></pre>
+                  <pre><code style="counter-reset: line 5;" class="hljs python" v-pre=""><span>window.geometry(<span class="hljs-string">'250x150'</span>)<br></span></code></pre>
                   <p>Sets the size of the Window.</p>
                   <p></p>
                   <p></p>
                 </li>
                 <li>
-                  <pre><code style="counter-reset: line 8;" class="hljs python"><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))<br></span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)<br></span></code></pre>
+                  <pre><code style="counter-reset: line 8;" class="hljs python" v-pre=""><span>label = Label(window, text=<span class="hljs-string">'0'</span>, font=(<span class="hljs-string">"Arial Bold"</span>, <span class="hljs-number">50</span>))<br></span><span>label.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">0</span>)<br></span></code></pre>
                   <ul>
-                    <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code>0</code>. Sets the font to <code>Arial Bold</code> and font size to <code>50</code>.</li>
-                    <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., where widgets are placed</span>layout</span> of the GUI</a>. In this case we are using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number.</span><em>grid</em> approach</span>. This statement places the label at <code>0,0</code> cell of the grid.<p></p>
+                    <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_labels.php"><em>Label</em> widget</a></strong> to show the current total. Sets its value to <code v-pre="">0</code>. Sets the font to <code v-pre="">Arial Bold</code> and font size to <code v-pre="">50</code>.</li>
+                    <li>There are <a href="https://www.python-course.eu/tkinter_layout_management.php">different ways to define the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., where widgets are placed</span>layout</span> of the GUI</a>. In this case we are using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">It places the widgets in a 2-dimensional table, which consists of a number of rows and columns. The position of a widget is defined by a row and a column number.</span><em>grid</em> approach</span>. This statement places the label at <code v-pre="">0,0</code> cell of the grid.<p></p>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <pre><code style="counter-reset: line 12;" class="hljs python"><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)<br></span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)<br></span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)<br></span></code></pre>
+                  <pre><code style="counter-reset: line 12;" class="hljs python" v-pre=""><span>textbox = Entry(window, width=<span class="hljs-number">2</span>)<br></span><span>textbox.grid(column=<span class="hljs-number">0</span>, row=<span class="hljs-number">1</span>)<br></span><span>textbox.insert(<span class="hljs-number">0</span>, <span class="hljs-string">'2'</span>)<br></span></code></pre>
                   <ul>
-                    <li><strong>Creates an <a href="https://www.python-course.eu/tkinter_entry_widgets.php"><em>Entry</em> widget</a></strong> for the user to enter the increment size. Sets its width to <code>2</code> characters.</li>
-                    <li>Places it at the <code>0,1</code> cell <span class="dimmed">(i.e., first column, 2nd row)</span>.</li>
-                    <li>Sets the initial value of the widget to <code>2</code>. The value it placed at the <code>0</code>th character position.<p></p>
+                    <li><strong>Creates an <a href="https://www.python-course.eu/tkinter_entry_widgets.php"><em>Entry</em> widget</a></strong> for the user to enter the increment size. Sets its width to <code v-pre="">2</code> characters.</li>
+                    <li>Places it at the <code v-pre="">0,1</code> cell <span class="dimmed">(i.e., first column, 2nd row)</span>.</li>
+                    <li>Sets the initial value of the widget to <code v-pre="">2</code>. The value it placed at the <code v-pre="">0</code>th character position.<p></p>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <pre><code style="counter-reset: line 18;" class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span><br></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])<br></span><span>    textbox_value = int(textbox.get())<br></span><span>    label.configure(text=str(label_value + textbox_value))<br></span></code></pre>
+                  <pre><code style="counter-reset: line 18;" class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">button_clicked</span><span class="hljs-params">()</span>:</span><br></span><span>    label_value = int(label[<span class="hljs-string">'text'</span>])<br></span><span>    textbox_value = int(textbox.get())<br></span><span>    label.configure(text=str(label_value + textbox_value))<br></span></code></pre>
                   <p><strong>Creats a function to be called when the button is clicked.</strong> It will increment the value shown in the label by the amount shown in the entry widget.</p>
                   <ul>
-                    <li>line <span class="dimmed">#20</span>: Reads the <code>text</code> property of the label widget and converts it to an <code>int</code></li>
-                    <li>line <span class="dimmed">#21</span>: Reads the value of the entry widget and converts it to an <code>int</code></li>
-                    <li>line <span class="dimmed">#22</span>: Sums the two values, converts the sum into a <code>str</code>, and sets it as the value of the label widget.<p></p>
+                    <li>line <span class="dimmed">#20</span>: Reads the <code v-pre="">text</code> property of the label widget and converts it to an <code v-pre="">int</code></li>
+                    <li>line <span class="dimmed">#21</span>: Reads the value of the entry widget and converts it to an <code v-pre="">int</code></li>
+                    <li>line <span class="dimmed">#22</span>: Sums the two values, converts the sum into a <code v-pre="">str</code>, and sets it as the value of the label widget.<p></p>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <pre><code style="counter-reset: line 25;" class="hljs python"><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)<br></span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)<br></span></code></pre>
+                  <pre><code style="counter-reset: line 25;" class="hljs python" v-pre=""><span>button_ok = Button(window, text=<span class="hljs-string">"Add"</span>, command=button_clicked)<br></span><span>button_ok.grid(column=<span class="hljs-number">1</span>, row=<span class="hljs-number">1</span>)<br></span></code></pre>
                   <ul>
-                    <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_buttons.php"><em>Button</em> widget</a></strong> for the user to click. Sets its display text to <code>Add</code>. Sets its command to the function <code>button_clicked</code> i.e., when the button is clicked, the specified function will be called.</li>
-                    <li>Places the button in the <code>1,1</code> cell of the grid.</li>
+                    <li><strong>Creates a <a href="https://www.python-course.eu/tkinter_buttons.php"><em>Button</em> widget</a></strong> for the user to click. Sets its display text to <code v-pre="">Add</code>. Sets its command to the function <code v-pre="">button_clicked</code> i.e., when the button is clicked, the specified function will be called.</li>
+                    <li>Places the button in the <code v-pre="">1,1</code> cell of the grid.</li>
                   </ul>
                 </li>
               </ul>
@@ -220,7 +257,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

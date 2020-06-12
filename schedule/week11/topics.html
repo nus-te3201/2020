@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -110,7 +111,7 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/2020/schedule/week11/topics.html#W11-1d">W11.1d</a>] <span>Quality Assurance → Test Case Design → Introduction →
-                          </span></span> <span>Black Box vs Glass Box</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span>Black box versus glass box</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
                 </small></div>
@@ -188,7 +189,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-1-test-case-design">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-1-test-case-design">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-1-test-case-design"><span class="dimmed">[W11.1]</span> <strong>Test Case Design</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-1-test-case-design" onclick="event.stopPropagation()"></a></h2>
@@ -207,7 +208,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/introduction/what" id="quality-assurance-test-case-design-introduction-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/introduction/what" id="quality-assurance-test-case-design-introduction-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-what" onclick="event.stopPropagation()"></a></h4>
@@ -223,7 +224,7 @@
                     <div>
                       <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></span>collection</span>:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code v-pre="">ArrayList</code>,<br>Python: <code v-pre="">list</code></span>collection</span>:</p>
                         <ul>
                           <li>Add an item to an empty collection.</li>
                           <li>Add an item when there is one item in the collection.</li>
@@ -250,23 +251,23 @@
                             <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                           </li>
                         </ul>
-                        <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
+                        <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test you add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                       </div>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
                             <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code>TriangleDetector</code></p>
+                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code v-pre="">TriangleDetector</code></p>
                               </template>
                               <question has-input="true">
-                                <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software. Two sample test cases are given below.</p>
-                                <pre><code class="hljs"><span>C:\&gt; java TriangleDetector<br></span><span>Enter side 1: 34<br></span><span>Enter side 2: 34<br></span><span>Enter side 3: 32<br></span><span>Can this be a triangle?:  Yes<br></span><span>Enter side 1:<br></span></code></pre>
+                                <p>Given below is the sample output from a text-based program <code v-pre="">TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software. Two sample test cases are given below.</p>
+                                <pre><code class="hljs" v-pre=""><span>C:\&gt; java TriangleDetector<br></span><span>Enter side 1: 34<br></span><span>Enter side 2: 34<br></span><span>Enter side 3: 32<br></span><span>Can this be a triangle?:  Yes<br></span><span>Enter side 1:<br></span></code></pre>
                                 <p>Sample test cases,</p>
-                                <pre><code class="hljs"><span>34,34,34: Yes<br></span><span>0, any valid, any valid: No<br></span></code></pre>
+                                <pre><code class="hljs" v-pre=""><span>34,34,34: Yes<br></span><span>0, any valid, any valid: No<br></span></code></pre>
                                 <div slot="answer" class="algolia-no-index">
                                   <p>In addition to obvious test cases such as</p>
                                   <ul>
@@ -276,7 +277,7 @@
                                   <p>We may also devise some interesting test cases such as the ones depicted below.</p>
                                   <p>Note that their applicability depends on the context in which the software is operating.</p>
                                   <ul>
-                                    <li>Non-integer number, negative numbers, <code>0</code>, numbers formatted differently (e.g. <code>13F</code>), very large numbers (e.g. <code>MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
+                                    <li>Non-integer number, negative numbers, <code v-pre="">0</code>, numbers formatted differently (e.g. <code v-pre="">13F</code>), very large numbers (e.g. <code v-pre="">MAX_INT</code>), numbers with many decimal places, empty string, ...</li>
                                     <li>Check many triangles one after the other (will the system run out of memory?)</li>
                                     <li><kbd>Backspace</kbd>, <kbd>tab</kbd>, <kbd>CTRL+C</kbd> , …</li>
                                     <li>Introduce a long delay between entering data (will the program be affected by, say the screensaver?), minimize and restore window during the operation, hibernate the system in the middle of a calculation, start with invalid inputs (the system may perform error handling differently for the very first test case), …</li>
@@ -292,17 +293,17 @@
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Exhaustive testing in Minesweeper</p>
                               </template>
                               <question has-input="true">
-                                <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
+                                <p>Explain the why exhaustive testing is not practical using the example of testing <code v-pre="">newGame()</code> operation in the <code v-pre="">Logic</code> class of a Minesweeper game.</p>
                                 <div slot="answer" class="algolia-no-index">
                                   <p>Consider this sequence of test cases:</p>
                                   <ul>
-                                    <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
-                                    <li>Test case 2. Start Minesweeper. Activate <code>newGame()</code>. Activate <code>newGame()</code> again and see if it works.</li>
-                                    <li>Test case 3. Start Minesweeper. Activate <code>newGame()</code> three times consecutively and see if it works.</li>
+                                    <li>Test case 1. Start Minesweeper. Activate <code v-pre="">newGame()</code> and see if it works.</li>
+                                    <li>Test case 2. Start Minesweeper. Activate <code v-pre="">newGame()</code>. Activate <code v-pre="">newGame()</code> again and see if it works.</li>
+                                    <li>Test case 3. Start Minesweeper. Activate <code v-pre="">newGame()</code> three times consecutively and see if it works.</li>
                                     <li>…</li>
-                                    <li>Test case 267. Start Minesweeper. Activate <code>newGame()</code> 267 times consecutively and see if it works.</li>
+                                    <li>Test case 267. Start Minesweeper. Activate <code v-pre="">newGame()</code> 267 times consecutively and see if it works.</li>
                                   </ul>
-                                  <p>Well, you get the idea. Exhaustive testing of <code>newGame()</code> is not practical.</p>
+                                  <p>Well, you get the idea. Exhaustive testing of <code v-pre="">newGame()</code> is not practical.</p>
                                 </div>
                               </question>
                             </panel>
@@ -339,7 +340,7 @@
               </div>
               <p><span id="W11-1b"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/2020/book/testing/testingTypes/exploratoryVsScriptedTesting/what" id="quality-assurance-testing-exploratory-and-scripted-testing-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testing/testingTypes/exploratoryVsScriptedTesting/what" id="quality-assurance-testing-exploratory-and-scripted-testing-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-testing-exploratory-and-scripted-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Exploratory and Scripted Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-exploratory-and-scripted-testing-what" onclick="event.stopPropagation()"></a></h4>
@@ -366,14 +367,14 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                         <blockquote>
-                          <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
-                            But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                          <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; you need to look at them soon.
+                            But before that, you should give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, you have a major problem and this has to be made known to the development team sooner rather than later...”</p>
                         </blockquote>
                       </box>
                       <box>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                       </box>
-                      <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                      <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                         <div>
                           <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
@@ -381,7 +382,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -465,7 +466,7 @@
                         <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations benefit from a mix of scripted and exploratory approaches.
                           --<span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
                       </blockquote>
-                      <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                      <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer="" size="" modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                         <div>
                           <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
@@ -473,7 +474,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -515,10 +516,10 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/introduction/blackVsGlass" id="quality-assurance-test-case-design-introduction-black-box-vs-glass-box">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/introduction/blackVsGlass" id="quality-assurance-test-case-design-introduction-black-box-versus-glass-box">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.1d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="quality-assurance-test-case-design-introduction-black-box-vs-glass-box"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>Black Box vs Glass Box</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-black-box-vs-glass-box" onclick="event.stopPropagation()"></a></h4>
+                  <h4 id="quality-assurance-test-case-design-introduction-black-box-versus-glass-box"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Introduction →</span></span></small> <strong><span>Black box versus glass box</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-introduction-black-box-versus-glass-box" onclick="event.stopPropagation()"></a></h4>
                 </span>
                 <div>
                   <div class="indented">
@@ -547,13 +548,13 @@
                         <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                         <tabs>
                           <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box vs White-box testing</template>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                           <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box testing example</template>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                           <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> White-box testing example</template>
-                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                           </tab>
                         </tabs>
                       </panel>
@@ -583,7 +584,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-2-equivalence-partitioning">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-2-equivalence-partitioning">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-2-equivalence-partitioning"><span class="dimmed">[W11.2]</span> <strong>Equivalence Partitioning</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-2-equivalence-partitioning" onclick="event.stopPropagation()"></a></h2>
@@ -601,7 +602,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/equivalencePartitions/what" id="quality-assurance-test-case-design-equivalence-partitions-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/equivalencePartitions/what" id="quality-assurance-test-case-design-equivalence-partitions-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-equivalence-partitions-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Equivalence Partitions →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-equivalence-partitions-what" onclick="event.stopPropagation()"></a></h4>
@@ -618,10 +619,10 @@
                       <p>Consider the testing of the following operation.</p>
                       <box>
                         <div id="isValidMonth">
-                          <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                          <p><code v-pre="">isValidMonth(m)</code> : returns <code v-pre="">true</code> if <code v-pre="">m</code> (and <code v-pre="">int</code>) is in the range [1..12]</p>
                         </div>
                       </box>
-                      <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+                      <p>It is inefficient and impractical to test this method for all integer values <code v-pre="">[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code v-pre="">233</code> failed to produce the correct result, the input <code v-pre="">234</code> is likely to fail too; there is no need to test both.</p>
                       <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
                         <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
                       <box type="definition">
@@ -629,7 +630,7 @@
                           <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
                         </div>
                       </box>
-                      <p><strong>By dividing possible inputs into equivalence partitions we can,</strong></p>
+                      <p><strong>By dividing possible inputs into equivalence partitions you can,</strong></p>
                       <ul>
                         <li><strong>avoid testing too many inputs from one partition.</strong> Testing too many inputs from the same partition is unlikely to find new bugs. This increases the efficiency of testing by reducing redundant test cases.</li>
                         <li><strong>ensure all partitions are tested.</strong> Missing partitions can result in bugs going unnoticed. This increases the effectiveness of testing by increasing the chance of finding bugs.</li>
@@ -654,7 +655,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/equivalencePartitions/basic" id="quality-assurance-test-case-design-equivalence-partitions-basic">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/equivalencePartitions/basic" id="quality-assurance-test-case-design-equivalence-partitions-basic">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-equivalence-partitions-basic"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Equivalence Partitions →</span></span></small> <strong><span>Basic</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-equivalence-partitions-basic" onclick="event.stopPropagation()"></a></h4>
@@ -672,53 +673,53 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the <span for="pop:epBasic-isValidMonth" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:epBasic-isValidMonth'].show()" class="trigger">isValidMonth</span> example:</p>
                         <ul>
-                          <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
-                          <li>[1 … 12] : the range that produces <code>true</code></li>
-                          <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
+                          <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code v-pre="">true</code> (produces <code v-pre="">false</code>)</li>
+                          <li>[1 … 12] : the range that produces <code v-pre="">true</code></li>
+                          <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code v-pre="">true</code> (produces <code v-pre="">false</code>)</li>
                         </ul>
                       </box>
-                      <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code>isValidMonth</code></span>
+                      <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code v-pre="">isValidMonth</code></span>
                         <div data-mb-html-for="content">
                           <div>
-                            <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
+                            <p><code v-pre="">isValidMonth(m)</code> : returns <code v-pre="">true</code> if <code v-pre="">m</code> (and <code v-pre="">int</code>) is in the range [1..12]</p>
                           </div>
                         </div>
                       </span>
                       <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
-                        <p>Example EPs for <code>s</code>:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code v-pre="">duplicate(String s, int n): String</code> which returns a <code v-pre="">String</code> that contains <code v-pre="">s</code> repeated <code v-pre="">n</code> times.</p>
+                        <p>Example EPs for <code v-pre="">s</code>:</p>
                         <ul>
                           <li>zero-length strings</li>
                           <li>string containing whitespaces</li>
                           <li>...</li>
                         </ul>
-                        <p>Example EPs for <code>n</code>:</p>
+                        <p>Example EPs for <code v-pre="">n</code>:</p>
                         <ul>
-                          <li><code>0</code></li>
+                          <li><code v-pre="">0</code></li>
                           <li>negative values</li>
                           <li>...</li>
                         </ul>
                       </box>
                       <p>An EP may not have adjacent values.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>isPrime(int i): boolean</code> that returns true if <code>i</code> is a prime number.</p>
-                        <p>EPs for <code>i</code>:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code v-pre="">isPrime(int i): boolean</code> that returns true if <code v-pre="">i</code> is a prime number.</p>
+                        <p>EPs for <code v-pre="">i</code>:</p>
                         <ul>
                           <li>prime numbers</li>
                           <li>non-prime numbers</li>
                         </ul>
                       </box>
-                      <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
+                      <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases you have to consider each value as a partition by itself.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code v-pre="">showStatusMessage(GameStatus s): String</code> that returns a unique <code v-pre="">String</code> for each of the possible value of s (<code v-pre="">GameStatus</code> is an <code v-pre="">enum</code>). In this case, each possible value for <code v-pre="">s</code> will have to be considered as a partition.</p>
                       </box>
                       <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method EPs given above for the <code v-pre="">isValidMonth</code>. A different tester might use these EPs instead:</p>
                         <ul>
-                          <li>[1 … 12] : the range that produces <code>true</code></li>
-                          <li>[all other integers] : the range that produces <code>false</code></li>
+                          <li>[1 … 12] : the range that produces <code v-pre="">true</code></li>
+                          <li>[all other integers] : the range that produces <code v-pre="">false</code></li>
                         </ul>
                       </box>
                       <box>
@@ -730,21 +731,21 @@
                           </tr>
                           <tr>
                             <td>
-                              <p><code>isValidFlag(String s): boolean</code><br>
-                                Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
+                              <p><code v-pre="">isValidFlag(String s): boolean</code><br>
+                                Returns <code v-pre="">true</code> if s is one of [<code v-pre="">&quot;F&quot;</code>, <code v-pre="">&quot;T&quot;</code>, <code v-pre="">&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
                             </td>
                             <td>
-                              <p>[<code>&quot;F&quot;</code>] [<code>&quot;T&quot;</code>] [<code>&quot;D&quot;</code>] [<code>&quot;f&quot;</code>, <code>&quot;t&quot;</code>, <code>&quot;d&quot;</code>] [any other string][null]</p>
+                              <p>[<code v-pre="">&quot;F&quot;</code>] [<code v-pre="">&quot;T&quot;</code>] [<code v-pre="">&quot;D&quot;</code>] [<code v-pre="">&quot;f&quot;</code>, <code v-pre="">&quot;t&quot;</code>, <code v-pre="">&quot;d&quot;</code>] [any other string][null]</p>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p><code>squareRoot(String s): int</code><br>
+                              <p><code v-pre="">squareRoot(String s): int</code><br>
                                 Pre-conditions: s represents a positive integer<br>
-                                Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
+                                Returns the square root of <code v-pre="">s</code> if the square root is an integer; returns <code v-pre="">0</code> otherwise.</p>
                             </td>
                             <td>
-                              <p>[<code>s</code> is not a valid number] [<code>s</code> is a negative integer] [<code>s</code> has an integer square root] [<code>s</code> does not have an integer square root]</p>
+                              <p>[<code v-pre="">s</code> is not a valid number] [<code v-pre="">s</code> is a negative integer] [<code v-pre="">s</code> has an integer square root] [<code v-pre="">s</code> does not have an integer square root]</p>
                             </td>
                           </tr>
                         </table>
@@ -752,18 +753,18 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
                             <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code>isValidName</code> method</p>
+                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code v-pre="">isValidName</code> method</p>
                               </template>
                               <question>
                                 <p>Consider this SUT:</p>
                                 <box>
-                                  <p><code>isValidName (String s): boolean</code></p>
-                                  <p>Description: returns true if <code>s</code> is not <code>null</code> and not longer than 50 characters.</p>
+                                  <p><code v-pre="">isValidName (String s): boolean</code></p>
+                                  <p>Description: returns true if <code v-pre="">s</code> is not <code v-pre="">null</code> and not longer than 50 characters.</p>
                                 </box>
                                 <p>A. Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?</p>
                                 <ul radio-group="4c6ed" class="radio-list">
@@ -800,7 +801,7 @@
               </div>
               <p><span id="W11-2c"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/equivalencePartitions/intermediate" id="quality-assurance-test-case-design-equivalence-partitions-intermediate">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/equivalencePartitions/intermediate" id="quality-assurance-test-case-design-equivalence-partitions-intermediate">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.2c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-equivalence-partitions-intermediate"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Equivalence Partitions →</span></span></small> <strong><span>Intermediate</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-equivalence-partitions-intermediate" onclick="event.stopPropagation()"></a></h4>
@@ -814,51 +815,51 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
+                      <p>When deciding EPs of OOP methods, you need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
                       <ul>
                         <li>the target object of the method call</li>
                         <li>input parameters of the method call</li>
                         <li>other data/objects accessed by the method such as global variables. This category may not be applicable if using the black box approach (because the test case designer using the black box approach will not know how the method is implemented)</li>
                       </ul>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this method in the <code>DataStack</code> class:
-                          <code>push(Object o): boolean</code></p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this method in the <code v-pre="">DataStack</code> class:
+                          <code v-pre="">push(Object o): boolean</code></p>
                         <ul>
                           <li>Adds o to the top of the stack if the stack is not full.</li>
-                          <li>returns <code>true</code> if the push operation was a success.</li>
+                          <li>returns <code v-pre="">true</code> if the push operation was a success.</li>
                           <li>throws
                             <ul>
-                              <li><code>MutabilityException</code> if the global flag <code>FREEZE==true</code>.</li>
-                              <li><code>InvalidValueException</code> if o is null.</li>
+                              <li><code v-pre="">MutabilityException</code> if the global flag <code v-pre="">FREEZE==true</code>.</li>
+                              <li><code v-pre="">InvalidValueException</code> if o is null.</li>
                             </ul>
                           </li>
                         </ul>
                         <p>EPs:</p>
                         <ul>
-                          <li><code>DataStack</code> object: [full] [not full]</li>
-                          <li><code>o</code>: [null] [not null]</li>
-                          <li><code>FREEZE</code>: [true][false]</li>
+                          <li><code v-pre="">DataStack</code> object: [full] [not full]</li>
+                          <li><code v-pre="">o</code>: [null] [not null]</li>
+                          <li><code v-pre="">FREEZE</code>: [true][false]</li>
                         </ul>
                       </box>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
-                        <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
-                        <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
-                        <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a simple Minesweeper app. What are the EPs for the <code v-pre="">newGame()</code> method of the <code v-pre="">Logic</code> component?</p>
+                        <p>As <code v-pre="">newGame()</code> does not have any parameters, the only obvious participant is the <code v-pre="">Logic</code> object itself.</p>
+                        <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code v-pre="">Minefield</code> object can be considered as another participant of the <code v-pre="">newGame()</code> method. Here, the black-box approach is assumed.</p>
+                        <p>Next, let us identify equivalence partitions for each participant. Will the <code v-pre="">newGame()</code> method behave differently for different <code v-pre="">Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
                         <ul>
-                          <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
-                          <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
-                          <li><code>IN_PLAY</code> : the current minefield is already in use</li>
-                          <li><code>WON</code>, <code>LOST</code> : let us assume the <code>newGame</code> behaves the same way for these two values</li>
+                          <li><code v-pre="">PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
+                          <li><code v-pre="">READY</code> : a new minefield has been created and waiting for player’s first move</li>
+                          <li><code v-pre="">IN_PLAY</code> : the current minefield is already in use</li>
+                          <li><code v-pre="">WON</code>, <code v-pre="">LOST</code> : let us assume the <code v-pre="">newGame</code> behaves the same way for these two values</li>
                         </ul>
                       </box>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Logic</code> component of the Minesweeper application. What are the EPs for the <code>markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code v-pre="">Logic</code> component of the Minesweeper application. What are the EPs for the <code v-pre="">markCellAt(int x, int y)</code> method?. The partitions in <strong>bold</strong> represent valid inputs.</p>
                         <ul>
-                          <li><code>Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
-                          <li><code>x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(we assume a minefield size of WxH)</span></li>
-                          <li><code>y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
-                          <li><code>Cell</code> at <code>(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
+                          <li><code v-pre="">Logic</code>: PRE_GAME, <strong>READY</strong>, <strong>IN_PLAY</strong>, WON, LOST</li>
+                          <li><code v-pre="">x</code>: [MIN_INT..-1] <strong>[0..(W-1)]</strong> [W..MAX_INT] <span class="dimmed">(assuming a minefield size of WxH)</span></li>
+                          <li><code v-pre="">y</code>: [MIN_INT..-1] <strong>[0..(H-1)]</strong> [H..MAX_INT]</li>
+                          <li><code v-pre="">Cell</code> at <code v-pre="">(x,y)</code>: <strong>HIDDEN</strong>, MARKED, CLEARED</li>
                         </ul>
                       </box>
                     </div>
@@ -887,7 +888,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-3-boundary-value-analysis">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-3-boundary-value-analysis">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-3-boundary-value-analysis"><span class="dimmed">[W11.3]</span> <strong>Boundary Value Analysis</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-3-boundary-value-analysis" onclick="event.stopPropagation()"></a></h2>
@@ -905,7 +906,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/boundaryValueAnalysis/what" id="quality-assurance-test-case-design-boundary-value-analysis-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/boundaryValueAnalysis/what" id="quality-assurance-test-case-design-boundary-value-analysis-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-boundary-value-analysis-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Boundary Value Analysis →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-boundary-value-analysis-what" onclick="event.stopPropagation()"></a></h4>
@@ -921,14 +922,14 @@
                     <div>
                       <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">markCellAt(int x, int y)</code> operation could contain code such as if <code v-pre="">(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
                       </box>
                       <p><strong>BVA suggests that when picking test inputs from an equivalence partition, values near boundaries (i.e. boundary values) are more likely to find bugs.</strong></p>
                       <p>Boundary values are sometimes called <em>corner cases</em>.</p>
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -969,7 +970,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/testCaseDesign/boundaryValueAnalysis/how" id="quality-assurance-test-case-design-boundary-value-analysis-how">
+              <panel type="seamless" expanded="" popup-url="/2020/book/testCaseDesign/boundaryValueAnalysis/how" id="quality-assurance-test-case-design-boundary-value-analysis-how">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-test-case-design-boundary-value-analysis-how"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Boundary Value Analysis →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-boundary-value-analysis-how" onclick="event.stopPropagation()"></a></h4>
@@ -983,7 +984,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
+                      <p><strong>Typically, you should choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
                       <box>
                         <div class="text-monospace">
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples:</p>
@@ -1032,7 +1033,7 @@
                             <tr>
                               <td>
                                 <p>[non-empty Stack]<br>
-                                  <span class="dimmed">(we assume a fixed size stack)</span></p>
+                                  <span class="dimmed">(assuming a fixed size stack)</span></p>
                               </td>
                               <td>
                                 <p>Stack with: one element, two elements, no empty spaces, only one empty space</p>
@@ -1067,7 +1068,7 @@
               </div>
             </div>
           </div>
-          <panel type="seamless" no-close expandable="true" expanded id="w11-4-other-qa-techniques">
+          <panel type="seamless" no-close="" expandable="true" expanded="" id="w11-4-other-qa-techniques">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="w11-4-other-qa-techniques"><span class="dimmed">[W11.4]</span> <strong>Other QA Techniques</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-4-other-qa-techniques" onclick="event.stopPropagation()"></a></h2>
@@ -1076,7 +1077,7 @@
             <div class="indented-level1">
               <p><span id="W11-4a"></span></p>
               <div></div>
-              <panel type="seamless" expanded popup-url="/2020/book/qualityAssurance/introduction/what" id="quality-assurance-quality-assurance-introduction-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/qualityAssurance/introduction/what" id="quality-assurance-quality-assurance-introduction-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-what" onclick="event.stopPropagation()"></a></h4>
@@ -1112,7 +1113,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/qualityAssurance/codeReviews/what" id="quality-assurance-quality-assurance-code-reviews-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/qualityAssurance/codeReviews/what" id="quality-assurance-quality-assurance-code-reviews-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-code-reviews-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Code Reviews →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-code-reviews-what" onclick="event.stopPropagation()"></a></h4>
@@ -1142,10 +1143,10 @@
                           </ul>
                         </li>
                       </ul>
-                      <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
+                      <b-modal id="modal:codeReview-pairProgramming" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming" class="algolia-no-index"><template slot="modal-title">Pair Programming</template>
                         <box type="definition">
                           <div>
-                            <p><strong>Pair Programming</strong>:</p>
+                            <p><strong>Pair programming</strong>:</p>
                             <blockquote>
                               <p>Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently. <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">source: Wikipedia</a>]</sub></p>
                             </blockquote>
@@ -1154,7 +1155,7 @@
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg" width="400"><br>
                           <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> A good introduction to pair programming:</p>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                       </b-modal>
                       <ul>
                         <li>
@@ -1185,7 +1186,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expanded><template slot="_header">
+                        <panel expanded=""><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                           </template>
                           <ul>
@@ -1212,7 +1213,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/qualityAssurance/staticAnalysis/what" id="quality-assurance-quality-assurance-static-analysis-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/qualityAssurance/staticAnalysis/what" id="quality-assurance-quality-assurance-static-analysis-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-static-analysis-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Static Analysis →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-static-analysis-what" onclick="event.stopPropagation()"></a></h4>
@@ -1257,7 +1258,7 @@
                   </div>
                 </div>
               </div>
-              <panel type="seamless" expanded popup-url="/2020/book/qualityAssurance/formalVerification/what" id="quality-assurance-quality-assurance-formal-verification-what">
+              <panel type="seamless" expanded="" popup-url="/2020/book/qualityAssurance/formalVerification/what" id="quality-assurance-quality-assurance-formal-verification-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W11.4d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="quality-assurance-quality-assurance-formal-verification-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Formal Verification →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-formal-verification-what" onclick="event.stopPropagation()"></a></h4>
@@ -1275,7 +1276,7 @@
                       <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p>
                         </template>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                         <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
                         <p></p>
                       </panel>
@@ -1292,7 +1293,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
+                        <panel expandable="" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
@@ -1350,7 +1351,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -110,35 +111,35 @@
             <h2 id="object-oriented-programming"><strong>Object-Oriented Programming</strong><a class="fa fa-anchor" href="#object-oriented-programming" onclick="event.stopPropagation()"></a></h2>
             <div>
               <h3 id="class-level-members">Class-Level Members<a class="fa fa-anchor" href="#class-level-members" onclick="event.stopPropagation()"></a></h3>
-              <p><strong>Attributes initialized inside a class but outside of its methods are considered class-level attributes</strong> (attributes are also called <em>data</em> or <em>variables</em>) i.e., they are shared among all objects of that class whereas attributes initialized inside the <code>__init__()</code> method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the <code>ClassName.</code> syntax.</p>
+              <p><strong>Attributes initialized inside a class but outside of its methods are considered class-level attributes</strong> (attributes are also called <em>data</em> or <em>variables</em>) i.e., they are shared among all objects of that class whereas attributes initialized inside the <code v-pre="">__init__()</code> method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the <code v-pre="">ClassName.</code> syntax.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects created, it is incremented in the <code>__init__()</code> method. <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
-                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span><br></span><span>  <br></span><span class="highlighted">  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span><br></span><span>    self.name = student_name <span class="hljs-comment"># instance-level attribute</span><br></span><span class="highlighted">    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span><br></span><span>    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span><br></span></code></pre>
-                <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre="">Student</code> class below has one class-level attribute <code v-pre="">total_students</code>. As it is meant to track the total number of <code v-pre="">Student</code> objects created, it is incremented in the <code v-pre="">__init__()</code> method. <code v-pre="">course_count</code> and <code v-pre="">name</code> are instance-level attributes.</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span><br></span><span>  <br></span><span class="highlighted">  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span><br></span><span>    self.name = student_name <span class="hljs-comment"># instance-level attribute</span><br></span><span class="highlighted">    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span><br></span><span>    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span><br></span></code></pre>
+                <p>The code below creates two <code v-pre="">Student</code> objects. Note how the class-level attribute <code v-pre="">total_students</code>,</p>
                 <ul>
-                  <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
-                  <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
+                  <li>can be accessed using the class name (i.e., <code v-pre="">Student.total_students</code>) or the object (i.e., <code v-pre="">amy.total_students</code>) and both give the same value.</li>
+                  <li>is shared among all objects and correctly gives <code v-pre="">2</code> after another <code v-pre="">Student</code> object has been created.</li>
                 </ul>
-                <pre><code class="hljs python"><span>amy = Student(<span class="hljs-string">"Amy"</span>)<br></span><span class="highlighted">print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span><br></span><span>print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span><br></span><span>print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)<br></span><span><br></span><span>ben = Student(<span class="hljs-string">"Ben"</span>)<br></span><span class="highlighted">print(<span class="hljs-string">'total students:'</span>, Student.total_students)<br></span><span>print(<span class="hljs-string">'total students:'</span>, ben.total_students) <br></span><span>print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)<br></span></code></pre>
+                <pre><code class="hljs python" v-pre=""><span>amy = Student(<span class="hljs-string">"Amy"</span>)<br></span><span class="highlighted">print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span><br></span><span>print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span><br></span><span>print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)<br></span><span><br></span><span>ben = Student(<span class="hljs-string">"Ben"</span>)<br></span><span class="highlighted">print(<span class="hljs-string">'total students:'</span>, Student.total_students)<br></span><span>print(<span class="hljs-string">'total students:'</span>, ben.total_students) <br></span><span>print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)<br></span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                <pre><code class="no-line-numbers hljs"><span>total students: 1<br></span><span>total students: 1<br></span><span>Amy course count: 0<br></span><span>total students: 2<br></span><span>total students: 2<br></span><span>Ben course count: 0<br></span></code></pre>
+                <pre><code class="no-line-numbers hljs" v-pre=""><span>total students: 1<br></span><span>total students: 1<br></span><span>Amy course count: 0<br></span><span>total students: 2<br></span><span>total students: 2<br></span><span>Ben course count: 0<br></span></code></pre>
               </box>
-              <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong> <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
+              <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code v-pre="">@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code v-pre="">cls</code> which represents the class itself</strong> <span class="dimmed">(similar to instance level methods' first parameter needing to be <code v-pre="">self</code>)</span>.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
-                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span><br></span><span><br></span><span class="highlighted">  enabled = <span class="hljs-literal">True</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span><br></span><span>    self.text = new_text<br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> Printer.enabled:<br></span><span>      print(self.text)<br></span><span><br></span><span class="highlighted"><span class="hljs-meta">  @classmethod</span><br></span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span><br></span><span class="highlighted">    cls.enabled = <span class="hljs-literal">False</span>  <span class="hljs-comment"># cls here is same as Printer</span><br></span><span class="highlighted">    print(<span class="hljs-string">'All Printers disabled'</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-meta">  @classmethod</span><br></span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span><br></span><span class="highlighted">    cls.enabled = <span class="hljs-literal">True</span><br></span><span class="highlighted">    print(<span class="hljs-string">'All Printers enabled'</span>)<br></span></code></pre>
-                <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre="">Printer</code> class below has a class-level attribute <code v-pre="">enabled</code> and class-level methods <code v-pre="">enable()</code> and <code v-pre="">disable()</code>.</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span><br></span><span><br></span><span class="highlighted">  enabled = <span class="hljs-keyword">True</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span><br></span><span>    self.text = new_text<br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> Printer.enabled:<br></span><span>      print(self.text)<br></span><span><br></span><span class="highlighted"><span class="hljs-meta">  @classmethod</span><br></span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span><br></span><span class="highlighted">    cls.enabled = <span class="hljs-keyword">False</span>  <span class="hljs-comment"># cls here is same as Printer</span><br></span><span class="highlighted">    print(<span class="hljs-string">'All Printers disabled'</span>)<br></span><span><br></span><span class="highlighted"><span class="hljs-meta">  @classmethod</span><br></span><span class="highlighted">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span><br></span><span class="highlighted">    cls.enabled = <span class="hljs-keyword">True</span><br></span><span class="highlighted">    print(<span class="hljs-string">'All Printers enabled'</span>)<br></span></code></pre>
+                <p>The code below uses the class-level method to enable/disable printing for all <code v-pre="">Printer</code> objects.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span>Printer.disable()<br></span><span>p1 = Printer(<span class="hljs-string">'blah blah'</span>)<br></span><span>p2 = Printer(<span class="hljs-string">'yak yak'</span>)<br></span><span>p1.print_text() <span class="hljs-comment"># will not print</span><br></span><span>p2.print_text() <span class="hljs-comment"># will not print</span><br></span><span><br></span><span>Printer.enable() <br></span><span>p1.print_text()<br></span><span>p2.print_text()<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>Printer.disable()<br></span><span>p1 = Printer(<span class="hljs-string">'blah blah'</span>)<br></span><span>p2 = Printer(<span class="hljs-string">'yak yak'</span>)<br></span><span>p1.print_text() <span class="hljs-comment"># will not print</span><br></span><span>p2.print_text() <span class="hljs-comment"># will not print</span><br></span><span><br></span><span>Printer.enable() <br></span><span>p1.print_text()<br></span><span>p2.print_text()<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>All Printers disabled<br></span><span>All Printers enabled<br></span><span>blah blah<br></span><span>yak yak<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>All Printers disabled<br></span><span>All Printers enabled<br></span><span>blah blah<br></span><span>yak yak<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -147,31 +148,31 @@
                 </p>
               </box>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header">
-                    <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add Class-Level Members to <code>Subject</code> Class</p>
+                <panel type="danger" expanded="" no-close=""><template slot="_header">
+                    <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Add Class-Level Members to <code v-pre="">Subject</code> Class</p>
                   </template>
                   <div>
-                    <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class" onclick="event.stopPropagation()"></a></h4>
-                    <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
+                    <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code v-pre="">Subject</code> class<a class="fa fa-anchor" href="#exercise-add-class-level-members-to-subject-class" onclick="event.stopPropagation()"></a></h4>
+                    <p>Add the following members to the <code v-pre="">Subject</code> class in the code below so that the code produces the output given on the right.</p>
                     <ul>
-                      <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
-                      <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
+                      <li>a class-level attribute <code v-pre="">total</code> (type: <code v-pre="">int</code>) that tracks the total number of <code v-pre="">Subject</code> objects created</li>
+                      <li>a class-level method <code v-pre="">limit_reached(limit)</code> that returns <code v-pre="">True</code> (type: <code v-pre="">bool</code>) if the <code v-pre="">total</code> is greater than or equal to the specified <code v-pre="">limit</code>.</li>
                     </ul>
                     <table>
                       <tr>
                         <td>
-                          <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span><br></span><span>    self.name = name<br></span><span>    self.code = code<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span><br></span><span>    print(self.code, <span class="hljs-string">':'</span>, self.name)<br></span><span>    <br></span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)<br></span><span>s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) <br></span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)<br></span><span>print(Subject.limit_reached(<span class="hljs-number">1</span>))<br></span><span>print(Subject.limit_reached(<span class="hljs-number">2</span>))<br></span><span>s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)<br></span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)<br></span><span>print(Subject.limit_reached(<span class="hljs-number">2</span>))<br></span><span>print(Subject.limit_reached(<span class="hljs-number">3</span>))<br></span><span>Subject.total = <span class="hljs-number">100</span><br></span><span>print(Subject.limit_reached(<span class="hljs-number">100</span>))<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span><br></span><span>    self.name = name<br></span><span>    self.code = code<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span><br></span><span>    print(self.code, <span class="hljs-string">':'</span>, self.name)<br></span><span>    <br></span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)<br></span><span>s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) <br></span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)<br></span><span>print(Subject.limit_reached(<span class="hljs-number">1</span>))<br></span><span>print(Subject.limit_reached(<span class="hljs-number">2</span>))<br></span><span>s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)<br></span><span>print(<span class="hljs-string">'total subjects:'</span>, Subject.total)<br></span><span>print(Subject.limit_reached(<span class="hljs-number">2</span>))<br></span><span>print(Subject.limit_reached(<span class="hljs-number">3</span>))<br></span><span>Subject.total = <span class="hljs-number">100</span><br></span><span>print(Subject.limit_reached(<span class="hljs-number">100</span>))<br></span></code></pre>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
-                          <pre><code class="hljs"><span>total subjects: 0<br></span><span>total subjects: 1<br></span><span>True<br></span><span>False<br></span><span>total subjects: 2<br></span><span>True<br></span><span>False<br></span><span>True<br></span></code></pre>
+                          <pre><code class="hljs" v-pre=""><span>total subjects: 0<br></span><span>total subjects: 1<br></span><span>True<br></span><span>False<br></span><span>total subjects: 2<br></span><span>True<br></span><span>False<br></span><span>True<br></span></code></pre>
                         </td>
                       </tr>
                     </table>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution and hints</span></p>
                       </template>
-                      <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-comment"># ADD `total` attribute here</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span><br></span><span>    self.name = name<br></span><span>    self.code = code<br></span><span>    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span><br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span><br></span><span>    print(self.code, <span class="hljs-string">':'</span>, self.name)<br></span><span>    <br></span><span><span class="hljs-meta">  @classmethod</span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span><br></span><span>    ... <span class="hljs-comment"># ADD implementation</span><br></span></code></pre>
+                      <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span><br></span><span>  <br></span><span>  <span class="hljs-comment"># ADD `total` attribute here</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span><br></span><span>    self.name = name<br></span><span>    self.code = code<br></span><span>    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span><br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span><br></span><span>    print(self.code, <span class="hljs-string">':'</span>, self.name)<br></span><span>    <br></span><span><span class="hljs-meta">  @classmethod</span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span><br></span><span>    ... <span class="hljs-comment"># ADD implementation</span><br></span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -192,18 +193,18 @@
               <p>The <em>encapsulation</em> aspect of OOP requires that an object should only allow controlled access to its members. For example, it should be able to make some of its attributes visible to other object while keeping others hidden. As a consequence of Python's aim to be a very flexible and versatile language, it does not enforce encapsulation as strictly as some other OOP languages. However, it recommends some conventions, if followed, will maintain a reasonable level of encapsulation in objects.</p>
               <ul>
                 <li>
-                  <p><strong><em>Private</em> members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., <code>__foo</code>, <code>__bar_()</code>) cannot be accessed using its name by code outside the class.</strong></p>
+                  <p><strong><em>Private</em> members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., <code v-pre="">__foo</code>, <code v-pre="">__bar_()</code>) cannot be accessed using its name by code outside the class.</strong></p>
                 </li>
                 <li>
-                  <p><strong><em>Protected</em> members: a name prefixed with a single underscore (e.g. <code>_foo</code>, <code>_bar()</code>) are -- by convention -- should not be accessed by code outside of the owner class</strong> as they are not meant to be part of the object's public interface.</p>
+                  <p><strong><em>Protected</em> members: a name prefixed with a single underscore (e.g. <code v-pre="">_foo</code>, <code v-pre="">_bar()</code>) are -- by convention -- should not be accessed by code outside of the owner class</strong> as they are not meant to be part of the object's public interface.</p>
                 </li>
                 <li>
                   <p><strong><em>Public</em> members: other members are considered public and OK to be accessed by code outside the class.</strong></p>
                 </li>
               </ul>
               <tip-box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code>Account</code> class below.</p>
-                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span><br></span><span>  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span><br></span><span>  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span><br></span><span>  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span><br></span><span>    self.__balance = amount <span class="hljs-comment"># private</span><br></span><span>    self._owner = person    <span class="hljs-comment"># protected</span><br></span><span>    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span><br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span><br></span><span>    <span class="hljs-keyword">return</span> [self.status]<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span><br></span><span>    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span><br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span><br></span><span>    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span><br></span><span>    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span><br></span></code></pre>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the <code v-pre="">Account</code> class below.</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span><br></span><span>  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span><br></span><span>  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span><br></span><span>  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span><br></span><span>    self.__balance = amount <span class="hljs-comment"># private</span><br></span><span>    self._owner = person    <span class="hljs-comment"># protected</span><br></span><span>    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span><br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span><br></span><span>    <span class="hljs-keyword">return</span> [self.status]<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span><br></span><span>    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span><br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span><br></span><span>    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span><br></span><span>    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span><br></span></code></pre>
                 <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> The following code works fine because the members being accessed are public.</p>
                 <div>
                   <div></div>
@@ -211,11 +212,11 @@
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span>print(<span class="hljs-string">'currency:'</span>, Account.currency)<br></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)<br></span><span>print(<span class="hljs-string">'status:'</span>, a.status)<br></span><span>print(<span class="hljs-string">'info:'</span>, a.get_info())<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'currency:'</span>, Account.currency)<br></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)<br></span><span>print(<span class="hljs-string">'status:'</span>, a.status)<br></span><span>print(<span class="hljs-string">'info:'</span>, a.get_info())<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>currency: $<br></span><span>status: OK<br></span><span>info: ['OK']<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>currency: $<br></span><span>status: OK<br></span><span>info: ['OK']<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -229,44 +230,44 @@
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span>print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) <br></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)<br></span><span>print(<span class="hljs-string">'owner:'</span>, a._owner) <br></span><span>print(<span class="hljs-string">'more info:'</span>, a._get_more_info())<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) <br></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)<br></span><span>print(<span class="hljs-string">'owner:'</span>, a._owner) <br></span><span>print(<span class="hljs-string">'more info:'</span>, a._get_more_info())<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>minimum allowed: 10.0<br></span><span>owner: Adam<br></span><span>more info: ['OK', 'Adam']<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>minimum allowed: 10.0<br></span><span>owner: Adam<br></span><span>more info: ['OK', 'Adam']<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
                 <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> The following code will not work because they try to access private members.</p>
-                <pre><code class="hljs python"><span>print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span><br></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)<br></span><span>print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span><br></span><span>print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span><br></span></code></pre>
+                <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span><br></span><span>a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)<br></span><span>print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span><br></span><span>print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span><br></span></code></pre>
                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                <pre><code class="no-line-numbers hljs"><span>AttributeError: type object 'Account' has no attribute '__max'...<br></span><span>AttributeError: 'Account' object has no attribute '__balance'...<br></span><span>AttributeError: 'Account' object has no attribute '__get_income'...<br></span></code></pre>
+                <pre><code class="no-line-numbers hljs" v-pre=""><span>AttributeError: type object 'Account' has no attribute '__max'...<br></span><span>AttributeError: 'Account' object has no attribute '__balance'...<br></span><span>AttributeError: 'Account' object has no attribute '__get_income'...<br></span></code></pre>
                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
                 </p>
               </tip-box>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header">
-                    <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Change Visibility of <code>School</code> Class Members</p>
+                <panel type="danger" expanded="" no-close=""><template slot="_header">
+                    <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Change Visibility of <code v-pre="">School</code> Class Members</p>
                   </template>
                   <div>
-                    <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members" onclick="event.stopPropagation()"></a></h4>
-                    <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
+                    <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code v-pre="">School</code> Class Members<a class="fa fa-anchor" href="#exercise-change-visibility-of-school-class-members" onclick="event.stopPropagation()"></a></h4>
+                    <p>Change the visibility of the members of the <code v-pre="">School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
                     <table>
                       <tr>
                         <td>
-                          <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span><br></span><span>  <br></span><span>  __target = <span class="hljs-number">0.99</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span><br></span><span>    self.__budget = capital<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span><br></span><span>    <span class="hljs-keyword">return</span> self.__budget * School.__target<br></span><span>    <br></span><span>print(School.__target)<br></span><span>s = School(<span class="hljs-number">100000</span>)<br></span><span>print(s.__budget)<br></span><span>print(s.__max_expenditure())<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span><br></span><span>  <br></span><span>  __target = <span class="hljs-number">0.99</span><br></span><span>  <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span><br></span><span>    self.__budget = capital<br></span><span>    <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span><br></span><span>    <span class="hljs-keyword">return</span> self.__budget * School.__target<br></span><span>    <br></span><span>print(School.__target)<br></span><span>s = School(<span class="hljs-number">100000</span>)<br></span><span>print(s.__budget)<br></span><span>print(s.__max_expenditure())<br></span></code></pre>
                         </td>
                         <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                         <td valign="bottom">
-                          <pre><code class="no-line-numbers hljs"><span>0.99<br></span><span>100000<br></span><span>99000.0<br></span></code></pre>
+                          <pre><code class="no-line-numbers hljs" v-pre=""><span>0.99<br></span><span>100000<br></span><span>99000.0<br></span></code></pre>
                         </td>
                       </tr>
                     </table>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p><span class="dimmed">💡 Hint</span></p>
                       </template>
-                      <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
+                      <p>Remove the leading underscores of the member names e.g., <code v-pre="">__target</code> → <code v-pre="">target</code></p>
                     </panel>
                   </div>
                 </panel>
@@ -285,79 +286,79 @@
             </div>
             <div>
               <h2 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code" onclick="event.stopPropagation()"></a></h2>
-              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
+              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code v-pre="">import</code> it first.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
-                <p><code>[project_root]/student.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span></code></pre>
-                <p><code>[project_root]/course.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
-                <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
+                <p><code v-pre="">[project_root]/student.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span></code></pre>
+                <p><code v-pre="">[project_root]/course.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                <p>Notice how the <code v-pre="">course.py</code> imports the <code v-pre="">student</code> module and uses the <code v-pre="">student.describe</code> function defined in the <code v-pre="">student.py</code> file.</p>
               </box>
               <p><strong>You can organize files into sub-directories too.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
-                <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span><br></span><span>    print(list(text))<br></span></code></pre>
-                <p><code>[project_root]/course.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc <br></span><span><br></span><span>misc.print_as_list(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
-                <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
+                <p><code v-pre="">[project_root]/misc/print_utils/misc.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span><br></span><span>    print(list(text))<br></span></code></pre>
+                <p><code v-pre="">[project_root]/course.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc <br></span><span><br></span><span>misc.print_as_list(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                <p>Notice how the <code v-pre="">import</code> statement uses a slightly different syntax and uses <code v-pre="">.</code> to indicate directory nesting (i.e., <code v-pre="">misc/print_utils</code> → <code v-pre="">misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code v-pre="">import</code> syntax</a>.</p>
               </box>
               <p>When you import a module, Python will interpret and execute any code in it.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
-                <p><code>[project_root]/student.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span>describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code v-pre="">student</code> module being imported into the <code v-pre="">course</code> module.</p>
+                <p><code v-pre="">[project_root]/student.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span>describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <p><code>[project_root]/course.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                        <p><code v-pre="">[project_root]/course.py</code>:</p>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>Betty is a student<br></span><span>Adam is a student<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>Betty is a student<br></span><span>Adam is a student<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
+                <p>Notice how the output contains <code v-pre="">Betty is a student</code>. That is because the line <code v-pre="">describe('Betty')</code> in <code v-pre="">student.py</code> is being executed as the <code v-pre="">student</code> module is being imported.</p>
               </box>
-              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
+              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python" v-pre=""><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code v-pre="">student</code> module can be executed to get the following output.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <p><code>[project_root]/student.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<br></span><span>    describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
+                        <p><code v-pre="">[project_root]/student.py</code>:</p>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<br></span><span>    describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>Betty is a student<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>Betty is a student<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
+                <p>When the <code v-pre="">student</code> module is imported to another module, <code v-pre="">describe('Betty')</code> line is no longer executed.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <p><code>[project_root]/course.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                        <p><code v-pre="">[project_root]/course.py</code>:</p>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>Adam is a student<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>Adam is a student<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -395,7 +396,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

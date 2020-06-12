@@ -28,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -58,13 +59,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -72,27 +73,63 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/programming/chapters/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/programs.html" class="site-nav__a current">Python Programs</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/functions.html" class="site-nav__a">Functions</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/lists.html" class="site-nav__a">Lists</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/errors.html" class="site-nav__a">Error Handling</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/strings.html" class="site-nav__a">Strings</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/files.html" class="site-nav__a">Files</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/gui.html" class="site-nav__a">GUIs</a></li>
-            <li class="mt-2">
-              <hr>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/expressions-types-variables.html">Expressions, Data Types, Variables</a></div>
             </li>
-            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/programs.html" class="current">Python Programs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/flowcontrol.html">Program Flow Control</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/functions.html">Functions</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/lists.html">Lists</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/errors.html">Error Handling</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/strings.html">Strings</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/files.html">Files</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/dictionaries.html">Dictionaries</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/oop.html">Object-Oriented Programming</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/gui.html">GUIs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">
+                <hr>
+              </div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><span class="dimmed"><strong>Appendices</strong></span></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/thirdparty.html"><strong>A.</strong> Installing 3rd Party Modules</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/ide.html"><strong>B.</strong> Using an IDE</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/organizing.html"><strong>C.</strong> Organizing Python Code</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/unittesting.html"><strong>D.</strong> Unit Testing</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/monty.html"><strong>E.</strong> The Monty Project</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -114,7 +151,7 @@
             <h1 id="python-programs">Python Programs<a class="fa fa-anchor" href="#python-programs" onclick="event.stopPropagation()"></a></h1>
             <div>
               <h3 id="scripts-programs">Scripts (Programs)<a class="fa fa-anchor" href="#scripts-programs" onclick="event.stopPropagation()"></a></h3>
-              <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the tool that interprets the code and executes it</span>interpreter</span></em> reads the program and executes statements from top to bottom.</p>
+              <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code v-pre="">.py</code> extension. Python <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the tool that interprets the code and executes it</span>interpreter</span></em> reads the program and executes statements from top to bottom.</p>
               <p>Let's create and run a Python program:</p>
               <tabs>
                   <tab><template slot="_header">Using <a href="http://Repl.it">Repl.it</a> (no need to save as a file)</template>
@@ -122,15 +159,15 @@
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </tab>
-                  <tab class="algolia-no-index"><template slot="_header">Using IDLE (need to save as a <code>.py</code> file)</template>
+                  <tab class="algolia-no-index"><template slot="_header">Using IDLE (need to save as a <code v-pre="">.py</code> file)</template>
                   <ol>
                     <li><span trigger="click" for="modal:scripts-openIdle" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:scripts-openIdle'].show()" class="trigger-click">Open the IDLE tool</span>.</li>
-                    <li>Choose <code>File</code> → <code>New File</code></li>
+                    <li>Choose <code v-pre="">File</code> → <code v-pre="">New File</code></li>
                     <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
-                      <pre><code class="hljs python"><span>print(<span class="hljs-string">'Hello world!'</span>)<br></span><span>print(<span class="hljs-string">'Bye!'</span>)<br></span></code></pre>
+                      <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'Hello world!'</span>)<br></span><span>print(<span class="hljs-string">'Bye!'</span>)<br></span></code></pre>
                     </li>
-                    <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
-                    <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
+                    <li>Save the file by choosing <code v-pre="">File</code> → <code v-pre="">Save as</code>. You can give a name such as <code v-pre="">hello.py</code></li>
+                    <li><code v-pre="">Run</code> → <code v-pre="">Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
                   </ol>
                   <panel type="seamless" class="algolia-no-index"><template slot="_header">
                       <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Writing your first Python program</span></p>
@@ -139,32 +176,32 @@
                   <p></p>
                 </tab>
               </tabs>
-              <b-modal id="modal:scripts-openIdle" hide-footer size modal-class="mb-zoom" ref="modal:scripts-openIdle"><template slot="modal-title"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Opening IDEL in Windows 10</template>
+              <b-modal id="modal:scripts-openIdle" hide-footer="" size="" modal-class="mb-zoom" ref="modal:scripts-openIdle" class="algolia-no-index"><template slot="modal-title"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Opening IDEL in Windows 10</template>
                  
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></b-modal>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="comments">Comments<a class="fa fa-anchor" href="#comments" onclick="event.stopPropagation()"></a></h3>
-              <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
-              <pre><code class="hljs python"><span><span class="hljs-comment"># this is a simple hello world program</span><br></span><span><br></span><span>print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span><br></span><span><br></span><span><span class="hljs-comment"># read user's name from the keyboard</span><br></span><span>print(<span class="hljs-string">'What is your name?'</span>)<br></span><span>name = input()<br></span></code></pre>
+              <p>You can use comments to provide more information about the code to the reader. Any text that follows <code v-pre="">#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
+              <pre><code class="hljs python" v-pre=""><span><span class="hljs-comment"># this is a simple hello world program</span><br></span><span><br></span><span>print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span><br></span><span><br></span><span><span class="hljs-comment"># read user's name from the keyboard</span><br></span><span>print(<span class="hljs-string">'What is your name?'</span>)<br></span><span>name = input()<br></span></code></pre>
               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">ease of reading</span>readability</span> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="using-functions">Using Functions<a class="fa fa-anchor" href="#using-functions" onclick="event.stopPropagation()"></a></h3>
-              <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>, <em>invoke</em>) a function takes the form <code>function_name(arguments)</code> <span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
+              <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>, <em>invoke</em>) a function takes the form <code v-pre="">function_name(arguments)</code> <span class="dimmed"> e.g., <code v-pre="">foo(1, 'hello')</code> calls a function named <code v-pre="">foo</code> with arguments <code v-pre="">1</code> and <code v-pre="">'hello'</code></span></p>
               <p>Python comes with many built-in functions you can use right away.</p>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> To print some text, you can use the <code>print</code> function which can take one or more arguments:</p>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> To print some text, you can use the <code v-pre="">print</code> function which can take one or more arguments:</p>
               <tabs>
                   <tab><template slot="_header">Using the shell</template>
-                  <pre><code class="hljs python"><span><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)<br></span><span>Hello World<br></span><span><br></span><span><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)<br></span><span>Bye my friend<br></span></code></pre>
+                  <pre><code class="hljs python" v-pre=""><span><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Hello World'</span>)<br></span><span>Hello World<br></span><span><br></span><span><span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)<br></span><span>Bye my friend<br></span></code></pre>
                   <p></p>
                 </tab>
                   <tab class="algolia-no-index"><template slot="_header">Running as a script</template>
-                  <pre><code class="hljs python"><span>print(<span class="hljs-string">'Hello World'</span>)<br></span><span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)<br></span></code></pre>
+                  <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'Hello World'</span>)<br></span><span>print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)<br></span></code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                  <pre><code class="hljs"><span>Hello World<br></span><span>Bye my friend<br></span></code></pre>
+                  <pre><code class="hljs" v-pre=""><span>Hello World<br></span><span>Bye my friend<br></span></code></pre>
                   <p></p>
                 </tab>
               </tabs>
@@ -176,10 +213,10 @@
               </panel>
               <p></p>
               <p><strong>Some functions return a value.</strong></p>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells you the type of a value.</p>
-              <pre><code class="hljs python"><span>age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span><br></span><span>print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span><br></span><span><br></span><span>print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span><br></span><span>print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span><br></span><span>print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span><br></span></code></pre>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">int</code>, <code v-pre="">float</code>, <code v-pre="">str</code> functions can be used to convert a data value of one type to another. The built-in function <code v-pre="">type</code> tells you the type of a value.</p>
+              <pre><code class="hljs python" v-pre=""><span>age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span><br></span><span>print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span><br></span><span><br></span><span>print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span><br></span><span>print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span><br></span><span>print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span><br></span></code></pre>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-              <pre><code class="hljs"><span>My age is 25<br></span><span>&lt;class 'int'&gt;<br></span><span>&lt;class 'str'&gt;<br></span><span>&lt;class 'float'&gt;<br></span></code></pre>
+              <pre><code class="hljs" v-pre=""><span>My age is 25<br></span><span>&lt;class 'int'&gt;<br></span><span>&lt;class 'str'&gt;<br></span><span>&lt;class 'float'&gt;<br></span></code></pre>
               <panel type="seamless" class="algolia-no-index"><template slot="_header">
                   <p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p>
                 </template>
@@ -187,8 +224,8 @@
                 <p></p>
               </panel>
               <p></p>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user <mark>as a string</mark>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how a call to the <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
-              <pre><code class="hljs python"><span><span class="hljs-comment"># read current price</span><br></span><span>print(<span class="hljs-string">'What is the current price?'</span>)<br></span><span>price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span><br></span><span><br></span><span><span class="hljs-comment"># print current price</span><br></span><span>print() <span class="hljs-comment"># print an empty line</span><br></span><span>print(<span class="hljs-string">'Current price is $'</span> + price) <span class="hljs-comment"># no need to convert; price is already a string</span><br></span><span><br></span><span><span class="hljs-comment"># calculate and show discounted price</span><br></span><span>discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span><br></span><span>print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span><br></span></code></pre>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre="">input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user <mark>as a string</mark>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note how a call to the <code v-pre="">print</code> without any arguments (i.e. <code v-pre="">print()</code>) prints an empty line.</p>
+              <pre><code class="hljs python" v-pre=""><span><span class="hljs-comment"># read current price</span><br></span><span>print(<span class="hljs-string">'What is the current price?'</span>)<br></span><span>price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span><br></span><span><br></span><span><span class="hljs-comment"># print current price</span><br></span><span>print() <span class="hljs-comment"># print an empty line</span><br></span><span>print(<span class="hljs-string">'Current price is $'</span> + price) <span class="hljs-comment"># no need to convert; price is already a string</span><br></span><span><br></span><span><span class="hljs-comment"># calculate and show discounted price</span><br></span><span>discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span><br></span><span>print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span><br></span></code></pre>
               <panel type="seamless" class="algolia-no-index"><template slot="_header">
                   <p><span class="dimmed"><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</span></p>
                 </template>
@@ -198,14 +235,14 @@
                 </template>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header">
+                <panel type="danger" expanded="" no-close=""><template slot="_header">
                     <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Length of Names</p>
                   </template>
                   <div>
                     <h4 id="exercise-length-of-name">Exercise : Length of Name<a class="fa fa-anchor" href="#exercise-length-of-name" onclick="event.stopPropagation()"></a></h4>
                     <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
-                    <pre><code class="hljs"><span>What is your name?<br></span><span>John Doe<br></span><span>The length of your name is 8<br></span></code></pre>
-                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed">e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+                    <pre><code class="hljs" v-pre=""><span>What is your name?<br></span><span>John Doe<br></span><span>The length of your name is 8<br></span></code></pre>
+                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> In addition to functions <code v-pre="">print</code> and <code v-pre="">input</code>, you may need the <code v-pre="">len</code> function <span class="dimmed">e.g., <code v-pre="">len('abc')</code> returns <code v-pre="">3</code></span>.</p>
                   </div>
                 </panel>
                 <p></p>
@@ -236,7 +273,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

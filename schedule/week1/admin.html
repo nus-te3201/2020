@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -86,7 +87,7 @@
           </nav>
           <p></p>
           <h1 id="week-1-jan-13-tasks">Week 1 <small><small><span class="dimmed">[Jan 13]</span> - Tasks</small></small><a class="fa fa-anchor" href="#week-1-jan-13-tasks" onclick="event.stopPropagation()"></a></h1>
-          <box type="info" dismissible>
+          <box type="info" dismissible="">
             <p>Admin info relevant to the week will appear in this tab.
             </p>
           </box>
@@ -97,12 +98,12 @@
                 <li>Submit the pre-module survey <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span></span></li>
                 <li>Attend the lecture</li>
                 <li>Submit weekly exercises</li>
-                <li>Submit weekly project increment <code>Monty Level 1. Echo Once</code></li>
+                <li>Submit weekly project increment <code v-pre="">Monty Level 1. Echo Once</code></li>
               </ol>
             </div>
             <h4 id="1-learn-about-the-module-and-the-website"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Learn about the module and the website<a class="fa fa-anchor" href="#1-learn-about-the-module-and-the-website" onclick="event.stopPropagation()"></a></h4>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> About the module <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
@@ -113,7 +114,7 @@
             </div>
             <p></p>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Using the website <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
@@ -124,15 +125,15 @@
                       </p>
                       <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> More details for the upcoming weeks will be added as the weeks progress. In general, <mark>information given for more than 1 week into the future should be treated as <em>tentative</em></mark>.</p>
                       <div>
-                        <h3 id="browser-compatibility">Browser Compatibility<a class="fa fa-anchor" href="#browser-compatibility" onclick="event.stopPropagation()"></a></h3>
+                        <h3 id="browser-compatibility">Browser compatibility<a class="fa fa-anchor" href="#browser-compatibility" onclick="event.stopPropagation()"></a></h3>
                         <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
                       </div>
                       <div>
-                        <h3 id="information-layers">Information Layers<a class="fa fa-anchor" href="#information-layers" onclick="event.stopPropagation()"></a></h3>
+                        <h3 id="information-layers">Information layers<a class="fa fa-anchor" href="#information-layers" onclick="event.stopPropagation()"></a></h3>
                         <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
                         <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
                         <box>
-                          <panel minimized class="algolia-no-index"><template slot="_header">
+                          <panel minimized="" class="algolia-no-index"><template slot="_header">
                               <p>Some less important info in a minimized panel</p>
                             </template>
                             <p>Less important info</p>
@@ -171,12 +172,12 @@
                             Additional information
                           </div>
                         </span>
-                        <b-modal id="modal:modal-example" hide-footer size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template>
+                        <b-modal id="modal:modal-example" hide-footer="" size="" modal-class="mb-zoom" ref="modal:modal-example" class="algolia-no-index"><template slot="modal-title">Modal Example</template>
                           Additional information
                         </b-modal>
                       </div>
                       <p>This website <mark>uses a star rating system</mark> to indicate the priority level of contents.</p>
-                      <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                           <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Module Expectations → Star Rating System</p>
                         </template>
                         <div>
@@ -211,8 +212,8 @@
                     </div>
                     <div id="more">
                       <div name="Conventions Used">
-                        <h3 id="conventions-used">Conventions Used<a class="fa fa-anchor" href="#conventions-used" onclick="event.stopPropagation()"></a></h3>
-                        <h4 id="shorthand-headings">Shorthand Headings<a class="fa fa-anchor" href="#shorthand-headings" onclick="event.stopPropagation()"></a></h4>
+                        <h3 id="conventions-used">Conventions used<a class="fa fa-anchor" href="#conventions-used" onclick="event.stopPropagation()"></a></h3>
+                        <h4 id="shorthand-headings">Shorthand headings<a class="fa fa-anchor" href="#shorthand-headings" onclick="event.stopPropagation()"></a></h4>
                         <p>Meaning of some shortened headings:</p>
                         <ul>
                           <li>
@@ -248,7 +249,7 @@
                             </p>
                           </li>
                         </ul>
-                        <h4 id="boxed-text-styles">Boxed-Text Styles<a class="fa fa-anchor" href="#boxed-text-styles" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="boxed-text-styles">Boxed-text styles<a class="fa fa-anchor" href="#boxed-text-styles" onclick="event.stopPropagation()"></a></h4>
                         <div class="indented">
                           <box type="info">
                             additional info
@@ -272,10 +273,10 @@
                             definition
                           </box>
                         </div>
-                        <h4 id="meaning-of-icons">Meaning of Icons<a class="fa fa-anchor" href="#meaning-of-icons" onclick="event.stopPropagation()"></a></h4>
+                        <h4 id="meaning-of-icons">Meaning of icons<a class="fa fa-anchor" href="#meaning-of-icons" onclick="event.stopPropagation()"></a></h4>
                         <div class="indented">
                           <p><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span></span> : tangential info, can be ignored if not interested<br>
-                            <span><span aria-hidden="true" class="glyphicon glyphicon-new-window"></span></span> : direct link to the LO. <kbd>Ctrl</kbd>+<code>Click</code> to open the LO in new window/tab.<br>
+                            <span><span aria-hidden="true" class="glyphicon glyphicon-new-window"></span></span> : direct link to the LO. <kbd>Ctrl</kbd>+<code v-pre="">Click</code> to open the LO in new window/tab.<br>
                             <span><span aria-hidden="true" class="fas fa-trophy"></span></span> : learning outcomes<br>
                             <span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : prerequisite learning outcome<br>
                             <span><span aria-hidden="true" class="fas fa-cube"></span></span> : examples<br>
@@ -303,16 +304,16 @@
                       <h3 id="searching-for-keywords">Searching for keywords<a class="fa fa-anchor" href="#searching-for-keywords" onclick="event.stopPropagation()"></a></h3>
                       <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum">in the forum</a> so that we can add the missing keyword to our search index.</p>
                       <div>
-                        <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
+                        <h3 id="saving-as-pdf-files">Saving as PDF files<a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
                         <ol>
                           <li>
                             <p>Use Chrome to load the page you want to save as pdf.</p>
                           </li>
                           <li>
-                            <p>Click on the <code>Print</code> option in Chrome’s menu.</p>
+                            <p>Click on the <code v-pre="">Print</code> option in Chrome’s menu.</p>
                           </li>
                           <li>
-                            <p>Set the destination to <code>Save as PDF</code>, then click <code>Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
+                            <p>Set the destination to <code v-pre="">Save as PDF</code>, then click <code v-pre="">Save</code> to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br>
                               <img src="/2020/book/about/images/chromeSaveAsPdf.png"></p>
                           </li>
                         </ol>
@@ -336,7 +337,7 @@
               <li>The lecture will start at 6.30pm.</li>
             </ul>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Lectures <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
@@ -359,14 +360,14 @@
             <p></p>
             <h4 id="4-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#4-submit-weekly-exercises" onclick="event.stopPropagation()"></a></h4>
             <ul>
-              <li>As you learn the weekly topics, submit Week 1 programming exercise on <code>repl.it</code>. See the panel below for more info. More instructions about this will be provided during the lecture.</li>
+              <li>As you learn the weekly topics, submit Week 1 programming exercise on <code v-pre="">repl.it</code>. See the panel below for more info. More instructions about this will be provided during the lecture.</li>
             </ul>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Programming Exercises <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
-                  <p>In some weeks, there will be some programming exercises for you to submit (on <code>Repl.it</code>). You should do the exercises as you learn the topics.</p>
+                  <p>In some weeks, there will be some programming exercises for you to submit (on <code v-pre="">Repl.it</code>). You should do the exercises as you learn the topics.</p>
                   <box type="warning">
                     <p><strong>Learn the topic first before trying the exercises</strong>. While these are exercises provided to self-test your knowledge, the more important thing is to read and understand the topic content. Furthermore, not all topics are tested by exercises.
                     </p>
@@ -376,32 +377,32 @@
             </div>
             <p></p>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                  <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <code>repl.it</code> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
+                  <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <code v-pre="">repl.it</code> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
-                  <h3 id="repl-it"><code>repl.it</code><a class="fa fa-anchor" href="#repl-it" onclick="event.stopPropagation()"></a></h3>
+                  <h3 id="repl-it"><code v-pre="">repl.it</code><a class="fa fa-anchor" href="#repl-it" onclick="event.stopPropagation()"></a></h3>
                   <ul>
-                    <li>We'll be using <code>Repl.it</code> for coding exercises (compulsory).</li>
+                    <li>We'll be using <code v-pre="">Repl.it</code> for coding exercises (compulsory).</li>
                     <li>
                       <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Create an account on <a href="https://repl.it">https://repl.it</a>.
                     </li>
-                    <li><mark>Make sure you set your display name in your <code>repl.it</code> user profile to match your real name</mark> (so that the prof can trace your <code>repl.it</code> submissions to you).</li>
-                    <li>Join the <code>repl.it</code> classroom <code>tic2002-2020</code> using this link <a href="https://repl.it/classroom/invite/jcXc9CX">https://repl.it/classroom/invite/jcXc9CX</a>.</li>
+                    <li><mark>Make sure you set your display name in your <code v-pre="">repl.it</code> user profile to match your real name</mark> (so that the prof can trace your <code v-pre="">repl.it</code> submissions to you).</li>
+                    <li>Join the <code v-pre="">repl.it</code> classroom <code v-pre="">tic2002-2020</code> using this link <a href="https://repl.it/classroom/invite/jcXc9CX">https://repl.it/classroom/invite/jcXc9CX</a>.</li>
                   </ul>
                 </div>
               </panel>
             </div>
             <p></p>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Getting Help <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
                   <p>If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks</p>
                   <ul>
                     <li>you can post in the <a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum">module forum</a></li>
-                    <li>email prof at <span><code>damith</code>[at]<code>comp.nus.edu.sg</code></span></li>
+                    <li>email prof at <span><code v-pre="">damith</code>[at]<code v-pre="">comp.nus.edu.sg</code></span></li>
                     <li>ask for prof's help during the following week’s tutorial hour</li>
                   </ul>
                 </div>
@@ -421,7 +422,7 @@
               <li>Learn about the project:</li>
             </ul>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
@@ -444,7 +445,7 @@
             <p></p>
             <div>
               <div class="indented-level2">
-                <panel type="primary" no-close class="algolia-no-index">
+                <panel type="primary" no-close="" class="algolia-no-index">
                   <div></div>
                   <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Monty - Overview</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                   <div></div>
@@ -457,7 +458,7 @@
                     </div>
                     <p><strong>The project aims to build a product named <em>Monty</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Monty</em> was chosen as a placeholder name, in honor of the <a href="https://en.wikipedia.org/wiki/Monty_Python">Monty Python comedy group</a> whose work inspired the name of the the Python language.</span> <strong>You may give it any other name and personality you wish.</strong></p>
                     <p>Here is a sample interaction with Monty:</p>
-                    <pre><code class="hljs"><span>*******************************************************************************************<br></span><span>*  __          __  _                            _          __  __             _           *<br></span><span>*  \ \        / / | |                          | |        |  \/  |           | |          *<br></span><span>*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *<br></span><span>*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *<br></span><span>*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *<br></span><span>*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *<br></span><span>*                                                                                  __/ |  *<br></span><span>*                                                                                 |___/   *<br></span><span>******************************************************************************************* <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>help<br></span><span>&gt;&gt;&gt; I'm glad you asked. Here it is:<br></span><span>==================================================<br></span><span>Monty can understand the following commands:<br></span><span><br></span><span>  add DESCRIPTION <br></span><span>    Adds a task with the DESCRIPTION to the list<br></span><span>    Example: add read book<br></span><span>  done INDEX<br></span><span>    Marks the task at INDEX as 'done'<br></span><span>    Example: done 1<br></span><span>  exit<br></span><span>    Exits the application<br></span><span>  help<br></span><span>    Shows the help information<br></span><span>  list<br></span><span>    Lists the tasks in the list<br></span><span>-------------------------------------------------- <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; Task added to the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; Task added to the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 1<br></span><span>&gt;&gt;&gt; Congrats on completing a task! :-)<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>==================================================<br></span><span>STATUS | INDEX | DESCRIPTION                <br></span><span>--------------------------------------------------<br></span><span>  ✓    |   1   | read book                  <br></span><span>  ✗    |   2   | return book                <br></span><span>--------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
+                    <pre><code class="hljs" v-pre=""><span>*******************************************************************************************<br></span><span>*  __          __  _                            _          __  __             _           *<br></span><span>*  \ \        / / | |                          | |        |  \/  |           | |          *<br></span><span>*   \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | \  / | ___  _ __ | |_ _   _   *<br></span><span>*    \ \/  \/ / _ \ |/ __/ _ \| '_ ' _ \ / _ \ | __/ _ \  | |\/| |/ _ \| '_ \| __| | | |  *<br></span><span>*     \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |  | | (_) | | | | |_| |_| |  *<br></span><span>*      \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  |_|  |_|\___/|_| |_|\__|\__, |  *<br></span><span>*                                                                                  __/ |  *<br></span><span>*                                                                                 |___/   *<br></span><span>******************************************************************************************* <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>help<br></span><span>&gt;&gt;&gt; I'm glad you asked. Here it is:<br></span><span>==================================================<br></span><span>Monty can understand the following commands:<br></span><span><br></span><span>  add DESCRIPTION <br></span><span>    Adds a task with the DESCRIPTION to the list<br></span><span>    Example: add read book<br></span><span>  done INDEX<br></span><span>    Marks the task at INDEX as 'done'<br></span><span>    Example: done 1<br></span><span>  exit<br></span><span>    Exits the application<br></span><span>  help<br></span><span>    Shows the help information<br></span><span>  list<br></span><span>    Lists the tasks in the list<br></span><span>-------------------------------------------------- <br></span><span><br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; Task added to the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; Task added to the list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>done 1<br></span><span>&gt;&gt;&gt; Congrats on completing a task! :-)<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>==================================================<br></span><span>STATUS | INDEX | DESCRIPTION                <br></span><span>--------------------------------------------------<br></span><span>  ✓    |   1   | read book                  <br></span><span>  ✗    |   2   | return book                <br></span><span>--------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
                   </div>
                 </panel>
               </div>
@@ -467,7 +468,7 @@
               <li>Note how the project can affect participation marks:</li>
             </ul>
             <div class="indented-level2">
-              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+              <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Assessment <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                 </template>
                 <div>
@@ -482,7 +483,7 @@
                     </li>
                     <li><strong>60%: Final Exam</strong></li>
                   </ul>
-                  <b-modal id="modal:adminInfo-deadlineInfo" hide-footer size="lg" modal-class="mb-zoom" ref="modal:adminInfo-deadlineInfo"><template slot="modal-title">The Policy on Deadlines</template>
+                  <b-modal id="modal:adminInfo-deadlineInfo" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:adminInfo-deadlineInfo" class="algolia-no-index"><template slot="modal-title">The Policy on Deadlines</template>
                     <div>
                       <h3 id="deadlines">Deadlines<a class="fa fa-anchor" href="#deadlines" onclick="event.stopPropagation()"></a></h3>
                       <ul>
@@ -506,22 +507,22 @@
             <p></p>
             <span id="week1-project">
               <ul>
-                <li>Use the exercise <code>Week 1 Project Submission</code> on <a href="http://repl.it">repl.it</a> to do this week's project task given below.</li>
+                <li>Use the exercise <code v-pre="">Week 1 Project Submission</code> on <a href="http://repl.it">repl.it</a> to do this week's project task given below.</li>
               </ul>
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 1. Echo Once</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
                     <div>
                       <h3 id="level-1-echo-once"><span class="badge badge-primary">Level 1</span> <span class="text-primary">Echo Once</span><a class="fa fa-anchor" href="#level-1-echo-once" onclick="event.stopPropagation()"></a></h3>
                       <p>Write a Python program to read in one user command and repeat it back to the user. An example output is given below.</p>
-                      <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span>foo<br></span><span>&gt;&gt;&gt; Your command is: foo<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
-                      <panel minimized class="algolia-no-index"><template slot="_header">
+                      <pre><code class="hljs" v-pre=""><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span>foo<br></span><span>&gt;&gt;&gt; Your command is: foo<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                      <panel minimized="" class="algolia-no-index"><template slot="_header">
                           <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
                         </template>
-                        <pre><code class="hljs python"><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)<br></span><span><span class="hljs-comment"># ADD MORE CODE HERE</span><br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)<br></span><span><span class="hljs-comment"># ADD MORE CODE HERE</span><br></span></code></pre>
                       </panel>
                     </div>
                   </panel>
@@ -551,7 +552,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

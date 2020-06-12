@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -71,96 +72,140 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Implementation</strong>
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/codeQuality.html" class="site-nav__a current">Code Quality</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/modeling.html">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/integration.html">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/codeQuality.html" class="current">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/reuse.html">Reuse</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -173,16 +218,16 @@
           <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
-              <h1 id="code-quality"><span>Code Quality</span><a class="fa fa-anchor" href="#code-quality" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="code-quality"><span>Code quality</span><a class="fa fa-anchor" href="#code-quality" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction">
+          <panel type="seamless" expanded="" id="introduction">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="basic"><template slot="_header">
+            <panel type="seamless" expanded="" id="basic"><template slot="_header">
                 <h4 id="basic">Basic<a class="fa fa-anchor" href="#basic" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -196,7 +241,7 @@
                   <blockquote>
                     <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
                   </blockquote>
-                  <p><strong><span for="pop:production-code" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:production-code'].show()" class="trigger">Production code</span> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+                  <p><strong><span for="pop:production-code" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:production-code'].show()" class="trigger">Production code</span> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something no one can afford to tolerate.</p>
                   <span id="pop:production-code" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> Production Code</span>
                     <div data-mb-html-for="content">
                       Code being used in an actual product with actual users
@@ -207,13 +252,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="guideline-maximise-readability">
+          <panel type="seamless" expanded="" id="guideline-maximise-readability">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="guideline-maximise-readability"><span>Guideline: Maximise readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="introduction-2"><template slot="_header">
+            <panel type="seamless" expanded="" id="introduction-2"><template slot="_header">
                 <h4 id="introduction-2">Introduction<a class="fa fa-anchor" href="#introduction-2" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -227,7 +272,7 @@
                   <blockquote>
                     <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Programs should be written and polished until they acquire publication quality. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span> <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
                   </blockquote>
-                  <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
+                  <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood, and modified by other developers later on. Even if you do not intend to pass the code to someone else, code quality is still important because you will become a 'stranger' to your own code someday.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
                     <div class="alt-java">
@@ -238,14 +283,14 @@
                               <p>
                                 <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                               </p>
-                              <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (!age) {<br></span><span>        <span class="hljs-keyword">if</span> (!sub) {<br></span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {<br></span><span>                subsidy = <span class="hljs-number">500</span>;<br></span><span>            } <span class="hljs-keyword">else</span> {<br></span><span>                subsidy = <span class="hljs-number">250</span>;<br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            subsidy = <span class="hljs-number">250</span>;<br></span><span>        }<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = -<span class="hljs-number">1</span>;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (!age) {<br></span><span>        <span class="hljs-keyword">if</span> (!sub) {<br></span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {<br></span><span>                subsidy = <span class="hljs-number">500</span>;<br></span><span>            } <span class="hljs-keyword">else</span> {<br></span><span>                subsidy = <span class="hljs-number">250</span>;<br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            subsidy = <span class="hljs-number">250</span>;<br></span><span>        }<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = -<span class="hljs-number">1</span>;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
                             </td>
                             <td>&nbsp;&nbsp;<br><br></td>
                             <td valign="top">
                               <p>
                                 <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                               </p>
-                              <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (isSenior) {<br></span><span>        subsidy = REJECT_SENIOR;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {<br></span><span>        subsidy = SUBSIDISED_SUBSIDY;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {<br></span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = FULLTIME_SUBSIDY;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (isSenior) {<br></span><span>        subsidy = REJECT_SENIOR;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {<br></span><span>        subsidy = SUBSIDISED_SUBSIDY;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {<br></span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = FULLTIME_SUBSIDY;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
                             </td>
                           </tr>
                         </table>
@@ -259,14 +304,14 @@
                               <p>
                                 <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                               </p>
-                              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:<br></span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:<br></span><span>                subsidy = <span class="hljs-number">500</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                subsidy = <span class="hljs-number">250</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            subsidy = <span class="hljs-number">250</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        subsidy = <span class="hljs-number">-1</span><br></span><span>    <span class="hljs-keyword">return</span> subsidy<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:<br></span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:<br></span><span>                subsidy = <span class="hljs-number">500</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                subsidy = <span class="hljs-number">250</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            subsidy = <span class="hljs-number">250</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        subsidy = <span class="hljs-number">-1</span><br></span><span>    <span class="hljs-keyword">return</span> subsidy<br></span></code></pre>
                             </td>
                             <td>&nbsp;&nbsp;<br><br></td>
                             <td valign="top">
                               <p>
                                 <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                               </p>
-                              <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> is_senior:<br></span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR<br></span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:<br></span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY<br></span><span>    <span class="hljs-keyword">elif</span> is_parttime:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY<br></span></code></pre>
+                              <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> is_senior:<br></span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR<br></span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:<br></span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY<br></span><span>    <span class="hljs-keyword">elif</span> is_parttime:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY<br></span></code></pre>
                             </td>
                           </tr>
                         </table>
@@ -277,13 +322,13 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="basic-2">
+            <panel type="seamless" expanded="" id="basic-2">
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="basic-2"><span>Basic</span><a class="fa fa-anchor" href="#basic-2" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="avoid-long-methods"><template slot="_header">
+              <panel type="seamless" expanded="" id="avoid-long-methods"><template slot="_header">
                   <h4 id="avoid-long-methods">Avoid Long Methods<a class="fa fa-anchor" href="#avoid-long-methods" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -299,7 +344,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="avoid-deep-nesting"><template slot="_header">
+              <panel type="seamless" expanded="" id="avoid-deep-nesting"><template slot="_header">
                   <h4 id="avoid-deep-nesting">Avoid Deep Nesting<a class="fa fa-anchor" href="#avoid-deep-nesting" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -326,14 +371,14 @@
                                 <p>
                                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                 </p>
-                                <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (!age) {<br></span><span>        <span class="hljs-keyword">if</span> (!sub) {<br></span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {<br></span><span>                subsidy = <span class="hljs-number">500</span>;<br></span><span>            } <span class="hljs-keyword">else</span> {<br></span><span>                subsidy = <span class="hljs-number">250</span>;<br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            subsidy = <span class="hljs-number">250</span>;<br></span><span>        }<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = -<span class="hljs-number">1</span>;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (!age) {<br></span><span>        <span class="hljs-keyword">if</span> (!sub) {<br></span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {<br></span><span>                subsidy = <span class="hljs-number">500</span>;<br></span><span>            } <span class="hljs-keyword">else</span> {<br></span><span>                subsidy = <span class="hljs-number">250</span>;<br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            subsidy = <span class="hljs-number">250</span>;<br></span><span>        }<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = -<span class="hljs-number">1</span>;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
                                 <p>
                                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                 </p>
-                                <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (isSenior) {<br></span><span>        subsidy = REJECT_SENIOR;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {<br></span><span>        subsidy = SUBSIDISED_SUBSIDY;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {<br></span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = FULLTIME_SUBSIDY;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> subsidy;<br></span><span>    <span class="hljs-keyword">if</span> (isSenior) {<br></span><span>        subsidy = REJECT_SENIOR;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {<br></span><span>        subsidy = SUBSIDISED_SUBSIDY;<br></span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {<br></span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;<br></span><span>    } <span class="hljs-keyword">else</span> {<br></span><span>        subsidy = FULLTIME_SUBSIDY;<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> subsidy;<br></span><span>}<br></span></code></pre>
                               </td>
                             </tr>
                           </table>
@@ -347,14 +392,14 @@
                                 <p>
                                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                 </p>
-                                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:<br></span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:<br></span><span>                subsidy = <span class="hljs-number">500</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                subsidy = <span class="hljs-number">250</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            subsidy = <span class="hljs-number">250</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        subsidy = <span class="hljs-number">-1</span><br></span><span>    <span class="hljs-keyword">return</span> subsidy<br></span></code></pre>
+                                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:<br></span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:<br></span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:<br></span><span>                subsidy = <span class="hljs-number">500</span><br></span><span>            <span class="hljs-keyword">else</span>:<br></span><span>                subsidy = <span class="hljs-number">250</span><br></span><span>        <span class="hljs-keyword">else</span>:<br></span><span>            subsidy = <span class="hljs-number">250</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        subsidy = <span class="hljs-number">-1</span><br></span><span>    <span class="hljs-keyword">return</span> subsidy<br></span></code></pre>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
                                 <p>
                                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                 </p>
-                                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> is_senior:<br></span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR<br></span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:<br></span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY<br></span><span>    <span class="hljs-keyword">elif</span> is_parttime:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY<br></span></code></pre>
+                                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> is_senior:<br></span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR<br></span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:<br></span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY<br></span><span>    <span class="hljs-keyword">elif</span> is_parttime:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY<br></span></code></pre>
                               </td>
                             </tr>
                           </table>
@@ -365,7 +410,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="avoid-complicated-expressions"><template slot="_header">
+              <panel type="seamless" expanded="" id="avoid-complicated-expressions"><template slot="_header">
                   <h4 id="avoid-complicated-expressions">Avoid Complicated Expressions<a class="fa fa-anchor" href="#avoid-complicated-expressions" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -384,11 +429,11 @@
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                           </p>
-                          <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);<br></span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                           </p>
-                          <pre><code class="hljs java"><span><br></span><span><span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;<br></span><span><span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;<br></span><span><span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;<br></span><span><br></span><span><span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;<br></span><span><br></span><span><span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><br></span><span><span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;<br></span><span><span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;<br></span><span><span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;<br></span><span><br></span><span><span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;<br></span><span><br></span><span><span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;<br></span></code></pre>
                         </box>
                       </div>
                     </div>
@@ -399,11 +444,11 @@
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                           </p>
-                          <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)<br></span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                           </p>
-                          <pre><code class="hljs python"><span>is_within_size_limit = length &lt; MAX_LENGTH<br></span><span>is_same_size = previous_size != length<br></span><span>is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size<br></span><span><br></span><span>is_urgent = type_code == URGENT<br></span><span><br></span><span><span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span>is_within_size_limit = length &lt; MAX_LENGTH<br></span><span>is_same_size = previous_size != length<br></span><span>is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size<br></span><span><br></span><span>is_urgent = type_code == URGENT<br></span><span><br></span><span><span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent<br></span></code></pre>
                         </box>
                       </div>
                     </div>
@@ -414,7 +459,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="avoid-magic-numbers"><template slot="_header">
+              <panel type="seamless" expanded="" id="avoid-magic-numbers"><template slot="_header">
                   <h4 id="avoid-magic-numbers">Avoid Magic Numbers<a class="fa fa-anchor" href="#avoid-magic-numbers" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -425,7 +470,7 @@
                   <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can improve code quality using technique: avoid magic numbers </span></span></span></span>
                   <p></p>
                   <div>
-                    <p>When the code has a number that does not explain the meaning of the number, we call that a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., <code>PI</code></span><em>named constant</em></span> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                    <p>When the code has a number that does not explain the meaning of the number, it is called a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., <code v-pre="">PI</code></span><em>named constant</em></span> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                       <div class="alt-java">
@@ -436,14 +481,14 @@
                                 <p>
                                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                 </p>
-                                <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;<br></span></code></pre>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
                                 <p>
                                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                 </p>
-                                <pre><code class="hljs java"><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;<br></span><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;<br></span></code></pre>
+                                <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;<br></span><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI;<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;<br></span></code></pre>
                               </td>
                             </tr>
                           </table>
@@ -451,37 +496,37 @@
                       </div>
                       <div class="alt-python">
                         <div>
-                          <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                          <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code v-pre="">ALL_CAPS</code> name to simulate a constant.</p>
                           <table>
                             <tr>
                               <td valign="top">
                                 <p>
                                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                                 </p>
-                                <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span><br></span></code></pre>
+                                <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span><br></span></code></pre>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
                                 <p>
                                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                                 </p>
-                                <pre><code class="hljs python"><span>PI = <span class="hljs-number">3.14236</span><br></span><span>MAX_SIZE = <span class="hljs-number">10</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span><br></span></code></pre>
+                                <pre><code class="hljs python" v-pre=""><span>PI = <span class="hljs-number">3.14236</span><br></span><span>MAX_SIZE = <span class="hljs-number">10</span><br></span><span>...<br></span><span><span class="hljs-keyword">return</span> PI<br></span><span>...<br></span><span><span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span><br></span></code></pre>
                               </td>
                             </tr>
                           </table>
                         </div>
                       </div>
                     </box>
-                    <p>Similarly, we can have ‘magic’ values of other data types.</p>
+                    <p>Similarly, you can have ‘magic’ values of other data types.</p>
                     <box>
                       <p>
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                       </p>
                       <div class="alt-java">
-                        <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span><br></span></code></pre>
+                        <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span><br></span></code></pre>
                       </div>
                       <div class="alt-python">
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span><br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span><br></span></code></pre>
                       </div>
                     </box>
                     <p>In general, try to avoid any magic literals.</p>
@@ -489,7 +534,7 @@
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="make-the-code-obvious"><template slot="_header">
+              <panel type="seamless" expanded="" id="make-the-code-obvious"><template slot="_header">
                   <h4 id="make-the-code-obvious">Make the Code Obvious<a class="fa fa-anchor" href="#make-the-code-obvious" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -502,11 +547,11 @@
                   <div>
                     <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
                     <ul>
-                      <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
-                      <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                      <li>[<code>Java</code>, <code>Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()" class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                      <li>[<code v-pre="">Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                      <li>[<code v-pre="">Java</code>, <code v-pre="">Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                      <li>[<code v-pre="">Java</code>, <code v-pre="">Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()" class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code v-pre="">SystemState</code> and define an enumeration <code v-pre="">SystemState</code> that has values <code v-pre="">'STARTING'</code>, <code v-pre="">'ENABLED'</code>, and <code v-pre="">'DISABLED'</code>.</li>
                     </ul>
-                    <b-modal id="modal:obviousCode-enums" hide-footer size modal-class="mb-zoom" ref="modal:obviousCode-enums"><template slot="modal-title">More about enumerations</template>
+                    <b-modal id="modal:obviousCode-enums" hide-footer="" size="" modal-class="mb-zoom" ref="modal:obviousCode-enums" class="algolia-no-index"><template slot="modal-title">More about enumerations</template>
                       <ul>
                         <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
                         <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
@@ -518,13 +563,13 @@
               </panel>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="guideline-follow-a-standard">
+          <panel type="seamless" expanded="" id="guideline-follow-a-standard">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="introduction-3"><template slot="_header">
+            <panel type="seamless" expanded="" id="introduction-3"><template slot="_header">
                 <h4 id="introduction-3">Introduction<a class="fa fa-anchor" href="#introduction-3" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -541,7 +586,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -566,7 +611,7 @@
                         <panel class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is the aim? What is the value?</p>
                           </template>
-                          <question has-input>
+                          <question has-input="">
                             <p>What is the aim of using a coding standard? How does it help?</p>
                           </question>
                         </panel>
@@ -576,7 +621,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="basic-3"><template slot="_header">
+            <panel type="seamless" expanded="" id="basic-3"><template slot="_header">
                 <h4 id="basic-3">Basic<a class="fa fa-anchor" href="#basic-3" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -596,7 +641,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expanded><template slot="_header">
+                    <panel expanded=""><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -606,14 +651,14 @@
                             </template>
                             <question>
                               <p>Consider the code given below:</p>
-                              <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.*;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;<br></span><span>    <span class="hljs-keyword">private</span> String description;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;<br></span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{<br></span><span>      <span class="hljs-keyword">this</span>.description = d;<br></span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())<br></span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }<br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment">     * Print the description as a string.</span><br></span><span><span class="hljs-comment">     */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }<br></span><span>}<br></span></code></pre>
+                              <pre><code class="hljs java" v-pre=""><span><span class="hljs-keyword">import</span> java.util.*;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;<br></span><span>    <span class="hljs-keyword">private</span> String description;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;<br></span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{<br></span><span>      <span class="hljs-keyword">this</span>.description = d;<br></span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())<br></span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }<br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment">     * Print the description as a string.</span><br></span><span><span class="hljs-comment">     */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }<br></span><span>}<br></span></code></pre>
                               <p>In what ways the code violate the coding standard you are expected to follow?</p>
                               <div slot="hint" class="algolia-no-index">
                                 <p>Here are three:</p>
                                 <ul>
-                                  <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
-                                  <li>method name <code>printingDescription()</code> should be named as <code>printDescription()</code></li>
-                                  <li>boolean variable <code>important</code> should be named to sound boolean e.g., <code>isImportant</code></li>
+                                  <li><code v-pre="">descriptionPrefix</code> is a constant and should be named <code v-pre="">DESCRIPTION_PREFIX</code></li>
+                                  <li>method name <code v-pre="">printingDescription()</code> should be named as <code v-pre="">printDescription()</code></li>
+                                  <li>boolean variable <code v-pre="">important</code> should be named to sound boolean e.g., <code v-pre="">isImportant</code></li>
                                 </ul>
                                 <p>There are many more.</p>
                               </div>
@@ -627,13 +672,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="guideline-name-well">
+          <panel type="seamless" expanded="" id="guideline-name-well">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="guideline-name-well"><span>Guideline: Name well</span><a class="fa fa-anchor" href="#guideline-name-well" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="introduction-4"><template slot="_header">
+            <panel type="seamless" expanded="" id="introduction-4"><template slot="_header">
                 <h4 id="introduction-4">Introduction<a class="fa fa-anchor" href="#introduction-4" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -652,13 +697,13 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="basic-4">
+            <panel type="seamless" expanded="" id="basic-4">
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="basic-4"><span>Basic</span><a class="fa fa-anchor" href="#basic-4" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="use-nouns-for-things-and-verbs-for-actions"><template slot="_header">
+              <panel type="seamless" expanded="" id="use-nouns-for-things-and-verbs-for-actions"><template slot="_header">
                   <h4 id="use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions<a class="fa fa-anchor" href="#use-nouns-for-things-and-verbs-for-actions" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -691,13 +736,13 @@
                           <tbody>
                             <tr>
                               <td>Class</td>
-                              <td><code>CheckLimit</code></td>
-                              <td><code>LimitChecker</code></td>
+                              <td><code v-pre="">CheckLimit</code></td>
+                              <td><code v-pre="">LimitChecker</code></td>
                             </tr>
                             <tr>
                               <td>method</td>
-                              <td><code>result()</code></td>
-                              <td><code>calculate()</code></td>
+                              <td><code v-pre="">result()</code></td>
+                              <td><code v-pre="">calculate()</code></td>
                             </tr>
                           </tbody>
                         </table>
@@ -710,20 +755,20 @@
                         <p>
                           <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                         </p>
-                        <pre><code class="hljs java"><span>Person student;<br></span><span>ArrayList&lt;Person&gt; students;<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre=""><span>Person student;<br></span><span>ArrayList&lt;Person&gt; students;<br></span></code></pre>
                       </div>
                       <div class="alt-python">
                         <p>
                           <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                         </p>
-                        <pre><code class="hljs python"><span>name = <span class="hljs-string">'Jim'</span><br></span><span>names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>name = <span class="hljs-string">'Jim'</span><br></span><span>names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]<br></span></code></pre>
                       </div>
                     </box>
                   </div>
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="use-standard-words"><template slot="_header">
+              <panel type="seamless" expanded="" id="use-standard-words"><template slot="_header">
                   <h4 id="use-standard-words">Use Standard Words<a class="fa fa-anchor" href="#use-standard-words" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -741,13 +786,13 @@
               </panel>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="guideline-comment-minimally-but-sufficiently">
+          <panel type="seamless" expanded="" id="guideline-comment-minimally-but-sufficiently">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment minimally, but sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="introduction-5"><template slot="_header">
+            <panel type="seamless" expanded="" id="introduction-5"><template slot="_header">
                 <h4 id="introduction-5">Introduction<a class="fa fa-anchor" href="#introduction-5" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -766,13 +811,13 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="basic-5">
+            <panel type="seamless" expanded="" id="basic-5">
               <span slot="header" class="card-title">
                 <div>
                   <h3 id="basic-5"><span>Basic</span><a class="fa fa-anchor" href="#basic-5" onclick="event.stopPropagation()"></a></h3>
                 </div>
               </span>
-              <panel type="seamless" expanded id="do-not-repeat-the-obvious"><template slot="_header">
+              <panel type="seamless" expanded="" id="do-not-repeat-the-obvious"><template slot="_header">
                   <h4 id="do-not-repeat-the-obvious">Do Not Repeat the Obvious<a class="fa fa-anchor" href="#do-not-repeat-the-obvious" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -788,19 +833,19 @@
                       <p>
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                       </p>
-                      <pre><code class="hljs java"><span><span class="hljs-comment">//increment x</span><br></span><span>x++;<br></span><span><br></span><span><span class="hljs-comment">//trim the input</span><br></span><span>trimInput();<br></span></code></pre>
+                      <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">//increment x</span><br></span><span>x++;<br></span><span><br></span><span><span class="hljs-comment">//trim the input</span><br></span><span>trimInput();<br></span></code></pre>
                     </div>
                     <div class="alt-python">
                       <p>
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font>
                       </p>
-                      <pre><code class="hljs python"><span><span class="hljs-comment"># increment x</span><br></span><span>x = x + <span class="hljs-number">1</span><br></span><span><br></span><span><span class="hljs-comment"># trim the input</span><br></span><span>trim_input()<br></span></code></pre>
+                      <pre><code class="hljs python" v-pre=""><span><span class="hljs-comment"># increment x</span><br></span><span>x = x + <span class="hljs-number">1</span><br></span><span><br></span><span><span class="hljs-comment"># trim the input</span><br></span><span>trim_input()<br></span></code></pre>
                     </div>
                   </div>
                   <div></div>
                 </div>
               </panel>
-              <panel type="seamless" expanded id="write-to-the-reader"><template slot="_header">
+              <panel type="seamless" expanded="" id="write-to-the-reader"><template slot="_header">
                   <h4 id="write-to-the-reader">Write to the Reader<a class="fa fa-anchor" href="#write-to-the-reader" onclick="event.stopPropagation()"></a></h4>
                 </template>
                 <div class="indented">
@@ -819,11 +864,11 @@
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
                           </p>
-                          <pre><code class="hljs java"><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                           </p>
-                          <pre><code class="hljs java"><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
+                          <pre><code class="hljs java" v-pre=""><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{<br></span><span>    ....<br></span><span>}<br></span></code></pre>
                         </div>
                       </div>
                       <div class="alt-python">
@@ -831,11 +876,11 @@
                           <p>
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
                           </p>
-                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span><br></span><span>    ...<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span><br></span><span>    ...<br></span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong></span></font>
                           </p>
-                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span><br></span><span>    ...<br></span></code></pre>
+                          <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span><br></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span><br></span><span>    ...<br></span></code></pre>
                         </div>
                       </div>
                     </box>
@@ -852,13 +897,13 @@
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#code-quality">Code Quality&#x200E;</a>
+            <a class="nav-link py-1" href="#code-quality">Code quality&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#basic">Basic&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#guideline-maximise-readability">Guideline: Maximise Readability&#x200E;</a>
+              <a class="nav-link py-1" href="#guideline-maximise-readability">Guideline: Maximise readability&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#introduction-2">Introduction&#x200E;</a>
               </nav>
@@ -872,12 +917,12 @@
                   <a class="nav-link py-1" href="#make-the-code-obvious">Make the Code Obvious&#x200E;</a>
                 </nav>
               </nav>
-              <a class="nav-link py-1" href="#guideline-follow-a-standard">Guideline: Follow a Standard&#x200E;</a>
+              <a class="nav-link py-1" href="#guideline-follow-a-standard">Guideline: Follow a standard&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#introduction-3">Introduction&#x200E;</a>
                 <a class="nav-link py-1" href="#basic-3">Basic&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#guideline-name-well">Guideline: Name Well&#x200E;</a>
+              <a class="nav-link py-1" href="#guideline-name-well">Guideline: Name well&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#introduction-4">Introduction&#x200E;</a>
               </nav>
@@ -888,7 +933,7 @@
                   <a class="nav-link py-1" href="#use-standard-words">Use Standard Words&#x200E;</a>
                 </nav>
               </nav>
-              <a class="nav-link py-1" href="#guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently&#x200E;</a>
+              <a class="nav-link py-1" href="#guideline-comment-minimally-but-sufficiently">Guideline: Comment minimally, but sufficiently&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#introduction-5">Introduction&#x200E;</a>
               </nav>
@@ -907,7 +952,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

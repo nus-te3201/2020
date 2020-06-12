@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
                 <li>Submit weekly exercises</li>
-                <li>Submit weekly project increment <code>Level 8. Support Deadlines</code></li>
+                <li>Submit weekly project increment <code v-pre="">Level 8. Support Deadlines</code></li>
               </ol>
             </div>
             <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises" onclick="event.stopPropagation()"></a></h4>
@@ -101,7 +102,7 @@
             <span id="week7-project">
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 8. Support Deadlines</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
@@ -110,32 +111,32 @@
                       <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty7">Monty Level 7 code</a> to add support for keeping track of deadlines as well as regular todo tasks</p>
                       <p>Previous behavior:</p>
                       <ul>
-                        <li><code>add buy book</code>: adds a task <code>buy book</code></li>
+                        <li><code v-pre="">add buy book</code>: adds a task <code v-pre="">buy book</code></li>
                       </ul>
                       <p>Proposed change - replace the above command with the following two:</p>
                       <ul>
-                        <li><code>todo read book</code>: adds a todo task <code>read book</code></li>
-                        <li><code>deadline return book by: May 3rd</code> adds a deadline <code>return book</code> which is to be done by <code>May 3d</code>.<br>
-                          Note: <code>by:</code> is a keyword. Anything that comes after it is considered a description of the deadline.</li>
+                        <li><code v-pre="">todo read book</code>: adds a todo task <code v-pre="">read book</code></li>
+                        <li><code v-pre="">deadline return book by: May 3rd</code> adds a deadline <code v-pre="">return book</code> which is to be done by <code v-pre="">May 3d</code>.<br>
+                          Note: <code v-pre="">by:</code> is a keyword. Anything that comes after it is considered a description of the deadline.</li>
                       </ul>
                       <p>A sample output is given below.</p>
-                      <pre><code class="hljs"><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>============================================================<br></span><span>STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>------------------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                 | -<br></span><span>  ✗    |   2   | read book                   | -<br></span><span>  ✗    |   3   | return book                 | Monday<br></span><span>------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>todo watch movie<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>deadline submit assignment by: end of May<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>============================================================<br></span><span>STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>------------------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                 | -<br></span><span>  ✗    |   2   | read book                   | -<br></span><span>  ✗    |   3   | return book                 | Monday<br></span><span>  ✗    |   4   | watch movie                 | -<br></span><span>  ✗    |   5   | submit assignment           | end of May<br></span><span>------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
+                      <pre><code class="hljs" v-pre=""><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>============================================================<br></span><span>STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>------------------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                 | -<br></span><span>  ✗    |   2   | read book                   | -<br></span><span>  ✗    |   3   | return book                 | Monday<br></span><span>------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>todo watch movie<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>deadline submit assignment by: end of May<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Here is the list of tasks:<br></span><span>============================================================<br></span><span>STATUS | INDEX | DESCRIPTION                 | DEADLINE<br></span><span>------------------------------------------------------------<br></span><span>  ✓    |   1   | borrow book                 | -<br></span><span>  ✗    |   2   | read book                   | -<br></span><span>  ✗    |   3   | return book                 | Monday<br></span><span>  ✗    |   4   | watch movie                 | -<br></span><span>  ✗    |   5   | submit assignment           | end of May<br></span><span>------------------------------------------------------------<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span></code></pre>
                       <box>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> here are some tips:</p>
                         <ul>
-                          <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code>T</code> and <code>D</code> is used to indicate todo items and deadline items, respectively.
-                            <pre><code class="hljs python"><span>[<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">True</span>},<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>},<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}<br></span><span>]<br></span><span><br></span></code></pre>
+                          <li>One option is to use a list of dictionary objects to store the tasks/deadlines. Given below is an example of such a data structure. In that data structure, <code v-pre="">T</code> and <code v-pre="">D</code> is used to indicate todo items and deadline items, respectively.
+                            <pre><code class="hljs python" v-pre=""><span>[<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'borrow book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-keyword">True</span>},<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'read book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-keyword">False</span>},<br></span><span> {<span class="hljs-string">'type'</span>: <span class="hljs-string">'D'</span>, <span class="hljs-string">'description'</span>: <span class="hljs-string">'return book'</span>, <span class="hljs-string">'is_done'</span>: <span class="hljs-keyword">False</span>, <span class="hljs-string">'by'</span>: <span class="hljs-string">'Monday'</span>}<br></span><span>]<br></span><span><br></span></code></pre>
                           </li>
                           <li>The format of the csv file needs to be updated to store extra values too. Here is an example:
-                            <pre><code class="hljs"><span>T,borrow book,done<br></span><span>T,read book,pending<br></span><span>D,return book,pending,Monday<br></span></code></pre>
+                            <pre><code class="hljs" v-pre=""><span>T,borrow book,done<br></span><span>T,read book,pending<br></span><span>D,return book,pending,Monday<br></span></code></pre>
                           </li>
                         </ul>
                       </box>
-                      <panel minimized class="algolia-no-index"><template slot="_header">
+                      <panel minimized="" class="algolia-no-index"><template slot="_header">
                           <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
                         </template>
                         <p>Here is the code adding a todo item:</p>
-                        <pre><code class="hljs python"><span><br></span><span>command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span><br></span><span><span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:<br></span><span>    items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-literal">False</span>})<br></span><span><span class="hljs-keyword">elif</span>  ...<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><br></span><span>command_parts = command.strip().split(<span class="hljs-string">' '</span>, <span class="hljs-number">1</span>) <span class="hljs-comment"># split the command into two: first word and the remainder</span><br></span><span><span class="hljs-keyword">if</span> action == <span class="hljs-string">'todo'</span>:<br></span><span>    items.append({<span class="hljs-string">'type'</span>: <span class="hljs-string">'T'</span>, <span class="hljs-string">'description'</span>: command_parts[<span class="hljs-number">1</span>], <span class="hljs-string">'is_done'</span>: <span class="hljs-keyword">False</span>})<br></span><span><span class="hljs-keyword">elif</span>  ...<br></span></code></pre>
                       </panel>
                       <p></p>
                     </div>
@@ -163,7 +164,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

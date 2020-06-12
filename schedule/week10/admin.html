@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
                 <li>Submit weekly exercises</li>
-                <li>Submit weekly project increment <code>Level 11. Use Inheritance</code>, <code>Level 12. Use Multiple Code Files</code>, <code>Level 13. Add Unit Tests</code></li>
+                <li>Submit weekly project increment <code v-pre="">Level 11. Use Inheritance</code>, <code v-pre="">Level 12. Use Multiple Code Files</code>, <code v-pre="">Level 13. Add Unit Tests</code></li>
               </ol>
             </div>
             <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises" onclick="event.stopPropagation()"></a></h4>
@@ -101,21 +102,21 @@
             <span id="week10-project">
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 12. Use Inheritance</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
                     <div>
                       <h3 id="level-12-use-inheritance"><span class="badge badge-primary">Level 12</span> <span class="text-primary">Use Inheritance</span><a class="fa fa-anchor" href="#level-12-use-inheritance" onclick="event.stopPropagation()"></a></h3>
-                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty11">Monty Level 11 code</a> to make the <code>Deadline</code> class inherit from the <code>ToDo</code> class:</p>
-                      <panel minimized class="algolia-no-index"><template slot="_header">
+                      <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty11">Monty Level 11 code</a> to make the <code v-pre="">Deadline</code> class inherit from the <code v-pre="">ToDo</code> class:</p>
+                      <panel minimized="" class="algolia-no-index"><template slot="_header">
                           <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
                         </template>
-                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span><br></span><span><br></span><span>    TYPE_KEY = <span class="hljs-string">'T'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span><br></span><span>        self.description = description<br></span><span>        self.is_done = status<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">True</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-literal">False</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__status_as_icon</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'('</span> + self.__status_as_icon() + <span class="hljs-string">') '</span> + self.description<br></span><span><br></span><span>    <span class="hljs-comment"># more code ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-params">(ToDo)</span>:</span><br></span><span><br></span><span>    TYPE_KEY = <span class="hljs-string">'D'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status, by)</span>:</span><br></span><span>        super().__init__(description, status)<br></span><span>        self.by = by<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span><br></span><span><br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToDo</span>:</span><br></span><span><br></span><span>    TYPE_KEY = <span class="hljs-string">'T'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status)</span>:</span><br></span><span>        self.description = description<br></span><span>        self.is_done = status<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_done</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-keyword">True</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mark_as_pending</span><span class="hljs-params">(self)</span>:</span><br></span><span>        self.is_done = <span class="hljs-keyword">False</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__status_as_icon</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'✓'</span> <span class="hljs-keyword">if</span> self.is_done <span class="hljs-keyword">else</span> <span class="hljs-string">'✗'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'('</span> + self.__status_as_icon() + <span class="hljs-string">') '</span> + self.description<br></span><span><br></span><span>    <span class="hljs-comment"># more code ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-params">(ToDo)</span>:</span><br></span><span><br></span><span>    TYPE_KEY = <span class="hljs-string">'D'</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, description, status, by)</span>:</span><br></span><span>        super().__init__(description, status)<br></span><span>        self.by = by<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span><br></span><span>        <span class="hljs-keyword">return</span> super().__str__() + <span class="hljs-string">' [by: '</span> + self.by + <span class="hljs-string">']'</span><br></span><span><br></span></code></pre>
                         <p>Note:</p>
                         <ul>
-                          <li>There no need for the <code>Deadline</code> class to implement methods such as <code>mark_as_done</code> because it inherits those methods from the parent class.</li>
-                          <li>Note how the <code>Deadline</code> class overrides some methods (e.g., <code>__init__</code>) but uses the parent class method inside the overridden method (e.g., <code>__init__</code> method of the <code>Deadline</code> class calls the <code>super().__init__()</code> method.</li>
+                          <li>There no need for the <code v-pre="">Deadline</code> class to implement methods such as <code v-pre="">mark_as_done</code> because it inherits those methods from the parent class.</li>
+                          <li>Note how the <code v-pre="">Deadline</code> class overrides some methods (e.g., <code v-pre="">__init__</code>) but uses the parent class method inside the overridden method (e.g., <code v-pre="">__init__</code> method of the <code v-pre="">Deadline</code> class calls the <code v-pre="">super().__init__()</code> method.</li>
                         </ul>
                       </panel>
                     </div>
@@ -124,7 +125,7 @@
               </div>
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 13. Add Unit Tests</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
@@ -156,7 +157,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

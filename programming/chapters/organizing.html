@@ -28,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -58,13 +59,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -72,27 +73,63 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/programming/chapters/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/programs.html" class="site-nav__a">Python Programs</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/functions.html" class="site-nav__a">Functions</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/lists.html" class="site-nav__a">Lists</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/errors.html" class="site-nav__a">Error Handling</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/strings.html" class="site-nav__a">Strings</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/files.html" class="site-nav__a">Files</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/gui.html" class="site-nav__a">GUIs</a></li>
-            <li class="mt-2">
-              <hr>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/expressions-types-variables.html">Expressions, Data Types, Variables</a></div>
             </li>
-            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/organizing.html" class="site-nav__a current"><strong>C.</strong> Organizing Python Code</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/programs.html">Python Programs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/flowcontrol.html">Program Flow Control</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/functions.html">Functions</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/lists.html">Lists</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/errors.html">Error Handling</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/strings.html">Strings</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/files.html">Files</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/dictionaries.html">Dictionaries</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/oop.html">Object-Oriented Programming</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/gui.html">GUIs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">
+                <hr>
+              </div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><span class="dimmed"><strong>Appendices</strong></span></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/thirdparty.html"><strong>A.</strong> Installing 3rd Party Modules</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/ide.html"><strong>B.</strong> Using an IDE</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/organizing.html" class="current"><strong>C.</strong> Organizing Python Code</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/unittesting.html"><strong>D.</strong> Unit Testing</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/monty.html"><strong>E.</strong> The Monty Project</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -103,79 +140,79 @@
           <div id="main">
             <div>
               <h2 id="appendix-c-organizing-python-code">Appendix C: Organizing Python Code<a class="fa fa-anchor" href="#appendix-c-organizing-python-code" onclick="event.stopPropagation()"></a></h2>
-              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code>import</code> it first.</p>
+              <p><strong>You can organize the code as multiple files.</strong> Python considers each file as a <em>module</em>. To use a function/class in one file from another, you need to <code v-pre="">import</code> it first.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files residing in the same directory.</p>
-                <p><code>[project_root]/student.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span></code></pre>
-                <p><code>[project_root]/course.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
-                <p>Notice how the <code>course.py</code> imports the <code>student</code> module and uses the <code>student.describe</code> function defined in the <code>student.py</code> file.</p>
+                <p><code v-pre="">[project_root]/student.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span></code></pre>
+                <p><code v-pre="">[project_root]/course.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                <p>Notice how the <code v-pre="">course.py</code> imports the <code v-pre="">student</code> module and uses the <code v-pre="">student.describe</code> function defined in the <code v-pre="">student.py</code> file.</p>
               </box>
               <p><strong>You can organize files into sub-directories too.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following two files.</p>
-                <p><code>[project_root]/misc/print_utils/misc.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span><br></span><span>    print(list(text))<br></span></code></pre>
-                <p><code>[project_root]/course.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc <br></span><span><br></span><span>misc.print_as_list(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
-                <p>Notice how the <code>import</code> statement uses a slightly different syntax and uses <code>.</code> to indicate directory nesting (i.e., <code>misc/print_utils</code> → <code>misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code>import</code> syntax</a>.</p>
+                <p><code v-pre="">[project_root]/misc/print_utils/misc.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_as_list</span><span class="hljs-params">(text)</span>:</span><br></span><span>    print(list(text))<br></span></code></pre>
+                <p><code v-pre="">[project_root]/course.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">from</span> utils.print_utils <span class="hljs-keyword">import</span> misc <br></span><span><br></span><span>misc.print_as_list(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                <p>Notice how the <code v-pre="">import</code> statement uses a slightly different syntax and uses <code v-pre="">.</code> to indicate directory nesting (i.e., <code v-pre="">misc/print_utils</code> → <code v-pre="">misc.print_utils</code>). In fact, there are <a href="https://docs.python.org/3/tutorial/modules.html">other variations of the <code v-pre="">import</code> syntax</a>.</p>
               </box>
               <p>When you import a module, Python will interpret and execute any code in it.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code>student</code> module being imported into the <code>course</code> module.</p>
-                <p><code>[project_root]/student.py</code>:</p>
-                <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span>describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this <code v-pre="">student</code> module being imported into the <code v-pre="">course</code> module.</p>
+                <p><code v-pre="">[project_root]/student.py</code>:</p>
+                <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span>describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <p><code>[project_root]/course.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                        <p><code v-pre="">[project_root]/course.py</code>:</p>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>Betty is a student<br></span><span>Adam is a student<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>Betty is a student<br></span><span>Adam is a student<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <p>Notice how the output contains <code>Betty is a student</code>. That is because the line <code>describe('Betty')</code> in <code>student.py</code> is being executed as the <code>student</code> module is being imported.</p>
+                <p>Notice how the output contains <code v-pre="">Betty is a student</code>. That is because the line <code v-pre="">describe('Betty')</code> in <code v-pre="">student.py</code> is being executed as the <code v-pre="">student</code> module is being imported.</p>
               </box>
-              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
+              <p>To prevent execution of statements in an imported module, nest such statements under a <code class="hljs inline python" v-pre=""><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</code> block.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>student</code> module can be executed to get the following output.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code v-pre="">student</code> module can be executed to get the following output.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <p><code>[project_root]/student.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<br></span><span>    describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
+                        <p><code v-pre="">[project_root]/student.py</code>:</p>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(name)</span>:</span><br></span><span>    print(name, <span class="hljs-string">'is a student'</span>)<br></span><span><br></span><span><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:<br></span><span>    describe(<span class="hljs-string">'Betty'</span>)<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>Betty is a student<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>Betty is a student<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
-                <p>When the <code>student</code> module is imported to another module, <code>describe('Betty')</code> line is no longer executed.</p>
+                <p>When the <code v-pre="">student</code> module is imported to another module, <code v-pre="">describe('Betty')</code> line is no longer executed.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <p><code>[project_root]/course.py</code>:</p>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
+                        <p><code v-pre="">[project_root]/course.py</code>:</p>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> student<br></span><span><br></span><span>student.describe(<span class="hljs-string">'Adam'</span>)<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="no-line-numbers hljs"><span>Adam is a student<br></span></code></pre>
+                        <pre><code class="no-line-numbers hljs" v-pre=""><span>Adam is a student<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -199,7 +236,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
                 <li>Submit weekly exercises</li>
-                <li>Submit weekly project increment <code>Monty Level 3. Use Functions</code></li>
+                <li>Submit weekly project increment <code v-pre="">Monty Level 3. Use Functions</code></li>
               </ol>
             </div>
             <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises" onclick="event.stopPropagation()"></a></h4>
@@ -101,18 +102,18 @@
             <span id="week3-project">
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 3. Use Functions</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
                     <div>
                       <h3 id="level-3-use-functions"><span class="badge badge-primary">Level 3</span> <span class="text-primary">Use Functions</span><a class="fa fa-anchor" href="#level-3-use-functions" onclick="event.stopPropagation()"></a></h3>
                       <p>Restructure the <a href="/2020/programming/chapters/monty.html#monty2">Monty Level 2 code</a> to fit the following structure, while keeping the behavior same as before.</p>
-                      <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><br></span><span><span class="hljs-comment"># ADD MISSING FUNCTIONS</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
-                      <panel minimized class="algolia-no-index"><template slot="_header">
+                      <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><br></span><span><span class="hljs-comment"># ADD MISSING FUNCTIONS</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                      <panel minimized="" class="algolia-no-index"><template slot="_header">
                           <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
                         </template>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span><br></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)<br></span><span>    response = input()<br></span><span>    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        <span class="hljs-keyword">if</span> is_exit_confirmed():<br></span><span>            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)<br></span><span>            sys.exit()<br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_exit_confirmed</span><span class="hljs-params">()</span>:</span><br></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; Are you sure? y/n'</span>)<br></span><span>    response = input()<br></span><span>    <span class="hljs-keyword">return</span> response == <span class="hljs-string">'y'</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        <span class="hljs-keyword">if</span> is_exit_confirmed():<br></span><span>            print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)<br></span><span>            sys.exit()<br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
                       </panel>
                     </div>
                   </panel>
@@ -139,7 +140,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

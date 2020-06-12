@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -71,96 +72,140 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Implementation</strong>
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/reuse.html" class="site-nav__a current">Reuse</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/modeling.html">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/integration.html">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/reuse.html" class="current">Reuse</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -176,13 +221,13 @@
               <h1 id="reuse"><span>Reuse</span><a class="fa fa-anchor" href="#reuse" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction">
+          <panel type="seamless" expanded="" id="introduction">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what"><template slot="_header">
+            <panel type="seamless" expanded="" id="what"><template slot="_header">
                 <h4 id="what">What<a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -198,7 +243,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="when"><template slot="_header">
+            <panel type="seamless" expanded="" id="when"><template slot="_header">
                 <h4 id="when">When<a class="fa fa-anchor" href="#when" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -221,7 +266,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -240,11 +285,11 @@
                               <ul>
                                 <li>Learning curve may be steep.</li>
                                 <li>May not be stable (it was recently released).</li>
-                                <li>May not allow us to do exactly what we want. While frameworks allow customization, such customization can be limited.</li>
+                                <li>May not allow you to do exactly what you want. While frameworks allow customization, such customization can be limited.</li>
                                 <li>Performance penalties.</li>
                                 <li>Might interfere with learning objectives of the module.</li>
                               </ul>
-                              <p>Note that having more cons does not mean we should not use this framework. Further investigation is required before we can make a final decision.</p>
+                              <p>Note that having more cons does not mean you should not use this framework. Further investigation is required before you can make a final decision.</p>
                             </div>
                           </question>
                         </panel>
@@ -255,13 +300,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="apis">
+          <panel type="seamless" expanded="" id="apis">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="apis"><span>APIs</span><a class="fa fa-anchor" href="#apis" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-2"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-2"><template slot="_header">
                 <h4 id="what-2">What<a class="fa fa-anchor" href="#what-2" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -274,14 +319,14 @@
                 <div>
                   <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A class has an API (e.g., <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code>str</code> class</a>) which is a collection of public methods that you can invoke to make use of the class.</p>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A class has an API (e.g., <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html">API of the Java <code v-pre="">String</code> class</a>, <a href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str">API of the Python <code v-pre="">str</code> class</a>) which is a collection of public methods that you can invoke to make use of the class.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. You can write a program that interacts with GitHub through that API.</p>
                   </box>
                   <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed">because the future behavior of the other components are now more predictable</span>.</p>
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -316,7 +361,7 @@
                             </ul>
                             <div slot="answer" class="algolia-no-index">
                               <p>True</p>
-                              <p>Explanation: Yes, once we know the precise behavior expected of each component, we can start developing them in parallel.</p>
+                              <p>Explanation: Yes, once you know the precise behavior expected of each component, you can start developing them in parallel.</p>
                             </div>
                           </question>
                         </panel>
@@ -327,13 +372,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="libraries">
+          <panel type="seamless" expanded="" id="libraries">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="libraries"><span>Libraries</span><a class="fa fa-anchor" href="#libraries" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-3"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-3"><template slot="_header">
                 <h4 id="what-3">What<a class="fa fa-anchor" href="#what-3" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -347,11 +392,11 @@
                   <p>A library is a collection of modular code that is general and can be used by other programs.</p>
                   <box>
                     <div class="alt-java">
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Java classes you get with the JDK (such as <code v-pre="">String</code>, <code v-pre="">ArrayList</code>, <code v-pre="">HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code v-pre="">The 31st of April in the year 2008</code></p>
                     </div>
                     <div class="alt-python">
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> built-in modules you get with Python (such as <code v-pre="">csv</code>, <code v-pre="">random</code>, <code v-pre="">sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as <code v-pre="">list</code>, <code v-pre="">str</code>, <code v-pre="">dict</code> are built-in library classes that you get with Python.</p>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
                     </div>
                   </box>
@@ -359,7 +404,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="how"><template slot="_header">
+            <panel type="seamless" expanded="" id="how"><template slot="_header">
                 <h4 id="how">How<a class="fa fa-anchor" href="#how" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -382,13 +427,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="frameworks">
+          <panel type="seamless" expanded="" id="frameworks">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="frameworks"><span>Frameworks</span><a class="fa fa-anchor" href="#frameworks" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-4"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-4"><template slot="_header">
                 <h4 id="what-4">What<a class="fa fa-anchor" href="#what-4" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -434,7 +479,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="frameworks-vs-libraries"><template slot="_header">
+            <panel type="seamless" expanded="" id="frameworks-vs-libraries"><template slot="_header">
                 <h4 id="frameworks-vs-libraries">Frameworks vs Libraries<a class="fa fa-anchor" href="#frameworks-vs-libraries" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -459,7 +504,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -508,13 +553,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="platforms">
+          <panel type="seamless" expanded="" id="platforms">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="platforms"><span>Platforms</span><a class="fa fa-anchor" href="#platforms" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-5"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-5"><template slot="_header">
                 <h4 id="what-5">What<a class="fa fa-anchor" href="#what-5" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -536,9 +581,9 @@
                       <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
                     </ul>
                   </box>
-                  <b-modal id="modal:enterprise-application" hide-footer size modal-class="mb-zoom" ref="modal:enterprise-application"><template slot="modal-title"><strong>Enterprise Applications</strong></template>
+                  <b-modal id="modal:enterprise-application" hide-footer="" size="" modal-class="mb-zoom" ref="modal:enterprise-application" class="algolia-no-index"><template slot="modal-title"><strong>Enterprise Applications</strong></template>
                     <div>
-                      <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than software meant for individual use.</p>
+                      <p><strong>Enterprise application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than software meant for individual use.</p>
                     </div>
                   </b-modal>
                 </div>
@@ -546,13 +591,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="cloud-computing">
+          <panel type="seamless" expanded="" id="cloud-computing">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="cloud-computing"><span>Cloud Computing</span><a class="fa fa-anchor" href="#cloud-computing" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="cloud-computing"><span>Cloud computing</span><a class="fa fa-anchor" href="#cloud-computing" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what-6"><template slot="_header">
+            <panel type="seamless" expanded="" id="what-6"><template slot="_header">
                 <h4 id="what-6">What<a class="fa fa-anchor" href="#what-6" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -568,7 +613,7 @@
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="iaas-paas-and-saas"><template slot="_header">
+            <panel type="seamless" expanded="" id="iaas-paas-and-saas"><template slot="_header">
                 <h4 id="iaas-paas-and-saas">Iaas, PaaS, and SaaS<a class="fa fa-anchor" href="#iaas-paas-and-saas" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -596,7 +641,7 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -612,7 +657,7 @@
                             </ul>
                             <div slot="answer" class="algolia-no-index">
                               <p>(c)</p>
-                              <p>Explanation: It is a <em>software</em> as a service. Instead of installing a calendar software on your desktop, we can use the Google Calendar software that lives ‘on the cloud’.</p>
+                              <p>Explanation: It is a <em>software</em> as a service. Instead of installing a calendar software on your desktop, you can use the Google Calendar software that lives ‘on the cloud’.</p>
                             </div>
                           </question>
                         </panel>
@@ -655,7 +700,7 @@
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#what-5">What&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#cloud-computing">Cloud Computing&#x200E;</a>
+              <a class="nav-link py-1" href="#cloud-computing">Cloud computing&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#what-6">What&#x200E;</a>
                 <a class="nav-link py-1" href="#iaas-paas-and-saas">Iaas, PaaS, and SaaS&#x200E;</a>
@@ -668,7 +713,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

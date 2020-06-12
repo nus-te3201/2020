@@ -28,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -58,13 +59,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -72,27 +73,63 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/programming/chapters/expressions-types-variables.html" class="site-nav__a">Expressions, Data Types, Variables</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/programs.html" class="site-nav__a">Python Programs</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/flowcontrol.html" class="site-nav__a">Program Flow Control</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/functions.html" class="site-nav__a">Functions</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/lists.html" class="site-nav__a">Lists</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/errors.html" class="site-nav__a current">Error Handling</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/strings.html" class="site-nav__a">Strings</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/files.html" class="site-nav__a">Files</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/dictionaries.html" class="site-nav__a">Dictionaries</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/gui.html" class="site-nav__a">GUIs</a></li>
-            <li class="mt-2">
-              <hr>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/expressions-types-variables.html">Expressions, Data Types, Variables</a></div>
             </li>
-            <li class="mt-2"><span class="dimmed"><strong>Appendices</strong></span></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/thirdparty.html" class="site-nav__a"><strong>A.</strong> Installing 3rd Party Modules</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/ide.html" class="site-nav__a"><strong>B.</strong> Using an IDE</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/organizing.html" class="site-nav__a"><strong>C.</strong> Organizing Python Code</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/unittesting.html" class="site-nav__a"><strong>D.</strong> Unit Testing</a></li>
-            <li class="mt-2"><a href="/2020/programming/chapters/monty.html" class="site-nav__a"><strong>E.</strong> The Monty Project</a></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/programs.html">Python Programs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/flowcontrol.html">Program Flow Control</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/functions.html">Functions</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/lists.html">Lists</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/errors.html" class="current">Error Handling</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/strings.html">Strings</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/files.html">Files</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/dictionaries.html">Dictionaries</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/oop.html">Object-Oriented Programming</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/gui.html">GUIs</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">
+                <hr>
+              </div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><span class="dimmed"><strong>Appendices</strong></span></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/thirdparty.html"><strong>A.</strong> Installing 3rd Party Modules</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/ide.html"><strong>B.</strong> Using an IDE</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/organizing.html"><strong>C.</strong> Organizing Python Code</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/unittesting.html"><strong>D.</strong> Unit Testing</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/programming/chapters/monty.html"><strong>E.</strong> The Monty Project</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -122,18 +159,18 @@
               <h3 id="syntax-errors">Syntax Errors<a class="fa fa-anchor" href="#syntax-errors" onclick="event.stopPropagation()"></a></h3>
               <p><strong>A <em>syntax error</em>, also known as a <em>parsing error</em>, is when your code does not follow rules for writing Python code.</strong> Python interpreter shows an error message when it encounters a syntax error.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below has a syntax error because it breaks the Python rule that requires a <code>:</code> to follow the condition of an <code>if</code> statement.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below has a syntax error because it breaks the Python rule that requires a <code v-pre="">:</code> to follow the condition of an <code v-pre="">if</code> statement.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">4</span><br></span><span>  print(<span class="hljs-string">'Greater'</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">4</span><br></span><span>  print(<span class="hljs-string">'Greater'</span>)<br></span></code></pre>
                       </td>
                       <td valign="top">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Traceback (most recent call last):<br></span><span>  File &quot;python&quot;, line 1<br></span><span>    if 5 &gt; 4<br></span><span>           ^<br></span><span>SyntaxError: invalid syntax<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Traceback (most recent call last):<br></span><span>  File &quot;python&quot;, line 1<br></span><span>    if 5 &gt; 4<br></span><span>           ^<br></span><span>SyntaxError: invalid syntax<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -142,7 +179,7 @@
               <p>Some Python editors (e.g., <a href="http://REPL.it">REPL.it</a>) flag syntax errors even before you run the code.</p>
               <tip-box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how REPL Python editor points out the syntax error using a red ❌ in the <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the column on the extreme left of the editor</span>gutter</span></em> of the editor.</p>
-                <p><a href="/2020/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2020/programming/errors-syntax/images/syntaxErrorInRepl.png" alt class="img-fluid"></a></p>
+                <p><a href="/2020/programming/errors-syntax/images/syntaxErrorInRepl.png" target="_self"><img src="/2020/programming/errors-syntax/images/syntaxErrorInRepl.png" alt="" class="img-fluid"></a></p>
               </tip-box>
             </div>
             <hr style="border-top: 3px double #c5c5c5;">
@@ -150,142 +187,142 @@
               <h3 id="handling-exceptions">Handling Exceptions<a class="fa fa-anchor" href="#handling-exceptions" onclick="event.stopPropagation()"></a></h3>
               <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>throw</em> and <em>raise</em> are two terms used to describe an exception being encountered</span>throws/raises</span></em> different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below raises an exception when it attempts to divide a number by <code>0</code>. The type of the exception raised is <code>ZeroDivisionError</code>, as mentioned in the last line of the error message.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below raises an exception when it attempts to divide a number by <code v-pre="">0</code>. The type of the exception raised is <code v-pre="">ZeroDivisionError</code>, as mentioned in the last line of the error message.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Starting calculation'</span>)<br></span><span>  result = number/divisor<br></span><span>  print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide(<span class="hljs-number">50</span>, <span class="hljs-number">5</span>)<br></span><span>divide(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Starting calculation'</span>)<br></span><span>  result = number/divisor<br></span><span>  print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide(<span class="hljs-number">50</span>, <span class="hljs-number">5</span>)<br></span><span>divide(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span></code></pre>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Starting calculation<br></span><span>50 / 5 = 10.0<br></span><span>Calculation over!........<br></span><span><br></span><span>Starting calculation<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;python&quot;, line 9, in &lt;module&gt;<br></span><span>  File &quot;python&quot;, line 4, in divide<br></span><span>ZeroDivisionError: division by zero<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Starting calculation<br></span><span>50 / 5 = 10.0<br></span><span>Calculation over!........<br></span><span><br></span><span>Starting calculation<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;python&quot;, line 9, in &lt;module&gt;<br></span><span>  File &quot;python&quot;, line 4, in divide<br></span><span>ZeroDivisionError: division by zero<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
-              <p>It is not desirable for programs to 'crash' every time an exception occurs. You can <strong>use the <code>try-except</code> syntax to specify how to handle exceptions</strong>. The <code>try</code> clause contains the code that can possibly raise an exception while the <code>except</code> clause contains the code that handles the exception.</p>
+              <p>It is not desirable for programs to 'crash' every time an exception occurs. You can <strong>use the <code v-pre="">try-except</code> syntax to specify how to handle exceptions</strong>. The <code v-pre="">try</code> clause contains the code that can possibly raise an exception while the <code v-pre="">except</code> clause contains the code that handles the exception.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below specifies what to do if the <code>ZeroDivisionError</code> is raised, thereby avoiding a program crash in such an event.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below specifies what to do if the <code v-pre="">ZeroDivisionError</code> is raised, thereby avoiding a program crash in such an event.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide2</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Starting calculation'</span>)<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    result = number/divisor<br></span><span>    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  <span class="hljs-keyword">except</span> ZeroDivisionError:<br></span><span>    print(<span class="hljs-string">'Cannot divide by zero'</span>)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide2(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span><span>divide2(<span class="hljs-number">3</span>, <span class="hljs-number">1.5</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide2</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Starting calculation'</span>)<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    result = number/divisor<br></span><span>    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  <span class="hljs-keyword">except</span> ZeroDivisionError:<br></span><span>    print(<span class="hljs-string">'Cannot divide by zero'</span>)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide2(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span><span>divide2(<span class="hljs-number">3</span>, <span class="hljs-number">1.5</span>)<br></span></code></pre>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
                         <p>[<a target="_blank" href="https://goo.gl/rc8X9h">visualize</a>]<br></p>
-                        <pre><code class="hljs"><span>Starting calculation<br></span><span>Cannot divide by zero<br></span><span>Calculation over!........<br></span><span><br></span><span>Starting calculation<br></span><span>3 / 1.5 = 2.0<br></span><span>Calculation over!........<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Starting calculation<br></span><span>Cannot divide by zero<br></span><span>Calculation over!........<br></span><span><br></span><span>Starting calculation<br></span><span>3 / 1.5 = 2.0<br></span><span>Calculation over!........<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
-              <p>When the code in a <code>try</code> clause raises an error, the program execution immediately moves to the code in the <code>except</code> clause, provided the exception that happened matches the exception the <code>except</code> clause is supposed to <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>Catch</em> is term often used to describe a clause that respondes to a specific exception.</span>catch</span></em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
-              <p>If the exception does not match the <code>except</code> clause, the program crashes.</p>
+              <p>When the code in a <code v-pre="">try</code> clause raises an error, the program execution immediately moves to the code in the <code v-pre="">except</code> clause, provided the exception that happened matches the exception the <code v-pre="">except</code> clause is supposed to <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>Catch</em> is term often used to describe a clause that respondes to a specific exception.</span>catch</span></em>. After running the code in the <code v-pre="">except</code> clause, the execution continues as normal.</p>
+              <p>If the exception does not match the <code v-pre="">except</code> clause, the program crashes.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below crashes because the actual exception <span class="dimmed">(caused by passing a string when an foloating point number is expected)</span> does not match the specified exception <code>ZeroDivisionError</code>.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below crashes because the actual exception <span class="dimmed">(caused by passing a string when an foloating point number is expected)</span> does not match the specified exception <code v-pre="">ZeroDivisionError</code>.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span>divide2(<span class="hljs-number">5</span>, <span class="hljs-string">'abc'</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>divide2(<span class="hljs-number">5</span>, <span class="hljs-string">'abc'</span>)<br></span></code></pre>
                       </td>
                       <td valign="top">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Starting calculation<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;python&quot;, line 24, in &lt;module&gt;<br></span><span>  File &quot;python&quot;, line 16, in divide2<br></span><span>TypeError: unsupported operand type(s) for /: 'int' and 'str'<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Starting calculation<br></span><span>Traceback (most recent call last):<br></span><span>  File &quot;python&quot;, line 24, in &lt;module&gt;<br></span><span>  File &quot;python&quot;, line 16, in divide2<br></span><span>TypeError: unsupported operand type(s) for /: 'int' and 'str'<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
-              <p><strong>You can specify multiple <code>except</code> clauses</strong>, one for each type of exception expected.</p>
+              <p><strong>You can specify multiple <code v-pre="">except</code> clauses</strong>, one for each type of exception expected.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles two types of exceptions: <code>ZeroDivisionError</code> and <code>ValueError</code>.</p>
-                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The <code>ValueError</code> is raised when the string <code>abc</code> is being converted to a float using <code>float(divisor)</code>.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles two types of exceptions: <code v-pre="">ZeroDivisionError</code> and <code v-pre="">ValueError</code>.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The <code v-pre="">ValueError</code> is raised when the string <code v-pre="">abc</code> is being converted to a float using <code v-pre="">float(divisor)</code>.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide3</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    result = float(number)/float(divisor)<br></span><span>    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  <span class="hljs-keyword">except</span> ZeroDivisionError:<br></span><span>    print(<span class="hljs-string">'Cannot divide by zero'</span>)<br></span><span>  <span class="hljs-keyword">except</span> ValueError:<br></span><span>    print(<span class="hljs-string">'Cannot divide non-numbers'</span>)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide3(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span><span>divide3(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide3</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    result = float(number)/float(divisor)<br></span><span>    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  <span class="hljs-keyword">except</span> ZeroDivisionError:<br></span><span>    print(<span class="hljs-string">'Cannot divide by zero'</span>)<br></span><span>  <span class="hljs-keyword">except</span> ValueError:<br></span><span>    print(<span class="hljs-string">'Cannot divide non-numbers'</span>)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide3(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span><span>divide3(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)<br></span></code></pre>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Calculating 3 / 0<br></span><span>Cannot divide by zero<br></span><span>Calculation over!........<br></span><span><br></span><span>Calculating 3 / abc<br></span><span>Cannot divide non-numbers<br></span><span>Calculation over!........<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Calculating 3 / 0<br></span><span>Cannot divide by zero<br></span><span>Calculation over!........<br></span><span><br></span><span>Calculating 3 / abc<br></span><span>Cannot divide non-numbers<br></span><span>Calculation over!........<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
-              <p><strong>It is possible to specify multiple exception types in one <code>except</code> clause.</strong></p>
+              <p><strong>It is possible to specify multiple exception types in one <code v-pre="">except</code> clause.</strong></p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles both <code>ZeroDivisionError</code> and <code>ValueError</code> in the same <code>except</code> clause.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles both <code v-pre="">ZeroDivisionError</code> and <code v-pre="">ValueError</code> in the same <code v-pre="">except</code> clause.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide4</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    result = float(number)/float(divisor)<br></span><span>    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  <span class="hljs-keyword">except</span> (ZeroDivisionError, ValueError):<br></span><span>    print(<span class="hljs-string">'Incorrect inputs'</span>)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide4(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span><span>divide4(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide4</span><span class="hljs-params">(number, divisor)</span>:</span><br></span><span>  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    result = float(number)/float(divisor)<br></span><span>    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)<br></span><span>  <span class="hljs-keyword">except</span> (ZeroDivisionError, ValueError):<br></span><span>    print(<span class="hljs-string">'Incorrect inputs'</span>)<br></span><span>  print(<span class="hljs-string">'Calculation over!........'</span>)<br></span><span><br></span><span>divide4(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)<br></span><span>divide4(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)<br></span></code></pre>
                       </td>
                       <td valign="middle">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Calculating 3 / 0<br></span><span>Incorrect inputs<br></span><span>Calculation over!........<br></span><span><br></span><span>Calculating 3 / abc<br></span><span>Incorrect inputs<br></span><span>Calculation over!........<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Calculating 3 / 0<br></span><span>Incorrect inputs<br></span><span>Calculation over!........<br></span><span><br></span><span>Calculating 3 / abc<br></span><span>Incorrect inputs<br></span><span>Calculation over!........<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
-              <p><a href="https://docs.python.org/3/library/exceptions.html#IndexError"><code>IndexError</code></a> is an exception thrown when you try to access an index (e.g., when reading values form a list) that does not exist.</p>
+              <p><a href="https://docs.python.org/3/library/exceptions.html#IndexError"><code v-pre="">IndexError</code></a> is an exception thrown when you try to access an index (e.g., when reading values form a list) that does not exist.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, calling <code>get_head</code> on an empty list causes an <code>IndexError</code>.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, calling <code v-pre="">get_head</code> on an empty list causes an <code v-pre="">IndexError</code>.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]<br></span><span>  <span class="hljs-keyword">except</span> IndexError:<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'List too short'</span><br></span><span><br></span><span>print(get_head([]))<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]<br></span><span>  <span class="hljs-keyword">except</span> IndexError:<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'List too short'</span><br></span><span><br></span><span>print(get_head([]))<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>List too short<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>List too short<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
-              <p>It is also possible to <strong>use <code>except Exception</code> to catch any kind of exception</strong>. However, that practice is discouraged.</p>
+              <p>It is also possible to <strong>use <code v-pre="">except Exception</code> to catch any kind of exception</strong>. However, that practice is discouraged.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles both <code>ZeroDivisionError</code> and <code>ValueError</code> in the same <code>except</code> clause.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below handles both <code v-pre="">ZeroDivisionError</code> and <code v-pre="">ValueError</code> in the same <code v-pre="">except</code> clause.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head2</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]<br></span><span>  <span class="hljs-keyword">except</span> Exception:<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'Something wrong'</span><br></span><span><br></span><span>print(get_head2(<span class="hljs-number">2</span>))<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head2</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]<br></span><span>  <span class="hljs-keyword">except</span> Exception:<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'Something wrong'</span><br></span><span><br></span><span>print(get_head2(<span class="hljs-number">2</span>))<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
-                        <pre><code class="hljs"><span>Something wrong<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Something wrong<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
               <div>
-                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                <panel type="seamless" minimized="" class="algolia-no-index"><template slot="_header">
                     <p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p>
                   </template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -298,22 +335,22 @@
                 <li><a href="https://www.tutorialspoint.com/python/standard_exceptions.htm">Python built-in exceptions</a></li>
               </ul>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header">
+                <panel type="danger" expanded="" no-close=""><template slot="_header">
                     <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Enter Integer</p>
                   </template>
                   <div>
                     <h4 id="exercise-enter-integer">Exercise : Enter Integer<a class="fa fa-anchor" href="#exercise-enter-integer" onclick="event.stopPropagation()"></a></h4>
                     <p>The code below assumes the entered string will always represent an integer.</p>
-                    <pre><code class="hljs python"><span>value = input(<span class="hljs-string">'Input an integer:'</span>)<br></span><span>print(<span class="hljs-string">'You entered'</span>, value)<br></span></code></pre>
+                    <pre><code class="hljs python" v-pre=""><span>value = input(<span class="hljs-string">'Input an integer:'</span>)<br></span><span>print(<span class="hljs-string">'You entered'</span>, value)<br></span></code></pre>
                     <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their validity.</p>
                     <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
-                    <pre><code class="hljs"><span>Input an integer: x<br></span><span>That is not an integer, try again<br></span><span>Input an integer: 5.5<br></span><span>That is not an integer, try again<br></span><span>Input an integer: 6<br></span><span>You entered 6<br></span></code></pre>
+                    <pre><code class="hljs" v-pre=""><span>Input an integer: x<br></span><span>That is not an integer, try again<br></span><span>Input an integer: 5.5<br></span><span>That is not an integer, try again<br></span><span>Input an integer: 6<br></span><span>You entered 6<br></span></code></pre>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p><span class="dimmed">💡 Hint</span></p>
                       </template>
                       <ul>
-                        <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
-                        <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
+                        <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code v-pre="">int(s)</code> function</a> raises a <code v-pre="">ValueError</code> when the string <code v-pre="">s</code> does not represent an integer.</li>
+                        <li>You can use a <code v-pre="">while True</code> loop to repeatedly ask for an input until the user enters an integer.
                         </li>
                       </ul>
                     </panel>
@@ -321,7 +358,7 @@
                     <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p>
                       </template>
-                      <pre><code class="hljs python"><span><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    value = int(input(<span class="hljs-string">'Input an integer:'</span>))<br></span><span>    <span class="hljs-comment"># YOUR CODE HERE! print? break? continue?</span><br></span><span>  <span class="hljs-keyword">except</span> ValueError:<br></span><span>    <span class="hljs-comment"># YOUR CODE HERE!</span><br></span><span>    <br></span><span>print(<span class="hljs-string">'You entered'</span>, value)<br></span></code></pre>
+                      <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:<br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    value = int(input(<span class="hljs-string">'Input an integer:'</span>))<br></span><span>    <span class="hljs-comment"># YOUR CODE HERE! print? break? continue?</span><br></span><span>  <span class="hljs-keyword">except</span> ValueError:<br></span><span>    <span class="hljs-comment"># YOUR CODE HERE!</span><br></span><span>    <br></span><span>print(<span class="hljs-string">'You entered'</span>, value)<br></span></code></pre>
                     </panel>
                   </div>
                 </panel>
@@ -331,22 +368,22 @@
             <hr style="border-top: 3px double #c5c5c5;">
             <div>
               <h3 id="raising-exceptions">Raising Exceptions<a class="fa fa-anchor" href="#raising-exceptions" onclick="event.stopPropagation()"></a></h3>
-              <p><strong>You can <code>raise</code> an exception yourself to indicate an error</strong>.</p>
+              <p><strong>You can <code v-pre="">raise</code> an exception yourself to indicate an error</strong>.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code>hide_ends(items)</code> function. <br>
-                  <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Also note how an <code>except</code> clause can assign a name to the exception using <code>as temporary_name</code> (as done by <code>except ValueError as e:</code>) so that the exception object can be referenced later (as done in <code>print('Cannot hide ends', str(e))</code>)</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre="">get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code v-pre="">hide_ends(items)</code> function. <br>
+                  <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Also note how an <code v-pre="">except</code> clause can assign a name to the exception using <code v-pre="">as temporary_name</code> (as done by <code v-pre="">except ValueError as e:</code>) so that the exception object can be referenced later (as done in <code v-pre="">print('Cannot hide ends', str(e))</code>)</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">if</span> len(items) &lt; <span class="hljs-number">3</span>:<br></span><span>    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Not enough items'</span>)<br></span><span><br></span><span>  <span class="hljs-keyword">return</span> items[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>]<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    body = get_body(items)<br></span><span>    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])<br></span><span>  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))<br></span><span><br></span><span>hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])<br></span><span>hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">if</span> len(items) &lt; <span class="hljs-number">3</span>:<br></span><span>    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Not enough items'</span>)<br></span><span><br></span><span>  <span class="hljs-keyword">return</span> items[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>]<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    body = get_body(items)<br></span><span>    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])<br></span><span>  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))<br></span><span><br></span><span>hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])<br></span><span>hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
                         <p>[<a target="_blank" href="https://goo.gl/tsteqe">visualize</a>]<br></p>
-                        <pre><code class="hljs"><span>Cannot hide ends: Not enough items<br></span><span>['_', 1, 2, 3, '_']<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Cannot hide ends: Not enough items<br></span><span>['_', 1, 2, 3, '_']<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
@@ -354,26 +391,26 @@
               </box>
               <p><strong>It is also possible to catch an exception, do something, and then raise it again</strong> so that the exception propagates to the caller.</p>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code <code>hide_ends2(items)</code> function below catches the <code>ValueError</code> exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line <code>hide_ends2([0, 1, 2, 3, 4])</code> is never executed due to the exception raised by the line just above it.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code <code v-pre="">hide_ends2(items)</code> function below catches the <code v-pre="">ValueError</code> exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line <code v-pre="">hide_ends2([0, 1, 2, 3, 4])</code> is never executed due to the exception raised by the line just above it.</p>
                 <div>
                   <div></div>
                   <div></div>
                   <table>
                     <tr>
                       <td valign="top">
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    body = get_body(items)<br></span><span>    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])<br></span><span>  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))<br></span><span>    <span class="hljs-keyword">raise</span><br></span><span><br></span><span><span class="hljs-keyword">try</span>:<br></span><span>  hide_ends2([<span class="hljs-number">0</span>])<br></span><span>  hide_ends2([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])<br></span><span><span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>  print(<span class="hljs-string">'hide_ends2 failed:'</span>, str(e))<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    body = get_body(items)<br></span><span>    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])<br></span><span>  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))<br></span><span>    <span class="hljs-keyword">raise</span><br></span><span><br></span><span><span class="hljs-keyword">try</span>:<br></span><span>  hide_ends2([<span class="hljs-number">0</span>])<br></span><span>  hide_ends2([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])<br></span><span><span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>  print(<span class="hljs-string">'hide_ends2 failed:'</span>, str(e))<br></span></code></pre>
                       </td>
                       <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                       <td valign="bottom">
                         <p>[<a target="_blank" href="https://goo.gl/EGkxAW">visualize</a>]<br></p>
-                        <pre><code class="hljs"><span>Cannot hide ends: Not enough items<br></span><span>hide_ends2 failed: Not enough items<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>Cannot hide ends: Not enough items<br></span><span>hide_ends2 failed: Not enough items<br></span></code></pre>
                       </td>
                     </tr>
                   </table>
                 </div>
               </box>
               <div>
-                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                <panel type="seamless" minimized="" class="algolia-no-index"><template slot="_header">
                     <p><span aria-hidden="true" class="fas fa-laptop"></span> Try your own</p>
                   </template>
                   <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -383,14 +420,14 @@
               </div>
               <p>Here are some commonly used built-in exceptions (<a href="https://docs.python.org/3/library/exceptions.html#concrete-exceptions">full list</a>) you can raise/handle in your code:</p>
               <ul>
-                <li><code>IndexError</code>: Indicates an index of a sequence (e.g., a list) is out of range.</li>
-                <li><code>RuntimeError</code> : Indicates an error that does not fall under any other category.</li>
-                <li><code>ValueError</code>: Indicates when a function gets argument of correct type but improper value.</li>
-                <li><code>ZeroDivisionError</code> : Indicates an attempt to divide by zero.</li>
+                <li><code v-pre="">IndexError</code>: Indicates an index of a sequence (e.g., a list) is out of range.</li>
+                <li><code v-pre="">RuntimeError</code> : Indicates an error that does not fall under any other category.</li>
+                <li><code v-pre="">ValueError</code>: Indicates when a function gets argument of correct type but improper value.</li>
+                <li><code v-pre="">ZeroDivisionError</code> : Indicates an attempt to divide by zero.</li>
               </ul>
               <p>It is also possible to define your own <em>user-defined exceptions</em> but that requires more advanced programming techniques. It will be covered elsewhere.</p>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header">
+                <panel type="danger" expanded="" no-close=""><template slot="_header">
                     <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Is Even-Integer in Range</p>
                   </template>
                   <div>
@@ -399,67 +436,67 @@
                       <p><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
                     </tip-box>
                     <p>The function given below checks if a given input is an even integer in a given range.</p>
-                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span><br></span><span>  print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))<br></span></code></pre>
+                    <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span><br></span><span>  print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))<br></span></code></pre>
                     <p>Some example inputs and outputs are given below:</p>
-                    <pre><code class="hljs python"><span>check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span><br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)<br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])<br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)<br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)<br></span><span>check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)<br></span><span>check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span><br></span><span>check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)<br></span></code></pre>
+                    <pre><code class="hljs python" v-pre=""><span>check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span><br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)<br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])<br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)<br></span><span>check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)<br></span><span>check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)<br></span><span>check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span><br></span><span>check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)<br></span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                    <pre><code class="hljs"><span>x is an int in range y - z ? Value error: x is not an integer<br></span><span>3 is an int in range y - z ? No<br></span><span>2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer<br></span><span>2 is an int in range 3 - [] ? Value error: [] is not an integer<br></span><span>2 is an int in range 5 - 1 ? Value error: end is smaller than start<br></span><span>2 is an int in range 5 - 5 ? No<br></span><span>3 is an int in range 1 - 5 ? No<br></span><span>4 is an int in range 1 - 4 ? No<br></span><span>4 is an int in range 1 - 5 ? Yes<br></span></code></pre>
-                    <p>Note how the <code>check</code> function uses an <code>is_even_int_in_range</code> functions whose code and the behavior are given below.</p>
-                    <p><strong><code>is_even_int_in_range(number, start, end)</code></strong>:</p>
+                    <pre><code class="hljs" v-pre=""><span>x is an int in range y - z ? Value error: x is not an integer<br></span><span>3 is an int in range y - z ? No<br></span><span>2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer<br></span><span>2 is an int in range 3 - [] ? Value error: [] is not an integer<br></span><span>2 is an int in range 5 - 1 ? Value error: end is smaller than start<br></span><span>2 is an int in range 5 - 5 ? No<br></span><span>3 is an int in range 1 - 5 ? No<br></span><span>4 is an int in range 1 - 4 ? No<br></span><span>4 is an int in range 1 - 5 ? Yes<br></span></code></pre>
+                    <p>Note how the <code v-pre="">check</code> function uses an <code v-pre="">is_even_int_in_range</code> functions whose code and the behavior are given below.</p>
+                    <p><strong><code v-pre="">is_even_int_in_range(number, start, end)</code></strong>:</p>
                     <ul>
-                      <li>Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise.</li>
+                      <li>Returns <code v-pre="">'Yes'</code> if <code v-pre="">number</code> is an even integer in the range <code v-pre="">start</code> to <code v-pre="">end</code>. Returns <code v-pre="">'No'</code> otherwise.</li>
                       <li>Returns an error message if any of the inputs are incorrect.</li>
                       <li>Code:
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):<br></span><span>      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span><br></span><span>  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span><br></span><span>  <span class="hljs-keyword">try</span>:<br></span><span>    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):<br></span><span>      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span><br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span><br></span><span>  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)<br></span></code></pre>
                       </li>
                     </ul>
-                    <p>Note how the above function uses two other functions <code>is_even_int</code> and <code>is_in_range</code> given below:</p>
-                    <p><strong><code>is_even_int(number)</code></strong>:</p>
+                    <p>Note how the above function uses two other functions <code v-pre="">is_even_int</code> and <code v-pre="">is_in_range</code> given below:</p>
+                    <p><strong><code v-pre="">is_even_int(number)</code></strong>:</p>
                     <ul>
-                      <li>Returns <code>True</code> if the <code>number</code> is an even integer. <code>False</code> otherwise.</li>
-                      <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+                      <li>Returns <code v-pre="">True</code> if the <code v-pre="">number</code> is an even integer. <code v-pre="">False</code> otherwise.</li>
+                      <li>Raises a <code v-pre="">ValueError</code> if the <code v-pre="">number</code> is not an integer.</li>
                       <li>Code:
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span><br></span><span>  confirm_is_int(number)<br></span><span>  <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span><br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span><br></span><span>  confirm_is_int(number)<br></span><span>  <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span><br></span></code></pre>
                       </li>
                     </ul>
-                    <p><strong><code>is_in_range(number, start, end)</code></strong>:</p>
+                    <p><strong><code v-pre="">is_in_range(number, start, end)</code></strong>:</p>
                     <ul>
-                      <li>Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how Python define <em>ranges</em>). <code>False</code> otherwise.</li>
-                      <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
+                      <li>Returns <code v-pre="">True</code> if the <code v-pre="">number</code> is in the range <code v-pre="">start</code> to <code v-pre="">end</code> (<mark>including <code v-pre="">start</code> but excluding <code v-pre="">end</code></mark>, as per how Python define <em>ranges</em>). <code v-pre="">False</code> otherwise.</li>
+                      <li>Raises a <code v-pre="">ValueError</code> if the <code v-pre="">number</code> is not an integer or <code v-pre="">start</code> and <code v-pre="">end</code> do not specify a range correctly.</li>
                       <li>Code:
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span><br></span><span>  confirm_is_int(number)<br></span><span>  confirm_range_correct(start, end)<br></span><span>  <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span><br></span><span>  confirm_is_int(number)<br></span><span>  confirm_range_correct(start, end)<br></span><span>  <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end<br></span></code></pre>
                       </li>
                     </ul>
-                    <p>Note how the above two functions use two other functions <code>confirm_is_int</code> and <code>confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
-                    <p><strong><code>confirm_is_int(number)</code></strong>:</p>
+                    <p>Note how the above two functions use two other functions <code v-pre="">confirm_is_int</code> and <code v-pre="">confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
+                    <p><strong><code v-pre="">confirm_is_int(number)</code></strong>:</p>
                     <ul>
-                      <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+                      <li>Raises a <code v-pre="">ValueError</code> if the <code v-pre="">number</code> is not an integer.</li>
                       <li>Partial code:
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span><br></span><span>  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span><br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span><br></span><span>  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span><br></span></code></pre>
                       </li>
-                      <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br>
-                        e.g., <code>type('x') is not float</code> evaluates to <code>True</code> because <code>'x'</code> is not a <code>float</code>.<br>
+                      <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code v-pre="">type(value) is type_name</code> and <code v-pre="">type(value) is not type_name</code> to check if a <code v-pre="">value</code> is of type <code v-pre="">type_name</code><br>
+                        e.g., <code v-pre="">type('x') is not float</code> evaluates to <code v-pre="">True</code> because <code v-pre="">'x'</code> is not a <code v-pre="">float</code>.<br>
                         [<a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
                     </ul>
-                    <p><strong><code>confirm_range_correct(start, end)</code></strong>:</p>
+                    <p><strong><code v-pre="">confirm_range_correct(start, end)</code></strong>:</p>
                     <ul>
-                      <li>Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code>confirm_is_int</code> function.</li>
-                      <li>Raises a <code>ValueError('end is smaller than start')</code> if <code>end</code> is smaller than <code>start</code>. You need to implement this behavior.</li>
+                      <li>Raises a <code v-pre="">ValueError</code> if <code v-pre="">end</code> or <code v-pre="">start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code v-pre="">confirm_is_int</code> function.</li>
+                      <li>Raises a <code v-pre="">ValueError('end is smaller than start')</code> if <code v-pre="">end</code> is smaller than <code v-pre="">start</code>. You need to implement this behavior.</li>
                       <li>Partial code:
-                        <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span><br></span><span>  confirm_is_int(start)<br></span><span>  confirm_is_int(end)<br></span><span>  <span class="hljs-comment"># ADD YOUR CODE HERE!</span><br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span><br></span><span>  confirm_is_int(start)<br></span><span>  confirm_is_int(end)<br></span><span>  <span class="hljs-comment"># ADD YOUR CODE HERE!</span><br></span></code></pre>
                       </li>
                     </ul>
                     <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p><span class="dimmed"><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</span></p>
                       </template>
-                      <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span><br></span><span>  <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:<br></span><span>    <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)<br></span></code></pre>
+                      <pre><code class="hljs python" v-pre=""><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span><br></span><span>  <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:<br></span><span>    <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)<br></span></code></pre>
                     </panel>
                   </div>
                 </panel>
                 <p></p>
               </div>
               <div>
-                <panel type="danger" expanded no-close><template slot="_header">
+                <panel type="danger" expanded="" no-close=""><template slot="_header">
                     <p><span aria-hidden="true" class="fas fa-dumbbell"></span> Exercise: Flexible Word Game</p>
                   </template>
                   <div>
@@ -468,18 +505,18 @@
                     <ul>
                       <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
                     </ul>
-                    <b-modal id="modal:flexibleWordGame-wordGame" hide-footer size="lg" modal-class="mb-zoom" ref="modal:flexibleWordGame-wordGame"><template slot="modal-title"><span class="dimmed">Programming Basics → Lists → List Methods</span></template>
+                    <b-modal id="modal:flexibleWordGame-wordGame" hide-footer="" size="lg" modal-class="mb-zoom" ref="modal:flexibleWordGame-wordGame" class="algolia-no-index"><template slot="modal-title"><span class="dimmed">Programming Basics → Lists → List Methods</span></template>
                         <div>
                         <h4 id="exercise-word-game">Exercise : Word Game<a class="fa fa-anchor" href="#exercise-word-game" onclick="event.stopPropagation()"></a></h4>
                         <p>Implement a word game with the following rules:</p>
                         <ul>
                           <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
                           <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
-                          <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+                          <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code v-pre="">end</code></li>
                           <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
                         </ul>
                         <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                        <pre><code class="hljs"><span>========================================================<br></span><span>Welcome to the WORD GAME<br></span><span>Give all four-letter words you know, one word at a time<br></span><span>Enter the word 'end' to exit<br></span><span>========================================================<br></span><span>What's the next word?  park<br></span><span>What's the next word?  puck<br></span><span>What's the next word?  cut<br></span><span>Not a four-letter word<br></span><span>What's the next word?  people<br></span><span>Not a four-letter word<br></span><span>What's the next word?  team<br></span><span>What's the next word?  puck<br></span><span>Repeated word! puck is number 2 in the accepted words list.<br></span><span>puck is no longer an accepted word and is banned<br></span><span>What's the next word?  bust<br></span><span>What's the next word?  puck<br></span><span>puck is banned!<br></span><span>What's the next word?  meat<br></span><span>What's the next word?  team<br></span><span>Repeated word! team is number 2 in the accepted words list.<br></span><span>team is no longer an accepted word and is banned<br></span><span>What's the next word?  end<br></span><span>========================================================<br></span><span>Your score: 3<br></span><span>Accepted words (in order of entry): park bust meat<br></span><span>Accepted words (in sorted order): bust meat park<br></span><span>Banned words (in sorted order): puck team<br></span><span>Thank you for playing the WORD GAME<br></span><span>========================================================<br></span></code></pre>
+                        <pre><code class="hljs" v-pre=""><span>========================================================<br></span><span>Welcome to the WORD GAME<br></span><span>Give all four-letter words you know, one word at a time<br></span><span>Enter the word 'end' to exit<br></span><span>========================================================<br></span><span>What's the next word?  park<br></span><span>What's the next word?  puck<br></span><span>What's the next word?  cut<br></span><span>Not a four-letter word<br></span><span>What's the next word?  people<br></span><span>Not a four-letter word<br></span><span>What's the next word?  team<br></span><span>What's the next word?  puck<br></span><span>Repeated word! puck is number 2 in the accepted words list.<br></span><span>puck is no longer an accepted word and is banned<br></span><span>What's the next word?  bust<br></span><span>What's the next word?  puck<br></span><span>puck is banned!<br></span><span>What's the next word?  meat<br></span><span>What's the next word?  team<br></span><span>Repeated word! team is number 2 in the accepted words list.<br></span><span>team is no longer an accepted word and is banned<br></span><span>What's the next word?  end<br></span><span>========================================================<br></span><span>Your score: 3<br></span><span>Accepted words (in order of entry): park bust meat<br></span><span>Accepted words (in sorted order): bust meat park<br></span><span>Banned words (in sorted order): puck team<br></span><span>Thank you for playing the WORD GAME<br></span><span>========================================================<br></span></code></pre>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Implementation suggestions:</p>
                         <ul>
                           <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
@@ -488,7 +525,7 @@
                       </div>
                     </b-modal>
                     <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
-                    <pre><code class="hljs"><span>========================================================<br></span><span>Welcome to the FLEXIBLE WORD GAME<br></span><span>Enter the word size (4 to 8): xyz<br></span><span>That is not a number. Try again<br></span><span>Enter the word size (4 to 8): 3<br></span><span>Number not in correct range. Try again<br></span><span>Enter the word size (4 to 8): 5<br></span><span>Give all 5-letter words you know, one word at a time<br></span><span>Enter the word 'end' to exit<br></span><span>========================================================<br></span><span>What's the next word?  frame<br></span><span>What's the next word?  great<br></span><span>What's the next word?  treat<br></span><span>What's the next word?  fat<br></span><span>Not a 5-letter word<br></span><span>What's the next word?  creamy<br></span><span>Not a 5-letter word<br></span><span>What's the next word?  treat<br></span><span>Repeated word! treat is number 3 in the accepted words list.<br></span><span>treat is no longer an accepted word and is banned<br></span><span>What's the next word?  crime<br></span><span>What's the next word?  treat<br></span><span>treat is banned!<br></span><span>What's the next word?  end<br></span><span>========================================================<br></span><span>Your score: 3<br></span><span>Accepted words (in order of entry): frame great crime<br></span><span>Accepted words (in sorted order): crime frame great<br></span><span>Banned words (in sorted order): treat<br></span><span>Thank you for playing the FLEXIBLE WORD GAME<br></span><span>========================================================<br></span></code></pre>
+                    <pre><code class="hljs" v-pre=""><span>========================================================<br></span><span>Welcome to the FLEXIBLE WORD GAME<br></span><span>Enter the word size (4 to 8): xyz<br></span><span>That is not a number. Try again<br></span><span>Enter the word size (4 to 8): 3<br></span><span>Number not in correct range. Try again<br></span><span>Enter the word size (4 to 8): 5<br></span><span>Give all 5-letter words you know, one word at a time<br></span><span>Enter the word 'end' to exit<br></span><span>========================================================<br></span><span>What's the next word?  frame<br></span><span>What's the next word?  great<br></span><span>What's the next word?  treat<br></span><span>What's the next word?  fat<br></span><span>Not a 5-letter word<br></span><span>What's the next word?  creamy<br></span><span>Not a 5-letter word<br></span><span>What's the next word?  treat<br></span><span>Repeated word! treat is number 3 in the accepted words list.<br></span><span>treat is no longer an accepted word and is banned<br></span><span>What's the next word?  crime<br></span><span>What's the next word?  treat<br></span><span>treat is banned!<br></span><span>What's the next word?  end<br></span><span>========================================================<br></span><span>Your score: 3<br></span><span>Accepted words (in order of entry): frame great crime<br></span><span>Accepted words (in sorted order): crime frame great<br></span><span>Banned words (in sorted order): treat<br></span><span>Thank you for playing the FLEXIBLE WORD GAME<br></span><span>========================================================<br></span></code></pre>
                   </div>
                 </panel>
                 <p></p>
@@ -515,7 +552,6 @@
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range&#x200E;</a>
                 <a class="nav-link py-1" href="#exercise-flexible-word-game">Exercise : Flexible Word Game&#x200E;</a>
-                <a class="nav-link py-1" href="#exercise-word-game">Exercise : Word Game&#x200E;</a>
               </nav>
             </nav>
 
@@ -525,7 +561,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

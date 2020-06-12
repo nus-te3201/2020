@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -97,9 +98,9 @@
                       <li><a href="/2020/programming/chapters/flowcontrol.html#program-flow-control"><strong>Program Flow Control</strong></a>
                         <ul>
                           <li><a href="/2020/programming/chapters/flowcontrol.html#booleans">Booleans</a></li>
-                          <li><a href="/2020/programming/chapters/flowcontrol.html#if-statements"><code>if</code> Statements</a></li>
-                          <li><a href="/2020/programming/chapters/flowcontrol.html#while-statements"><code>while</code> Statements</a></li>
-                          <li><a href="/2020/programming/chapters/flowcontrol.html#for-statements"><code>for</code> Statements</a></li>
+                          <li><a href="/2020/programming/chapters/flowcontrol.html#if-statements"><code v-pre="">if</code> Statements</a></li>
+                          <li><a href="/2020/programming/chapters/flowcontrol.html#while-statements"><code v-pre="">while</code> Statements</a></li>
+                          <li><a href="/2020/programming/chapters/flowcontrol.html#for-statements"><code v-pre="">for</code> Statements</a></li>
                           <li><a href="/2020/programming/chapters/flowcontrol.html#importing-modules">Importing Modules</a></li>
                           <li><a href="/2020/programming/chapters/flowcontrol.html#early-termination">Early Termination</a></li>
                         </ul>
@@ -169,15 +170,15 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week2/topics.html#W2-3b">W2.3b</a>] <span>Tools → UML → Activity Diagrams →
-                                  </span></span> <span>Linear Paths</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Linear paths</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week2/topics.html#W2-3c">W2.3c</a>] <span>Tools → UML → Activity Diagrams →
-                                  </span></span> <span>Alternate Paths</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Alternate paths</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week2/topics.html#W2-3d">W2.3d</a>] <span>Tools → UML → Activity Diagrams →
-                                  </span></span> <span>Parallel Paths</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Parallel paths</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week2/topics.html#W2-3e">W2.3e</a>] <span>Tools → UML → Activity Diagrams →
@@ -200,7 +201,7 @@
                   <div>
                     <ol>
                       <li>Submit weekly exercises</li>
-                      <li>Submit weekly project increment <code>Monty Level 2. Recognize Known Commands</code></li>
+                      <li>Submit weekly project increment <code v-pre="">Monty Level 2. Recognize Known Commands</code></li>
                     </ol>
                   </div>
                 </div>
@@ -223,7 +224,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

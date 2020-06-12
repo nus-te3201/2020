@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -71,96 +72,140 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/2020/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Implementation</strong>
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/integration.html" class="site-nav__a current">Integration</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/modeling.html">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/integration.html" class="current">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/reuse.html">Reuse</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Tools</strong>
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
-                <i class="dropdown-btn-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/2020/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/2020/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-list-item-content site-nav-list-item-content-1" onclick="handleSiteNavClick(this)"><a href="/2020/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -176,13 +221,13 @@
               <h1 id="integration"><span>Integration</span><a class="fa fa-anchor" href="#integration" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="introduction">
+          <panel type="seamless" expanded="" id="introduction">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="what"><template slot="_header">
+            <panel type="seamless" expanded="" id="what"><template slot="_header">
                 <h4 id="what">What<a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -199,13 +244,13 @@
               </div>
             </panel>
           </panel>
-          <panel type="seamless" expanded id="approaches">
+          <panel type="seamless" expanded="" id="approaches">
             <span slot="header" class="card-title">
               <div>
                 <h2 id="approaches"><span>Approaches</span><a class="fa fa-anchor" href="#approaches" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless" expanded id="late-and-one-time-vs-early-and-frequent"><template slot="_header">
+            <panel type="seamless" expanded="" id="late-and-one-time-vs-early-and-frequent"><template slot="_header">
                 <h4 id="late-and-one-time-vs-early-and-frequent">Late-and-One-Time vs Early-and-Frequent<a class="fa fa-anchor" href="#late-and-one-time-vs-early-and-frequent" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -225,15 +270,15 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">it has all the main components in their minimal form, compiles, and runs but does not produce any useful output</span>walking skeleton</span></em> can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
                   </box>
-                  <div v-closeable alt="slideshow: comparison" class="non-printable">
+                  <div v-closeable="" alt="slideshow: comparison" class="non-printable">
                     <p>Here is an animation that compares the two approaches:</p>
-                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   </div>
                 </div>
                 <div></div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="big-bang-vs-incremental-integration"><template slot="_header">
+            <panel type="seamless" expanded="" id="big-bang-vs-incremental-integration"><template slot="_header">
                 <h4 id="big-bang-vs-incremental-integration">Big-Bang vs Incremental Integration<a class="fa fa-anchor" href="#big-bang-vs-incremental-integration" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -249,14 +294,14 @@
                     <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
                   </box>
                   <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
-                  <div v-closeable alt="slideshow: comparison" class="non-printable">
+                  <div v-closeable="" alt="slideshow: comparison" class="non-printable">
                     <p>Here is an animation that compares the two approaches:</p>
-                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -288,7 +333,7 @@
                 </div>
               </div>
             </panel>
-            <panel type="seamless" expanded id="top-down-vs-bottom-up-integration"><template slot="_header">
+            <panel type="seamless" expanded="" id="top-down-vs-bottom-up-integration"><template slot="_header">
                 <h4 id="top-down-vs-bottom-up-integration">Top-Down vs Bottom-Up Integration<a class="fa fa-anchor" href="#top-down-vs-bottom-up-integration" onclick="event.stopPropagation()"></a></h4>
               </template>
               <div class="indented">
@@ -312,14 +357,14 @@
                   </span>
                   <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">additional code written to provide inputs to a component via an API</span>drivers</span> may be needed to test the integrated components <span class="dimmed">because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
                   <p><strong><em>Sandwich</em> integration: a mix of the top-down and the bottom-up approaches.</strong> The idea is to do both top-down and bottom-up so as to 'meet' in the middle.</p>
-                  <div v-closeable alt="slideshow: comparison">
+                  <div v-closeable="" alt="slideshow: comparison">
                     <p>Here is an animation that compares the three approaches:</p>
-                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212318&authkey=AD27jxfKqq3nqpQ&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212318&authkey=AD27jxfKqq3nqpQ&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <panel expandable class="algolia-no-index"><template slot="_header">
+                    <panel expandable="" class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
@@ -330,21 +375,21 @@
                             <p>Suggest an integration strategy for the system represented by following diagram. You need not follow a strict top-down, bottom-up, sandwich, or big bang approach. Dashed arrows represent dependencies between classes.</p>
                             <p>Also take into account the following facts in your test strategy.</p>
                             <ul>
-                              <li><code>HospitalUI</code> will be developed early, so as to get customer feedback early.</li>
-                              <li><code>HospitalFacade</code> shields the UI from complexities of the application layer. It simply redirects the method calls received to the appropriate classes below</li>
-                              <li><code>IO_Helper</code> is to be reused from an earlier project, with minor modifications</li>
-                              <li>Development of <code>OutPatient</code> component has been outsourced, and the delivery is not expected until the 2nd half of the project.</li>
+                              <li><code v-pre="">HospitalUI</code> will be developed early, so as to get customer feedback early.</li>
+                              <li><code v-pre="">HospitalFacade</code> shields the UI from complexities of the application layer. It simply redirects the method calls received to the appropriate classes below</li>
+                              <li><code v-pre="">IO_Helper</code> is to be reused from an earlier project, with minor modifications</li>
+                              <li>Development of <code v-pre="">OutPatient</code> component has been outsourced, and the delivery is not expected until the 2nd half of the project.</li>
                             </ul>
                             <img src="/2020/book/integration/approaches/topDownVsBottomUp/images/hospital.png" height="250">
                             <p></p>
                             <div slot="answer" class="algolia-no-index">
                               <p>There can be many acceptable answers to this question. But any good strategy should consider at least some of the below.</p>
                               <ul>
-                                <li>Because <code>HospitalUI</code> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <code>HospitalUI</code>)</li>
-                                <li>Because <code>HospitalFacade</code> is unlikely to have a lot of business logic, it may not be worth to write stubs to test it (i.e. a bottom-up integration is better for <code>HospitalFacade</code>).</li>
-                                <li>Because <code>IO_Helper</code> is to be reused from an earlier project, we can finish it early. This is especially suitable since there are many classes that use it. Therefore <code>IO_Helper</code> can be integrated with the dependent classes in bottom-up fashion.</li>
-                                <li>Because <code>OutPatient</code> class may be delayed, we may have to integrate <code>PatientMgr</code> using a stub.</li>
-                                <li><code>TypeA</code>, <code>TypeB</code>, and <code>TypeC</code> seem to be tightly coupled. It may be a good idea to test them together.</li>
+                                <li>Because <code v-pre="">HospitalUI</code> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <code v-pre="">HospitalUI</code>)</li>
+                                <li>Because <code v-pre="">HospitalFacade</code> is unlikely to have a lot of business logic, it may not be worth to write stubs to test it (i.e. a bottom-up integration is better for <code v-pre="">HospitalFacade</code>).</li>
+                                <li>Because <code v-pre="">IO_Helper</code> is to be reused from an earlier project, you can finish it early. This is especially suitable since there are many classes that use it. Therefore <code v-pre="">IO_Helper</code> can be integrated with the dependent classes in bottom-up fashion.</li>
+                                <li>Because <code v-pre="">OutPatient</code> class may be delayed, you may have to integrate <code v-pre="">PatientMgr</code> using a stub.</li>
+                                <li><code v-pre="">TypeA</code>, <code v-pre="">TypeB</code>, and <code v-pre="">TypeC</code> seem to be tightly coupled. It may be a good idea to test them together.</li>
                               </ul>
                               <p>Given below is one possible integration test strategy. Relative positioning also indicates a rough timeline.</p>
                               <img src="/2020/book/integration/approaches/topDownVsBottomUp/images/hospitalIntegration.png" height="250">
@@ -412,7 +457,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

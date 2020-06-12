@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
                 <li>Submit weekly exercises</li>
-                <li>Submit weekly project increment <code>Monty Level 2. Recognize Known Commands</code></li>
+                <li>Submit weekly project increment <code v-pre="">Monty Level 2. Recognize Known Commands</code></li>
               </ol>
             </div>
             <h4 id="0-finish-previous-week-s-tasks-if-you-haven-t-done-so-already"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> Finish previous week's tasks if you haven't done so already<a class="fa fa-anchor" href="#0-finish-previous-week-s-tasks-if-you-haven-t-done-so-already" onclick="event.stopPropagation()"></a></h4>
@@ -101,11 +102,11 @@
             <h4 id="2-submit-weekly-project-increments"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Submit weekly project increments<a class="fa fa-anchor" href="#2-submit-weekly-project-increments" onclick="event.stopPropagation()"></a></h4>
             <span id="week2-project">
               <ul>
-                <li>Add the following increment to your project. As before (and also in future weeks), copy-paste-submit the updated code via the weekly exercise named <code>Week N Project Submission</code> where <code>N</code> is the week number <span class="dimmed">e.g., submit this week's project code via the repl exercise named <code>Week 2 Project Submission</code></span>.</li>
+                <li>Add the following increment to your project. As before (and also in future weeks), copy-paste-submit the updated code via the weekly exercise named <code v-pre="">Week N Project Submission</code> where <code v-pre="">N</code> is the week number <span class="dimmed">e.g., submit this week's project code via the repl exercise named <code v-pre="">Week 2 Project Submission</code></span>.</li>
               </ul>
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 2. Recognize Known Commands</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
@@ -113,20 +114,20 @@
                       <h3 id="level-2-recognize-known-commands"><span class="badge badge-primary">Level 2</span> <span class="text-primary">Recognize Known Commands</span><a class="fa fa-anchor" href="#level-2-recognize-known-commands" onclick="event.stopPropagation()"></a></h3>
                       <p>Extend <a href="/2020/programming/chapters/monty.html#monty1">Monty 1 code</a> to work as follows:</p>
                       <ul>
-                        <li>It recognizes the <code>list</code> command and responds with a fixed message.</li>
-                        <li>It recognizes the <code>exit</code> command and exits the program if user confirms.</li>
+                        <li>It recognizes the <code v-pre="">list</code> command and responds with a fixed message.</li>
+                        <li>It recognizes the <code v-pre="">exit</code> command and exits the program if user confirms.</li>
                         <li>For all other inputs, it responds with a fixed error message.</li>
                       </ul>
                       <p>A sample session is given below.</p>
                       <box type="warning">
-                        <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code>show</code> instead of <code>list</code>), and even a different <strong>personality</strong> (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
+                        <p>You are highly encouraged to give the software a <strong>different name</strong> (i.e., not Monty), define your own <strong>command formats</strong> (e.g., <code v-pre="">show</code> instead of <code v-pre="">list</code>), and even a different <strong>personality</strong> (e.g., you can make its questions/responses sound similar to a popular video game character). Differentiating your software in those ways will reduce the risk of plagiarism concerns.
                         </p>
                       </box>
-                      <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Nothing to list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>foo<br></span><span>&gt;&gt;&gt; OOPS! Unknown command<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>n<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
-                      <panel minimized class="algolia-no-index"><template slot="_header">
+                      <pre><code class="hljs" v-pre=""><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Nothing to list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>foo<br></span><span>&gt;&gt;&gt; OOPS! Unknown command<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>n<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                      <panel minimized="" class="algolia-no-index"><template slot="_header">
                           <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
                         </template>
-                        <pre><code class="hljs python"><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)<br></span><span><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)<br></span><span>    <span class="hljs-comment"># ADD MORE CODE HERE</span><br></span><span>print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span>print(<span class="hljs-string">'&gt;&gt;&gt; Hello, my name is Monty'</span>)<br></span><span><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:<br></span><span>    print(<span class="hljs-string">'&gt;&gt;&gt; What can I do for you?'</span>)<br></span><span>    <span class="hljs-comment"># ADD MORE CODE HERE</span><br></span><span>print(<span class="hljs-string">'&gt;&gt;&gt; Bye!'</span>)<br></span></code></pre>
                       </panel>
                     </div>
                   </panel>
@@ -154,7 +155,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

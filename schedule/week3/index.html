@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -135,15 +136,15 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-1b">W3.1b</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Non-Functional Requirements</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Non-functional requirements</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-1c">W3.1c</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Prioritizing Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Prioritizing requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-1d">W3.1d</a>] <span>Requirements → Requirements →
-                                  </span></span> <span>Quality of Requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Quality of requirements</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                           </ul>
                         </small></div>
@@ -159,7 +160,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-2b">W3.2b</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>Product Surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Product surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-2c">W3.2c</a>] <span>Requirements → Gathering Requirements →
@@ -167,7 +168,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-2d">W3.2d</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>User Surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>User surveys</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-2e">W3.2e</a>] <span>Requirements → Gathering Requirements →
@@ -175,7 +176,7 @@
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-2f">W3.2f</a>] <span>Requirements → Gathering Requirements →
-                                  </span></span> <span>Focus Groups</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                                  </span></span> <span>Focus groups</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                             </li>
                             <li>
                               <p><span class="dimmed">[<a href="/2020/schedule/week3/topics.html#W3-2g">W3.2g</a>] <span>Requirements → Gathering Requirements →
@@ -254,7 +255,7 @@
                   <div>
                     <ol>
                       <li>Submit weekly exercises</li>
-                      <li>Submit weekly project increment <code>Monty Level 3. Use Functions</code></li>
+                      <li>Submit weekly project increment <code v-pre="">Monty Level 3. Use Functions</code></li>
                     </ol>
                   </div>
                 </div>
@@ -277,7 +278,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

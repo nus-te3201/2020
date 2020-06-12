@@ -1,0 +1,185 @@
+2020-06-12T06:05:05.797Z - info: Website generation (lazy) started at 2:04:58 PM
+2020-06-12T06:05:11.219Z - info: Building assets...
+2020-06-12T06:05:15.288Z - info: Assets built
+2020-06-12T06:05:15.289Z - info: Generating landing page...
+2020-06-12T06:05:16.482Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:05:17.206Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-06-12T06:05:17.305Z - info: Website generation (lazy) complete! Total build time: 18.383s
+2020-06-12T06:05:18.132Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-06-12T06:05:18.133Z - info: Press CTRL+C to stop ...
+2020-06-12T06:05:18.146Z - info: Site data built
+2020-06-12T06:13:55.251Z - info: Website generation started at 2:13:52 PM
+2020-06-12T06:14:00.570Z - info: Building assets...
+2020-06-12T06:14:05.291Z - info: Assets built
+2020-06-12T06:14:05.292Z - info: Generating pages...
+2020-06-12T06:14:08.887Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\schedule\week15\index.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\schedule\index.md
+    at _getFileExistsNode (C:\repos\markbind\markbind\src\lib\markbind\src\preprocessors\componentPreprocessor.js:65:19)
+    at _preprocessInclude (C:\repos\markbind\markbind\src\lib\markbind\src\preprocessors\componentPreprocessor.js:221:26)
+    at Object.preProcessComponent (C:\repos\markbind\markbind\src\lib\markbind\src\preprocessors\componentPreprocessor.js:358:12)
+    at C:\repos\markbind\markbind\src\lib\markbind\src\parser.js:223:47
+    at Array.map (<anonymous>)
+    at DomHandler._callback (C:\repos\markbind\markbind\src\lib\markbind\src\parser.js:220:27)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\repos\markbind\markbind\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\repos\markbind\markbind\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Parser.js:340:36)
+    at Tokenizer._finish (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Tokenizer.js:890:15)
+    at Tokenizer.end (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Tokenizer.js:881:29)
+    at Parser.end (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Parser.js:367:21)
+    at Parser.parseComplete (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Parser.js:359:10)
+    at C:\repos\markbind\markbind\src\lib\markbind\src\parser.js:243:16
+    at Promise._execute (C:\repos\markbind\markbind\node_modules\bluebird\js\release\debuggability.js:384:9)
+    at Promise._resolveFromExecutor (C:\repos\markbind\markbind\node_modules\bluebird\js\release\promise.js:518:18)
+2020-06-12T06:14:19.623Z - error: fatal: destination path '..\..\markbind\markbind\node_modules\gh-pages\.cache\github.com!nus-te3201!2020.git' already exists and is not an empty directory.
+
+2020-06-12T06:14:46.169Z - info: Website generation started at 2:14:43 PM
+2020-06-12T06:14:51.319Z - info: Building assets...
+2020-06-12T06:14:55.486Z - info: Assets built
+2020-06-12T06:14:55.487Z - info: Generating pages...
+2020-06-12T06:14:56.083Z - error:  Error: No such file: C:\repos\nus-te3201\te3201-2020-website\schedule\week15\index.md
+Missing reference in C:\repos\nus-te3201\te3201-2020-website\schedule\index.md
+    at _getFileExistsNode (C:\repos\markbind\markbind\src\lib\markbind\src\preprocessors\componentPreprocessor.js:65:19)
+    at _preprocessInclude (C:\repos\markbind\markbind\src\lib\markbind\src\preprocessors\componentPreprocessor.js:221:26)
+    at Object.preProcessComponent (C:\repos\markbind\markbind\src\lib\markbind\src\preprocessors\componentPreprocessor.js:358:12)
+    at C:\repos\markbind\markbind\src\lib\markbind\src\parser.js:223:47
+    at Array.map (<anonymous>)
+    at DomHandler._callback (C:\repos\markbind\markbind\src\lib\markbind\src\parser.js:220:27)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\repos\markbind\markbind\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\repos\markbind\markbind\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Parser.js:340:36)
+    at Tokenizer._finish (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Tokenizer.js:890:15)
+    at Tokenizer.end (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Tokenizer.js:881:29)
+    at Parser.end (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Parser.js:367:21)
+    at Parser.parseComplete (C:\repos\markbind\markbind\node_modules\htmlparser2\lib\Parser.js:359:10)
+    at C:\repos\markbind\markbind\src\lib\markbind\src\parser.js:243:16
+    at Promise._execute (C:\repos\markbind\markbind\node_modules\bluebird\js\release\debuggability.js:384:9)
+    at Promise._resolveFromExecutor (C:\repos\markbind\markbind\node_modules\bluebird\js\release\promise.js:518:18)
+2020-06-12T06:17:10.260Z - info: Website generation started at 2:17:07 PM
+2020-06-12T06:17:16.104Z - info: Building assets...
+2020-06-12T06:17:20.332Z - info: Assets built
+2020-06-12T06:17:20.333Z - info: Generating pages...
+2020-06-12T06:17:23.909Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:06.073Z - info: Website generation started at 2:19:03 PM
+2020-06-12T06:19:11.342Z - info: Building assets...
+2020-06-12T06:19:15.791Z - info: Assets built
+2020-06-12T06:19:15.792Z - info: Generating pages...
+2020-06-12T06:19:16.972Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:23.170Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:26.331Z - warn: popover attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.127Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.129Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.132Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.133Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.134Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.135Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.135Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:27.135Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:29.558Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:30.162Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:30.169Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:30.170Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:19:34.546Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:49.849Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:51.052Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.404Z - warn: popover attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.989Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.990Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.993Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.996Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.997Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.998Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.998Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:52.999Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:53.335Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:53.336Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:54.022Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:54.709Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:55.228Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:20:55.908Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:21:47.858Z - debug:  
+2020-06-12T06:21:47.859Z - debug:  
+2020-06-12T06:21:47.860Z - debug:  
+2020-06-12T06:21:47.860Z - debug:  
+2020-06-12T06:21:47.860Z - debug:  
+2020-06-12T06:21:47.861Z - debug:  
+2020-06-12T06:21:47.862Z - debug:  
+2020-06-12T06:21:47.862Z - debug:  
+2020-06-12T06:21:47.862Z - debug:  
+2020-06-12T06:21:48.588Z - debug:  
+2020-06-12T06:21:48.589Z - debug:  
+2020-06-12T06:21:48.589Z - debug:  
+2020-06-12T06:21:58.790Z - debug:  
+2020-06-12T06:21:58.790Z - debug:  
+2020-06-12T06:21:58.790Z - debug:  
+2020-06-12T06:21:58.791Z - debug:  
+2020-06-12T06:21:58.791Z - debug:  
+2020-06-12T06:22:00.346Z - info: Pages built
+2020-06-12T06:22:22.348Z - info: Website generation complete! Total build time: 198.933s
+2020-06-12T06:22:23.270Z - info: Serving "C:\repos\nus-te3201\te3201-2020-website\_site" at http://127.0.0.1:8080
+2020-06-12T06:22:23.270Z - info: Press CTRL+C to stop ...
+2020-06-12T06:22:23.271Z - debug:  
+2020-06-12T06:22:23.271Z - debug:  
+2020-06-12T06:22:23.292Z - info: Site data built
+2020-06-12T06:26:10.919Z - info: Website generation started at 2:26:05 PM
+2020-06-12T06:26:16.279Z - info: Building assets...
+2020-06-12T06:26:20.768Z - info: Assets built
+2020-06-12T06:26:20.769Z - info: Generating pages...
+2020-06-12T06:26:24.238Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:28.075Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:31.427Z - warn: popover attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.266Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.267Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.270Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.270Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.271Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.272Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.272Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:32.273Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:35.424Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:35.851Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:35.861Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:35.861Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:26:38.292Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:04.645Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:06.933Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.129Z - warn: popover attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.844Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.846Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.856Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.857Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.859Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.860Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.862Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:08.864Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:09.359Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:09.359Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:10.820Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:12.042Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:13.025Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:16.460Z - warn: modal attribute 'title' is deprecated and may be removed in the future. Please use 'header'
+2020-06-12T06:28:27.377Z - debug:  
+2020-06-12T06:28:27.378Z - debug:  
+2020-06-12T06:28:27.378Z - debug:  
+2020-06-12T06:28:27.378Z - debug:  
+2020-06-12T06:28:27.378Z - debug:  
+2020-06-12T06:28:27.627Z - debug:  
+2020-06-12T06:28:27.628Z - debug:  
+2020-06-12T06:28:28.174Z - debug:  
+2020-06-12T06:28:28.174Z - debug:  
+2020-06-12T06:28:28.175Z - debug:  
+2020-06-12T06:28:28.175Z - debug:  
+2020-06-12T06:28:28.175Z - debug:  
+2020-06-12T06:28:40.348Z - debug:  
+2020-06-12T06:28:40.348Z - debug:  
+2020-06-12T06:28:40.348Z - debug:  
+2020-06-12T06:28:40.348Z - debug:  
+2020-06-12T06:28:40.349Z - debug:  
+2020-06-12T06:28:41.415Z - info: Pages built
+2020-06-12T06:29:01.052Z - info: Website generation complete! Total build time: 175.972s
+2020-06-12T06:29:01.053Z - info: Build success!
+2020-06-12T06:29:01.053Z - debug:  
+2020-06-12T06:29:01.054Z - debug:  
+2020-06-12T06:29:01.057Z - info: Site data built
+2020-06-12T06:29:06.074Z - error: Remote url mismatch.  Got "https://github.com/MarkBind/markbind.git" but expected "https://github.com/nus-te3201/2020.git" in ..\..\markbind\markbind\node_modules\gh-pages\.cache\github.com!nus-te3201!2020.git.  Try running the `gh-pages-clean` script first.
+2020-06-12T06:47:00.762Z - info: Website generation started at 2:46:55 PM
+2020-06-12T06:47:06.606Z - info: Building assets...

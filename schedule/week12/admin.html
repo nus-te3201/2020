@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -104,12 +105,12 @@
                 <li><mark>Note that you can get prof's feedback for your project report before the final submission</mark>. See the panel below for more details.</li>
               </ul>
               <div class="indented-level2">
-                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                <panel type="" class="embedding algolia-no-index" minimized=""><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Final Submission <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                   </template>
                   <div>
                     <h3 id="week-13-final-submission">Week 13: Final Submission<a class="fa fa-anchor" href="#week-13-final-submission" onclick="event.stopPropagation()"></a></h3>
-                    <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., <code>-1</code> per day).</p>
+                    <p><strong>Submission Deadline</strong>: Sunday of week 13 (Apr 19th). <mark>Submissions later than the deadline are liable to a late submission penalty</mark>, to be fair to those who submitted on time. But given that you are part time students, the late submission penalty will be small (e.g., <code v-pre="">-1</code> per day).</p>
                     <ul>
                       <li><strong>The deadline for seeking feedback on the project report draft</strong>: week 13 lecture.
                         <ul>
@@ -121,9 +122,9 @@
                     <p><strong>Deliverables</strong>:</p>
                     <ol>
                       <li><strong>Source code</strong> of the working program: zip (not rar) the code and submit to LumiNUS<br>name:
-                        File name: <code>{YourName}.zip</code> e.g., <code>JunHao.zip</code></li>
+                        File name: <code v-pre="">{YourName}.zip</code> e.g., <code v-pre="">JunHao.zip</code></li>
                       <li><strong>Documentation</strong>: a single .docx (preferred) or a pdf file that follows the template given (template file will be available in LumiNUS).<br>
-                        Submission: Upload to LumiNUS. The file name should be your name e.g., <code>JunHao.docx</code></li>
+                        Submission: Upload to LumiNUS. The file name should be your name e.g., <code v-pre="">JunHao.docx</code></li>
                       <li><strong>Demo video</strong>:
                         <ul>
                           <li>Record a demo video showcasing the features of your product.</li>
@@ -160,7 +161,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>

@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header class="header-fixed">
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~te3201">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/2020/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TE3201 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -57,13 +58,13 @@
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/forum" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code>repl.it</code> link</span></a></li>
+          <li><a href="https://repl.it/classroom/invite/jcXc9CX" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre="">repl.it</code> link</span></a></li>
           <li><a href="https://luminus.nus.edu.sg/modules/ca668d5a-f851-4dcc-98f4-337c9126c956/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files (slides, handouts etc.)</span></a></li>
           <li><a href="/2020/admin/te3201-admin.html#project" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project Info</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia="" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple;">
               <ol>
                 <li>Submit weekly exercises</li>
-                <li>Submit weekly project increment <code>Level 4. Collect Tasks in Memory</code></li>
+                <li>Submit weekly project increment <code v-pre="">Level 4. Collect Tasks in Memory</code></li>
               </ol>
             </div>
             <h4 id="1-submit-weekly-exercises"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Submit weekly exercises<a class="fa fa-anchor" href="#1-submit-weekly-exercises" onclick="event.stopPropagation()"></a></h4>
@@ -101,14 +102,14 @@
             <span id="week4-project">
               <div>
                 <div class="indented-level2">
-                  <panel type="primary" no-close class="algolia-no-index">
+                  <panel type="primary" no-close="" class="algolia-no-index">
                     <div></div>
                     <div slot="header" class="text-white"><span>Programming <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>  <strong>Level 4. Collect Tasks in Memory</strong> <span class="badge badge-pill badge-warning"></span></span></div>
                     <div></div>
                     <div>
                       <h3 id="level-4-collect-tasks-in-memory"><span class="badge badge-primary">Level 4</span> <span class="text-primary">Collect Tasks in Memory</span><a class="fa fa-anchor" href="#level-4-collect-tasks-in-memory" onclick="event.stopPropagation()"></a></h3>
                       <p>Enhance the <a href="/2020/programming/chapters/monty.html#monty3">Monty Level 3 code</a> to improve the functionality as per the sample output given below.</p>
-                      <pre><code class="hljs"><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Nothing to list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     1. read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     1. read book<br></span><span>     2. return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
+                      <pre><code class="hljs" v-pre=""><span>&gt;&gt;&gt; Hello, my name is Monty<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; Nothing to list<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     1. read book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>add return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>list<br></span><span>&gt;&gt;&gt; List of items:<br></span><span>     1. read book<br></span><span>     2. return book<br></span><span>&gt;&gt;&gt; What can I do for you?<br></span><span><br></span><span>exit<br></span><span>&gt;&gt;&gt; Are you sure? y/n<br></span><span>y<br></span><span>&gt;&gt;&gt; Bye!<br></span></code></pre>
                       <box>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the list slicing syntax to extract a portion of a string.<br></p>
                         <div>
@@ -117,22 +118,22 @@
                           <table>
                             <tr>
                               <td valign="top">
-                                <pre><code class="hljs python"><span><br></span><span>s = <span class="hljs-string">'abcdefgh'</span><br></span><span>print(s[<span class="hljs-number">2</span>:])<br></span><span>print(s[:<span class="hljs-number">5</span>])<br></span></code></pre>
+                                <pre><code class="hljs python" v-pre=""><span><br></span><span>s = <span class="hljs-string">'abcdefgh'</span><br></span><span>print(s[<span class="hljs-number">2</span>:])<br></span><span>print(s[:<span class="hljs-number">5</span>])<br></span></code></pre>
                               </td>
                               <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
                               <td valign="bottom">
-                                <pre><code class="hljs"><span>cdefgh<br></span><span>abcde<br></span></code></pre>
+                                <pre><code class="hljs" v-pre=""><span>cdefgh<br></span><span>abcde<br></span></code></pre>
                               </td>
                             </tr>
                           </table>
                         </div>
-                        <p>The above technique can be used to extract the item description from an <code>add</code> command.
+                        <p>The above technique can be used to extract the item description from an <code v-pre="">add</code> command.
                         </p>
                       </box>
-                      <panel minimized class="algolia-no-index"><template slot="_header">
+                      <panel minimized="" class="algolia-no-index"><template slot="_header">
                           <p><span aria-hidden="true" class="fas fa-battery-quarter"></span> Partial solution</p>
                         </template>
-                        <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span>items = []<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_items</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> len(items) == <span class="hljs-number">0</span>:<br></span><span>        print(<span class="hljs-string">'&gt;&gt;&gt; Nothing to list'</span>)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> enumerate(items):<br></span><span>            <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item</span><span class="hljs-params">(user_input)</span>:</span><br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">terminate</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        terminate()<br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:<br></span><span>        print_items()<br></span><span>    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):<br></span><span>        add_item(command)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        print(<span class="hljs-string">'&gt;&gt;&gt; OOPS! Unknown command'</span>)<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
+                        <pre><code class="hljs python" v-pre=""><span><span class="hljs-keyword">import</span> sys<br></span><span><br></span><span>items = []<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_items</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> len(items) == <span class="hljs-number">0</span>:<br></span><span>        print(<span class="hljs-string">'&gt;&gt;&gt; Nothing to list'</span>)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        <span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> enumerate(items):<br></span><span>            <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_item</span><span class="hljs-params">(user_input)</span>:</span><br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">terminate</span><span class="hljs-params">()</span>:</span><br></span><span>    <span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-comment"># ...</span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_command</span><span class="hljs-params">(command)</span>:</span><br></span><span>    <span class="hljs-keyword">if</span> command == <span class="hljs-string">''</span>:<br></span><span>        <span class="hljs-keyword">return</span><br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'exit'</span>:<br></span><span>        terminate()<br></span><span>    <span class="hljs-keyword">elif</span> command == <span class="hljs-string">'list'</span>:<br></span><span>        print_items()<br></span><span>    <span class="hljs-keyword">elif</span> command.startswith(<span class="hljs-string">'add '</span>):<br></span><span>        add_item(command)<br></span><span>    <span class="hljs-keyword">else</span>:<br></span><span>        print(<span class="hljs-string">'&gt;&gt;&gt; OOPS! Unknown command'</span>)<br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span><br></span><span>    print_greeting()<br></span><span>    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:<br></span><span>        command = read_command()<br></span><span>        execute_command(command)<br></span><span><br></span><span><br></span><span>main()<br></span></code></pre>
                       </panel>
                     </div>
                   </panel>
@@ -159,7 +160,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Tue, 28 Apr 2020, 22:07:56 GMT+8</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.14.1</a> at Fri, 12 Jun 2020, 14:47:10 GMT+8</small></div>
     </footer>
   </div>
 </body>
